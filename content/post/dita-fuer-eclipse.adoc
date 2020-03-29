@@ -1,0 +1,34 @@
+---
+author: Andreas Petersell
+date: 2019-04-17
+title: Einbinden der DITA-DTDs in Eclipse
+description: DITA XML in Eclipse als Quelldatei-Editor
+categories:
+    - "Techcomm"
+tags: 
+    - "dita"
+    - "eclipse"
+series:
+    - "Ditalog"    
+markup: asciidoc
+---
+
+:imagesdir: ../images/dita-fuer-eclipse/
+:icons: font
+
+Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.
+<!--more-->
+
+.Voraussetzung
+[TIP]
+====
+Sie müssen das Java JDK und Eclipse installiert haben. Ein Java JRE war in meinem Fall nicht ausreichend.
+====
+
+image::dita-fuer-eclipse.gif[DITA in Eclipse]
+
+. Klicken Sie in Eclipse auf _Window > Preferences_.
+. Öffnen Sie die Menüverzeichnisbaum unterhalb _XML_ und klicken Sie auf _XML Catalog_.
+. Klicken Sie im Fenster _Preferences_ auf _Add_.
+. Klicken Sie auf _Next Catalog_ und anschließend auf _File System_.
+. Springen Sie im Fenster _Öffnen_ auf die Datei `catalog-dita.xml` im Hauptverzeichnis Ihres aktuellen DITA Open Toolkits.

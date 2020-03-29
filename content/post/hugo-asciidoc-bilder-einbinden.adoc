@@ -1,0 +1,76 @@
+---
+author: Andreas Petersell
+title: "Hugo mit Asciidoc - Bilder einbinden"
+date: 2020-03-22T20:08:10+01:00
+draft: false
+
+categories:
+    - "Techcomm"
+tags: 
+    - "hugo-asciidoc"
+
+series:
+    - "Bloggen mit Hugo"    
+---
+
+= Hugo mit Asciidoc - Bilder einbinden
+
+Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.
+<!--more-->
+
+Gottseidank fand ich auf Github den Quelltext des Blogs https://foo-dogsquared.github.io mit einem einfachen Beispiel der Bildeinbindung.
+
+.Voraussetzung
+[TIP]
+====
+Sie haben Hugo und Asciidoctor installiert.
+====
+
+== Quellen
+
+* https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/[Blogging with Asciidoctor and Hugo]
+* https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc[Beispiel der Bildeinbindung]
+
+== Anleitung
+
+=== 1. Content-Datei editieren 
+
+Schreiben Sie Ihren Blogpost in der Datei `meinblogpost.adoc` und fügen das Bild im Text ein.
+
+....
+image::meinblogpost.gif[]
+....
+
+Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.
+
+....
+:imagesdir: ../images/meinblogpostimage/
+....
+
+=== 2. Bild abspeichern
+
+Legen Sie einen Ordner `images` innerhalb des post-Ordners an.
+
+....
+|-- content
+    |-- post
+        |-- images
+....
+
+Da Sie wissen, dass Ihre Bilddatei `meinblogpost.gif` heißt, legen Sie einen weiteren Ordner `meinblogpost` innerhalb des `images`-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.
+
+....
+|-- content
+    |-- post
+        |-- images
+        |   |-- meinblogpost.gif
+        |-- meinblogpost.adoc
+....
+
+== Fazit
+
+Die Bilder werden also nicht in den Standard-Ordner für Bilder `static` abgelegt. Da ich sowieso eine Bilddatenbank _Piwigo_ habe, überlege ich, ob ich nicht via URLs dorthin verlinke.
+
+....
+image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]
+....

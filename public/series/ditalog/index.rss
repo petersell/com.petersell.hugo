@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ditalog on Andreas Petersell</title>
+    <link>http://localhost:1313/series/ditalog/</link>
+    <description>Recent content in Ditalog on Andreas Petersell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Tue, 24 Mar 2020 15:20:33 +0100</lastBuildDate>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    
+        <atom:link href="http://localhost:1313/series/ditalog/index.rss" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Asciidoc Test</title>
+      <link>http://localhost:1313/post/asciidoc-test/</link>
+      <category>tag1</category>
+      <category>tag2</category>
+      <pubDate>Tue, 24 Mar 2020 15:20:33 +0100</pubDate>
+      
+      <guid>http://localhost:1313/post/asciidoc-test/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_first_level_heading&#34;&gt;First level heading&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is a paragraph with a &lt;strong&gt;bold&lt;/strong&gt; word and an &lt;em&gt;italicized&lt;/em&gt; word.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;image-file-name.png&#34; alt=&#34;I am the image alt text.&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 1. Image caption&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is another paragraph.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_1&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_1&#34; title=&#34;View footnote.&#34;&gt;1&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_second_level_heading&#34;&gt;Second level heading&lt;/h3&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Unordered list title&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;list item 1&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;nested list item&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;nested nested list item 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nested nested list item 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;list item 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;exampleblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Example 1. Example block title&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Content in an example block is subject to normal substitutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sidebarblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Sidebar title&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sidebars contain aside text and are subject to normal substitutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_third_level_heading&#34;&gt;Third level heading&lt;/h4&gt;
+&lt;div id=&#34;id-for-listing-block&#34; class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Listing block title&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect4&#34;&gt;
+&lt;h5 id=&#34;_fourth_level_heading&#34;&gt;Fourth level heading&lt;/h5&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;caption class=&#34;title&#34;&gt;Table 1. Table title&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 50%;&#34;&gt;
+&lt;col style=&#34;width: 50%;&#34;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Column heading 1&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Column heading 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 1, row 1&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 2, row 1&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 1, row 2&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 2, row 2&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;sect5&#34;&gt;
+&lt;h6 id=&#34;_fifth_level_heading&#34;&gt;Fifth level heading&lt;/h6&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;I am a block quote or a prose excerpt.
+I am subject to normal substitutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; firstname lastname&lt;br&gt;
+&lt;cite&gt;movie title&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;verseblock&#34;&gt;
+&lt;pre class=&#34;content&#34;&gt;I am a verse block.
+  Indents and endlines are preserved in verse blocks.&lt;/pre&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; firstname lastname&lt;br&gt;
+&lt;cite&gt;poem title and more&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_first_level_heading_2&#34;&gt;First level heading&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+There are five admonition labels: Tip, Note, Important, Caution and Warning.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;ordered list item&lt;/p&gt;
+&lt;div class=&#34;olist loweralpha&#34;&gt;
+&lt;ol class=&#34;loweralpha&#34; type=&#34;a&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;nested ordered list item&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ordered list item&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;The text at the end of this sentence is cross referenced to &lt;a href=&#34;#_third_level_heading&#34;&gt;the third level heading&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_first_level_heading_3&#34;&gt;First level heading&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is a link to the &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/&#34;&gt;Asciidoctor User Manual&lt;/a&gt;.
+This is an attribute reference {quick-uri}[which links this text to the Asciidoctor Quick Reference Guide].&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;footnotes&#34;&gt;
+&lt;hr&gt;
+&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_1&#34;&gt;
+&lt;a href=&#34;#_footnoteref_1&#34;&gt;1&lt;/a&gt;. I am footnote text and will be displayed at the bottom of the article.
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Einbinden der DITA-DTDs in Eclipse</title>
+      <link>http://localhost:1313/post/dita-fuer-eclipse/</link>
+      <category>dita</category>
+      <category>eclipse</category>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/dita-fuer-eclipse/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-tip&#34; title=&#34;Tip&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie müssen das Java JDK und Eclipse installiert haben. Ein Java JRE war in meinem Fall nicht ausreichend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/dita-fuer-eclipse/dita-fuer-eclipse.gif&#34; alt=&#34;DITA in Eclipse&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Klicken Sie in Eclipse auf &lt;em&gt;Window &amp;gt; Preferences&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Öffnen Sie die Menüverzeichnisbaum unterhalb &lt;em&gt;XML&lt;/em&gt; und klicken Sie auf &lt;em&gt;XML Catalog&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicken Sie im Fenster &lt;em&gt;Preferences&lt;/em&gt; auf &lt;em&gt;Add&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicken Sie auf &lt;em&gt;Next Catalog&lt;/em&gt; und anschließend auf &lt;em&gt;File System&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Springen Sie im Fenster &lt;em&gt;Öffnen&lt;/em&gt; auf die Datei &lt;code&gt;catalog-dita.xml&lt;/code&gt; im Hauptverzeichnis Ihres aktuellen DITA Open Toolkits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

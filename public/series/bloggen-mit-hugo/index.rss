@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bloggen mit Hugo on Andreas Petersell</title>
+    <link>http://localhost:1313/series/bloggen-mit-hugo/</link>
+    <description>Recent content in Bloggen mit Hugo on Andreas Petersell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Sun, 22 Mar 2020 20:08:10 +0100</lastBuildDate>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    
+        <atom:link href="http://localhost:1313/series/bloggen-mit-hugo/index.rss" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Hugo mit Asciidoc - Bilder einbinden</title>
+      <link>http://localhost:1313/post/hugo-asciidoc-bilder-einbinden/</link>
+      <category>hugo-asciidoc</category>
+      <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo-asciidoc-bilder-einbinden/</guid>
+      <description>&lt;div id=&#34;preamble&#34;&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Gottseidank fand ich auf Github den Quelltext des Blogs &lt;a href=&#34;https://foo-dogsquared.github.io&#34; class=&#34;bare&#34;&gt;https://foo-dogsquared.github.io&lt;/a&gt; mit einem einfachen Beispiel der Bildeinbindung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Hugo und Asciidoctor installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/&#34;&gt;Blogging with Asciidoctor and Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc&#34;&gt;Beispiel der Bildeinbindung&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_1_content_datei_editieren&#34;&gt;1. Content-Datei editieren&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Schreiben Sie Ihren Blogpost in der Datei &lt;code&gt;meinblogpost.adoc&lt;/code&gt; und fügen das Bild im Text ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;image::meinblogpost.gif[]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/meinblogpostimage/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_2_bild_abspeichern&#34;&gt;2. Bild abspeichern&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Legen Sie einen Ordner &lt;code&gt;images&lt;/code&gt; innerhalb des post-Ordners an.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        |-- images&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da Sie wissen, dass Ihre Bilddatei &lt;code&gt;meinblogpost.gif&lt;/code&gt; heißt, legen Sie einen weiteren Ordner &lt;code&gt;meinblogpost&lt;/code&gt; innerhalb des &lt;code&gt;images&lt;/code&gt;-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        |-- images
+        |   |-- meinblogpost.gif
+        |-- meinblogpost.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_fazit&#34;&gt;Fazit&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Bilder werden also nicht in den Standard-Ordner für Bilder &lt;code&gt;static&lt;/code&gt; abgelegt. Da ich sowieso eine Bilddatenbank &lt;em&gt;Piwigo&lt;/em&gt; habe, überlege ich, ob ich nicht via URLs dorthin verlinke.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

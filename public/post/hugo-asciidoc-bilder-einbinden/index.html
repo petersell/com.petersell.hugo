@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hugo mit Asciidoc - Bilder einbinden</title>
+<link rel="stylesheet" href="http://localhost:1313/css/main.css" />
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><body>
+<main>
+<h1 class="post-title">Hugo mit Asciidoc - Bilder einbinden</h1>
+<p>Andreas Petersell&nbsp;am
+<date datetime="22.03.2020">22.03.2020</date></p>
+
+<hr>
+
+<article>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.</p>
+</div>
+<div class="paragraph">
+<p>Gottseidank fand ich auf Github den Quelltext des Blogs <a href="https://foo-dogsquared.github.io" class="bare">https://foo-dogsquared.github.io</a> mit einem einfachen Beispiel der Bildeinbindung.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="title">Voraussetzung</div>
+<div class="paragraph">
+<p>Sie haben Hugo und Asciidoctor installiert.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quellen">Quellen</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/">Blogging with Asciidoctor and Hugo</a></p>
+</li>
+<li>
+<p><a href="https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc">Beispiel der Bildeinbindung</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anleitung">Anleitung</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_content_datei_editieren">1. Content-Datei editieren</h3>
+<div class="paragraph">
+<p>Schreiben Sie Ihren Blogpost in der Datei <code>meinblogpost.adoc</code> und fügen das Bild im Text ein.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>image::meinblogpost.gif[]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>:imagesdir: ../images/meinblogpostimage/</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_bild_abspeichern">2. Bild abspeichern</h3>
+<div class="paragraph">
+<p>Legen Sie einen Ordner <code>images</code> innerhalb des post-Ordners an.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>|-- content
+    |-- post
+        |-- images</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Da Sie wissen, dass Ihre Bilddatei <code>meinblogpost.gif</code> heißt, legen Sie einen weiteren Ordner <code>meinblogpost</code> innerhalb des <code>images</code>-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>|-- content
+    |-- post
+        |-- images
+        |   |-- meinblogpost.gif
+        |-- meinblogpost.adoc</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fazit">Fazit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die Bilder werden also nicht in den Standard-Ordner für Bilder <code>static</code> abgelegt. Da ich sowieso eine Bilddatenbank <em>Piwigo</em> habe, überlege ich, ob ich nicht via URLs dorthin verlinke.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+<p><a href="http://localhost:1313">Zur Startseite</a></p>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

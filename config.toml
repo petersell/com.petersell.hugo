@@ -1,0 +1,88 @@
+baseURL = "http://localhost:1313"
+languageCode = "de"
+title = "Andreas Petersell"
+#theme = "anubis"
+theme = "contentful"
+paginate = 10
+copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/)."
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[author]
+  name = "Andreas Petersell"
+
+[params]
+   author = "Andreas Petersell"
+   description = "Privater Blog eines DITA-Writers und Autors sowie Co-Founders von Jobikado."
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Themen"
+    url = "/categories/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "series"
+    name = "Artikelserie"
+    url = "/series/"
+    weight = 30        
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Stichwörter"
+    url = "/tags/"
+    weight = 40
+
+  [[menu.main]]
+    name = "Archive"
+    identifier = "archive"
+    url = "/posts/"
+    weight = 50
+
+   [[menu.main]]
+    identifier = "impressum"
+    name       = "Impressum"
+    url        = "impressum/"
+    weight     = 60  
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[mediaTypes]
+    [mediaTypes."application/atom+xml"]
+        suffixes = ["atom", "atom.xml"] # You can remove the "atom.xml" if you want
+    
+    # Redefining RSS media type for the additional suffix
+    [mediaTypes."application/rss+xml"]
+        suffixes = ["rss", "rss.xml"] # You can remove the "rss.xml" if you want
+
+
+# Including all of the feed output formats in the build
+[outputFormats]
+    [outputFormats.Rss]
+        mediaType = "application/rss+xml"
+        baseName = "index"
+
+    [outputFormats.Atom]
+        mediaType = "application/atom+xml"
+        baseName = "index"
+
+# Indicating what output formats shall be included 
+# for the following kinds
+[outputs]
+    # .Site.BaseURL/index.* is available 
+    home = ["HTML", "JSON", "RSS", "ATOM"]
+
+    # .Site.BaseURL/$section/index.* is available
+    section = ["HTML", "JSON", "RSS", "ATOM"] 
