@@ -26,7 +26,7 @@ googleAnalytics = ""
 
   [[menu.main]]
     identifier = "categories"
-    name = "Themen"
+    name = "Kategorie"
     url = "/categories/"
     weight = 20
 
@@ -45,13 +45,13 @@ googleAnalytics = ""
   [[menu.main]]
     name = "Archive"
     identifier = "archive"
-    url = "/posts/"
+    url = "/archive/"
     weight = 50
 
    [[menu.main]]
     identifier = "impressum"
     name       = "Impressum"
-    url        = "impressum/"
+    url        = "/impressum/"
     weight     = 60  
 
 [taxonomies]
