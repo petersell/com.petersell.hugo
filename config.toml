@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "/"
 languageCode = "de"
 title = "Andreas Petersell"
 #theme = "anubis"
@@ -19,34 +19,34 @@ googleAnalytics = ""
 [menu]
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-
-  [[menu.main]]
     identifier = "categories"
     name = "Kategorie"
     url = "/categories/"
-    weight = 20
+    weight = 10
 
   [[menu.main]]
     identifier = "series"
     name = "Artikelserie"
     url = "/series/"
-    weight = 30        
+    weight = 20        
 
   [[menu.main]]
     identifier = "tags"
     name = "Stichwörter"
     url = "/tags/"
-    weight = 40
+    weight = 30
 
   [[menu.main]]
     name = "Archive"
     identifier = "archive"
-    url = "/archive/"
-    weight = 50
+    url = "/archive/post/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Über"
+    url = "/about/"
+    weight = 50  
 
    [[menu.main]]
     identifier = "impressum"

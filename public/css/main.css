@@ -1,18 +1,20 @@
 :root {
-    --background: #000000;
-    --background-light: #cecccc;
+    --background: #3f3f3f;
+    --color: #398b03;
+    --background-light: #878787;
     --foreground: #ffffff;
     --fontSize: 1.2rem;
-    --verticalRhythm: 1.8rem;
+    --verticalRhythm: 1.6rem;
     --contentWidth: 900px;
 }
 
-html {
+html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
-*, *::before, *::after { box-sizing: content-box; }
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
     line-height: var(--verticalRhythm);
@@ -30,29 +32,97 @@ body {
 
 nav {
     margin: var(--verticalRhythm) auto;
+    margin-left: 0px;
+    padding: 0px;
 }
 
-nav > * {
-    background: var(--background-light);
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    /*margin: 0 0.5rem;*/
     padding: 0.5rem;
+    border-radius: 4px;
+    background: var(--background);
+    margin-right: 5px;
 }
 
 /*Petersell Start*/
 
+.nav-list:hover {
+    background-color: #44aa00;
+  }
+
+.nav-list:active {
+    background-color: var(--color);
+  }  
+
+.nav-list, a {
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+  }  
+
+nav a:link {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+nav a:hover   {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+h1 {
+    color: var(--background);
+}
+
 h2 {
     margin-top: 2em;
+    color: var(--background);
 }
 
 h3, h4 { margin-top: 1.5em; }
 
-p.copyright {
-    font-size: 80%;
-    text-align: center;    
+/*a {
+    text-decoration: none;
+}*/
+
+a:link    { 
+    color: var(--color);
 }
 
-.imageblock { margin-top: 2em; }
+a:visited {
+    color: var(--color);
+}
 
-/*Petersell Ende*/
+a:focus   { 
+    color: var(--background);
+}
+a:hover   {
+    color: var(--background);
+}
+
+a:active  {
+    color: var(--background);
+}
+
+/*Content*/
+
+.imageblock {
+    margin-top: 2em;
+    text-align: left;
+}
 
 table, thead, tbody {
     border: var(--background) solid 1px;
@@ -69,6 +139,16 @@ tr:nth-child(even) {
     background: var(--background-light);
 }
 
+td.icon {
+    background: var(--color);
+    color: var(--foreground);
+}
+
+td.content > div.title {
+    font-weight: bold;
+    font-style: italic;
+}
+
 pre {
     padding: 1rem;
     border: var(--background) solid 1px;
@@ -81,10 +161,112 @@ pre {
     height: auto;
 }*/
 
+/*Anubis index.html Start*/
+
+.article-info {
+    font-size: 0.75em;
+    color: var(--background);
+    margin-top: 1em;
+}
+
+.article-info a {
+    color: var(--background);
+}
+
+.article-info a:hover {
+    color: var(--color);
+}
+
+.post-short-list .article-info {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.article-taxonomies {
+    display: inline;
+}
+
+.article-date {
+    white-space: nowrap;
+}
+
+.article-categories {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+}
+
+.article-categories li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.article-tags {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-tags li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.read-more {
+    font-size: 0.85em;
+}
+/*Anubis index.html Ende*/
+
+/*Footer*/
+
 footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: var(--background);
+    line-height: 1.2rem;
+}
+
+.footernav:hover {
+    background-color: var(--color);
+}
+
+footer a:link {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+.footernav, a {
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+  }  
+
+p.copyright {
+    font-size: 80%;
+    text-align: center;    
 }
 
 .pagination {
@@ -100,11 +282,12 @@ footer {
     border: var(--background) solid 1px;
 }
 
+/* original
 .post {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
 .post-title {
     font-size: calc(var(--fontSize) * 2);
