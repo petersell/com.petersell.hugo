@@ -54,7 +54,7 @@ Legen Sie einen Ordner `images` innerhalb des post-Ordners an.
 ....
 |-- content
     |-- post
-        |-- images
+        └-- images
 ....
 
 Da Sie wissen, dass Ihre Bilddatei `meinblogpost.gif` heißt, legen Sie einen weiteren Ordner `meinblogpost` innerhalb des `images`-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.
@@ -63,8 +63,8 @@ Da Sie wissen, dass Ihre Bilddatei `meinblogpost.gif` heißt, legen Sie einen we
 |-- content
     |-- post
         |-- images
-        |   |-- meinblogpost.gif
-        |-- meinblogpost.adoc
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc
 ....
 
 == Fazit

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tag2 on Andreas Petersell</title>
-    <link>http://localhost:1313/tags/tag2/</link>
+    <link>/tags/tag2/</link>
     <description>Recent content in tag2 on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
@@ -10,18 +10,18 @@
     <lastBuildDate>Tue, 24 Mar 2020 15:20:33 +0100</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="http://localhost:1313/tags/tag2/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/tag2/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Asciidoc Test</title>
-      <link>http://localhost:1313/post/asciidoc-test/</link>
+      <link>/post/asciidoc-test/</link>
       <category>tag1</category>
       <category>tag2</category>
       <pubDate>Tue, 24 Mar 2020 15:20:33 +0100</pubDate>
       
-      <guid>http://localhost:1313/post/asciidoc-test/</guid>
+      <guid>/post/asciidoc-test/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
 &lt;/div&gt;
