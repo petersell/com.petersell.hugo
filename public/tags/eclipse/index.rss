@@ -16,12 +16,12 @@
     
     <item>
       <title>Einbinden der DITA-DTDs in Eclipse</title>
-      <link>/post/dita-fuer-eclipse/</link>
+      <link>/blog/dita-fuer-eclipse/</link>
       <category>dita</category>
       <category>eclipse</category>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/dita-fuer-eclipse/</guid>
+      <guid>/blog/dita-fuer-eclipse/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
 &lt;/div&gt;

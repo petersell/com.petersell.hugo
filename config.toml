@@ -19,16 +19,16 @@ googleAnalytics = ""
 [menu]
 
   [[menu.main]]
-    identifier = "categories"
-    name = "Kategorie"
-    url = "/categories/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 10
 
   [[menu.main]]
-    identifier = "series"
-    name = "Artikelserie"
-    url = "/series/"
-    weight = 20        
+    identifier = "categories"
+    name = "Kategorie"
+    url = "/categories/"
+    weight = 20
 
   [[menu.main]]
     identifier = "tags"
@@ -39,25 +39,24 @@ googleAnalytics = ""
   [[menu.main]]
     name = "Archive"
     identifier = "archive"
-    url = "/archive/post/"
+    url = "/archive/blog/"
     weight = 40
 
   [[menu.main]]
     identifier = "about"
     name = "Über"
-    url = "/about/"
+    url = "/homepage/about/"
     weight = 50  
 
    [[menu.main]]
     identifier = "impressum"
     name       = "Impressum"
-    url        = "/impressum/"
+    url        = "/homepage/impressum/"
     weight     = 60  
 
 [taxonomies]
 category = "categories"
 tag = "tags"
-series = "series"
 
 [mediaTypes]
     [mediaTypes."application/atom+xml"]

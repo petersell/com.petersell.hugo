@@ -13,9 +13,9 @@
   
   
   <entry>
-    <id>/archive/post/</id>
+    <id>/archive/blog/</id>
     <title type="text">Archive</title>
-    <link rel="alternate" href="/archive/post/" hreflang="en" title="Archive"/>
+    <link rel="alternate" href="/archive/blog/" hreflang="en" title="Archive"/>
     <published>0001-01-01T00:00:00Z</published>
     <updated>0001-01-01T00:00:00Z</updated>
     <content type="html"></content>

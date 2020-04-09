@@ -49,12 +49,13 @@ nav ul li {
     border-radius: 4px;
     background: var(--background);
     margin-right: 5px;
+    margin-top: 5px;
 }
 
 /*Petersell Start*/
 
 .nav-list:hover {
-    background-color: #44aa00;
+    background-color: var(--color);
   }
 
 .nav-list:active {
@@ -164,7 +165,7 @@ pre {
 /*Anubis index.html Start*/
 
 .article-info {
-    font-size: 0.75em;
+    font-size: 0.9em;
     color: var(--background);
     margin-top: 1em;
 }

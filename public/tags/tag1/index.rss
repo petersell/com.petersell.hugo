@@ -16,12 +16,12 @@
     
     <item>
       <title>Asciidoc Test</title>
-      <link>/post/asciidoc-test/</link>
+      <link>/blog/asciidoc-test/</link>
       <category>tag1</category>
       <category>tag2</category>
       <pubDate>Tue, 24 Mar 2020 15:20:33 +0100</pubDate>
       
-      <guid>/post/asciidoc-test/</guid>
+      <guid>/blog/asciidoc-test/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
 &lt;/div&gt;
