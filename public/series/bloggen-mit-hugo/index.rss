@@ -16,11 +16,11 @@
     
     <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>/post/hugo-asciidoc-bilder-einbinden/</link>
+      <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
       <category>hugo-asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
-      <guid>/post/hugo-asciidoc-bilder-einbinden/</guid>
+      <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
       <description>&lt;div id=&#34;preamble&#34;&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -92,7 +92,7 @@
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre&gt;|-- content
     |-- post
-        |-- images&lt;/pre&gt;
+        └-- images&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -103,8 +103,8 @@
 &lt;pre&gt;|-- content
     |-- post
         |-- images
-        |   |-- meinblogpost.gif
-        |-- meinblogpost.adoc&lt;/pre&gt;
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

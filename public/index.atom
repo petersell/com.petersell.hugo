@@ -13,13 +13,13 @@
   
   
   <entry>
-    <id>/impressum/</id>
+    <id>/homepage/impressum/</id>
     <title type="text">Impressum</title>
-    <link rel="alternate" href="/impressum/" hreflang="en" title="Impressum"/>
+    <link rel="alternate" href="/homepage/impressum/" hreflang="en" title="Impressum"/>
     <published>2020-04-02T00:00:00Z</published>
     <updated>2020-04-02T00:00:00Z</updated>
     <content type="html">
-&lt;p&gt;&lt;img src=&#34;../imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
 &lt;h3&gt;Datenschutzerkl&amp;auml;rung&lt;/h3&gt;
 &lt;p&gt;Diese Datenschutzerkl&amp;auml;rung kl&amp;auml;rt Sie &amp;uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &amp;bdquo;Daten&amp;ldquo;) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&amp;auml;senzen, wie z.B. unser Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als &amp;bdquo;Onlineangebot&amp;ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &amp;bdquo;Verarbeitung&amp;ldquo; oder &amp;bdquo;Verantwortlicher&amp;ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).&lt;/p&gt;
 &lt;h3 id=&#34;dsg-general-controller&#34;&gt;Verantwortlicher&lt;/h3&gt;
@@ -80,9 +80,9 @@
   </entry>
   
   <entry>
-    <id>/about/</id>
+    <id>/homepage/about/</id>
     <title type="text">Über den Autor</title>
-    <link rel="alternate" href="/about/" hreflang="en" title="Über den Autor"/>
+    <link rel="alternate" href="/homepage/about/" hreflang="en" title="Über den Autor"/>
     <author><name>Andreas Petersell<name></author>
     <published>2020-03-30T00:00:00Z</published>
     <updated>2020-03-30T00:00:00Z</updated>
@@ -98,13 +98,13 @@
 
 &lt;h2&gt;Ebooks&lt;/h2&gt;
 &lt;p&gt;als EPUB und PDF downloadbar.&lt;/p&gt;
-&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
   
   <entry>
-    <id>/post/asciidoc-test/</id>
+    <id>/blog/asciidoc-test/</id>
     <title type="text">Asciidoc Test</title>
-    <link rel="alternate" href="/post/asciidoc-test/" hreflang="en" title="Asciidoc Test"/>
+    <link rel="alternate" href="/blog/asciidoc-test/" hreflang="en" title="Asciidoc Test"/>
     <author><name>Andreas Petersell<name></author>
     <category term="tag1"/>
     <category term="tag2"/>
@@ -295,9 +295,9 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
   </entry>
   
   <entry>
-    <id>/post/hugo-asciidoc-bilder-einbinden/</id>
+    <id>/blog/hugo-asciidoc-bilder-einbinden/</id>
     <title type="text">Hugo mit Asciidoc - Bilder einbinden</title>
-    <link rel="alternate" href="/post/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
+    <link rel="alternate" href="/blog/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo-asciidoc"/>
     <published>2020-03-22T20:08:10+01:00</published>
@@ -373,7 +373,7 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre&gt;|-- content
     |-- post
-        |-- images&lt;/pre&gt;
+        └-- images&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -384,8 +384,8 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;pre&gt;|-- content
     |-- post
         |-- images
-        |   |-- meinblogpost.gif
-        |-- meinblogpost.adoc&lt;/pre&gt;
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -407,9 +407,24 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
   </entry>
   
   <entry>
-    <id>/post/dita-fuer-eclipse/</id>
+    <id>/blog/tweetsjobikado/</id>
+    <title type="text">Tweets@jobikado</title>
+    <link rel="alternate" href="/blog/tweetsjobikado/" hreflang="en" title="Tweets@jobikado"/>
+    <category term="tweet"/>
+    <category term="jobikado"/>
+    <published>2020-02-20T00:00:00Z</published>
+    <updated>2020-02-20T00:00:00Z</updated>
+    <content type="html">&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;de&#34; dir=&#34;ltr&#34;&gt;Wir haben ihn: den 73. Platz in der 1. Phase des &lt;a href=&#34;https://twitter.com/BPW_wirgruenden?ref_src=twsrc%5Etfw&#34;&gt;@BPW_wirgruenden&lt;/a&gt; Businessplanwettbewerbs! Da haben wir noch Platz nach oben. Darum 2. Phase. &lt;a href=&#34;https://twitter.com/hashtag/wirgr%C3%BCnden?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#wirgründen&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jobikado (@jobikado) &lt;a href=&#34;https://twitter.com/jobikado/status/1230401276434931712?ref_src=twsrc%5Etfw&#34;&gt;February 20, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;de&#34; dir=&#34;ltr&#34;&gt;Geschafft: wir haben für die 1. Phase des &lt;a href=&#34;https://twitter.com/BPW_wirgruenden?ref_src=twsrc%5Etfw&#34;&gt;@BPW_wirgruenden&lt;/a&gt; unseren Businessplan eingereicht. &lt;a href=&#34;https://twitter.com/hashtag/wirgr%C3%BCnden?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#wirgründen&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jobikado (@jobikado) &lt;a href=&#34;https://twitter.com/jobikado/status/1202487609328652288?ref_src=twsrc%5Etfw&#34;&gt;December 5, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>/blog/dita-fuer-eclipse/</id>
     <title type="text">Einbinden der DITA-DTDs in Eclipse</title>
-    <link rel="alternate" href="/post/dita-fuer-eclipse/" hreflang="en" title="Einbinden der DITA-DTDs in Eclipse"/>
+    <link rel="alternate" href="/blog/dita-fuer-eclipse/" hreflang="en" title="Einbinden der DITA-DTDs in Eclipse"/>
     <author><name>Andreas Petersell<name></author>
     <category term="dita"/>
     <category term="eclipse"/>
@@ -460,9 +475,9 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
   </entry>
   
   <entry>
-    <id>/archive/post/</id>
+    <id>/archive/blog/</id>
     <title type="text">Archive</title>
-    <link rel="alternate" href="/archive/post/" hreflang="en" title="Archive"/>
+    <link rel="alternate" href="/archive/blog/" hreflang="en" title="Archive"/>
     <published>0001-01-01T00:00:00Z</published>
     <updated>0001-01-01T00:00:00Z</updated>
     <content type="html"></content>

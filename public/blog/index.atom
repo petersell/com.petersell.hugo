@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Andreas Petersell</title>
+  <link rel="alternate" type="text/html" href="/"/>
+  <link rel="self" type="application/atom+xml" href="/blog/index.atom"/>
+  <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
+  <generator>Hugo -- gohugo.io</generator>
+  <updated>2020-03-24T15:20:33+01:00</updated>
+  <author>
+    <name>Andreas Petersell</name>
+  </author>
+  <id>/blog/</id>
+  
+  
+  <entry>
+    <id>/blog/asciidoc-test/</id>
+    <title type="text">Asciidoc Test</title>
+    <link rel="alternate" href="/blog/asciidoc-test/" hreflang="en" title="Asciidoc Test"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="tag1"/>
+    <category term="tag2"/>
+    <published>2020-03-24T15:20:33+01:00</published>
+    <updated>2020-03-24T15:20:33+01:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_first_level_heading&#34;&gt;First level heading&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is a paragraph with a &lt;strong&gt;bold&lt;/strong&gt; word and an &lt;em&gt;italicized&lt;/em&gt; word.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;image-file-name.png&#34; alt=&#34;I am the image alt text.&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 1. Image caption&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is another paragraph.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_1&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_1&#34; title=&#34;View footnote.&#34;&gt;1&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_second_level_heading&#34;&gt;Second level heading&lt;/h3&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Unordered list title&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;list item 1&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;nested list item&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;nested nested list item 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nested nested list item 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;list item 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;exampleblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Example 1. Example block title&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Content in an example block is subject to normal substitutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sidebarblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Sidebar title&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sidebars contain aside text and are subject to normal substitutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_third_level_heading&#34;&gt;Third level heading&lt;/h4&gt;
+&lt;div id=&#34;id-for-listing-block&#34; class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Listing block title&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect4&#34;&gt;
+&lt;h5 id=&#34;_fourth_level_heading&#34;&gt;Fourth level heading&lt;/h5&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;caption class=&#34;title&#34;&gt;Table 1. Table title&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 50%;&#34;&gt;
+&lt;col style=&#34;width: 50%;&#34;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Column heading 1&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Column heading 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 1, row 1&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 2, row 1&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 1, row 2&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 2, row 2&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;sect5&#34;&gt;
+&lt;h6 id=&#34;_fifth_level_heading&#34;&gt;Fifth level heading&lt;/h6&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;I am a block quote or a prose excerpt.
+I am subject to normal substitutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; firstname lastname&lt;br&gt;
+&lt;cite&gt;movie title&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;verseblock&#34;&gt;
+&lt;pre class=&#34;content&#34;&gt;I am a verse block.
+  Indents and endlines are preserved in verse blocks.&lt;/pre&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; firstname lastname&lt;br&gt;
+&lt;cite&gt;poem title and more&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_first_level_heading_2&#34;&gt;First level heading&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+There are five admonition labels: Tip, Note, Important, Caution and Warning.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;ordered list item&lt;/p&gt;
+&lt;div class=&#34;olist loweralpha&#34;&gt;
+&lt;ol class=&#34;loweralpha&#34; type=&#34;a&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;nested ordered list item&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ordered list item&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;The text at the end of this sentence is cross referenced to &lt;a href=&#34;#_third_level_heading&#34;&gt;the third level heading&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_first_level_heading_3&#34;&gt;First level heading&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is a link to the &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/&#34;&gt;Asciidoctor User Manual&lt;/a&gt;.
+This is an attribute reference {quick-uri}[which links this text to the Asciidoctor Quick Reference Guide].&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;footnotes&#34;&gt;
+&lt;hr&gt;
+&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_1&#34;&gt;
+&lt;a href=&#34;#_footnoteref_1&#34;&gt;1&lt;/a&gt;. I am footnote text and will be displayed at the bottom of the article.
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>/blog/hugo-asciidoc-bilder-einbinden/</id>
+    <title type="text">Hugo mit Asciidoc - Bilder einbinden</title>
+    <link rel="alternate" href="/blog/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="hugo-asciidoc"/>
+    <published>2020-03-22T20:08:10+01:00</published>
+    <updated>2020-03-22T20:08:10+01:00</updated>
+    <content type="html">&lt;div id=&#34;preamble&#34;&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Gottseidank fand ich auf Github den Quelltext des Blogs &lt;a href=&#34;https://foo-dogsquared.github.io&#34; class=&#34;bare&#34;&gt;https://foo-dogsquared.github.io&lt;/a&gt; mit einem einfachen Beispiel der Bildeinbindung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Hugo und Asciidoctor installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/&#34;&gt;Blogging with Asciidoctor and Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc&#34;&gt;Beispiel der Bildeinbindung&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_1_content_datei_editieren&#34;&gt;1. Content-Datei editieren&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Schreiben Sie Ihren Blogpost in der Datei &lt;code&gt;meinblogpost.adoc&lt;/code&gt; und fügen das Bild im Text ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;image::meinblogpost.gif[]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/meinblogpostimage/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_2_bild_abspeichern&#34;&gt;2. Bild abspeichern&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Legen Sie einen Ordner &lt;code&gt;images&lt;/code&gt; innerhalb des post-Ordners an.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        └-- images&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da Sie wissen, dass Ihre Bilddatei &lt;code&gt;meinblogpost.gif&lt;/code&gt; heißt, legen Sie einen weiteren Ordner &lt;code&gt;meinblogpost&lt;/code&gt; innerhalb des &lt;code&gt;images&lt;/code&gt;-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        |-- images
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_fazit&#34;&gt;Fazit&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Bilder werden also nicht in den Standard-Ordner für Bilder &lt;code&gt;static&lt;/code&gt; abgelegt. Da ich sowieso eine Bilddatenbank &lt;em&gt;Piwigo&lt;/em&gt; habe, überlege ich, ob ich nicht via URLs dorthin verlinke.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>/blog/tweetsjobikado/</id>
+    <title type="text">Tweets@jobikado</title>
+    <link rel="alternate" href="/blog/tweetsjobikado/" hreflang="en" title="Tweets@jobikado"/>
+    <category term="tweet"/>
+    <category term="jobikado"/>
+    <published>2020-02-20T00:00:00Z</published>
+    <updated>2020-02-20T00:00:00Z</updated>
+    <content type="html">&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;de&#34; dir=&#34;ltr&#34;&gt;Wir haben ihn: den 73. Platz in der 1. Phase des &lt;a href=&#34;https://twitter.com/BPW_wirgruenden?ref_src=twsrc%5Etfw&#34;&gt;@BPW_wirgruenden&lt;/a&gt; Businessplanwettbewerbs! Da haben wir noch Platz nach oben. Darum 2. Phase. &lt;a href=&#34;https://twitter.com/hashtag/wirgr%C3%BCnden?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#wirgründen&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jobikado (@jobikado) &lt;a href=&#34;https://twitter.com/jobikado/status/1230401276434931712?ref_src=twsrc%5Etfw&#34;&gt;February 20, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;de&#34; dir=&#34;ltr&#34;&gt;Geschafft: wir haben für die 1. Phase des &lt;a href=&#34;https://twitter.com/BPW_wirgruenden?ref_src=twsrc%5Etfw&#34;&gt;@BPW_wirgruenden&lt;/a&gt; unseren Businessplan eingereicht. &lt;a href=&#34;https://twitter.com/hashtag/wirgr%C3%BCnden?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#wirgründen&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jobikado (@jobikado) &lt;a href=&#34;https://twitter.com/jobikado/status/1202487609328652288?ref_src=twsrc%5Etfw&#34;&gt;December 5, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>/blog/dita-fuer-eclipse/</id>
+    <title type="text">Einbinden der DITA-DTDs in Eclipse</title>
+    <link rel="alternate" href="/blog/dita-fuer-eclipse/" hreflang="en" title="Einbinden der DITA-DTDs in Eclipse"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="dita"/>
+    <category term="eclipse"/>
+    <published>2019-04-17T00:00:00Z</published>
+    <updated>2019-04-17T00:00:00Z</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-tip&#34; title=&#34;Tip&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie müssen das Java JDK und Eclipse installiert haben. Ein Java JRE war in meinem Fall nicht ausreichend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/dita-fuer-eclipse/dita-fuer-eclipse.gif&#34; alt=&#34;DITA in Eclipse&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Klicken Sie in Eclipse auf &lt;em&gt;Window &amp;gt; Preferences&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Öffnen Sie die Menüverzeichnisbaum unterhalb &lt;em&gt;XML&lt;/em&gt; und klicken Sie auf &lt;em&gt;XML Catalog&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicken Sie im Fenster &lt;em&gt;Preferences&lt;/em&gt; auf &lt;em&gt;Add&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicken Sie auf &lt;em&gt;Next Catalog&lt;/em&gt; und anschließend auf &lt;em&gt;File System&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Springen Sie im Fenster &lt;em&gt;Öffnen&lt;/em&gt; auf die Datei &lt;code&gt;catalog-dita.xml&lt;/code&gt; im Hauptverzeichnis Ihres aktuellen DITA Open Toolkits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+</feed>

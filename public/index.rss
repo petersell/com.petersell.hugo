@@ -16,12 +16,12 @@
     
     <item>
       <title>Impressum</title>
-      <link>/impressum/</link>
+      <link>/homepage/impressum/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/impressum/</guid>
+      <guid>/homepage/impressum/</guid>
       <description>
-&lt;p&gt;&lt;img src=&#34;../imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
 &lt;h3&gt;Datenschutzerkl&amp;auml;rung&lt;/h3&gt;
 &lt;p&gt;Diese Datenschutzerkl&amp;auml;rung kl&amp;auml;rt Sie &amp;uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &amp;bdquo;Daten&amp;ldquo;) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&amp;auml;senzen, wie z.B. unser Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als &amp;bdquo;Onlineangebot&amp;ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &amp;bdquo;Verarbeitung&amp;ldquo; oder &amp;bdquo;Verantwortlicher&amp;ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).&lt;/p&gt;
 &lt;h3 id=&#34;dsg-general-controller&#34;&gt;Verantwortlicher&lt;/h3&gt;
@@ -83,10 +83,10 @@
     
     <item>
       <title>Über den Autor</title>
-      <link>/about/</link>
+      <link>/homepage/about/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>/homepage/about/</guid>
       <description>
 &lt;p&gt;Dies ist ein privater Blog des&lt;/p&gt;
 &lt;ul&gt;
@@ -99,17 +99,17 @@
 
 &lt;h2&gt;Ebooks&lt;/h2&gt;
 &lt;p&gt;als EPUB und PDF downloadbar.&lt;/p&gt;
-&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Asciidoc Test</title>
-      <link>/post/asciidoc-test/</link>
+      <link>/blog/asciidoc-test/</link>
       <category>tag1</category>
       <category>tag2</category>
       <pubDate>Tue, 24 Mar 2020 15:20:33 +0100</pubDate>
       
-      <guid>/post/asciidoc-test/</guid>
+      <guid>/blog/asciidoc-test/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
 &lt;/div&gt;
@@ -296,11 +296,11 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
     
     <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>/post/hugo-asciidoc-bilder-einbinden/</link>
+      <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
       <category>hugo-asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
-      <guid>/post/hugo-asciidoc-bilder-einbinden/</guid>
+      <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
       <description>&lt;div id=&#34;preamble&#34;&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -372,7 +372,7 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre&gt;|-- content
     |-- post
-        |-- images&lt;/pre&gt;
+        └-- images&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -383,8 +383,8 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;pre&gt;|-- content
     |-- post
         |-- images
-        |   |-- meinblogpost.gif
-        |-- meinblogpost.adoc&lt;/pre&gt;
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -406,13 +406,28 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
     </item>
     
     <item>
+      <title>Tweets@jobikado</title>
+      <link>/blog/tweetsjobikado/</link>
+      <category>tweet</category>
+      <category>jobikado</category>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tweetsjobikado/</guid>
+      <description>&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;de&#34; dir=&#34;ltr&#34;&gt;Wir haben ihn: den 73. Platz in der 1. Phase des &lt;a href=&#34;https://twitter.com/BPW_wirgruenden?ref_src=twsrc%5Etfw&#34;&gt;@BPW_wirgruenden&lt;/a&gt; Businessplanwettbewerbs! Da haben wir noch Platz nach oben. Darum 2. Phase. &lt;a href=&#34;https://twitter.com/hashtag/wirgr%C3%BCnden?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#wirgründen&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jobikado (@jobikado) &lt;a href=&#34;https://twitter.com/jobikado/status/1230401276434931712?ref_src=twsrc%5Etfw&#34;&gt;February 20, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;de&#34; dir=&#34;ltr&#34;&gt;Geschafft: wir haben für die 1. Phase des &lt;a href=&#34;https://twitter.com/BPW_wirgruenden?ref_src=twsrc%5Etfw&#34;&gt;@BPW_wirgruenden&lt;/a&gt; unseren Businessplan eingereicht. &lt;a href=&#34;https://twitter.com/hashtag/wirgr%C3%BCnden?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#wirgründen&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jobikado (@jobikado) &lt;a href=&#34;https://twitter.com/jobikado/status/1202487609328652288?ref_src=twsrc%5Etfw&#34;&gt;December 5, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
       <title>Einbinden der DITA-DTDs in Eclipse</title>
-      <link>/post/dita-fuer-eclipse/</link>
+      <link>/blog/dita-fuer-eclipse/</link>
       <category>dita</category>
       <category>eclipse</category>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/dita-fuer-eclipse/</guid>
+      <guid>/blog/dita-fuer-eclipse/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
 &lt;/div&gt;
@@ -459,10 +474,10 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
     
     <item>
       <title>Archive</title>
-      <link>/archive/post/</link>
+      <link>/archive/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/archive/post/</guid>
+      <guid>/archive/blog/</guid>
       <description></description>
     </item>
     

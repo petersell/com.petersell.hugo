@@ -16,12 +16,12 @@
     
     <item>
       <title>Asciidoc Test</title>
-      <link>/post/asciidoc-test/</link>
+      <link>/blog/asciidoc-test/</link>
       <category>tag1</category>
       <category>tag2</category>
       <pubDate>Tue, 24 Mar 2020 15:20:33 +0100</pubDate>
       
-      <guid>/post/asciidoc-test/</guid>
+      <guid>/blog/asciidoc-test/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
 &lt;/div&gt;
@@ -208,11 +208,11 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
     
     <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>/post/hugo-asciidoc-bilder-einbinden/</link>
+      <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
       <category>hugo-asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
-      <guid>/post/hugo-asciidoc-bilder-einbinden/</guid>
+      <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
       <description>&lt;div id=&#34;preamble&#34;&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -284,7 +284,7 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre&gt;|-- content
     |-- post
-        |-- images&lt;/pre&gt;
+        └-- images&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -295,8 +295,8 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;pre&gt;|-- content
     |-- post
         |-- images
-        |   |-- meinblogpost.gif
-        |-- meinblogpost.adoc&lt;/pre&gt;
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -314,58 +314,6 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Einbinden der DITA-DTDs in Eclipse</title>
-      <link>/post/dita-fuer-eclipse/</link>
-      <category>dita</category>
-      <category>eclipse</category>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/dita-fuer-eclipse/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;admonitionblock tip&#34;&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class=&#34;icon&#34;&gt;
-&lt;i class=&#34;fa icon-tip&#34; title=&#34;Tip&#34;&gt;&lt;/i&gt;
-&lt;/td&gt;
-&lt;td class=&#34;content&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie müssen das Java JDK und Eclipse installiert haben. Ein Java JRE war in meinem Fall nicht ausreichend.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/dita-fuer-eclipse/dita-fuer-eclipse.gif&#34; alt=&#34;DITA in Eclipse&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Klicken Sie in Eclipse auf &lt;em&gt;Window &amp;gt; Preferences&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Öffnen Sie die Menüverzeichnisbaum unterhalb &lt;em&gt;XML&lt;/em&gt; und klicken Sie auf &lt;em&gt;XML Catalog&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Klicken Sie im Fenster &lt;em&gt;Preferences&lt;/em&gt; auf &lt;em&gt;Add&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Klicken Sie auf &lt;em&gt;Next Catalog&lt;/em&gt; und anschließend auf &lt;em&gt;File System&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Springen Sie im Fenster &lt;em&gt;Öffnen&lt;/em&gt; auf die Datei &lt;code&gt;catalog-dita.xml&lt;/code&gt; im Hauptverzeichnis Ihres aktuellen DITA Open Toolkits.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/div&gt;</description>
     </item>
     
