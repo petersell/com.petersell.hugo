@@ -1,0 +1,56 @@
+---
+author: Andreas Petersell
+title: "Asciidoctor auf Windows einrichten"
+date: 2019-11-15
+draft: false
+
+categories:
+    - "techcomm"
+tags: 
+    - "asciidoc"
+    - "asciidoctor"   
+---
+
+:toc: macro
+:toclevels: 2
+:toc-title:
+:sectanchors:
+:imagesdir: ../images/asciidoc-asciidoctor-install/
+
+AsciiDoc ist eine vereinfachte Auszeichnungssprache ähnlich Markdown, die dazu dient, Texte in verschiedenen Dokumentenformaten zu veröffentlichen. Asciidoc wurde speziell für die Technische Dokumentation entwickelt und wird in vielen Git-Portalen als Dokumentationsstandard genutzt. Es hat jedoch nicht die Möglichkeiten der Wiederverwendung wie DITA-XML. Neuer Rechner, neuer Doktor: wie muss ich ihn installieren? Jetzt schreibe ich es auf, denn ich vergesse es jedes Mal.
+<!--more-->
+
+toc::[]
+
+== Ruby installieren
+image::rubyinstall1.gif[]
+
+Der Installationsroutine folgen.
+
+image::rubyinstall2.gif[]
+
+== Asciidoctor installieren
+
+Öffnen Sie eine Eingabeauforderung und geben Sie folgenden Befehl ein und drücken Sie [Enter].
+
+----
+$ gem install --http-proxy http://@proxy.<Proxyservername>.<Port> asciidoctor
+----
+
+image::asciidoctor-install.gif[]
+
+Arbeiten Sie ohne Proxyserver, genügt ein `gem install asciidoctor`.
+
+== Asciidoctor für PDF installieren
+
+----
+$ gem install --http-proxy http://@proxy.<Proxyservername>.<Port> asciidoctor-pdf --pre
+----
+
+image::asciidoctor-pdf.gif[]
+
+Das war´s. Sie können nun mit Hilfe von adoc-Dateien  https://asciidoctor.org/docs/user-manual/#html[Output erzeugen].
+
+----
+$ asciidoctor mysample.adoc
+----
