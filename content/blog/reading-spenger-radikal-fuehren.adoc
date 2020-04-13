@@ -1,0 +1,421 @@
+---
+author: Andreas Petersell
+title: "Reinhard K. Spenger - Radikal führen"
+date: 2019-07-18
+draft: false
+
+categories:
+    - "Jobikado"
+tags: 
+    - "teamarbeit"
+    - "readinglist"    
+---
+
+:toc: macro
+:toclevels: 1
+:toc-title:
+:imagesdir: ../images/reading-spenger-radikal-fuehren/
+
+Immer wieder zitiere ich aus diesem Meisterwerk der innerbetrieblichen Organisation. Als Innovationmanager habe ich mich oft gefragt, warum meine und viele andere Firmen nicht zu wirklicher Innovation fähig sind. Spenger gibt in diesem Buch eine Antwort auf diese Frage. Der Titel ist ein wenig irreführend. Jeder, egal ob Führungskraft oder Mitarbeiter, sollte sich dieses Buch zu Herzen nehmen. Im folgenden meine Anstreichungen.
+<!--more-->
+
+toc::[]
+
+== Quelle
+
+Reinhard K. Spenger: Radikal führen, Frankfurt 2012
+
+image::reading-spenger-radikal-fuehren.gif[]
+
+== Kapitel "Führung"
+
+[quote]
+____
+
+Was ist der *Zweck der Führung*? Die konzentrierteste Antwortet lautet: das Überleben des Unternehmens zu sichern. Ein Unternehmen strebt – wie alle sozialen Systeme – nach Selbsterhaltung. Es geht vorrangig darum, weiter zu existieren, weiter »mitspielen« zu dürfen. Und dafür sollen Führungskräfte – Sie! – einen Beitrag leisten.footnote:[Reinhard K. Spenger: Radikal führen, Frankfurt 2012, S. 18]
+____
+
+[quote]
+____
+
+Fragen wir also weiter: Werden Sie für Ihre Teamfähigkeit bezahlt? Ich kenne zwar keine Stellenanzeige, in der nicht Teamfähigkeit als unabdingbare Einstellungsvoraussetzung ausgelobt wird. Aber die Unternehmenswirklichkeit spricht eine andere Sprache. Oder haben Sie schon mal gehört, dass ein *Team befördert* wurde?.footnote:[ebd., S. 20]
+____
+
+[quote]
+____
+
+Wenn zum Beispiel ein Mitarbeiter die Anweisung seines Chefs befolgt, ist das dann Führung? Oder ist das nicht allenfalls eine Erklärung für diesen Zusammenhang? Niemand kann in den Mitarbeiter hineinschauen und dort dessen Motivation erkennen. Vielleicht hätte der Mitarbeiter ja auch ohne die Existenz des Chefs genau das getan, was er tat.
+Das korrespondiert mit der Antwort vieler Führungskräfte auf die Frage: »Was hat sich eigentlich an dem Tag geändert, als Sie Führungskraft wurden?« Die häufigste Antwort: »Nichts.« .footnote:[ebd., S. 30]
+____
+
+[quote]
+____
+
+Wodurch wird der Herr zum Herrn? Dadurch, dass er vom Knecht anerkannt wird! Er ist auf die Anerkennung seiner Herrschaft durch den Knecht angewiesen – sein Status ist vom Knecht abgeleitet. Ohne Knecht ist er kein Herr. Der Mitarbeiter hingegen ist und bleibt Mitarbeiter auch ohne Führungskraft. Aber eine Führungskraft ohne Mitarbeiter gibt es nicht. Der Mitarbeiter ist die Bedingung ihrer Existenz.footnote:[ebd., S. 34]
+____
+
+[quote]
+____
+
+Die *Strukturen des Systems* können so mächtig sein, dass sie die Bemühungen einer einzelnen Führungskraft nahezu aussichtslos machen. Gleichgültig, wie sie denkt und handelt, gleichgültig, welches Ziel sie sich vornimmt und wie sehr sie sich Mühe gibt: Die Prozesse bestimmen die Resultate. Wenn zum Beispiel Fehler vom System rigoros bestraft werden, dann werden die Bemühungen einer einzelnen Führungskraft um Kreativität und Innovation fruchtlos bleiben. Weil »Führung« (im Sinne der Institution) etwas anderes will – nämlich Fehlerfreiheit..footnote:[ebd., S. 39]
+____
+
+[quote]
+____
+
+Bleiben wir noch einen Augenblick beim Mannschaftssport, dann kann er noch in einem erweiterten Sinn als Beispiel dienen. Im *personenzentrischen Denken* hat man zum Beispiel ein Abwehrproblem, das man mit frischen Verteidigern lösen will. Man »personalisiert« also das Problem. Im modernen Mannschaftssport spricht man hingegen nicht mehr von einem Abwehrproblem, sondern von der »Organisation der Defensive«. Was auf den ersten Blick nur einen sprachlichen Unterschied macht, ist taktisch von erheblicher Konsequenz. Die Defensivarbeit beginnt vorn bei der Spitze, beim Stürmer, und verdichtet sich dann zurück bis hinein in den eigenen Strafraum. Es geht also um das Defensivverhalten der ganzen Mannschaft. Damit sind alle Spieler an der Defensivarbeit beteiligt, wie eben auch alle für die Offensive verantwortlich sind. Auf das Unternehmen übertragen: Muss nicht auch jeder im Unternehmen ein Verkäufer sein?footnote:[ebd., S. 43]
+____
+
+[quote]
+____
+
+Das *System hat ein Gesicht*, ein persönliches: Es ist das Ihre! Als Chef sind Sie es, in dessen Handeln alle Unternehmens-Botschaften zusammenlaufen. Sie bilden die Einheit von Führung und Führungskraft, von personenzentrischem und systemischem Denken; in Ihnen wird auch die indirekte Führung direkt. Sie sind gleichsam die institutionelle Verkörperung des Unternehmenszwecks, der Werteträger. Ihre bare Anwesenheit »kommuniziert« das organisatorische »Sollen«! Ob Sie das wollen oder nicht. Und zumeist werden Ihnen von Ihren Mitarbeitern auch Entscheidungsspielräume unterstellt, die Sie faktisch gar nicht haben. Ist das fair? Nein. Ist das gerecht? Nein. Aber aus der Sicht des Mitarbeiters ist das praktisch.footnote:[ebd., S. 47]
+____
+
+[quote]
+____
+
+Der normative *Vorrang des Organisatorischen vor dem Individuellen*: Das ist kein Pessimismus, keine Absage an die Tatkraft und das Talent des Einzelnen, sondern eine realistische Einschätzung der Sachlage. Wie ich in einem anderen Zusammenhang schrieb: Kluge Menschen haben in dummen Organisationen keine Chance.footnote:[ebd., S. 49]
+____
+
+[quote]
+____
+
+Fassen wir zusammen: Warum scheitern so viele Initiativen zum Change-Management, warum gelingt der Wandel nicht? Weil vorzugsweise die direkte *Führung des personenzentrischen Ansatzes* exekutiert wird. Zwar gehört heute der Hinweis, dass ein rein personenzentrisches Vorgehen nicht ausreicht, zum normativen Pflichtpensum der Wohlmeinenden. Tatsächlich aber passiert wenig. Das *Verändern der Strukturen* bleibt tabu. Warum? Weil man glaubt, Menschen seien leichter änderbar. Weil man organisatorische Entscheidungen überdenken müsste. Weil man den Spiegel wenden, sich auch selbst in Frage stellen müsste. Aber so sind es immer die anderen, die sich ändern müssen. Das Motto dazu: »Wir machen die Dusche an und stellen die anderen drunter.«footnote:[ebd., S. 49]
+____
+
+== Kapitel "Erste Kernaufgabe - Zusammenarbeit organisieren"
+
+[quote]
+____
+
+Es ist also weder unsere Sprache noch unsere Denkfähigkeit, die uns entwicklungsgeschichtlich einzigartig macht, sondern unsere Fähigkeit zur Kooperation: geteilte Absicht, abgestimmte Handlungen, gemeinsame Zukunft. Wer eine gemeinsame Absicht teilt, nimmt sich Aufgaben vor, welche die eigenen Möglichkeiten übersteigen. Und zählt darauf, dass sich die anderen zum Mittun bewegen lassen – aus welchen Gründen auch immer. Diese Handlungen sind durch ein gemeinsames Ziel und verschiedene, aber allgemein anerkannte Rollen gekennzeichnet. Und allen Handelnden ist bewusst, dass ihr Erfolg von ihrem wechselseitigen Einsatz abhängt.footnote:[ebd., S. 160]
+____
+
+[quote]
+____
+
+»Zusammenarbeiten«, das ist – ausdrücklich! – *nicht die Addition von Einzelleistungen*. Sondern ein Ergebnis, das im Idealfall nur durch den gleichzeitigen Einsatz aller erzielt werden kann. Das ist Synergie, das ist der Nutzen von Pool-Ressourcen, unterschiedliche Qualifikationen ergänzen sich, ungleiche Kräfte verstärken sich, verschiedene Rollen greifen ineinander, man kennt sich und kann Vertrauensvorteile nutzen. So entsteht Leistungs-Partnerschaft.footnote:[ebd., S. 54]
+____
+
+[quote]
+____
+
+Verbinden, um zu stärken – darum geht es. Es muss gelingen, das Unternehmen als Solidargemeinschaft mit Blick auf eine gemeinsam zu gestaltende Zukunft zu entwerfen. Es geht dabei weniger um Altruismus. Vielmehr geht es um das Wechselseitige, den Mutualismus, durch den wir alle von unseren gemeinsamen Handlungen profitieren. Es geht um den Punkt, an dem sich das Leben des Einzelnen mit dem Anliegen aller berührt. Alles, was das Gemeinschaftliche fördert, ist dazu hilfreich. Alles, was es behindert, nicht.footnote:[ebd., S. 54]
+____
+
+[quote]
+____
+
+Die heute dominierende Form der Unternehmensführung läuft – um mit Giorgio Agamben zu sprechen – auf eine »Enteignung des Gemeinsamen« hinaus, auf einen »Amoklauf« der Segmentierung, die letztlich die Zusammenarbeit als »Grund« der Unternehmens-»Gründung« verhöhnt. Infolgedessen ist das Bewusstsein der wechselseitigen Abhängigkeit in Unternehmen verloren gegangen. Die Arbeitsteilung spielt dabei eine Rolle, das Abteilungsdenken, Silostrukturen, die Individualisierung von Leistungszurechnung, der Autismus der Expertensysteme, geografische Umstände. Auch die Art und Weise, wie Medien Manager präsentieren, verführt Letztere dazu, sich als einsame Helden zu sehen, die auserwählt sind, ihre Unternehmen zu Höchstleistungen zu führen. Entsprechend unterentwickelt ist bei der heutigen Generation von Führungskräften das Bewusstsein, dass das Ermöglichen von Zusammenarbeit die wichtigste Führungsaufgabe ist. Sie sehen das Unternehmen mehr als *prozesshaftes Verknüpfen von Einzelleistungen*. Kennzeichnend dafür ist das allgemeine Erstaunen, wenn man »Zusammenarbeit ermöglichen« als die wichtigste Kernaufgabe ausweist.footnote:[ebd., S. 160]
+____
+
+[quote]
+____
+
+Weil die meisten *Unternehmen von selbstversorgerischen Eliten geführt* werden, besteht ein gefährlicher Widerspruch zwischen der Aufforderung zu mehr Zusammenarbeit und deren strukturellem Dementi sowie dem, was insbesondere das Topmanagement für sich selbst »herausholt«. Der Mitarbeiter reagiert mit Teilnahmslosigkeit.footnote:[ebd., S. 56]
+____
+
+[quote]
+____
+
+Wie präsentiere ich eine Aufgabe so, dass sie zur Zusammenarbeit einlädt? Das stellt gleichzeitig die Frage nach den Beziehungen, die aufgebaut werden müssen, um sie zu lösen. Das stellt die Frage nach den Mitarbeitern, die zu echter und vertrauensvoller Zusammenarbeit bereit und in der Lage sind. Das stellt vor allem die Frage nach einer *Unternehmensarchitektur, die auf Zugangserlaubnisse, Barrieren, Würdefelder verzichtet* und direkt-spontanen Kontakt ermöglicht.footnote:[ebd., S. 56]
+____
+
+[quote]
+____
+
+»Das ist nicht mein Problem!« Hören Sie das häufig in Ihrem Unternehmen? Das ist fatal. Zeigt es doch, wie sehr das Bewusstsein für den Kooperationsvorrang im Unternehmen geschwächt ist. Eine solche Aussage muss abmahnungsfähig sein. *Das Problem eines anderen im Unternehmen ist per Definition mein Problem*.footnote:[ebd., S. 66]
+____
+
+[quote]
+____
+
+Es muss also das Horizontale dominieren, weniger das Vertikale. *Pathologien der Zusammenarbeit* entstehen durch einseitige Monopolansprüche: Eine Seite behauptet, sie sei wichtiger, würde »eigentlich« das Geld verdienen, käme ohne die anderen aus.footnote:[ebd., S. 66]
+____
+
+[quote]
+____
+
+*Meist wird der Konflikt personalisiert*. Es geht dann nicht mehr um inhaltliche Fragen, sondern um Beziehungsfragen. Dann wird Sieg oder Niederlage zu einer Frage der Ehre. Und damit kämpfen die Menschen nicht mehr um eine für das Unternehmen beste Lösung, sondern um »sich«. Aber die Ursachen liegen selten in den Personen, vielmehr in den organisatorischen Strukturen des Unternehmens: unklare Kompetenzen, unterschiedliche Zielsetzungen, Wettbewerb, Anreizsysteme, kein gemeinsames Problem. Man arbeitet nicht zusammen, weil man nicht für das Gemeinsame bezahlt wird, sondern für das Verschiedene.footnote:[ebd., S. 72]
+____
+
+[quote]
+____
+
+Sie müssen auf der Verlautbarungsebene sehr klarmachen, dass es im Unternehmen vorrangig um Zusammenarbeit geht – und nicht um die Addition von Einzelleistungen. *Und Sie müssen das kommunizieren: immer wieder und überall*.footnote:[ebd., S. 88]
+____
+
+[quote]
+____
+
+Noch etwas Spezielles? Etwas Unangenehmes? Ja. Im Unternehmen ist *nur wichtig, was Konsequenzen hat*. Was keine Konsequenzen hat, ist nicht wichtig. Es mag wünschbar sein. Aber wichtig ist es nicht. So ist das auch mit der Zusammenarbeit. Sie mag wünschbar klingen, Zustimmung heischen, manchmal gar gefordert werden. Aber wichtig wird sie erst, wenn eine Antwort gegeben wird auf die Frage: »Und wenn nicht, was dann?«.footnote:[ebd., S. 92]
+____
+
+[quote]
+____
+
+Aber viel Geld stimuliert nicht die Bereitschaft, anderen zu dienen. Im Gegenteil: Es lässt glauben, dass man es nicht mehr nötig hat. Es läuft auf den Wunsch hinaus, ohne dienen zu verdienen. Diese Geisteshaltung betrachtet die Arbeit »für andere« mit Geringschätzung, macht Unternehmen zu Karrieremaschinen für *macht- oder geldgetriebene Persönlichkeiten* und bringt eine besondere Form des Managers hervor: den Selbstoptimierer. footnote:[ebd., S. 97]
+____
+
+[quote]
+____
+
+Um den Kooperationsvorrang im Unternehmen zur Geltung zu bringen, braucht es also andere Führungskräfte, *Leute ohne Super-Ego*. Menschen, die die Leistung anderer fördern. Es braucht Fremdoptimierer.footnote:[ebd., S. 98]
+____
+
+[quote]
+____
+
+Sie dürfen im Mitarbeiter keinen Kostenfaktor sehen, sondern sollten ihn *als Partner betrachten*, den Sie ebenso benötigen, wie er Sie benötigt.footnote:[ebd., S. 160]
+____
+
+[quote]
+____
+
+Wir brauchen einen neuen Gesellschaftsvertrag; wir brauchen *Commitment für Zusammenarbeit*. Ein Mentalitätswandel ist fällig. Gemeint ist die Qualität des Bewusstseins, mit dem Sie in Ihr Unternehmen gehen, die inneren Einstellungen, Anschauungen und Grundüberzeugungen, mit denen Sie als Führungskraft führen und Ihr Unternehmen mitgestalten.footnote:[ebd., S. 101]
+____
+
+[quote]
+____
+
+Sie werden also in dem Spiel nur erfolgreich sein, wenn Ihre *Mitspieler auch erfolgreich sind*. Verlieren Ihre Mitspieler die Lust am Spiel, wird die Qualität des gemeinsamen Spiels sinken. Deshalb ist es in Ihrem eigenen Interesse, den anderen mitgewinnen zu lassen.footnote:[ebd., S. 102]
+____
+
+== Kapitel "Zweite Kernaufgabe - Transaktionkosten senken"
+
+[quote]
+____
+
+Zwischen »Markt« und »Staat« aber gibt es eine dritte Möglichkeit, mit dem Problem der Knappheit umzugehen: das Unternehmen. Ein Unternehmen ist in seiner heutigen Form ein relativ neues Phänomen, eine Entwicklung des späten 19. Jahrhunderts. Ein Mischgebilde: verlässlicher als der Markt, flexibler als der Staat. Dennoch sind manche Forscher überrascht, dass es sich so lange hält.footnote:[ebd., S. 106]
+____
+
+[quote]
+____
+
+Sowohl auf Märkten als auch im Unternehmen fallen »Transaktionskosten« an – aber die sind unterschiedlich hoch. In Unternehmen sind sie tendenziell niedriger. Die Interaktionen sind gleichsam »günstiger«, weil die Hierarchie die individuellen Handlungen nicht über Preise koordiniert, sondern über Weisungen. Damit liegt der Unterschied zwischen Markt und Unternehmen in der Effizienz.footnote:[ebd., S. 100]
+____
+
+[quote]
+____
+
+Das also ist der Unterschied: Märkte sind Koordinations-Arenen. In ihnen werden Angebot und Nachfrage koordiniert. Es entstehen hohe Reibungsverluste durch Informationsbeschaffung, Preisvergleiche, Verhandlungen – eben Transaktionskosten. Und es herrscht Wettbewerb unter den Marktteilnehmern, also ein »Gegeneinander«. Unternehmen hingegen sind Kooperations-Arenen. Angebot und Nachfrage haben sich gefunden, man nutzt Pool-Ressourcen, es geht um Zusammenarbeit, um ein Miteinander. Also um das Gegenteil von Wettbewerb. Pointiert formuliert: Der Kern der Unternehmensgründung ist die Markt-Ausschaltung.footnote:[ebd., S. 109]
+____
+
+[quote]
+____
+
+Marktausschaltung ist eine Denkfigur, die meiner Erfahrung nach nicht einmal im Topmanagement geläufig ist. Es lohnt sich daher, diesen Gedanken noch einmal zu wiederholen: »Grund« der Unternehmens-Gründung sind *niedrige Transaktionskosten*; es geht darum, Marktmechanismen auszuschließen. Alles, was im Unternehmen die Transaktionskosten senkt, ist produktiv; alles, was sie steigen lässt, kontraproduktiv.footnote:[ebd., S. 108]
+____
+
+[quote]
+____
+
+Eine Kernaufgabe von Führung ist es, bei allen Entscheidungen die Transaktionskosten im Auge zu haben. Führungsinstrumente wie die Leistungsbeurteilung oder die Mitarbeiterbefragung sind jedoch gleichzusetzen mit der Eröffnung eines internen Marktes. Eines Beurteilungs-Marktes. Und jedes Meeting, jedes Monitoring-System, jedes Reporting-Tool, der Prozess der Zielvereinbarung, die Budgetplanungen – alles das erzeugt Transaktionskosten, die einzusparen das Unternehmen einst gegründet wurde.footnote:[ebd., S. 110]
+____
+
+[quote]
+____
+
+Das Senken der Transaktionskosten ist kein absoluter Wert – er ist immer gegen andere Werte zu balancieren. Wenn Sie zum Beispiel bei Entscheidungen Ihre Mitarbeiter einbeziehen, mitreden und mitentscheiden lassen, dann haben Sie vielleicht einen Transaktionskostenvorteil verspielt, aber unter Umständen viel Produktivität geschaffen.footnote:[ebd., S. 111]
+____
+
+[quote]
+____
+
+Wie ist es zu verstehen, dass in heutigen Unternehmen die internen Märkte wuchern ...? Die wichtigste Antwort aber lautet: Transaktionskosten kann man nicht »sehen«. Oder besser: Sie haben eine Querschnittfunktion im Unternehmen; man kann sie daher kaum isolieren und zuordnen. Daher sind sie auch nicht »messbar«, es gibt für sie keine Kostenstelle, es existiert keine Kostenplanung. Im Unterschied zu Reisekosten, Werbe- oder Personalbudgets. Die kann man »sehen«. Deshalb blühen Transaktionskosten im Schatten der allseits akzeptierten bürokratischen Erfordernisse, ohne dass sie jemand als Kosten wahrnimmt und thematisiert.footnote:[ebd., S. 108]
+____
+
+[quote]
+____
+
+Please the Boss – man ist damit beschäftigt, dem Management zu schmeicheln (oder nicht verhauen zu werden). Wie wenig dabei die Transaktionskosten beachtet werden, zeigt das amerikanische Unternehmen Cisco, das mittlerweile einen wöchentlichen (!) Forecast hat. Wie reagieren die Mitarbeiter? Sie halten Puffer in der Schublade, um nicht in einen negativen Fokus zu geraten. Die Kundenorientierung muss man dann aufwändig über Seminare und Workshops wieder einführen. Und wieder entstehen Transaktionskosten. Und wenn die Vorhersagen nicht mit der Realität übereinstimmen, ist die Folge Frust und die Neigung, Schuldige für die Abweichung zu finden. Entweder verliert der Mitarbeiter (er ist nicht auf der Höhe der Marktentwicklung) oder der Planer (er hat schlecht geplant). Ohne Verlierer geht es nicht.
+Wer mit Planungen versucht, die Komplexität in den Griff zu kriegen, dem schießen die Transaktionskosten durch die Decke.footnote:[ebd., S. 118]
+____
+
+[quote]
+____
+
+Eine *stärkere Mitarbeiterbindung* erreichen Sie, wenn Sie jemanden loslassen. Wenn Sie gleichsam »absichtslos« führen. Wir wissen aus der Sozialpsychologie: Gerade durch das Loslassen erzeugen wir Bindung. Selbstbindung. Die schwachen Fesseln sind die starken. Sie sollten also nicht versuchen, Mitarbeiter durch Belohnungsversprechen oder Sanktionen zu binden, sondern die Chance für die Entwicklung echter Loyalität verbessern. Wie können Sie es schaffen, dass Mitarbeiter sich bei Ihnen wohlfühlen, gerne kommen und bleiben? Und damit Transaktionskosten senken?
+Um diese Frage zu beantworten, müssen wir zunächst verstehen, dass die Gründe für das Kommen nicht dieselben sind wie die Gründe für das Gehen. Das ist eine fundamentale Wahrheit: Menschen kommen zu Unternehmen, aber sie verlassen Vorgesetzte.footnote:[ebd., S. 121]
+____
+
+[quote]
+____
+
+Negativ gewendet: Wenn das Vertrauen zwischen Chef und Mitarbeiter fehlt, dann erhöht sich die *Fluktuationsrate* überproportional. Daher noch einmal in aller Deutlichkeit: Nicht Belohnungen oder Sanktionen binden uns, sondern die Qualität zwischenmenschlicher Beziehung. Das gilt auch über die Chef-Mitarbeiter-Beziehung hinaus: Ein Unternehmen ohne einen Freund ist ein Feind.footnote:[ebd., S. 122]
+____
+
+[quote]
+____
+
+Wir sind oft unser eigener Gegner. Unternehmerisches Handeln ist nicht mehr Kampf um Kunden, sondern gegen Bürokratie.footnote:[ebd., S. 123]
+____
+
+[quote]
+____
+
+Vieles, was auf dem Markt der Managementtheorie angeboten wird, orientiert sich an der hierarchischen Leitunterscheidung »Oben/Unten«. »Oben« fordert meistens, »Unten« muss liefern; »Oben« fragt, »Unten« antwortet; »Oben« klagt an, »Unten« rechtfertigt sich. Die Hauptkommunikation der Hierarchie ist ja die Frage: »Wer beobachtet wen beim Beobachten?« Man weiß, wenn man in eine Hierarchie eintritt, von wem man beobachtet wird und wen man zu beobachten hat. Die Energien fließen also vorzugsweise vertikal von oben nach unten und umgekehrt. Sie verlassen selten das Funktionssilo. Aber, und das sei hier mit Nachdruck gesagt: Für diesen *Autismus* werden Sie vom Kunden nicht bezahlt! Er interessiert sich nicht dafür, was und wen Sie monitoren, wem Sie Feedback geben oder nicht und ob Sie Mitarbeitergespräche führen. Bezahlt werden Ihre Bemühungen um eine andere Leitunterscheidung: »Innen/Außen«! Wir brauchen dringend eine Horizontalisierung der Energien. Stellen Sie das Unternehmen unter Horizontalspannung! Draußen am Markt müssen Sie einen Unterschied machen, nicht auf den Kinderspielplätzen der Organisation.footnote:[ebd., S. 126]
+____
+
+[quote]
+____
+
+Unter der Hand werden die kooperativen Beziehungen zwischen den Menschen so in marktförmige Beziehungen umgestaltet. Darf man dann noch *Söldnermentalität von Mitarbeitern* beklagen?footnote:[ebd., S. 126]
+____
+
+[quote]
+____
+
+Überliefert ist ein Satz des ehemaligen Rennfahrers Mario Andretti: »Wenn du alles im Griff hast, bist du nicht schnell genug.« Das gilt auch für Unternehmen. Warum? Weil die Transaktionskosten explodieren. Und die werden sichtbar als Bürokratie. Und Bürokratie bedeutet Krieg, genauer: Papierkrieg. Moderner: E-Mail-Krieg. Warum wird dieser Krieg geführt? Mangels Vertrauen. Egal, ob den Unternehmen von außen durch den Gesetzgeber oktroyiert oder von innen induziert durch Absicherungsmentalität: *Bürokratien sind immer ein Zeichen von Misstrauen*. Man will sich schützen und absichern. Bürokratie erzeugt Kosten; sie dient lediglich der wechselseitigen Beruhigung, schafft aber sonst keinerlei Wert.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Menschen, die einander nicht vertrauen, kooperieren nur im Rahmen von formalen Regeln und Vorschriften. Dieses formale System muss ausgehandelt, operationalisiert, durchgesetzt, überwacht und sanktioniert werden. Die administrativen Kosten wirken wie eine Art Steuer auf alle Interaktionen, machen sie teurer, als sie eigentlich sein müssten – jedenfalls teurer als Interaktionen innerhalb von Organisationen mit hohem Vertrauenspegel. Deshalb ist *Misstrauen immer ein Kostentreiber*.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Werden wir an dieser Stelle grundsätzlich: Was glauben Sie, *was passiert, wenn Sie gar nicht da wären*? Wenn der Mitarbeiter Sie nicht als Anlaufstelle hätte? Würde er plötzlich tot umfallen? Wäre er völlig paralysiert? Wüsste er dann nicht mehr, was er tun sollte? Oder würde er das Problem mit eigenen Ressourcen lösen können? Sie sollten sich öffnen für diese Perspektive: Ihre bare Existenz als Führungskraft erzeugt schon Transaktionskosten. Weil Sie wie eine lebende Aufforderung wirken: Stimme dich mit mir ab! Nimm mich mit ins Boot! Ignoriere nicht meine Kompetenzen! Sie senden fortwährend Botschaften, die empfangen, verarbeitet und beantwortet werden. Sie erzeugen eine angebotsinduzierte Nachfrage. Eine Nachfrage, die vielleicht gar nicht entstünde, wären Sie nicht da. Je mehr Chefs also, desto mehr Transaktionskosten (zum Beispiel bei Matrix-Organisationen). Fragen Sie sich ernsthaft: Rechtfertigt Ihre Anwesenheit die durch Sie entstehenden Transaktionskosten? Leisten Sie wirklich mehr, als Sie kosten – wenn man die verdeckten Kosten mitdenkt? Wenn Sie im Zweifel sind, dann können Sie wenigstens die Transaktionskosten reduzieren, die durch Sie entstehen. Durch Vertrauen.footnote:[ebd., S. 132]
+____
+
+[quote]
+____
+
+Man kann aber nicht, wie das vielfach getan wird, mit moralisierendem Unterton eine »Vertrauensorganisation« fordern. Es muss vermittelt werden, wieso Vertrauen Komplexität reduziert. Prozesse beschleunigt. Problemlösungen effektiv macht. Effizient ist. Und dann müssen strukturelle Konsequenzen gezogen werden. Hierzu gehören zuerst der Kontrollverzicht und der Abbau von Regularien, Reporting- und Monitoring-Systemen. Angemessen, überlegt, aber entschieden. Dabei geht es gar nicht darum, alle Kontrollsysteme abzuschaffen. Wichtig ist, dass die Mitarbeiter die Rücknahme beobachten können. Wenn ein Unternehmen auf strukturelles Misstrauen verzichtet, so wird das belohnt. *Vertrauen schafft Vertrauen*. Und Misstrauen schafft Misstrauen.footnote:[ebd., S. 133]
+____
+
+[quote]
+____
+
+Wer aber dauernd um sich selbst kreist, wer das Unternehmen als in sich geschlossenes System sieht, wer sich an der Leitunterscheidung Oben/Unten orientiert, der weist mit seinem Handeln nicht nach außen, sondern auf sich selbst zurück. Mit seinem organisatorischen Narzissmus produziert er Transaktionskosten, die von keinem externen Marktteilnehmer freiwillig beglichen werden. Deshalb greift er zum Mittel des Zwangs. Als Manager zwingt er die Mitarbeiter; als Politiker zwingt er die Bürger. Als Manager hat er es (vor allem finanziell) »nicht nötig«, sich vom Mitarbeiter abhängig zu machen; als Politiker suspendiert er durch Kartellbildung der politischen Eliten den Parteienwettbewerb. Man dreht sich halt gerne um sich selbst. *Wer anderen nicht dienen kann, versucht sie zu beherrschen*.footnote:[ebd., S. 140]
+____
+
+[quote]
+____
+
+Energische Schritte in die Richtung einer *Vertrauenskultur* gehören – wie oben beschrieben – zur systemischen Kernaufgabe der Führung. Aber wer geht sie? Wer ist bereit, die Kontrollsysteme angemessen, überlegt und differenziert zurückzufahren? Nur Menschen mit einem ausgeprägten Selbstvertrauen.footnote:[ebd., S. 142]
+____
+
+[quote]
+____
+
+Wer das nicht kann, wer sich selbst misstraut (weil er sich verdächtigt, unter Umständen Vertrauen zu enttäuschen), der wird bei anderen ein gleiches Verhalten mindestens für möglich, wenn nicht gar wahrscheinlich halten. Er wird Kontrollmaßnahmen ergreifen, die Kontrollumgehungen provozieren, wodurch sich sein Misstrauen noch verstärkt. So setzt er eine Misstrauensspirale in Gang. Der für Transaktionskosten geschärfte Blick schaut daher vor allem auf misstrauische Manager. Manager mit geringem Selbstvertrauen. Manager, die nicht damit leben können, dass es in jeder Organisation eine kriminelle Grundlast von etwa 5 Prozent gibt. Und die nichts so sehr fürchten, als die nicht im Griff zu haben. *Weil sie nichts verlieren wollen, gewinnen sie nichts*. Und erschaffen bürokratische Monster.footnote:[ebd., S. 143]
+____
+
+[quote]
+____
+
+Wer führt, soll die, die sich ihm anvertraut haben, vor allem in ihrem Selbstvertrauen stärken. Nur dann entsteht eine Kultur der Erfolgs-Zuversicht.footnote:[ebd., S. 128]
+____
+
+== Kapitel "Dritte Kernaufgabe - Konflikte entscheiden"
+
+[quote]
+____
+
+Führung wird also erst dann wertvoll, wenn Routinen versagen. Ich kann es gar nicht klar genug machen: Führung hat ihren Aufgabenbereich »jenseits« der Routine, nämlich im Konflikt, in dilemmatischen Situationen. Ein Unternehmen braucht keine Führung, wenn das Unternehmen in ruhigen Gewässern segelt. Um aber Stillstand zu vermeiden, muss Führung entscheidungsbereit sein. Auf dem Schreibtisch des amerikanischen Präsidenten Truman stand ein kleines Schild mit dem Satz: »The buck stops here« – etwa: Bis hierhin kann man den Schwarzen Peter schieben, nicht weiter.footnote:[ebd., S. 148]
+____
+
+[quote]
+____
+
+Um eine Entscheidung von einer Wahl abzuheben, stellen Sie sich bitte vor, Sie stehen vor einer Weggabelung. Es geht nur rechts herum oder links herum, und die jeweiligen Wege verlieren sich schnell hinter einer Biegung. Sie können nicht wissen, wohin welcher Weg Sie führt. Die Bewertung der beiden Seiten der Unterscheidung ist nun symmetrisch, beide Seiten wiegen exakt gleich viel. Dann, und nur dann, können wir im strengen Sinn von einer Entscheidung sprechen.footnote:[ebd., S. 149]
+____
+
+[quote]
+____
+
+Entscheidungen sind genau dann nötig, wenn sie unmöglich sind – unmöglich im Sinne von »schlüssig zu begründen«. Sie könnten auch eine Münze werfen oder einen Strohhalm ziehen. *Es ist gerade das Fehlen der Begründung, die uns zur Entscheidung drängt*.footnote:[ebd., S. 150]
+____
+
+[quote]
+____
+
+Wenn jeder im Unternehmen weiß, wer sein Kunde ist und was dieser braucht, dann weiß er auch, was er tun muss, und ist sicher einfallsreicher als jede zentrale Steuerung. Alle Einheiten des Unternehmens müssen in der Lage sein, sich mit Blick auf den konkreten Kunden vor Ort weitgehend selbst zu führen.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Das technisch Machbare mag noch so herausfordernd sein, das wirtschaftlich Machbare ist profitabler. Deshalb sollte man sich beim Kunden erkundigen. Nur der Kunde entscheidet, wie nah oder wie fern wir ihm stehen dürfen. Wer auf die Expertise seiner Kunden baut und ihre Wünsche zur Weiterentwicklung von Produkten und Dienstleistungen systematisch nutzen will, der sollte Austauschflächen pflegen. Traditionell kann man über die Bildung eines Kundenbeirates nachdenken. Die Zukunft gehört aber sicher IT-Interfaces, mit denen man die Kunden in die Innovationsprozesse einbezieht. Was eine *Öffnung der Unternehmensgrenzen* bedeutet.footnote:[ebd., S. 169]
+____
+
+[quote]
+____
+
+Führungskräfte gibt es, weil es Konflikte gibt. Konflikte als Zielkonflikte, Wertkonflikte, soziale Konflikte. Einige von ihnen müssen entschieden werden, einige können entschieden werden. Wenn die Organisation nicht vorentschieden hat und die Mitarbeiter selbst nicht entscheiden, wenn also die Gefahr der Paralyse droht, dann müssen Sie als Führungskraft »einspringen«.footnote:[ebd., S. 172]
+____
+
+== Kapitel "Vierte Kernaufgabe - Zukunftsfähigkeit sichern"
+
+[quote]
+____
+
+Der Niedergang wartet gleich neben dem Aufstieg. So entwickeln auch Unternehmen sehr früh autistische Tendenzen, werden schnell innovationsfeindlich. Dies nicht etwa, weil erzkonservative Finsterlinge das Zepter schwingen, sondern weil das Wesen der Organisation die Ausblendung von Alternativen ist. Aus dem »So-oder-So« macht die Organisation ein »Nur so!« Das nennt man dann »Prozess«, »Hierarchie«, »Policy«. Und es ist der Kern der Organisation als Organisation. So entwickeln sich nahezu alle Unternehmen: Einst hatte man Probleme, für die man Lösungen suchte; dann hat man Lösungen, für die man Probleme sucht. Einst war das Unternehmen das Mittel zu dem Zweck, die Probleme der Kunden zu lösen; dann ist der Kunde das Mittel zu dem Zweck, die Probleme der Unternehmen zu lösen. Die Organisation wird absolut gesetzt, nicht mehr hinterfragt.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Vor allem aber sollten Sie in *Zukunftskonferenzen* alle Mitarbeiter sensibilisieren für die Offenheit dessen, was vor uns liegt. In Open-Space-Konferenzen können Sie Mitarbeiter zum Mitdenken anregen, gemeinsam von der Zukunft her denken, Alternativen einführen. Weg vom Vergangenheits-Druck und hin zum Zukunfts-Sog! Die Vergangenheit wird dabei insofern relativiert, als sich das Management bewusst gegen Praktiken entscheidet, die aller Wahrscheinlichkeit nach zukünftig nicht mehr produktiv sind. Solche Konferenzen helfen auch bei der Erfüllung der Kernaufgabe der Zusammenarbeit: Das Unternehmen diskutiert sich hier in seiner Gesamtheit – und nicht als Addition von Einzelaktivitäten.footnote:[ebd., S. 215]
+____
+
+[quote]
+____
+
+Wer in Szenarien denkt, auch in radikalen Szenarien, der wird konträre Meinungen provozieren. Dazu brauchen Sie eine *offene Diskussionskultur*. Resilient sind nämlich nicht zentralistisch geführte Firmen, in denen charismatische Führer einsame Entscheidungen fällen. Und auch nicht jene rechthaberischen Rudelbildungen mancher Vorstände, deren pathologisches Bekenntnis zur eigenen Vergangenheit jede Kontroverse verhindert. Sondern jene, in denen wahrscheinliche und unwahrscheinliche Szenarien diskutiert werden und Meinungsvielfalt zu einem Mehr an Ideen und einer präziseren Ausarbeitung von Positionen führt. Gut vorbereitet auf Krisen sind mithin Unternehmen, in denen nicht Gehorsam und Konformität gefordert werden, sondern Eigensinn und Widerspruchsgeist. Von hochangepassten Ja-Sagern hat man ohnehin immer genug.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Manager sind die Apostel der Machbarkeit. Sie erkennen oft nicht, dass *Vielfalt, Dezentralität und hohe Freiheitsgrade Voraussetzung* dafür sind, dass so komplexe Systeme wie Unternehmen stabil bleiben können und gleichzeitig genügend Flexibilität entwickeln, um mit der Unvorhersehbarkeit der Märkte zurande zu kommen. Auch wenn es manchmal wie Chaos wirkt. Wer dieses Chaos durch Zentralisierung bändigen will, mag sich persönlich auf der sicheren, mindestens aber effizienten Seite wähnen. Aber er weiß nie genau, was er anrichtet – außer dass er Freiheitsgrade reduziert hat und damit die Anpassungsfähigkeit gefährdet.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Auch das, was man im Mannschaftssport »Rotieren« nennt, ist ein Störungsauftrag. Wenn *zwei Manager mal die Aufgaben tauschen*. Das schafft neue Konstellationen und unter Umständen überraschende Erkenntnisse. Und auch der Teamgeist wird wieder neu belebt: Jeder wird gebraucht, wir gewinnen nur zusammen. Und wir verlieren, wenn der Einzelne sein Ego pflegt.footnote:[ebd., S. 221]
+____
+
+[quote]
+____
+
+Sucht man nach Persönlichkeiten, die einen optimistischen Umgang mit der Zukunft wahrscheinlich machen, dann sind es zweifellos diese: Sie können reflektieren. Sie denken: »Es könnte auch anders sein«. Sie beugen sich nicht dem Diktat des Status quo. Und sie wissen auch: Man kann sich kaum mit linearem Denken auf eine nicht-lineare Zukunft vorbereiten – es war einmal anders und es wird einmal anders sein (ein wenig historische Bildung schadet da nicht). Solche Persönlichkeiten sind mit einem Sinn für Mögliches ausgestattet, mit Möglichkeitssinn. Sie können ihre Fantasie aktivieren, halten grundsätzlich Außerordentliches und extreme Entwicklungen für denkbar. Sie haben eine so starke Bindung an ihr Unternehmen, dass sie es fortwährend hinterfragen und auf Verbesserung abklopfen. Sie sind notorisch unzufrieden – ohne dabei übellaunig zu sein. Sie denken, was andere nicht denken; suchen, wo andere nicht suchen; machen, was andere nicht machen. Dabei sind sie keine Hasardeure, es geht ihnen nicht um prinzipielles Dagegensein. Sie haben lediglich eine Neigung zum Ausprobieren, zum ergebnisoffenen Versuch.footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+In den Unternehmen wird viel von »Change« gesprochen. Meine Erfahrung: Je offizieller von Change gesprochen wird, desto weniger ändert sich. Weil der so gemeinte Wandel immer nur geplantes Verändern meint und eigentlich nur ein verschärftes Mehr-vom-Selben bedeutet. Überschaut man die einschlägige Forschung, so braucht es für wirkliche Änderungen Menschen, die den Spagat schaffen zwischen tiefer Verwurzelung im Unternehmen und Distanz von außen. Jedes Unternehmen braucht deshalb Menschen, die die Dinge anders denken können als in ihrer existierenden Form. Deshalb braucht es nicht nur den einsamen, heroischen Unternehmenslenker, der das Unternehmen umkrempelt. Es braucht *unabhängige Geister auf allen Hierarchieebenen*, die für permanentes Neu- und Vorausdenken eintreten.footnote:[ebd., S. 128]
+____
+
+== Kapitel "Fünfte Kernaufgabe - Mitarbeiter führen"
+
+[quote]
+____
+
+Wenn ich das »knapp« ernst nehme und »Mitarbeiter führen« auf eine möglichst kurze Formel bringe, so lautet sie folgendermaßen:
+Finden Sie die Richtigen, 
+fordern Sie sie heraus, 
+sprechen Sie oft miteinander, 
+vertrauen Sie ihnen, 
+bezahlen Sie gut und fair 
+und *gehen Sie dann aus dem Weg*.footnote:[ebd., S. 238]
+____
+
+[quote]
+____
+
+Ich mache immer wieder die Erfahrung: Da, wo Kontakt ist, gibt es kaum das Bedürfnis nach Lob. Denn Anerkennung war und ist im Kern schon immer Kontakt. Da geht es um *Aufmerksamkeit, um eine wohlwollende Beachtung*, darum, Gespräche zu führen, großzügig in der Zustimmung und zurückhaltend im Widerspruch zu sein. Kontakt ist eine Form aufrichtiger Nächstenliebe – keine, die sich opfert oder mildtätig herablässt. Sie hat die Form unbedingter Freundlichkeit, grundsätzlich und gegenüber jedem Menschen – egal, ob das Ihr Aufsichtsratsvorsitzender ist oder die Servicedame in der Betriebskantine (was ich bei Personalauswahlentscheidungen besonders intensiv beobachte). Setzen Sie das schlichte Wort »Freundlichkeit«, das jeder versteht und gar nichts Wundersames an sich hat, an die Stelle der »Kommunikation«!footnote:[ebd., S. 128]
+____
+
+[quote]
+____
+
+Die Anthropologen sagen uns, dass Sprache keineswegs erfunden wurde, um Informationen zu transportieren. Sondern um Beziehungen zu pflegen und Kontakt zu halten. Sprache war einst das Medium, um bei wachsenden Personengruppen den Körperkontakt zu ersetzen, das heißt friedliche Absichten zu signalisieren. Deshalb ist der »small talk« so unverzichtbar, das ziel- und planlose Sprechen auf den Firmenfluren. Es sorgt für Zusammenhalt und den gemeinsamen Weg. Nur die persönliche Begegnung schöpft die Möglichkeiten des »Wir« aus.footnote:[ebd., S. 128]
+____

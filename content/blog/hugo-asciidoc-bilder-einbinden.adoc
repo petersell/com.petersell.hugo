@@ -47,6 +47,12 @@ Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.
 :imagesdir: ../images/meinblogpostimage/
 ....
 
+Damit beim Neuanlegen einer adoc-Datei der Bildordner gleich korrekt ausgegeben wird, schreiben Sie in Ihrem Archetype `default.adoc` folgende Notation in den Bereich der Asciidoc-Attribute (unterhalb des YAML-Headers):
+
+....
+:imagesdir: ../images/{{ .File.BaseFileName }}/
+....
+
 === 2. Bild abspeichern
 
 Legen Sie einen Ordner `images` innerhalb des post-Ordners an.
@@ -67,25 +73,9 @@ Da Sie wissen, dass Ihre Bilddatei `meinblogpost.gif` heißt, legen Sie einen we
         └-- meinblogpost.adoc
 ....
 
-== Fazit
-
-Die Bilder werden also beim Output nicht in den Standard-Ordner für Bilder `static` abgelegt. Der große Nachteil dieses Vorgehens: es klappt nur mit einem Bild.
-
-Alternativen bei mehreren Bildern wären: 
-
-* auf Markdown ausweichen
-* auf HTML ausweichen
-* externe Bilder via URL einbinden
-
-Da ich sowieso eine Bilddatenbank _Piwigo_ habe, überlege ich, ob ich nicht via URLs meine Bilder verlinke.
-
-....
-image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]
-....
-
 == Admonitions
 
-Ebenfalls habe ich auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:
+Ich habe auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:
 
 ....
 :icons: font

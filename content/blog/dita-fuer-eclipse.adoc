@@ -8,7 +8,6 @@ categories:
     - "ditalog"
 tags: 
     - "dita"
-    - "eclipse"
 
 markup: asciidoc
 ---
