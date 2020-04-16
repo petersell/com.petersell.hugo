@@ -25,34 +25,40 @@ googleAnalytics = ""
     weight = 10
 
   [[menu.main]]
+    identifier = "status"
+    name = "Status"
+    url = "/status/"
+    weight = 20  
+
+  [[menu.main]]
     identifier = "categories"
     name = "Kategorie"
     url = "/categories/"
-    weight = 20
+    weight = 30
 
   [[menu.main]]
     identifier = "tags"
     name = "Stichwörter"
     url = "/tags/"
-    weight = 30
+    weight = 40
 
   [[menu.main]]
     name = "Archive"
     identifier = "archive"
     url = "/archive/blog/"
-    weight = 40
+    weight = 50
 
   [[menu.main]]
     identifier = "about"
     name = "Über"
     url = "/homepage/about/"
-    weight = 50  
+    weight = 60  
 
    [[menu.main]]
     identifier = "impressum"
     name       = "Impressum"
     url        = "/homepage/impressum/"
-    weight     = 60  
+    weight     = 70  
 
 [taxonomies]
 category = "categories"

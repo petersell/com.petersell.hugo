@@ -7,8 +7,7 @@ draft: false
 categories:
     - "techcomm"
 tags: 
-    - "asciidoc"
-    - "asciidoctor"   
+    - "asciidoc"  
 ---
 
 :toc: macro

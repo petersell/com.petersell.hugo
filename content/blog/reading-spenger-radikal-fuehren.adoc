@@ -6,9 +6,10 @@ draft: false
 
 categories:
     - "Jobikado"
+    - "Zitate"
 tags: 
-    - "teamarbeit"
-    - "readinglist"    
+    - "readinglist"
+    - "teamarbeit"    
 ---
 
 :toc: macro
