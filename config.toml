@@ -1,7 +1,6 @@
 baseURL = "/"
 languageCode = "de"
 title = "Andreas Petersell"
-#theme = "anubis"
 theme = "contentful"
 paginate = 10
 copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/)."
@@ -14,6 +13,7 @@ googleAnalytics = ""
 
 [params]
    author = "Andreas Petersell"
+   mainSections = ["blog", "status"]
    description = "Privater Blog eines DITA-Writers und Autors sowie Co-Founders von Jobikado."
 
 [menu]
