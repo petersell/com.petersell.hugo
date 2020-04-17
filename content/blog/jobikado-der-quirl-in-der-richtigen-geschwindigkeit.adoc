@@ -1,0 +1,26 @@
+---
+author: Andreas Petersell
+title: "Der Quirl in der richtigen Geschwindigkeit"
+date: 2019-09-23
+draft: false
+
+categories:
+    - "arbeitswelt"
+tags: 
+    - "jobikado"    
+---
+
+:imagesdir: ../images/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/
+
+Oft habe ich mich gefragt, warum Xing die "Arbeitgeber-Bewertungsplattform" Kununu kaufte. Widersprechen sich die Konzepte nicht eigentlich?
+<!--more-->
+
+image::jobikado.png/[Jobikado, width=50%]
+
+Während Xing die Interessen der Firmen bei der Mitarbeitersuche unterstützt und fördert, bewahrt Kununu die wechselwilligen Mitarbeiter vor einem Fehler: Bewirb Dich nicht bei einer Firma mit schlechten Bewertungen.
+
+Aber die Verbindung beider ist genial und hilft beiden. Es ist wie ein Quirl, der die Belegschaften langsam, wie gesagt: *langsam und stetig* aufwirbelt. Die erfahrenen Fachkräfte ziehen weiter, wenn sie in ihrer Firma nicht erhört werden. Neue, zumeist jüngere Mitarbeiter rücken nach. Jedoch verbleibt noch genügend Zeit, das Wissen und die Erfahrung weiter zu reichen.
+
+Der Gau und der Untergang jeder Firma ist es, wenn zu viele Fachkräfte zu gleich kündigen. Viele Firmen sind sehr nah dran. Besonders kleinere und mittlere Firmen. Vollzieht sich der Wechsel des mobilen Teils der Belegschaft zu schnell, kann dies nicht mehr mit dem immobilen Teil abgefangen werden.
+
+Es gibt eine einfache Formel, wie die Geschwindigkeit des "Quirls" konstant langsam gehalten werden kann. Ich werde diese Formel unter jobikado.de ausarbeiten. Denn es ist wie beim Mikado: entzieht man dem Wirrwar zugleich zu viele Stäbchen, fällt alles in sich zusammen.
