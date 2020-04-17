@@ -1,0 +1,17 @@
+---
+author: Andreas Petersell
+title: "Fluktuation - keiner war´s"
+date: 2019-12-20
+draft: false
+
+categories:
+    - "zitate"
+tags: 
+    - "readinglist"
+    - "jobikado" 
+---
+
+[quote, John Strelecky: Das Leben gestalten mit den Big Five for Live, München 2018 (S. 201)]
+____
+Die meisten Gehälter und Boni von Managern basieren auf zwei Dingen: auf den Umsätzen und der Anzahl der Mitarbeiter. Sie basieren nicht auf Renditen und Fluktuationsraten.
+____

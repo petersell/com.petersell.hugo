@@ -7,7 +7,7 @@ description: DITA XML in Eclipse als Quelldatei-Editor
 categories: 
     - "ditalog"
 tags: 
-    - "dita"
+    - "dita-xml"
 
 markup: asciidoc
 ---

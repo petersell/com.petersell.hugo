@@ -8,8 +8,7 @@ categories:
     - "techcomm"
     - "ditalog"
 tags: 
-    - "dita"
-    - "dita-ot"    
+    - "dita-xml"    
 ---
 
 :toc: macro

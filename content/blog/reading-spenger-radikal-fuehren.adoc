@@ -5,10 +5,11 @@ date: 2019-07-18
 draft: false
 
 categories:
-    - "Jobikado"
+    - "zitate"
 tags: 
+    - "readinglist"
     - "teamarbeit"
-    - "readinglist"    
+    - "jobikado"    
 ---
 
 :toc: macro

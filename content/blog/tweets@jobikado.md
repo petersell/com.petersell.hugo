@@ -1,10 +1,8 @@
 ---
 title: "Tweets@jobikado"
 date: 2020-02-20
-draft: false
+draft: true
 
-categories:
-    - "jobikado"
 tags: 
     - "tweet"
     - "jobikado"

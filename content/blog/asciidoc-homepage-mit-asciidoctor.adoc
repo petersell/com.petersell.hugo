@@ -7,7 +7,6 @@ draft: false
 categories:
     - "techcomm"
 tags: 
-    - "asciidoctor"
     - "asciidoc"    
 ---
 
