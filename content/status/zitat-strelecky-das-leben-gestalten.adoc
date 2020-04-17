@@ -5,11 +5,10 @@ date: 2019-12-20
 draft: false
 
 categories:
-    - "jobikado"
     - "zitate"
 tags: 
     - "readinglist"
-    - "teamarbeit" 
+    - "jobikado" 
 ---
 
 [quote, John Strelecky: Das Leben gestalten mit den Big Five for Live, München 2018 (S. 201)]

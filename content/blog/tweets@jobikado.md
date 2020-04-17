@@ -3,8 +3,6 @@ title: "Tweets@jobikado"
 date: 2020-02-20
 draft: true
 
-categories:
-    - "jobikado"
 tags: 
     - "tweet"
     - "jobikado"
