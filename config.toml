@@ -25,9 +25,9 @@ googleAnalytics = ""
     weight = 10
 
   [[menu.main]]
-    identifier = "status"
+    identifier = "statusarchiv"
     name = "Status"
-    url = "/status/"
+    url = "/archive/status/"
     weight = 20  
 
   [[menu.main]]
@@ -43,8 +43,8 @@ googleAnalytics = ""
     weight = 40
 
   [[menu.main]]
-    name = "Archive"
-    identifier = "archive"
+    name = "Blogarchiv"
+    identifier = "blogarchiv"
     url = "/archive/blog/"
     weight = 50
 

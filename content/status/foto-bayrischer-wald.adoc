@@ -1,0 +1,18 @@
+---
+author: Andreas Petersell
+title: "Auf den Arber"
+date: 2019-10-07
+draft: false
+
+categories:
+    - "fotos"
+tags: 
+    - "familie"
+---
+
+Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.
+<!--more-->
+
+image::https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212019-c6147330-me.jpg[Auf den Arber]
+
+Nichts konnte uns aufhalten! Hier mehr Bilder: https://www.petersell.com/photos/index.php?/category/46

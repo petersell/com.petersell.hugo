@@ -1,0 +1,20 @@
+---
+author: Andreas Petersell
+title: "ZAZ - und der Abend wird gut"
+date: 2019-09-08
+draft: false
+
+categories:
+    - "veranstaltung"
+    - "fotos"
+tags: 
+    - "familie"
+    - "zaz"
+---
+
+:imagesdir: ../images/foto-zaz-ifa/
+
+ZAZ in Berlin in lauer Sommernacht. Es gibt fast nichts besseres. Bis sie jemand von der Bühne gezerrt hat.
+<!--more-->
+
+image::zaz-in-berlin.jpg/[ZAZ in Berlin, width=50%]
