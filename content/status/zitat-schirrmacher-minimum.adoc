@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: "Gemeinschaft als knappes Gut"
+title: "Minimum"
 date: 2019-08-05
 draft: false
 
