@@ -1,0 +1,16 @@
+---
+author: Andreas Petersell
+title: "Notiz"
+date: 2018-12-01
+//headless: yes
+
+categories:
+    - "notizen"
+tags: 
+    - "familie" 
+---
+
+[quote, Der HERR]
+____
+Papa, lass mich lügen. Du kannst nicht lügen.
+____

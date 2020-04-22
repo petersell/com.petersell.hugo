@@ -9,7 +9,7 @@ categories:
     - "arbeitswelt"
 tags: 
     - "readinglist"
-    - "teamarbeit"
+    - "teamwork"
     - "jobikado"    
 ---
 

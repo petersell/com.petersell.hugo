@@ -1,0 +1,18 @@
+---
+author: Andreas Petersell
+title: "Katzenfrühstück"
+date: 2019-01-21
+draft: false
+
+categories:
+    - "fotos"
+tags: 
+    - "familie"
+---
+
+:imagesdir: ../images/katzenfruehstueck/
+
+Ich werde doch wohl ein Blaumeischen von einem Eierwärmer unterscheiden können! Wäre ja gelacht.
+<!--more-->
+
+image::katzenfruehstueck.jpg/[Katzenfrühstück, width=80%]
