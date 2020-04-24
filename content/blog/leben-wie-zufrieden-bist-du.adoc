@@ -1,0 +1,24 @@
+---
+author: Andreas Petersell
+title: "Wie zufrieden ist Du mit Deinem Leben?"
+date: 2016-07-19
+draft: false
+
+categories:
+    - "erleben"
+tags: 
+    - "darumlebenwir"    
+---
+
+:imagesdir: ../images/leben-wie-zufrieden-bist-du/
+
+Jeder Jugendliche muß sich noch einmal einer Routine-Untersuchung stellen. Und bekommt dazu einen Fragebogen zum Ausfüllen.
+<!--more-->
+
+image::wie-zufrieden1.jpg/[Wie zufrieden bist Du?]
+
+Wie zufrieden bist Du mit Deinem Leben? Zufrieden? Geht so? Oder Unzufrieden? Gute Frage - mit einem Kreuzchen schnell beantwortet.
+
+image::wie-zufrieden2.jpg/[Wie zufrieden bist Du?]
+
+Kommst Du gut klar mit Deinem Ehepartner? Kannst Du mit Ihm/Ihr über Probleme reden? Macht bitte Eure Kreuzchen. Beim nächsten Termin bitte ausgefüllt mitbringen!
