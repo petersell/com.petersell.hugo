@@ -6,7 +6,7 @@ draft: false
 
 categories:
     - "zitate"
-    - "roman"
+    - "romanschreiben"
 tags: 
     - "readinglist" 
 ---

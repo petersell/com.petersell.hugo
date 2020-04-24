@@ -1,0 +1,13 @@
+---
+author: Andreas Petersell
+title: "Notiz"
+date: 2019-07-25
+draft: false
+
+categories:
+    - "notizen"
+tags: 
+    - "darumlebenwir"
+---
+
+Heute Kurze-Hosen-Befehl meiner Frau befolgt. Zum ersten Mal. Kurze Hose.
