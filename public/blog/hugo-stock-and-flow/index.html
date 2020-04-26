@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Hugo mit Stock and Flow</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Hugo mit Stock and Flow</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="17.04.2020">17.04.2020</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom <a href="http://snarkmarket.com/2010/4890">Stock and Flow</a>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Flow</strong> is the feed. It’s the posts and the tweets. It’s the stream of daily and sub-daily updates that reminds people you exist.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stock</strong> is the durable stuff. It’s the content you produce that’s as interesting in two months (or two years) as it is today. It’s what people discover via search. It’s what spreads slowly but surely, building fans over time.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Robin Sloan<br>
+<cite>http://snarkmarket.com/2010/4890</cite>
+</div>
+</div>
+<div class="paragraph">
+<p>In meinem alten <a href="https://withknown.com/">CMS Known</a> gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer <em>Timeline</em> angezeigt. Doch sind eigene Essays und abgeschriebene Zitate andere wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: <em>Blog</em> und <em>Status</em>.</p>
+</div>
+<div class="paragraph">
+<p>In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen <em>Status</em> angepinnt. Jedoch wurden auf der Startseite immer die Blogbeiträge ausgegeben, die Statusbeträge fehlten. Jetzt wurde ich in der <a href="https://gohugo.io/functions/where/#mainsections">Hugo-Dokumentation</a> fündig. Es gilt, in der Konfigurationsdatei <code>config.toml</code> einen kleinen Eintrag vorzunehmen:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[params]
+  mainSections = ["blog", "status"]</code></pre>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

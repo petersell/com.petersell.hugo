@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Asciidoctor auf Windows einrichten</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Asciidoctor auf Windows einrichten</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="15.11.2019">15.11.2019</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>AsciiDoc ist eine vereinfachte Auszeichnungssprache ähnlich Markdown, die dazu dient, Texte in verschiedenen Dokumentenformaten zu veröffentlichen. Asciidoc wurde speziell für die Technische Dokumentation entwickelt und wird in vielen Git-Portalen als Dokumentationsstandard genutzt. Es hat jedoch nicht die Möglichkeiten der Wiederverwendung wie DITA-XML. Neuer Rechner, neuer Doktor: wie muss ich ihn installieren? Jetzt schreibe ich es auf, denn ich vergesse es jedes Mal.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_ruby_installieren">Ruby installieren</a></li>
+<li><a href="#_asciidoctor_installieren">Asciidoctor installieren</a></li>
+<li><a href="#_asciidoctor_für_pdf_installieren">Asciidoctor für PDF installieren</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_ruby_installieren"><a class="anchor" href="#_ruby_installieren"></a>Ruby installieren</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../images/asciidoc-asciidoctor-install/rubyinstall1.gif" alt="rubyinstall1">
+</div>
+</div>
+<div class="paragraph">
+<p>Der Installationsroutine folgen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/asciidoc-asciidoctor-install/rubyinstall2.gif" alt="rubyinstall2">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidoctor_installieren"><a class="anchor" href="#_asciidoctor_installieren"></a>Asciidoctor installieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Öffnen Sie eine Eingabeauforderung und geben Sie folgenden Befehl ein und drücken Sie [Enter].</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ gem install --http-proxy http://@proxy.&lt;Proxyservername&gt;.&lt;Port&gt; asciidoctor</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/asciidoc-asciidoctor-install/asciidoctor-install.gif" alt="asciidoctor install">
+</div>
+</div>
+<div class="paragraph">
+<p>Arbeiten Sie ohne Proxyserver, genügt ein <code>gem install asciidoctor</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidoctor_für_pdf_installieren"><a class="anchor" href="#_asciidoctor_für_pdf_installieren"></a>Asciidoctor für PDF installieren</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>$ gem install --http-proxy http://@proxy.&lt;Proxyservername&gt;.&lt;Port&gt; asciidoctor-pdf --pre</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/asciidoc-asciidoctor-install/asciidoctor-pdf.gif" alt="asciidoctor pdf">
+</div>
+</div>
+<div class="paragraph">
+<p>Das war´s. Sie können nun mit Hilfe von adoc-Dateien  <a href="https://asciidoctor.org/docs/user-manual/#html">Output erzeugen</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ asciidoctor mysample.adoc</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

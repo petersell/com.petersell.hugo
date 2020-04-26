@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Schusterjungen im PDF-Output des DITA-OT vermeiden</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Schusterjungen im PDF-Output des DITA-OT vermeiden</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="23.11.2012">23.11.2012</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>Das DITA Open Toolkit ist ein Open Source Tool für das Generieren von Ausgabeformaten für Inhalte, die mittels DITA XML erstellt wurden. Es kommt öfter vor, dass sich der Seitentitel und die Kurzbeschreibung (shortdesc) als letzte unten auf einer PDF-Seite wiederfinden und der Textkörper erst auf der nächsten Seite folgt.</p>
+</div>
+<div class="paragraph">
+<p>Das sieht unschön aus. Doch unter <a href="https://www.data2type.de/xml-xslt-xslfo/xsl-fo/xslfo-einfuehrung/typografische-mittel/">data2type</a> wurde ich fündig.</p>
+</div>
+<div class="paragraph">
+<p>Folgende umbruchverhindernde Attribute für <code>shortdesc</code> gilt es, im PDF-Plugin in der Datei <code>cfg/fo/attrs/commons-attr.xsl</code> hinzufügen:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;xsl:attribute-set name="topic__shortdesc" use-attribute-sets="body"&gt;
+  &lt;xsl:attribute name="keep-with-previous.within-page"&gt;always&lt;/xsl:attribute&gt;
+  &lt;xsl:attribute name="keep-with-next.within-page"&gt;always&lt;/xsl:attribute&gt;
+&lt;/xsl:attribute-set&gt;</code></pre>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

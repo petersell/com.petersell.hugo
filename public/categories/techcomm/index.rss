@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Techcomm on Andreas Petersell</title>
+    <title>techcomm on Andreas Petersell</title>
     <link>/categories/techcomm/</link>
-    <description>Recent content in Techcomm on Andreas Petersell</description>
+    <description>Recent content in techcomm on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Tue, 24 Mar 2020 15:20:33 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 20:08:10 +0100</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
         <atom:link href="/categories/techcomm/index.rss" rel="self" type="application/rss+xml" />
@@ -15,201 +15,10 @@
     
     
     <item>
-      <title>Asciidoc Test</title>
-      <link>/blog/asciidoc-test/</link>
-      <category>tag1</category>
-      <category>tag2</category>
-      <pubDate>Tue, 24 Mar 2020 15:20:33 +0100</pubDate>
-      
-      <guid>/blog/asciidoc-test/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Content entered directly below the header but before the first section heading is called the preamble.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_first_level_heading&#34;&gt;First level heading&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;This is a paragraph with a &lt;strong&gt;bold&lt;/strong&gt; word and an &lt;em&gt;italicized&lt;/em&gt; word.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;image-file-name.png&#34; alt=&#34;I am the image alt text.&#34;&gt;
-&lt;/div&gt;
-&lt;div class=&#34;title&#34;&gt;Figure 1. Image caption&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;This is another paragraph.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_1&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_1&#34; title=&#34;View footnote.&#34;&gt;1&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_second_level_heading&#34;&gt;Second level heading&lt;/h3&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Unordered list title&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;list item 1&lt;/p&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nested list item&lt;/p&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nested nested list item 1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;nested nested list item 2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;list item 2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;exampleblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Example 1. Example block title&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Content in an example block is subject to normal substitutions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sidebarblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Sidebar title&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sidebars contain aside text and are subject to normal substitutions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_third_level_heading&#34;&gt;Third level heading&lt;/h4&gt;
-&lt;div id=&#34;id-for-listing-block&#34; class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Listing block title&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Content in a listing block is subject to verbatim substitutions.
-Listing block content is commonly used to preserve code input.&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect4&#34;&gt;
-&lt;h5 id=&#34;_fourth_level_heading&#34;&gt;Fourth level heading&lt;/h5&gt;
-&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
-&lt;caption class=&#34;title&#34;&gt;Table 1. Table title&lt;/caption&gt;
-&lt;colgroup&gt;
-&lt;col style=&#34;width: 50%;&#34;&gt;
-&lt;col style=&#34;width: 50%;&#34;&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Column heading 1&lt;/th&gt;
-&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Column heading 2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 1, row 1&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 2, row 1&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 1, row 2&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Column 2, row 2&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;sect5&#34;&gt;
-&lt;h6 id=&#34;_fifth_level_heading&#34;&gt;Fifth level heading&lt;/h6&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;I am a block quote or a prose excerpt.
-I am subject to normal substitutions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; firstname lastname&lt;br&gt;
-&lt;cite&gt;movie title&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;verseblock&#34;&gt;
-&lt;pre class=&#34;content&#34;&gt;I am a verse block.
-  Indents and endlines are preserved in verse blocks.&lt;/pre&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; firstname lastname&lt;br&gt;
-&lt;cite&gt;poem title and more&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_first_level_heading_2&#34;&gt;First level heading&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;admonitionblock tip&#34;&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class=&#34;icon&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class=&#34;content&#34;&gt;
-There are five admonition labels: Tip, Note, Important, Caution and Warning.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;ordered list item&lt;/p&gt;
-&lt;div class=&#34;olist loweralpha&#34;&gt;
-&lt;ol class=&#34;loweralpha&#34; type=&#34;a&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;nested ordered list item&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ordered list item&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;The text at the end of this sentence is cross referenced to &lt;a href=&#34;#_third_level_heading&#34;&gt;the third level heading&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_first_level_heading_3&#34;&gt;First level heading&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;This is a link to the &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/&#34;&gt;Asciidoctor User Manual&lt;/a&gt;.
-This is an attribute reference {quick-uri}[which links this text to the Asciidoctor Quick Reference Guide].&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;footnotes&#34;&gt;
-&lt;hr&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_1&#34;&gt;
-&lt;a href=&#34;#_footnoteref_1&#34;&gt;1&lt;/a&gt;. I am footnote text and will be displayed at the bottom of the article.
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
       <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
-      <category>hugo-asciidoc</category>
+      <category>hugo</category>
+      <category>asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
       <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
@@ -274,6 +83,14 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;pre&gt;:imagesdir: ../images/meinblogpostimage/&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Damit beim Neuanlegen einer adoc-Datei der Bildordner gleich korrekt ausgegeben wird, schreiben Sie in Ihrem Archetype &lt;code&gt;default.adoc&lt;/code&gt; folgende Notation in den Bereich der Asciidoc-Attribute (unterhalb des YAML-Headers):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/{{ .File.BaseFileName }}/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;sect2&#34;&gt;
 &lt;h3 id=&#34;_2_bild_abspeichern&#34;&gt;2. Bild abspeichern&lt;/h3&gt;
@@ -303,16 +120,459 @@ This is an attribute reference {quick-uri}[which links this text to the Asciidoc
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_fazit&#34;&gt;Fazit&lt;/h2&gt;
+&lt;h2 id=&#34;_admonitions&#34;&gt;Admonitions&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die Bilder werden also nicht in den Standard-Ordner für Bilder &lt;code&gt;static&lt;/code&gt; abgelegt. Da ich sowieso eine Bilddatenbank &lt;em&gt;Piwigo&lt;/em&gt; habe, überlege ich, ob ich nicht via URLs dorthin verlinke.&lt;/p&gt;
+&lt;p&gt;Ich habe auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;literalblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]&lt;/pre&gt;
+&lt;pre&gt;:icons: font&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe also den CSS-Link für &lt;em&gt;Font Awesome&lt;/em&gt; wieder entfernt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Interne Einbindung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&#34;stylesheet&#34; href=&#34;{{&#34;css/fa/css/all.css&#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Externe Einbindung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34; rel=&#34;stylesheet&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In meiner CSS wurden sämtliche Einträge zur class &lt;code&gt;.admonitionblock&lt;/code&gt; überflüssig, die ich mir zuvor aus der &lt;code&gt;asciidoctor.css&lt;/code&gt; kopiert hatte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Asciidoctor auf Windows einrichten</title>
+      <link>/blog/asciidoc-asciidoctor-install/</link>
+      <category>asciidoc</category>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/asciidoc-asciidoctor-install/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;AsciiDoc ist eine vereinfachte Auszeichnungssprache ähnlich Markdown, die dazu dient, Texte in verschiedenen Dokumentenformaten zu veröffentlichen. Asciidoc wurde speziell für die Technische Dokumentation entwickelt und wird in vielen Git-Portalen als Dokumentationsstandard genutzt. Es hat jedoch nicht die Möglichkeiten der Wiederverwendung wie DITA-XML. Neuer Rechner, neuer Doktor: wie muss ich ihn installieren? Jetzt schreibe ich es auf, denn ich vergesse es jedes Mal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_ruby_installieren&#34;&gt;Ruby installieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_asciidoctor_installieren&#34;&gt;Asciidoctor installieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;Asciidoctor für PDF installieren&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_ruby_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_ruby_installieren&#34;&gt;&lt;/a&gt;Ruby installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall1.gif&#34; alt=&#34;rubyinstall1&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Installationsroutine folgen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall2.gif&#34; alt=&#34;rubyinstall2&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_asciidoctor_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoctor_installieren&#34;&gt;&lt;/a&gt;Asciidoctor installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Öffnen Sie eine Eingabeauforderung und geben Sie folgenden Befehl ein und drücken Sie [Enter].&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ gem install --http-proxy http://@proxy.&amp;lt;Proxyservername&amp;gt;.&amp;lt;Port&amp;gt; asciidoctor&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-install.gif&#34; alt=&#34;asciidoctor install&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Arbeiten Sie ohne Proxyserver, genügt ein &lt;code&gt;gem install asciidoctor&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_asciidoctor_für_pdf_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;&lt;/a&gt;Asciidoctor für PDF installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ gem install --http-proxy http://@proxy.&amp;lt;Proxyservername&amp;gt;.&amp;lt;Port&amp;gt; asciidoctor-pdf --pre&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-pdf.gif&#34; alt=&#34;asciidoctor pdf&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das war´s. Sie können nun mit Hilfe von adoc-Dateien  &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#html&#34;&gt;Output erzeugen&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ asciidoctor mysample.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eine Homepage mit Asciidoctor erstellen</title>
+      <link>/blog/asciidoc-homepage-mit-asciidoctor/</link>
+      <category>asciidoc</category>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/asciidoc-homepage-mit-asciidoctor/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte &lt;a href=&#34;https://www.tomswan.com/&#34;&gt;Tom Swan&lt;/a&gt; mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock note&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Update&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Inzwischen nutze ich das CMS Hugo. Nur mit Hilfe des Asciidoctors HTML-Dateien zu erstellen, war doch sehr anstrengend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_metadaten_für_html_dateien_einrichten&#34;&gt;Metadaten für HTML-Dateien einrichten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_asciidoc_css_anpassen&#34;&gt;asciidoc.css anpassen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_menüleiste_erstellen&#34;&gt;Menüleiste erstellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_inhaltsverzeichnis_einfügen&#34;&gt;Inhaltsverzeichnis einfügen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_quelldateien_im_unterordner&#34;&gt;Quelldateien im Unterordner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_metadaten_für_html_dateien_einrichten&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_metadaten_für_html_dateien_einrichten&#34;&gt;&lt;/a&gt;Metadaten für HTML-Dateien einrichten&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie können mit einer HTML-Datei &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#docinfo-file&#34;&gt;docinfo.html&lt;/a&gt; und dem &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#attributes&#34;&gt;Attribut&lt;/a&gt; &lt;code&gt;:docinfo:&lt;/code&gt; die Metadaten innerhalb des HTML-Headers erzeugen und im HTML-Output in jeder Datei einfügen. Erstellen Sie eine HTML-Datei und fügen Sie Ihre Metadaten ein. Z.B.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;!-- docinfo.html --&amp;gt;
+&amp;lt;link rel=&#34;shortcut icon&#34; type=&#34;image/png&#34; href=&#34;images/petersell.ico&#34;&amp;gt;
+&amp;lt;meta property=&#34;og:title&#34; content=&#34;Andreas Petersell&#34; /&amp;gt;
+&amp;lt;meta property=&#34;og:site_name&#34; content=&#34;Andreas Petersell&#34; /&amp;gt;
+&amp;lt;meta property=&#34;og:description&#34; content=&#34;Technical Writer (DITA XML) and Author&#34; /&amp;gt;
+&amp;lt;link href=&#34;https://twitter.com/petersell&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&amp;gt;
+&amp;lt;link href=&#34;https://www.petersell.com&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Kopieren Sie die &lt;code&gt;docinfo.html&lt;/code&gt;  in das Quellhauptverzeichnis. Fügen Sie anschließend jeder Ihrer adoc-Dateien folgendes Attribut hinzu:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;:docinfo: shared&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Kopieren Sie abschließend ein Favicon-Datei in das Verzeichnis &lt;code&gt;/images&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_asciidoc_css_anpassen&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoc_css_anpassen&#34;&gt;&lt;/a&gt;asciidoc.css anpassen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach dem Build wird die Standard-CSS im Ausgabeordner abgelegt. Diese &lt;code&gt;asciidoctor.css&lt;/code&gt;  gilt es umzubennen und im Hauptverzeichnis der Quelldateien abzulegen. Nehmen Sie darin die gewünschten Änderungen vor. Meine Änderungswünsche waren z.B die Farbe grün für die Überschriften und Links. Auch gefiel mir die links ausgerichtete schwarze Fußleiste nicht.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Farbe der Links&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;a{color:#44aa00;text-decoration:underline;line-height:inherit}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Farbe der Fußleiste&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;#footer{max-width:1000px;background-color:rgba(255,255,255,.8);padding:1.25em}
+#footer-text{color:rgba(0,0,0,.8);line-height:1.44}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Fügen Sie das Stylesheet Ihrem Buildbefehl hinzu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html &#39;C:\asciidoc\src\**\*.adoc&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_menüleiste_erstellen&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_menüleiste_erstellen&#34;&gt;&lt;/a&gt;Menüleiste erstellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Möglichkeit, ein kleines Menü mit Asciidoc zusammenstellen zu können, überzeugte mich letztendlich, via Asciidoc zu bloggen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Meine include-Datei, die das Menü mit zwei externen Weblinks enthält, siehe folgendermaßen aus:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:home: index.html[Home]
+:doku: doku.html[Softwaredokumentation]
+
+link:{home} | link:{doku} | https://www.petersell.com[Stream] | https://www.petersell.com/pages/impressum[Impressum]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese include-Datei &lt;code&gt;include-menu.adoc&lt;/code&gt; habe ich in jeder Asciidoc-Datei unterhalb der Attribute eingebunden:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;include::include-menu.adoc[]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese hier aufgerufene HTML-Seite sieht als &lt;code&gt;doku-asciidoc.adoc&lt;/code&gt; im Header folgendermaßen aus:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:title: Asciidoc
+:sourcedir: ../
+:docinfo: shared
+:icons: font
+:sectanchors:
+:imagesdir: images
+:doctype: article
+:filename: doku-asciidoc
+:date: 22.01.2019
+
+   include::include-menu.adoc[]
+
+- - -
+
+== {title}
+
+- - -
+
+=== Eine Homepage mit Asciidoc erstellen
+
+[abstract]
+Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte {web-tomswan} mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_inhaltsverzeichnis_einfügen&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_inhaltsverzeichnis_einfügen&#34;&gt;&lt;/a&gt;Inhaltsverzeichnis einfügen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn Sie auf bestimmten Seiten ein Inhaltsverzeichnis erstellen möchten, fügen Sie diese beiden Attribute ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:toc-title: Inhalt
+:toc: macro&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;An die Stelle in der adoc-Datei, wo das Inhaltsverzeichnis erscheinen soll, fügen Sie &lt;code&gt;toc::[]&lt;/code&gt; ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quelldateien_im_unterordner&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_quelldateien_im_unterordner&#34;&gt;&lt;/a&gt;Quelldateien im Unterordner&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Liegen manche Quelldateien in einem Unterordner, könnten folgnde Attribute hilfereich sein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;:sourcedir: ../
+:docinfodir: ../&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>FOP für das DITA-OT 2.4.5 einrichten</title>
+      <link>/blog/dita-ditaot-fop-einrichten/</link>
+      <category>dita-xml</category>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/dita-ditaot-fop-einrichten/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den &lt;em&gt;XEP-Prozessor Personal Edition&lt;/em&gt; zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen neu eingerichtet für den Einsatz unter FOP werden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_bilder_werden_nicht_an_a4_angepaßt&#34;&gt;Bilder werden nicht an A4 angepaßt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_related_links_ausblenden&#34;&gt;Related Links ausblenden&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_formatierungen_in_ein_extra_plugin&#34;&gt;Formatierungen in ein Extra-Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_bilder_werden_nicht_an_a4_angepaßt&#34;&gt;Bilder werden nicht an A4 angepaßt&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Bilder haben viel zu große Abmasse, trotz 72dpi und max. 600px Breite. Eine Lösungsansatz fand ich hier bei &lt;a href=&#34;http://infotexture.net/2010/03/dita-ot-scaling-images-in-pdf-output/&#34;&gt;infotexture.net&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für mich ergaben sich aus dem og. Hinweis folgende Handlungsschritte:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In der Datei &lt;code&gt;DITA-OT-2.4.5/plugins/org.dita.pdf2.fop/cfg/fop.xconf&lt;/code&gt; von 72 dpi auf 120 dpi erhöhen: &lt;code&gt;&amp;lt;source-resolution&amp;gt;120&amp;lt;/source-resolution&amp;gt;&lt;/code&gt; und &lt;code&gt;&amp;lt;target-resolution&amp;gt;120&amp;lt;/target-resolution&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eine &lt;code&gt;pdf.properties&lt;/code&gt;-Datei erstellen, die den obigen Pfad der &lt;code&gt;fop.xconf&lt;/code&gt; enthält:
+&lt;code&gt;args.fo.userconfig = ${dita.dir}/plugins/org.dita.pdf2.fop/cfg/fop.xconf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die Properties-Datei in den DITA-OT-build-Befehl aufnehmen:
+&lt;code&gt;dita -i D:\publikation.ditamap -f pdf -v -o D:\DITA-OUT -propertyfile D:\build\pdf.properties&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_related_links_ausblenden&#34;&gt;Related Links ausblenden&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In die so eben erstellte Datei &lt;code&gt;pdf.properties&lt;/code&gt; gilt es folgenden Wert zu vermerken: &lt;code&gt;args.rellinks = none&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_formatierungen_in_ein_extra_plugin&#34;&gt;Formatierungen in ein Extra-Plugin&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für folgende Abweichungen müssen neue Templates her:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Deckblatt mit z,B. blauem und orangefarbenen Titel und Titelbild (DITA for Print)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bildunterschriften sollen kleiner werden und kursiv&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In der Header-Zeile muß der jeweilige Topic-Titel ausgeben werden (DITA for Print)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topics erster Ebene sollen auf einer neuer Seite starten&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Damit die Formartierungen beim DITA-OT-Update erhalten bleiben, müssen die neuen Templates in ein neues PDF-Plugin ausgelagert werden. Die Templates dazu werden PDF2-Plugin des neuen DITA-OTs 2.4.5 entnommen und in das neue Plugin kopiert. Die Template-Beispiele entnahm ich dem Buch &lt;em&gt;DITA for Print: A DITA Open Toolkit Workbook&lt;/em&gt; von Leigh W. White.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich musste mehr Template-Dateien ins Plugin aufnehmen als im Buch vorgesehen. Das Buch von Leight W. White ist sehr verständlich und funktioniert beim DITA-OT 2.4.5 auch noch mit der 1. Ausgabe. Die Anpassungen sind jedoch zu umfangreich, um sie hier abzubilden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Hier noch weitere geänderte Templates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_a4_einstellen&#34;&gt;A4 einstellen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In &lt;code&gt;DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\basic-settings.xml&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:variable name=&#34;page-width&#34;&amp;gt;210mm&amp;lt;/xsl:variable&amp;gt;
+&amp;lt;xsl:variable name=&#34;page-height&#34;&amp;gt;297mm&amp;lt;/xsl:variable&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_bildunterschrift_verkleinern&#34;&gt;Bildunterschrift verkleinern&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In &lt;code&gt;DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\common-attr.xml&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&#34;fig.title&#34; use-attribute-sets=&#34;base-font common.title&#34;&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;font-weight&#34;&amp;gt;normal&amp;lt;/xsl:attribute&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;font-size&#34;&amp;gt;8pt&amp;lt;/xsl:attribute&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;font-style&#34;&amp;gt;italic&amp;lt;/xsl:attribute&amp;gt;
+&amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_topics_1_ebene_auf_neuer_seite_starten&#34;&gt;Topics 1. Ebene auf neuer Seite starten&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://www.oxygenxml.com/forum/topic12752.htm&#34;&gt;https://www.oxygenxml.com/forum/topic12752.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In &lt;code&gt;DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\commons-attr.xsl&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&#34;topic.title&#34; use-attribute-sets=&#34;common.title common.border__bottom&#34;&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;break-before&#34;&amp;gt;page&amp;lt;/xsl:attribute&amp;gt;
+        ...
+&amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Alle fehlenden Templates finden sich im Buch &lt;em&gt;DITA for Print&lt;/em&gt;. Das Auslagern meiner individuellen Formatierungen in ein eingenes PDF-Plugin erlaubt mir, letzteres auch in eine neue DITA-OT-Installation bequem zu übernehmen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Schusterjungen im PDF-Output des DITA-OT vermeiden</title>
+      <link>/blog/dita-ditaot-schusterjungen-vermeiden/</link>
+      <category>dita-xml</category>
+      <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/dita-ditaot-schusterjungen-vermeiden/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das DITA Open Toolkit ist ein Open Source Tool für das Generieren von Ausgabeformaten für Inhalte, die mittels DITA XML erstellt wurden. Es kommt öfter vor, dass sich der Seitentitel und die Kurzbeschreibung (shortdesc) als letzte unten auf einer PDF-Seite wiederfinden und der Textkörper erst auf der nächsten Seite folgt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das sieht unschön aus. Doch unter &lt;a href=&#34;https://www.data2type.de/xml-xslt-xslfo/xsl-fo/xslfo-einfuehrung/typografische-mittel/&#34;&gt;data2type&lt;/a&gt; wurde ich fündig.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Folgende umbruchverhindernde Attribute für &lt;code&gt;shortdesc&lt;/code&gt; gilt es, im PDF-Plugin in der Datei &lt;code&gt;cfg/fo/attrs/commons-attr.xsl&lt;/code&gt; hinzufügen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&amp;lt;xsl:attribute-set name=&#34;topic__shortdesc&#34; use-attribute-sets=&#34;body&#34;&amp;gt;
+  &amp;lt;xsl:attribute name=&#34;keep-with-previous.within-page&#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
+  &amp;lt;xsl:attribute name=&#34;keep-with-next.within-page&#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
+&amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>

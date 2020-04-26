@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>asciidoc on Andreas Petersell</title>
+    <link>/tags/asciidoc/</link>
+    <description>Recent content in asciidoc on Andreas Petersell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Sun, 22 Mar 2020 20:08:10 +0100</lastBuildDate>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    
+        <atom:link href="/tags/asciidoc/index.rss" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Hugo mit Asciidoc - Bilder einbinden</title>
+      <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
+      <category>hugo</category>
+      <category>asciidoc</category>
+      <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
+      
+      <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
+      <description>&lt;div id=&#34;preamble&#34;&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Gottseidank fand ich auf Github den Quelltext des Blogs &lt;a href=&#34;https://foo-dogsquared.github.io&#34; class=&#34;bare&#34;&gt;https://foo-dogsquared.github.io&lt;/a&gt; mit einem einfachen Beispiel der Bildeinbindung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Hugo und Asciidoctor installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/&#34;&gt;Blogging with Asciidoctor and Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc&#34;&gt;Beispiel der Bildeinbindung&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_1_content_datei_editieren&#34;&gt;1. Content-Datei editieren&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Schreiben Sie Ihren Blogpost in der Datei &lt;code&gt;meinblogpost.adoc&lt;/code&gt; und fügen das Bild im Text ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;image::meinblogpost.gif[]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/meinblogpostimage/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Damit beim Neuanlegen einer adoc-Datei der Bildordner gleich korrekt ausgegeben wird, schreiben Sie in Ihrem Archetype &lt;code&gt;default.adoc&lt;/code&gt; folgende Notation in den Bereich der Asciidoc-Attribute (unterhalb des YAML-Headers):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/{{ .File.BaseFileName }}/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_2_bild_abspeichern&#34;&gt;2. Bild abspeichern&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Legen Sie einen Ordner &lt;code&gt;images&lt;/code&gt; innerhalb des post-Ordners an.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        └-- images&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da Sie wissen, dass Ihre Bilddatei &lt;code&gt;meinblogpost.gif&lt;/code&gt; heißt, legen Sie einen weiteren Ordner &lt;code&gt;meinblogpost&lt;/code&gt; innerhalb des &lt;code&gt;images&lt;/code&gt;-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        |-- images
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_admonitions&#34;&gt;Admonitions&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:icons: font&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe also den CSS-Link für &lt;em&gt;Font Awesome&lt;/em&gt; wieder entfernt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Interne Einbindung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&#34;stylesheet&#34; href=&#34;{{&#34;css/fa/css/all.css&#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Externe Einbindung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34; rel=&#34;stylesheet&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In meiner CSS wurden sämtliche Einträge zur class &lt;code&gt;.admonitionblock&lt;/code&gt; überflüssig, die ich mir zuvor aus der &lt;code&gt;asciidoctor.css&lt;/code&gt; kopiert hatte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Asciidoctor auf Windows einrichten</title>
+      <link>/blog/asciidoc-asciidoctor-install/</link>
+      <category>asciidoc</category>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/asciidoc-asciidoctor-install/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;AsciiDoc ist eine vereinfachte Auszeichnungssprache ähnlich Markdown, die dazu dient, Texte in verschiedenen Dokumentenformaten zu veröffentlichen. Asciidoc wurde speziell für die Technische Dokumentation entwickelt und wird in vielen Git-Portalen als Dokumentationsstandard genutzt. Es hat jedoch nicht die Möglichkeiten der Wiederverwendung wie DITA-XML. Neuer Rechner, neuer Doktor: wie muss ich ihn installieren? Jetzt schreibe ich es auf, denn ich vergesse es jedes Mal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_ruby_installieren&#34;&gt;Ruby installieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_asciidoctor_installieren&#34;&gt;Asciidoctor installieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;Asciidoctor für PDF installieren&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_ruby_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_ruby_installieren&#34;&gt;&lt;/a&gt;Ruby installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall1.gif&#34; alt=&#34;rubyinstall1&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Installationsroutine folgen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall2.gif&#34; alt=&#34;rubyinstall2&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_asciidoctor_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoctor_installieren&#34;&gt;&lt;/a&gt;Asciidoctor installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Öffnen Sie eine Eingabeauforderung und geben Sie folgenden Befehl ein und drücken Sie [Enter].&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ gem install --http-proxy http://@proxy.&amp;lt;Proxyservername&amp;gt;.&amp;lt;Port&amp;gt; asciidoctor&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-install.gif&#34; alt=&#34;asciidoctor install&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Arbeiten Sie ohne Proxyserver, genügt ein &lt;code&gt;gem install asciidoctor&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_asciidoctor_für_pdf_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;&lt;/a&gt;Asciidoctor für PDF installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ gem install --http-proxy http://@proxy.&amp;lt;Proxyservername&amp;gt;.&amp;lt;Port&amp;gt; asciidoctor-pdf --pre&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-pdf.gif&#34; alt=&#34;asciidoctor pdf&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das war´s. Sie können nun mit Hilfe von adoc-Dateien  &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#html&#34;&gt;Output erzeugen&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ asciidoctor mysample.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eine Homepage mit Asciidoctor erstellen</title>
+      <link>/blog/asciidoc-homepage-mit-asciidoctor/</link>
+      <category>asciidoc</category>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/asciidoc-homepage-mit-asciidoctor/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte &lt;a href=&#34;https://www.tomswan.com/&#34;&gt;Tom Swan&lt;/a&gt; mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock note&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Update&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Inzwischen nutze ich das CMS Hugo. Nur mit Hilfe des Asciidoctors HTML-Dateien zu erstellen, war doch sehr anstrengend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_metadaten_für_html_dateien_einrichten&#34;&gt;Metadaten für HTML-Dateien einrichten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_asciidoc_css_anpassen&#34;&gt;asciidoc.css anpassen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_menüleiste_erstellen&#34;&gt;Menüleiste erstellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_inhaltsverzeichnis_einfügen&#34;&gt;Inhaltsverzeichnis einfügen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_quelldateien_im_unterordner&#34;&gt;Quelldateien im Unterordner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_metadaten_für_html_dateien_einrichten&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_metadaten_für_html_dateien_einrichten&#34;&gt;&lt;/a&gt;Metadaten für HTML-Dateien einrichten&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie können mit einer HTML-Datei &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#docinfo-file&#34;&gt;docinfo.html&lt;/a&gt; und dem &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#attributes&#34;&gt;Attribut&lt;/a&gt; &lt;code&gt;:docinfo:&lt;/code&gt; die Metadaten innerhalb des HTML-Headers erzeugen und im HTML-Output in jeder Datei einfügen. Erstellen Sie eine HTML-Datei und fügen Sie Ihre Metadaten ein. Z.B.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;!-- docinfo.html --&amp;gt;
+&amp;lt;link rel=&#34;shortcut icon&#34; type=&#34;image/png&#34; href=&#34;images/petersell.ico&#34;&amp;gt;
+&amp;lt;meta property=&#34;og:title&#34; content=&#34;Andreas Petersell&#34; /&amp;gt;
+&amp;lt;meta property=&#34;og:site_name&#34; content=&#34;Andreas Petersell&#34; /&amp;gt;
+&amp;lt;meta property=&#34;og:description&#34; content=&#34;Technical Writer (DITA XML) and Author&#34; /&amp;gt;
+&amp;lt;link href=&#34;https://twitter.com/petersell&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&amp;gt;
+&amp;lt;link href=&#34;https://www.petersell.com&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Kopieren Sie die &lt;code&gt;docinfo.html&lt;/code&gt;  in das Quellhauptverzeichnis. Fügen Sie anschließend jeder Ihrer adoc-Dateien folgendes Attribut hinzu:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;:docinfo: shared&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Kopieren Sie abschließend ein Favicon-Datei in das Verzeichnis &lt;code&gt;/images&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_asciidoc_css_anpassen&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoc_css_anpassen&#34;&gt;&lt;/a&gt;asciidoc.css anpassen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach dem Build wird die Standard-CSS im Ausgabeordner abgelegt. Diese &lt;code&gt;asciidoctor.css&lt;/code&gt;  gilt es umzubennen und im Hauptverzeichnis der Quelldateien abzulegen. Nehmen Sie darin die gewünschten Änderungen vor. Meine Änderungswünsche waren z.B die Farbe grün für die Überschriften und Links. Auch gefiel mir die links ausgerichtete schwarze Fußleiste nicht.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Farbe der Links&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;a{color:#44aa00;text-decoration:underline;line-height:inherit}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Farbe der Fußleiste&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;#footer{max-width:1000px;background-color:rgba(255,255,255,.8);padding:1.25em}
+#footer-text{color:rgba(0,0,0,.8);line-height:1.44}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Fügen Sie das Stylesheet Ihrem Buildbefehl hinzu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html &#39;C:\asciidoc\src\**\*.adoc&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_menüleiste_erstellen&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_menüleiste_erstellen&#34;&gt;&lt;/a&gt;Menüleiste erstellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Möglichkeit, ein kleines Menü mit Asciidoc zusammenstellen zu können, überzeugte mich letztendlich, via Asciidoc zu bloggen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Meine include-Datei, die das Menü mit zwei externen Weblinks enthält, siehe folgendermaßen aus:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:home: index.html[Home]
+:doku: doku.html[Softwaredokumentation]
+
+link:{home} | link:{doku} | https://www.petersell.com[Stream] | https://www.petersell.com/pages/impressum[Impressum]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese include-Datei &lt;code&gt;include-menu.adoc&lt;/code&gt; habe ich in jeder Asciidoc-Datei unterhalb der Attribute eingebunden:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;include::include-menu.adoc[]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese hier aufgerufene HTML-Seite sieht als &lt;code&gt;doku-asciidoc.adoc&lt;/code&gt; im Header folgendermaßen aus:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:title: Asciidoc
+:sourcedir: ../
+:docinfo: shared
+:icons: font
+:sectanchors:
+:imagesdir: images
+:doctype: article
+:filename: doku-asciidoc
+:date: 22.01.2019
+
+   include::include-menu.adoc[]
+
+- - -
+
+== {title}
+
+- - -
+
+=== Eine Homepage mit Asciidoc erstellen
+
+[abstract]
+Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte {web-tomswan} mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_inhaltsverzeichnis_einfügen&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_inhaltsverzeichnis_einfügen&#34;&gt;&lt;/a&gt;Inhaltsverzeichnis einfügen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn Sie auf bestimmten Seiten ein Inhaltsverzeichnis erstellen möchten, fügen Sie diese beiden Attribute ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:toc-title: Inhalt
+:toc: macro&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;An die Stelle in der adoc-Datei, wo das Inhaltsverzeichnis erscheinen soll, fügen Sie &lt;code&gt;toc::[]&lt;/code&gt; ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quelldateien_im_unterordner&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_quelldateien_im_unterordner&#34;&gt;&lt;/a&gt;Quelldateien im Unterordner&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Liegen manche Quelldateien in einem Unterordner, könnten folgnde Attribute hilfereich sein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;:sourcedir: ../
+:docinfodir: ../&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

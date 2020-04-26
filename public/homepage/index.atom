@@ -96,9 +96,18 @@
 &lt;/ul&gt;
 &lt;p&gt;Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.&lt;/p&gt;
 
+&lt;h2&gt;Profile&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.petersell.com/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Twitter&#34; href=&#34;https://twitter.com/petersell&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Mastodon&#34; href=&#34;https://mastodon.social/@diagonale&#34; target=&#34;_blank&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;
+
 &lt;h2&gt;Ebooks&lt;/h2&gt;
 &lt;p&gt;als EPUB und PDF downloadbar.&lt;/p&gt;
-&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
   
 </feed>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="de"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
 <title>Hugo mit Asciidoc - Bilder einbinden</title>
-<link rel="stylesheet" href="/css/main.css" />
-
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><body>
+<link rel="stylesheet" href="/css/main.css" /><body>
 <main>
 <h1 class="post-title">Hugo mit Asciidoc - Bilder einbinden</h1>
-<p>Andreas Petersell&nbsp;am
+<p class="author">Andreas Petersell&nbsp;am
 <date datetime="22.03.2020">22.03.2020</date></p>
 
-<hr>
 
 <article>
 <div id="preamble">
@@ -74,6 +77,14 @@
 <pre>:imagesdir: ../images/meinblogpostimage/</pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Damit beim Neuanlegen einer adoc-Datei der Bildordner gleich korrekt ausgegeben wird, schreiben Sie in Ihrem Archetype <code>default.adoc</code> folgende Notation in den Bereich der Asciidoc-Attribute (unterhalb des YAML-Headers):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>:imagesdir: ../images/{{ .File.BaseFileName }}/</pre>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_2_bild_abspeichern">2. Bild abspeichern</h3>
@@ -103,15 +114,33 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_fazit">Fazit</h2>
+<h2 id="_admonitions">Admonitions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die Bilder werden also nicht in den Standard-Ordner für Bilder <code>static</code> abgelegt. Da ich sowieso eine Bilddatenbank <em>Piwigo</em> habe, überlege ich, ob ich nicht via URLs dorthin verlinke.</p>
+<p>Ich habe auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]</pre>
+<pre>:icons: font</pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Ich habe also den CSS-Link für <em>Font Awesome</em> wieder entfernt.</p>
+</div>
+<div class="listingblock">
+<div class="title">Interne Einbindung</div>
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">&lt;link rel="stylesheet" href="{{"css/fa/css/all.css" | absURL }}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Externe Einbindung</div>
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">&lt;link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In meiner CSS wurden sämtliche Einträge zur class <code>.admonitionblock</code> überflüssig, die ich mir zuvor aus der <code>asciidoctor.css</code> kopiert hatte.</p>
 </div>
 </div>
 </div>

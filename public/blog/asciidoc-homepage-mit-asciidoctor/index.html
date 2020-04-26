@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Eine Homepage mit Asciidoctor erstellen</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Eine Homepage mit Asciidoctor erstellen</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="22.01.2019">22.01.2019</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte <a href="https://www.tomswan.com/">Tom Swan</a> mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Update</div>
+<div class="paragraph">
+<p>Inzwischen nutze ich das CMS Hugo. Nur mit Hilfe des Asciidoctors HTML-Dateien zu erstellen, war doch sehr anstrengend.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_metadaten_für_html_dateien_einrichten">Metadaten für HTML-Dateien einrichten</a></li>
+<li><a href="#_asciidoc_css_anpassen">asciidoc.css anpassen</a></li>
+<li><a href="#_menüleiste_erstellen">Menüleiste erstellen</a></li>
+<li><a href="#_inhaltsverzeichnis_einfügen">Inhaltsverzeichnis einfügen</a></li>
+<li><a href="#_quelldateien_im_unterordner">Quelldateien im Unterordner</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_metadaten_für_html_dateien_einrichten"><a class="anchor" href="#_metadaten_für_html_dateien_einrichten"></a>Metadaten für HTML-Dateien einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sie können mit einer HTML-Datei <a href="https://asciidoctor.org/docs/user-manual/#docinfo-file">docinfo.html</a> und dem <a href="https://asciidoctor.org/docs/user-manual/#attributes">Attribut</a> <code>:docinfo:</code> die Metadaten innerhalb des HTML-Headers erzeugen und im HTML-Output in jeder Datei einfügen. Erstellen Sie eine HTML-Datei und fügen Sie Ihre Metadaten ein. Z.B.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- docinfo.html --&gt;
+&lt;link rel="shortcut icon" type="image/png" href="images/petersell.ico"&gt;
+&lt;meta property="og:title" content="Andreas Petersell" /&gt;
+&lt;meta property="og:site_name" content="Andreas Petersell" /&gt;
+&lt;meta property="og:description" content="Technical Writer (DITA XML) and Author" /&gt;
+&lt;link href="https://twitter.com/petersell" rel="me" class="u-url"/&gt;
+&lt;link href="https://www.petersell.com" rel="me" class="u-url"/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Kopieren Sie die <code>docinfo.html</code>  in das Quellhauptverzeichnis. Fügen Sie anschließend jeder Ihrer adoc-Dateien folgendes Attribut hinzu:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>:docinfo: shared</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Kopieren Sie abschließend ein Favicon-Datei in das Verzeichnis <code>/images</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidoc_css_anpassen"><a class="anchor" href="#_asciidoc_css_anpassen"></a>asciidoc.css anpassen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nach dem Build wird die Standard-CSS im Ausgabeordner abgelegt. Diese <code>asciidoctor.css</code>  gilt es umzubennen und im Hauptverzeichnis der Quelldateien abzulegen. Nehmen Sie darin die gewünschten Änderungen vor. Meine Änderungswünsche waren z.B die Farbe grün für die Überschriften und Links. Auch gefiel mir die links ausgerichtete schwarze Fußleiste nicht.</p>
+</div>
+<div class="listingblock">
+<div class="title">Farbe der Links</div>
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">a{color:#44aa00;text-decoration:underline;line-height:inherit}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Farbe der Fußleiste</div>
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">#footer{max-width:1000px;background-color:rgba(255,255,255,.8);padding:1.25em}
+#footer-text{color:rgba(0,0,0,.8);line-height:1.44}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Fügen Sie das Stylesheet Ihrem Buildbefehl hinzu.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html 'C:\asciidoc\src\**\*.adoc'</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_menüleiste_erstellen"><a class="anchor" href="#_menüleiste_erstellen"></a>Menüleiste erstellen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die Möglichkeit, ein kleines Menü mit Asciidoc zusammenstellen zu können, überzeugte mich letztendlich, via Asciidoc zu bloggen.</p>
+</div>
+<div class="paragraph">
+<p>Meine include-Datei, die das Menü mit zwei externen Weblinks enthält, siehe folgendermaßen aus:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>:home: index.html[Home]
+:doku: doku.html[Softwaredokumentation]
+
+link:{home} | link:{doku} | https://www.petersell.com[Stream] | https://www.petersell.com/pages/impressum[Impressum]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Diese include-Datei <code>include-menu.adoc</code> habe ich in jeder Asciidoc-Datei unterhalb der Attribute eingebunden:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>include::include-menu.adoc[]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Diese hier aufgerufene HTML-Seite sieht als <code>doku-asciidoc.adoc</code> im Header folgendermaßen aus:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>:title: Asciidoc
+:sourcedir: ../
+:docinfo: shared
+:icons: font
+:sectanchors:
+:imagesdir: images
+:doctype: article
+:filename: doku-asciidoc
+:date: 22.01.2019
+
+   include::include-menu.adoc[]
+
+- - -
+
+== {title}
+
+- - -
+
+=== Eine Homepage mit Asciidoc erstellen
+
+[abstract]
+Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte {web-tomswan} mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inhaltsverzeichnis_einfügen"><a class="anchor" href="#_inhaltsverzeichnis_einfügen"></a>Inhaltsverzeichnis einfügen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Wenn Sie auf bestimmten Seiten ein Inhaltsverzeichnis erstellen möchten, fügen Sie diese beiden Attribute ein:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>:toc-title: Inhalt
+:toc: macro</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An die Stelle in der adoc-Datei, wo das Inhaltsverzeichnis erscheinen soll, fügen Sie <code>toc::[]</code> ein.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quelldateien_im_unterordner"><a class="anchor" href="#_quelldateien_im_unterordner"></a>Quelldateien im Unterordner</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Liegen manche Quelldateien in einem Unterordner, könnten folgnde Attribute hilfereich sein:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">:sourcedir: ../
+:docinfodir: ../</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>FOP für das DITA-OT 2.4.5 einrichten</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">FOP für das DITA-OT 2.4.5 einrichten</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="23.04.2017">23.04.2017</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den <em>XEP-Prozessor Personal Edition</em> zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen neu eingerichtet für den Einsatz unter FOP werden.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_bilder_werden_nicht_an_a4_angepaßt">Bilder werden nicht an A4 angepaßt</a></li>
+<li><a href="#_related_links_ausblenden">Related Links ausblenden</a></li>
+<li><a href="#_formatierungen_in_ein_extra_plugin">Formatierungen in ein Extra-Plugin</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_bilder_werden_nicht_an_a4_angepaßt">Bilder werden nicht an A4 angepaßt</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die Bilder haben viel zu große Abmasse, trotz 72dpi und max. 600px Breite. Eine Lösungsansatz fand ich hier bei <a href="http://infotexture.net/2010/03/dita-ot-scaling-images-in-pdf-output/">infotexture.net</a></p>
+</div>
+<div class="paragraph">
+<p>Für mich ergaben sich aus dem og. Hinweis folgende Handlungsschritte:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In der Datei <code>DITA-OT-2.4.5/plugins/org.dita.pdf2.fop/cfg/fop.xconf</code> von 72 dpi auf 120 dpi erhöhen: <code>&lt;source-resolution&gt;120&lt;/source-resolution&gt;</code> und <code>&lt;target-resolution&gt;120&lt;/target-resolution&gt;</code></p>
+</li>
+<li>
+<p>Eine <code>pdf.properties</code>-Datei erstellen, die den obigen Pfad der <code>fop.xconf</code> enthält:
+<code>args.fo.userconfig = ${dita.dir}/plugins/org.dita.pdf2.fop/cfg/fop.xconf</code></p>
+</li>
+<li>
+<p>Die Properties-Datei in den DITA-OT-build-Befehl aufnehmen:
+<code>dita -i D:\publikation.ditamap -f pdf -v -o D:\DITA-OUT -propertyfile D:\build\pdf.properties</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_links_ausblenden">Related Links ausblenden</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In die so eben erstellte Datei <code>pdf.properties</code> gilt es folgenden Wert zu vermerken: <code>args.rellinks = none</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_formatierungen_in_ein_extra_plugin">Formatierungen in ein Extra-Plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Für folgende Abweichungen müssen neue Templates her:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Deckblatt mit z,B. blauem und orangefarbenen Titel und Titelbild (DITA for Print)</p>
+</li>
+<li>
+<p>Bildunterschriften sollen kleiner werden und kursiv</p>
+</li>
+<li>
+<p>In der Header-Zeile muß der jeweilige Topic-Titel ausgeben werden (DITA for Print)</p>
+</li>
+<li>
+<p>Topics erster Ebene sollen auf einer neuer Seite starten</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Damit die Formartierungen beim DITA-OT-Update erhalten bleiben, müssen die neuen Templates in ein neues PDF-Plugin ausgelagert werden. Die Templates dazu werden PDF2-Plugin des neuen DITA-OTs 2.4.5 entnommen und in das neue Plugin kopiert. Die Template-Beispiele entnahm ich dem Buch <em>DITA for Print: A DITA Open Toolkit Workbook</em> von Leigh W. White.</p>
+</div>
+<div class="paragraph">
+<p>Ich musste mehr Template-Dateien ins Plugin aufnehmen als im Buch vorgesehen. Das Buch von Leight W. White ist sehr verständlich und funktioniert beim DITA-OT 2.4.5 auch noch mit der 1. Ausgabe. Die Anpassungen sind jedoch zu umfangreich, um sie hier abzubilden.</p>
+</div>
+<div class="paragraph">
+<p>Hier noch weitere geänderte Templates.</p>
+</div>
+<div class="sect2">
+<h3 id="_a4_einstellen">A4 einstellen</h3>
+<div class="paragraph">
+<p>In <code>DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\basic-settings.xml</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&lt;xsl:variable name="page-width"&gt;210mm&lt;/xsl:variable&gt;
+&lt;xsl:variable name="page-height"&gt;297mm&lt;/xsl:variable&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bildunterschrift_verkleinern">Bildunterschrift verkleinern</h3>
+<div class="paragraph">
+<p>In <code>DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\common-attr.xml</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&lt;xsl:attribute-set name="fig.title" use-attribute-sets="base-font common.title"&gt;
+     &lt;xsl:attribute name="font-weight"&gt;normal&lt;/xsl:attribute&gt;
+     &lt;xsl:attribute name="font-size"&gt;8pt&lt;/xsl:attribute&gt;
+     &lt;xsl:attribute name="font-style"&gt;italic&lt;/xsl:attribute&gt;
+&lt;/xsl:attribute-set&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_topics_1_ebene_auf_neuer_seite_starten">Topics 1. Ebene auf neuer Seite starten</h3>
+<div class="paragraph">
+<p>Quelle: <a href="https://www.oxygenxml.com/forum/topic12752.htm">https://www.oxygenxml.com/forum/topic12752.html</a></p>
+</div>
+<div class="paragraph">
+<p>In <code>DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\commons-attr.xsl</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&lt;xsl:attribute-set name="topic.title" use-attribute-sets="common.title common.border__bottom"&gt;
+     &lt;xsl:attribute name="break-before"&gt;page&lt;/xsl:attribute&gt;
+        ...
+&lt;/xsl:attribute-set&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Alle fehlenden Templates finden sich im Buch <em>DITA for Print</em>. Das Auslagern meiner individuellen Formatierungen in ein eingenes PDF-Plugin erlaubt mir, letzteres auch in eine neue DITA-OT-Installation bequem zu übernehmen.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

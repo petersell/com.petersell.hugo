@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>indieweb on Andreas Petersell</title>
+    <link>/tags/indieweb/</link>
+    <description>Recent content in indieweb on Andreas Petersell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Thu, 06 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    
+        <atom:link href="/tags/indieweb/index.rss" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Indiewebify my Hugo-Site</title>
+      <link>/blog/hugo-indiewebify/</link>
+      <category>hugo</category>
+      <category>indieweb</category>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hugo-indiewebify/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mit Hilfe eines kleinen Services von Pelle Wessmann namens &lt;a href=&#34;https://webmention.herokuapp.com/&#34; class=&#34;bare&#34;&gt;https://webmention.herokuapp.com/&lt;/a&gt; ist es mir auf meiner statischen Hugo-Seite möglich, Kommentare, Likes, Reposts u.ä. via Webmentions einzusammeln.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_1_anmelden_und_code_einfügen&#34;&gt;Schritt 1 - Anmelden und Code einfügen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/hugo-indiewebify/indiewebify.gif&#34; alt=&#34;Webmention&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Anschließend Domain eingeben und die beiden Code-Schnipsel einfügen. Den ersten in die &lt;code&gt;header.html&lt;/code&gt;, den zweiten in die &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_2_css_klassen_hinzufügen&#34;&gt;Schritt 2 - CSS-Klassen hinzufügen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_3_neuer_build&#34;&gt;Schritt 3 - Neuer Build&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Einen neuen Build laufen lassen ohne &lt;code&gt;server&lt;/code&gt;-Befehl, so dass der public-Ordner neu befüllt wird. Anschließend den public-Ordner auf den Webspace kopieren. Darauf achten, dass auch die neue CSS mit auf dem Webspace liegt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_4_kommentieren_und_liken&#34;&gt;Schritt 4 - Kommentieren und Liken&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die beiden Posts vor diesem Artikel sind ein &lt;em&gt;Like&lt;/em&gt; und ein &lt;em&gt;Kommentar&lt;/em&gt;. d.h. ich habe einfach die URL zitiert. Das Ergebnis dieser beiden Posts auf www.publication.work ist folgendes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/hugo-indiewebify/indiewebify-output.gif&#34; alt=&#34;Ergebnis&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ditalog on Andreas Petersell</title>
+    <title>ditalog on Andreas Petersell</title>
     <link>/categories/ditalog/</link>
-    <description>Recent content in Ditalog on Andreas Petersell</description>
+    <description>Recent content in ditalog on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
@@ -17,8 +17,7 @@
     <item>
       <title>Einbinden der DITA-DTDs in Eclipse</title>
       <link>/blog/dita-fuer-eclipse/</link>
-      <category>dita</category>
-      <category>eclipse</category>
+      <category>dita-xml</category>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/dita-fuer-eclipse/</guid>
@@ -29,7 +28,7 @@
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
-&lt;i class=&#34;fa icon-tip&#34; title=&#34;Tip&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
 &lt;/td&gt;
 &lt;td class=&#34;content&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
@@ -63,6 +62,166 @@
 &lt;p&gt;Springen Sie im Fenster &lt;em&gt;Öffnen&lt;/em&gt; auf die Datei &lt;code&gt;catalog-dita.xml&lt;/code&gt; im Hauptverzeichnis Ihres aktuellen DITA Open Toolkits.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>FOP für das DITA-OT 2.4.5 einrichten</title>
+      <link>/blog/dita-ditaot-fop-einrichten/</link>
+      <category>dita-xml</category>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/dita-ditaot-fop-einrichten/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den &lt;em&gt;XEP-Prozessor Personal Edition&lt;/em&gt; zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen neu eingerichtet für den Einsatz unter FOP werden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_bilder_werden_nicht_an_a4_angepaßt&#34;&gt;Bilder werden nicht an A4 angepaßt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_related_links_ausblenden&#34;&gt;Related Links ausblenden&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_formatierungen_in_ein_extra_plugin&#34;&gt;Formatierungen in ein Extra-Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_bilder_werden_nicht_an_a4_angepaßt&#34;&gt;Bilder werden nicht an A4 angepaßt&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Bilder haben viel zu große Abmasse, trotz 72dpi und max. 600px Breite. Eine Lösungsansatz fand ich hier bei &lt;a href=&#34;http://infotexture.net/2010/03/dita-ot-scaling-images-in-pdf-output/&#34;&gt;infotexture.net&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für mich ergaben sich aus dem og. Hinweis folgende Handlungsschritte:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In der Datei &lt;code&gt;DITA-OT-2.4.5/plugins/org.dita.pdf2.fop/cfg/fop.xconf&lt;/code&gt; von 72 dpi auf 120 dpi erhöhen: &lt;code&gt;&amp;lt;source-resolution&amp;gt;120&amp;lt;/source-resolution&amp;gt;&lt;/code&gt; und &lt;code&gt;&amp;lt;target-resolution&amp;gt;120&amp;lt;/target-resolution&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eine &lt;code&gt;pdf.properties&lt;/code&gt;-Datei erstellen, die den obigen Pfad der &lt;code&gt;fop.xconf&lt;/code&gt; enthält:
+&lt;code&gt;args.fo.userconfig = ${dita.dir}/plugins/org.dita.pdf2.fop/cfg/fop.xconf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die Properties-Datei in den DITA-OT-build-Befehl aufnehmen:
+&lt;code&gt;dita -i D:\publikation.ditamap -f pdf -v -o D:\DITA-OUT -propertyfile D:\build\pdf.properties&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_related_links_ausblenden&#34;&gt;Related Links ausblenden&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In die so eben erstellte Datei &lt;code&gt;pdf.properties&lt;/code&gt; gilt es folgenden Wert zu vermerken: &lt;code&gt;args.rellinks = none&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_formatierungen_in_ein_extra_plugin&#34;&gt;Formatierungen in ein Extra-Plugin&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für folgende Abweichungen müssen neue Templates her:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Deckblatt mit z,B. blauem und orangefarbenen Titel und Titelbild (DITA for Print)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bildunterschriften sollen kleiner werden und kursiv&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In der Header-Zeile muß der jeweilige Topic-Titel ausgeben werden (DITA for Print)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topics erster Ebene sollen auf einer neuer Seite starten&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Damit die Formartierungen beim DITA-OT-Update erhalten bleiben, müssen die neuen Templates in ein neues PDF-Plugin ausgelagert werden. Die Templates dazu werden PDF2-Plugin des neuen DITA-OTs 2.4.5 entnommen und in das neue Plugin kopiert. Die Template-Beispiele entnahm ich dem Buch &lt;em&gt;DITA for Print: A DITA Open Toolkit Workbook&lt;/em&gt; von Leigh W. White.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich musste mehr Template-Dateien ins Plugin aufnehmen als im Buch vorgesehen. Das Buch von Leight W. White ist sehr verständlich und funktioniert beim DITA-OT 2.4.5 auch noch mit der 1. Ausgabe. Die Anpassungen sind jedoch zu umfangreich, um sie hier abzubilden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Hier noch weitere geänderte Templates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_a4_einstellen&#34;&gt;A4 einstellen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In &lt;code&gt;DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\basic-settings.xml&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:variable name=&#34;page-width&#34;&amp;gt;210mm&amp;lt;/xsl:variable&amp;gt;
+&amp;lt;xsl:variable name=&#34;page-height&#34;&amp;gt;297mm&amp;lt;/xsl:variable&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_bildunterschrift_verkleinern&#34;&gt;Bildunterschrift verkleinern&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In &lt;code&gt;DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\common-attr.xml&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&#34;fig.title&#34; use-attribute-sets=&#34;base-font common.title&#34;&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;font-weight&#34;&amp;gt;normal&amp;lt;/xsl:attribute&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;font-size&#34;&amp;gt;8pt&amp;lt;/xsl:attribute&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;font-style&#34;&amp;gt;italic&amp;lt;/xsl:attribute&amp;gt;
+&amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_topics_1_ebene_auf_neuer_seite_starten&#34;&gt;Topics 1. Ebene auf neuer Seite starten&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://www.oxygenxml.com/forum/topic12752.htm&#34;&gt;https://www.oxygenxml.com/forum/topic12752.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In &lt;code&gt;DITA-OT2.4.5\plugins\com.hsh-berlin.custpdf\cfg\fo\attrs\commons-attr.xsl&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&#34;topic.title&#34; use-attribute-sets=&#34;common.title common.border__bottom&#34;&amp;gt;
+     &amp;lt;xsl:attribute name=&#34;break-before&#34;&amp;gt;page&amp;lt;/xsl:attribute&amp;gt;
+        ...
+&amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Alle fehlenden Templates finden sich im Buch &lt;em&gt;DITA for Print&lt;/em&gt;. Das Auslagern meiner individuellen Formatierungen in ein eingenes PDF-Plugin erlaubt mir, letzteres auch in eine neue DITA-OT-Installation bequem zu übernehmen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Schusterjungen im PDF-Output des DITA-OT vermeiden</title>
+      <link>/blog/dita-ditaot-schusterjungen-vermeiden/</link>
+      <category>dita-xml</category>
+      <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/dita-ditaot-schusterjungen-vermeiden/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das DITA Open Toolkit ist ein Open Source Tool für das Generieren von Ausgabeformaten für Inhalte, die mittels DITA XML erstellt wurden. Es kommt öfter vor, dass sich der Seitentitel und die Kurzbeschreibung (shortdesc) als letzte unten auf einer PDF-Seite wiederfinden und der Textkörper erst auf der nächsten Seite folgt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das sieht unschön aus. Doch unter &lt;a href=&#34;https://www.data2type.de/xml-xslt-xslfo/xsl-fo/xslfo-einfuehrung/typografische-mittel/&#34;&gt;data2type&lt;/a&gt; wurde ich fündig.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Folgende umbruchverhindernde Attribute für &lt;code&gt;shortdesc&lt;/code&gt; gilt es, im PDF-Plugin in der Datei &lt;code&gt;cfg/fo/attrs/commons-attr.xsl&lt;/code&gt; hinzufügen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&amp;lt;xsl:attribute-set name=&#34;topic__shortdesc&#34; use-attribute-sets=&#34;body&#34;&amp;gt;
+  &amp;lt;xsl:attribute name=&#34;keep-with-previous.within-page&#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
+  &amp;lt;xsl:attribute name=&#34;keep-with-next.within-page&#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
+&amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     

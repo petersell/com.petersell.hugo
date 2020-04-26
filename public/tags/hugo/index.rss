@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Andreas Petersell</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Andreas Petersell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Fri, 17 Apr 2020 16:40:39 +0200</lastBuildDate>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    
+        <atom:link href="/tags/hugo/index.rss" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Hugo mit Stock and Flow</title>
+      <link>/blog/hugo-stock-and-flow/</link>
+      <category>hugo</category>
+      <pubDate>Fri, 17 Apr 2020 16:40:39 +0200</pubDate>
+      
+      <guid>/blog/hugo-stock-and-flow/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Flow&lt;/strong&gt; is the feed. It’s the posts and the tweets. It’s the stream of daily and sub-daily updates that reminds people you exist.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Stock&lt;/strong&gt; is the durable stuff. It’s the content you produce that’s as interesting in two months (or two years) as it is today. It’s what people discover via search. It’s what spreads slowly but surely, building fans over time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; Robin Sloan&lt;br&gt;
+&lt;cite&gt;http://snarkmarket.com/2010/4890&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate andere wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite immer die Blogbeiträge ausgegeben, die Statusbeträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[params]
+  mainSections = [&#34;blog&#34;, &#34;status&#34;]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo mit Asciidoc - Bilder einbinden</title>
+      <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
+      <category>hugo</category>
+      <category>asciidoc</category>
+      <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
+      
+      <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
+      <description>&lt;div id=&#34;preamble&#34;&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Gottseidank fand ich auf Github den Quelltext des Blogs &lt;a href=&#34;https://foo-dogsquared.github.io&#34; class=&#34;bare&#34;&gt;https://foo-dogsquared.github.io&lt;/a&gt; mit einem einfachen Beispiel der Bildeinbindung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Hugo und Asciidoctor installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/&#34;&gt;Blogging with Asciidoctor and Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc&#34;&gt;Beispiel der Bildeinbindung&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_1_content_datei_editieren&#34;&gt;1. Content-Datei editieren&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Schreiben Sie Ihren Blogpost in der Datei &lt;code&gt;meinblogpost.adoc&lt;/code&gt; und fügen das Bild im Text ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;image::meinblogpost.gif[]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/meinblogpostimage/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Damit beim Neuanlegen einer adoc-Datei der Bildordner gleich korrekt ausgegeben wird, schreiben Sie in Ihrem Archetype &lt;code&gt;default.adoc&lt;/code&gt; folgende Notation in den Bereich der Asciidoc-Attribute (unterhalb des YAML-Headers):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:imagesdir: ../images/{{ .File.BaseFileName }}/&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_2_bild_abspeichern&#34;&gt;2. Bild abspeichern&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Legen Sie einen Ordner &lt;code&gt;images&lt;/code&gt; innerhalb des post-Ordners an.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        └-- images&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da Sie wissen, dass Ihre Bilddatei &lt;code&gt;meinblogpost.gif&lt;/code&gt; heißt, legen Sie einen weiteren Ordner &lt;code&gt;meinblogpost&lt;/code&gt; innerhalb des &lt;code&gt;images&lt;/code&gt;-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- post
+        |-- images
+        |   └-- meinblogpost.gif
+        └-- meinblogpost.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_admonitions&#34;&gt;Admonitions&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;:icons: font&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe also den CSS-Link für &lt;em&gt;Font Awesome&lt;/em&gt; wieder entfernt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Interne Einbindung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&#34;stylesheet&#34; href=&#34;{{&#34;css/fa/css/all.css&#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Externe Einbindung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34; rel=&#34;stylesheet&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In meiner CSS wurden sämtliche Einträge zur class &lt;code&gt;.admonitionblock&lt;/code&gt; überflüssig, die ich mir zuvor aus der &lt;code&gt;asciidoctor.css&lt;/code&gt; kopiert hatte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Weiterblättern im Hugo-Theme Minimo</title>
+      <link>/blog/hugo-minimo-weiterlink/</link>
+      <category>hugo</category>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hugo-minimo-weiterlink/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ist ein Open Source Webseiten-Generator für statische Seiten. Das Theme Minimo erstellt die Links unterhalb eines Blogposts für Weiter und Zurück automatisch – nur leider genau umgekehrt, wie ich es für meine Texte gebrauchen kann. Bei Blogposts landet der aktuellste Post oben. Bei belletristischen Texten wird das erste Kapitel zuerst geschrieben, soll aber auch an erster (oben) Stelle bleiben. Kurz und gut: ich wollte eine Möglichkeit haben, Hugo-Seiten manuell zu verbinden. Bei Kapitel 1 landet der Leser nach Klick auf Weiter beim Kapitel 2. Eigentlich logisch, im CMS Hugo aber nicht so einfach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_template_weiche_einrichten&#34;&gt;Template-Weiche einrichten&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Weiter-Zurück-Navigation befindet sich im Theme Minimo in der Template-Datei &lt;code&gt;layouts\_default\partials\nav\entry_nav.html&lt;/code&gt;. Dieses sogenannte Partial wiederum wird aufgerufen in der Layoutdatei &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für die Blogposts wollte ich die bisherige Weiter-Navigation haben (aktuellster Post zuoberst). Für die Romankapitel wollte ich eine neue Navigation einrichten. Benötigt wurde eine “Weiche”. Bei &lt;a href=&#34;https://thomas-leister.de/einfuehrung-in-hugo-theme-erstellen/&#34;&gt;Thomas Leister&lt;/a&gt; wurde ich fündig. Meine Datei &lt;code&gt;single.html&lt;/code&gt; bekam folgende “Weiche”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;{{ if eq .Type &#34;novel&#34; }}
+    {{ partial &#34;nav/entry_nav-novel.html&#34; . }}
+{{ else }}
+    {{ partial &#34;nav/entry_nav.html&#34; . }}
+{{ end }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In meine Content-Dateien für den Roman musste ich noch einen Variable für den Typ einfügen: &lt;code&gt;type: novel&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+title: gero_prolog
+linktitle: 1_gero-prolog
+type: novel
+date: 2017-10-01
+nextpage: novel/version-eins/2_michael-01/
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_neue_partial_datei_erschaffen&#34;&gt;Neue Partial-Datei erschaffen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die oben erwähnte Partial-Datei &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich kopiert und umbenannt in &lt;code&gt;entry_nav-novel.html&lt;/code&gt;. Bei Blogposts kommt die Original-Datei zum Einsatz, bei Pages im Ordner &lt;code&gt;novel&lt;/code&gt; wird die neue Datei herangezogen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Beim Weiter-Link den Titel des nächsten Kapitels einzublenden, habe ich nicht geschafft. Darum habe ich ihn weggelassen. In einer Sequenz sorgt das für mehr Übersichtlichkeit. Bei den Blogpost wird weiterhin der Titel des nächsten Blogposts ausgegen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ausgehend vom vorhandenen Minimo-Template &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich mein Template durch Trial and Error folgendermaßen in der Datei &lt;code&gt;entry_nav-novel.html&lt;/code&gt; angepasst.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&amp;lt;nav class=&#39;entry-nav&#39;&amp;gt;
+  &amp;lt;div class=&#39;container&#39;&amp;gt;
+
+    {{- if $.Params.prevpage -}}
+    &amp;lt;div class=&#39;prev-entry sep-before&#39;&amp;gt;
+	 &amp;lt;a href=&#39;{{ $.Params.prevpage | relURL }}&#39;&amp;gt;
+        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
+          {{- partial &#34;svg/icons&#34; &#34;prev&#34; -}}
+          {{- print &#34; &#34; ( i18n &#34;previous&#34; ) -}}
+        &amp;lt;/span&amp;gt;
+        &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;previousPost&#34; }}: &amp;lt;/span&amp;gt;
+     &amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+    {{- end -}}
+
+    {{- if $.Params.nextpage -}}
+    &amp;lt;div class=&#39;next-entry sep-before&#39;&amp;gt;
+	 &amp;lt;a href=&#39;{{ $.Params.nextpage | relURL }}&#39;&amp;gt;
+	    &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;nextPost&#34; }}: &amp;lt;/span&amp;gt;
+        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
+          {{- print ( i18n &#34;next&#34; ) &#34; &#34; -}}
+          {{- partial &#34;svg/icons&#34; &#34;next&#34; -}}
+        &amp;lt;/span&amp;gt;
+	  &amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+    {{- end -}}
+
+  &amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Indiewebify my Hugo-Site</title>
+      <link>/blog/hugo-indiewebify/</link>
+      <category>hugo</category>
+      <category>indieweb</category>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hugo-indiewebify/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mit Hilfe eines kleinen Services von Pelle Wessmann namens &lt;a href=&#34;https://webmention.herokuapp.com/&#34; class=&#34;bare&#34;&gt;https://webmention.herokuapp.com/&lt;/a&gt; ist es mir auf meiner statischen Hugo-Seite möglich, Kommentare, Likes, Reposts u.ä. via Webmentions einzusammeln.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_1_anmelden_und_code_einfügen&#34;&gt;Schritt 1 - Anmelden und Code einfügen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/hugo-indiewebify/indiewebify.gif&#34; alt=&#34;Webmention&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Anschließend Domain eingeben und die beiden Code-Schnipsel einfügen. Den ersten in die &lt;code&gt;header.html&lt;/code&gt;, den zweiten in die &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_2_css_klassen_hinzufügen&#34;&gt;Schritt 2 - CSS-Klassen hinzufügen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_3_neuer_build&#34;&gt;Schritt 3 - Neuer Build&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Einen neuen Build laufen lassen ohne &lt;code&gt;server&lt;/code&gt;-Befehl, so dass der public-Ordner neu befüllt wird. Anschließend den public-Ordner auf den Webspace kopieren. Darauf achten, dass auch die neue CSS mit auf dem Webspace liegt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_schritt_4_kommentieren_und_liken&#34;&gt;Schritt 4 - Kommentieren und Liken&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die beiden Posts vor diesem Artikel sind ein &lt;em&gt;Like&lt;/em&gt; und ein &lt;em&gt;Kommentar&lt;/em&gt;. d.h. ich habe einfach die URL zitiert. Das Ergebnis dieser beiden Posts auf www.publication.work ist folgendes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/hugo-indiewebify/indiewebify-output.gif&#34; alt=&#34;Ergebnis&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

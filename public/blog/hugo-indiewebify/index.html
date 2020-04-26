@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Indiewebify my Hugo-Site</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Indiewebify my Hugo-Site</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="06.07.2017">06.07.2017</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>Mit Hilfe eines kleinen Services von Pelle Wessmann namens <a href="https://webmention.herokuapp.com/" class="bare">https://webmention.herokuapp.com/</a> ist es mir auf meiner statischen Hugo-Seite möglich, Kommentare, Likes, Reposts u.ä. via Webmentions einzusammeln.</p>
+</div>
+<div class="sect1">
+<h2 id="_schritt_1_anmelden_und_code_einfügen">Schritt 1 - Anmelden und Code einfügen</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../images/hugo-indiewebify/indiewebify.gif" alt="Webmention">
+</div>
+</div>
+<div class="paragraph">
+<p>Anschließend Domain eingeben und die beiden Code-Schnipsel einfügen. Den ersten in die <code>header.html</code>, den zweiten in die <code>single.html</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schritt_2_css_klassen_hinzufügen">Schritt 2 - CSS-Klassen hinzufügen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Das Stylesheet der Service-Seite aufrufen: <a href="https://webmention.herokuapp.com/style.css">https://webmention.herokuapp.com/style.css</a>. Darin alles, was <em>webmention</em> enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schritt_3_neuer_build">Schritt 3 - Neuer Build</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Einen neuen Build laufen lassen ohne <code>server</code>-Befehl, so dass der public-Ordner neu befüllt wird. Anschließend den public-Ordner auf den Webspace kopieren. Darauf achten, dass auch die neue CSS mit auf dem Webspace liegt.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schritt_4_kommentieren_und_liken">Schritt 4 - Kommentieren und Liken</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die beiden Posts vor diesem Artikel sind ein <em>Like</em> und ein <em>Kommentar</em>. d.h. ich habe einfach die URL zitiert. Das Ergebnis dieser beiden Posts auf www.publication.work ist folgendes:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/hugo-indiewebify/indiewebify-output.gif" alt="Ergebnis">
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>

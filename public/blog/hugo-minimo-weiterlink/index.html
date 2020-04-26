@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Weiterblättern im Hugo-Theme Minimo</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Weiterblättern im Hugo-Theme Minimo</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="20.08.2018">20.08.2018</date></p>
+
+
+<article>
+<div class="paragraph">
+<p><a href="https://gohugo.io/">Hugo</a> ist ein Open Source Webseiten-Generator für statische Seiten. Das Theme Minimo erstellt die Links unterhalb eines Blogposts für Weiter und Zurück automatisch – nur leider genau umgekehrt, wie ich es für meine Texte gebrauchen kann. Bei Blogposts landet der aktuellste Post oben. Bei belletristischen Texten wird das erste Kapitel zuerst geschrieben, soll aber auch an erster (oben) Stelle bleiben. Kurz und gut: ich wollte eine Möglichkeit haben, Hugo-Seiten manuell zu verbinden. Bei Kapitel 1 landet der Leser nach Klick auf Weiter beim Kapitel 2. Eigentlich logisch, im CMS Hugo aber nicht so einfach.</p>
+</div>
+<div class="sect1">
+<h2 id="_template_weiche_einrichten">Template-Weiche einrichten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die Weiter-Zurück-Navigation befindet sich im Theme Minimo in der Template-Datei <code>layouts\_default\partials\nav\entry_nav.html</code>. Dieses sogenannte Partial wiederum wird aufgerufen in der Layoutdatei <code>single.html</code>.</p>
+</div>
+<div class="paragraph">
+<p>Für die Blogposts wollte ich die bisherige Weiter-Navigation haben (aktuellster Post zuoberst). Für die Romankapitel wollte ich eine neue Navigation einrichten. Benötigt wurde eine “Weiche”. Bei <a href="https://thomas-leister.de/einfuehrung-in-hugo-theme-erstellen/">Thomas Leister</a> wurde ich fündig. Meine Datei <code>single.html</code> bekam folgende “Weiche”.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>{{ if eq .Type "novel" }}
+    {{ partial "nav/entry_nav-novel.html" . }}
+{{ else }}
+    {{ partial "nav/entry_nav.html" . }}
+{{ end }}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In meine Content-Dateien für den Roman musste ich noch einen Variable für den Typ einfügen: <code>type: novel</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">---
+title: gero_prolog
+linktitle: 1_gero-prolog
+type: novel
+date: 2017-10-01
+nextpage: novel/version-eins/2_michael-01/
+---</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_neue_partial_datei_erschaffen">Neue Partial-Datei erschaffen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die oben erwähnte Partial-Datei <code>entry_nav.html</code> habe ich kopiert und umbenannt in <code>entry_nav-novel.html</code>. Bei Blogposts kommt die Original-Datei zum Einsatz, bei Pages im Ordner <code>novel</code> wird die neue Datei herangezogen.</p>
+</div>
+<div class="paragraph">
+<p>Beim Weiter-Link den Titel des nächsten Kapitels einzublenden, habe ich nicht geschafft. Darum habe ich ihn weggelassen. In einer Sequenz sorgt das für mehr Übersichtlichkeit. Bei den Blogpost wird weiterhin der Titel des nächsten Blogposts ausgegen.</p>
+</div>
+<div class="paragraph">
+<p>Ausgehend vom vorhandenen Minimo-Template <code>entry_nav.html</code> habe ich mein Template durch Trial and Error folgendermaßen in der Datei <code>entry_nav-novel.html</code> angepasst.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">&lt;nav class='entry-nav'&gt;
+  &lt;div class='container'&gt;
+
+    {{- if $.Params.prevpage -}}
+    &lt;div class='prev-entry sep-before'&gt;
+	 &lt;a href='{{ $.Params.prevpage | relURL }}'&gt;
+        &lt;span aria-hidden='true'&gt;
+          {{- partial "svg/icons" "prev" -}}
+          {{- print " " ( i18n "previous" ) -}}
+        &lt;/span&gt;
+        &lt;span class='screen-reader-text'&gt;{{ i18n "previousPost" }}: &lt;/span&gt;
+     &lt;/a&gt;
+    &lt;/div&gt;
+    {{- end -}}
+
+    {{- if $.Params.nextpage -}}
+    &lt;div class='next-entry sep-before'&gt;
+	 &lt;a href='{{ $.Params.nextpage | relURL }}'&gt;
+	    &lt;span class='screen-reader-text'&gt;{{ i18n "nextPost" }}: &lt;/span&gt;
+        &lt;span aria-hidden='true'&gt;
+          {{- print ( i18n "next" ) " " -}}
+          {{- partial "svg/icons" "next" -}}
+        &lt;/span&gt;
+	  &lt;/a&gt;
+    &lt;/div&gt;
+    {{- end -}}
+
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>
