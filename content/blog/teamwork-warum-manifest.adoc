@@ -1,0 +1,51 @@
+---
+author: Andreas Petersell
+title: "Warum ein Manifest?"
+date: 2019-06-13
+draft: false
+
+categories:
+    - "arbeitswelt"
+tags: 
+    - "teamwork"    
+---
+
+:imagesdir: ../images/teamwork-manifest-warum/
+
+Welcher halbwegs intelligente Mensch gießt irgendwelche Regeln in Beton und schließt das Gegenteil der Regeln für immer aus?
+<!--more-->
+
+[quote, Reinhard K. Spenger: Radikal führen, Frankfurt 2012 (S. 160)]
+____
+Jeder Mensch im Unternehmen weiß, dass das Geschäftsleben komplex ist, oft widersprüchliche Entscheidungen verlangt und keine Moralanstalt ist. Und dass, realistisch betrachtet, die nunmehr offiziell ausgeschlossene Seite auch oft ihr Gutes hat. Jetzt aber liegt ein Regelverstoß vor.
+____
+
+Natürlich ist Teamarbeit nicht die Lösung für alles. Es gibt sogar viele Situationen in der Firma, wo sie kontraproduktiv wäre. Ja, nicht einmal der Kunde honoriert sie! Er will Software, die begeistert. Was wir innerhalb unserer Firmenwände machen, ist ihm egal.
+
+[quote, Reinhard K. Spenger: Radikal führen, Frankfurt 2012 (S. 162)]
+____
+In nahezu allen Unternehmen, die eine Werte-Charta veröffentlicht haben, hat sich der Zynismuspegel sprunghaft erhöht. Die Werte-Chartas postulieren Fortschritt, bringen aber Rückschritt. Der Übergang vom Impliziten zum Expliziten – das ist also der eigentliche Sündenfall. Das Explizitmachen von Werten löst keine Probleme, es erschafft sie. Dann gaukeln diese Werte-Leitlinien eine Eindeutigkeit vor, die der Lebenswirklichkeit in den Unternehmen nicht entspricht. Prinzipienradikalität führt entweder in die Lächerlichkeit oder in den Totalitarismus.
+____
+
+Nun wollen sich die Autoren weder lächerlich machen, noch eine Gesinnungspolizei etablieren. Was dann?
+
+Es rumort in unserer Firma. Wir stellen Software her, die sehr nachgefragt ist. Das ist gut so, aber manchmal auch nicht. Es heißt, wir seien zu schnell gewachsen. Die Qualität leidet, das Betriebsklima ist rauher geworden und wir haben seit Jahren nichts neues, innvoatives mehr hervorgebracht. Ich arbeite mit anderen Kollegen im Innovationsmanagement meiner Firma. In dieser Eigenschaft wurden wir von unserem Geschäftsführer gefragt: Warum gibt es bei uns keine Innovationen mehr?
+
+Wir luden andere Kollegen ein. Ganz gleich, mit wem wir sprachen, wir landeten immer wieder bei der Arbeitsweise, der Art, wie die Arbeit organisiert ist. Die Klagen und die Enttäuschung sprachen zumeist die Mitarbeiter der großen Abteilungen aus. Der Tenor: es fehlt jegliches Vertrauen der Vorgesetzten in die Mitarbeiter und die Arbeitsaufträge werden häufig über Tickets und Outlook-Terminen gesteuert, ohne eine menschliche Ansprache zuvor.
+
+== Kompromisse im Team
+
+Wir trafen uns nun regelmäßig mit den Kollegen. Einmal verteilten wir Zettel, worauf jeder verdeckt kurz in Schlagworten seine Wünsche und Ziele aufschrieb. Anschließend mischten wir die Zettel und deckten auf. Die Schlagworte: _Eigenverantwortung, Selbstbestimmtheit, Gleichberechtigte Kommunikation, Harmonie im Zwischenmenschlichen_ uvm. Wir sahen, dass das unsere Ziele waren. Und dass alle die selben Ziele hatten!
+
+.Karten aufgedeckt
+image::zettel.jpg[Karten aufgedeckt.]
+
+Wir lernten, die Ziele von den Lösungen zu unterscheiden. All die Jahre waren wir zuvor im Streit auseinander gerannt, nur weil wir unterschiedliche Lösungsansätze hatten. Wir hatten uns jedoch nie auf gemeinsame Ziele hin verständigt. Und noch viel wichtiger: dieses Verständigen war ein langwieriger, quälender Prozess der Kompromisse. Dieses Kompromisse-Finden war ein aktiver Akt, der uns zusammenschweißte und die Gewissheit gab, nicht gleich wie beim ersten Mal bei Schwierigkeiten auseinander zu rennen. Wir schrieben ein Manifest, dass unsere Vorstellungen für eine Lösung auf unsere Ziele umriss: Teamarbeit.
+
+Das Manifest ist das Arbeitsergebnis eines Teams. Es ist der kleinste gemeinsame Nenner, den alle Teammitglieder mittragen. Darum ist es sehr allgemein gehalten und schreit förmlich nach weiterer Erläuterung.
+
+== Kompromisse in der Firma
+
+Doch eine Umsetzung von dynamischer Teamarbeit in die Praxis ist nur durch Kompromisse, durch persönliches Ausverhandeln zwischen Mitarbeitern und Führungskräften möglich. Und selbst dann basiert eine Regelung für Teamarbeit und partnerschaftliche Zusammenarbeit auf Freiwilligkeit. Sie lebt einzig durch die Führungsstärke eines jeden Mitarbeiters.
+
+Und dann gibt es Manifeste, für die man froh ist, dass es sie gibt.

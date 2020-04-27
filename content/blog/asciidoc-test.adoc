@@ -11,6 +11,8 @@ tags:
     - "tag2"   
 ---
 
+:imagesdir: ../images/diagonale-mein-erster-roman/
+
 Content entered directly below the header but before the first section heading is called the preamble.
 
 == First level heading
