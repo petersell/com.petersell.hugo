@@ -1,0 +1,19 @@
+---
+author: Andreas Petersell
+title: "So geht Minecraft heute!"
+date: 2015-06-01
+draft: false
+
+categories:
+    - "erleben"
+    - "fotos"
+tags: 
+    - "familie"
+---
+
+:imagesdir: ../images/foto-minecraft/
+
+Happy Birthday. Ich bin stolz auf meine Zocker-Konditor-Familie.
+<!--more-->
+
+image::minecraft.jpg/[Minecraftkuchen, width=80%]
