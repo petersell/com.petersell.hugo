@@ -12,7 +12,7 @@ tags:
 
 :imagesdir: ../images/teamwork-manifest-warum/
 
-Welcher halbwegs intelligente Mensch gießt irgendwelche Regeln in Beton und schließt das Gegenteil der Regeln für immer aus?
+Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben. Aber welcher halbwegs intelligente Mensch gießt irgendwelche Regeln in Beton und schließt das Gegenteil der Regeln für immer aus?
 <!--more-->
 
 [quote, Reinhard K. Spenger: Radikal führen, Frankfurt 2012 (S. 160)]
