@@ -7,12 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Fri, 17 Apr 2020 16:40:39 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 14:43:14 +0200</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
         <atom:link href="/index.rss" rel="self" type="application/rss+xml" />
     
     
+    
+    <item>
+      <title>Hugo mit Asciidoc - Auf anderen Post verlinken</title>
+      <link>/blog/hugo-auf-post-verlinken/</link>
+      <category>hugo</category>
+      <pubDate>Tue, 28 Apr 2020 14:43:14 +0200</pubDate>
+      
+      <guid>/blog/hugo-auf-post-verlinken/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Beide adoc-Dateien liegen im selben Verzeichnis:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- blog
+        |-- teamwork-manifest.adoc
+        └-- teamwork-manifest-warum.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In der Datei &lt;code&gt;teamwork-manifest-warum.adoc&lt;/code&gt; musste ich auf den Post &lt;code&gt;teamwork-manifest.adoc&lt;/code&gt; verlinken. Folgende Notation für einen Inline-Link brachte Erfolg.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Hier die Demo: &lt;a href=&#34;../teamwork-manifest/&#34;&gt;klicke hier&lt;/a&gt;, um zum Post &lt;em&gt;Manifest für eine menschliche Zusammenarbeit&lt;/em&gt; zu gelangen.&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Hugo mit Stock and Flow</title>
@@ -39,10 +73,10 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate andere wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite immer die Blogbeiträge ausgegeben, die Statusbeträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
+&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
@@ -457,35 +491,6 @@
 &lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/47&lt;/a&gt;
 Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34; class=&#34;bare&#34;&gt;https://mastodon.social/@diagonale/103115739507061124&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Der Quirl in der richtigen Geschwindigkeit</title>
-      <link>/blog/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/</link>
-      <category>jobikado</category>
-      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Oft habe ich mich gefragt, warum Xing die &#34;Arbeitgeber-Bewertungsplattform&#34; Kununu kaufte. Widersprechen sich die Konzepte nicht eigentlich?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/jobikado.png&#34; alt=&#34;Jobikado&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Während Xing die Interessen der Firmen bei der Mitarbeitersuche unterstützt und fördert, bewahrt Kununu die wechselwilligen Mitarbeiter vor einem Fehler: Bewirb Dich nicht bei einer Firma mit schlechten Bewertungen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Aber die Verbindung beider ist genial und hilft beiden. Es ist wie ein Quirl, der die Belegschaften langsam, wie gesagt: &lt;strong&gt;langsam und stetig&lt;/strong&gt; aufwirbelt. Die erfahrenen Fachkräfte ziehen weiter, wenn sie in ihrer Firma nicht erhört werden. Neue, zumeist jüngere Mitarbeiter rücken nach. Jedoch verbleibt noch genügend Zeit, das Wissen und die Erfahrung weiter zu reichen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Gau und der Untergang jeder Firma ist es, wenn zu viele Fachkräfte zu gleich kündigen. Viele Firmen sind sehr nah dran. Besonders kleinere und mittlere Firmen. Vollzieht sich der Wechsel des mobilen Teils der Belegschaft zu schnell, kann dies nicht mehr mit dem immobilen Teil abgefangen werden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es gibt eine einfache Formel, wie die Geschwindigkeit des &#34;Quirls&#34; konstant langsam gehalten werden kann. Ich werde diese Formel unter jobikado.de ausarbeiten. Denn es ist wie beim Mikado: entzieht man dem Wirrwar zugleich zu viele Stäbchen, fällt alles in sich zusammen.&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     

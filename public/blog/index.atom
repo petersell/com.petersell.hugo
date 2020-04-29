@@ -5,12 +5,47 @@
   <link rel="self" type="application/atom+xml" href="/blog/index.atom"/>
   <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
-  <updated>2020-04-17T16:40:39+02:00</updated>
+  <updated>2020-04-28T14:43:14+02:00</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
   <id>/blog/</id>
   
+  
+  <entry>
+    <id>/blog/hugo-auf-post-verlinken/</id>
+    <title type="text">Hugo mit Asciidoc - Auf anderen Post verlinken</title>
+    <link rel="alternate" href="/blog/hugo-auf-post-verlinken/" hreflang="en" title="Hugo mit Asciidoc - Auf anderen Post verlinken"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="hugo"/>
+    <published>2020-04-28T14:43:14+02:00</published>
+    <updated>2020-04-28T14:43:14+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Beide adoc-Dateien liegen im selben Verzeichnis:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- blog
+        |-- teamwork-manifest.adoc
+        └-- teamwork-manifest-warum.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In der Datei &lt;code&gt;teamwork-manifest-warum.adoc&lt;/code&gt; musste ich auf den Post &lt;code&gt;teamwork-manifest.adoc&lt;/code&gt; verlinken. Folgende Notation für einen Inline-Link brachte Erfolg.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Hier die Demo: &lt;a href=&#34;../teamwork-manifest/&#34;&gt;klicke hier&lt;/a&gt;, um zum Post &lt;em&gt;Manifest für eine menschliche Zusammenarbeit&lt;/em&gt; zu gelangen.&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   
   <entry>
     <id>/blog/hugo-stock-and-flow/</id>
@@ -38,10 +73,10 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate andere wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite immer die Blogbeiträge ausgegeben, die Statusbeträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
+&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
@@ -1006,6 +1041,294 @@ und &lt;strong&gt;gehen Sie dann aus dem Weg&lt;/strong&gt;.&lt;sup class=&#34;f
   </entry>
   
   <entry>
+    <id>/blog/teamwork-warum-manifest/</id>
+    <title type="text">Warum ein Manifest?</title>
+    <link rel="alternate" href="/blog/teamwork-warum-manifest/" hreflang="en" title="Warum ein Manifest?"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="teamwork"/>
+    <published>2019-06-13T00:00:00Z</published>
+    <updated>2019-06-13T00:00:00Z</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Fünf Kollegen haben &lt;a href=&#34;../teamwork-manifest/&#34;&gt;ein Manifest&lt;/a&gt; geschrieben. Aber welcher halbwegs intelligente Mensch gießt irgendwelche Regeln in Beton und schließt das Gegenteil der Regeln für immer aus?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jeder Mensch im Unternehmen weiß, dass das Geschäftsleben komplex ist, oft widersprüchliche Entscheidungen verlangt und keine Moralanstalt ist. Und dass, realistisch betrachtet, die nunmehr offiziell ausgeschlossene Seite auch oft ihr Gutes hat. Jetzt aber liegt ein Regelverstoß vor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; Reinhard K. Spenger: Radikal führen&lt;br&gt;
+&lt;cite&gt;Frankfurt 2012 (S. 160)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Natürlich ist Teamarbeit nicht die Lösung für alles. Es gibt sogar viele Situationen in der Firma, wo sie kontraproduktiv wäre. Ja, nicht einmal der Kunde honoriert sie! Er will Software, die begeistert. Was wir innerhalb unserer Firmenwände machen, ist ihm egal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In nahezu allen Unternehmen, die eine Werte-Charta veröffentlicht haben, hat sich der Zynismuspegel sprunghaft erhöht. Die Werte-Chartas postulieren Fortschritt, bringen aber Rückschritt. Der Übergang vom Impliziten zum Expliziten – das ist also der eigentliche Sündenfall. Das Explizitmachen von Werten löst keine Probleme, es erschafft sie. Dann gaukeln diese Werte-Leitlinien eine Eindeutigkeit vor, die der Lebenswirklichkeit in den Unternehmen nicht entspricht. Prinzipienradikalität führt entweder in die Lächerlichkeit oder in den Totalitarismus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; Reinhard K. Spenger: Radikal führen&lt;br&gt;
+&lt;cite&gt;Frankfurt 2012 (S. 162)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nun wollen sich die Autoren weder lächerlich machen, noch eine Gesinnungspolizei etablieren. Was dann?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es rumort in unserer Firma. Wir stellen Software her, die sehr nachgefragt ist. Das ist gut so, aber manchmal auch nicht. Es heißt, wir seien zu schnell gewachsen. Die Qualität leidet, das Betriebsklima ist rauher geworden und wir haben seit Jahren nichts neues, innvoatives mehr hervorgebracht. Ich arbeite mit anderen Kollegen im Innovationsmanagement meiner Firma. In dieser Eigenschaft wurden wir von unserem Geschäftsführer gefragt: Warum gibt es bei uns keine Innovationen mehr?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir luden andere Kollegen ein. Ganz gleich, mit wem wir sprachen, wir landeten immer wieder bei der Arbeitsweise, der Art, wie die Arbeit organisiert ist. Die Klagen und die Enttäuschung sprachen zumeist die Mitarbeiter der großen Abteilungen aus. Der Tenor: es fehlt jegliches Vertrauen der Vorgesetzten in die Mitarbeiter und die Arbeitsaufträge werden häufig über Tickets und Outlook-Terminen gesteuert, ohne eine menschliche Ansprache zuvor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kompromisse_im_team&#34;&gt;Kompromisse im Team&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir trafen uns nun regelmäßig mit den Kollegen. Einmal verteilten wir Zettel, worauf jeder verdeckt kurz in Schlagworten seine Wünsche und Ziele aufschrieb. Anschließend mischten wir die Zettel und deckten auf. Die Schlagworte: &lt;em&gt;Eigenverantwortung, Selbstbestimmtheit, Gleichberechtigte Kommunikation, Harmonie im Zwischenmenschlichen&lt;/em&gt; uvm. Wir sahen, dass das unsere Ziele waren. Und dass alle die selben Ziele hatten!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/teamwork-manifest-warum/zettel.jpg&#34; alt=&#34;Karten aufgedeckt.&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 1. Karten aufgedeckt&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir lernten, die Ziele von den Lösungen zu unterscheiden. All die Jahre waren wir zuvor im Streit auseinander gerannt, nur weil wir unterschiedliche Lösungsansätze hatten. Wir hatten uns jedoch nie auf gemeinsame Ziele hin verständigt. Und noch viel wichtiger: dieses Verständigen war ein langwieriger, quälender Prozess der Kompromisse. Dieses Kompromisse-Finden war ein aktiver Akt, der uns zusammenschweißte und die Gewissheit gab, nicht gleich wie beim ersten Mal bei Schwierigkeiten auseinander zu rennen. Wir schrieben ein Manifest, dass unsere Vorstellungen für eine Lösung auf unsere Ziele umriss: Teamarbeit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Manifest ist das Arbeitsergebnis eines Teams. Es ist der kleinste gemeinsame Nenner, den alle Teammitglieder mittragen. Darum ist es sehr allgemein gehalten und schreit förmlich nach weiterer Erläuterung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kompromisse_in_der_firma&#34;&gt;Kompromisse in der Firma&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Doch eine Umsetzung von dynamischer Teamarbeit in die Praxis ist nur durch Kompromisse, durch persönliches Ausverhandeln zwischen Mitarbeitern und Führungskräften möglich. Und selbst dann basiert eine Regelung für Teamarbeit und partnerschaftliche Zusammenarbeit auf Freiwilligkeit. Sie lebt einzig durch die Führungsstärke eines jeden Mitarbeiters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Und dann gibt es Manifeste, für die man froh ist, dass es sie gibt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>/blog/teamwork-manifest/</id>
+    <title type="text">Manifest für eine menschliche Zusammenarbeit</title>
+    <link rel="alternate" href="/blog/teamwork-manifest/" hreflang="en" title="Manifest für eine menschliche Zusammenarbeit"/>
+    <author><name>Andreas Petersell, Uwe Hermann, Roman Meyer, Michael Weigmann, Marc Langer<name></author>
+    <category term="teamwork"/>
+    <published>2019-05-15T00:00:00Z</published>
+    <updated>2019-05-15T00:00:00Z</updated>
+    <content type="html">&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/teamwork-manifest/operation-teamwork.png&#34; alt=&#34;Operation Teamwork&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_präambel&#34;&gt;Präambel&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_unser_ziel_zusammenarbeit_von_mensch_zu_mensch&#34;&gt;Unser Ziel – Zusammenarbeit von Mensch zu Mensch&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Viele Firmen und Behörden funktionieren in Sachen Zusammenarbeit immer noch nach Vorstellungen von Frederick Taylor von vor 100 Jahren: Taylor suchte nach dem besten Weg, jede noch so kleine Aufgabe steuerbar, vorhersagbar und effizient zu machen. Der Vorgesetzte sollte beobachten und optimieren, der Arbeiter sollte die Regeln einhalten und möglichst Schritt halten. Nun ist in den 100 Jahren viel passiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Im März 2019 trafen sich Mitarbeiter und Geschäftsführer zu einem lockeren Meinungsaustausch. Viele Mitarbeiter äußerten ihren Unmut über die Art und Weise der Zusammenarbeit. Alle bestätigten jedoch, mit keinem Kollegen im Hause persönliche Probleme zu haben. Was liegt da näher, als die Ursache für die Unzufriedenheit in der Art und Weise unserer Zusammenarbeit zu vermuten? Wie arbeiten wir zusammen? Was ist unser Betriebssystem ?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Unmut könnte darin begründet liegen, dass wir unsere Firma als Organisation noch immer wie eine Maschine betrachten: Menschen und ihre Prozesse sollen ineinander greifen wie ein Uhrwerk. Aber Organisationen sind keine Maschinen! Sie sind nie vorhersehbar. Sie sind komplexe Systeme. Vergleichbar mit einem Garten: alles ist mit allem verbunden, alles ist dynamisch, aufstrebend und veränderlich.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn wir Kollegen mit dieser Komplexität und Unsicherheit konfrontiert werden, neigen wir schnell zu Vereinfachungen: Die Mitarbeiter sagen: Wir haben die falschen Führungskräfte! Die Vorgesetzten sagen: Wir haben die falschen Mitarbeiter! Aber das Problem sind weder die Vorgesetzten, noch die Mitarbeiter. Es ist das Betriebssystem unserer Firma.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Stellt Euch vor: Du bist ein erholungssuchender Städter mit zwei linken Händen und pachtest einen Kleingarten. Der Vorbesitzer hat ein Chaos hinterlassen. Schnell merkst Du, dass Du bei der Gartenumgestaltung Hilfe brauchst. Was könntest Du tun?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; Du und dein Partner unternehmt einen Spaziergang durch die Kleingartenanlage und grüßt alle, die Ihr seht. Dann kommt Ihr an einem Garten vorbei, der Euch besonders gefällt. Du sprichst den Gärtner an. Dieser lädt Euch mit an die Kaffeetafel. Nach einer halben Stunde fragst Du ihn, ob er dir nicht helfen könnte. Es wäre schade, wenn sein Wissen um wilde Teilbiotope im Garten nicht weitergetragen wird. Das sieht der Gärtner genauso. Ihr verabredet Euch zu einem Arbeitseinsatz am nächsten Wochenende. Zurück im Garten hast Du keinen Strom. Du klingelst beim Nachbarn und stellst Dich und Deine Familie kurz vor. Dann erkundigst du dich nach dem Sicherungskasten. Der Nachbar lacht und sagt, dass er Elektriker ist. Er zeigt dir den zentralen Sicherungskasten. Bei der Gelegenheit erzählst Du vom E-Herd und fragst ihn, ob er dir nicht beim Anschließen helfen könnte. Am nächsten Wochenende gibt es den Arbeitseinsatz. Der Gärtner und der Elektriker verstehen sich gut und ihr alle genießt die gute Nachbarschaft. Der Gärtner hat seinen Nachbarn mit einer großen Leiter mitgebracht. Ihr versorgt die Nachbarn mit Imbiss und Getränken. Am Abend trommelt ihr alle zusammen und kündigt als Dank an, eine große Dankesparty zu geben. Alle melden sich und erzählen, was sie dazu beitragen wollen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;oder&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; Du gehst zum Vereinsvorsitzenden und lässt Dir die E-Mailadressen sämtlicher Pächter geben. Du schreibst eine kurze Sammelmail mit Betreff “Parzelle 1743”. In den Nachrichtentext schreibst du ein Datum und das Wort “Gartengestaltung”. Gottseidank hat der Algorithmus Deine Signatur automatisch erstellt, so dass Du nichts weiter schreiben musst. Jetzt noch ein Mausklick zum Abschicken. Das war´s.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Im ersten Beispiel bist du der Driver, der alles vorantreibt. Du hast andere Menschen um Hilfe gebeten und diese haben dir Hilfe gewährt. Du gestaltest und du trägst die Verantwortung für deinen Garten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Im zweiten Beispiel kommt kein Mensch. Erst, nachdem der Vereinsvorsitzende eine Mail schreibt, kommt einer, der nicht gerade eine wirkliche Hilfe ist.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wie oft handeln wir in unserer Firma nach dem ersten Beispiel, der menschlichen Ansprache? Kaum. Warum können wir aber im Privatleben wie Menschen handeln? Warum verwandeln wir uns, sobald wir unsere Firma betreten, in seelenlose Roboter?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir, die Autoren des Manifests, fühlen uns als Mensch UND Mitarbeiter der Firma und wollen in der Zukunft darin keinen Gegensatz mehr sehen. Wir wollen menschlich handeln – im gegenseitigen Respekt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_manifest&#34;&gt;Manifest&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_eine_lösung_arbeiten_im_team&#34;&gt;Eine Lösung – Arbeiten im Team&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;em&gt;Wir Mitarbeiter freuen uns, gemeinsam mit unseren Vorgesetzten einen Weg zu beschreiten, der&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;für unsere Produkte eine höhere Qualität und Termintreue und&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;für uns Mitarbeiter eine hohe Motivation und Effizienz sicherstellt.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_1_um_hilfe_bitten&#34;&gt;(1) Um Hilfe bitten&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wer andere um Hilfe bittet und diese ihm gewährt wird, hat mit anderen Kollegen schon fast ein Team gebildet. Wir lernen, andere um Hilfe zu bitten. Wir melden uns beim Kollegen erst persönlich, bevor wir Termine digital verschicken. Wir lernen, erst einmal nur die Hilfe zu gewähren, die angefordert wird.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_2_das_team_hat_eine_mission&#34;&gt;(2) Das Team hat eine Mission&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Kennzeichnend für ein Team ist jedoch, dass es eine Mission oder eine Product-Ownerschaft hat. Jedes Teammitglied sollten in wenigen Worten sagen können, was das Team macht.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_3_sinnstiftende_arbeit&#34;&gt;(3) Sinnstiftende Arbeit&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir Mitarbeiter identifizieren uns mit unserer Firma zuallererst über Menschen – und erst danach über unsere Aufgaben. Wir sehen in der Teamarbeit für ein gemeinsames Ziel die Grundlage für ein sinnstiftendes und effizientes Wirken für uns Mitarbeiter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_4_teams_finden_lösungen_auf_ziele&#34;&gt;(4) Teams finden Lösungen auf Ziele&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir Mitarbeiter bilden Teams, um auf die vom Auftraggeber vorgegebenen Ziele die besten Lösungen zu finden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für uns ist ein Team ein Team, wenn es diese Eigenschaften aufweist bzw. wenn die Teammitglieder sich nach diesen Prinzipien richten:&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_5_teambildung_des_verhandlungsführers&#34;&gt;(5) – Teambildung des Verhandlungsführers&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein Auftraggeber erteilt einem Mitarbeiter einen Auftrag: Dir. Du zeigst Führungsstärke und übernimmst Verantwortung: Du bittest andere um Hilfe. Ein Team entsteht, mit Dir als treibende Kraft und Verhandlungsführer des Teams.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_6_kein_vorgesetzter_im_team&#34;&gt;(6) – Kein Vorgesetzter im Team&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es gibt in unseren Teams keinen Vorgesetzten. Niemand hat eine Weisungsbefugnis gegenüber einem Teammitglied.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_7_teammitglieder_übernehmen_funktionen&#34;&gt;(7) – Teammitglieder übernehmen Funktionen&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Unsere Teams wählen kein Teammitglied in eine pauschale Führungsrolle als Teamleiter. Wir betrauen jedoch Teammitglieder mit folgenden Funktionen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Verhandlungsführung (aussen)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Präsentation/Dokumentation der Leistungen/des Teams (aussen)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Koordination (innen)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moderation/Konfliktregulierung (innen)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es können auch mehrere Mitglieder eine Funktion ausfüllen. Es kann auch ein Mitglied mehrere Funktionen ausfüllen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_8_wer_was_und_wann&#34;&gt;(8) – Wer, was und wann&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Team bestimmt einen Moderator (fest oder rotierend), der zum Ende eines Treffen schriftlich die nächsten Aufgaben der Teammitglieder in der Form wer-was-wann festhält.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_9_schnelle_entscheidungsfindung&#34;&gt;(9) – Schnelle Entscheidungsfindung&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Team trifft Entscheidungen eigenständig. Kann keine Entscheidung im angemessenem Rahmen gefunden werden, muss ein Moderator außerhalb des Teams hinzugezogen werden. Es gibt aber auch Entscheidungen, die das Team nicht treffen kann. Diese Entscheidungen werden delegiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_10_teamarbeit_ist_projektarbeit&#34;&gt;(10) – Teamarbeit ist Projektarbeit&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein klarer Auftrag ist keine Bringschuld des Auftraggebers, sondern eine Holschuld des Teams. Auftragsklärung , Risiko-Check , Projektplanung und -steuerung sind Standards des Projektmanagements und garantieren den Erfolg eines Teams. Wir Teammitglieder verschaffen uns diese Projektmanagement-Kenntnisse mindestens durch die Lektüre von Patrick Schmid: Erfolgreiches Projektmanagement, Regensburg 2018 – einem schmalen Praxisleitfaden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_11_auftragsklärung_zuerst&#34;&gt;(11) – Auftragsklärung zuerst&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Auftraggeber hat meist nicht umfassend Zeit, seine Idee oder Erfordernis bis ins letzte Detail zu planen. Unsere Teams mit ihrem Verhandlungsführer an der Spitze müssen beim Auftraggeber herausfinden, was er wirklich will.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wir trennen zwischen Zielen und Lösungen&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unsere erste Frage ist die Zielfrage: Was wollen wir damit erreichen?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wir halten Termine und Prioritäten des Auftraggebers fest&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_12_konzept&#34;&gt;(12) – Konzept&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Unser Team erstellt mit den Erkenntnissen der Auftragsklärung und sämtlicher vorhandener Dokumente und Erfahrungen in der Firma ein Konzept. Existiert bereits ein Konzept, wird dies mit Hilfe der o.g. Erkenntnisse angepasst. Das Konzept ist für den Programmier-Kollegen eine Arbeitsgrundlage. Es sollte auch für den Redakteur und Tester Basisinformationen über Anwendungsfälle und Benutzerrechte bereitstellen. Das Konzept sammelt die Lösungen auf die mit dem Auftraggeber vereinbarten Ziele. Das Konzept besprechen wir abschließend mit dem Auftraggeber. Teil des Konzeptes könnte eine Zielvereinbarung sein, die vom Auftraggeber und Team unterschrieben wird. Verweigert das Team die Unterschrift, ist der Termin nicht haltbar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_13_auftragsausführung_im_team&#34;&gt;(13) – Auftragsausführung im Team&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mit unserem Wissen über Projektmanagement meistern wir die Umsetzung des Auftrages zum Termin. Wir geben gegenüber dem Auftraggeber in Abständen Auskunft über den Fortgang der Arbeiten und zeigen Probleme gegenüber dem Auftraggeber sofort an.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect3&#34;&gt;
+&lt;h4 id=&#34;_14_abschluss_des_auftrages&#34;&gt;(14) – Abschluss des Auftrages&lt;/h4&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wir achten auf die Erfüllung der internen Ziele wie z.B. die Anfertigung einer Entwicklerdokumentation. Wir Teammitglieder beschließen ein Projekt (und damit das Team) mit einer Rückschau:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Was lief gut?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was lief nicht so gut? Was können wir nächstes Mal besser machen?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  
+  <entry>
     <id>/blog/dita-fuer-eclipse/</id>
     <title type="text">Einbinden der DITA-DTDs in Eclipse</title>
     <link rel="alternate" href="/blog/dita-fuer-eclipse/" hreflang="en" title="Einbinden der DITA-DTDs in Eclipse"/>
@@ -1236,191 +1559,6 @@ Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpres
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;:sourcedir: ../
 :docinfodir: ../&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/hugo-minimo-weiterlink/</id>
-    <title type="text">Weiterblättern im Hugo-Theme Minimo</title>
-    <link rel="alternate" href="/blog/hugo-minimo-weiterlink/" hreflang="en" title="Weiterblättern im Hugo-Theme Minimo"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="hugo"/>
-    <published>2018-08-20T00:00:00Z</published>
-    <updated>2018-08-20T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ist ein Open Source Webseiten-Generator für statische Seiten. Das Theme Minimo erstellt die Links unterhalb eines Blogposts für Weiter und Zurück automatisch – nur leider genau umgekehrt, wie ich es für meine Texte gebrauchen kann. Bei Blogposts landet der aktuellste Post oben. Bei belletristischen Texten wird das erste Kapitel zuerst geschrieben, soll aber auch an erster (oben) Stelle bleiben. Kurz und gut: ich wollte eine Möglichkeit haben, Hugo-Seiten manuell zu verbinden. Bei Kapitel 1 landet der Leser nach Klick auf Weiter beim Kapitel 2. Eigentlich logisch, im CMS Hugo aber nicht so einfach.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_template_weiche_einrichten&#34;&gt;Template-Weiche einrichten&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die Weiter-Zurück-Navigation befindet sich im Theme Minimo in der Template-Datei &lt;code&gt;layouts\_default\partials\nav\entry_nav.html&lt;/code&gt;. Dieses sogenannte Partial wiederum wird aufgerufen in der Layoutdatei &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Für die Blogposts wollte ich die bisherige Weiter-Navigation haben (aktuellster Post zuoberst). Für die Romankapitel wollte ich eine neue Navigation einrichten. Benötigt wurde eine “Weiche”. Bei &lt;a href=&#34;https://thomas-leister.de/einfuehrung-in-hugo-theme-erstellen/&#34;&gt;Thomas Leister&lt;/a&gt; wurde ich fündig. Meine Datei &lt;code&gt;single.html&lt;/code&gt; bekam folgende “Weiche”.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;{{ if eq .Type &#34;novel&#34; }}
-    {{ partial &#34;nav/entry_nav-novel.html&#34; . }}
-{{ else }}
-    {{ partial &#34;nav/entry_nav.html&#34; . }}
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meine Content-Dateien für den Roman musste ich noch einen Variable für den Typ einfügen: &lt;code&gt;type: novel&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
-title: gero_prolog
-linktitle: 1_gero-prolog
-type: novel
-date: 2017-10-01
-nextpage: novel/version-eins/2_michael-01/
----&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_neue_partial_datei_erschaffen&#34;&gt;Neue Partial-Datei erschaffen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die oben erwähnte Partial-Datei &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich kopiert und umbenannt in &lt;code&gt;entry_nav-novel.html&lt;/code&gt;. Bei Blogposts kommt die Original-Datei zum Einsatz, bei Pages im Ordner &lt;code&gt;novel&lt;/code&gt; wird die neue Datei herangezogen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Beim Weiter-Link den Titel des nächsten Kapitels einzublenden, habe ich nicht geschafft. Darum habe ich ihn weggelassen. In einer Sequenz sorgt das für mehr Übersichtlichkeit. Bei den Blogpost wird weiterhin der Titel des nächsten Blogposts ausgegen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ausgehend vom vorhandenen Minimo-Template &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich mein Template durch Trial and Error folgendermaßen in der Datei &lt;code&gt;entry_nav-novel.html&lt;/code&gt; angepasst.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&amp;lt;nav class=&#39;entry-nav&#39;&amp;gt;
-  &amp;lt;div class=&#39;container&#39;&amp;gt;
-
-    {{- if $.Params.prevpage -}}
-    &amp;lt;div class=&#39;prev-entry sep-before&#39;&amp;gt;
-	 &amp;lt;a href=&#39;{{ $.Params.prevpage | relURL }}&#39;&amp;gt;
-        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
-          {{- partial &#34;svg/icons&#34; &#34;prev&#34; -}}
-          {{- print &#34; &#34; ( i18n &#34;previous&#34; ) -}}
-        &amp;lt;/span&amp;gt;
-        &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;previousPost&#34; }}: &amp;lt;/span&amp;gt;
-     &amp;lt;/a&amp;gt;
-    &amp;lt;/div&amp;gt;
-    {{- end -}}
-
-    {{- if $.Params.nextpage -}}
-    &amp;lt;div class=&#39;next-entry sep-before&#39;&amp;gt;
-	 &amp;lt;a href=&#39;{{ $.Params.nextpage | relURL }}&#39;&amp;gt;
-	    &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;nextPost&#34; }}: &amp;lt;/span&amp;gt;
-        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
-          {{- print ( i18n &#34;next&#34; ) &#34; &#34; -}}
-          {{- partial &#34;svg/icons&#34; &#34;next&#34; -}}
-        &amp;lt;/span&amp;gt;
-	  &amp;lt;/a&amp;gt;
-    &amp;lt;/div&amp;gt;
-    {{- end -}}
-
-  &amp;lt;/div&amp;gt;
-&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/roman-produktivitaet/</id>
-    <title type="text">Mein Roman - Produktivität</title>
-    <link rel="alternate" href="/blog/roman-produktivitaet/" hreflang="en" title="Mein Roman - Produktivität"/>
-    <author><name>Andreas Petersell<name></author>
-    <published>2017-08-17T00:00:00Z</published>
-    <updated>2017-08-17T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es ist ein Jahr vergangen: nach einem halben Jahrhundert wollte ich mit meinem Roman loslegen. Und was habe ich bis heute geschafft: ein  Exposé in der ersten Fassung! Ich rechne das mal durch: mein Roman hat 29 Kapitel. Pro Kapitel brauche ich ein Quartal. Das ergibt eine Schreibdauer von über 7 Jahren. Und das ist noch die optimistische Planung!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Derzeit lese ich Volker Kutschers Krimireihe über den &lt;a href=&#34;http://gereonrath.de/&#34;&gt;Berliner Kommisar Gereon Rath&lt;/a&gt;, der im Berlin der 30er Jahre ermittelt. Kutscher hat 6 Romane veröffentlich. Wie hat er das nur geschafft?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Am 03.11.2014 interviewt die &lt;a href=&#34;https://www.faz.net/aktuell/gesellschaft/krimi-autor-volker-kutscher-im-portraet-13229762.html&#34;&gt;Frankfurter Allgemeine Kutscher&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Vier Bestseller hat dieser Mann geschrieben, seit er 2004 seinen Redakteursvertrag kündigte, um Zeit für eine, wie er fand, geniale Idee zu haben. Vorher hatte er bei einem kleinen Verlag zwei Regionalkrimis veröffentlicht; die Vorstellung, bis zur Rente in seiner Heimatstadt Wipperfürth die Lokalzeitung zu verkörpern, hatte angefangen ihn zu langweilen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Drei Jahre später erscheint &lt;em&gt;Der nasse Fisch&lt;/em&gt;, Band 1 der Rath-Krimiserie.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Zwei Jahre musste Kutscher warten, er fürchtete schon, er müsse auf das Angebot seiner Frau zurückkommen, dass sie Vollzeit arbeite, während er sich als Hausmann versuche. „Ich bin nicht so gut im Haushalt“, sagt der Autor und grinst. Dann kam der Erfolg.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Zwei Jahre ohne Kutschers Einkommen. Und seine Frau, wenn ich das richtig verstehe, geht nur auf Teilzeit arbeiten. Vielleicht bedeutet Teilzeit in Köln das selbe wie Vollzeit in Brandenburg? Egal, es war ein sehr mutige Entscheidung. Und gottseidank hat die Familie sie getroffen. Zum ersten Mal bekommt die bedrohlichste deutsche Zeitepoche ein Gesicht - viele Gesichter! Sie ist nun für mich nicht mehr entmenschlicht, auch wenn Kutscher betont, dass manches nur “ausgedacht” ist.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Noch drehe ich mich im Hamsterrad. Und ich kann noch nicht einmal behaupten, dass es partout keinen Spaß macht. Da hilft mir wohl nur noch eine Routine im Tagesablauf, aber wann?&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/diagonale-mein-erster-roman/</id>
-    <title type="text">Mein erster Roman</title>
-    <link rel="alternate" href="/blog/diagonale-mein-erster-roman/" hreflang="en" title="Mein erster Roman"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="diagonale"/>
-    <published>2017-07-11T00:00:00Z</published>
-    <updated>2017-07-11T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Da ich schon das zehnte Mal Randy Ingermansons &lt;a href=&#34;https://www.smashwords.com/books/view/459014?ref=putbus&#34;&gt;How to Write a Novel Using the Snowflake Method&lt;/a&gt; amüsiert gelesen hatte und immer noch nichts passierte, wollte ich Ernst machen: ich meldete mich im Februar 2017 zu zwei VHS-Kursen an.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/diagonale-mein-erster-roman/herrenkonfektion.jpg&#34; alt=&#34;Herrenkonfektion&#34; width=&#34;90%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Romane Schreiben (J. Kandzora und S. Mewe)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Der erste Schritt zum Roman (J. Powalla)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Beide Kurse waren lehrreich. Die ersten beiden Dozenten durchliefen die Literaturwissenschaft im Schnelldurchlauf und gingen viele Beispiele anhand mitgebrachter Kopien durch. Frau Powalla brachte den Teilnehmern das Expose-Schreiben und die Literaturagenten nahe.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_autobiographisches&#34;&gt;Autobiographisches&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Beiden Kursen war gemein, dass sämtliche Teilnehmer autobiographisches zum Anlass nahmen, mit dem Schreiben anzufangen. Wir waren alle Betroffene! Das ist legitim, denn sehr vieles in den Texten eines Menschen ist autobiographisch. Und dennoch hatte diese geballte Ladung Betroffenheit einen reinigenden Lehreffekt: entlasse die Protagonisten so schnell wie möglich aus deiner autobiographischen Umklammerung, gewähre ihnen die Freiheit!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_texterfahrung&#34;&gt;Texterfahrung&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Welch unerotisches Wort - Texterfahrung! Doch ich habe sie gemacht. Ich musste in den Kursen eigene Texte schreiben, sie laut einem Publikum vorlesen und sie ggf. erklären - also “zu ihnen stehen”. Das war vielleicht die wichtigste Erfahrung aus beiden Kursen! Über das Wollen, einen Text zu schreiben, hin zum Schreiben und laut vorlesen. Und darüber sprechen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ach so: es wurden nie explizit in den Kursen darüber gesprochen: schreiben muss jeder seinen Roman natürlich selbst.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>

@@ -354,5 +354,22 @@
 &lt;/div&gt;</description>
     </item>
     
+    <item>
+      <title>So geht Minecraft heute!</title>
+      <link>/status/foto-minecraft/</link>
+      <category>familie</category>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/status/foto-minecraft/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Happy Birthday. Ich bin stolz auf meine Zocker-Konditor-Familie.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/foto-minecraft/minecraft.jpg&#34; alt=&#34;Minecraftkuchen&#34; width=&#34;80%&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
+<link href="https://github.com/petersell" rel="me" class="u-url"/>
+<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
+<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
+<link href="https://www.petersell.de" rel="me" class="u-url"/>
+<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
+<title>Hugo mit Asciidoc - Auf anderen Post verlinken</title>
+<link rel="stylesheet" href="/css/main.css" /><body>
+<main>
+<h1 class="post-title">Hugo mit Asciidoc - Auf anderen Post verlinken</h1>
+<p class="author">Andreas Petersell&nbsp;am
+<date datetime="28.04.2020">28.04.2020</date></p>
+
+
+<article>
+<div class="paragraph">
+<p>Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.</p>
+</div>
+<div class="paragraph">
+<p>Beide adoc-Dateien liegen im selben Verzeichnis:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>|-- content
+    |-- blog
+        |-- teamwork-manifest.adoc
+        └-- teamwork-manifest-warum.adoc</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In der Datei <code>teamwork-manifest-warum.adoc</code> musste ich auf den Post <code>teamwork-manifest.adoc</code> verlinken. Folgende Notation für einen Inline-Link brachte Erfolg.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Hier die Demo: <a href="../teamwork-manifest/">klicke hier</a>, um zum Post <em>Manifest für eine menschliche Zusammenarbeit</em> zu gelangen.</p>
+</div>
+</article>
+</main>
+<hr>
+<footer>
+    <ul>
+        <li class="footernav">
+            <a href="/">Zur Startseite</a>
+        </li>
+    </ul>
+</footer>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+</html>
