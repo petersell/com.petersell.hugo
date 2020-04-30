@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://petersell.netlify.app/"
 languageCode = "de"
 title = "Andreas Petersell"
 theme = "contentful"
