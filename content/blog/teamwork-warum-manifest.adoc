@@ -7,7 +7,8 @@ draft: false
 categories:
     - "arbeitswelt"
 tags: 
-    - "teamwork"    
+    - "teamwork"
+    - "arbeitswelt"    
 ---
 
 :imagesdir: ../images/teamwork-manifest-warum/

@@ -10,7 +10,8 @@ categories:
 tags: 
     - "readinglist"
     - "teamwork"
-    - "jobikado"    
+    - "jobikado"
+    - "arbeitswelt"    
 ---
 
 :toc: macro
