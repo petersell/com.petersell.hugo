@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            <nav>
+                <ul>
+                {{ range $.Site.Menus.main -}}
+                <li class="nav-list"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                {{ end }}
+                </ul>
+            </nav>
+            <h1 class="logo"><img src={{ "petersell-logo.png" | absURL }}>&nbsp;{{ $.Site.Title }}</h1> 
+        </header>
+        
+        <main>
+            {{ if .IsTranslated }}
+            <div>
+            {{ i18n "available_translations" }}: 
+            {{ range .Translations }}
+            <a href="{{ .Permalink }}">{{ .Lang }}</a>
+            {{ end }}
+            </div>
+            {{ end }}
+            
+            <article>
+            {{ .Content }}
+            </article>
+            </main>
+
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+
+

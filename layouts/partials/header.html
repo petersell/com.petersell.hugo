@@ -1,0 +1,12 @@
+{{ if not .IsPage }}
+<header>
+   <nav>
+     <ul>
+        {{ range $.Site.Menus.main -}}
+        <li class="nav-list"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <h1 class="logo"><img src={{ "petersell-logo.png" | absURL }}>&nbsp;{{ $.Site.Title }}</h1>
+</header>
+{{ end }}

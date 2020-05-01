@@ -1,0 +1,391 @@
+:root {
+    --background: #252525;
+    --color: #038f16;
+    --color-light: #e1fecd;
+    --background-light: #4d4c4c;
+    --background-quote: #e2e2e2;
+    --foreground: #ffffff;
+    --fontSize: 1.1rem;
+    --verticalRhythm: 1.6rem;
+    --contentWidth: 800px; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-bottom: 45px;
+}
+
+/*html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;}*/
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    line-height: var(--verticalRhythm);
+    margin: 0 auto;
+    max-width: var(--contentWidth);
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+p.author {
+    font-size: 90%;
+    font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: var(--fontSize);
+    }
+}
+
+nav {
+    margin: var(--verticalRhythm) auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 0px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.4rem;
+    line-height: 0.7rem;
+    background: var(--foreground);
+    border-bottom: 5px solid var(--foreground);
+    margin-right: 2px;
+    margin-top: 4px;
+    
+}
+
+.nav-list:hover {
+    border-bottom: 4px solid var(--color);
+  }
+
+.nav-list:active {
+    border-bottom: 4px solid var(--color);
+  }  
+
+.nav-list, a {
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+  }  
+
+nav a:link {
+    color: var(--background);
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--background);
+    text-decoration: none;
+}
+
+nav a:hover   {
+    text-decoration: none;
+}
+
+h1.logo {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    color: var(--background-light);
+}
+
+h1 {
+    color: var(--background);
+}
+
+h2 {
+    margin-top: 2em;
+    color: var(--background);
+}
+
+h3, h4 {
+    margin-top: 1.5em;
+    color: var(--background);
+}
+
+a:link    { 
+    color: var(--color);
+}
+
+a:visited {
+    color: var(--color);
+}
+
+a:focus   { 
+    color: var(--background);
+}
+a:hover   {
+    color: var(--background);
+}
+
+a:active  {
+    color: var(--background);
+}
+
+h3 > a:link {
+    color: var(--background);
+    text-decoration: none;
+}
+
+h3 > a:visited {
+    color: var(--background);
+    text-decoration: none;
+}
+
+h3 > a:hover {
+    color: var(--color);
+    text-decoration: none;
+}
+
+h3 > a:active {
+    color: var(--color);
+    text-decoration: none;
+}
+
+article.post::after {
+    display: block;
+    position: relative;
+    width: 40px;
+    top: 15px;
+    content: '';
+    border-bottom: 4px solid var(--color);
+}    
+
+.imageblock {
+    margin-top: 2em;
+    text-align: left;
+}
+
+div.imageblock div.title {
+    font-style: italic;
+    font-size: 80%;
+
+}
+
+.uicontrol{
+    color: var(--background-quote);
+}
+
+.sidebarblock {
+    border: var(--color) solid 1px;
+    background: var(--color-light);
+    padding: 1rem;
+    overflow: auto;
+    line-height: 1.4rem;
+}
+
+div.sidebarblock  div.title {
+    font-weight: bold;
+    text-align: center;
+    color: var(--color);
+}
+
+.quoteblock {
+    background: var(--background-quote);
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+blockquote > div.paragraph {
+    font-style: italic;
+    color: var(--background);
+}
+
+div.attribution {
+    font-style: italic;
+    color: var(--background);
+    text-align: right;
+}
+
+table, thead, tbody {
+    border: var(--background) solid 1px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: var(--background) solid 1px;
+    padding: 1rem;
+}
+
+tr:nth-child(even) {
+    background: var(--background-light);
+}
+
+td.icon {
+    width: 80px;
+    background: var(--color);
+    text-align: center;
+    color: var(--foreground);
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family:"Open Sans","DejaVu Sans",sans-serif;
+}
+
+td.content > div.title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+pre {
+    padding: 1rem;
+    border: var(--background) solid 1px;
+    overflow: auto;
+    line-height: 1.4rem;
+    font-size: 0.9em;
+}
+
+/*img, video, audio, iframe {
+    width: 100%;
+    height: auto;
+}*/
+
+/*Anubis index.html Start*/
+
+.article-info {
+    font-size: 0.9em;
+    color: var(--background-light);
+    margin-top: 1em;
+}
+
+.article-info a {
+    color: var(--background-light);
+}
+
+.article-info a:hover {
+    color: var(--color);
+}
+
+.post-short-list .article-info {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.article-taxonomies {
+    display: inline;
+}
+
+.article-date {
+    white-space: nowrap;
+}
+
+.article-categories {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+}
+
+.article-categories li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.article-tags {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-tags li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.read-more {
+    font-size: 0.85em;
+}
+/*Anubis index.html Ende*/
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: var(--background);
+    line-height: 1.2rem;
+}
+
+.footernav:hover {
+    background-color: var(--color);
+}
+
+footer a:link {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+.footernav, a {
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+  }  
+
+p.copyright {
+    font-size: 80%;
+    text-align: center;    
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: var(--verticalRhythm);
+}
+
+.page-item {
+    padding: 0.5rem;
+    border: var(--background) solid 1px;
+}
+
+
+.post {
+    margin-top: 20px;
+}
+
+.post-title {
+    font-size: calc(var(--fontSize) * 2);
+    line-height: calc(var(--fontSize) * 3);
+}

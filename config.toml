@@ -1,7 +1,6 @@
 baseURL = "https://petersell.netlify.app/"
 languageCode = "de"
 title = "Andreas Petersell"
-theme = "contentful"
 paginate = 10
 copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/)."
 

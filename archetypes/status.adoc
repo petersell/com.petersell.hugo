@@ -1,0 +1,122 @@
+---
+author: {{ .Site.Author.name }}
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: false
+
+categories:
+    - "zitate"
+    - "notizen"
+    - "fotos"
+tags: 
+    - "readinglist"
+    - "ort"
+    - "link" 
+---
+
+:imagesdir: ../images/{{ .File.BaseFileName }}/
+
+[quote, John Strelecky: Das Leben gestalten mit den Big Five for Live, München 2018 (S. 201)]
+____
+Die meisten Gehälter und Boni von Managern basieren auf zwei Dingen: auf den Umsätzen und der Anzahl der Mitarbeiter. Sie basieren nicht auf Renditen und Fluktuationsraten.
+____
+
+Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.
+<!--more-->
+
+image::https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212019-c6147330-me.jpg[Auf den Arber]
+
+image::https://asciidoctor.org/images/octocat.jpg[GitHub mascot]
+
+image::{{ .File.BaseFileName }}/[DITA in Eclipse, width=80%]
+
+This is a link to the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+
+== Quellen
+
+Diese Quellen ermöglichten mir diesen Artikel:
+
+* https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/[Blogging with Asciidoctor and Hugo]
+* https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc[Beispiel der Bildeinbindung]
+
+== Kontext und Voraussetzungen
+
+.Voraussetzung
+[TIP]
+====
+Sie müssen das Java JDK und Eclipse installiert haben. Ein Java JRE war in meinem Fall nicht ausreichend.
+====
+
+Legen Sie einen Ordner `images` innerhalb des post-Ordners an.
+
+.Image caption
+image::image-file-name.png[I am the image alt text.]
+
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+=== Second level heading
+
+.Unordered list title
+* list item 1
+** nested list item
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+.Code block
+[source,java]
+----
+public interface Hello {
+
+    void hello();
+
+}
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+== First level heading
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+NOTE: TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+[source,ruby]
+----
+require 'sinatra' <1>
+
+get '/hi' do <2> <3>
+  "Hello World!"
+end
+----
+<1> Library import
+<2> URL mapping
+<3> Response block
+
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
