@@ -17,6 +17,8 @@ Content entered directly below the header but before the first section heading i
 
 == First level heading
 
+Hier die Demo: link:../teamwork-manifest/[klicke hier], um zum Post _Manifest für eine menschliche Zusammenarbeit_ zu gelangen.
+
 This is a paragraph with a *bold* word and an _italicized_ word.
 
 .Image caption

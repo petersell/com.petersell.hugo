@@ -1,0 +1,37 @@
+---
+author: Andreas Petersell
+title: "Diagonale 1.0"
+date: 2020-05-05T21:25:43+02:00
+draft: false
+
+categories:
+    - "diagonale"
+tags: 
+    - "tag2"    
+---
+
+:toc: macro
+:toclevels: 1
+:toc-title:
+:imagesdir: ../images/diagonale-001/
+
+Zwei Jahre habe ich regelmäßig an meinem Roman geschrieben. Nur die Hälfte ist vollendet. 
+<!--more-->
+
+toc::[]
+
+include::content/blog/diagonale/gero-prolog_001.txt[]
+
+include::content/blog/diagonale/michael-01_001.txt[]
+
+include::content/blog/diagonale/michael-02_001.txt[]
+
+include::content/blog/diagonale/gabriele-01_001.txt[]
+
+include::content/blog/diagonale/dina-01_001.txt[]
+
+include::content/blog/diagonale/michael-03_001.txt[]
+
+include::content/blog/diagonale/dina-02_001.txt[]
+
+include::content/blog/diagonale/michael-03a_001.txt[]
