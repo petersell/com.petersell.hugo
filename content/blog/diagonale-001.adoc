@@ -15,7 +15,7 @@ tags:
 :toc-title:
 :imagesdir: ../images/diagonale-001/
 
-Zwei Jahre habe ich regelmäßig an meinem Roman geschrieben. Nur die Hälfte ist vollendet. 
+Zwei Jahre habe ich regelmäßig an meinem Roman _Diagonale_ (link:../blog/diagonale-expose/[Exposé]) geschrieben. Nur die Hälfte ist vollendet. Wird Zeit, dass ich mich wieder ransetze. Alle Rechte liegen beim Autor. 
 <!--more-->
 
 toc::[]
@@ -35,3 +35,23 @@ include::content/blog/diagonale/michael-03_001.txt[]
 include::content/blog/diagonale/dina-02_001.txt[]
 
 include::content/blog/diagonale/michael-03a_001.txt[]
+
+include::content/blog/diagonale/dina-03_001.txt[]
+
+include::content/blog/diagonale/michael-04_001.txt[]
+
+include::content/blog/diagonale/dina-04_001.txt[]
+
+include::content/blog/diagonale/dina-05_001.txt[]
+
+include::content/blog/diagonale/burkhardt-01_001.txt[]
+
+include::content/blog/diagonale/dina-06_001.txt[]
+
+include::content/blog/diagonale/michael-05_001.txt[]
+
+include::content/blog/diagonale/burkhardt-02_001.txt[]
+
+include::content/blog/diagonale/michael-06_001.txt[]
+
+include::content/blog/diagonale/burkhardt-03_001.txt[]
