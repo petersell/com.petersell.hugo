@@ -1,13 +1,15 @@
 ---
 author: Andreas Petersell
-title: "Diagonale 1.0"
+title: "Diagonale - Der Anfang"
 date: 2020-05-05T21:25:43+02:00
 draft: false
 
 categories:
     - "diagonale"
+    - "romanschreiben"
 tags: 
-    - "tag2"    
+    - "eastgermany"
+    - "freunde"    
 ---
 
 :toc: macro
@@ -15,7 +17,7 @@ tags:
 :toc-title:
 :imagesdir: ../images/diagonale-001/
 
-Zwei Jahre habe ich regelmäßig an meinem Roman _Diagonale_ (link:../blog/diagonale-expose/[Exposé]) geschrieben. Nur die Hälfte ist vollendet. Wird Zeit, dass ich mich wieder ransetze. Alle Rechte liegen beim Autor. 
+Zwei Jahre habe ich regelmäßig an meinem Roman _Diagonale_ (link:../diagonale-expose/[Exposé]) geschrieben. Wird Zeit, dass ich mich wieder ransetze und weiter schreibe (Alle Rechte liegen beim Autor). 
 <!--more-->
 
 toc::[]
@@ -34,11 +36,11 @@ include::content/blog/diagonale/michael-03_001.txt[]
 
 include::content/blog/diagonale/dina-02_001.txt[]
 
-include::content/blog/diagonale/michael-03a_001.txt[]
+include::content/blog/diagonale/michael-04_001.txt[]
 
 include::content/blog/diagonale/dina-03_001.txt[]
 
-include::content/blog/diagonale/michael-04_001.txt[]
+include::content/blog/diagonale/michael-05_001.txt[]
 
 include::content/blog/diagonale/dina-04_001.txt[]
 
@@ -48,10 +50,24 @@ include::content/blog/diagonale/burkhardt-01_001.txt[]
 
 include::content/blog/diagonale/dina-06_001.txt[]
 
-include::content/blog/diagonale/michael-05_001.txt[]
+include::content/blog/diagonale/michael-06_001.txt[]
 
 include::content/blog/diagonale/burkhardt-02_001.txt[]
 
-include::content/blog/diagonale/michael-06_001.txt[]
+include::content/blog/diagonale/michael-07_001.txt[]
 
 include::content/blog/diagonale/burkhardt-03_001.txt[]
+
+include::content/blog/diagonale/thomas-01_001.txt[]
+
+include::content/blog/diagonale/volker-01_001.txt[]
+
+include::content/blog/diagonale/stasileute-01_001.txt[]
+
+include::content/blog/diagonale/michael-08_001.txt[]
+
+include::content/blog/diagonale/michael-09_001.txt[]
+
+include::content/blog/diagonale/burkhardt-04_001.txt[]
+
+include::content/blog/diagonale/burkhardt-05_001.txt[]
