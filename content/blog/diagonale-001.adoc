@@ -77,3 +77,9 @@ include::content/blog/diagonale/michael-10_001.txt[]
 include::content/blog/diagonale/burkhardt-06_001.txt[]
 
 include::content/blog/diagonale/michael-11_001.txt[]
+
+include::content/blog/diagonale/burkhardt-07_001.txt[]
+
+include::content/blog/diagonale/michael-12_001.txt[]
+
+include::content/blog/diagonale/pino-01_001.txt[]
