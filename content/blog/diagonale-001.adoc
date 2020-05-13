@@ -83,3 +83,9 @@ include::content/blog/diagonale/burkhardt-07_001.txt[]
 include::content/blog/diagonale/michael-12_001.txt[]
 
 include::content/blog/diagonale/pino-01_001.txt[]
+
+include::content/blog/diagonale/burkhardt-08_001.txt[]
+
+include::content/blog/diagonale/burkhardt-09_001.txt[]
+
+include::content/blog/diagonale/michael-13_001.txt[]
