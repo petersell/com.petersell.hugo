@@ -17,7 +17,7 @@ tags:
 :toc-title:
 :imagesdir: ../images/diagonale-001/
 
-Zwei Jahre habe ich regelmäßig an meinem Roman _Diagonale_ (link:../diagonale-expose/[Exposé]) geschrieben. Wird Zeit, dass ich mich wieder ransetze und weiter schreibe (Alle Rechte liegen beim Autor). 
+Zwei Jahre habe ich regelmäßig an meinem Roman _Diagonale_ (https://www.petersell.com/blog/diagonale-expose/[Exposé]) geschrieben. Wird Zeit, dass ich mich wieder ransetze und weiter schreibe (Alle Rechte liegen beim Autor). 
 <!--more-->
 
 toc::[]
