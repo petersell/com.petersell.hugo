@@ -89,3 +89,23 @@ include::content/blog/diagonale/burkhardt-08_001.txt[]
 include::content/blog/diagonale/burkhardt-09_001.txt[]
 
 include::content/blog/diagonale/michael-13_001.txt[]
+
+include::content/blog/diagonale/burkhardt-10_001.txt[]
+
+include::content/blog/diagonale/michael-14_001.txt[]
+
+include::content/blog/diagonale/burkhardt-11_001.txt[]
+
+include::content/blog/diagonale/michael-15_001.txt[]
+
+include::content/blog/diagonale/depesche-01_001.txt[]
+
+include::content/blog/diagonale/michael-16_001.txt[]
+
+include::content/blog/diagonale/burkhardt-12_001.txt[]
+
+include::content/blog/diagonale/michael-17_001.txt[]
+
+include::content/blog/diagonale/depesche-02_001.txt[]
+
+include::content/blog/diagonale/depesche-03_001.txt[]
