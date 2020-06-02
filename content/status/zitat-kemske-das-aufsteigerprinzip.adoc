@@ -2,13 +2,13 @@
 author: Andreas Petersell
 title: "Lifetime Employment - A Corporate Nightmare"
 date: 2019-11-25
-draft: false
+draft: true
 
 categories:
     - "zitate"
 tags: 
     - "readinglist"
-    - "jobikado"
+    - "arbeitswelt"
 ---
 
 Der englische Titel trifft es besser als der deutsche Titel des Romans _Das Aufsteiger-Prinzip_.

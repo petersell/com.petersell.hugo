@@ -9,7 +9,6 @@ categories:
 tags: 
     - "arbeitswelt"
     - "teamwork"
-    - "jobikado" 
 ---
 
 [quote, Mike Vermaan, http://mikeveerman.be/2018/10/07/there-is-no-why-in-team/]

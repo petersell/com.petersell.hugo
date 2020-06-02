@@ -9,7 +9,6 @@ categories:
 tags: 
     - "teamwork"
     - "arbeitswelt"
-    - "jobikado" 
 ---
 
 [quote, Simon Sinek, https://twitter.com/simonsinek/status/1034138845594497024]

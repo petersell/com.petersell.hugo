@@ -8,7 +8,6 @@ categories:
     - "zitate"
 tags: 
     - "readinglist"
-    - "jobikado" 
 ---
 
 [quote, Florent Crivello: Own the Demand, https://florentcrivello.com/index.php/2018/10/22/own-the-demand/]

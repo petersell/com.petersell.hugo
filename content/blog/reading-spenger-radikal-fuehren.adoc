@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Reinhard K. Spenger - Radikal führen"
 date: 2019-07-18
-draft: false
+draft: true
 
 categories:
     - "zitate"
@@ -10,7 +10,6 @@ categories:
 tags: 
     - "readinglist"
     - "teamwork"
-    - "jobikado"
     - "arbeitswelt"    
 ---
 

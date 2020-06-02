@@ -2,7 +2,7 @@
 author: Andreas Petersell, Uwe Hermann, Roman Meyer, Michael Weigmann, Marc Langer
 title: "Manifest für eine menschliche Zusammenarbeit"
 date: 2019-05-15
-draft: false
+draft: true
 
 categories:
     - "arbeitswelt"
