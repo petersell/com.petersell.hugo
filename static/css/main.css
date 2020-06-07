@@ -178,6 +178,17 @@ div.imageblock div.title {
 
 }
 
+.listingblock {
+    margin-top: 1.7em;
+    text-align: left;
+}
+
+div.listingblock div.title {
+    font-style: italic;
+    font-size: 80%;
+
+}
+
 .uicontrol{
     color: var(--background-quote);
 }
