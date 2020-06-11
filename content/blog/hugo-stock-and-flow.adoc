@@ -10,7 +10,7 @@ tags:
     - "hugo"    
 ---
 
-Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom http://snarkmarket.com/2010/4890[Stock and Flow].
+Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom http://snarkmarket.com/2010/4890[Stock and Flow^, role="ext-link"].
 <!--more-->
 
 [quote, Robin Sloan, http://snarkmarket.com/2010/4890]
@@ -20,9 +20,9 @@ ____
 *Stock* is the durable stuff. It’s the content you produce that’s as interesting in two months (or two years) as it is today. It’s what people discover via search. It’s what spreads slowly but surely, building fans over time.
 ____
 
-In meinem alten https://withknown.com/[CMS Known] gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer _Timeline_ angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: _Blog_ ist der _Stock_ und _Status_ der _Flow_.
+In meinem alten https://withknown.com/[CMS Known^, role="ext-link"] gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer _Timeline_ angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: _Blog_ ist der _Stock_ und _Status_ der _Flow_.
 
-In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen _Status_ angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der https://gohugo.io/functions/where/#mainsections[Hugo-Dokumentation] fündig. Es gilt, in der Konfigurationsdatei `config.toml` einen kleinen Eintrag vorzunehmen:
+In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen _Status_ angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der https://gohugo.io/functions/where/#mainsections[Hugo-Dokumentation^, role="ext-link"] fündig. Es gilt, in der Konfigurationsdatei `config.toml` einen kleinen Eintrag vorzunehmen:
 
 [source]
 ----

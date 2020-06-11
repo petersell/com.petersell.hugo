@@ -15,14 +15,14 @@ tags:
 :toc-title:
 :imagesdir: ../images/asciidoc-antora-install/
 
-Antora ist so etwas wie ein Static Site Generator für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden. 
+Antora ist so etwas wie ein _Static Site Generator_ für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden. 
 <!--more-->
 
 toc::[]
 
 == Quellen
 
-* https://docs.antora.org/antora/2.2/install/windows-requirements/[Antora-Dokumentation]
+* https://docs.antora.org/antora/2.2/install/windows-requirements/[Antora-Dokumentation^, role="ext-link"]
 
 == Kontext
 
@@ -86,7 +86,7 @@ Ein nochmaliges Ausführen von `antora version` gab die korrekte Versionsnummer 
 
 == 3) Antora-Demo-Projekt generieren
 
-Um zu einem schnellen Ergebnis zu kommen, habe ich das Beispielprojekt _Demo Docs Site_ auf https://gitlab.com/antora/demo/docs-site generiert. Um es clonen zu können, habe ich mir einen Gitlab-Account angelegt. Für diesen Account musste ich mir ein https://www.hrz.tu-darmstadt.de/speicherplatz_datensicherung_und_server/virtuelle_server/anleitung_sammlung/artikel_details_22784.de.jsp[SSH-Key einrichten] und in den Nutzer-Einstellungen unter _SSH-Keys_ hinterlegen. Nun konnte ich das Beispielprojekt _Demo Docs Site_ fehlerfrei clonen.
+Um zu einem schnellen Ergebnis zu kommen, habe ich das Beispielprojekt _Demo Docs Site_ auf https://gitlab.com/antora/demo/docs-site generiert. Um es clonen zu können, habe ich mir einen Gitlab-Account angelegt. Für diesen Account musste ich mir ein https://www.hrz.tu-darmstadt.de/speicherplatz_datensicherung_und_server/virtuelle_server/anleitung_sammlung/artikel_details_22784.de.jsp[SSH-Key einrichten^, role="ext-link"] und in den Nutzer-Einstellungen unter _SSH-Keys_ hinterlegen. Nun konnte ich das Beispielprojekt _Demo Docs Site_ fehlerfrei clonen.
 
 .Beispielprojekt clonen
 image::clone-beispielrepo2.png[Beispielrepo clonen]

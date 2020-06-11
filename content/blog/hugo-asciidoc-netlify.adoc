@@ -16,9 +16,7 @@ Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner `public
 
 == Quelle
 
-Diese Quelle ermöglichte mir diesen Artikel:
-
-* https://www.patrickpeeters.com/2019/09/asciidoc-support-for-hugo-on-netlify/[AsciiDoc support for Hugo on Netlify]
+* https://www.patrickpeeters.com/2019/09/asciidoc-support-for-hugo-on-netlify/[AsciiDoc support for Hugo on Netlify^, role="ext-link"]
 
 == Abenteuer Netlify
 
@@ -66,6 +64,6 @@ Wenn Sie jetzt Ihr Hugo-Projekt mit den angepassten Dateien `Gemfile` und `netli
 
 == Theme im Ursprungszustand
 
-Als Hugo-Theme habe ich mich für das Theme https://github.com/foo-dogsquared/hugo-theme-contentful[Contentful] entschieden. Da dies ein sehr minimalistisches Theme ist, musste ich viel nacharbeiten. Um so größer war der Schreck, als nach erfolgreichem _Deploy_ meine Webseite so gut wie nackt war: nämlich im Urzustand des Original-Themes.
+Als Hugo-Theme habe ich mich für das Theme https://github.com/foo-dogsquared/hugo-theme-contentful[Contentful^, role="ext-link"] entschieden. Da dies ein sehr minimalistisches Theme ist, musste ich viel nacharbeiten. Um so größer war der Schreck, als nach erfolgreichem _Deploy_ meine Webseite so gut wie nackt war: nämlich im Urzustand des Original-Themes.
 
 Jetzt war ich zugegebenermaßen etwas müde. Da ich wußte, dass ich nicht so schnell auf ein anderes Theme umschwenken werde, habe ich kurzerhand die Theme-Dateien in die Hugo-Standard-Ordner verschoben und das Verzeichnis `themes` komplett gelöscht. Nach einem nächsten Upload in den Masterbranch war alles so schön grün wie nach einem lokalen `hugo server`-Aufruf. 

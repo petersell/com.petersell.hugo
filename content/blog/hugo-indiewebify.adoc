@@ -24,7 +24,7 @@ Anschließend Domain eingeben und die beiden Code-Schnipsel einfügen. Den erste
 
 == Schritt 2 - CSS-Klassen hinzufügen
 
-Das Stylesheet der Service-Seite aufrufen: https://webmention.herokuapp.com/style.css[https://webmention.herokuapp.com/style.css]. Darin alles, was _webmention_ enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.
+Das Stylesheet der Service-Seite aufrufen: https://webmention.herokuapp.com/style.css[https://webmention.herokuapp.com/style.css^, role="ext-link"]. Darin alles, was _webmention_ enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.
 
 == Schritt 3 - Neuer Build
 

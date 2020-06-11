@@ -53,7 +53,7 @@ Man sollte meinen, die positiven Seiten eines Baukastensystems überwiegen? Frag
 
 == Die Spielphasen der Steckbausteine
 
-In der http://www.berliner-zeitung.de/wirtschaft/lego-chef---jungs-funktionieren-anders-,10808230,21168378.html[Berliner Zeitung vom 21.12.2012] kam Dirk Engelshausen, Eurapa-Chef von Lego zu Wort. Dieser skizzierte die drei Spielphasen, wie sie die Kinder mit den Legosteinen durchlaufen, folgendermaßen [1]:
+In der http://www.berliner-zeitung.de/wirtschaft/lego-chef---jungs-funktionieren-anders-,10808230,21168378.html[Berliner Zeitung vom 21.12.2012^, role="ext-link"] kam Dirk Engelshausen, Eurapa-Chef von Lego zu Wort. Dieser skizzierte die drei Spielphasen, wie sie die Kinder mit den Legosteinen durchlaufen, folgendermaßen [1]:
 
 1. In der *Bauphase* geht es darum, das Schloss – oder was auch immer – aufzubauen. Dabei erleben Kinder gemeinsam mit den Eltern  eine schöne Zeit, die sonst meist knapp bemessen ist. Der Papa hockt sich mit auf den Boden, auch weil er selbst immer noch gern bastelt und baut. Ist das Schloss fertig, darf man stolz sein und die Kinder loben.
 
@@ -81,7 +81,7 @@ Aber warum das Ganze? Lego kann doch auch Spaß machen. Und die Verkaufszahlen s
 
 Warum verschwand nun dieses Miniauto-Baukastensystem vom Markt? Nur allein, weil es qualitativ nicht hochwertig war? Bitte lassen Sie es mich wissen. Auf jeden Fall war die Beschäftigung mit den Miniautos eine schöne Erinnerung an meine Kindheit.
 
-Quelle (1): _Jungs funktionieren anders_, Interview mit Lego-Europa-Chef Dirk Engelshausen in der Berliner Zeitung vom 21.12.2012. http://www.berliner-zeitung.de/wirtschaft/lego-chef---jungs-funktionieren-anders-,10808230,21168378.html[Link]
+Quelle (1): _Jungs funktionieren anders_, Interview mit Lego-Europa-Chef Dirk Engelshausen in der Berliner Zeitung vom 21.12.2012. http://www.berliner-zeitung.de/wirtschaft/lego-chef---jungs-funktionieren-anders-,10808230,21168378.html[Link^, role="ext-link"]
 
 == Baukasten Einsatzfahrzeuge
 
@@ -103,7 +103,7 @@ Dass nun die Serie "Ministerium des Inneren" hieß, entbehrt nicht einer gewisse
 Ministerium auch die Staatssicherheit zugeordnet war und sich in manchen Postämtern Türen ohne Aufschrift befanden
 - kann man verblüfft sein ob dieser "Offenheit".
 
-17 Fotos im Album https://www.publication.work/photos/index.php?/category/pebe-miniauto-einsatzfahrzeuge[PeBe Miniauto Einsatzfahrzeuge]
+17 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-einsatzfahrzeuge[PeBe Miniauto Einsatzfahrzeuge^, role="ext-link"]
 
 == Baukasten Omnibusse
 
@@ -117,7 +117,7 @@ Ministerium auch die Staatssicherheit zugeordnet war und sich in manchen Postäm
 [caption="Abb. 5: "]
 image::omnibus.jpg[]
 
-14 Fotos im Album https://www.publication.work/photos/index.php?/category/pebe-miniauto-omnibus[PeBe Miniauto Omnibus]
+14 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-omnibus[PeBe Miniauto Omnibus^, role="ext-link"]
 
 == Baukasten Kranfahrzeuge
 
@@ -131,4 +131,4 @@ image::omnibus.jpg[]
 [caption="Abb. 6: "]
 image::kranfahrzeug.jpg[]
 
-15 Fotos im Album https://www.publication.work/photos/index.php?/category/pebe-miniauto-kranfahrzeuge[PeBe Miniauto Kranfahrzeuge]
+15 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-kranfahrzeuge[PeBe Miniauto Kranfahrzeuge^, role="ext-link"]
