@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Diagonale - Der Anfang"
 date: 2020-05-05T21:25:43+02:00
-draft: false
+draft: true
 
 categories:
     - "diagonale"

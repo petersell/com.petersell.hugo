@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Diagonale - Exposé"
 date: 2017-05-15
-draft: false
+draft: true
 
 categories:
     - "romanschreiben"
