@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Homepages on Andreas Petersell</title>
-  <link rel="alternate" type="text/html" href="/"/>
-  <link rel="self" type="application/atom+xml" href="/homepage/index.atom"/>
+  <link rel="alternate" type="text/html" href="https://www.petersell.com/"/>
+  <link rel="self" type="application/atom+xml" href="https://www.petersell.com/homepage/index.atom"/>
   <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
   <updated>2020-04-02T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
-  <id>/homepage/</id>
+  <id>https://www.petersell.com/homepage/</id>
   
   
   <entry>
-    <id>/homepage/impressum/</id>
+    <id>https://www.petersell.com/homepage/impressum/</id>
     <title type="text">Impressum</title>
-    <link rel="alternate" href="/homepage/impressum/" hreflang="en" title="Impressum"/>
+    <link rel="alternate" href="https://www.petersell.com/homepage/impressum/" hreflang="en" title="Impressum"/>
     <published>2020-04-02T00:00:00Z</published>
     <updated>2020-04-02T00:00:00Z</updated>
     <content type="html">
@@ -80,28 +80,21 @@
   </entry>
   
   <entry>
-    <id>/homepage/about/</id>
+    <id>https://www.petersell.com/homepage/about/</id>
     <title type="text">Über den Autor</title>
-    <link rel="alternate" href="/homepage/about/" hreflang="en" title="Über den Autor"/>
+    <link rel="alternate" href="https://www.petersell.com/homepage/about/" hreflang="en" title="Über den Autor"/>
     <author><name>Andreas Petersell<name></author>
     <published>2020-03-30T00:00:00Z</published>
     <updated>2020-03-30T00:00:00Z</updated>
     <content type="html">
-&lt;p&gt;Dies ist ein privater Blog des&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Bürgers, Europäers, Ehemannes und Vaters,&lt;/li&gt;
-  &lt;li&gt;des Technischen Redakteurs,&lt;/li&gt;
-  &lt;li&gt;des Autors eines halbfertigen Romans und&lt;/li&gt;
-  &lt;li&gt;Co-Founders von jobikado.com&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Dies ist ein (privater) Blog ohne Gewinnerzielungsabsicht.&lt;/p&gt;
+
 &lt;p&gt;Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.&lt;/p&gt;
 
 &lt;h2&gt;Profile&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.petersell.com/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.publication.work/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Twitter&#34; href=&#34;https://twitter.com/petersell&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Mastodon&#34; href=&#34;https://mastodon.social/@diagonale&#34; target=&#34;_blank&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 

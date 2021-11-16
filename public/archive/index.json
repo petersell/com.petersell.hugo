@@ -1,12 +1,12 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "Archives on Andreas Petersell",
-    "home_page_url": "/",
-    "feed_url": "/archive/index.json",
+    "home_page_url": "https://www.petersell.com/",
+    "feed_url": "https://www.petersell.com/archive/index.json",
     "description": "Recent content in Archives on Andreas Petersell", 
-    "favicon": "/assets/icon.png", 
-    "icon": "/assets/icon.png", 
+    "favicon": "https://www.petersell.com/assets/icon.png", 
+    "icon": "https://www.petersell.com/assets/icon.png", 
     "author": {
         "name": "Andreas Petersell"
     },
-    "items":[{"content_html":"","date_modified":"0001-01-01T00:00:00Z","date_published":"0001-01-01T00:00:00Z","id":"/archive/blog/","summary":"Chronologisches Archiv der Beiträge.","tags":null,"title":"Archive","url":"/archive/blog/"},{"content_html":"","date_modified":"0001-01-01T00:00:00Z","date_published":"0001-01-01T00:00:00Z","id":"/archive/status/","summary":"Chronologisches Archiv der Beiträge.","tags":null,"title":"Archive","url":"/archive/status/"}]}
+    "items":[{"content_html":"","date_modified":"0001-01-01T00:00:00Z","date_published":"0001-01-01T00:00:00Z","id":"https://www.petersell.com/archive/blog/","summary":"Chronologisches Archiv der Beiträge.","tags":null,"title":"Archive","url":"https://www.petersell.com/archive/blog/"},{"content_html":"","date_modified":"0001-01-01T00:00:00Z","date_published":"0001-01-01T00:00:00Z","id":"https://www.petersell.com/archive/status/","summary":"Chronologisches Archiv der Beiträge.","tags":null,"title":"Archive","url":"https://www.petersell.com/archive/status/"}]}

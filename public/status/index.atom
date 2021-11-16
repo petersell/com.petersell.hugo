@@ -1,70 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Andreas Petersell</title>
-  <link rel="alternate" type="text/html" href="/"/>
-  <link rel="self" type="application/atom+xml" href="/status/index.atom"/>
+  <link rel="alternate" type="text/html" href="https://www.petersell.com/"/>
+  <link rel="self" type="application/atom+xml" href="https://www.petersell.com/status/index.atom"/>
   <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
-  <updated>2019-12-20T00:00:00Z</updated>
+  <updated>2021-01-01T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
-  <id>/status/</id>
+  <id>https://www.petersell.com/status/</id>
   
   
   <entry>
-    <id>/status/zitat-strelecky-das-leben-gestalten/</id>
-    <title type="text">Das Leben gestalten mit den Big Five for Live</title>
-    <link rel="alternate" href="/status/zitat-strelecky-das-leben-gestalten/" hreflang="en" title="Das Leben gestalten mit den Big Five for Live"/>
+    <id>https://www.petersell.com/status/foto-pixelfed-2021/</id>
+    <title type="text">Pixelfed 2021</title>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-pixelfed-2021/" hreflang="en" title="Pixelfed 2021"/>
     <author><name>Andreas Petersell<name></author>
-    <category term="readinglist"/>
-    <category term="jobikado"/>
-    <published>2019-12-20T00:00:00Z</published>
-    <updated>2019-12-20T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die meisten Gehälter und Boni von Managern basieren auf zwei Dingen: auf den Umsätzen und der Anzahl der Mitarbeiter. Sie basieren nicht auf Renditen und Fluktuationsraten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; John Strelecky: Das Leben gestalten mit den Big Five for Live&lt;br&gt;
-&lt;cite&gt;München 2018 (S. 201)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    <category term="pixelfed"/>
+    <published>2021-01-01T00:00:00Z</published>
+    <updated>2021-01-01T00:00:00Z</updated>
+    <content type="html">&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/status/notiz-2020-11-21/</id>
+    <title type="text">Notiz 2020-11-21</title>
+    <link rel="alternate" href="https://www.petersell.com/status/notiz-2020-11-21/" hreflang="en" title="Notiz 2020-11-21"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="familie"/>
+    <published>2020-11-21T19:42:55+01:00</published>
+    <updated>2020-11-21T19:42:55+01:00</updated>
+    <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;quot;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
 </content>
   </entry>
   
   <entry>
-    <id>/status/zitat-kemske-das-aufsteigerprinzip/</id>
-    <title type="text">Lifetime Employment - A Corporate Nightmare</title>
-    <link rel="alternate" href="/status/zitat-kemske-das-aufsteigerprinzip/" hreflang="en" title="Lifetime Employment - A Corporate Nightmare"/>
+    <id>https://www.petersell.com/status/foto-pixelfed-2020/</id>
+    <title type="text">Pixelfed 2020</title>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-pixelfed-2020/" hreflang="en" title="Pixelfed 2020"/>
     <author><name>Andreas Petersell<name></author>
-    <category term="readinglist"/>
-    <category term="jobikado"/>
-    <published>2019-11-25T00:00:00Z</published>
-    <updated>2019-11-25T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der englische Titel trifft es besser als der deutsche Titel des Romans &lt;em&gt;Das Aufsteiger-Prinzip&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Jeder, der schon einmal befördert wurde, kennt das Geheimnis. Beförderung ist weder eine Ehre noch eine Belohnung und hat sehr wenig zu tun mit den Fähigkeiten eines Angestellten oder den Bedürfnissen der Firma. Beförderung ist eine Neuverteilung der verfügbaren Kräfte, um etwas auf den Weg zu bringen, das ein Manager - aus welchen Gründen auch immer - nicht selbst tun möchte.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Floyd Kemske: Das Aufsteiger-Prinzip&lt;br&gt;
-&lt;cite&gt;München 1996 (S. 172)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
+    <category term="pixelfed"/>
+    <published>2020-01-01T00:00:00Z</published>
+    <updated>2020-01-01T00:00:00Z</updated>
+    <content type="html">&lt;iframe src=&#34;https://pixelfed.de/p/putbus/233686923334520832/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/173529344587730944/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/173531074104791040/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/171588127276797952/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/171359866567397376/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</content>
   </entry>
   
   <entry>
-    <id>/status/foto-bayrischer-wald/</id>
+    <id>https://www.petersell.com/status/foto-bayrischer-wald/</id>
     <title type="text">Auf den Arber</title>
-    <link rel="alternate" href="/status/foto-bayrischer-wald/" hreflang="en" title="Auf den Arber"/>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-bayrischer-wald/" hreflang="en" title="Auf den Arber"/>
     <author><name>Andreas Petersell<name></author>
     <category term="familie"/>
     <published>2019-10-07T00:00:00Z</published>
@@ -74,18 +69,18 @@
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212019-c6147330-me.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
+&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212019-c6147330-sm.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
   
   <entry>
-    <id>/status/foto-dessau-bauhaus/</id>
+    <id>https://www.petersell.com/status/foto-dessau-bauhaus/</id>
     <title type="text">Durchblick Bauhaus</title>
-    <link rel="alternate" href="/status/foto-dessau-bauhaus/" hreflang="en" title="Durchblick Bauhaus"/>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-dessau-bauhaus/" hreflang="en" title="Durchblick Bauhaus"/>
     <author><name>Andreas Petersell<name></author>
     <category term="freunde"/>
     <published>2019-09-28T00:00:00Z</published>
@@ -95,22 +90,21 @@
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212749-b648716d-me.jpg&#34; alt=&#34;Bauhausmuseum Dessau&#34;&gt;
+&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212749-b648716d-me.jpg&#34; alt=&#34;Bauhausmuseum Dessau&#34;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Leider wird dies mein letztes Instagram-Bild. Die automatische Veröffentlichung von Instagram-Fotos auf meiner Webseite petersell.com funktioniert nicht mehr. Webmentions ua. werden von Instagram geblockt. Ich kann nicht mal mehr meine Fotos von Instagram downloaden. Der Nutzer hat keine Rechte an seinen Fotos. Danke, das war´s.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/47&lt;/a&gt;
-Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34; class=&#34;bare&#34;&gt;https://mastodon.social/@diagonale/103115739507061124&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/47&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
   
   <entry>
-    <id>/status/log-maxim-leo-in-anna-seghers-bibliothek/</id>
+    <id>https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/</id>
     <title type="text">Maxim Leo in Anna Seghers Bibliothek</title>
-    <link rel="alternate" href="/status/log-maxim-leo-in-anna-seghers-bibliothek/" hreflang="en" title="Maxim Leo in Anna Seghers Bibliothek"/>
+    <link rel="alternate" href="https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/" hreflang="en" title="Maxim Leo in Anna Seghers Bibliothek"/>
     <author><name>Andreas Petersell<name></author>
     <category term="familie"/>
     <published>2019-09-18T00:00:00Z</published>
@@ -130,9 +124,9 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
   </entry>
   
   <entry>
-    <id>/status/foto-zaz-ifa/</id>
+    <id>https://www.petersell.com/status/foto-zaz-ifa/</id>
     <title type="text">ZAZ - und der Abend wird gut</title>
-    <link rel="alternate" href="/status/foto-zaz-ifa/" hreflang="en" title="ZAZ - und der Abend wird gut"/>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-zaz-ifa/" hreflang="en" title="ZAZ - und der Abend wird gut"/>
     <author><name>Andreas Petersell<name></author>
     <category term="familie"/>
     <category term="zaz"/>
@@ -152,9 +146,9 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
   </entry>
   
   <entry>
-    <id>/status/zitat-schirrmacher-minimum/</id>
+    <id>https://www.petersell.com/status/zitat-schirrmacher-minimum/</id>
     <title type="text">Minimum</title>
-    <link rel="alternate" href="/status/zitat-schirrmacher-minimum/" hreflang="en" title="Minimum"/>
+    <link rel="alternate" href="https://www.petersell.com/status/zitat-schirrmacher-minimum/" hreflang="en" title="Minimum"/>
     <author><name>Andreas Petersell<name></author>
     <category term="readinglist"/>
     <published>2019-08-05T00:00:00Z</published>
@@ -180,9 +174,9 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
   </entry>
   
   <entry>
-    <id>/status/foto-zaz-videoausschnitt/</id>
+    <id>https://www.petersell.com/status/foto-zaz-videoausschnitt/</id>
     <title type="text">Klappt nicht immer</title>
-    <link rel="alternate" href="/status/foto-zaz-videoausschnitt/" hreflang="en" title="Klappt nicht immer"/>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-zaz-videoausschnitt/" hreflang="en" title="Klappt nicht immer"/>
     <author><name>Andreas Petersell<name></author>
     <category term="zaz"/>
     <published>2019-07-25T00:00:00Z</published>
@@ -198,9 +192,9 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
   </entry>
   
   <entry>
-    <id>/status/notiz-2019-07-25/</id>
+    <id>https://www.petersell.com/status/notiz-2019-07-25/</id>
     <title type="text">Notiz</title>
-    <link rel="alternate" href="/status/notiz-2019-07-25/" hreflang="en" title="Notiz"/>
+    <link rel="alternate" href="https://www.petersell.com/status/notiz-2019-07-25/" hreflang="en" title="Notiz"/>
     <author><name>Andreas Petersell<name></author>
     <category term="darumlebenwir"/>
     <published>2019-07-25T00:00:00Z</published>
@@ -209,24 +203,6 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
 &lt;p&gt;Heute Kurze-Hosen-Befehl meiner Frau befolgt. Zum ersten Mal. Kurze Hose.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-  </entry>
-  
-  <entry>
-    <id>/status/foto-katzenfruehstueck/</id>
-    <title type="text">Katzenfrühstück</title>
-    <link rel="alternate" href="/status/foto-katzenfruehstueck/" hreflang="en" title="Katzenfrühstück"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="familie"/>
-    <published>2019-01-21T00:00:00Z</published>
-    <updated>2019-01-21T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ich werde doch wohl ein Blaumeischen von einem Eierwärmer unterscheiden können! Wäre ja gelacht.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/katzenfruehstueck/katzenfruehstueck.jpg&#34; alt=&#34;Katzenfrühstück&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
   
 </feed>

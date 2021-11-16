@@ -2,70 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fotos on Andreas Petersell</title>
-    <link>/categories/fotos/</link>
+    <link>https://www.petersell.com/categories/fotos/</link>
     <description>Recent content in fotos on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/categories/fotos/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/categories/fotos/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
+      <title>Pixelfed 2021</title>
+      <link>https://www.petersell.com/status/foto-pixelfed-2021/</link>
+      <category>pixelfed</category>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.petersell.com/status/foto-pixelfed-2021/</guid>
+      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pixelfed 2020</title>
+      <link>https://www.petersell.com/status/foto-pixelfed-2020/</link>
+      <category>pixelfed</category>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.petersell.com/status/foto-pixelfed-2020/</guid>
+      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/233686923334520832/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/173529344587730944/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/173531074104791040/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/171588127276797952/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/171359866567397376/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
       <title>Auf den Arber</title>
-      <link>/status/foto-bayrischer-wald/</link>
+      <link>https://www.petersell.com/status/foto-bayrischer-wald/</link>
       <category>familie</category>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-bayrischer-wald/</guid>
+      <guid>https://www.petersell.com/status/foto-bayrischer-wald/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212019-c6147330-me.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
+&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212019-c6147330-sm.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Durchblick Bauhaus</title>
-      <link>/status/foto-dessau-bauhaus/</link>
+      <link>https://www.petersell.com/status/foto-dessau-bauhaus/</link>
       <category>freunde</category>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-dessau-bauhaus/</guid>
+      <guid>https://www.petersell.com/status/foto-dessau-bauhaus/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Wir waren mit Freunden in Dessau: 100 Jahre Bauhaus. Natürlich stand auch das neue Bauhaus-Museum auf dem Programm. Ein entspannter Tag, da wir mit dem Berlin-Brandenburg-Ticket unterwegs waren.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212749-b648716d-me.jpg&#34; alt=&#34;Bauhausmuseum Dessau&#34;&gt;
+&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212749-b648716d-me.jpg&#34; alt=&#34;Bauhausmuseum Dessau&#34;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Leider wird dies mein letztes Instagram-Bild. Die automatische Veröffentlichung von Instagram-Fotos auf meiner Webseite petersell.com funktioniert nicht mehr. Webmentions ua. werden von Instagram geblockt. Ich kann nicht mal mehr meine Fotos von Instagram downloaden. Der Nutzer hat keine Rechte an seinen Fotos. Danke, das war´s.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/47&lt;/a&gt;
-Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34; class=&#34;bare&#34;&gt;https://mastodon.social/@diagonale/103115739507061124&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/47&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>ZAZ - und der Abend wird gut</title>
-      <link>/status/foto-zaz-ifa/</link>
+      <link>https://www.petersell.com/status/foto-zaz-ifa/</link>
       <category>familie</category>
       <category>zaz</category>
       <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-zaz-ifa/</guid>
+      <guid>https://www.petersell.com/status/foto-zaz-ifa/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;ZAZ in Berlin in lauer Sommernacht. Es gibt fast nichts besseres. Bis sie jemand von der Bühne gezerrt hat.&lt;/p&gt;
 &lt;/div&gt;
@@ -81,11 +110,11 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
     
     <item>
       <title>Klappt nicht immer</title>
-      <link>/status/foto-zaz-videoausschnitt/</link>
+      <link>https://www.petersell.com/status/foto-zaz-videoausschnitt/</link>
       <category>zaz</category>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-zaz-videoausschnitt/</guid>
+      <guid>https://www.petersell.com/status/foto-zaz-videoausschnitt/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Ich kann auch romantetisch. Vorfreude auf ZAZ im September 2019 auf der IFA in Berlin.&lt;/p&gt;
 &lt;/div&gt;
@@ -98,11 +127,11 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
     
     <item>
       <title>Katzenfrühstück</title>
-      <link>/status/foto-katzenfruehstueck/</link>
+      <link>https://www.petersell.com/status/foto-katzenfruehstueck/</link>
       <category>familie</category>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-katzenfruehstueck/</guid>
+      <guid>https://www.petersell.com/status/foto-katzenfruehstueck/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Ich werde doch wohl ein Blaumeischen von einem Eierwärmer unterscheiden können! Wäre ja gelacht.&lt;/p&gt;
 &lt;/div&gt;
@@ -115,78 +144,57 @@ Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34;
     
     <item>
       <title>Pixelfed 2019</title>
-      <link>/status/foto-pixelfed-2019/</link>
+      <link>https://www.petersell.com/status/foto-pixelfed-2019/</link>
       <category>pixelfed</category>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-pixelfed-2019/</guid>
-      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/143481954573094912/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+      <guid>https://www.petersell.com/status/foto-pixelfed-2019/</guid>
+      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/160331243584622592/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/160331243584622592/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/170617994458828800/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
     </item>
     
     <item>
       <title>Meine Fotos bei Tagesspiegel Online</title>
-      <link>/status/foto-tagesspiegel-schoeneweide/</link>
+      <link>https://www.petersell.com/status/foto-tagesspiegel-schoeneweide/</link>
       <category>link</category>
       <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-tagesspiegel-schoeneweide/</guid>
+      <guid>https://www.petersell.com/status/foto-tagesspiegel-schoeneweide/</guid>
       <description>
 My old photos from East-Berlin (Johannisthal und Niederschöneweide) published in Tagesspiegel Online. I love @creativecommons - &lt;a href=&#34;https://www.tagesspiegel.de/berlin/berliner-stadtgeschichte-die-letzten-ddr-kaufhallen-werden-abgerissen/22698968.html&#34;&gt;Die letzten DDR-Kaufhallen werden abgerissen&lt;/a&gt;.</description>
     </item>
     
     <item>
       <title>Pixelfed 2018</title>
-      <link>/status/foto-pixelfed-2018/</link>
+      <link>https://www.petersell.com/status/foto-pixelfed-2018/</link>
       <category>pixelfed</category>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/status/foto-pixelfed-2018/</guid>
-      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/154684707588673536/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+      <guid>https://www.petersell.com/status/foto-pixelfed-2018/</guid>
+      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/163385584797224960/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/168106595035779072/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/163383632994635776/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/154684707588673536/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/165119546049564672/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/154679855047380992/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/143481954573094912/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/115419072950308864/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/1305/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/165118481002532864/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/163761786271698944/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/160330266936741888/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
-    </item>
-    
-    <item>
-      <title>ZAZ rockt</title>
-      <link>/status/foto-zaz-schmeling-halle/</link>
-      <category>darumlebenwir</category>
-      <category>zaz</category>
-      <pubDate>Tue, 17 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/status/foto-zaz-schmeling-halle/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;die Max-Schmeling-Halle. Neben den Paris-Songs kamen Balladen und als Rockssongs interpretierte Recto-Verso-Songs zur Aufführung. Alle hatten den Text von &lt;em&gt;Je veux&lt;/em&gt; vergessen - und ZAZ gab gottseidank vor: &lt;em&gt;LA LA, LA LA&lt;/em&gt; &amp;#8230;&amp;#8203; Erstaunlich, wie eine Stimme eine ganze Halle füllt. Das Warten bis 21:30 Uhr hatte sich gelohnt.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/zaz-schmeling-halle/zaz-schmeling-halle.jpg&#34; alt=&#34;ZAZ rockt&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>So geht Minecraft heute!</title>
-      <link>/status/foto-minecraft/</link>
-      <category>familie</category>
-      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/status/foto-minecraft/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Happy Birthday. Ich bin stolz auf meine Zocker-Konditor-Familie.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/foto-minecraft/minecraft.jpg&#34; alt=&#34;Minecraftkuchen&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
     </item>
     
   </channel>

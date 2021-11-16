@@ -2,25 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>notizen on Andreas Petersell</title>
-    <link>/categories/notizen/</link>
+    <link>https://www.petersell.com/categories/notizen/</link>
     <description>Recent content in notizen on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 19:42:55 +0100</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/categories/notizen/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/categories/notizen/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
+      <title>Notiz 2020-11-21</title>
+      <link>https://www.petersell.com/status/notiz-2020-11-21/</link>
+      <category>familie</category>
+      <pubDate>Sat, 21 Nov 2020 19:42:55 +0100</pubDate>
+      
+      <guid>https://www.petersell.com/status/notiz-2020-11-21/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;quot;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Notiz</title>
-      <link>/status/notiz-2019-07-25/</link>
+      <link>https://www.petersell.com/status/notiz-2019-07-25/</link>
       <category>darumlebenwir</category>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/status/notiz-2019-07-25/</guid>
+      <guid>https://www.petersell.com/status/notiz-2019-07-25/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Heute Kurze-Hosen-Befehl meiner Frau befolgt. Zum ersten Mal. Kurze Hose.&lt;/p&gt;
 &lt;/div&gt;
@@ -29,11 +40,11 @@
     
     <item>
       <title>Notiz</title>
-      <link>/status/notiz-2018-12-01/</link>
+      <link>https://www.petersell.com/status/notiz-2018-12-01/</link>
       <category>familie</category>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/status/notiz-2018-12-01/</guid>
+      <guid>https://www.petersell.com/status/notiz-2018-12-01/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -49,11 +60,11 @@
     
     <item>
       <title>Notiz</title>
-      <link>/status/notiz-2018-04-11/</link>
+      <link>https://www.petersell.com/status/notiz-2018-04-11/</link>
       <category>darumlebenwir</category>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/status/notiz-2018-04-11/</guid>
+      <guid>https://www.petersell.com/status/notiz-2018-04-11/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Zwei Mädels in der Straßenbahn: Ich habe auf dem Zimmer noch einen zweiten Fernseher. Aber da funktioniert nichts. Dass heißt, nur das, was gerade läuft.&lt;/p&gt;
 &lt;/div&gt;
@@ -62,12 +73,12 @@
     
     <item>
       <title>Die Akte Vaterland</title>
-      <link>/status/zitat-kutscher-akte-vaterland/</link>
+      <link>https://www.petersell.com/status/zitat-kutscher-akte-vaterland/</link>
       <category>readinglist</category>
       <category>bürger</category>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/status/zitat-kutscher-akte-vaterland/</guid>
+      <guid>https://www.petersell.com/status/zitat-kutscher-akte-vaterland/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Klappentext und Rezensionen: &lt;a href=&#34;https://www.perlentaucher.de/buch/volker-kutscher/die-akte-vaterland.html&#34;&gt;https://www.perlentaucher.de/buch/volker-kutscher/die-akte-vaterland.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;

@@ -2,25 +2,123 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blogging on Andreas Petersell</title>
-    <link>/categories/blogging/</link>
+    <link>https://www.petersell.com/categories/blogging/</link>
     <description>Recent content in blogging on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Tue, 28 Apr 2020 14:43:14 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 17:29:38 +0200</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/categories/blogging/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/categories/blogging/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
+      <title>Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
+      <link>https://www.petersell.com/blog/hugo-asciidoc-netlify/</link>
+      <category>hugo</category>
+      <category>asciidoc</category>
+      <pubDate>Fri, 01 May 2020 17:29:38 +0200</pubDate>
+      
+      <guid>https://www.petersell.com/blog/hugo-asciidoc-netlify/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner &lt;code&gt;public&lt;/code&gt; via FTP auf den Webserver kopieren. Werden es mehr Blogposts, werden Dienste wie Netlify unausweichlich.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quelle&#34;&gt;Quelle&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.patrickpeeters.com/2019/09/asciidoc-support-for-hugo-on-netlify/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AsciiDoc support for Hugo on Netlify&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_abenteuer_netlify&#34;&gt;Abenteuer Netlify&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als das Kopieren meines Output-Ordners auf meinen Webserver 5 Minuten dauerte, war klar, dass das kein Bloggen mehr ist, sondern eine Qual. Ich wußte nie, was &lt;em&gt;Deployen&lt;/em&gt; bedeutet, jetzt ahnte ich es. Im Netz war meistens vom Dienst &lt;em&gt;Netlify&lt;/em&gt; die Rede, wenn es um das Bereitstellen von Hugo-Output auf einen Webserver ging. Bestimmt gibt es auch andere Dienste. Aber als ich obige Quelle fand, stand meine Wahl für &lt;em&gt;Netlify&lt;/em&gt; fest.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die erste Begegnung mit dem Dienst war schaurig. Man braucht ein hohes Verzweiflungspotential, um in der Benutzerführung von Netlify nicht sofort zu verzweifeln. So wird der Nutzer 3 Schritte mittels einer großen &lt;em&gt;Weiter&lt;/em&gt;-Schaltfläche geleitet, um dann im 4. Schritt lediglich auf einen kleinen Repository-Namen klicken zu müssen, damit es weiter geht. Hat man diese Klippe überwunden, erwarten einen jede Menge Fehlermeldungen, die es erstmal zu finden und zu dechiffrieren gilt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein Abbruch gab es wegen einer PDF-Datei, ein zweiter wegen einer falschen Syntax meiner Hugo-Version. Auf folgende Fehlermeldung war ich gottseidank vorbereitet und entsprechend erleichert, als sie mir erschien.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;10:08:14 PM: Executing user command: hugo --gc --minify
+10:08:14 PM: Building sites …
+10:08:14 PM: ERROR 2020/04/29 20:08:14 asciidoctor / asciidoc not found in $PATH: Please install.
+10:08:14 PM: Leaving AsciiDoc content unrendered.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anpassungen_wegen_asciidoc&#34;&gt;Anpassungen wegen Asciidoc&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nun schreibt Patrick Peeters:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Netlify’s buildbot can install software on build, all you need is a Gemfile in the root folder of your project pointing at the right software packages, in my case that’s just asciidoctor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; Patrick Peeters
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Was zur Hölle ist ein &lt;em&gt;Gemfile&lt;/em&gt;? Wieder halfen mir öffentliche Git-Repositorys: eine Datei mit Namen &lt;code&gt;Gemfile&lt;/code&gt;. Erstellen Sie also im Rootverzeichnis Ihres Hugo-Projektes eine Datei, benennen Sie sie &lt;em&gt;Gemfile&lt;/em&gt; und tragen folgenden Text ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
+gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In einer Anleitung zu Netlify hatte ich gelernt, dass es ratsam ist, ebenfalls im Rootverzeichnis eine Datei namens &lt;code&gt;netlify.toml&lt;/code&gt; anzulegen. So Sie auch eine haben, müssen Sie den Build-Befehl folgendermaßen anpassen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[build]
+publish = &#34;public&#34;
+command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn Sie jetzt Ihr Hugo-Projekt mit den angepassten Dateien &lt;code&gt;Gemfile&lt;/code&gt; und &lt;code&gt;netlify.toml&lt;/code&gt; in den Masterbranch hochladen, sollte der &lt;em&gt;Deploy&lt;/em&gt; fehlerfrei laufen und zumindest der Asciidoc-Inhalt korrekt ausgegeben werden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_theme_im_ursprungszustand&#34;&gt;Theme im Ursprungszustand&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als Hugo-Theme habe ich mich für das Theme &lt;a href=&#34;https://github.com/foo-dogsquared/hugo-theme-contentful&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Contentful&lt;/a&gt; entschieden. Da dies ein sehr minimalistisches Theme ist, musste ich viel nacharbeiten. Um so größer war der Schreck, als nach erfolgreichem &lt;em&gt;Deploy&lt;/em&gt; meine Webseite so gut wie nackt war: nämlich im Urzustand des Original-Themes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jetzt war ich zugegebenermaßen etwas müde. Da ich wußte, dass ich nicht so schnell auf ein anderes Theme umschwenken werde, habe ich kurzerhand die Theme-Dateien in die Hugo-Standard-Ordner verschoben und das Verzeichnis &lt;code&gt;themes&lt;/code&gt; komplett gelöscht. Nach einem nächsten Upload in den Masterbranch war alles so schön grün wie nach einem lokalen &lt;code&gt;hugo server&lt;/code&gt;-Aufruf.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugo mit Asciidoc - Auf anderen Post verlinken</title>
-      <link>/blog/hugo-auf-post-verlinken/</link>
+      <link>https://www.petersell.com/blog/hugo-auf-post-verlinken/</link>
       <category>hugo</category>
       <pubDate>Tue, 28 Apr 2020 14:43:14 +0200</pubDate>
       
-      <guid>/blog/hugo-auf-post-verlinken/</guid>
+      <guid>https://www.petersell.com/blog/hugo-auf-post-verlinken/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.&lt;/p&gt;
 &lt;/div&gt;
@@ -50,13 +148,13 @@
     
     <item>
       <title>Hugo mit Stock and Flow</title>
-      <link>/blog/hugo-stock-and-flow/</link>
+      <link>https://www.petersell.com/blog/hugo-stock-and-flow/</link>
       <category>hugo</category>
       <pubDate>Fri, 17 Apr 2020 16:40:39 +0200</pubDate>
       
-      <guid>/blog/hugo-stock-and-flow/</guid>
+      <guid>https://www.petersell.com/blog/hugo-stock-and-flow/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
@@ -73,10 +171,10 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
+&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
@@ -88,12 +186,12 @@
     
     <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>/blog/hugo-asciidoc-bilder-einbinden/</link>
+      <link>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</link>
       <category>hugo</category>
       <category>asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
-      <guid>/blog/hugo-asciidoc-bilder-einbinden/</guid>
+      <guid>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</guid>
       <description>&lt;div id=&#34;preamble&#34;&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -106,7 +204,7 @@
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Tipp&lt;/div&gt;
 &lt;/td&gt;
 &lt;td class=&#34;content&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
@@ -226,11 +324,11 @@
     
     <item>
       <title>Weiterblättern im Hugo-Theme Minimo</title>
-      <link>/blog/hugo-minimo-weiterlink/</link>
+      <link>https://www.petersell.com/blog/hugo-minimo-weiterlink/</link>
       <category>hugo</category>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/hugo-minimo-weiterlink/</guid>
+      <guid>https://www.petersell.com/blog/hugo-minimo-weiterlink/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ist ein Open Source Webseiten-Generator für statische Seiten. Das Theme Minimo erstellt die Links unterhalb eines Blogposts für Weiter und Zurück automatisch – nur leider genau umgekehrt, wie ich es für meine Texte gebrauchen kann. Bei Blogposts landet der aktuellste Post oben. Bei belletristischen Texten wird das erste Kapitel zuerst geschrieben, soll aber auch an erster (oben) Stelle bleiben. Kurz und gut: ich wollte eine Möglichkeit haben, Hugo-Seiten manuell zu verbinden. Bei Kapitel 1 landet der Leser nach Klick auf Weiter beim Kapitel 2. Eigentlich logisch, im CMS Hugo aber nicht so einfach.&lt;/p&gt;
 &lt;/div&gt;
@@ -319,12 +417,12 @@ nextpage: novel/version-eins/2_michael-01/
     
     <item>
       <title>Indiewebify my Hugo-Site</title>
-      <link>/blog/hugo-indiewebify/</link>
+      <link>https://www.petersell.com/blog/hugo-indiewebify/</link>
       <category>hugo</category>
       <category>indieweb</category>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/hugo-indiewebify/</guid>
+      <guid>https://www.petersell.com/blog/hugo-indiewebify/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Mit Hilfe eines kleinen Services von Pelle Wessmann namens &lt;a href=&#34;https://webmention.herokuapp.com/&#34; class=&#34;bare&#34;&gt;https://webmention.herokuapp.com/&lt;/a&gt; ist es mir auf meiner statischen Hugo-Seite möglich, Kommentare, Likes, Reposts u.ä. via Webmentions einzusammeln.&lt;/p&gt;
 &lt;/div&gt;
@@ -345,7 +443,7 @@ nextpage: novel/version-eins/2_michael-01/
 &lt;h2 id=&#34;_schritt_2_css_klassen_hinzufügen&#34;&gt;Schritt 2 - CSS-Klassen hinzufügen&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
+&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

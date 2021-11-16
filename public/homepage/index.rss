@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepages on Andreas Petersell</title>
-    <link>/homepage/</link>
+    <link>https://www.petersell.com/homepage/</link>
     <description>Recent content in Homepages on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
@@ -10,16 +10,16 @@
     <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/homepage/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/homepage/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Impressum</title>
-      <link>/homepage/impressum/</link>
+      <link>https://www.petersell.com/homepage/impressum/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/homepage/impressum/</guid>
+      <guid>https://www.petersell.com/homepage/impressum/</guid>
       <description>
 &lt;p&gt;&lt;img src=&#34;../../images/imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
 &lt;h3&gt;Datenschutzerkl&amp;auml;rung&lt;/h3&gt;
@@ -83,26 +83,19 @@
     
     <item>
       <title>Über den Autor</title>
-      <link>/homepage/about/</link>
+      <link>https://www.petersell.com/homepage/about/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/homepage/about/</guid>
+      <guid>https://www.petersell.com/homepage/about/</guid>
       <description>
-&lt;p&gt;Dies ist ein privater Blog des&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Bürgers, Europäers, Ehemannes und Vaters,&lt;/li&gt;
-  &lt;li&gt;des Technischen Redakteurs,&lt;/li&gt;
-  &lt;li&gt;des Autors eines halbfertigen Romans und&lt;/li&gt;
-  &lt;li&gt;Co-Founders von jobikado.com&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Dies ist ein (privater) Blog ohne Gewinnerzielungsabsicht.&lt;/p&gt;
+
 &lt;p&gt;Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.&lt;/p&gt;
 
 &lt;h2&gt;Profile&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.petersell.com/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.publication.work/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Twitter&#34; href=&#34;https://twitter.com/petersell&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Mastodon&#34; href=&#34;https://mastodon.social/@diagonale&#34; target=&#34;_blank&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 

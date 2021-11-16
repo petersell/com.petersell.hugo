@@ -1,21 +1,490 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Andreas Petersell</title>
-  <link rel="alternate" type="text/html" href="/"/>
-  <link rel="self" type="application/atom+xml" href="/index.atom"/>
+  <link rel="alternate" type="text/html" href="https://www.petersell.com/"/>
+  <link rel="self" type="application/atom+xml" href="https://www.petersell.com/index.atom"/>
   <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
-  <updated>2020-04-28T14:43:14+02:00</updated>
+  <updated>2021-01-01T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
-  <id>/</id>
+  <id>https://www.petersell.com/</id>
   
   
   <entry>
-    <id>/blog/hugo-auf-post-verlinken/</id>
+    <id>https://www.petersell.com/status/foto-pixelfed-2021/</id>
+    <title type="text">Pixelfed 2021</title>
+    <link rel="alternate" href="https://www.petersell.com/status/foto-pixelfed-2021/" hreflang="en" title="Pixelfed 2021"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="pixelfed"/>
+    <published>2021-01-01T00:00:00Z</published>
+    <updated>2021-01-01T00:00:00Z</updated>
+    <content type="html">&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/status/notiz-2020-11-21/</id>
+    <title type="text">Notiz 2020-11-21</title>
+    <link rel="alternate" href="https://www.petersell.com/status/notiz-2020-11-21/" hreflang="en" title="Notiz 2020-11-21"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="familie"/>
+    <published>2020-11-21T19:42:55+01:00</published>
+    <updated>2020-11-21T19:42:55+01:00</updated>
+    <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;quot;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/asciidoc-antora-test/</id>
+    <title type="text">Antora-Output aus lokalen Quellen generieren</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/asciidoc-antora-test/" hreflang="en" title="Antora-Output aus lokalen Quellen generieren"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="asciidoc"/>
+    <published>2020-06-10T10:57:42+02:00</published>
+    <updated>2020-06-10T10:57:42+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Antora ist ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden. Zum Testen sollen sich die Quelldateien jedoch lokal auf dem Rechner befinden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/antora/antora/-/issues/284#note_95389433&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Is there a way to use Antora without Git?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Antora ist in erster Linie dazu gedacht, Dokumentationen aus mehreren Repositorys unter einer Oberfläche zusammenzuführen (docs as code). Bevor ein Redakteur jedoch via Merge Request in eine übergreifende Gesamtdokumentation eincheckt, möchte er sichergehen und seine Texte testen. Antora sollte dazu auch lokal lauffähig sein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es gibt drei Quell-Bestandteile einer Antora-Dokumentation:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Die Playbook-Datei (z.B. &lt;code&gt;antora-test-playbook.yml&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die Components (Die Inhalte-Repositorys bzw. Inhalte-Verzeichnisse)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Das UI-Theme (&lt;code&gt;ui-bundle.zip&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese 3 Bestandteile werden lokal in ein Verzeichnis kopiert. Ich möchte es das &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; nennen. Im Beispiel existieren im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; zwei Components sowie die Playbook-Datei und das UI-Theme.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;com.petersell.example
+    ├── com.petersell.example.api
+    ├── com.petersell.example.impl
+    └── com.petersell.example.doc
+        ├── modules
+        └── antora.yml
+ com.petersell.anotherexample
+    └── com.petersell.anotherexample.doc
+        ├── modules
+        └── antora.yml
+antora-test-playbook.yml
+ui-bundle.zip&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da ich neben den o.g. zwei lokalen Components-Verzeichnisse noch ein Beispielprojekt von Antora integrieren möchte, dass sich in einem Git-Repository befindet, musste ich meine Playbook-Datei &lt;code&gt;antora-test-playbook.yml&lt;/code&gt; folgendermaßen gestalten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;site:
+  title: Antora Test Site &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
+  url: http://localhost
+  start_page: Startseite::index.adoc &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;
+content:
+  sources:
+  - url: . &lt;b class=&#34;conum&#34;&gt;(3)&lt;/b&gt;
+    branches: HEAD &lt;b class=&#34;conum&#34;&gt;(4)&lt;/b&gt;
+    start_path: com.petersell.example/com.petersell.example.doc &lt;b class=&#34;conum&#34;&gt;(5)&lt;/b&gt;
+  - url: https://gitlab.com/antora/demo/demo-component-b.git &lt;b class=&#34;conum&#34;&gt;(6)&lt;/b&gt;
+    branches: [v2.0, v1.0]
+    start_path: docs
+  - url: . &lt;b class=&#34;conum&#34;&gt;(7)&lt;/b&gt;
+    branches: HEAD
+    start_path: com.petersell.anotherexample/com.petersell.anotherexample.doc
+ui:
+  bundle:
+  #
+    url: ./ui-bundle.zip &lt;b class=&#34;conum&#34;&gt;(8)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;colist arabic&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Der Titel erscheint im Output links oben in der Kopf-Navigationsleiste.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Der linke Teil (vor den zweifachen Doppelpunkten) gibt den Namen der Startseite wider. Sie finden diesen in der &lt;code&gt;antora.yml&lt;/code&gt; des jeweiligen Ordners hinter dem Attribut &lt;code&gt;name&lt;/code&gt;. Der rechte Teil gibt den Pfad inklusive Dateiname der Startseiten-Datei aus. Hier ist die Startseite im ROOT-Verzeichnis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, setzen Sie den Punkt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, schreiben Sie &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Der Pfad zum jeweiligen Component-Verzeichnis inklusive dem Verzeichnisnamen, hier &lt;code&gt;com.petersell.example.doc&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die Syntax für eine Component in einem Git-Repository. Hier ist es eine Beispieldokumentation von Antora.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die zweite lokale Component. Gehen Sie analog der ersten Component vor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Das lokale UI-Theme. Dies könnte auch die URL zu einem Git-Repository inklusive der ZIP-Datei sein.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen Sie folgenden Build-Befehl ab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Antora-Buildbefehl&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Höchstwahrscheinlich werden Sie eine Fehlermeldung erhalten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Error: Local content source must be a git repository: C:\Users\Andreas\Dropbox\antora (resolved from url: .)&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In diesem Fall öffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; ein &lt;a href=&#34;https://gitforwindows.org/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git-Bash-Fenster&lt;/a&gt; und geben die folgende Befehle auf einmal ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-test/gitvortaeuschen.png&#34; alt=&#34;Git-Bash-Fenster im Arbeitsverzeichnis&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Git-Befehle kopieren&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;git init .
+touch .gitignore
+git add .gitignore
+git commit -m &#39;initialize repository&#39;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen nochmals den Build-Befehl ab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Befehl clont das externe Repository des Antora-Beispielprojekts. Im Ergebnis entsteht innerhalb des &lt;em&gt;Antora-Arbeitsverzeichnisses&lt;/em&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output der drei Components.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/asciidoc-antora-install/</id>
+    <title type="text">Antora lokal installieren</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/asciidoc-antora-install/" hreflang="en" title="Antora lokal installieren"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="asciidoc"/>
+    <published>2020-06-03T12:15:42+02:00</published>
+    <updated>2020-06-03T12:15:42+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Antora ist so etwas wie ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.antora.org/antora/2.2/install/windows-requirements/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Antora-Dokumentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Dieser Artikel ist eine Dokumentation der Installation von Antora auf meinem Privatrechner. Das kann auf jedem anderen PC anders aussehen. Warum &lt;em&gt;Privatrechner?&lt;/em&gt; Dieses Wort steht für die Kombination aus den begrenzten PC-Kenntnissen eine Redakteurs - aber gepaart mit vollen Adminrechten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Auf &lt;a href=&#34;https://nodejs.org/en/download/&#34; class=&#34;bare&#34;&gt;https://nodejs.org/en/download/&lt;/a&gt; gilt es, den passenden Long Term Support-Installer zu downloaden. In meinem Fall &lt;em&gt;LTS Windows Installer (.msi) 64-bit&lt;/em&gt;. Führen Sie die Datei per Doppelklick aus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach dem Installer habe ich noch das nachfolgende Skript &lt;em&gt;Tools for Node.js Native Module Installation Script&lt;/em&gt; gestartet. Dies dauerte einige Minuten und installierte via Chocolatey jede Menge Komponenten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/install-node4.png&#34; alt=&#34;Chocolatey-Installation&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 1. Chocolatey-Installation&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Ergebnis in der PowerShell ergab diese Versionen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;C:\Users\Andreas&amp;gt; npm --version
+6.14.4
+C:\Users\Andreas&amp;gt; node --version
+v12.16.3&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wie in der Antora-Dokumenation beschrieben, geben Sie den Installationsbefehl für eine globale Installation von Antora ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ npm i -g @antora/cli@2.2 @antora/site-generator-default@2.2&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Anschließend führen Sie &lt;code&gt;antora version&lt;/code&gt; aus, um sich vom Erfolg der Installation zu überzeugen. Bei mir endete es in einer Fehlermeldung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Die Datei &#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; kann nicht geladen werden. Die Datei
+&#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; ist nicht digital signiert. Sie können dieses Skript im aktuellen System nicht ausführen. Weitere Informationen zum Ausführen von Skripts und Festlegen der Ausführungsrichtlinie erhalten Sie unter &#34;about_Execution_Policies&#34; (https:/go.microsoft.com/fwlink/?LinkID=135170)..&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Auf der angegebenen URL von Microsoft https:/go.microsoft.com/fwlink/?LinkID=135170 wurde ich fündig.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/antora-version.png&#34; alt=&#34;Ausführungsrichtlinie ändern&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 2. Ausführungsrichtlinie ändern&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es gilt herauszufinden, welche Ausführungsrichtlinien innerhalb der PowerShell für mich als Nutzer gelten:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Get-ExecutionPolicy -Scope CurrentUser&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für mich auf dem Windows-Client galt &lt;em&gt;Undefined&lt;/em&gt;. Um meine Rechte auf der PowerShell meines Rechners zu erweitern, musste ich eingeben:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein nochmaliges Ausführen von &lt;code&gt;antora version&lt;/code&gt; gab die korrekte Versionsnummer &lt;code&gt;2.2.0&lt;/code&gt; zurück.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Um zu einem schnellen Ergebnis zu kommen, habe ich das Beispielprojekt &lt;em&gt;Demo Docs Site&lt;/em&gt; auf &lt;a href=&#34;https://gitlab.com/antora/demo/docs-site&#34; class=&#34;bare&#34;&gt;https://gitlab.com/antora/demo/docs-site&lt;/a&gt; generiert. Um es clonen zu können, habe ich mir einen Gitlab-Account angelegt. Für diesen Account musste ich mir ein &lt;a href=&#34;https://www.hrz.tu-darmstadt.de/speicherplatz_datensicherung_und_server/virtuelle_server/anleitung_sammlung/artikel_details_22784.de.jsp&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SSH-Key einrichten&lt;/a&gt; und in den Nutzer-Einstellungen unter &lt;em&gt;SSH-Keys&lt;/em&gt; hinterlegen. Nun konnte ich das Beispielprojekt &lt;em&gt;Demo Docs Site&lt;/em&gt; fehlerfrei clonen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/clone-beispielrepo2.png&#34; alt=&#34;Beispielrepo clonen&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 3. Beispielprojekt clonen&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Öffnen Sie ein PowerShell-Fenster im neu entstandenen Ordner &lt;code&gt;docs-site&lt;/code&gt; und geben Sie den Build-Befehl ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;C:\Daten\antora\docs-site&amp;gt; antora antora-playbook.yml&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Befehl clont zwei Repositorys. Im Ergebnis entsteht innerhalb des Ordners &lt;code&gt;docs-site&lt;/code&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output des Beispielprojekts .&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/hugo-asciidoc-netlify/</id>
+    <title type="text">Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-asciidoc-netlify/" hreflang="en" title="Hugo mit Asciidoc - Webseite mit Netlify bereitstellen"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="hugo"/>
+    <category term="asciidoc"/>
+    <published>2020-05-01T17:29:38+02:00</published>
+    <updated>2020-05-01T17:29:38+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner &lt;code&gt;public&lt;/code&gt; via FTP auf den Webserver kopieren. Werden es mehr Blogposts, werden Dienste wie Netlify unausweichlich.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quelle&#34;&gt;Quelle&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.patrickpeeters.com/2019/09/asciidoc-support-for-hugo-on-netlify/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AsciiDoc support for Hugo on Netlify&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_abenteuer_netlify&#34;&gt;Abenteuer Netlify&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als das Kopieren meines Output-Ordners auf meinen Webserver 5 Minuten dauerte, war klar, dass das kein Bloggen mehr ist, sondern eine Qual. Ich wußte nie, was &lt;em&gt;Deployen&lt;/em&gt; bedeutet, jetzt ahnte ich es. Im Netz war meistens vom Dienst &lt;em&gt;Netlify&lt;/em&gt; die Rede, wenn es um das Bereitstellen von Hugo-Output auf einen Webserver ging. Bestimmt gibt es auch andere Dienste. Aber als ich obige Quelle fand, stand meine Wahl für &lt;em&gt;Netlify&lt;/em&gt; fest.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die erste Begegnung mit dem Dienst war schaurig. Man braucht ein hohes Verzweiflungspotential, um in der Benutzerführung von Netlify nicht sofort zu verzweifeln. So wird der Nutzer 3 Schritte mittels einer großen &lt;em&gt;Weiter&lt;/em&gt;-Schaltfläche geleitet, um dann im 4. Schritt lediglich auf einen kleinen Repository-Namen klicken zu müssen, damit es weiter geht. Hat man diese Klippe überwunden, erwarten einen jede Menge Fehlermeldungen, die es erstmal zu finden und zu dechiffrieren gilt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein Abbruch gab es wegen einer PDF-Datei, ein zweiter wegen einer falschen Syntax meiner Hugo-Version. Auf folgende Fehlermeldung war ich gottseidank vorbereitet und entsprechend erleichert, als sie mir erschien.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;10:08:14 PM: Executing user command: hugo --gc --minify
+10:08:14 PM: Building sites …
+10:08:14 PM: ERROR 2020/04/29 20:08:14 asciidoctor / asciidoc not found in $PATH: Please install.
+10:08:14 PM: Leaving AsciiDoc content unrendered.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anpassungen_wegen_asciidoc&#34;&gt;Anpassungen wegen Asciidoc&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nun schreibt Patrick Peeters:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Netlify’s buildbot can install software on build, all you need is a Gemfile in the root folder of your project pointing at the right software packages, in my case that’s just asciidoctor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; Patrick Peeters
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Was zur Hölle ist ein &lt;em&gt;Gemfile&lt;/em&gt;? Wieder halfen mir öffentliche Git-Repositorys: eine Datei mit Namen &lt;code&gt;Gemfile&lt;/code&gt;. Erstellen Sie also im Rootverzeichnis Ihres Hugo-Projektes eine Datei, benennen Sie sie &lt;em&gt;Gemfile&lt;/em&gt; und tragen folgenden Text ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
+gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In einer Anleitung zu Netlify hatte ich gelernt, dass es ratsam ist, ebenfalls im Rootverzeichnis eine Datei namens &lt;code&gt;netlify.toml&lt;/code&gt; anzulegen. So Sie auch eine haben, müssen Sie den Build-Befehl folgendermaßen anpassen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[build]
+publish = &#34;public&#34;
+command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn Sie jetzt Ihr Hugo-Projekt mit den angepassten Dateien &lt;code&gt;Gemfile&lt;/code&gt; und &lt;code&gt;netlify.toml&lt;/code&gt; in den Masterbranch hochladen, sollte der &lt;em&gt;Deploy&lt;/em&gt; fehlerfrei laufen und zumindest der Asciidoc-Inhalt korrekt ausgegeben werden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_theme_im_ursprungszustand&#34;&gt;Theme im Ursprungszustand&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als Hugo-Theme habe ich mich für das Theme &lt;a href=&#34;https://github.com/foo-dogsquared/hugo-theme-contentful&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Contentful&lt;/a&gt; entschieden. Da dies ein sehr minimalistisches Theme ist, musste ich viel nacharbeiten. Um so größer war der Schreck, als nach erfolgreichem &lt;em&gt;Deploy&lt;/em&gt; meine Webseite so gut wie nackt war: nämlich im Urzustand des Original-Themes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jetzt war ich zugegebenermaßen etwas müde. Da ich wußte, dass ich nicht so schnell auf ein anderes Theme umschwenken werde, habe ich kurzerhand die Theme-Dateien in die Hugo-Standard-Ordner verschoben und das Verzeichnis &lt;code&gt;themes&lt;/code&gt; komplett gelöscht. Nach einem nächsten Upload in den Masterbranch war alles so schön grün wie nach einem lokalen &lt;code&gt;hugo server&lt;/code&gt;-Aufruf.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/hugo-auf-post-verlinken/</id>
     <title type="text">Hugo mit Asciidoc - Auf anderen Post verlinken</title>
-    <link rel="alternate" href="/blog/hugo-auf-post-verlinken/" hreflang="en" title="Hugo mit Asciidoc - Auf anderen Post verlinken"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-auf-post-verlinken/" hreflang="en" title="Hugo mit Asciidoc - Auf anderen Post verlinken"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo"/>
     <published>2020-04-28T14:43:14+02:00</published>
@@ -48,15 +517,15 @@
   </entry>
   
   <entry>
-    <id>/blog/hugo-stock-and-flow/</id>
+    <id>https://www.petersell.com/blog/hugo-stock-and-flow/</id>
     <title type="text">Hugo mit Stock and Flow</title>
-    <link rel="alternate" href="/blog/hugo-stock-and-flow/" hreflang="en" title="Hugo mit Stock and Flow"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-stock-and-flow/" hreflang="en" title="Hugo mit Stock and Flow"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo"/>
     <published>2020-04-17T16:40:39+02:00</published>
     <updated>2020-04-17T16:40:39+02:00</updated>
     <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
@@ -73,10 +542,10 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
+&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
@@ -87,9 +556,9 @@
   </entry>
   
   <entry>
-    <id>/homepage/impressum/</id>
+    <id>https://www.petersell.com/homepage/impressum/</id>
     <title type="text">Impressum</title>
-    <link rel="alternate" href="/homepage/impressum/" hreflang="en" title="Impressum"/>
+    <link rel="alternate" href="https://www.petersell.com/homepage/impressum/" hreflang="en" title="Impressum"/>
     <published>2020-04-02T00:00:00Z</published>
     <updated>2020-04-02T00:00:00Z</updated>
     <content type="html">
@@ -154,28 +623,21 @@
   </entry>
   
   <entry>
-    <id>/homepage/about/</id>
+    <id>https://www.petersell.com/homepage/about/</id>
     <title type="text">Über den Autor</title>
-    <link rel="alternate" href="/homepage/about/" hreflang="en" title="Über den Autor"/>
+    <link rel="alternate" href="https://www.petersell.com/homepage/about/" hreflang="en" title="Über den Autor"/>
     <author><name>Andreas Petersell<name></author>
     <published>2020-03-30T00:00:00Z</published>
     <updated>2020-03-30T00:00:00Z</updated>
     <content type="html">
-&lt;p&gt;Dies ist ein privater Blog des&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Bürgers, Europäers, Ehemannes und Vaters,&lt;/li&gt;
-  &lt;li&gt;des Technischen Redakteurs,&lt;/li&gt;
-  &lt;li&gt;des Autors eines halbfertigen Romans und&lt;/li&gt;
-  &lt;li&gt;Co-Founders von jobikado.com&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Dies ist ein (privater) Blog ohne Gewinnerzielungsabsicht.&lt;/p&gt;
+
 &lt;p&gt;Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.&lt;/p&gt;
 
 &lt;h2&gt;Profile&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.petersell.com/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.publication.work/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Twitter&#34; href=&#34;https://twitter.com/petersell&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Mastodon&#34; href=&#34;https://mastodon.social/@diagonale&#34; target=&#34;_blank&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 
@@ -185,9 +647,9 @@
   </entry>
   
   <entry>
-    <id>/blog/hugo-asciidoc-bilder-einbinden/</id>
+    <id>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</id>
     <title type="text">Hugo mit Asciidoc - Bilder einbinden</title>
-    <link rel="alternate" href="/blog/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo"/>
     <category term="asciidoc"/>
@@ -205,7 +667,7 @@
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Tipp&lt;/div&gt;
 &lt;/td&gt;
 &lt;td class=&#34;content&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
@@ -320,184 +782,6 @@
 &lt;p&gt;In meiner CSS wurden sämtliche Einträge zur class &lt;code&gt;.admonitionblock&lt;/code&gt; überflüssig, die ich mir zuvor aus der &lt;code&gt;asciidoctor.css&lt;/code&gt; kopiert hatte.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/status/zitat-strelecky-das-leben-gestalten/</id>
-    <title type="text">Das Leben gestalten mit den Big Five for Live</title>
-    <link rel="alternate" href="/status/zitat-strelecky-das-leben-gestalten/" hreflang="en" title="Das Leben gestalten mit den Big Five for Live"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="readinglist"/>
-    <category term="jobikado"/>
-    <published>2019-12-20T00:00:00Z</published>
-    <updated>2019-12-20T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die meisten Gehälter und Boni von Managern basieren auf zwei Dingen: auf den Umsätzen und der Anzahl der Mitarbeiter. Sie basieren nicht auf Renditen und Fluktuationsraten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; John Strelecky: Das Leben gestalten mit den Big Five for Live&lt;br&gt;
-&lt;cite&gt;München 2018 (S. 201)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <id>/status/zitat-kemske-das-aufsteigerprinzip/</id>
-    <title type="text">Lifetime Employment - A Corporate Nightmare</title>
-    <link rel="alternate" href="/status/zitat-kemske-das-aufsteigerprinzip/" hreflang="en" title="Lifetime Employment - A Corporate Nightmare"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="readinglist"/>
-    <category term="jobikado"/>
-    <published>2019-11-25T00:00:00Z</published>
-    <updated>2019-11-25T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der englische Titel trifft es besser als der deutsche Titel des Romans &lt;em&gt;Das Aufsteiger-Prinzip&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Jeder, der schon einmal befördert wurde, kennt das Geheimnis. Beförderung ist weder eine Ehre noch eine Belohnung und hat sehr wenig zu tun mit den Fähigkeiten eines Angestellten oder den Bedürfnissen der Firma. Beförderung ist eine Neuverteilung der verfügbaren Kräfte, um etwas auf den Weg zu bringen, das ein Manager - aus welchen Gründen auch immer - nicht selbst tun möchte.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Floyd Kemske: Das Aufsteiger-Prinzip&lt;br&gt;
-&lt;cite&gt;München 1996 (S. 172)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/asciidoc-asciidoctor-install/</id>
-    <title type="text">Asciidoctor auf Windows einrichten</title>
-    <link rel="alternate" href="/blog/asciidoc-asciidoctor-install/" hreflang="en" title="Asciidoctor auf Windows einrichten"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="asciidoc"/>
-    <published>2019-11-15T00:00:00Z</published>
-    <updated>2019-11-15T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;AsciiDoc ist eine vereinfachte Auszeichnungssprache ähnlich Markdown, die dazu dient, Texte in verschiedenen Dokumentenformaten zu veröffentlichen. Asciidoc wurde speziell für die Technische Dokumentation entwickelt und wird in vielen Git-Portalen als Dokumentationsstandard genutzt. Es hat jedoch nicht die Möglichkeiten der Wiederverwendung wie DITA-XML. Neuer Rechner, neuer Doktor: wie muss ich ihn installieren? Jetzt schreibe ich es auf, denn ich vergesse es jedes Mal.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_ruby_installieren&#34;&gt;Ruby installieren&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_asciidoctor_installieren&#34;&gt;Asciidoctor installieren&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;Asciidoctor für PDF installieren&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_ruby_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_ruby_installieren&#34;&gt;&lt;/a&gt;Ruby installieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall1.gif&#34; alt=&#34;rubyinstall1&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Installationsroutine folgen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall2.gif&#34; alt=&#34;rubyinstall2&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_asciidoctor_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoctor_installieren&#34;&gt;&lt;/a&gt;Asciidoctor installieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Öffnen Sie eine Eingabeauforderung und geben Sie folgenden Befehl ein und drücken Sie [Enter].&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;$ gem install --http-proxy http://@proxy.&amp;lt;Proxyservername&amp;gt;.&amp;lt;Port&amp;gt; asciidoctor&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-install.gif&#34; alt=&#34;asciidoctor install&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Arbeiten Sie ohne Proxyserver, genügt ein &lt;code&gt;gem install asciidoctor&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_asciidoctor_für_pdf_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;&lt;/a&gt;Asciidoctor für PDF installieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;$ gem install --http-proxy http://@proxy.&amp;lt;Proxyservername&amp;gt;.&amp;lt;Port&amp;gt; asciidoctor-pdf --pre&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-pdf.gif&#34; alt=&#34;asciidoctor pdf&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das war´s. Sie können nun mit Hilfe von adoc-Dateien  &lt;a href=&#34;https://asciidoctor.org/docs/user-manual/#html&#34;&gt;Output erzeugen&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;$ asciidoctor mysample.adoc&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/status/foto-bayrischer-wald/</id>
-    <title type="text">Auf den Arber</title>
-    <link rel="alternate" href="/status/foto-bayrischer-wald/" hreflang="en" title="Auf den Arber"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="familie"/>
-    <published>2019-10-07T00:00:00Z</published>
-    <updated>2019-10-07T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212019-c6147330-me.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/status/foto-dessau-bauhaus/</id>
-    <title type="text">Durchblick Bauhaus</title>
-    <link rel="alternate" href="/status/foto-dessau-bauhaus/" hreflang="en" title="Durchblick Bauhaus"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="freunde"/>
-    <published>2019-09-28T00:00:00Z</published>
-    <updated>2019-09-28T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir waren mit Freunden in Dessau: 100 Jahre Bauhaus. Natürlich stand auch das neue Bauhaus-Museum auf dem Programm. Ein entspannter Tag, da wir mit dem Berlin-Brandenburg-Ticket unterwegs waren.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.petersell.com/photos/_data/i/upload/2019/11/11/20191111212749-b648716d-me.jpg&#34; alt=&#34;Bauhausmuseum Dessau&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Leider wird dies mein letztes Instagram-Bild. Die automatische Veröffentlichung von Instagram-Fotos auf meiner Webseite petersell.com funktioniert nicht mehr. Webmentions ua. werden von Instagram geblockt. Ich kann nicht mal mehr meine Fotos von Instagram downloaden. Der Nutzer hat keine Rechte an seinen Fotos. Danke, das war´s.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.petersell.com/photos/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.petersell.com/photos/index.php?/category/47&lt;/a&gt;
-Auch: &lt;a href=&#34;https://mastodon.social/@diagonale/103115739507061124&#34; class=&#34;bare&#34;&gt;https://mastodon.social/@diagonale/103115739507061124&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
   

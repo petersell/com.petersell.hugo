@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
 <link href="https://twitter.com/petersell" rel="me" class="u-url"/>
 <link href="https://github.com/petersell" rel="me" class="u-url"/>
 <link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
@@ -8,16 +9,17 @@
 <link href="https://www.petersell.de" rel="me" class="u-url"/>
 <link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
 <title>Hugo mit Stock and Flow</title>
-<link rel="stylesheet" href="/css/main.css" /><body>
+<link rel="stylesheet" href="https://www.petersell.com/css/main.css" />
+<body>
 <main>
-<h1 class="post-title">Hugo mit Stock and Flow</h1>
-<p class="author">Andreas Petersell&nbsp;am
-<date datetime="17.04.2020">17.04.2020</date></p>
+<h1 class="post-title"><div class="h-entry">Hugo mit Stock and Flow</div></h1>
+<p class="author"><span class="p-author h-card">Andreas Petersell</span>&nbsp;am <date datetime="17.04.2020">17.04.2020</date></p>
 
 
 <article>
-<div class="paragraph">
-<p>Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom <a href="http://snarkmarket.com/2010/4890">Stock and Flow</a>.</p>
+  <div class="e-content">
+  <div class="paragraph">
+<p>Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom <a href="http://snarkmarket.com/2010/4890" class="ext-link" target="_blank" rel="noopener">Stock and Flow</a>.</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -34,10 +36,10 @@
 </div>
 </div>
 <div class="paragraph">
-<p>In meinem alten <a href="https://withknown.com/">CMS Known</a> gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer <em>Timeline</em> angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: <em>Blog</em> ist der <em>Stock</em> und <em>Status</em> der <em>Flow</em>.</p>
+<p>In meinem alten <a href="https://withknown.com/" class="ext-link" target="_blank" rel="noopener">CMS Known</a> gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer <em>Timeline</em> angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: <em>Blog</em> ist der <em>Stock</em> und <em>Status</em> der <em>Flow</em>.</p>
 </div>
 <div class="paragraph">
-<p>In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen <em>Status</em> angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der <a href="https://gohugo.io/functions/where/#mainsections">Hugo-Dokumentation</a> fündig. Es gilt, in der Konfigurationsdatei <code>config.toml</code> einen kleinen Eintrag vorzunehmen:</p>
+<p>In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen <em>Status</em> angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der <a href="https://gohugo.io/functions/where/#mainsections" class="ext-link" target="_blank" rel="noopener">Hugo-Dokumentation</a> fündig. Es gilt, in der Konfigurationsdatei <code>config.toml</code> einen kleinen Eintrag vorzunehmen:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -45,15 +47,34 @@
   mainSections = ["blog", "status"]</code></pre>
 </div>
 </div>
+  </div>
 </article>
 </main>
+<br/>
 <hr>
+<br/>
+<script id="webmention-hosted">
+    (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+    }());
+    </script>
 <footer>
     <ul>
         <li class="footernav">
-            <a href="/">Zur Startseite</a>
+            <a href="https://www.petersell.com/">Zur Startseite</a>
         </li>
     </ul>
 </footer>
-<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
+<p class="h-card vcard" style="display:none;">
+    <img class="u-photo" src="/images/petersell.jpg" />
+    <a class="u-url p-author p-name url" href="https://www.petersell.com" rel="me">Andreas Petersell</a>
+    <span class="p-locality">Berlin</span>
+    <span class="p-country-name">Germany</span>
+</p></body>
 </html>

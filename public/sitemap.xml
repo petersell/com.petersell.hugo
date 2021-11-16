@@ -3,480 +3,469 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://www.petersell.com/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/status/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/categories/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/categories/fotos/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/tags/pixelfed/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/status/foto-pixelfed-2021/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/tags/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/tags/familie/</loc>
+    <lastmod>2020-11-21T19:42:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/status/notiz-2020-11-21/</loc>
+    <lastmod>2020-11-21T19:42:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/categories/notizen/</loc>
+    <lastmod>2020-11-21T19:42:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/blog/</loc>
+    <lastmod>2020-06-10T10:57:42+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/blog/asciidoc-antora-test/</loc>
+    <lastmod>2020-06-10T10:57:42+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/tags/asciidoc/</loc>
+    <lastmod>2020-06-10T10:57:42+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/categories/techcomm/</loc>
+    <lastmod>2020-06-10T10:57:42+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/blog/asciidoc-antora-install/</loc>
+    <lastmod>2020-06-03T12:15:42+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/categories/blogging/</loc>
+    <lastmod>2020-05-01T17:29:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/tags/hugo/</loc>
+    <lastmod>2020-05-01T17:29:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/blog/hugo-asciidoc-netlify/</loc>
+    <lastmod>2020-05-01T17:29:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/blog/hugo-auf-post-verlinken/</loc>
     <lastmod>2020-04-28T14:43:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-04-28T14:43:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/blogging/</loc>
-    <lastmod>2020-04-28T14:43:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-04-28T14:43:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2020-04-28T14:43:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/hugo-auf-post-verlinken/</loc>
-    <lastmod>2020-04-28T14:43:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-04-28T14:43:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/hugo-stock-and-flow/</loc>
+    <loc>https://www.petersell.com/blog/hugo-stock-and-flow/</loc>
     <lastmod>2020-04-17T16:40:39+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/homepage/</loc>
+    <loc>https://www.petersell.com/homepage/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/homepage/impressum/</loc>
+    <loc>https://www.petersell.com/homepage/impressum/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/homepage/about/</loc>
+    <loc>https://www.petersell.com/homepage/about/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/asciidoc/</loc>
+    <loc>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</loc>
     <lastmod>2020-03-22T20:08:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/hugo-asciidoc-bilder-einbinden/</loc>
-    <lastmod>2020-03-22T20:08:10+01:00</lastmod>
+    <loc>https://www.petersell.com/status/foto-pixelfed-2020/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/techcomm/</loc>
-    <lastmod>2020-03-22T20:08:10+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/status/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/status/zitat-strelecky-das-leben-gestalten/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/jobikado/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/readinglist/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/zitate/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/status/zitat-kemske-das-aufsteigerprinzip/</loc>
-    <lastmod>2019-11-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/asciidoc-asciidoctor-install/</loc>
+    <loc>https://www.petersell.com/blog/asciidoc-asciidoctor-install/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-bayrischer-wald/</loc>
+    <loc>https://www.petersell.com/status/foto-bayrischer-wald/</loc>
     <lastmod>2019-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/familie/</loc>
-    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/fotos/</loc>
-    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/status/foto-dessau-bauhaus/</loc>
+    <loc>https://www.petersell.com/status/foto-dessau-bauhaus/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/freunde/</loc>
+    <loc>https://www.petersell.com/tags/freunde/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/arbeitswelt/</loc>
-    <lastmod>2019-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/</loc>
-    <lastmod>2019-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/erleben/</loc>
+    <loc>https://www.petersell.com/categories/erleben/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/log-maxim-leo-in-anna-seghers-bibliothek/</loc>
+    <loc>https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/veranstaltung/</loc>
+    <loc>https://www.petersell.com/categories/veranstaltung/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/zaz/</loc>
+    <loc>https://www.petersell.com/tags/zaz/</loc>
     <lastmod>2019-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-zaz-ifa/</loc>
+    <loc>https://www.petersell.com/status/foto-zaz-ifa/</loc>
     <lastmod>2019-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-schirrmacher-minimum/</loc>
+    <loc>https://www.petersell.com/status/zitat-schirrmacher-minimum/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/darumlebenwir/</loc>
+    <loc>https://www.petersell.com/tags/readinglist/</loc>
+    <lastmod>2019-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/categories/zitate/</loc>
+    <lastmod>2019-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/tags/darumlebenwir/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-zaz-videoausschnitt/</loc>
+    <loc>https://www.petersell.com/status/foto-zaz-videoausschnitt/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/notiz-2019-07-25/</loc>
+    <loc>https://www.petersell.com/status/notiz-2019-07-25/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/notizen/</loc>
-    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/reading-spenger-radikal-fuehren/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/teamwork/</loc>
-    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/teamwork-warum-manifest/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/teamwork-manifest/</loc>
-    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/dita-xml/</loc>
+    <loc>https://www.petersell.com/tags/dita-xml/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/ditalog/</loc>
+    <loc>https://www.petersell.com/categories/ditalog/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/dita-fuer-eclipse/</loc>
+    <loc>https://www.petersell.com/blog/dita-fuer-eclipse/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/asciidoc-homepage-mit-asciidoctor/</loc>
+    <loc>https://www.petersell.com/blog/asciidoc-homepage-mit-asciidoctor/</loc>
     <lastmod>2019-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-katzenfruehstueck/</loc>
+    <loc>https://www.petersell.com/status/foto-katzenfruehstueck/</loc>
     <lastmod>2019-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/pixelfed/</loc>
+    <loc>https://www.petersell.com/status/foto-pixelfed-2019/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-pixelfed-2019/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/status/zitat-vorpahl-drei-tage-woche/</loc>
+    <loc>https://www.petersell.com/status/zitat-vorpahl-drei-tage-woche/</loc>
     <lastmod>2018-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/notiz-2018-12-01/</loc>
+    <loc>https://www.petersell.com/status/notiz-2018-12-01/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-nesbo-macbeth/</loc>
+    <loc>https://www.petersell.com/status/zitat-nesbo-macbeth/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-crivello-own-the-demand/</loc>
+    <loc>https://www.petersell.com/status/zitat-crivello-own-the-demand/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/b%C3%BCrger/</loc>
+    <loc>https://www.petersell.com/tags/b%C3%BCrger/</loc>
     <lastmod>2018-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-lau-deutschlandfahne/</loc>
+    <loc>https://www.petersell.com/status/zitat-lau-deutschlandfahne/</loc>
     <lastmod>2018-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/arbeitswelt/</loc>
+    <loc>https://www.petersell.com/tags/arbeitswelt/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-vermaan-there-is-no-why/</loc>
+    <loc>https://www.petersell.com/tags/teamwork/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-sinek-a-team-is-not-a-group/</loc>
+    <loc>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</loc>
+    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</loc>
     <lastmod>2018-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/hugo-minimo-weiterlink/</loc>
+    <loc>https://www.petersell.com/blog/hugo-minimo-weiterlink/</loc>
     <lastmod>2018-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-taleb-der-schwarze-schwan/</loc>
+    <loc>https://www.petersell.com/status/zitat-taleb-der-schwarze-schwan/</loc>
     <lastmod>2018-06-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/link/</loc>
+    <loc>https://www.petersell.com/tags/link/</loc>
     <lastmod>2018-06-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-tagesspiegel-schoeneweide/</loc>
+    <loc>https://www.petersell.com/status/foto-tagesspiegel-schoeneweide/</loc>
     <lastmod>2018-06-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-ashton-wie-man-ein-pferd/</loc>
-    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/status/notiz-2018-04-11/</loc>
+    <loc>https://www.petersell.com/status/notiz-2018-04-11/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-suter-montecristo/</loc>
+    <loc>https://www.petersell.com/status/zitat-suter-montecristo/</loc>
     <lastmod>2018-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-nesbo-durst/</loc>
+    <loc>https://www.petersell.com/status/zitat-nesbo-durst/</loc>
     <lastmod>2018-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-pixelfed-2018/</loc>
+    <loc>https://www.petersell.com/status/foto-pixelfed-2018/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/romanschreiben/</loc>
+    <loc>https://www.petersell.com/categories/romanschreiben/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-kundera-verratene-vermaechtnisse/</loc>
+    <loc>https://www.petersell.com/status/zitat-kundera-verratene-vermaechtnisse/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/roman-produktivitaet/</loc>
+    <loc>https://www.petersell.com/blog/roman-produktivitaet/</loc>
     <lastmod>2017-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/diagonale/</loc>
+    <loc>https://www.petersell.com/tags/diagonale/</loc>
     <lastmod>2017-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/diagonale-mein-erster-roman/</loc>
+    <loc>https://www.petersell.com/blog/diagonale-mein-erster-roman/</loc>
     <lastmod>2017-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/indieweb/</loc>
+    <loc>https://www.petersell.com/tags/indieweb/</loc>
     <lastmod>2017-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/hugo-indiewebify/</loc>
+    <loc>https://www.petersell.com/blog/hugo-indiewebify/</loc>
     <lastmod>2017-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/dita-ditaot-fop-einrichten/</loc>
+    <loc>https://www.petersell.com/blog/dita-ditaot-fop-einrichten/</loc>
     <lastmod>2017-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-kutscher-akte-vaterland/</loc>
+    <loc>https://www.petersell.com/status/zitat-kutscher-akte-vaterland/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-zaz-schmeling-halle/</loc>
+    <loc>https://www.petersell.com/status/foto-zaz-schmeling-halle/</loc>
     <lastmod>2017-01-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/eastgermany/</loc>
+    <loc>https://www.petersell.com/tags/eastgermany/</loc>
     <lastmod>2016-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-biermann-nachdenken/</loc>
+    <loc>https://www.petersell.com/status/zitat-biermann-nachdenken/</loc>
     <lastmod>2016-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/leben-wie-zufrieden-bist-du/</loc>
+    <loc>https://www.petersell.com/blog/leben-wie-zufrieden-bist-du/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/log-moritz/</loc>
+    <loc>https://www.petersell.com/status/log-moritz/</loc>
     <lastmod>2015-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/zitat-kundera-fest-der-bedeutungslosigkeit/</loc>
+    <loc>https://www.petersell.com/status/zitat-kundera-fest-der-bedeutungslosigkeit/</loc>
     <lastmod>2015-09-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/video-divaluna-horse-running/</loc>
+    <loc>https://www.petersell.com/status/video-divaluna-horse-running/</loc>
     <lastmod>2015-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/chronik-ddr-kindergartenzeichnungen/</loc>
+    <loc>https://www.petersell.com/blog/chronik-ddr-kindergartenzeichnungen/</loc>
     <lastmod>2015-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/log-bei-der-berliner-zeitung/</loc>
+    <loc>https://www.petersell.com/status/log-bei-der-berliner-zeitung/</loc>
     <lastmod>2015-06-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-minecraft/</loc>
+    <loc>https://www.petersell.com/status/foto-minecraft/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/status/foto-pixelfed-2015/</loc>
+    <loc>https://www.petersell.com/status/foto-pixelfed-2015/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/essay-fdgbausweis/</loc>
+    <loc>https://www.petersell.com/blog/essay-fdgbausweis/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/essay/</loc>
+    <loc>https://www.petersell.com/categories/essay/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/essay-miniauto/</loc>
+    <loc>https://www.petersell.com/blog/essay-miniauto/</loc>
     <lastmod>2013-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/dita-ditaot-schusterjungen-vermeiden/</loc>
+    <loc>https://www.petersell.com/blog/dita-ditaot-schusterjungen-vermeiden/</loc>
     <lastmod>2012-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ddr-literatur/</loc>
+    <loc>https://www.petersell.com/tags/ddr-literatur/</loc>
     <lastmod>1996-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/essay-ddrprotagonisten/</loc>
+    <loc>https://www.petersell.com/blog/essay-ddrprotagonisten/</loc>
     <lastmod>1996-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/archive/blog/</loc>
+    <loc>https://www.petersell.com/blog/config/</loc>
   </url>
   
   <url>
-    <loc>/archive/status/</loc>
+    <loc>https://www.petersell.com/archive/blog/</loc>
   </url>
   
   <url>
-    <loc>/archive/</loc>
+    <loc>https://www.petersell.com/archive/status/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.petersell.com/archive/</loc>
   </url>
   
 </urlset>

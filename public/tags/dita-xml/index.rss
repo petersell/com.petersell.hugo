@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dita-xml on Andreas Petersell</title>
-    <link>/tags/dita-xml/</link>
+    <link>https://www.petersell.com/tags/dita-xml/</link>
     <description>Recent content in dita-xml on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
@@ -10,17 +10,17 @@
     <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/tags/dita-xml/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/tags/dita-xml/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Einbinden der DITA-DTDs in Eclipse</title>
-      <link>/blog/dita-fuer-eclipse/</link>
+      <link>https://www.petersell.com/blog/dita-fuer-eclipse/</link>
       <category>dita-xml</category>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/dita-fuer-eclipse/</guid>
+      <guid>https://www.petersell.com/blog/dita-fuer-eclipse/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
 &lt;/div&gt;
@@ -67,13 +67,13 @@
     
     <item>
       <title>FOP für das DITA-OT 2.4.5 einrichten</title>
-      <link>/blog/dita-ditaot-fop-einrichten/</link>
+      <link>https://www.petersell.com/blog/dita-ditaot-fop-einrichten/</link>
       <category>dita-xml</category>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/dita-ditaot-fop-einrichten/</guid>
+      <guid>https://www.petersell.com/blog/dita-ditaot-fop-einrichten/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den &lt;em&gt;XEP-Prozessor Personal Edition&lt;/em&gt; zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen neu eingerichtet für den Einsatz unter FOP werden.&lt;/p&gt;
+&lt;p&gt;Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den &lt;em&gt;XEP-Prozessor Personal Edition&lt;/em&gt; zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen für den Einsatz unter FOP neu eingerichtet werden.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
 &lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
@@ -201,16 +201,16 @@
     
     <item>
       <title>Schusterjungen im PDF-Output des DITA-OT vermeiden</title>
-      <link>/blog/dita-ditaot-schusterjungen-vermeiden/</link>
+      <link>https://www.petersell.com/blog/dita-ditaot-schusterjungen-vermeiden/</link>
       <category>dita-xml</category>
       <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>/blog/dita-ditaot-schusterjungen-vermeiden/</guid>
+      <guid>https://www.petersell.com/blog/dita-ditaot-schusterjungen-vermeiden/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Das DITA Open Toolkit ist ein Open Source Tool für das Generieren von Ausgabeformaten für Inhalte, die mittels DITA XML erstellt wurden. Es kommt öfter vor, dass sich der Seitentitel und die Kurzbeschreibung (shortdesc) als letzte unten auf einer PDF-Seite wiederfinden und der Textkörper erst auf der nächsten Seite folgt.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das sieht unschön aus. Doch unter &lt;a href=&#34;https://www.data2type.de/xml-xslt-xslfo/xsl-fo/xslfo-einfuehrung/typografische-mittel/&#34;&gt;data2type&lt;/a&gt; wurde ich fündig.&lt;/p&gt;
+&lt;p&gt;Das sieht unschön aus. Doch unter &lt;a href=&#34;https://www.data2type.de/xml-xslt-xslfo/xsl-fo/xslfo-einfuehrung/typografische-mittel/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data2type&lt;/a&gt; wurde ich fündig.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Folgende umbruchverhindernde Attribute für &lt;code&gt;shortdesc&lt;/code&gt; gilt es, im PDF-Plugin in der Datei &lt;code&gt;cfg/fo/attrs/commons-attr.xsl&lt;/code&gt; hinzufügen:&lt;/p&gt;

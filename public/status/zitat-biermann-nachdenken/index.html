@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
 <link href="https://twitter.com/petersell" rel="me" class="u-url"/>
 <link href="https://github.com/petersell" rel="me" class="u-url"/>
 <link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
@@ -8,15 +9,16 @@
 <link href="https://www.petersell.de" rel="me" class="u-url"/>
 <link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
 <title>Nachdenken mit Biermann</title>
-<link rel="stylesheet" href="/css/main.css" /><body>
+<link rel="stylesheet" href="https://www.petersell.com/css/main.css" />
+<body>
 <main>
-<h1 class="post-title">Nachdenken mit Biermann</h1>
-<p class="author">Andreas Petersell&nbsp;am
-<date datetime="04.12.2016">04.12.2016</date></p>
+<h1 class="post-title"><div class="h-entry">Nachdenken mit Biermann</div></h1>
+<p class="author"><span class="p-author h-card">Andreas Petersell</span>&nbsp;am <date datetime="04.12.2016">04.12.2016</date></p>
 
 
 <article>
-<div class="paragraph">
+  <div class="e-content">
+  <div class="paragraph">
 <p>In der <a href="https://www.berliner-zeitung.de/kultur-vergnuegen/wolf-biermann-in-die-ddr-zu-gehen-war-das-kluegste-was-ich-je-gemacht-habe-li.48164">Berliner Zeitung vom 8.10.2016</a> führte Cornelia Geißler mit Wolf Biermann ein Interview. Im folgenden Auszug geht es mal nicht um seine Vergangenheit, sondern um die erfreuliche und z.T. gruselige Gegenwart.</p>
 </div>
 <div class="quoteblock">
@@ -51,15 +53,34 @@
 <cite>Berliner Zeitung vom 08.10.2016</cite>
 </div>
 </div>
+</div>
 </article>
 </main>
+<br/>
 <hr>
+<br/>
+<script id="webmention-hosted">
+    (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+    }());
+    </script>
 <footer>
     <ul>
         <li class="footernav">
-            <a href="/">Zur Startseite</a>
+            <a href="https://www.petersell.com/">Zur Startseite</a>
         </li>
     </ul>
 </footer>
-<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
+<p class="h-card vcard" style="display:none;">
+    <img class="u-photo" src="/images/petersell.jpg" />
+    <a class="u-url p-author p-name url" href="https://www.petersell.com" rel="me">Andreas Petersell</a>
+    <span class="p-locality">Berlin</span>
+    <span class="p-country-name">Germany</span>
+</p></body>
 </html>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>indieweb on Andreas Petersell</title>
-    <link>/tags/indieweb/</link>
+    <link>https://www.petersell.com/tags/indieweb/</link>
     <description>Recent content in indieweb on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
@@ -10,18 +10,18 @@
     <lastBuildDate>Thu, 06 Jul 2017 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/tags/indieweb/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/tags/indieweb/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Indiewebify my Hugo-Site</title>
-      <link>/blog/hugo-indiewebify/</link>
+      <link>https://www.petersell.com/blog/hugo-indiewebify/</link>
       <category>hugo</category>
       <category>indieweb</category>
       <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/hugo-indiewebify/</guid>
+      <guid>https://www.petersell.com/blog/hugo-indiewebify/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Mit Hilfe eines kleinen Services von Pelle Wessmann namens &lt;a href=&#34;https://webmention.herokuapp.com/&#34; class=&#34;bare&#34;&gt;https://webmention.herokuapp.com/&lt;/a&gt; ist es mir auf meiner statischen Hugo-Seite möglich, Kommentare, Likes, Reposts u.ä. via Webmentions einzusammeln.&lt;/p&gt;
 &lt;/div&gt;
@@ -42,7 +42,7 @@
 &lt;h2 id=&#34;_schritt_2_css_klassen_hinzufügen&#34;&gt;Schritt 2 - CSS-Klassen hinzufügen&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
+&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

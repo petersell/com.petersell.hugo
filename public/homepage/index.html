@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
 <link href="https://twitter.com/petersell" rel="me" class="u-url"/>
 <link href="https://github.com/petersell" rel="me" class="u-url"/>
 <link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
@@ -8,21 +9,22 @@
 <link href="https://www.petersell.de" rel="me" class="u-url"/>
 <link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
 <title>Homepages</title>
-<link rel="stylesheet" href="/css/main.css" /><body>
+<link rel="stylesheet" href="https://www.petersell.com/css/main.css" />
+<body>
 <header>
    <nav>
      <ul>
-        <li class="nav-list"><a href="/blog/">Blog</a></li>
-        <li class="nav-list"><a href="/archive/status/">Status</a></li>
-        <li class="nav-list"><a href="/categories/">Kategorie</a></li>
-        <li class="nav-list"><a href="/tags/">Stichwörter</a></li>
-        <li class="nav-list"><a href="/archive/blog/">Blogarchiv</a></li>
-        <li class="nav-list"><a href="/homepage/about/">Über</a></li>
-        <li class="nav-list"><a href="/homepage/impressum/">Impressum</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/blog/">Blog</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/archive/status/">Status</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/categories/">Kategorie</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/tags/">Stichwörter</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/archive/blog/">Blogarchiv</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/homepage/about/">Über</a></li>
+        <li class="nav-list"><a href="https://www.petersell.com/homepage/impressum/">Impressum</a></li>
         
       </ul>
     </nav>
-    <h1 class="logo"><img src=/petersell-logo.png>&nbsp;Andreas Petersell</h1>
+    <h1 class="logo"><a href="https://www.petersell.com/"><img src=https://www.petersell.com/petersell-logo.png></a>&nbsp;Andreas Petersell</h1>
 </header>
 
 
@@ -31,11 +33,11 @@
 
 
 <article class="post">
-    <p><a href="/homepage/impressum/"><h3>Impressum</h3></a>
+    <p><a href="https://www.petersell.com/homepage/impressum/"><h3>Impressum</h3></a>
     </p>
     
     <p>
-        Datenschutzerkl&auml;rungDiese Datenschutzerkl&auml;rung kl&auml;rt Sie &uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &bdquo;Daten&ldquo;) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&auml;senzen, wie z.B. unser Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als &bdquo;Onlineangebot&ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &bdquo;Verarbeitung&ldquo; oder &bdquo;Verantwortlicher&ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
+        Datenschutzerkl&auml;rung Diese Datenschutzerkl&auml;rung kl&auml;rt Sie &uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &bdquo;Daten&ldquo;) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&auml;senzen, wie z.B. unser Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als &bdquo;Onlineangebot&ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &bdquo;Verarbeitung&ldquo; oder &bdquo;Verantwortlicher&ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
     </p>
     <div class="article-info">
     <div class="article-taxonomies">
@@ -48,13 +50,13 @@
 
 
 <article class="post">
-    <p><a href="/homepage/about/"><h3>Über den Autor</h3></a>
+    <p><a href="https://www.petersell.com/homepage/about/"><h3>Über den Autor</h3></a>
     </p>
     
     <p>
-        Dies ist ein privater Blog des
-Bürgers, Europäers, Ehemannes und Vaters,des Technischen Redakteurs,des Autors eines halbfertigen Romans undCo-Founders von jobikado.comSchreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.
-ProfileFotoalbenPixelfedTwitterMastodonGithub Ebooksals EPUB und PDF downloadbar.
+        Dies ist ein (privater) Blog ohne Gewinnerzielungsabsicht.
+Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.
+Profile  Fotoalben Pixelfed Github  Ebooks als EPUB und PDF downloadbar.
     </p>
     <div class="article-info">
     <div class="article-taxonomies">
@@ -72,13 +74,31 @@ ProfileFotoalbenPixelfedTwitterMastodonGithub Ebooksals EPUB und PDF dow
 
 
 </div>
+<br/>
 <hr>
+<br/>
+<script id="webmention-hosted">
+    (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+    }());
+    </script>
 <footer>
     <ul>
         <li class="footernav">
-            <a href="/">Zur Startseite</a>
+            <a href="https://www.petersell.com/">Zur Startseite</a>
         </li>
     </ul>
 </footer>
-<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p></body>
+<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
+<p class="h-card vcard" style="display:none;">
+    <img class="u-photo" src="/images/petersell.jpg" />
+    <a class="u-url p-author p-name url" href="https://www.petersell.com" rel="me">Andreas Petersell</a>
+    <span class="p-locality">Berlin</span>
+    <span class="p-country-name">Germany</span>
+</p></body>
 </html>

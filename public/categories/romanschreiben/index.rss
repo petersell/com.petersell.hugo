@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>romanschreiben on Andreas Petersell</title>
-    <link>/categories/romanschreiben/</link>
+    <link>https://www.petersell.com/categories/romanschreiben/</link>
     <description>Recent content in romanschreiben on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
@@ -10,19 +10,19 @@
     <lastBuildDate>Fri, 24 Nov 2017 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="/categories/romanschreiben/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.petersell.com/categories/romanschreiben/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Verratene Vermächtnisse</title>
-      <link>/status/zitat-kundera-verratene-vermaechtnisse/</link>
+      <link>https://www.petersell.com/status/zitat-kundera-verratene-vermaechtnisse/</link>
       <category>readinglist</category>
       <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/status/zitat-kundera-verratene-vermaechtnisse/</guid>
+      <guid>https://www.petersell.com/status/zitat-kundera-verratene-vermaechtnisse/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Milan Kundera setzt in seinem Essay-Band Verratene Vermächtnisse die Latte sehr hoch, oder er teilt die Romane nur anders ein?&lt;/p&gt;
+&lt;p&gt;Milan Kundera setzt in seinem Essay-Band &lt;em&gt;Verratene Vermächtnisse&lt;/em&gt; die Latte sehr hoch, oder er teilt die Romane nur anders ein?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>Mein Roman - Produktivität</title>
-      <link>/blog/roman-produktivitaet/</link>
+      <link>https://www.petersell.com/blog/roman-produktivitaet/</link>
       <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/roman-produktivitaet/</guid>
+      <guid>https://www.petersell.com/blog/roman-produktivitaet/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Es ist ein Jahr vergangen: nach einem halben Jahrhundert wollte ich mit meinem Roman loslegen. Und was habe ich bis heute geschafft: ein  Exposé in der ersten Fassung! Ich rechne das mal durch: mein Roman hat 29 Kapitel. Pro Kapitel brauche ich ein Quartal. Das ergibt eine Schreibdauer von über 7 Jahren. Und das ist noch die optimistische Planung!&lt;/p&gt;
 &lt;/div&gt;
@@ -82,11 +82,11 @@
     
     <item>
       <title>Mein erster Roman</title>
-      <link>/blog/diagonale-mein-erster-roman/</link>
+      <link>https://www.petersell.com/blog/diagonale-mein-erster-roman/</link>
       <category>diagonale</category>
       <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/diagonale-mein-erster-roman/</guid>
+      <guid>https://www.petersell.com/blog/diagonale-mein-erster-roman/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Da ich schon das zehnte Mal Randy Ingermansons &lt;a href=&#34;https://www.smashwords.com/books/view/459014?ref=putbus&#34;&gt;How to Write a Novel Using the Snowflake Method&lt;/a&gt; amüsiert gelesen hatte und immer noch nichts passierte, wollte ich Ernst machen: ich meldete mich im Februar 2017 zu zwei VHS-Kursen an.&lt;/p&gt;
 &lt;/div&gt;

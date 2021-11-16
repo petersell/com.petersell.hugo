@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Der schwarze Schwan"
 date: 2018-06-21
-draft: false
+draft: true
 
 categories:
     - "zitate"

@@ -1,21 +1,465 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Andreas Petersell</title>
-  <link rel="alternate" type="text/html" href="/"/>
-  <link rel="self" type="application/atom+xml" href="/blog/index.atom"/>
+  <link rel="alternate" type="text/html" href="https://www.petersell.com/"/>
+  <link rel="self" type="application/atom+xml" href="https://www.petersell.com/blog/index.atom"/>
   <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
-  <updated>2020-04-28T14:43:14+02:00</updated>
+  <updated>2020-06-10T10:57:42+02:00</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
-  <id>/blog/</id>
+  <id>https://www.petersell.com/blog/</id>
   
   
   <entry>
-    <id>/blog/hugo-auf-post-verlinken/</id>
+    <id>https://www.petersell.com/blog/asciidoc-antora-test/</id>
+    <title type="text">Antora-Output aus lokalen Quellen generieren</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/asciidoc-antora-test/" hreflang="en" title="Antora-Output aus lokalen Quellen generieren"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="asciidoc"/>
+    <published>2020-06-10T10:57:42+02:00</published>
+    <updated>2020-06-10T10:57:42+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Antora ist ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden. Zum Testen sollen sich die Quelldateien jedoch lokal auf dem Rechner befinden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/antora/antora/-/issues/284#note_95389433&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Is there a way to use Antora without Git?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Antora ist in erster Linie dazu gedacht, Dokumentationen aus mehreren Repositorys unter einer Oberfläche zusammenzuführen (docs as code). Bevor ein Redakteur jedoch via Merge Request in eine übergreifende Gesamtdokumentation eincheckt, möchte er sichergehen und seine Texte testen. Antora sollte dazu auch lokal lauffähig sein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es gibt drei Quell-Bestandteile einer Antora-Dokumentation:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Die Playbook-Datei (z.B. &lt;code&gt;antora-test-playbook.yml&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die Components (Die Inhalte-Repositorys bzw. Inhalte-Verzeichnisse)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Das UI-Theme (&lt;code&gt;ui-bundle.zip&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese 3 Bestandteile werden lokal in ein Verzeichnis kopiert. Ich möchte es das &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; nennen. Im Beispiel existieren im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; zwei Components sowie die Playbook-Datei und das UI-Theme.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;com.petersell.example
+    ├── com.petersell.example.api
+    ├── com.petersell.example.impl
+    └── com.petersell.example.doc
+        ├── modules
+        └── antora.yml
+ com.petersell.anotherexample
+    └── com.petersell.anotherexample.doc
+        ├── modules
+        └── antora.yml
+antora-test-playbook.yml
+ui-bundle.zip&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da ich neben den o.g. zwei lokalen Components-Verzeichnisse noch ein Beispielprojekt von Antora integrieren möchte, dass sich in einem Git-Repository befindet, musste ich meine Playbook-Datei &lt;code&gt;antora-test-playbook.yml&lt;/code&gt; folgendermaßen gestalten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;site:
+  title: Antora Test Site &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
+  url: http://localhost
+  start_page: Startseite::index.adoc &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;
+content:
+  sources:
+  - url: . &lt;b class=&#34;conum&#34;&gt;(3)&lt;/b&gt;
+    branches: HEAD &lt;b class=&#34;conum&#34;&gt;(4)&lt;/b&gt;
+    start_path: com.petersell.example/com.petersell.example.doc &lt;b class=&#34;conum&#34;&gt;(5)&lt;/b&gt;
+  - url: https://gitlab.com/antora/demo/demo-component-b.git &lt;b class=&#34;conum&#34;&gt;(6)&lt;/b&gt;
+    branches: [v2.0, v1.0]
+    start_path: docs
+  - url: . &lt;b class=&#34;conum&#34;&gt;(7)&lt;/b&gt;
+    branches: HEAD
+    start_path: com.petersell.anotherexample/com.petersell.anotherexample.doc
+ui:
+  bundle:
+  #
+    url: ./ui-bundle.zip &lt;b class=&#34;conum&#34;&gt;(8)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;colist arabic&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Der Titel erscheint im Output links oben in der Kopf-Navigationsleiste.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Der linke Teil (vor den zweifachen Doppelpunkten) gibt den Namen der Startseite wider. Sie finden diesen in der &lt;code&gt;antora.yml&lt;/code&gt; des jeweiligen Ordners hinter dem Attribut &lt;code&gt;name&lt;/code&gt;. Der rechte Teil gibt den Pfad inklusive Dateiname der Startseiten-Datei aus. Hier ist die Startseite im ROOT-Verzeichnis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, setzen Sie den Punkt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, schreiben Sie &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Der Pfad zum jeweiligen Component-Verzeichnis inklusive dem Verzeichnisnamen, hier &lt;code&gt;com.petersell.example.doc&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die Syntax für eine Component in einem Git-Repository. Hier ist es eine Beispieldokumentation von Antora.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Die zweite lokale Component. Gehen Sie analog der ersten Component vor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Das lokale UI-Theme. Dies könnte auch die URL zu einem Git-Repository inklusive der ZIP-Datei sein.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen Sie folgenden Build-Befehl ab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Antora-Buildbefehl&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Höchstwahrscheinlich werden Sie eine Fehlermeldung erhalten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Error: Local content source must be a git repository: C:\Users\Andreas\Dropbox\antora (resolved from url: .)&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In diesem Fall öffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; ein &lt;a href=&#34;https://gitforwindows.org/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git-Bash-Fenster&lt;/a&gt; und geben die folgende Befehle auf einmal ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-test/gitvortaeuschen.png&#34; alt=&#34;Git-Bash-Fenster im Arbeitsverzeichnis&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Git-Befehle kopieren&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;git init .
+touch .gitignore
+git add .gitignore
+git commit -m &#39;initialize repository&#39;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen nochmals den Build-Befehl ab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Befehl clont das externe Repository des Antora-Beispielprojekts. Im Ergebnis entsteht innerhalb des &lt;em&gt;Antora-Arbeitsverzeichnisses&lt;/em&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output der drei Components.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/asciidoc-antora-install/</id>
+    <title type="text">Antora lokal installieren</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/asciidoc-antora-install/" hreflang="en" title="Antora lokal installieren"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="asciidoc"/>
+    <published>2020-06-03T12:15:42+02:00</published>
+    <updated>2020-06-03T12:15:42+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Antora ist so etwas wie ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
+&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
+&lt;ul class=&#34;sectlevel1&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.antora.org/antora/2.2/install/windows-requirements/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Antora-Dokumentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Dieser Artikel ist eine Dokumentation der Installation von Antora auf meinem Privatrechner. Das kann auf jedem anderen PC anders aussehen. Warum &lt;em&gt;Privatrechner?&lt;/em&gt; Dieses Wort steht für die Kombination aus den begrenzten PC-Kenntnissen eine Redakteurs - aber gepaart mit vollen Adminrechten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Auf &lt;a href=&#34;https://nodejs.org/en/download/&#34; class=&#34;bare&#34;&gt;https://nodejs.org/en/download/&lt;/a&gt; gilt es, den passenden Long Term Support-Installer zu downloaden. In meinem Fall &lt;em&gt;LTS Windows Installer (.msi) 64-bit&lt;/em&gt;. Führen Sie die Datei per Doppelklick aus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach dem Installer habe ich noch das nachfolgende Skript &lt;em&gt;Tools for Node.js Native Module Installation Script&lt;/em&gt; gestartet. Dies dauerte einige Minuten und installierte via Chocolatey jede Menge Komponenten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/install-node4.png&#34; alt=&#34;Chocolatey-Installation&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 1. Chocolatey-Installation&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das Ergebnis in der PowerShell ergab diese Versionen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;C:\Users\Andreas&amp;gt; npm --version
+6.14.4
+C:\Users\Andreas&amp;gt; node --version
+v12.16.3&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wie in der Antora-Dokumenation beschrieben, geben Sie den Installationsbefehl für eine globale Installation von Antora ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ npm i -g @antora/cli@2.2 @antora/site-generator-default@2.2&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Anschließend führen Sie &lt;code&gt;antora version&lt;/code&gt; aus, um sich vom Erfolg der Installation zu überzeugen. Bei mir endete es in einer Fehlermeldung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Die Datei &#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; kann nicht geladen werden. Die Datei
+&#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; ist nicht digital signiert. Sie können dieses Skript im aktuellen System nicht ausführen. Weitere Informationen zum Ausführen von Skripts und Festlegen der Ausführungsrichtlinie erhalten Sie unter &#34;about_Execution_Policies&#34; (https:/go.microsoft.com/fwlink/?LinkID=135170)..&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Auf der angegebenen URL von Microsoft https:/go.microsoft.com/fwlink/?LinkID=135170 wurde ich fündig.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/antora-version.png&#34; alt=&#34;Ausführungsrichtlinie ändern&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 2. Ausführungsrichtlinie ändern&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es gilt herauszufinden, welche Ausführungsrichtlinien innerhalb der PowerShell für mich als Nutzer gelten:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Get-ExecutionPolicy -Scope CurrentUser&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für mich auf dem Windows-Client galt &lt;em&gt;Undefined&lt;/em&gt;. Um meine Rechte auf der PowerShell meines Rechners zu erweitern, musste ich eingeben:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein nochmaliges Ausführen von &lt;code&gt;antora version&lt;/code&gt; gab die korrekte Versionsnummer &lt;code&gt;2.2.0&lt;/code&gt; zurück.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Um zu einem schnellen Ergebnis zu kommen, habe ich das Beispielprojekt &lt;em&gt;Demo Docs Site&lt;/em&gt; auf &lt;a href=&#34;https://gitlab.com/antora/demo/docs-site&#34; class=&#34;bare&#34;&gt;https://gitlab.com/antora/demo/docs-site&lt;/a&gt; generiert. Um es clonen zu können, habe ich mir einen Gitlab-Account angelegt. Für diesen Account musste ich mir ein &lt;a href=&#34;https://www.hrz.tu-darmstadt.de/speicherplatz_datensicherung_und_server/virtuelle_server/anleitung_sammlung/artikel_details_22784.de.jsp&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SSH-Key einrichten&lt;/a&gt; und in den Nutzer-Einstellungen unter &lt;em&gt;SSH-Keys&lt;/em&gt; hinterlegen. Nun konnte ich das Beispielprojekt &lt;em&gt;Demo Docs Site&lt;/em&gt; fehlerfrei clonen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/clone-beispielrepo2.png&#34; alt=&#34;Beispielrepo clonen&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Figure 3. Beispielprojekt clonen&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Öffnen Sie ein PowerShell-Fenster im neu entstandenen Ordner &lt;code&gt;docs-site&lt;/code&gt; und geben Sie den Build-Befehl ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;C:\Daten\antora\docs-site&amp;gt; antora antora-playbook.yml&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Befehl clont zwei Repositorys. Im Ergebnis entsteht innerhalb des Ordners &lt;code&gt;docs-site&lt;/code&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output des Beispielprojekts .&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/hugo-asciidoc-netlify/</id>
+    <title type="text">Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-asciidoc-netlify/" hreflang="en" title="Hugo mit Asciidoc - Webseite mit Netlify bereitstellen"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="hugo"/>
+    <category term="asciidoc"/>
+    <published>2020-05-01T17:29:38+02:00</published>
+    <updated>2020-05-01T17:29:38+02:00</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner &lt;code&gt;public&lt;/code&gt; via FTP auf den Webserver kopieren. Werden es mehr Blogposts, werden Dienste wie Netlify unausweichlich.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quelle&#34;&gt;Quelle&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.patrickpeeters.com/2019/09/asciidoc-support-for-hugo-on-netlify/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AsciiDoc support for Hugo on Netlify&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_abenteuer_netlify&#34;&gt;Abenteuer Netlify&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als das Kopieren meines Output-Ordners auf meinen Webserver 5 Minuten dauerte, war klar, dass das kein Bloggen mehr ist, sondern eine Qual. Ich wußte nie, was &lt;em&gt;Deployen&lt;/em&gt; bedeutet, jetzt ahnte ich es. Im Netz war meistens vom Dienst &lt;em&gt;Netlify&lt;/em&gt; die Rede, wenn es um das Bereitstellen von Hugo-Output auf einen Webserver ging. Bestimmt gibt es auch andere Dienste. Aber als ich obige Quelle fand, stand meine Wahl für &lt;em&gt;Netlify&lt;/em&gt; fest.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die erste Begegnung mit dem Dienst war schaurig. Man braucht ein hohes Verzweiflungspotential, um in der Benutzerführung von Netlify nicht sofort zu verzweifeln. So wird der Nutzer 3 Schritte mittels einer großen &lt;em&gt;Weiter&lt;/em&gt;-Schaltfläche geleitet, um dann im 4. Schritt lediglich auf einen kleinen Repository-Namen klicken zu müssen, damit es weiter geht. Hat man diese Klippe überwunden, erwarten einen jede Menge Fehlermeldungen, die es erstmal zu finden und zu dechiffrieren gilt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein Abbruch gab es wegen einer PDF-Datei, ein zweiter wegen einer falschen Syntax meiner Hugo-Version. Auf folgende Fehlermeldung war ich gottseidank vorbereitet und entsprechend erleichert, als sie mir erschien.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;10:08:14 PM: Executing user command: hugo --gc --minify
+10:08:14 PM: Building sites …
+10:08:14 PM: ERROR 2020/04/29 20:08:14 asciidoctor / asciidoc not found in $PATH: Please install.
+10:08:14 PM: Leaving AsciiDoc content unrendered.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anpassungen_wegen_asciidoc&#34;&gt;Anpassungen wegen Asciidoc&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nun schreibt Patrick Peeters:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Netlify’s buildbot can install software on build, all you need is a Gemfile in the root folder of your project pointing at the right software packages, in my case that’s just asciidoctor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+&amp;#8212; Patrick Peeters
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Was zur Hölle ist ein &lt;em&gt;Gemfile&lt;/em&gt;? Wieder halfen mir öffentliche Git-Repositorys: eine Datei mit Namen &lt;code&gt;Gemfile&lt;/code&gt;. Erstellen Sie also im Rootverzeichnis Ihres Hugo-Projektes eine Datei, benennen Sie sie &lt;em&gt;Gemfile&lt;/em&gt; und tragen folgenden Text ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
+gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In einer Anleitung zu Netlify hatte ich gelernt, dass es ratsam ist, ebenfalls im Rootverzeichnis eine Datei namens &lt;code&gt;netlify.toml&lt;/code&gt; anzulegen. So Sie auch eine haben, müssen Sie den Build-Befehl folgendermaßen anpassen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[build]
+publish = &#34;public&#34;
+command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn Sie jetzt Ihr Hugo-Projekt mit den angepassten Dateien &lt;code&gt;Gemfile&lt;/code&gt; und &lt;code&gt;netlify.toml&lt;/code&gt; in den Masterbranch hochladen, sollte der &lt;em&gt;Deploy&lt;/em&gt; fehlerfrei laufen und zumindest der Asciidoc-Inhalt korrekt ausgegeben werden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_theme_im_ursprungszustand&#34;&gt;Theme im Ursprungszustand&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Als Hugo-Theme habe ich mich für das Theme &lt;a href=&#34;https://github.com/foo-dogsquared/hugo-theme-contentful&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Contentful&lt;/a&gt; entschieden. Da dies ein sehr minimalistisches Theme ist, musste ich viel nacharbeiten. Um so größer war der Schreck, als nach erfolgreichem &lt;em&gt;Deploy&lt;/em&gt; meine Webseite so gut wie nackt war: nämlich im Urzustand des Original-Themes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jetzt war ich zugegebenermaßen etwas müde. Da ich wußte, dass ich nicht so schnell auf ein anderes Theme umschwenken werde, habe ich kurzerhand die Theme-Dateien in die Hugo-Standard-Ordner verschoben und das Verzeichnis &lt;code&gt;themes&lt;/code&gt; komplett gelöscht. Nach einem nächsten Upload in den Masterbranch war alles so schön grün wie nach einem lokalen &lt;code&gt;hugo server&lt;/code&gt;-Aufruf.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/hugo-auf-post-verlinken/</id>
     <title type="text">Hugo mit Asciidoc - Auf anderen Post verlinken</title>
-    <link rel="alternate" href="/blog/hugo-auf-post-verlinken/" hreflang="en" title="Hugo mit Asciidoc - Auf anderen Post verlinken"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-auf-post-verlinken/" hreflang="en" title="Hugo mit Asciidoc - Auf anderen Post verlinken"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo"/>
     <published>2020-04-28T14:43:14+02:00</published>
@@ -48,15 +492,15 @@
   </entry>
   
   <entry>
-    <id>/blog/hugo-stock-and-flow/</id>
+    <id>https://www.petersell.com/blog/hugo-stock-and-flow/</id>
     <title type="text">Hugo mit Stock and Flow</title>
-    <link rel="alternate" href="/blog/hugo-stock-and-flow/" hreflang="en" title="Hugo mit Stock and Flow"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-stock-and-flow/" hreflang="en" title="Hugo mit Stock and Flow"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo"/>
     <published>2020-04-17T16:40:39+02:00</published>
     <updated>2020-04-17T16:40:39+02:00</updated>
     <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
@@ -73,10 +517,10 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
+&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
@@ -87,9 +531,9 @@
   </entry>
   
   <entry>
-    <id>/blog/hugo-asciidoc-bilder-einbinden/</id>
+    <id>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</id>
     <title type="text">Hugo mit Asciidoc - Bilder einbinden</title>
-    <link rel="alternate" href="/blog/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/" hreflang="en" title="Hugo mit Asciidoc - Bilder einbinden"/>
     <author><name>Andreas Petersell<name></author>
     <category term="hugo"/>
     <category term="asciidoc"/>
@@ -107,7 +551,7 @@
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Tipp&lt;/div&gt;
 &lt;/td&gt;
 &lt;td class=&#34;content&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
@@ -226,9 +670,9 @@
   </entry>
   
   <entry>
-    <id>/blog/asciidoc-asciidoctor-install/</id>
+    <id>https://www.petersell.com/blog/asciidoc-asciidoctor-install/</id>
     <title type="text">Asciidoctor auf Windows einrichten</title>
-    <link rel="alternate" href="/blog/asciidoc-asciidoctor-install/" hreflang="en" title="Asciidoctor auf Windows einrichten"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/asciidoc-asciidoctor-install/" hreflang="en" title="Asciidoctor auf Windows einrichten"/>
     <author><name>Andreas Petersell<name></author>
     <category term="asciidoc"/>
     <published>2019-11-15T00:00:00Z</published>
@@ -309,1029 +753,9 @@
   </entry>
   
   <entry>
-    <id>/blog/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/</id>
-    <title type="text">Der Quirl in der richtigen Geschwindigkeit</title>
-    <link rel="alternate" href="/blog/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/" hreflang="en" title="Der Quirl in der richtigen Geschwindigkeit"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="jobikado"/>
-    <published>2019-09-23T00:00:00Z</published>
-    <updated>2019-09-23T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Oft habe ich mich gefragt, warum Xing die &#34;Arbeitgeber-Bewertungsplattform&#34; Kununu kaufte. Widersprechen sich die Konzepte nicht eigentlich?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/jobikado-der-quirl-in-der-richtigen-geschwindigkeit/jobikado.png&#34; alt=&#34;Jobikado&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Während Xing die Interessen der Firmen bei der Mitarbeitersuche unterstützt und fördert, bewahrt Kununu die wechselwilligen Mitarbeiter vor einem Fehler: Bewirb Dich nicht bei einer Firma mit schlechten Bewertungen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Aber die Verbindung beider ist genial und hilft beiden. Es ist wie ein Quirl, der die Belegschaften langsam, wie gesagt: &lt;strong&gt;langsam und stetig&lt;/strong&gt; aufwirbelt. Die erfahrenen Fachkräfte ziehen weiter, wenn sie in ihrer Firma nicht erhört werden. Neue, zumeist jüngere Mitarbeiter rücken nach. Jedoch verbleibt noch genügend Zeit, das Wissen und die Erfahrung weiter zu reichen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Gau und der Untergang jeder Firma ist es, wenn zu viele Fachkräfte zu gleich kündigen. Viele Firmen sind sehr nah dran. Besonders kleinere und mittlere Firmen. Vollzieht sich der Wechsel des mobilen Teils der Belegschaft zu schnell, kann dies nicht mehr mit dem immobilen Teil abgefangen werden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es gibt eine einfache Formel, wie die Geschwindigkeit des &#34;Quirls&#34; konstant langsam gehalten werden kann. Ich werde diese Formel unter jobikado.de ausarbeiten. Denn es ist wie beim Mikado: entzieht man dem Wirrwar zugleich zu viele Stäbchen, fällt alles in sich zusammen.&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/reading-spenger-radikal-fuehren/</id>
-    <title type="text">Reinhard K. Spenger - Radikal führen</title>
-    <link rel="alternate" href="/blog/reading-spenger-radikal-fuehren/" hreflang="en" title="Reinhard K. Spenger - Radikal führen"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="readinglist"/>
-    <category term="teamwork"/>
-    <category term="jobikado"/>
-    <published>2019-07-18T00:00:00Z</published>
-    <updated>2019-07-18T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Immer wieder zitiere ich aus diesem Meisterwerk der innerbetrieblichen Organisation. Als Innovationmanager habe ich mich oft gefragt, warum meine und viele andere Firmen nicht zu wirklicher Innovation fähig sind. Spenger gibt in diesem Buch eine Antwort auf diese Frage. Der Titel ist ein wenig irreführend. Jeder, egal ob Führungskraft oder Mitarbeiter, sollte sich dieses Buch zu Herzen nehmen. Im folgenden meine Anstreichungen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_quelle&#34;&gt;Quelle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kapitel_führung&#34;&gt;Kapitel &#34;Führung&#34;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kapitel_erste_kernaufgabe_zusammenarbeit_organisieren&#34;&gt;Kapitel &#34;Erste Kernaufgabe - Zusammenarbeit organisieren&#34;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kapitel_zweite_kernaufgabe_transaktionkosten_senken&#34;&gt;Kapitel &#34;Zweite Kernaufgabe - Transaktionkosten senken&#34;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kapitel_dritte_kernaufgabe_konflikte_entscheiden&#34;&gt;Kapitel &#34;Dritte Kernaufgabe - Konflikte entscheiden&#34;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kapitel_vierte_kernaufgabe_zukunftsfähigkeit_sichern&#34;&gt;Kapitel &#34;Vierte Kernaufgabe - Zukunftsfähigkeit sichern&#34;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kapitel_fünfte_kernaufgabe_mitarbeiter_führen&#34;&gt;Kapitel &#34;Fünfte Kernaufgabe - Mitarbeiter führen&#34;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quelle&#34;&gt;Quelle&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Reinhard K. Spenger: Radikal führen, Frankfurt 2012&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/reading-spenger-radikal-fuehren/reading-spenger-radikal-fuehren.gif&#34; alt=&#34;reading spenger radikal fuehren&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kapitel_führung&#34;&gt;Kapitel &#34;Führung&#34;&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Was ist der &lt;strong&gt;Zweck der Führung&lt;/strong&gt;? Die konzentrierteste Antwortet lautet: das Überleben des Unternehmens zu sichern. Ein Unternehmen strebt – wie alle sozialen Systeme – nach Selbsterhaltung. Es geht vorrangig darum, weiter zu existieren, weiter »mitspielen« zu dürfen. Und dafür sollen Führungskräfte – Sie! – einen Beitrag leisten.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_1&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_1&#34; title=&#34;View footnote.&#34;&gt;1&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Fragen wir also weiter: Werden Sie für Ihre Teamfähigkeit bezahlt? Ich kenne zwar keine Stellenanzeige, in der nicht Teamfähigkeit als unabdingbare Einstellungsvoraussetzung ausgelobt wird. Aber die Unternehmenswirklichkeit spricht eine andere Sprache. Oder haben Sie schon mal gehört, dass ein &lt;strong&gt;Team befördert&lt;/strong&gt; wurde?.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_2&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_2&#34; title=&#34;View footnote.&#34;&gt;2&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn zum Beispiel ein Mitarbeiter die Anweisung seines Chefs befolgt, ist das dann Führung? Oder ist das nicht allenfalls eine Erklärung für diesen Zusammenhang? Niemand kann in den Mitarbeiter hineinschauen und dort dessen Motivation erkennen. Vielleicht hätte der Mitarbeiter ja auch ohne die Existenz des Chefs genau das getan, was er tat.
-Das korrespondiert mit der Antwort vieler Führungskräfte auf die Frage: »Was hat sich eigentlich an dem Tag geändert, als Sie Führungskraft wurden?« Die häufigste Antwort: »Nichts.« .&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_3&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_3&#34; title=&#34;View footnote.&#34;&gt;3&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wodurch wird der Herr zum Herrn? Dadurch, dass er vom Knecht anerkannt wird! Er ist auf die Anerkennung seiner Herrschaft durch den Knecht angewiesen – sein Status ist vom Knecht abgeleitet. Ohne Knecht ist er kein Herr. Der Mitarbeiter hingegen ist und bleibt Mitarbeiter auch ohne Führungskraft. Aber eine Führungskraft ohne Mitarbeiter gibt es nicht. Der Mitarbeiter ist die Bedingung ihrer Existenz.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_4&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_4&#34; title=&#34;View footnote.&#34;&gt;4&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die &lt;strong&gt;Strukturen des Systems&lt;/strong&gt; können so mächtig sein, dass sie die Bemühungen einer einzelnen Führungskraft nahezu aussichtslos machen. Gleichgültig, wie sie denkt und handelt, gleichgültig, welches Ziel sie sich vornimmt und wie sehr sie sich Mühe gibt: Die Prozesse bestimmen die Resultate. Wenn zum Beispiel Fehler vom System rigoros bestraft werden, dann werden die Bemühungen einer einzelnen Führungskraft um Kreativität und Innovation fruchtlos bleiben. Weil »Führung« (im Sinne der Institution) etwas anderes will – nämlich Fehlerfreiheit..&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_5&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_5&#34; title=&#34;View footnote.&#34;&gt;5&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Bleiben wir noch einen Augenblick beim Mannschaftssport, dann kann er noch in einem erweiterten Sinn als Beispiel dienen. Im &lt;strong&gt;personenzentrischen Denken&lt;/strong&gt; hat man zum Beispiel ein Abwehrproblem, das man mit frischen Verteidigern lösen will. Man »personalisiert« also das Problem. Im modernen Mannschaftssport spricht man hingegen nicht mehr von einem Abwehrproblem, sondern von der »Organisation der Defensive«. Was auf den ersten Blick nur einen sprachlichen Unterschied macht, ist taktisch von erheblicher Konsequenz. Die Defensivarbeit beginnt vorn bei der Spitze, beim Stürmer, und verdichtet sich dann zurück bis hinein in den eigenen Strafraum. Es geht also um das Defensivverhalten der ganzen Mannschaft. Damit sind alle Spieler an der Defensivarbeit beteiligt, wie eben auch alle für die Offensive verantwortlich sind. Auf das Unternehmen übertragen: Muss nicht auch jeder im Unternehmen ein Verkäufer sein?&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_6&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_6&#34; title=&#34;View footnote.&#34;&gt;6&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das &lt;strong&gt;System hat ein Gesicht&lt;/strong&gt;, ein persönliches: Es ist das Ihre! Als Chef sind Sie es, in dessen Handeln alle Unternehmens-Botschaften zusammenlaufen. Sie bilden die Einheit von Führung und Führungskraft, von personenzentrischem und systemischem Denken; in Ihnen wird auch die indirekte Führung direkt. Sie sind gleichsam die institutionelle Verkörperung des Unternehmenszwecks, der Werteträger. Ihre bare Anwesenheit »kommuniziert« das organisatorische »Sollen«! Ob Sie das wollen oder nicht. Und zumeist werden Ihnen von Ihren Mitarbeitern auch Entscheidungsspielräume unterstellt, die Sie faktisch gar nicht haben. Ist das fair? Nein. Ist das gerecht? Nein. Aber aus der Sicht des Mitarbeiters ist das praktisch.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_7&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_7&#34; title=&#34;View footnote.&#34;&gt;7&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der normative &lt;strong&gt;Vorrang des Organisatorischen vor dem Individuellen&lt;/strong&gt;: Das ist kein Pessimismus, keine Absage an die Tatkraft und das Talent des Einzelnen, sondern eine realistische Einschätzung der Sachlage. Wie ich in einem anderen Zusammenhang schrieb: Kluge Menschen haben in dummen Organisationen keine Chance.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_8&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_8&#34; title=&#34;View footnote.&#34;&gt;8&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Fassen wir zusammen: Warum scheitern so viele Initiativen zum Change-Management, warum gelingt der Wandel nicht? Weil vorzugsweise die direkte &lt;strong&gt;Führung des personenzentrischen Ansatzes&lt;/strong&gt; exekutiert wird. Zwar gehört heute der Hinweis, dass ein rein personenzentrisches Vorgehen nicht ausreicht, zum normativen Pflichtpensum der Wohlmeinenden. Tatsächlich aber passiert wenig. Das &lt;strong&gt;Verändern der Strukturen&lt;/strong&gt; bleibt tabu. Warum? Weil man glaubt, Menschen seien leichter änderbar. Weil man organisatorische Entscheidungen überdenken müsste. Weil man den Spiegel wenden, sich auch selbst in Frage stellen müsste. Aber so sind es immer die anderen, die sich ändern müssen. Das Motto dazu: »Wir machen die Dusche an und stellen die anderen drunter.«&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_9&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_9&#34; title=&#34;View footnote.&#34;&gt;9&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kapitel_erste_kernaufgabe_zusammenarbeit_organisieren&#34;&gt;Kapitel &#34;Erste Kernaufgabe - Zusammenarbeit organisieren&#34;&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es ist also weder unsere Sprache noch unsere Denkfähigkeit, die uns entwicklungsgeschichtlich einzigartig macht, sondern unsere Fähigkeit zur Kooperation: geteilte Absicht, abgestimmte Handlungen, gemeinsame Zukunft. Wer eine gemeinsame Absicht teilt, nimmt sich Aufgaben vor, welche die eigenen Möglichkeiten übersteigen. Und zählt darauf, dass sich die anderen zum Mittun bewegen lassen – aus welchen Gründen auch immer. Diese Handlungen sind durch ein gemeinsames Ziel und verschiedene, aber allgemein anerkannte Rollen gekennzeichnet. Und allen Handelnden ist bewusst, dass ihr Erfolg von ihrem wechselseitigen Einsatz abhängt.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_10&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_10&#34; title=&#34;View footnote.&#34;&gt;10&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;»Zusammenarbeiten«, das ist – ausdrücklich! – &lt;strong&gt;nicht die Addition von Einzelleistungen&lt;/strong&gt;. Sondern ein Ergebnis, das im Idealfall nur durch den gleichzeitigen Einsatz aller erzielt werden kann. Das ist Synergie, das ist der Nutzen von Pool-Ressourcen, unterschiedliche Qualifikationen ergänzen sich, ungleiche Kräfte verstärken sich, verschiedene Rollen greifen ineinander, man kennt sich und kann Vertrauensvorteile nutzen. So entsteht Leistungs-Partnerschaft.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_11&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_11&#34; title=&#34;View footnote.&#34;&gt;11&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Verbinden, um zu stärken – darum geht es. Es muss gelingen, das Unternehmen als Solidargemeinschaft mit Blick auf eine gemeinsam zu gestaltende Zukunft zu entwerfen. Es geht dabei weniger um Altruismus. Vielmehr geht es um das Wechselseitige, den Mutualismus, durch den wir alle von unseren gemeinsamen Handlungen profitieren. Es geht um den Punkt, an dem sich das Leben des Einzelnen mit dem Anliegen aller berührt. Alles, was das Gemeinschaftliche fördert, ist dazu hilfreich. Alles, was es behindert, nicht.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_12&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_12&#34; title=&#34;View footnote.&#34;&gt;12&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die heute dominierende Form der Unternehmensführung läuft – um mit Giorgio Agamben zu sprechen – auf eine »Enteignung des Gemeinsamen« hinaus, auf einen »Amoklauf« der Segmentierung, die letztlich die Zusammenarbeit als »Grund« der Unternehmens-»Gründung« verhöhnt. Infolgedessen ist das Bewusstsein der wechselseitigen Abhängigkeit in Unternehmen verloren gegangen. Die Arbeitsteilung spielt dabei eine Rolle, das Abteilungsdenken, Silostrukturen, die Individualisierung von Leistungszurechnung, der Autismus der Expertensysteme, geografische Umstände. Auch die Art und Weise, wie Medien Manager präsentieren, verführt Letztere dazu, sich als einsame Helden zu sehen, die auserwählt sind, ihre Unternehmen zu Höchstleistungen zu führen. Entsprechend unterentwickelt ist bei der heutigen Generation von Führungskräften das Bewusstsein, dass das Ermöglichen von Zusammenarbeit die wichtigste Führungsaufgabe ist. Sie sehen das Unternehmen mehr als &lt;strong&gt;prozesshaftes Verknüpfen von Einzelleistungen&lt;/strong&gt;. Kennzeichnend dafür ist das allgemeine Erstaunen, wenn man »Zusammenarbeit ermöglichen« als die wichtigste Kernaufgabe ausweist.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_13&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_13&#34; title=&#34;View footnote.&#34;&gt;13&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Weil die meisten &lt;strong&gt;Unternehmen von selbstversorgerischen Eliten geführt&lt;/strong&gt; werden, besteht ein gefährlicher Widerspruch zwischen der Aufforderung zu mehr Zusammenarbeit und deren strukturellem Dementi sowie dem, was insbesondere das Topmanagement für sich selbst »herausholt«. Der Mitarbeiter reagiert mit Teilnahmslosigkeit.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_14&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_14&#34; title=&#34;View footnote.&#34;&gt;14&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie präsentiere ich eine Aufgabe so, dass sie zur Zusammenarbeit einlädt? Das stellt gleichzeitig die Frage nach den Beziehungen, die aufgebaut werden müssen, um sie zu lösen. Das stellt die Frage nach den Mitarbeitern, die zu echter und vertrauensvoller Zusammenarbeit bereit und in der Lage sind. Das stellt vor allem die Frage nach einer &lt;strong&gt;Unternehmensarchitektur, die auf Zugangserlaubnisse, Barrieren, Würdefelder verzichtet&lt;/strong&gt; und direkt-spontanen Kontakt ermöglicht.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_15&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_15&#34; title=&#34;View footnote.&#34;&gt;15&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;»Das ist nicht mein Problem!« Hören Sie das häufig in Ihrem Unternehmen? Das ist fatal. Zeigt es doch, wie sehr das Bewusstsein für den Kooperationsvorrang im Unternehmen geschwächt ist. Eine solche Aussage muss abmahnungsfähig sein. &lt;strong&gt;Das Problem eines anderen im Unternehmen ist per Definition mein Problem&lt;/strong&gt;.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_16&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_16&#34; title=&#34;View footnote.&#34;&gt;16&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es muss also das Horizontale dominieren, weniger das Vertikale. &lt;strong&gt;Pathologien der Zusammenarbeit&lt;/strong&gt; entstehen durch einseitige Monopolansprüche: Eine Seite behauptet, sie sei wichtiger, würde »eigentlich« das Geld verdienen, käme ohne die anderen aus.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_17&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_17&#34; title=&#34;View footnote.&#34;&gt;17&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Meist wird der Konflikt personalisiert&lt;/strong&gt;. Es geht dann nicht mehr um inhaltliche Fragen, sondern um Beziehungsfragen. Dann wird Sieg oder Niederlage zu einer Frage der Ehre. Und damit kämpfen die Menschen nicht mehr um eine für das Unternehmen beste Lösung, sondern um »sich«. Aber die Ursachen liegen selten in den Personen, vielmehr in den organisatorischen Strukturen des Unternehmens: unklare Kompetenzen, unterschiedliche Zielsetzungen, Wettbewerb, Anreizsysteme, kein gemeinsames Problem. Man arbeitet nicht zusammen, weil man nicht für das Gemeinsame bezahlt wird, sondern für das Verschiedene.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_18&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_18&#34; title=&#34;View footnote.&#34;&gt;18&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie müssen auf der Verlautbarungsebene sehr klarmachen, dass es im Unternehmen vorrangig um Zusammenarbeit geht – und nicht um die Addition von Einzelleistungen. &lt;strong&gt;Und Sie müssen das kommunizieren: immer wieder und überall&lt;/strong&gt;.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_19&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_19&#34; title=&#34;View footnote.&#34;&gt;19&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Noch etwas Spezielles? Etwas Unangenehmes? Ja. Im Unternehmen ist &lt;strong&gt;nur wichtig, was Konsequenzen hat&lt;/strong&gt;. Was keine Konsequenzen hat, ist nicht wichtig. Es mag wünschbar sein. Aber wichtig ist es nicht. So ist das auch mit der Zusammenarbeit. Sie mag wünschbar klingen, Zustimmung heischen, manchmal gar gefordert werden. Aber wichtig wird sie erst, wenn eine Antwort gegeben wird auf die Frage: »Und wenn nicht, was dann?«.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_20&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_20&#34; title=&#34;View footnote.&#34;&gt;20&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Aber viel Geld stimuliert nicht die Bereitschaft, anderen zu dienen. Im Gegenteil: Es lässt glauben, dass man es nicht mehr nötig hat. Es läuft auf den Wunsch hinaus, ohne dienen zu verdienen. Diese Geisteshaltung betrachtet die Arbeit »für andere« mit Geringschätzung, macht Unternehmen zu Karrieremaschinen für &lt;strong&gt;macht- oder geldgetriebene Persönlichkeiten&lt;/strong&gt; und bringt eine besondere Form des Managers hervor: den Selbstoptimierer. &lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_21&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_21&#34; title=&#34;View footnote.&#34;&gt;21&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Um den Kooperationsvorrang im Unternehmen zur Geltung zu bringen, braucht es also andere Führungskräfte, &lt;strong&gt;Leute ohne Super-Ego&lt;/strong&gt;. Menschen, die die Leistung anderer fördern. Es braucht Fremdoptimierer.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_22&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_22&#34; title=&#34;View footnote.&#34;&gt;22&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie dürfen im Mitarbeiter keinen Kostenfaktor sehen, sondern sollten ihn &lt;strong&gt;als Partner betrachten&lt;/strong&gt;, den Sie ebenso benötigen, wie er Sie benötigt.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_23&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_23&#34; title=&#34;View footnote.&#34;&gt;23&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir brauchen einen neuen Gesellschaftsvertrag; wir brauchen &lt;strong&gt;Commitment für Zusammenarbeit&lt;/strong&gt;. Ein Mentalitätswandel ist fällig. Gemeint ist die Qualität des Bewusstseins, mit dem Sie in Ihr Unternehmen gehen, die inneren Einstellungen, Anschauungen und Grundüberzeugungen, mit denen Sie als Führungskraft führen und Ihr Unternehmen mitgestalten.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_24&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_24&#34; title=&#34;View footnote.&#34;&gt;24&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie werden also in dem Spiel nur erfolgreich sein, wenn Ihre &lt;strong&gt;Mitspieler auch erfolgreich sind&lt;/strong&gt;. Verlieren Ihre Mitspieler die Lust am Spiel, wird die Qualität des gemeinsamen Spiels sinken. Deshalb ist es in Ihrem eigenen Interesse, den anderen mitgewinnen zu lassen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_25&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_25&#34; title=&#34;View footnote.&#34;&gt;25&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kapitel_zweite_kernaufgabe_transaktionkosten_senken&#34;&gt;Kapitel &#34;Zweite Kernaufgabe - Transaktionkosten senken&#34;&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Zwischen »Markt« und »Staat« aber gibt es eine dritte Möglichkeit, mit dem Problem der Knappheit umzugehen: das Unternehmen. Ein Unternehmen ist in seiner heutigen Form ein relativ neues Phänomen, eine Entwicklung des späten 19. Jahrhunderts. Ein Mischgebilde: verlässlicher als der Markt, flexibler als der Staat. Dennoch sind manche Forscher überrascht, dass es sich so lange hält.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_26&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_26&#34; title=&#34;View footnote.&#34;&gt;26&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sowohl auf Märkten als auch im Unternehmen fallen »Transaktionskosten« an – aber die sind unterschiedlich hoch. In Unternehmen sind sie tendenziell niedriger. Die Interaktionen sind gleichsam »günstiger«, weil die Hierarchie die individuellen Handlungen nicht über Preise koordiniert, sondern über Weisungen. Damit liegt der Unterschied zwischen Markt und Unternehmen in der Effizienz.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_27&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_27&#34; title=&#34;View footnote.&#34;&gt;27&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das also ist der Unterschied: Märkte sind Koordinations-Arenen. In ihnen werden Angebot und Nachfrage koordiniert. Es entstehen hohe Reibungsverluste durch Informationsbeschaffung, Preisvergleiche, Verhandlungen – eben Transaktionskosten. Und es herrscht Wettbewerb unter den Marktteilnehmern, also ein »Gegeneinander«. Unternehmen hingegen sind Kooperations-Arenen. Angebot und Nachfrage haben sich gefunden, man nutzt Pool-Ressourcen, es geht um Zusammenarbeit, um ein Miteinander. Also um das Gegenteil von Wettbewerb. Pointiert formuliert: Der Kern der Unternehmensgründung ist die Markt-Ausschaltung.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_28&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_28&#34; title=&#34;View footnote.&#34;&gt;28&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Marktausschaltung ist eine Denkfigur, die meiner Erfahrung nach nicht einmal im Topmanagement geläufig ist. Es lohnt sich daher, diesen Gedanken noch einmal zu wiederholen: »Grund« der Unternehmens-Gründung sind &lt;strong&gt;niedrige Transaktionskosten&lt;/strong&gt;; es geht darum, Marktmechanismen auszuschließen. Alles, was im Unternehmen die Transaktionskosten senkt, ist produktiv; alles, was sie steigen lässt, kontraproduktiv.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_29&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_29&#34; title=&#34;View footnote.&#34;&gt;29&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eine Kernaufgabe von Führung ist es, bei allen Entscheidungen die Transaktionskosten im Auge zu haben. Führungsinstrumente wie die Leistungsbeurteilung oder die Mitarbeiterbefragung sind jedoch gleichzusetzen mit der Eröffnung eines internen Marktes. Eines Beurteilungs-Marktes. Und jedes Meeting, jedes Monitoring-System, jedes Reporting-Tool, der Prozess der Zielvereinbarung, die Budgetplanungen – alles das erzeugt Transaktionskosten, die einzusparen das Unternehmen einst gegründet wurde.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_30&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_30&#34; title=&#34;View footnote.&#34;&gt;30&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Senken der Transaktionskosten ist kein absoluter Wert – er ist immer gegen andere Werte zu balancieren. Wenn Sie zum Beispiel bei Entscheidungen Ihre Mitarbeiter einbeziehen, mitreden und mitentscheiden lassen, dann haben Sie vielleicht einen Transaktionskostenvorteil verspielt, aber unter Umständen viel Produktivität geschaffen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_31&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_31&#34; title=&#34;View footnote.&#34;&gt;31&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie ist es zu verstehen, dass in heutigen Unternehmen die internen Märkte wuchern &amp;#8230;&amp;#8203;? Die wichtigste Antwort aber lautet: Transaktionskosten kann man nicht »sehen«. Oder besser: Sie haben eine Querschnittfunktion im Unternehmen; man kann sie daher kaum isolieren und zuordnen. Daher sind sie auch nicht »messbar«, es gibt für sie keine Kostenstelle, es existiert keine Kostenplanung. Im Unterschied zu Reisekosten, Werbe- oder Personalbudgets. Die kann man »sehen«. Deshalb blühen Transaktionskosten im Schatten der allseits akzeptierten bürokratischen Erfordernisse, ohne dass sie jemand als Kosten wahrnimmt und thematisiert.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_32&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_32&#34; title=&#34;View footnote.&#34;&gt;32&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Please the Boss – man ist damit beschäftigt, dem Management zu schmeicheln (oder nicht verhauen zu werden). Wie wenig dabei die Transaktionskosten beachtet werden, zeigt das amerikanische Unternehmen Cisco, das mittlerweile einen wöchentlichen (!) Forecast hat. Wie reagieren die Mitarbeiter? Sie halten Puffer in der Schublade, um nicht in einen negativen Fokus zu geraten. Die Kundenorientierung muss man dann aufwändig über Seminare und Workshops wieder einführen. Und wieder entstehen Transaktionskosten. Und wenn die Vorhersagen nicht mit der Realität übereinstimmen, ist die Folge Frust und die Neigung, Schuldige für die Abweichung zu finden. Entweder verliert der Mitarbeiter (er ist nicht auf der Höhe der Marktentwicklung) oder der Planer (er hat schlecht geplant). Ohne Verlierer geht es nicht.
-Wer mit Planungen versucht, die Komplexität in den Griff zu kriegen, dem schießen die Transaktionskosten durch die Decke.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_33&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_33&#34; title=&#34;View footnote.&#34;&gt;33&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eine &lt;strong&gt;stärkere Mitarbeiterbindung&lt;/strong&gt; erreichen Sie, wenn Sie jemanden loslassen. Wenn Sie gleichsam »absichtslos« führen. Wir wissen aus der Sozialpsychologie: Gerade durch das Loslassen erzeugen wir Bindung. Selbstbindung. Die schwachen Fesseln sind die starken. Sie sollten also nicht versuchen, Mitarbeiter durch Belohnungsversprechen oder Sanktionen zu binden, sondern die Chance für die Entwicklung echter Loyalität verbessern. Wie können Sie es schaffen, dass Mitarbeiter sich bei Ihnen wohlfühlen, gerne kommen und bleiben? Und damit Transaktionskosten senken?
-Um diese Frage zu beantworten, müssen wir zunächst verstehen, dass die Gründe für das Kommen nicht dieselben sind wie die Gründe für das Gehen. Das ist eine fundamentale Wahrheit: Menschen kommen zu Unternehmen, aber sie verlassen Vorgesetzte.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_34&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_34&#34; title=&#34;View footnote.&#34;&gt;34&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Negativ gewendet: Wenn das Vertrauen zwischen Chef und Mitarbeiter fehlt, dann erhöht sich die &lt;strong&gt;Fluktuationsrate&lt;/strong&gt; überproportional. Daher noch einmal in aller Deutlichkeit: Nicht Belohnungen oder Sanktionen binden uns, sondern die Qualität zwischenmenschlicher Beziehung. Das gilt auch über die Chef-Mitarbeiter-Beziehung hinaus: Ein Unternehmen ohne einen Freund ist ein Feind.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_35&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_35&#34; title=&#34;View footnote.&#34;&gt;35&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir sind oft unser eigener Gegner. Unternehmerisches Handeln ist nicht mehr Kampf um Kunden, sondern gegen Bürokratie.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_36&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_36&#34; title=&#34;View footnote.&#34;&gt;36&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Vieles, was auf dem Markt der Managementtheorie angeboten wird, orientiert sich an der hierarchischen Leitunterscheidung »Oben/Unten«. »Oben« fordert meistens, »Unten« muss liefern; »Oben« fragt, »Unten« antwortet; »Oben« klagt an, »Unten« rechtfertigt sich. Die Hauptkommunikation der Hierarchie ist ja die Frage: »Wer beobachtet wen beim Beobachten?« Man weiß, wenn man in eine Hierarchie eintritt, von wem man beobachtet wird und wen man zu beobachten hat. Die Energien fließen also vorzugsweise vertikal von oben nach unten und umgekehrt. Sie verlassen selten das Funktionssilo. Aber, und das sei hier mit Nachdruck gesagt: Für diesen &lt;strong&gt;Autismus&lt;/strong&gt; werden Sie vom Kunden nicht bezahlt! Er interessiert sich nicht dafür, was und wen Sie monitoren, wem Sie Feedback geben oder nicht und ob Sie Mitarbeitergespräche führen. Bezahlt werden Ihre Bemühungen um eine andere Leitunterscheidung: »Innen/Außen«! Wir brauchen dringend eine Horizontalisierung der Energien. Stellen Sie das Unternehmen unter Horizontalspannung! Draußen am Markt müssen Sie einen Unterschied machen, nicht auf den Kinderspielplätzen der Organisation.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_37&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_37&#34; title=&#34;View footnote.&#34;&gt;37&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Unter der Hand werden die kooperativen Beziehungen zwischen den Menschen so in marktförmige Beziehungen umgestaltet. Darf man dann noch &lt;strong&gt;Söldnermentalität von Mitarbeitern&lt;/strong&gt; beklagen?&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_38&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_38&#34; title=&#34;View footnote.&#34;&gt;38&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Überliefert ist ein Satz des ehemaligen Rennfahrers Mario Andretti: »Wenn du alles im Griff hast, bist du nicht schnell genug.« Das gilt auch für Unternehmen. Warum? Weil die Transaktionskosten explodieren. Und die werden sichtbar als Bürokratie. Und Bürokratie bedeutet Krieg, genauer: Papierkrieg. Moderner: E-Mail-Krieg. Warum wird dieser Krieg geführt? Mangels Vertrauen. Egal, ob den Unternehmen von außen durch den Gesetzgeber oktroyiert oder von innen induziert durch Absicherungsmentalität: &lt;strong&gt;Bürokratien sind immer ein Zeichen von Misstrauen&lt;/strong&gt;. Man will sich schützen und absichern. Bürokratie erzeugt Kosten; sie dient lediglich der wechselseitigen Beruhigung, schafft aber sonst keinerlei Wert.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_39&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_39&#34; title=&#34;View footnote.&#34;&gt;39&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Menschen, die einander nicht vertrauen, kooperieren nur im Rahmen von formalen Regeln und Vorschriften. Dieses formale System muss ausgehandelt, operationalisiert, durchgesetzt, überwacht und sanktioniert werden. Die administrativen Kosten wirken wie eine Art Steuer auf alle Interaktionen, machen sie teurer, als sie eigentlich sein müssten – jedenfalls teurer als Interaktionen innerhalb von Organisationen mit hohem Vertrauenspegel. Deshalb ist &lt;strong&gt;Misstrauen immer ein Kostentreiber&lt;/strong&gt;.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_40&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_40&#34; title=&#34;View footnote.&#34;&gt;40&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Werden wir an dieser Stelle grundsätzlich: Was glauben Sie, &lt;strong&gt;was passiert, wenn Sie gar nicht da wären&lt;/strong&gt;? Wenn der Mitarbeiter Sie nicht als Anlaufstelle hätte? Würde er plötzlich tot umfallen? Wäre er völlig paralysiert? Wüsste er dann nicht mehr, was er tun sollte? Oder würde er das Problem mit eigenen Ressourcen lösen können? Sie sollten sich öffnen für diese Perspektive: Ihre bare Existenz als Führungskraft erzeugt schon Transaktionskosten. Weil Sie wie eine lebende Aufforderung wirken: Stimme dich mit mir ab! Nimm mich mit ins Boot! Ignoriere nicht meine Kompetenzen! Sie senden fortwährend Botschaften, die empfangen, verarbeitet und beantwortet werden. Sie erzeugen eine angebotsinduzierte Nachfrage. Eine Nachfrage, die vielleicht gar nicht entstünde, wären Sie nicht da. Je mehr Chefs also, desto mehr Transaktionskosten (zum Beispiel bei Matrix-Organisationen). Fragen Sie sich ernsthaft: Rechtfertigt Ihre Anwesenheit die durch Sie entstehenden Transaktionskosten? Leisten Sie wirklich mehr, als Sie kosten – wenn man die verdeckten Kosten mitdenkt? Wenn Sie im Zweifel sind, dann können Sie wenigstens die Transaktionskosten reduzieren, die durch Sie entstehen. Durch Vertrauen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_41&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_41&#34; title=&#34;View footnote.&#34;&gt;41&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Man kann aber nicht, wie das vielfach getan wird, mit moralisierendem Unterton eine »Vertrauensorganisation« fordern. Es muss vermittelt werden, wieso Vertrauen Komplexität reduziert. Prozesse beschleunigt. Problemlösungen effektiv macht. Effizient ist. Und dann müssen strukturelle Konsequenzen gezogen werden. Hierzu gehören zuerst der Kontrollverzicht und der Abbau von Regularien, Reporting- und Monitoring-Systemen. Angemessen, überlegt, aber entschieden. Dabei geht es gar nicht darum, alle Kontrollsysteme abzuschaffen. Wichtig ist, dass die Mitarbeiter die Rücknahme beobachten können. Wenn ein Unternehmen auf strukturelles Misstrauen verzichtet, so wird das belohnt. &lt;strong&gt;Vertrauen schafft Vertrauen&lt;/strong&gt;. Und Misstrauen schafft Misstrauen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_42&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_42&#34; title=&#34;View footnote.&#34;&gt;42&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wer aber dauernd um sich selbst kreist, wer das Unternehmen als in sich geschlossenes System sieht, wer sich an der Leitunterscheidung Oben/Unten orientiert, der weist mit seinem Handeln nicht nach außen, sondern auf sich selbst zurück. Mit seinem organisatorischen Narzissmus produziert er Transaktionskosten, die von keinem externen Marktteilnehmer freiwillig beglichen werden. Deshalb greift er zum Mittel des Zwangs. Als Manager zwingt er die Mitarbeiter; als Politiker zwingt er die Bürger. Als Manager hat er es (vor allem finanziell) »nicht nötig«, sich vom Mitarbeiter abhängig zu machen; als Politiker suspendiert er durch Kartellbildung der politischen Eliten den Parteienwettbewerb. Man dreht sich halt gerne um sich selbst. &lt;strong&gt;Wer anderen nicht dienen kann, versucht sie zu beherrschen&lt;/strong&gt;.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_43&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_43&#34; title=&#34;View footnote.&#34;&gt;43&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Energische Schritte in die Richtung einer &lt;strong&gt;Vertrauenskultur&lt;/strong&gt; gehören – wie oben beschrieben – zur systemischen Kernaufgabe der Führung. Aber wer geht sie? Wer ist bereit, die Kontrollsysteme angemessen, überlegt und differenziert zurückzufahren? Nur Menschen mit einem ausgeprägten Selbstvertrauen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_44&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_44&#34; title=&#34;View footnote.&#34;&gt;44&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wer das nicht kann, wer sich selbst misstraut (weil er sich verdächtigt, unter Umständen Vertrauen zu enttäuschen), der wird bei anderen ein gleiches Verhalten mindestens für möglich, wenn nicht gar wahrscheinlich halten. Er wird Kontrollmaßnahmen ergreifen, die Kontrollumgehungen provozieren, wodurch sich sein Misstrauen noch verstärkt. So setzt er eine Misstrauensspirale in Gang. Der für Transaktionskosten geschärfte Blick schaut daher vor allem auf misstrauische Manager. Manager mit geringem Selbstvertrauen. Manager, die nicht damit leben können, dass es in jeder Organisation eine kriminelle Grundlast von etwa 5 Prozent gibt. Und die nichts so sehr fürchten, als die nicht im Griff zu haben. &lt;strong&gt;Weil sie nichts verlieren wollen, gewinnen sie nichts&lt;/strong&gt;. Und erschaffen bürokratische Monster.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_45&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_45&#34; title=&#34;View footnote.&#34;&gt;45&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wer führt, soll die, die sich ihm anvertraut haben, vor allem in ihrem Selbstvertrauen stärken. Nur dann entsteht eine Kultur der Erfolgs-Zuversicht.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_46&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_46&#34; title=&#34;View footnote.&#34;&gt;46&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kapitel_dritte_kernaufgabe_konflikte_entscheiden&#34;&gt;Kapitel &#34;Dritte Kernaufgabe - Konflikte entscheiden&#34;&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Führung wird also erst dann wertvoll, wenn Routinen versagen. Ich kann es gar nicht klar genug machen: Führung hat ihren Aufgabenbereich »jenseits« der Routine, nämlich im Konflikt, in dilemmatischen Situationen. Ein Unternehmen braucht keine Führung, wenn das Unternehmen in ruhigen Gewässern segelt. Um aber Stillstand zu vermeiden, muss Führung entscheidungsbereit sein. Auf dem Schreibtisch des amerikanischen Präsidenten Truman stand ein kleines Schild mit dem Satz: »The buck stops here« – etwa: Bis hierhin kann man den Schwarzen Peter schieben, nicht weiter.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_47&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_47&#34; title=&#34;View footnote.&#34;&gt;47&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Um eine Entscheidung von einer Wahl abzuheben, stellen Sie sich bitte vor, Sie stehen vor einer Weggabelung. Es geht nur rechts herum oder links herum, und die jeweiligen Wege verlieren sich schnell hinter einer Biegung. Sie können nicht wissen, wohin welcher Weg Sie führt. Die Bewertung der beiden Seiten der Unterscheidung ist nun symmetrisch, beide Seiten wiegen exakt gleich viel. Dann, und nur dann, können wir im strengen Sinn von einer Entscheidung sprechen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_48&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_48&#34; title=&#34;View footnote.&#34;&gt;48&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Entscheidungen sind genau dann nötig, wenn sie unmöglich sind – unmöglich im Sinne von »schlüssig zu begründen«. Sie könnten auch eine Münze werfen oder einen Strohhalm ziehen. &lt;strong&gt;Es ist gerade das Fehlen der Begründung, die uns zur Entscheidung drängt&lt;/strong&gt;.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_49&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_49&#34; title=&#34;View footnote.&#34;&gt;49&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn jeder im Unternehmen weiß, wer sein Kunde ist und was dieser braucht, dann weiß er auch, was er tun muss, und ist sicher einfallsreicher als jede zentrale Steuerung. Alle Einheiten des Unternehmens müssen in der Lage sein, sich mit Blick auf den konkreten Kunden vor Ort weitgehend selbst zu führen.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_50&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_50&#34; title=&#34;View footnote.&#34;&gt;50&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das technisch Machbare mag noch so herausfordernd sein, das wirtschaftlich Machbare ist profitabler. Deshalb sollte man sich beim Kunden erkundigen. Nur der Kunde entscheidet, wie nah oder wie fern wir ihm stehen dürfen. Wer auf die Expertise seiner Kunden baut und ihre Wünsche zur Weiterentwicklung von Produkten und Dienstleistungen systematisch nutzen will, der sollte Austauschflächen pflegen. Traditionell kann man über die Bildung eines Kundenbeirates nachdenken. Die Zukunft gehört aber sicher IT-Interfaces, mit denen man die Kunden in die Innovationsprozesse einbezieht. Was eine &lt;strong&gt;Öffnung der Unternehmensgrenzen&lt;/strong&gt; bedeutet.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_51&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_51&#34; title=&#34;View footnote.&#34;&gt;51&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Führungskräfte gibt es, weil es Konflikte gibt. Konflikte als Zielkonflikte, Wertkonflikte, soziale Konflikte. Einige von ihnen müssen entschieden werden, einige können entschieden werden. Wenn die Organisation nicht vorentschieden hat und die Mitarbeiter selbst nicht entscheiden, wenn also die Gefahr der Paralyse droht, dann müssen Sie als Führungskraft »einspringen«.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_52&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_52&#34; title=&#34;View footnote.&#34;&gt;52&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kapitel_vierte_kernaufgabe_zukunftsfähigkeit_sichern&#34;&gt;Kapitel &#34;Vierte Kernaufgabe - Zukunftsfähigkeit sichern&#34;&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Niedergang wartet gleich neben dem Aufstieg. So entwickeln auch Unternehmen sehr früh autistische Tendenzen, werden schnell innovationsfeindlich. Dies nicht etwa, weil erzkonservative Finsterlinge das Zepter schwingen, sondern weil das Wesen der Organisation die Ausblendung von Alternativen ist. Aus dem »So-oder-So« macht die Organisation ein »Nur so!« Das nennt man dann »Prozess«, »Hierarchie«, »Policy«. Und es ist der Kern der Organisation als Organisation. So entwickeln sich nahezu alle Unternehmen: Einst hatte man Probleme, für die man Lösungen suchte; dann hat man Lösungen, für die man Probleme sucht. Einst war das Unternehmen das Mittel zu dem Zweck, die Probleme der Kunden zu lösen; dann ist der Kunde das Mittel zu dem Zweck, die Probleme der Unternehmen zu lösen. Die Organisation wird absolut gesetzt, nicht mehr hinterfragt.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_53&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_53&#34; title=&#34;View footnote.&#34;&gt;53&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Vor allem aber sollten Sie in &lt;strong&gt;Zukunftskonferenzen&lt;/strong&gt; alle Mitarbeiter sensibilisieren für die Offenheit dessen, was vor uns liegt. In Open-Space-Konferenzen können Sie Mitarbeiter zum Mitdenken anregen, gemeinsam von der Zukunft her denken, Alternativen einführen. Weg vom Vergangenheits-Druck und hin zum Zukunfts-Sog! Die Vergangenheit wird dabei insofern relativiert, als sich das Management bewusst gegen Praktiken entscheidet, die aller Wahrscheinlichkeit nach zukünftig nicht mehr produktiv sind. Solche Konferenzen helfen auch bei der Erfüllung der Kernaufgabe der Zusammenarbeit: Das Unternehmen diskutiert sich hier in seiner Gesamtheit – und nicht als Addition von Einzelaktivitäten.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_54&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_54&#34; title=&#34;View footnote.&#34;&gt;54&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wer in Szenarien denkt, auch in radikalen Szenarien, der wird konträre Meinungen provozieren. Dazu brauchen Sie eine &lt;strong&gt;offene Diskussionskultur&lt;/strong&gt;. Resilient sind nämlich nicht zentralistisch geführte Firmen, in denen charismatische Führer einsame Entscheidungen fällen. Und auch nicht jene rechthaberischen Rudelbildungen mancher Vorstände, deren pathologisches Bekenntnis zur eigenen Vergangenheit jede Kontroverse verhindert. Sondern jene, in denen wahrscheinliche und unwahrscheinliche Szenarien diskutiert werden und Meinungsvielfalt zu einem Mehr an Ideen und einer präziseren Ausarbeitung von Positionen führt. Gut vorbereitet auf Krisen sind mithin Unternehmen, in denen nicht Gehorsam und Konformität gefordert werden, sondern Eigensinn und Widerspruchsgeist. Von hochangepassten Ja-Sagern hat man ohnehin immer genug.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_55&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_55&#34; title=&#34;View footnote.&#34;&gt;55&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Manager sind die Apostel der Machbarkeit. Sie erkennen oft nicht, dass &lt;strong&gt;Vielfalt, Dezentralität und hohe Freiheitsgrade Voraussetzung&lt;/strong&gt; dafür sind, dass so komplexe Systeme wie Unternehmen stabil bleiben können und gleichzeitig genügend Flexibilität entwickeln, um mit der Unvorhersehbarkeit der Märkte zurande zu kommen. Auch wenn es manchmal wie Chaos wirkt. Wer dieses Chaos durch Zentralisierung bändigen will, mag sich persönlich auf der sicheren, mindestens aber effizienten Seite wähnen. Aber er weiß nie genau, was er anrichtet – außer dass er Freiheitsgrade reduziert hat und damit die Anpassungsfähigkeit gefährdet.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_56&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_56&#34; title=&#34;View footnote.&#34;&gt;56&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Auch das, was man im Mannschaftssport »Rotieren« nennt, ist ein Störungsauftrag. Wenn &lt;strong&gt;zwei Manager mal die Aufgaben tauschen&lt;/strong&gt;. Das schafft neue Konstellationen und unter Umständen überraschende Erkenntnisse. Und auch der Teamgeist wird wieder neu belebt: Jeder wird gebraucht, wir gewinnen nur zusammen. Und wir verlieren, wenn der Einzelne sein Ego pflegt.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_57&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_57&#34; title=&#34;View footnote.&#34;&gt;57&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sucht man nach Persönlichkeiten, die einen optimistischen Umgang mit der Zukunft wahrscheinlich machen, dann sind es zweifellos diese: Sie können reflektieren. Sie denken: »Es könnte auch anders sein«. Sie beugen sich nicht dem Diktat des Status quo. Und sie wissen auch: Man kann sich kaum mit linearem Denken auf eine nicht-lineare Zukunft vorbereiten – es war einmal anders und es wird einmal anders sein (ein wenig historische Bildung schadet da nicht). Solche Persönlichkeiten sind mit einem Sinn für Mögliches ausgestattet, mit Möglichkeitssinn. Sie können ihre Fantasie aktivieren, halten grundsätzlich Außerordentliches und extreme Entwicklungen für denkbar. Sie haben eine so starke Bindung an ihr Unternehmen, dass sie es fortwährend hinterfragen und auf Verbesserung abklopfen. Sie sind notorisch unzufrieden – ohne dabei übellaunig zu sein. Sie denken, was andere nicht denken; suchen, wo andere nicht suchen; machen, was andere nicht machen. Dabei sind sie keine Hasardeure, es geht ihnen nicht um prinzipielles Dagegensein. Sie haben lediglich eine Neigung zum Ausprobieren, zum ergebnisoffenen Versuch.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_58&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_58&#34; title=&#34;View footnote.&#34;&gt;58&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In den Unternehmen wird viel von »Change« gesprochen. Meine Erfahrung: Je offizieller von Change gesprochen wird, desto weniger ändert sich. Weil der so gemeinte Wandel immer nur geplantes Verändern meint und eigentlich nur ein verschärftes Mehr-vom-Selben bedeutet. Überschaut man die einschlägige Forschung, so braucht es für wirkliche Änderungen Menschen, die den Spagat schaffen zwischen tiefer Verwurzelung im Unternehmen und Distanz von außen. Jedes Unternehmen braucht deshalb Menschen, die die Dinge anders denken können als in ihrer existierenden Form. Deshalb braucht es nicht nur den einsamen, heroischen Unternehmenslenker, der das Unternehmen umkrempelt. Es braucht &lt;strong&gt;unabhängige Geister auf allen Hierarchieebenen&lt;/strong&gt;, die für permanentes Neu- und Vorausdenken eintreten.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_59&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_59&#34; title=&#34;View footnote.&#34;&gt;59&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kapitel_fünfte_kernaufgabe_mitarbeiter_führen&#34;&gt;Kapitel &#34;Fünfte Kernaufgabe - Mitarbeiter führen&#34;&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn ich das »knapp« ernst nehme und »Mitarbeiter führen« auf eine möglichst kurze Formel bringe, so lautet sie folgendermaßen:
-Finden Sie die Richtigen,
-fordern Sie sie heraus,
-sprechen Sie oft miteinander,
-vertrauen Sie ihnen,
-bezahlen Sie gut und fair
-und &lt;strong&gt;gehen Sie dann aus dem Weg&lt;/strong&gt;.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_60&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_60&#34; title=&#34;View footnote.&#34;&gt;60&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ich mache immer wieder die Erfahrung: Da, wo Kontakt ist, gibt es kaum das Bedürfnis nach Lob. Denn Anerkennung war und ist im Kern schon immer Kontakt. Da geht es um &lt;strong&gt;Aufmerksamkeit, um eine wohlwollende Beachtung&lt;/strong&gt;, darum, Gespräche zu führen, großzügig in der Zustimmung und zurückhaltend im Widerspruch zu sein. Kontakt ist eine Form aufrichtiger Nächstenliebe – keine, die sich opfert oder mildtätig herablässt. Sie hat die Form unbedingter Freundlichkeit, grundsätzlich und gegenüber jedem Menschen – egal, ob das Ihr Aufsichtsratsvorsitzender ist oder die Servicedame in der Betriebskantine (was ich bei Personalauswahlentscheidungen besonders intensiv beobachte). Setzen Sie das schlichte Wort »Freundlichkeit«, das jeder versteht und gar nichts Wundersames an sich hat, an die Stelle der »Kommunikation«!&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_61&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_61&#34; title=&#34;View footnote.&#34;&gt;61&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die Anthropologen sagen uns, dass Sprache keineswegs erfunden wurde, um Informationen zu transportieren. Sondern um Beziehungen zu pflegen und Kontakt zu halten. Sprache war einst das Medium, um bei wachsenden Personengruppen den Körperkontakt zu ersetzen, das heißt friedliche Absichten zu signalisieren. Deshalb ist der »small talk« so unverzichtbar, das ziel- und planlose Sprechen auf den Firmenfluren. Es sorgt für Zusammenhalt und den gemeinsamen Weg. Nur die persönliche Begegnung schöpft die Möglichkeiten des »Wir« aus.&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_62&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_62&#34; title=&#34;View footnote.&#34;&gt;62&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;footnotes&#34;&gt;
-&lt;hr&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_1&#34;&gt;
-&lt;a href=&#34;#_footnoteref_1&#34;&gt;1&lt;/a&gt;. Reinhard K. Spenger: Radikal führen, Frankfurt 2012, S. 18
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_2&#34;&gt;
-&lt;a href=&#34;#_footnoteref_2&#34;&gt;2&lt;/a&gt;. ebd., S. 20
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_3&#34;&gt;
-&lt;a href=&#34;#_footnoteref_3&#34;&gt;3&lt;/a&gt;. ebd., S. 30
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_4&#34;&gt;
-&lt;a href=&#34;#_footnoteref_4&#34;&gt;4&lt;/a&gt;. ebd., S. 34
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_5&#34;&gt;
-&lt;a href=&#34;#_footnoteref_5&#34;&gt;5&lt;/a&gt;. ebd., S. 39
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_6&#34;&gt;
-&lt;a href=&#34;#_footnoteref_6&#34;&gt;6&lt;/a&gt;. ebd., S. 43
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_7&#34;&gt;
-&lt;a href=&#34;#_footnoteref_7&#34;&gt;7&lt;/a&gt;. ebd., S. 47
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_8&#34;&gt;
-&lt;a href=&#34;#_footnoteref_8&#34;&gt;8&lt;/a&gt;. ebd., S. 49
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_9&#34;&gt;
-&lt;a href=&#34;#_footnoteref_9&#34;&gt;9&lt;/a&gt;. ebd., S. 49
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_10&#34;&gt;
-&lt;a href=&#34;#_footnoteref_10&#34;&gt;10&lt;/a&gt;. ebd., S. 160
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_11&#34;&gt;
-&lt;a href=&#34;#_footnoteref_11&#34;&gt;11&lt;/a&gt;. ebd., S. 54
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_12&#34;&gt;
-&lt;a href=&#34;#_footnoteref_12&#34;&gt;12&lt;/a&gt;. ebd., S. 54
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_13&#34;&gt;
-&lt;a href=&#34;#_footnoteref_13&#34;&gt;13&lt;/a&gt;. ebd., S. 160
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_14&#34;&gt;
-&lt;a href=&#34;#_footnoteref_14&#34;&gt;14&lt;/a&gt;. ebd., S. 56
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_15&#34;&gt;
-&lt;a href=&#34;#_footnoteref_15&#34;&gt;15&lt;/a&gt;. ebd., S. 56
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_16&#34;&gt;
-&lt;a href=&#34;#_footnoteref_16&#34;&gt;16&lt;/a&gt;. ebd., S. 66
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_17&#34;&gt;
-&lt;a href=&#34;#_footnoteref_17&#34;&gt;17&lt;/a&gt;. ebd., S. 66
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_18&#34;&gt;
-&lt;a href=&#34;#_footnoteref_18&#34;&gt;18&lt;/a&gt;. ebd., S. 72
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_19&#34;&gt;
-&lt;a href=&#34;#_footnoteref_19&#34;&gt;19&lt;/a&gt;. ebd., S. 88
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_20&#34;&gt;
-&lt;a href=&#34;#_footnoteref_20&#34;&gt;20&lt;/a&gt;. ebd., S. 92
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_21&#34;&gt;
-&lt;a href=&#34;#_footnoteref_21&#34;&gt;21&lt;/a&gt;. ebd., S. 97
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_22&#34;&gt;
-&lt;a href=&#34;#_footnoteref_22&#34;&gt;22&lt;/a&gt;. ebd., S. 98
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_23&#34;&gt;
-&lt;a href=&#34;#_footnoteref_23&#34;&gt;23&lt;/a&gt;. ebd., S. 160
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_24&#34;&gt;
-&lt;a href=&#34;#_footnoteref_24&#34;&gt;24&lt;/a&gt;. ebd., S. 101
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_25&#34;&gt;
-&lt;a href=&#34;#_footnoteref_25&#34;&gt;25&lt;/a&gt;. ebd., S. 102
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_26&#34;&gt;
-&lt;a href=&#34;#_footnoteref_26&#34;&gt;26&lt;/a&gt;. ebd., S. 106
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_27&#34;&gt;
-&lt;a href=&#34;#_footnoteref_27&#34;&gt;27&lt;/a&gt;. ebd., S. 100
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_28&#34;&gt;
-&lt;a href=&#34;#_footnoteref_28&#34;&gt;28&lt;/a&gt;. ebd., S. 109
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_29&#34;&gt;
-&lt;a href=&#34;#_footnoteref_29&#34;&gt;29&lt;/a&gt;. ebd., S. 108
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_30&#34;&gt;
-&lt;a href=&#34;#_footnoteref_30&#34;&gt;30&lt;/a&gt;. ebd., S. 110
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_31&#34;&gt;
-&lt;a href=&#34;#_footnoteref_31&#34;&gt;31&lt;/a&gt;. ebd., S. 111
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_32&#34;&gt;
-&lt;a href=&#34;#_footnoteref_32&#34;&gt;32&lt;/a&gt;. ebd., S. 108
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_33&#34;&gt;
-&lt;a href=&#34;#_footnoteref_33&#34;&gt;33&lt;/a&gt;. ebd., S. 118
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_34&#34;&gt;
-&lt;a href=&#34;#_footnoteref_34&#34;&gt;34&lt;/a&gt;. ebd., S. 121
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_35&#34;&gt;
-&lt;a href=&#34;#_footnoteref_35&#34;&gt;35&lt;/a&gt;. ebd., S. 122
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_36&#34;&gt;
-&lt;a href=&#34;#_footnoteref_36&#34;&gt;36&lt;/a&gt;. ebd., S. 123
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_37&#34;&gt;
-&lt;a href=&#34;#_footnoteref_37&#34;&gt;37&lt;/a&gt;. ebd., S. 126
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_38&#34;&gt;
-&lt;a href=&#34;#_footnoteref_38&#34;&gt;38&lt;/a&gt;. ebd., S. 126
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_39&#34;&gt;
-&lt;a href=&#34;#_footnoteref_39&#34;&gt;39&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_40&#34;&gt;
-&lt;a href=&#34;#_footnoteref_40&#34;&gt;40&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_41&#34;&gt;
-&lt;a href=&#34;#_footnoteref_41&#34;&gt;41&lt;/a&gt;. ebd., S. 132
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_42&#34;&gt;
-&lt;a href=&#34;#_footnoteref_42&#34;&gt;42&lt;/a&gt;. ebd., S. 133
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_43&#34;&gt;
-&lt;a href=&#34;#_footnoteref_43&#34;&gt;43&lt;/a&gt;. ebd., S. 140
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_44&#34;&gt;
-&lt;a href=&#34;#_footnoteref_44&#34;&gt;44&lt;/a&gt;. ebd., S. 142
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_45&#34;&gt;
-&lt;a href=&#34;#_footnoteref_45&#34;&gt;45&lt;/a&gt;. ebd., S. 143
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_46&#34;&gt;
-&lt;a href=&#34;#_footnoteref_46&#34;&gt;46&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_47&#34;&gt;
-&lt;a href=&#34;#_footnoteref_47&#34;&gt;47&lt;/a&gt;. ebd., S. 148
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_48&#34;&gt;
-&lt;a href=&#34;#_footnoteref_48&#34;&gt;48&lt;/a&gt;. ebd., S. 149
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_49&#34;&gt;
-&lt;a href=&#34;#_footnoteref_49&#34;&gt;49&lt;/a&gt;. ebd., S. 150
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_50&#34;&gt;
-&lt;a href=&#34;#_footnoteref_50&#34;&gt;50&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_51&#34;&gt;
-&lt;a href=&#34;#_footnoteref_51&#34;&gt;51&lt;/a&gt;. ebd., S. 169
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_52&#34;&gt;
-&lt;a href=&#34;#_footnoteref_52&#34;&gt;52&lt;/a&gt;. ebd., S. 172
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_53&#34;&gt;
-&lt;a href=&#34;#_footnoteref_53&#34;&gt;53&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_54&#34;&gt;
-&lt;a href=&#34;#_footnoteref_54&#34;&gt;54&lt;/a&gt;. ebd., S. 215
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_55&#34;&gt;
-&lt;a href=&#34;#_footnoteref_55&#34;&gt;55&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_56&#34;&gt;
-&lt;a href=&#34;#_footnoteref_56&#34;&gt;56&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_57&#34;&gt;
-&lt;a href=&#34;#_footnoteref_57&#34;&gt;57&lt;/a&gt;. ebd., S. 221
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_58&#34;&gt;
-&lt;a href=&#34;#_footnoteref_58&#34;&gt;58&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_59&#34;&gt;
-&lt;a href=&#34;#_footnoteref_59&#34;&gt;59&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_60&#34;&gt;
-&lt;a href=&#34;#_footnoteref_60&#34;&gt;60&lt;/a&gt;. ebd., S. 238
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_61&#34;&gt;
-&lt;a href=&#34;#_footnoteref_61&#34;&gt;61&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_62&#34;&gt;
-&lt;a href=&#34;#_footnoteref_62&#34;&gt;62&lt;/a&gt;. ebd., S. 128
-&lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/teamwork-warum-manifest/</id>
-    <title type="text">Warum ein Manifest?</title>
-    <link rel="alternate" href="/blog/teamwork-warum-manifest/" hreflang="en" title="Warum ein Manifest?"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="teamwork"/>
-    <published>2019-06-13T00:00:00Z</published>
-    <updated>2019-06-13T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Fünf Kollegen haben &lt;a href=&#34;../teamwork-manifest/&#34;&gt;ein Manifest&lt;/a&gt; geschrieben. Aber welcher halbwegs intelligente Mensch gießt irgendwelche Regeln in Beton und schließt das Gegenteil der Regeln für immer aus?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Jeder Mensch im Unternehmen weiß, dass das Geschäftsleben komplex ist, oft widersprüchliche Entscheidungen verlangt und keine Moralanstalt ist. Und dass, realistisch betrachtet, die nunmehr offiziell ausgeschlossene Seite auch oft ihr Gutes hat. Jetzt aber liegt ein Regelverstoß vor.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Reinhard K. Spenger: Radikal führen&lt;br&gt;
-&lt;cite&gt;Frankfurt 2012 (S. 160)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Natürlich ist Teamarbeit nicht die Lösung für alles. Es gibt sogar viele Situationen in der Firma, wo sie kontraproduktiv wäre. Ja, nicht einmal der Kunde honoriert sie! Er will Software, die begeistert. Was wir innerhalb unserer Firmenwände machen, ist ihm egal.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In nahezu allen Unternehmen, die eine Werte-Charta veröffentlicht haben, hat sich der Zynismuspegel sprunghaft erhöht. Die Werte-Chartas postulieren Fortschritt, bringen aber Rückschritt. Der Übergang vom Impliziten zum Expliziten – das ist also der eigentliche Sündenfall. Das Explizitmachen von Werten löst keine Probleme, es erschafft sie. Dann gaukeln diese Werte-Leitlinien eine Eindeutigkeit vor, die der Lebenswirklichkeit in den Unternehmen nicht entspricht. Prinzipienradikalität führt entweder in die Lächerlichkeit oder in den Totalitarismus.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Reinhard K. Spenger: Radikal führen&lt;br&gt;
-&lt;cite&gt;Frankfurt 2012 (S. 162)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nun wollen sich die Autoren weder lächerlich machen, noch eine Gesinnungspolizei etablieren. Was dann?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es rumort in unserer Firma. Wir stellen Software her, die sehr nachgefragt ist. Das ist gut so, aber manchmal auch nicht. Es heißt, wir seien zu schnell gewachsen. Die Qualität leidet, das Betriebsklima ist rauher geworden und wir haben seit Jahren nichts neues, innvoatives mehr hervorgebracht. Ich arbeite mit anderen Kollegen im Innovationsmanagement meiner Firma. In dieser Eigenschaft wurden wir von unserem Geschäftsführer gefragt: Warum gibt es bei uns keine Innovationen mehr?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir luden andere Kollegen ein. Ganz gleich, mit wem wir sprachen, wir landeten immer wieder bei der Arbeitsweise, der Art, wie die Arbeit organisiert ist. Die Klagen und die Enttäuschung sprachen zumeist die Mitarbeiter der großen Abteilungen aus. Der Tenor: es fehlt jegliches Vertrauen der Vorgesetzten in die Mitarbeiter und die Arbeitsaufträge werden häufig über Tickets und Outlook-Terminen gesteuert, ohne eine menschliche Ansprache zuvor.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kompromisse_im_team&#34;&gt;Kompromisse im Team&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir trafen uns nun regelmäßig mit den Kollegen. Einmal verteilten wir Zettel, worauf jeder verdeckt kurz in Schlagworten seine Wünsche und Ziele aufschrieb. Anschließend mischten wir die Zettel und deckten auf. Die Schlagworte: &lt;em&gt;Eigenverantwortung, Selbstbestimmtheit, Gleichberechtigte Kommunikation, Harmonie im Zwischenmenschlichen&lt;/em&gt; uvm. Wir sahen, dass das unsere Ziele waren. Und dass alle die selben Ziele hatten!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/teamwork-manifest-warum/zettel.jpg&#34; alt=&#34;Karten aufgedeckt.&#34;&gt;
-&lt;/div&gt;
-&lt;div class=&#34;title&#34;&gt;Figure 1. Karten aufgedeckt&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir lernten, die Ziele von den Lösungen zu unterscheiden. All die Jahre waren wir zuvor im Streit auseinander gerannt, nur weil wir unterschiedliche Lösungsansätze hatten. Wir hatten uns jedoch nie auf gemeinsame Ziele hin verständigt. Und noch viel wichtiger: dieses Verständigen war ein langwieriger, quälender Prozess der Kompromisse. Dieses Kompromisse-Finden war ein aktiver Akt, der uns zusammenschweißte und die Gewissheit gab, nicht gleich wie beim ersten Mal bei Schwierigkeiten auseinander zu rennen. Wir schrieben ein Manifest, dass unsere Vorstellungen für eine Lösung auf unsere Ziele umriss: Teamarbeit.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Manifest ist das Arbeitsergebnis eines Teams. Es ist der kleinste gemeinsame Nenner, den alle Teammitglieder mittragen. Darum ist es sehr allgemein gehalten und schreit förmlich nach weiterer Erläuterung.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kompromisse_in_der_firma&#34;&gt;Kompromisse in der Firma&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Doch eine Umsetzung von dynamischer Teamarbeit in die Praxis ist nur durch Kompromisse, durch persönliches Ausverhandeln zwischen Mitarbeitern und Führungskräften möglich. Und selbst dann basiert eine Regelung für Teamarbeit und partnerschaftliche Zusammenarbeit auf Freiwilligkeit. Sie lebt einzig durch die Führungsstärke eines jeden Mitarbeiters.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Und dann gibt es Manifeste, für die man froh ist, dass es sie gibt.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/teamwork-manifest/</id>
-    <title type="text">Manifest für eine menschliche Zusammenarbeit</title>
-    <link rel="alternate" href="/blog/teamwork-manifest/" hreflang="en" title="Manifest für eine menschliche Zusammenarbeit"/>
-    <author><name>Andreas Petersell, Uwe Hermann, Roman Meyer, Michael Weigmann, Marc Langer<name></author>
-    <category term="teamwork"/>
-    <published>2019-05-15T00:00:00Z</published>
-    <updated>2019-05-15T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/teamwork-manifest/operation-teamwork.png&#34; alt=&#34;Operation Teamwork&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_präambel&#34;&gt;Präambel&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_unser_ziel_zusammenarbeit_von_mensch_zu_mensch&#34;&gt;Unser Ziel – Zusammenarbeit von Mensch zu Mensch&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Viele Firmen und Behörden funktionieren in Sachen Zusammenarbeit immer noch nach Vorstellungen von Frederick Taylor von vor 100 Jahren: Taylor suchte nach dem besten Weg, jede noch so kleine Aufgabe steuerbar, vorhersagbar und effizient zu machen. Der Vorgesetzte sollte beobachten und optimieren, der Arbeiter sollte die Regeln einhalten und möglichst Schritt halten. Nun ist in den 100 Jahren viel passiert.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Im März 2019 trafen sich Mitarbeiter und Geschäftsführer zu einem lockeren Meinungsaustausch. Viele Mitarbeiter äußerten ihren Unmut über die Art und Weise der Zusammenarbeit. Alle bestätigten jedoch, mit keinem Kollegen im Hause persönliche Probleme zu haben. Was liegt da näher, als die Ursache für die Unzufriedenheit in der Art und Weise unserer Zusammenarbeit zu vermuten? Wie arbeiten wir zusammen? Was ist unser Betriebssystem ?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Unmut könnte darin begründet liegen, dass wir unsere Firma als Organisation noch immer wie eine Maschine betrachten: Menschen und ihre Prozesse sollen ineinander greifen wie ein Uhrwerk. Aber Organisationen sind keine Maschinen! Sie sind nie vorhersehbar. Sie sind komplexe Systeme. Vergleichbar mit einem Garten: alles ist mit allem verbunden, alles ist dynamisch, aufstrebend und veränderlich.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn wir Kollegen mit dieser Komplexität und Unsicherheit konfrontiert werden, neigen wir schnell zu Vereinfachungen: Die Mitarbeiter sagen: Wir haben die falschen Führungskräfte! Die Vorgesetzten sagen: Wir haben die falschen Mitarbeiter! Aber das Problem sind weder die Vorgesetzten, noch die Mitarbeiter. Es ist das Betriebssystem unserer Firma.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Stellt Euch vor: Du bist ein erholungssuchender Städter mit zwei linken Händen und pachtest einen Kleingarten. Der Vorbesitzer hat ein Chaos hinterlassen. Schnell merkst Du, dass Du bei der Gartenumgestaltung Hilfe brauchst. Was könntest Du tun?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; Du und dein Partner unternehmt einen Spaziergang durch die Kleingartenanlage und grüßt alle, die Ihr seht. Dann kommt Ihr an einem Garten vorbei, der Euch besonders gefällt. Du sprichst den Gärtner an. Dieser lädt Euch mit an die Kaffeetafel. Nach einer halben Stunde fragst Du ihn, ob er dir nicht helfen könnte. Es wäre schade, wenn sein Wissen um wilde Teilbiotope im Garten nicht weitergetragen wird. Das sieht der Gärtner genauso. Ihr verabredet Euch zu einem Arbeitseinsatz am nächsten Wochenende. Zurück im Garten hast Du keinen Strom. Du klingelst beim Nachbarn und stellst Dich und Deine Familie kurz vor. Dann erkundigst du dich nach dem Sicherungskasten. Der Nachbar lacht und sagt, dass er Elektriker ist. Er zeigt dir den zentralen Sicherungskasten. Bei der Gelegenheit erzählst Du vom E-Herd und fragst ihn, ob er dir nicht beim Anschließen helfen könnte. Am nächsten Wochenende gibt es den Arbeitseinsatz. Der Gärtner und der Elektriker verstehen sich gut und ihr alle genießt die gute Nachbarschaft. Der Gärtner hat seinen Nachbarn mit einer großen Leiter mitgebracht. Ihr versorgt die Nachbarn mit Imbiss und Getränken. Am Abend trommelt ihr alle zusammen und kündigt als Dank an, eine große Dankesparty zu geben. Alle melden sich und erzählen, was sie dazu beitragen wollen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;oder&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; Du gehst zum Vereinsvorsitzenden und lässt Dir die E-Mailadressen sämtlicher Pächter geben. Du schreibst eine kurze Sammelmail mit Betreff “Parzelle 1743”. In den Nachrichtentext schreibst du ein Datum und das Wort “Gartengestaltung”. Gottseidank hat der Algorithmus Deine Signatur automatisch erstellt, so dass Du nichts weiter schreiben musst. Jetzt noch ein Mausklick zum Abschicken. Das war´s.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Im ersten Beispiel bist du der Driver, der alles vorantreibt. Du hast andere Menschen um Hilfe gebeten und diese haben dir Hilfe gewährt. Du gestaltest und du trägst die Verantwortung für deinen Garten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Im zweiten Beispiel kommt kein Mensch. Erst, nachdem der Vereinsvorsitzende eine Mail schreibt, kommt einer, der nicht gerade eine wirkliche Hilfe ist.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie oft handeln wir in unserer Firma nach dem ersten Beispiel, der menschlichen Ansprache? Kaum. Warum können wir aber im Privatleben wie Menschen handeln? Warum verwandeln wir uns, sobald wir unsere Firma betreten, in seelenlose Roboter?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir, die Autoren des Manifests, fühlen uns als Mensch UND Mitarbeiter der Firma und wollen in der Zukunft darin keinen Gegensatz mehr sehen. Wir wollen menschlich handeln – im gegenseitigen Respekt.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_manifest&#34;&gt;Manifest&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_eine_lösung_arbeiten_im_team&#34;&gt;Eine Lösung – Arbeiten im Team&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;em&gt;Wir Mitarbeiter freuen uns, gemeinsam mit unseren Vorgesetzten einen Weg zu beschreiten, der&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;für unsere Produkte eine höhere Qualität und Termintreue und&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;für uns Mitarbeiter eine hohe Motivation und Effizienz sicherstellt.&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_1_um_hilfe_bitten&#34;&gt;(1) Um Hilfe bitten&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wer andere um Hilfe bittet und diese ihm gewährt wird, hat mit anderen Kollegen schon fast ein Team gebildet. Wir lernen, andere um Hilfe zu bitten. Wir melden uns beim Kollegen erst persönlich, bevor wir Termine digital verschicken. Wir lernen, erst einmal nur die Hilfe zu gewähren, die angefordert wird.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_2_das_team_hat_eine_mission&#34;&gt;(2) Das Team hat eine Mission&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Kennzeichnend für ein Team ist jedoch, dass es eine Mission oder eine Product-Ownerschaft hat. Jedes Teammitglied sollten in wenigen Worten sagen können, was das Team macht.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_3_sinnstiftende_arbeit&#34;&gt;(3) Sinnstiftende Arbeit&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir Mitarbeiter identifizieren uns mit unserer Firma zuallererst über Menschen – und erst danach über unsere Aufgaben. Wir sehen in der Teamarbeit für ein gemeinsames Ziel die Grundlage für ein sinnstiftendes und effizientes Wirken für uns Mitarbeiter.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_4_teams_finden_lösungen_auf_ziele&#34;&gt;(4) Teams finden Lösungen auf Ziele&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir Mitarbeiter bilden Teams, um auf die vom Auftraggeber vorgegebenen Ziele die besten Lösungen zu finden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Für uns ist ein Team ein Team, wenn es diese Eigenschaften aufweist bzw. wenn die Teammitglieder sich nach diesen Prinzipien richten:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_5_teambildung_des_verhandlungsführers&#34;&gt;(5) – Teambildung des Verhandlungsführers&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ein Auftraggeber erteilt einem Mitarbeiter einen Auftrag: Dir. Du zeigst Führungsstärke und übernimmst Verantwortung: Du bittest andere um Hilfe. Ein Team entsteht, mit Dir als treibende Kraft und Verhandlungsführer des Teams.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_6_kein_vorgesetzter_im_team&#34;&gt;(6) – Kein Vorgesetzter im Team&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es gibt in unseren Teams keinen Vorgesetzten. Niemand hat eine Weisungsbefugnis gegenüber einem Teammitglied.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_7_teammitglieder_übernehmen_funktionen&#34;&gt;(7) – Teammitglieder übernehmen Funktionen&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Unsere Teams wählen kein Teammitglied in eine pauschale Führungsrolle als Teamleiter. Wir betrauen jedoch Teammitglieder mit folgenden Funktionen:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Verhandlungsführung (aussen)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Präsentation/Dokumentation der Leistungen/des Teams (aussen)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Koordination (innen)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Moderation/Konfliktregulierung (innen)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es können auch mehrere Mitglieder eine Funktion ausfüllen. Es kann auch ein Mitglied mehrere Funktionen ausfüllen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_8_wer_was_und_wann&#34;&gt;(8) – Wer, was und wann&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Team bestimmt einen Moderator (fest oder rotierend), der zum Ende eines Treffen schriftlich die nächsten Aufgaben der Teammitglieder in der Form wer-was-wann festhält.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_9_schnelle_entscheidungsfindung&#34;&gt;(9) – Schnelle Entscheidungsfindung&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Team trifft Entscheidungen eigenständig. Kann keine Entscheidung im angemessenem Rahmen gefunden werden, muss ein Moderator außerhalb des Teams hinzugezogen werden. Es gibt aber auch Entscheidungen, die das Team nicht treffen kann. Diese Entscheidungen werden delegiert.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_10_teamarbeit_ist_projektarbeit&#34;&gt;(10) – Teamarbeit ist Projektarbeit&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ein klarer Auftrag ist keine Bringschuld des Auftraggebers, sondern eine Holschuld des Teams. Auftragsklärung , Risiko-Check , Projektplanung und -steuerung sind Standards des Projektmanagements und garantieren den Erfolg eines Teams. Wir Teammitglieder verschaffen uns diese Projektmanagement-Kenntnisse mindestens durch die Lektüre von Patrick Schmid: Erfolgreiches Projektmanagement, Regensburg 2018 – einem schmalen Praxisleitfaden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_11_auftragsklärung_zuerst&#34;&gt;(11) – Auftragsklärung zuerst&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Auftraggeber hat meist nicht umfassend Zeit, seine Idee oder Erfordernis bis ins letzte Detail zu planen. Unsere Teams mit ihrem Verhandlungsführer an der Spitze müssen beim Auftraggeber herausfinden, was er wirklich will.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Wir trennen zwischen Zielen und Lösungen&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unsere erste Frage ist die Zielfrage: Was wollen wir damit erreichen?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Wir halten Termine und Prioritäten des Auftraggebers fest&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_12_konzept&#34;&gt;(12) – Konzept&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Unser Team erstellt mit den Erkenntnissen der Auftragsklärung und sämtlicher vorhandener Dokumente und Erfahrungen in der Firma ein Konzept. Existiert bereits ein Konzept, wird dies mit Hilfe der o.g. Erkenntnisse angepasst. Das Konzept ist für den Programmier-Kollegen eine Arbeitsgrundlage. Es sollte auch für den Redakteur und Tester Basisinformationen über Anwendungsfälle und Benutzerrechte bereitstellen. Das Konzept sammelt die Lösungen auf die mit dem Auftraggeber vereinbarten Ziele. Das Konzept besprechen wir abschließend mit dem Auftraggeber. Teil des Konzeptes könnte eine Zielvereinbarung sein, die vom Auftraggeber und Team unterschrieben wird. Verweigert das Team die Unterschrift, ist der Termin nicht haltbar.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_13_auftragsausführung_im_team&#34;&gt;(13) – Auftragsausführung im Team&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Mit unserem Wissen über Projektmanagement meistern wir die Umsetzung des Auftrages zum Termin. Wir geben gegenüber dem Auftraggeber in Abständen Auskunft über den Fortgang der Arbeiten und zeigen Probleme gegenüber dem Auftraggeber sofort an.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect3&#34;&gt;
-&lt;h4 id=&#34;_14_abschluss_des_auftrages&#34;&gt;(14) – Abschluss des Auftrages&lt;/h4&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir achten auf die Erfüllung der internen Ziele wie z.B. die Anfertigung einer Entwicklerdokumentation. Wir Teammitglieder beschließen ein Projekt (und damit das Team) mit einer Rückschau:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Was lief gut?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Was lief nicht so gut? Was können wir nächstes Mal besser machen?&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <id>/blog/dita-fuer-eclipse/</id>
+    <id>https://www.petersell.com/blog/dita-fuer-eclipse/</id>
     <title type="text">Einbinden der DITA-DTDs in Eclipse</title>
-    <link rel="alternate" href="/blog/dita-fuer-eclipse/" hreflang="en" title="Einbinden der DITA-DTDs in Eclipse"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/dita-fuer-eclipse/" hreflang="en" title="Einbinden der DITA-DTDs in Eclipse"/>
     <author><name>Andreas Petersell<name></author>
     <category term="dita-xml"/>
     <published>2019-04-17T00:00:00Z</published>
@@ -1381,9 +805,9 @@ und &lt;strong&gt;gehen Sie dann aus dem Weg&lt;/strong&gt;.&lt;sup class=&#34;f
   </entry>
   
   <entry>
-    <id>/blog/asciidoc-homepage-mit-asciidoctor/</id>
+    <id>https://www.petersell.com/blog/asciidoc-homepage-mit-asciidoctor/</id>
     <title type="text">Eine Homepage mit Asciidoctor erstellen</title>
-    <link rel="alternate" href="/blog/asciidoc-homepage-mit-asciidoctor/" hreflang="en" title="Eine Homepage mit Asciidoctor erstellen"/>
+    <link rel="alternate" href="https://www.petersell.com/blog/asciidoc-homepage-mit-asciidoctor/" hreflang="en" title="Eine Homepage mit Asciidoctor erstellen"/>
     <author><name>Andreas Petersell<name></author>
     <category term="asciidoc"/>
     <published>2019-01-22T00:00:00Z</published>
@@ -1558,6 +982,100 @@ Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpres
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;:sourcedir: ../
 :docinfodir: ../&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>https://www.petersell.com/blog/hugo-minimo-weiterlink/</id>
+    <title type="text">Weiterblättern im Hugo-Theme Minimo</title>
+    <link rel="alternate" href="https://www.petersell.com/blog/hugo-minimo-weiterlink/" hreflang="en" title="Weiterblättern im Hugo-Theme Minimo"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="hugo"/>
+    <published>2018-08-20T00:00:00Z</published>
+    <updated>2018-08-20T00:00:00Z</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ist ein Open Source Webseiten-Generator für statische Seiten. Das Theme Minimo erstellt die Links unterhalb eines Blogposts für Weiter und Zurück automatisch – nur leider genau umgekehrt, wie ich es für meine Texte gebrauchen kann. Bei Blogposts landet der aktuellste Post oben. Bei belletristischen Texten wird das erste Kapitel zuerst geschrieben, soll aber auch an erster (oben) Stelle bleiben. Kurz und gut: ich wollte eine Möglichkeit haben, Hugo-Seiten manuell zu verbinden. Bei Kapitel 1 landet der Leser nach Klick auf Weiter beim Kapitel 2. Eigentlich logisch, im CMS Hugo aber nicht so einfach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_template_weiche_einrichten&#34;&gt;Template-Weiche einrichten&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Weiter-Zurück-Navigation befindet sich im Theme Minimo in der Template-Datei &lt;code&gt;layouts\_default\partials\nav\entry_nav.html&lt;/code&gt;. Dieses sogenannte Partial wiederum wird aufgerufen in der Layoutdatei &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für die Blogposts wollte ich die bisherige Weiter-Navigation haben (aktuellster Post zuoberst). Für die Romankapitel wollte ich eine neue Navigation einrichten. Benötigt wurde eine “Weiche”. Bei &lt;a href=&#34;https://thomas-leister.de/einfuehrung-in-hugo-theme-erstellen/&#34;&gt;Thomas Leister&lt;/a&gt; wurde ich fündig. Meine Datei &lt;code&gt;single.html&lt;/code&gt; bekam folgende “Weiche”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;{{ if eq .Type &#34;novel&#34; }}
+    {{ partial &#34;nav/entry_nav-novel.html&#34; . }}
+{{ else }}
+    {{ partial &#34;nav/entry_nav.html&#34; . }}
+{{ end }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In meine Content-Dateien für den Roman musste ich noch einen Variable für den Typ einfügen: &lt;code&gt;type: novel&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+title: gero_prolog
+linktitle: 1_gero-prolog
+type: novel
+date: 2017-10-01
+nextpage: novel/version-eins/2_michael-01/
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_neue_partial_datei_erschaffen&#34;&gt;Neue Partial-Datei erschaffen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die oben erwähnte Partial-Datei &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich kopiert und umbenannt in &lt;code&gt;entry_nav-novel.html&lt;/code&gt;. Bei Blogposts kommt die Original-Datei zum Einsatz, bei Pages im Ordner &lt;code&gt;novel&lt;/code&gt; wird die neue Datei herangezogen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Beim Weiter-Link den Titel des nächsten Kapitels einzublenden, habe ich nicht geschafft. Darum habe ich ihn weggelassen. In einer Sequenz sorgt das für mehr Übersichtlichkeit. Bei den Blogpost wird weiterhin der Titel des nächsten Blogposts ausgegen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ausgehend vom vorhandenen Minimo-Template &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich mein Template durch Trial and Error folgendermaßen in der Datei &lt;code&gt;entry_nav-novel.html&lt;/code&gt; angepasst.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&amp;lt;nav class=&#39;entry-nav&#39;&amp;gt;
+  &amp;lt;div class=&#39;container&#39;&amp;gt;
+
+    {{- if $.Params.prevpage -}}
+    &amp;lt;div class=&#39;prev-entry sep-before&#39;&amp;gt;
+	 &amp;lt;a href=&#39;{{ $.Params.prevpage | relURL }}&#39;&amp;gt;
+        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
+          {{- partial &#34;svg/icons&#34; &#34;prev&#34; -}}
+          {{- print &#34; &#34; ( i18n &#34;previous&#34; ) -}}
+        &amp;lt;/span&amp;gt;
+        &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;previousPost&#34; }}: &amp;lt;/span&amp;gt;
+     &amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+    {{- end -}}
+
+    {{- if $.Params.nextpage -}}
+    &amp;lt;div class=&#39;next-entry sep-before&#39;&amp;gt;
+	 &amp;lt;a href=&#39;{{ $.Params.nextpage | relURL }}&#39;&amp;gt;
+	    &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;nextPost&#34; }}: &amp;lt;/span&amp;gt;
+        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
+          {{- print ( i18n &#34;next&#34; ) &#34; &#34; -}}
+          {{- partial &#34;svg/icons&#34; &#34;next&#34; -}}
+        &amp;lt;/span&amp;gt;
+	  &amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+    {{- end -}}
+
+  &amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
