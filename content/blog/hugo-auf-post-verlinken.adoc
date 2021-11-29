@@ -28,5 +28,3 @@ In der Datei `teamwork-manifest-warum.adoc` musste ich auf den Post `teamwork-ma
 ----
 Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.
 ----
-
-Hier die Demo: link:../teamwork-manifest/[klicke hier], um zum Post _Manifest für eine menschliche Zusammenarbeit_ zu gelangen.
