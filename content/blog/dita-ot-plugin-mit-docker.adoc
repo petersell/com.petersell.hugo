@@ -31,7 +31,7 @@ Diese Quelle ermöglichten mir diesen Artikel:
 
 Mein Sohn hat mir einen neuen Rechner aufgebaut - mit Linux! Nun mußte ich sämtliche Programme neu installieren. Muss ich? Ich stieß innerhalb der DITA-Dokumention auf den Artikel https://www.dita-ot.org/dev/topics/using-docker-images.html[Running the dita command from a Docker image]. Inzwischen gelingt es mir, mit Hilfe eines DITA-OT-Images Standard-HTML-Output zu generieren.
 
-Aber ich möchte das Aussehen verändern mit Hilfe des Plugins https://github.com/infotexture/dita-bootstrap[DITA Bootstrap] von Roger W. Fienhold Sheen. Dafür hat letzterer https://www.dita-ot.org/dev/topics/creating-docker-images.html[ein Topic] in der offiziellen Dokumentation bereit erstellt.
+Aber ich möchte das Aussehen verändern mit Hilfe des Plugins https://github.com/infotexture/dita-bootstrap[DITA Bootstrap] von Roger W. Fienhold Sheen. Dafür hat letzterer https://www.dita-ot.org/dev/topics/creating-docker-images.html[eine Anleitung] in der offiziellen Dokumentation geschrieben.
 
 == Anleitung
 
