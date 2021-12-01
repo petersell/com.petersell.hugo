@@ -70,7 +70,7 @@ ____
 `-v` mounts the source subfolder of your home directory and binds it to the /src volume in the container,
 ____
 
-dann wird aus dem Pfad zu meiner Ditamap-Datei `/home/andreas/DITA-ZKS/zks-ditamap` eben genau `/src/zks.ditamap`. Das selbe gilt für den Pfad des Ordner `out`.
+dann wird aus dem Pfad zu meiner Ditamap-Datei `/home/andreas/DITA-ZKS/zks.ditamap` eben genau `/src/zks.ditamap`. Das selbe gilt für den Pfad des Ordner `out`.
 
 === Richtiger Docker-Befehl
 

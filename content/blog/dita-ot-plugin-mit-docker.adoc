@@ -1,0 +1,106 @@
+---
+author: Andreas Petersell
+title: "DITA-Bootstrap-Output mit Docker generieren"
+date: 2021-12-01T08:28:39+01:00
+draft: false
+
+categories:
+    - "techcomm"
+tags: 
+    - "dita-xml"   
+---
+
+:toc: macro
+:toclevels: 2
+:toc-title:
+:imagesdir: ../images/dita-ot-bootstrap-mit-docker/
+
+Sie generieren DITA-Output mit Hilfe eines DITA-OT-Images. Aber wie generieren Sie Output mit Hilfe eines Plugins, dass nicht in das DITA-OT standardmäßig integriert ist?
+<!--more-->
+
+toc::[]
+
+== Quellen
+
+Diese Quelle ermöglichten mir diesen Artikel:
+
+* https://www.dita-ot.org/dev/topics/creating-docker-images.html[Installing plug-ins in a Docker image]
+* https://github.com/infotexture/dita-bootstrap[DITA Bootstrap]
+
+== Kontext
+
+Mein Sohn hat mir einen neuen Rechner aufgebaut - mit Linux! Nun mußte ich sämtliche Programme neu installieren. Muss ich? Ich stieß innerhalb der DITA-Dokumention auf den Artikel https://www.dita-ot.org/dev/topics/using-docker-images.html[Running the dita command from a Docker image]. Inzwischen gelingt es mir, mit Hilfe eines DITA-OT-Images Standard-HTML-Output zu generieren.
+
+Aber ich möchte das Aussehen verändern mit Hilfe des Plugins https://github.com/infotexture/dita-bootstrap[DITA Bootstrap] von Roger W. Fienhold Sheen. Dafür hat letzterer https://www.dita-ot.org/dev/topics/creating-docker-images.html[ein Topic] in der offiziellen Dokumentation bereit erstellt.
+
+== Anleitung
+
+.Voraussetzung
+[TIP]
+====
+Sie haben Docker installiert.
+====
+
+=== Dockerfile erstellen
+
+Erstellen Sie innerhalb Ihres DITA-XML-Quelldateien-Ordners eine neue Textdatei mit Namen `Dockerfile`. Schreiben Sie folgendes hinein:
+
+.Dockerfile im Quelldateien-Ordner
+[source,xml]
+----
+# Use the latest DITA-OT image as parent:
+FROM ghcr.io/dita-ot/dita-ot:3.6.1
+# Install a custom plug-in from a remote location:
+RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.4.1.zip
+----
+
+=== Docker-Image bauen
+
+Öffnen Sie ein Terminal-Fenster und geben Sie folgenden Befehl ein:
+
+.Buildfehl auf Konsole
+[source,xml]
+----
+sudo docker image build -t ditaot-bootstrap-docker-image:1.0 .
+----
+
+Sie können Ihrem Image natürlich einen anderen Namen vergeben als _ditaot-bootstrap-docker-image_. Ihre Ausgabe könnte so ähnlich aussehen:
+
+.Ausgabe auf Konsole
+[source,xml]
+----
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM ghcr.io/dita-ot/dita-ot:3.6.1
+ ---> 9abb96827538
+Step 2/2 : RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.4.1.zip
+ ---> Running in d510f874cae0
+Added net.infotexture.dita-bootstrap
+Removing intermediate container d510f874cae0
+ ---> 63deb8e15b5b
+Successfully built 402885636b7f
+Successfully tagged ditaot-bootstrap-docker-image:1.0
+----
+
+=== Container starten für den Build
+
+Jetzt können Sie den Container starten, der auf diesem Image basiert, um Output im Bootstrap-Design zu erhalten.
+
+Geben Sie folgenden Befehl im Terminal-Fenster ein:
+
+.Docker-Befehl auf der Konsole
+[source,xml]
+----
+sudo docker container run -it \
+  -v /home/andreas/DITA-ZKS:/src ditaot-bootstrap-docker-image:1.0 \
+  -i /src/zks.ditamap \
+  -o /src/out/dita-bootstrap \
+  -f html5-bootstrap -v
+----
+
+Passen Sie Ihren DITA-Quelldatei-Ordner entsprechend an. Bei mir ist folgender Pfad gegeben: `/home/andreas/DITA-ZKS`. Falls Sie einen anderen Image-Namen statt _ditaot-bootstrap-docker-image_ gewählt haben, so müssen Sie den Ihrigen vermerken. Ebenso heißt meine ditamap-Datei _zks.ditamap_. Passen Sie hier Ihren Dateinamen an.
+
+.Der Bootstrap-Output
+[caption="Abb. 1: "]
+image::dita-ot-bootstrap-mit-docker.png[Bootstrap-Output,90%]
+
+Nach dem Docker-Run-Befehl füllte sich mein output-Ordner `out` mit den gewünschten HTML-Seiten - jetzt aber im Bootstrap-Look des Plugins.
