@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Own the Demand"
 date: 2018-11-01
-draft: true
+draft: false
 
 categories:
     - "zitate"

@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Matter of Trust"
 date: 2018-08-28
-draft: true
+draft: false
 
 categories:
     - "zitate"
