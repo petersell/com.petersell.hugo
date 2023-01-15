@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Der FDGB-Ausweis oder die Vergottung der Macht"
 date: 2013-08-22
-draft: false
+draft: true
 
 categories:
     - "essay"
@@ -84,4 +84,4 @@ ____
 
 == Die Seiten des Ausweises
 
-Die Fotos und Scans können Sie sorgenfrei nutzen. Sie stehen unter einer Creative Commons Lizenz. 16 Fotos im https://fotos.petersell.de/index.php?/category/fdgb-ausweis[Fotoalbum^, role="ext-link"]
+Die Fotos und Scans können Sie sorgenfrei nutzen. Sie stehen unter einer Creative Commons Lizenz. 16 Fotos auf medium.com  https://medium.com/@Petersell/fc361f5ca770[Fotoalbum^, role="ext-link"]
