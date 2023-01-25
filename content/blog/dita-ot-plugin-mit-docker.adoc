@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: "DITA-Bootstrap-Output mit Docker generieren"
+title: "DITA-Bootstrap-Output mit Docker builden"
 date: 2021-12-01T08:28:39+01:00
 draft: false
 
@@ -56,12 +56,12 @@ RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.4.1.z
 
 === Docker-Image bauen
 
-Öffnen Sie ein Terminal-Fenster und geben Sie folgenden Befehl ein:
+Auf der Grundlage der Datei `Dockerfile` wird jetzt ein Image erstellt. Öffnen Sie ein Terminal-Fenster und gehen Sie in Ihr DITA-Quellverzeichnis, weil darin sich Ihre `Dockerfile` befindet. Geben Sie folgenden Befehl ein:
 
 .Buildfehl auf Konsole
 [source,xml]
 ----
-sudo docker image build -t ditaot-bootstrap-docker-image:1.0 .
+docker image build -t ditaot-bootstrap-docker-image:1.0 .
 ----
 
 Sie können Ihrem Image natürlich einen anderen Namen vergeben als _ditaot-bootstrap-docker-image_. Ihre Ausgabe könnte so ähnlich aussehen:
@@ -83,7 +83,7 @@ Successfully tagged ditaot-bootstrap-docker-image:1.0
 
 === Container starten für den Build
 
-Jetzt können Sie den Container starten, der auf diesem Image basiert, um Output im Bootstrap-Design zu erhalten.
+Jetzt haben Sie ein Image erstellt, dass das DITA-OT enthält, in dem wiederum ein Plugin _DITA-Bootstrap_ installiert wurde. Um HTML-Output zu erhalten, müssen Sie dem Image einen DITA-Buildbefehl übergeben. In diesem Zuge wird aus dem Image ein Container gestartet inklusive Buildbefehl.
 
 Geben Sie folgenden Befehl im Terminal-Fenster ein:
 
