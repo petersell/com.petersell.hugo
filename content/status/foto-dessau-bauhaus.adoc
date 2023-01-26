@@ -9,10 +9,13 @@ categories:
 tags: 
     - "freunde"
 ---
+:imagesdir: ../images/status
 
 Wir waren mit Freunden in Dessau: 100 Jahre Bauhaus. Natürlich stand auch das neue Bauhaus-Museum auf dem Programm. Ein entspannter Tag, da wir mit dem Berlin-Brandenburg-Ticket unterwegs waren.
 <!--more-->
 
-image::https://cloud.petersell.de/index.php/s/NqJGxeL79dXTBpf/preview[Bauhausmuseum Dessau]
+image::bauhausmuseum-dessau.png[Bauhausmuseum Dessau]
+
+//image::https://cloud.petersell.de/index.php/s/NqJGxeL79dXTBpf/preview[Bauhausmuseum Dessau]
 
 Leider wird dies mein letztes Instagram-Bild. Die automatische Veröffentlichung von Instagram-Fotos auf meiner Webseite petersell.com funktioniert nicht mehr. Webmentions ua. werden von Instagram geblockt. Ich kann nicht mal mehr meine Fotos von Instagram downloaden. Der Nutzer hat keine Rechte an seinen Fotos. Danke, das war´s.

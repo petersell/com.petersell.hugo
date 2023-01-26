@@ -9,10 +9,13 @@ categories:
 tags: 
     - "familie"
 ---
+:imagesdir: ../images/status
 
 Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.
 <!--more-->
 
-image::https://cloud.petersell.de/index.php/s/yyLm2PxaamtqFWC/preview[Auf den Arber]
+image::bayrischerwald.png[Auf den Arber]
+
+//image::https://cloud.petersell.de/index.php/s/yyLm2PxaamtqFWC/preview[Auf den Arber]
 
 Nicht konnte uns mehr aufhalten.
