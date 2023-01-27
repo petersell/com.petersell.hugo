@@ -14,7 +14,7 @@ tags:
 Wir waren mit Freunden in Dessau: 100 Jahre Bauhaus. Natürlich stand auch das neue Bauhaus-Museum auf dem Programm. Ein entspannter Tag, da wir mit dem Berlin-Brandenburg-Ticket unterwegs waren.
 <!--more-->
 
-image::bauhausmuseum-dessau.png[Bauhausmuseum Dessau]
+image::bauhausmuseum-dessau.png[Bauhausmuseum Dessau, width=80%]
 
 //image::https://cloud.petersell.de/index.php/s/NqJGxeL79dXTBpf/preview[Bauhausmuseum Dessau]
 

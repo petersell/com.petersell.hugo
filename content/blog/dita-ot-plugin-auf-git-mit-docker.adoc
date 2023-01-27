@@ -25,7 +25,7 @@ toc::[]
 
 Warum sollte ich als DITA-Redakteur _Docker_ und ähnliches benutzen? Was bringt mir das? Auf den Punkt gebracht: das eigene Überleben als DITA-Redakteur.
 
-image::containerschiff.jpg[DITA-Kapitän]
+image::containerschiff.jpg[DITA-Kapitän, width=80%]
 
 Sie sind der Kapitän auf einem großen Schiff voller Container. In jedem Container befindet sich entweder eine Version des DITA-Open-Toolkits oder ein DITA-OT-Plugin. Wenn Sie ein PDF oder HTML-Output benötigen, suchen Sie sich ein DITA-OT heraus, fügen ein oder mehrere Plugins hinzu und starten den Build.
 
