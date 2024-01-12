@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: "Notiz"
+title: "Notiz - Kurze Hosen"
 date: 2019-07-25
 draft: false
 

@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: "Notiz"
+title: "Notiz - Live"
 date: 2018-04-11
 draft: false
 
