@@ -103,7 +103,7 @@ Dass nun die Serie "Ministerium des Inneren" hieß, entbehrt nicht einer gewisse
 Ministerium auch die Staatssicherheit zugeordnet war und sich in manchen Postämtern Türen ohne Aufschrift befanden
 - kann man verblüfft sein ob dieser "Offenheit".
 
-17 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-einsatzfahrzeuge[PeBe Miniauto Einsatzfahrzeuge^, role="ext-link"]
+//17 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-einsatzfahrzeuge[PeBe Miniauto Einsatzfahrzeuge^, role="ext-link"]
 
 == Baukasten Omnibusse
 
@@ -117,7 +117,7 @@ Ministerium auch die Staatssicherheit zugeordnet war und sich in manchen Postäm
 [caption="Abb. 5: "]
 image::omnibus.jpg[]
 
-14 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-omnibus[PeBe Miniauto Omnibus^, role="ext-link"]
+//14 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-omnibus[PeBe Miniauto Omnibus^, role="ext-link"]
 
 == Baukasten Kranfahrzeuge
 
@@ -131,4 +131,4 @@ image::omnibus.jpg[]
 [caption="Abb. 6: "]
 image::kranfahrzeug.jpg[]
 
-15 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-kranfahrzeuge[PeBe Miniauto Kranfahrzeuge^, role="ext-link"]
+//15 Fotos im Album https://fotos.petersell.de/index.php?/category/pebe-miniauto-kranfahrzeuge[PeBe Miniauto Kranfahrzeuge^, role="ext-link"]
