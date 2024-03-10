@@ -1,8 +1,7 @@
 ---
 title: Einen Habit-Tracker mit Obsidian erstellen
 author: Andreas Petersell
-date:
-  "{ date }": 
+date: 2024-03-10 
 headless: false
 draft: false
 categories:
