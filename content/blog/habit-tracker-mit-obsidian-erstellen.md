@@ -43,7 +43,7 @@ Hinweis: anstelle der 3 Bindestriche müssen die 3 Apostrophe (Auslassungszeiche
 
 Gehe ich nun aus der *Bearbeiten*-Ansicht heraus, zeigt sich ein Monatskalender mit farbigen Kreisen an den Tagen, an dem ich joggen war.
 
-![Wochenübersicht](/images/obsidian/habit-tracker-month.png)
+![Wochenübersicht](../images/obsidian/habit-tracker-month.png)
 
 ## Nicht über 14 Minuten laufen
 
@@ -71,7 +71,7 @@ line:
 
 Wechsle ich nun vom Editier-Modus in die Lese-Ansicht, zeigt sich ein Graph mit X- und Y-Achse und einer Linie zwischen den Zeitwerten.
 
-![Liniendiagramm](/images/obsidian/habit-tracker-line.png)
+![Liniendiagramm](../images/obsidian/habit-tracker-line.png)
 
 Damit zwischen den unregelmäßigen Datumsangaben eine Linie gezogen wird, muss das Attribut `fillGap: true` zur *line* hinzugefügt werden.
 
