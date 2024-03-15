@@ -5,9 +5,9 @@ date: 2024-03-10
 headless: false
 draft: false
 categories:
-  - erleben
+  - pkm
 tags:
-  - darumlebenwir
+  - obsidian
 ---
 
 Statt Zettelkasten und meinen Roman zu schreiben, erstelle ich mit Obsidian einen Habit-Tracker. Das Prokrastinieren wird durch [Obisidian](https://obsidian.md/) auf eine ganz neue Ebene gehoben.
