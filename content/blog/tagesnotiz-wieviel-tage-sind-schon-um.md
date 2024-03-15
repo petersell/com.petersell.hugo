@@ -1,8 +1,7 @@
 ---
 title: Tagesnotiz - Wieviel Tage sind schon um?
 author: Andreas Petersell
-date:
-  "{ date }": 
+date: 2024-03-15 
 headless: false
 draft: false
 categories:
@@ -11,7 +10,7 @@ tags:
   - obsidian
 ---
 
-Um mir vor Augen zu führen, wie schnell die Zeit vergeht und wie viel Zeit mir noch verbleibt, meine Ziele für das Jahr zu erreichen, blende ich mir in [Obisidian](https://obsidian.md/) die Nummer des Tages und der Woche im Header meiner Daily Note ein.
+Um mir vor Augen zu führen, wie schnell die Zeit vergeht und wie viel Zeit mir noch verbleibt, meine Ziele für das Jahr zu erreichen, blende ich mir in [Obisidian](https://obsidian.md/) die Nummer des Tages und der Woche im Header meiner Tagesnotiz ein.
 <!--more-->
 
 So steht es im *Daily Note Template*.
@@ -22,8 +21,9 @@ So steht es im *Daily Note Template*.
 
 Und so sieht es in der erzeugten Tagesnotiz aus.
 
-> [!info]
-> 075/365 | 11/52
+```
+075/365 | 11/52
+```
 
 So, ich muss Schluss machen! Ich habe nicht mehr viel Zeit.
 
