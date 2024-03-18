@@ -36,6 +36,7 @@ searchTarget: jogging
 folder: Journal/01 - Daily/2024-daily
 datasetName: Jogging
 month:
+  startWeekOn: Mon
 ---
 ```
 
@@ -43,7 +44,7 @@ Hinweis: anstelle der 3 Bindestriche müssen die 3 Apostrophe (Auslassungszeiche
 
 Das Verzeichnis unter *folder* ist das Verzeichnis, wo derzeit meine Tagesnotizen gespeichert werden.
 
-Gehe ich nun aus der *Bearbeiten*-Ansicht heraus, zeigt sich ein Monatskalender mit farbigen Kreisen an den Tagen, an denen ich joggen war.
+Gehe ich nun aus der *Bearbeiten*-Ansicht heraus, zeigt sich ein Monatskalender mit farbigen Kreisen an den Tagen, an denen ich joggen war. Da ich die Woche mit *Montag* anfangen lassen möchte, füge ich `startWeekOn: Mon` unter `month` hinzu.
 
 ![Wochenübersicht](../images/obsidian/habit-tracker-month.png)
 
