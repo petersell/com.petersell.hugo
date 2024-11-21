@@ -39,7 +39,7 @@
         {
           "title": "lastMod",
           "name": "lastMod",
-          "type": "datetime",
+          "type": "datetime"
         },
         {
           "title": "draft",
@@ -78,5 +78,6 @@
       "path": "[[workspace]]/content/status"
     }
   ],
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.website.host": "https://www.petersell.de"
 }
