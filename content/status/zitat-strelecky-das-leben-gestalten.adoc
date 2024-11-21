@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Das Leben gestalten mit den Big Five for Live"
 date: 2019-12-20
-draft: true
+draft: false
 
 categories:
     - "zitate"

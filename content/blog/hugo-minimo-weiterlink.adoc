@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Weiterblättern im Hugo-Theme Minimo"
 date: 2018-08-20
-draft: false
+draft: true
 
 categories:
     - "blogging"

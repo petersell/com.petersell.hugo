@@ -1,13 +1,14 @@
 ---
 title: Einen Habit-Tracker mit Obsidian erstellen
 author: Andreas Petersell
-date: 2024-03-10 
+date: 2024-03-10
 headless: false
 draft: false
 categories:
   - pkm
 tags:
   - obsidian
+preview: null
 ---
 
 Statt Zettelkasten und meinen Roman zu schreiben, erstelle ich mit Obsidian einen Habit-Tracker. Das Prokrastinieren wird durch [Obisidian](https://obsidian.md/) auf eine ganz neue Ebene gehoben.

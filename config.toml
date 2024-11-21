@@ -13,7 +13,7 @@ googleAnalytics = ""
 [params]
    author = "Andreas Petersell"
    mainSections = ["blog", "status"]
-   description = "Privater Blog eines DITA-Writers und Autors sowie Co-Founders von Jobikado."
+   description = "Privater Blog eines DITA-Writers."
 
 [menu]
 
@@ -90,3 +90,9 @@ tag = "tags"
 
     # .Site.BaseURL/$section/index.* is available
     section = ["HTML", "JSON", "RSS", "ATOM"] 
+
+# https://gohugo.io/about/security/
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+    osenv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$']

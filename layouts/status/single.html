@@ -1,20 +1,38 @@
-{{ define "main" }}
-<main>
-<h1 class="post-title"><div class="h-entry">{{ .Title }}</div></h1>
-<p class="author"><span class="p-author h-card">{{ with .Params.author }}{{ . }}</span>&nbsp;am{{ end }} <date datetime="{{ .Date.Format "02.01.2006" }}">{{ .Date.Format "02.01.2006" }}</date></p>
-{{ if .IsTranslated }}
-<div>
-{{ i18n "available_translations" }}: 
-{{ range .Translations }}
-<a href="{{ .Permalink }}">{{ .Lang }}</a>
-{{ end }}
-</div>
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            <nav>
+                <ul>
+                {{ range $.Site.Menus.main -}}
+                <li class="nav-list"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                {{ end }}
+                </ul>
+            </nav>
+            <h1 class="logo"><img src={{ "petersell-logo.png" | absURL }}>&nbsp;{{ $.Site.Title }}</h1> 
+        </header>
+        
+        <main>
+            <!-- title and author added to status post again -->
+            <h3 class="status-title"><div class="h-entry">{{ .Title }}</div></h3>
+            <p class="author"><span class="p-author h-card">{{ with .Params.author }}{{ . }}</span>&nbsp;am{{ end }} <date datetime="{{ .Date.Format "02.01.2006" }}">{{ .Date.Format "02.01.2006" }}</date></p>
+            {{ if .IsTranslated }}
+            <div>
+            {{ i18n "available_translations" }}: 
+            {{ range .Translations }}
+            <a href="{{ .Permalink }}">{{ .Lang }}</a>
+            {{ end }}
+            </div>
+            {{ end }}
+            
+            <article>
+            {{ .Content }}
+            </article>
+            </main>
 
-<article>
-  <div class="e-content">
-  {{ .Content }}
-</div>
-</article>
-</main>
-{{ end }}
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+
+
