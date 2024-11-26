@@ -4,7 +4,7 @@
     {
       "name": "blog",
       "pageBundle": false,
-      "previewPath": "'blog'",
+      "previewPath": "blog",
       "filePrefix": null,
       "fields": [
         {
@@ -59,7 +59,8 @@
         {
           "title": "fmContentType",
           "name": "fmContentType",
-          "type": "string"
+          "type": "string",
+          "hidden": "true"
         }
       ]
     }
@@ -79,5 +80,5 @@
     }
   ],
   "frontMatter.git.enabled": true,
-  "frontMatter.website.host": "https://www.petersell.de"
+  "frontMatter.website.host": "http://localhost:1313/"
 }

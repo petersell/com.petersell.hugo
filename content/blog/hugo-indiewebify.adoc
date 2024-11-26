@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "Indiewebify my Hugo-Site"
 date: 2017-07-06
-draft: false
+draft: true
 
 categories:
     - "blogging"

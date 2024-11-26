@@ -220,6 +220,11 @@ blockquote > div.paragraph {
     color: var(--background);
 }
 
+blockquote {
+    font-style: italic;
+    background: var(--background-quote);
+}
+
 div.attribution {
     font-style: italic;
     color: var(--background);
