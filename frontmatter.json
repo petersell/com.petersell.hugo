@@ -28,7 +28,72 @@
           "title": "author",
           "name": "author",
           "type": "string",
-          "default": "Andreas Petersell"
+          "default": "Andreas Petersell",
+          "hidden": "true"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "title": "lastMod",
+          "name": "lastMod",
+          "type": "datetime"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string",
+          "hidden": "true"
+        }
+      ]
+    }
+    {
+      "name": "status",
+      "pageBundle": false,
+      "previewPath": "status",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Cover",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string",
+          "default": "Andreas Petersell",
+          "hidden": "true"
         },
         {
           "title": "date",
@@ -79,6 +144,6 @@
       "path": "[[workspace]]/content/status"
     }
   ],
-  "frontMatter.git.enabled": true,
+  "frontMatter.git.enabled": false,
   "frontMatter.website.host": "http://localhost:1313/"
 }

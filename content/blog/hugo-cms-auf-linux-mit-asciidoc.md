@@ -10,6 +10,7 @@ categories:
   - blogging
 tags:
   - hugo
+  - asciidoc
 fmContentType: blog
 ---
 

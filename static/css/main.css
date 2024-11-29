@@ -106,17 +106,17 @@ h1.logo {
 }
 
 h1 {
-    color: var(--background);
+    color: var(--background-light);
 }
 
 h2 {
     margin-top: 2em;
-    color: var(--background);
+    color: var(--background-light);
 }
 
 h3, h4 {
     margin-top: 1.5em;
-    color: var(--background);
+    color: var(--background-light);
 }
 
 a:link    { 
@@ -128,23 +128,23 @@ a:visited {
 }
 
 a:focus   { 
-    color: var(--background);
+    color: var(--background-light);
 }
 a:hover   {
-    color: var(--background);
+    color: var(--background-light);
 }
 
 a:active  {
-    color: var(--background);
+    color: var(--background-light);
 }
 
 h3 > a:link {
-    color: var(--background);
+    color: var(--background-light);
     text-decoration: none;
 }
 
 h3 > a:visited {
-    color: var(--background);
+    color: var(--background-light);
     text-decoration: none;
 }
 
@@ -223,6 +223,10 @@ blockquote > div.paragraph {
 blockquote {
     font-style: italic;
     background: var(--background-quote);
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 8px;
+    margin: 5px;
 }
 
 div.attribution {
@@ -404,9 +408,11 @@ p.copyright {
 .post-title {
     font-size: calc(var(--fontSize) * 2);
     line-height: calc(var(--fontSize) * 3);
+    color: var(--background-light);
 }
 
 .status-title {
     font-size: calc(var(--fontSize) * 1.5);
     line-height: calc(var(--fontSize) * 2.5);
+    color: var(--background-light);
 }
