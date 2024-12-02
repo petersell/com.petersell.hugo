@@ -5,7 +5,7 @@ image: ""
 author: Andreas Petersell
 date: 2024-12-02T18:13:16.066Z
 lastMod: null
-draft: true
+draft: false
 categories:
     - blogging
 tags:
