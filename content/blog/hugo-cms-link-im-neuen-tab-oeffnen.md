@@ -1,6 +1,6 @@
 ---
 title: Hugo - Link im neuen Tab öffnen lassen
-description: Einen Link in Markdown erstellen, der im neuen Tab öffnet
+description: Einen Link in Markdown erstellen - der im neuen Tab öffnet
 image: ""
 author: Andreas Petersell
 date: 2024-12-02T18:13:16.066Z
