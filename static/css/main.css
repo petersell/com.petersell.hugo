@@ -274,6 +274,11 @@ pre {
     font-size: 0.9em;
 }
 
+code {
+    overflow: auto;
+    line-height: 1.4rem;
+}
+
 /*img, video, audio, iframe {
     width: 100%;
     height: auto;

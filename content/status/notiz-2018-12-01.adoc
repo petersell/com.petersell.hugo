@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Notiz"
+title: Notiz - Lügen
 date: 2018-12-01
 //headless: yes
-
 categories:
-    - "notizen"
-tags: 
-    - "familie" 
+    - notizen
+tags:
+    - familie
 ---
 
 [quote, Der HERR]

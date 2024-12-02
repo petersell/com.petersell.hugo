@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: "There Is No Why in a Team"
 date: 2018-10-08
-draft: true
+draft: false
 
 categories:
     - "zitate"

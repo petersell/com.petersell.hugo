@@ -15,6 +15,11 @@ fmContentType: status
 
 Keine Überschrift zweiter Ordnung Hier der Text
 
+Folgezettel
+
+- [https://petersell.de](petersell.de)
+- [Status A]({{< ref "/content/status/status-a.md" >}})
+
 > Hier ein Zitat.
 
 ```

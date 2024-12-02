@@ -68,6 +68,9 @@ tag = "tags"
     [mediaTypes."application/rss+xml"]
         suffixes = ["rss", "rss.xml"] # You can remove the "rss.xml" if you want
 
+[markup.goldmark.renderer]
+unsafe = true
+
 
 # Including all of the feed output formats in the build
 [outputFormats]
