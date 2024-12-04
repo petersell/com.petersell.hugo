@@ -36,7 +36,7 @@ unsafe = true
 
 **(1)** - Einen neuen Ordner `shortcodes` im Hugo-Verzeichnis `layouts` erstellen
 
-**(2)** - Im neuen Verzeichnis eine neue HTML-Datei erstellen. Ich nennen sie wie im Beispiel `a_blank.html`
+**(2)** - Im neuen Verzeichnis eine neue HTML-Datei erstellen. Ich nenne sie wie im Beispiel `a_blank.html`
 
 **(3)** - Darin hineinkopieren:
 
