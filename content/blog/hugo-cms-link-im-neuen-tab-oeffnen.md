@@ -22,7 +22,7 @@ Quelle: [How to target blank in md?](https://discourse.gohugo.io/t/how-to-target
 
 ### Anleitung
 
-Das Attribut `target="_blank"` kann man mit Hilfe von Shortcodes in einer HTML-Datei realisieren.
+Das Attribut `target="_blank"` kann man mit Hilfe von Hugo-Shortcodes realisieren.
 
 #### Voraussetzung
 
@@ -34,22 +34,22 @@ unsafe = true
 ```
 #### Arbeitsschritte
 
-**(1)** - Einen neuen Ordner `shortcodes` im Hugo-Verzeichnis `layouts` erstellen
+**(1)** - Erstellen Sie einen neuen Ordner `shortcodes` im Hugo-Verzeichnis `layouts`.
 
-**(2)** - Im neuen Verzeichnis eine neue HTML-Datei erstellen. Ich nenne sie wie im Beispiel `a_blank.html`
+**(2)** - Erstellen Sie im neuen Verzeichnis eine neue HTML-Datei. Ich nenne sie wie im Beispiel unter Quellen `a_blank.html`.
 
-**(3)** - Darin hineinkopieren:
+**(3)** - Fügen Sie diesen Code hinein:
 
 ```
 <a target="_blank" href="{{ .Get 1 }}">{{ .Get 0 | markdownify }}</a>
 ```
-**(4)** - In der eigentlichen Markdown-Content-Datei muss der Shortcode folgendermaßen eingebunden werden:
+**(4)** - In der eigentlichen Markdown-Content-Datei fügen Sie den Shortcode folgendermaßen ein:
 
 ```
 {{% a_blank "Shortcodes linking" "https://www.petersell.de" %}}
 ```
 
-Klickt man jetzt auf diesen Link *Shortcodes linking* mit der URL www.petersell.de, öffnet sich die Webseite in einem neuen Tab.
+Klickt man jetzt auf diesen Link {{% a_blank "Shortcodes linking" "https://www.petersell.de"%}}, öffnet sich die Webseite in einem neuen Tab.
 
 #### Weitere Quellen
 - [Raw HTML omitted Fehler](https://discourse.gohugo.io/t/hugo-0-60-0-raw-html-omitted-issue/22010/7)

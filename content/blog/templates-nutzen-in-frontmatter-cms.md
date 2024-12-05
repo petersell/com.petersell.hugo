@@ -1,6 +1,6 @@
 ---
 title: Templates nutzen in FrontMatter CMS
-description: Templates erstellen und nutzen in Headless FrontMatter CM
+description: Templates erstellen und nutzen in Headless FrontMatter CMS
 image: ""
 author: Andreas Petersell
 date: 2024-12-04T19:41:27.963Z
@@ -13,14 +13,14 @@ tags:
 fmContentType: blog
 ---
 
-Bisher habe ich meine Asciidoc- und Markdown-Dateien in VSCode erstellt. Das macht aber nicht so viel Spaß. Nun habe ich das [Headless-CMS](https://route360.dev/en/post/frontmatter-cms/) FrontMatter entdeckt. Statt zu tippen klicke ich jetzt Schaltflächen an.
+Bisher habe ich meine Asciidoc- und Markdown-Dateien in VSCode erstellt. Das macht aber nicht so viel Spaß. Nun habe ich das [Headless-CMS](https://route360.dev/en/post/frontmatter-cms/) FrontMatter entdeckt. Statt zu tippen klicke ich jetzt auf Schaltflächen.
 <!--more-->
 
-Erstellen Sie schnell auf Grundlage einer Markdown-Datei (template) eine Kopie dieser mit neuem Dateinamen. Die Dokumentation spricht zwar vom Einsatz von Templates. Aber nirgendwo steht etwas, wie man die eingerichteten Templates benutzt! Bis ich die Vorgehensweise zufällig im Video *How you can use content-types in Front Matter CMS* vom Entwickler Elio Struyf entdeckte.
+Erstellen Sie schnell auf Grundlage einer Markdown-Datei (template) eine Kopie dieser mit neuem Dateinamen. Die Dokumentation spricht zwar vom Einsatz von Templates. Aber nirgendwo steht, wie man die eingerichteten Templates benutzt! Bis ich die Vorgehensweise zufällig im Video *How you can use content-types in Front Matter CMS* vom Entwickler Elio Struyf entdeckte.
 
 ### Tipp
 
-Wenn Sie vorhaben, über die Schaltfläche *Create Template ein Template* zu erstellen, sichern Sie sich zuvor die Datei `frontmatter.json`. Denn diese Vorgehensweise überschreibt gern diese Datei. Die folgende Anleitung verzichtet auf den Einsatz dieser Aktionsschaltfläche.
+Wenn Sie vorhaben, über die Schaltfläche *Create Template* ein Template zu erstellen, sichern Sie sich zuvor die Datei `frontmatter.json`. Denn diese Vorgehensweise überschreibt gern diese Datei. Die folgende Anleitung verzichtet auf den Einsatz dieser Aktionsschaltfläche.
 
 ### Template erstellen
 
@@ -34,7 +34,7 @@ Sie können beliebig viele Template-Dateien erstellen. Beim Benutzen der Templat
 
 ### Template benutzen
 
-**(1)** - Klicken Sie in der linken Symbolschaltflächen-Leiste auf das Icon *Explorer* und wechseln in den VSCode-Dateiexplorer.
+**(1)** - Klicken Sie in der linken Symbolschaltflächen-Leiste auf das Icon *Explorer* und wechseln Sie in den VSCode-Dateiexplorer.
 
 **(2)** - Machen Sie einen rechten Mausklick auf den Content-Ordner, in der die neue Markdown-Datei angelegt werden soll. Z.B. `content/blog`.
 
