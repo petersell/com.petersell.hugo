@@ -18,9 +18,9 @@ Bisher habe ich meine Asciidoc- und Markdown-Dateien in VSCode erstellt. Das mac
 
 Erstellen Sie schnell auf Grundlage einer Markdown-Datei (template) eine Kopie dieser mit neuem Dateinamen. Die Dokumentation spricht zwar vom Einsatz von Templates. Aber nirgendwo steht, wie man die eingerichteten Templates benutzt! Bis ich die Vorgehensweise zufällig im Video *How you can use content-types in Front Matter CMS* vom Entwickler Elio Struyf entdeckte.
 
-### Tipp
-
+{{< notice tip >}}
 Wenn Sie vorhaben, über die Schaltfläche *Create Template* ein Template zu erstellen, sichern Sie sich zuvor die Datei `frontmatter.json`. Denn diese Vorgehensweise überschreibt gern diese Datei. Die folgende Anleitung verzichtet auf den Einsatz dieser Aktionsschaltfläche.
+{{< /notice >}}
 
 ### Template erstellen
 

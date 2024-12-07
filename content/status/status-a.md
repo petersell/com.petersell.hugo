@@ -18,6 +18,14 @@ Quelle: [Kühl (2011:32)](https://search.worldcat.org/de/title/1144163086)
 
 ***
 
+{{< notice warning >}}
+This is a warning notice. Be warned!
+{{< /notice >}}
+
+{{< notice tip >}}
+This is a tip notice. Be warned!
+{{< /notice >}}
+
 #### Folgezettel
 
 - [Status A]({{< ref "/content/status/mein-erster-frontmatter-status.md" >}})

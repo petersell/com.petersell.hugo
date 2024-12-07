@@ -1,0 +1,20 @@
+- id: warning
+  translation: "Warnung"
+- id: note
+  translation: "Anmerkung"
+- id: info
+  translation: "Voraussetzung"
+- id: tip
+  translation: "Tipp"
+- id: back_to_home
+  translation: "Zur Startseite"
+- id: first_page
+  translation: "Erste Seite"
+- id: prev_page
+  translation: "Vorherige Seite"
+- id: next_page
+  translation: "Nächste Seite"
+- id: last_page
+  translation: "Letzte Seite"
+- id: categories
+  translation: "Themen"
