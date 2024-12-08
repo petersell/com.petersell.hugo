@@ -24,15 +24,14 @@ Quelle: [How to target blank in md?](https://discourse.gohugo.io/t/how-to-target
 
 Das Attribut `target="_blank"` kann man mit Hilfe von Hugo-Shortcodes realisieren.
 
-#### Voraussetzung
-
+{{< notice info >}}
 Damit HTML-Code innerhalb der Markdown-Datei gerendert wird, muss einmalig in der `config.toml` folgender Eintrag gemacht werden:
 
 ```
 [markup.goldmark.renderer]
 unsafe = true
 ```
-#### Arbeitsschritte
+{{< /notice >}}
 
 **(1)** - Erstellen Sie einen neuen Ordner `shortcodes` im Hugo-Verzeichnis `layouts`.
 

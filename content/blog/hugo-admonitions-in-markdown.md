@@ -32,7 +32,7 @@ Sie müssen in der `config.toml` angeben, ob Sie auf Ihrer Webseite mit einer St
 
 **(1)** - Laden Sie das Zip-Archiv vom [git-Repository hugo-notice](https://github.com/martignoni/hugo-notice) herunter und entpacken Sie es.
 
-**(2)** - Legen Sie die Datei `notice.hmtl` in den Ordner `layouts/shortcodes` ab.
+**(2)** - Legen Sie die Datei `notice.html` in den Ordner `layouts/shortcodes` ab.
 
 **(3)** - Kopieren Sie den Ordner `icons` in Ihren Hauptordner des Repositorys, also auf gleicher Ebene wie den den Ordner `layouts`.
 
