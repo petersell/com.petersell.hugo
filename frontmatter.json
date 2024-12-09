@@ -64,7 +64,7 @@
           "hidden": "true"
         }
       ]
-    }
+    },
     {
       "name": "status",
       "pageBundle": false,
@@ -145,5 +145,48 @@
     }
   ],
   "frontMatter.git.enabled": false,
-  "frontMatter.website.host": "http://localhost:1313/"
+  "frontMatter.website.host": "http://localhost:1313/",
+  "frontMatter.content.snippets": {
+    "Admonition - Voraussetzung": {
+      "description": "Gelber Rahmen - Voraussetzung",
+      "body": [
+        "{{< notice info >}}",
+        "Damit HTML-Code innerhalb der Markdown-Datei gerendert wird, muss einmalig in der `config.toml` folgender Eintrag gemacht werden:",
+        "",
+        "```",
+        "[markup.goldmark.renderer]",
+        "unsafe = true",
+        "```",
+        "{{< /notice >}}"
+      ],
+      "fields": []
+    },
+    "Admonition - Warnung": {
+      "description": "Roter Rahmen - Warnung",
+      "body": [
+        "{{< notice warning >}}",
+        "This is a warning notice. ",
+        "{{< /notice >}}"
+      ],
+      "fields": []
+    },
+    "Admonition - Tipp": {
+      "description": "Gründer Rahmen - Tipp",
+      "body": [
+        "{{< notice tip >}}",
+        "This is a tip notice. Be warned!",
+        "{{< /notice >}}"
+      ],
+      "fields": []
+    },
+    "Admonition - Notiz": {
+      "description": "Blauer Rahmen - Notiz",
+      "body": [
+        "{{< notice note >}}",
+        "This is a tip notice. Be warned!",
+        "{{< /notice >}}"
+      ],
+      "fields": []
+    }
+  }
 }

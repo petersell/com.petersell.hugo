@@ -40,3 +40,21 @@ This is a tip notice. Be warned!
 - [Wie zufrieden bist Du?]({{< ref "/content/blog/leben-wie-zufrieden-bist-du.adoc" >}})
 - [Zettelübersicht]({{< ref "/content/status/zetteluebersicht.md" >}})
 - {{% a_blank "Shortcodes linking" "https://www.petersell.de" %}}
+
+#### Snippet einfügen
+
+<!-- FM:Snippet:Start data:{"id":"Admonition - Voraussetzung","fields":[]} -->
+{{< notice info >}}
+Damit HTML-Code innerhalb der Markdown-Datei gerendert wird, muss einmalig in der `config.toml` folgender Eintrag gemacht werden:
+
+```
+[markup.goldmark.renderer]
+unsafe = true
+```
+{{< /notice >}}
+<!-- FM:Snippet:End -->
+
+Zitat Info
+
+> [!info]
+> Hier ist alles blau.

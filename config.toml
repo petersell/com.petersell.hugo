@@ -40,12 +40,6 @@ copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennun
     weight = 40
 
   [[menu.main]]
-    name = "Blogarchiv"
-    identifier = "blogarchiv"
-    url = "/archive/blog/"
-    weight = 50
-
-  [[menu.main]]
     identifier = "about"
     name = "Über"
     url = "/homepage/about/"
