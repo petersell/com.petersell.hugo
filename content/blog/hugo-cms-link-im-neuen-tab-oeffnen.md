@@ -45,7 +45,7 @@ unsafe = true
 **(4)** - In der eigentlichen Markdown-Content-Datei fügen Sie den Shortcode folgendermaßen ein:
 
 ```
-{{% a_blank "Shortcodes linking" "https://www.petersell.de" %}}
+{{%/* a_blank "Shortcodes linking" "https://www.petersell.de" */%}}
 ```
 
 Klickt man jetzt auf diesen Link {{% a_blank "Shortcodes linking" "https://www.petersell.de"%}}, öffnet sich die Webseite in einem neuen Tab.
