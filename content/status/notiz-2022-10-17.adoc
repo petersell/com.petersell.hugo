@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: "Notiz - Schattenarbeit"
+title: "Erlebt - Schattenarbeit"
 date: 2022-10-17
 draft: false
 

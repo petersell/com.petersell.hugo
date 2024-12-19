@@ -2,6 +2,7 @@
 title: Drei Bedingungen für den Erfolg eines Zettelkastens
 author: Andreas Petersell
 date: 2024-02-25
+lastMod: 2024-12-19 
 headless: false
 draft: false
 categories:
@@ -22,6 +23,8 @@ Ein **Zettel** ist eine mit eigenen Worten formulierte Idee oder ein Gedanke, de
 
 ## Bedingung 2
 Sie müssen die *Flüchtigen Notizen* und die permanenten *Lektürenotizen* streng von den ausformulierten *Zetteln* trennen. Beide sind nicht aus eigenen Fragestellungen und Gedanken entstanden.
+
+*Update 2024-12-19:* Sie müssen gar nichts trennen. Im Gegenteil. Sie dürfen nur nicht vergessen, aus den Lektürezetteln (Zitate) neue, eigene Hauptzettel/Main Notes zu entwickeln.
 
 ## Bedingung 3
 Werten Sie *Lektürenotizen* und *Flüchtige Notizen* aus: schreiben Sie in dauerhaft verständlicher Form jeweils einen Gedanken auf einen Zettel inkl. Quellenangaben. Durch das Fragestellen, das Einsortieren (Folgezettel),  das Verlinken, das Formulieren in eigenen Worten, das Erstellen von Tags wird der Zettelkasten zu einer Art *Schreibturbo*.

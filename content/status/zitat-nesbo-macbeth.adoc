@@ -8,6 +8,8 @@ categories:
     - "zitate"
 tags: 
     - "readinglist"
+signaturen:
+    - nesboe-2018
 ---
 
 [quote, Jo Nesbö: MacBeth, München 2018 (S. 364)]

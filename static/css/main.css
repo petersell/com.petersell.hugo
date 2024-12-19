@@ -158,6 +158,10 @@ h3 > a:active {
     text-decoration: none;
 }
 
+strong {
+    color: var(--background-light);
+}
+
 article.post::after {
     display: block;
     position: relative;
@@ -226,7 +230,8 @@ blockquote {
     padding: 1rem;
     overflow: auto;
     border-radius: 8px;
-    margin: 5px;
+    margin-bottom: 2rem;
+    margin-left: 5px;
 }
 
 div.attribution {
@@ -276,6 +281,12 @@ pre {
 
 code {
     overflow: auto;
+    line-height: 1.4rem;
+}
+
+.hauptzettel {
+    padding: 1rem;
+    border: var(--background) solid 1px;
     line-height: 1.4rem;
 }
 

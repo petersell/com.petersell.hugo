@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: "Notiz - Kurze Hosen"
+title: "Erlebt - Kurze Hosen"
 date: 2019-07-25
 draft: false
 
