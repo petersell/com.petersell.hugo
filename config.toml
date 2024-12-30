@@ -3,7 +3,7 @@ languageCode = "de"
 defaultContentLanguage = 'de'
 title = "Andreas Petersell"
 paginate = 10
-copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/)."
+copyright = "Die Blogposts, Statusmeldungen und Zettel stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/). Romanauszüge: Alle Rechte beim Autor."
 
 [author]
   name = "Andreas Petersell"
@@ -40,12 +40,18 @@ copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennun
     weight = 40
 
   [[menu.main]]
-    identifier = "about"
-    name = "Über"
-    url = "/homepage/about/"
-    weight = 60  
+    identifier = "quellen"
+    name = "Literatur"
+    url = "/quellen/"
+    weight = 50
 
-   [[menu.main]]
+  [[menu.main]]
+    identifier = "zettelkasten"
+    name = "Zettelkasten"
+    url = "/zettelkasten/zetteluebersicht"
+    weight = 60    
+
+  [[menu.main]]
     identifier = "impressum"
     name       = "Impressum"
     url        = "/homepage/impressum/"
@@ -54,6 +60,7 @@ copyright = "Die Blogbeiträge stehen unter einer [Creative Commons Namensnennun
 [taxonomies]
 category = "categories"
 tag = "tags"
+signatur = "signaturen"
 
 [mediaTypes]
     [mediaTypes."application/atom+xml"]

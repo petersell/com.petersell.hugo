@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            <nav>
+                <ul>
+                {{ range $.Site.Menus.main -}}
+                <li class="nav-list"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                {{ end }}
+                </ul>
+            </nav>
+            <h1 class="logo"><img src={{ "petersell-logo.png" | absURL }}>&nbsp;{{ $.Site.Title }}</h1> 
+        </header>
+      <main>
+      <div>
+      {{ $type := .Type }}
+      {{ $.Scratch.Set "count" 1 }}
+        {{ range (.Site.RegularPages.GroupByDate "2006") }}
+          <!-- {{ if (gt .Key 2000) }} -->
+            {{ range (where .Pages "Type" $type) }}
+              {{ if (eq ($.Scratch.Get "count") 1) }}
+                {{ $.Scratch.Set "count" 0 }}
+                <h2>{{ .Date.Format "2006" }}</h2>
+              {{ end }}
+            {{ end }}
+            {{ $.Scratch.Set "count" 1 }}
+              <ul class="article__list">
+              {{ range (where .Pages "Type" $type) }}
+                {{ if (ne .Params.hidden true) }}
+                  <li>
+                    <a href="{{ .RelPermalink }}">
+                      {{ .Date.Format "02.01." }} —                 {{ .Title }}
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+        <!-- {{ end }} -->
+      {{ end }}
+    </div>
+  </main>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>

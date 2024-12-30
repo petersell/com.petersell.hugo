@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ .Content }}
+
+<h2>{{ .Title }}</h2>
+<p>Signatur: {{ .Params.signatur }}</p>
+<ul>
+  {{ range .Data.Terms }}
+  <li>
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title | humanize }}</a> ({{ .Count }})
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -7,8 +7,7 @@ draft: true
 categories:
     - "blogging"
 tags: 
-    - "hugo"
-    - "indieweb"    
+    - "hugo"   
 ---
 
 :imagesdir: ../images/hugo-indiewebify/

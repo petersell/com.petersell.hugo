@@ -128,6 +128,150 @@
           "hidden": "true"
         }
       ]
+    },
+    {
+      "name": "quellen",
+      "pageBundle": false,
+      "previewPath": "quellen",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "signatur",
+          "name": "signatur",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Cover",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string",
+          "default": "Andreas Petersell",
+          "hidden": "true"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "title": "lastMod",
+          "name": "lastMod",
+          "type": "datetime"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories",
+          "default": "quellen"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string",
+          "hidden": "true"
+        }
+      ]
+    },
+    {
+      "name": "zettelkasten",
+      "pageBundle": false,
+      "previewPath": "zettelkasten",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "zettelnummer",
+          "name": "zettelnummer",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Cover",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string",
+          "default": "Andreas Petersell",
+          "hidden": "true"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "title": "lastMod",
+          "name": "lastMod",
+          "type": "datetime"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories",
+          "default": "zettelkasten"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string",
+          "hidden": "true"
+        },
+        {
+          "title": "zettelnummer",
+          "name": "zettelnummer",
+          "type": "string",
+          "default": "nicht vorhanden"
+        },
+        {
+          "title": "seite",
+          "name": "seite",
+          "type": "string",
+          "default": "nicht angeben"
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "hugo",
@@ -142,6 +286,14 @@
     {
       "title": "status",
       "path": "[[workspace]]/content/status"
+    },
+    {
+      "title": "quellen",
+      "path": "[[workspace]]/content/quellen"
+    },
+    {
+      "title": "zettelkasten",
+      "path": "[[workspace]]/content/zettelkasten"
     }
   ],
   "frontMatter.git.enabled": false,
@@ -171,7 +323,7 @@
       "fields": []
     },
     "Admonition - Tipp": {
-      "description": "Gründer Rahmen - Tipp",
+      "description": "Grüner Rahmen - Tipp",
       "body": [
         "{{< notice tip >}}",
         "This is a tip notice. Be warned!",
@@ -185,6 +337,31 @@
         "{{< notice note >}}",
         "This is a tip notice. Be warned!",
         "{{< /notice >}}"
+      ],
+      "fields": []
+    },
+    "Hauptzettel": {
+      "description": "Eigene Gedanken in Courier.",
+      "body": [
+        "{{< hauptzettel >}}",
+        "Hier ein neuer Absatz.",
+        "{{< /hauptzettel >}}"
+      ],
+      "fields": []
+    },
+    "Link intern": {
+      "description": "Link zu einer Zettelseite",
+      "body": "[Status A]({{</* ref \"/content/zettelkasten/zettelkasten.md\" */>}})",
+      "fields": []
+    },
+    "Zettel - Linkliste": {
+      "description": "Linksection unterhalb Folgezettel",
+      "body": [
+        "**Links**",
+        "",
+        "- [Intern Zettel]({{< ref \"/content/zettelkasten/mein-erster-frontmatter-status.md\" >}})",
+        "- [Intern Blogpost]({{< ref \"/content/blog/leben-wie-zufrieden-bist-du.adoc\" >}})",
+        "- {{% a_blank \"Extern Webseite\" \"https://www.petersell.de\" %}}"
       ],
       "fields": []
     }

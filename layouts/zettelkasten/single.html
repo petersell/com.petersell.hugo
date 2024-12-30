@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            <nav>
+                <ul>
+                {{ range $.Site.Menus.main -}}
+                <li class="nav-list"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                {{ end }}
+                </ul>
+            </nav>
+            <h1 class="logo"><img src={{ "petersell-logo.png" | absURL }}>&nbsp;{{ $.Site.Title }}</h1> 
+        </header>
+        
+        <main>
+            <!-- title and author added to status post again -->
+            <h3 class="status-title"><div class="h-entry">{{ .Title }}</div></h3>
+            <p class="author">Zettelnummer {{ $.Params.Zettelnummer }} vom <date datetime="{{ .Date.Format "02.01.2006" }}">{{ .Date.Format "02.01.2006" }}</date></p>
+            {{ if .IsTranslated }}
+            <div>
+            {{ i18n "available_translations" }}: 
+            {{ range .Translations }}
+            <a href="{{ .Permalink }}">{{ .Lang }}</a>
+            {{ end }}
+            </div>
+            {{ end }}
+            {{ if .Params.signaturen }}
+            <ul class="article-tags">
+                {{ range .Params.signaturen }}
+                    <li>Quelle: <a href="{{ "quellen/" | absURL }}{{ . }}">{{ . }}</a> - Seite {{ $.Params.Seite }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            <article>   
+            {{ .Content }}
+            <!-- backlinks from https://garrido.io/notes/hugo-backlinks/ -->
+            <p><strong>Elternzettel + Backlinks</strong></p>  
+            {{- partial "inbound-links" . -}}
+            <!-- tags from articleInfoFull.html -->
+            {{ if .Params.tags }}
+                <ul class="article-tags">
+                   <li><strong>Tags </strong></li> 
+                </ul>
+                <ul class="article-tags">
+                    {{ range .Params.tags }}
+                        <li><a href="{{ "tags/" | absURL }}{{ . }}">#{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+                      
+            </article>
+            </main>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+
+
