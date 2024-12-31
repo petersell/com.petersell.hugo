@@ -24,4 +24,4 @@ Das Besondere an der Mitgliedschaftserwartung ist, dass diese bereits dann verle
 Wer eine Weisung seines Vorgesetzten nicht annimmt oder einer Vorschrift aus Prinzip die Annerkennung verweigert, rebelliert gegen alle Erwartungen der Organisation.
 ***
 
-**Folgezettel** - [Produktion von Konformität]({{< ref "/content/zettelkasten/produktion-von-konformitaet.md" >}})
+**Folgezettel** - [Produktion von Konformität]({{< ref "produktion-von-konformitaet" >}})

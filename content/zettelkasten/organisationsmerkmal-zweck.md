@@ -21,4 +21,4 @@ Jedes Unternehmen produziert Güter in Form von Waren und Dienstleistungen, um d
 <!--more-->
 ***
 
-**Folgezettel** - [Mit Geld an Organisation binden]({{< ref "/content/zettelkasten/mit-geld-an-organisation-binden.md" >}})
+**Folgezettel** - [Mit Geld an Organisation binden]({{< ref "/mit-geld-an-organisation-binden" >}})

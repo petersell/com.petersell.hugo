@@ -24,11 +24,11 @@ Sie entscheiden, wer nicht mehr Mitglied sein darf, weil er die Regeln der Organ
 
 **Folgezettel**
 
-- [Aufwerfen der Mitgliedschaftsfrage]({{< ref "/content/zettelkasten/aufwerfen-der-mitgliedschaftsfrage.md" >}})
-- [Mitgliedsschaftsautonomie]({{< ref "/content/zettelkasten/mitgliedsschaftsautonomie.md" >}})
+- [Aufwerfen der Mitgliedschaftsfrage]({{< ref "/aufwerfen-der-mitgliedschaftsfrage" >}})
+- [Mitgliedsschaftsautonomie]({{< ref "/mitgliedsschaftsautonomie" >}})
 
 <!-- FM:Snippet:Start data:{"id":"Zettel - Linkliste","fields":[]} -->
 **Links**
 
-- [Mit Geld an Organisation binden]({{< ref "/content/zettelkasten/mit-geld-an-organisation-binden.md" >}})
+- [Mit Geld an Organisation binden]({{< ref "/mit-geld-an-organisation-binden" >}})
 <!-- FM:Snippet:End -->

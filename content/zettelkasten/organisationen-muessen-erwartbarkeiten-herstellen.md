@@ -21,9 +21,9 @@ Organisationen müssen nach innen Erwartbarkeiten herstellen. Der Sinn einer Org
 <!--more-->
 ***
 
-**Folgezettel** - [Erwartungen formalisieren]({{< ref "/content/zettelkasten/erwartungen-formalisieren.md" >}})
+**Folgezettel** - [Erwartungen formalisieren]({{< ref "/erwartungen-formalisieren" >}})
 
 **Links**
 
-- [Organisationsmerkmal Hierarchie]({{< ref "/content/zettelkasten/organisationsmerkmal-hierarchie.md" >}})
-- [Aufwerfen der Mitgliedschaftsfrage]({{< ref "/content/zettelkasten/aufwerfen-der-mitgliedschaftsfrage.md" >}})
+- [Organisationsmerkmal Hierarchie]({{< ref "/organisationsmerkmal-hierarchie" >}})
+- [Aufwerfen der Mitgliedschaftsfrage]({{< ref "/aufwerfen-der-mitgliedschaftsfrage" >}})

@@ -22,7 +22,7 @@ zettelnummer: nicht vorhanden
 - **[2.2 - Funktionale Analyse]({{< ref "/funktionale-analyse" >}})**
     - [2.2a - Kontingenz - es könnte auch anders sein]({{< ref "/kontingenz-es-koennte-auch-anders-sein" >}})
     - [2.2b - System - wechselseitige Abhängigkeit von Einzelelementen]({{< ref "/system-wechselseitige-abhaengigkeit-von-einzelelementen" >}})
-- **[2.3 - Soziales System]({{< ref "/soziales-system" >}})**
+- **[2.3 - Soziales System]({{< ref "/soziales-system-ist-operativ-geschlossen" >}})**
     - [2.3a - Soziales System besteht aus Kommunikation]({{< ref "/soziales-system-besteht-aus-kommunikation" >}})
     - [2.3a1 - Kommunikation statt Handlung im Fokus]({{< ref "/kommunikation-statt-handlung-im-fokus" >}})
     - [2.3a1a - Handlungen nie ganz unter Kontrolle]({{< ref "/handlungen-nie-ganz-unter-kontrolle" >}})

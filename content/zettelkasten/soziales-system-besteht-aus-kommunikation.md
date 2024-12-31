@@ -22,4 +22,4 @@ Aus welchen Elementen setzen sich Soziale Systeme zusammen? Man könnte an Mensc
 
 ***
 
-**Folgezettel** - [Kommunikation statt Handlung im Fokus]({{< ref "/content/zettelkasten/kommunikation-statt-handlung-im-fokus.md" >}})
+**Folgezettel** - [Kommunikation statt Handlung im Fokus]({{< ref "/kommunikation-statt-handlung-im-fokus" >}})

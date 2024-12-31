@@ -22,7 +22,7 @@ Seine Kommunikationstheorie beginnt nicht mit der Frage nach den Kommunikationst
 
 ***
 
-**Folgezettel** - [Intransparenz ist Bedingung für Kommunikation]({{< ref "/content/zettelkasten/intransparenz-ist-bedingung-fuer-kommunikation.md" >}})
+**Folgezettel** - [Intransparenz ist Bedingung für Kommunikation]({{< ref "/intransparenz-ist-bedingung-fuer-kommunikation" >}})
 
 **Links**
 

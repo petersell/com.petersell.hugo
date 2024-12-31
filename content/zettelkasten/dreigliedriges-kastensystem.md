@@ -26,5 +26,5 @@ Das Wort *Kastensystem* ist hartherzig, impliziert aber am besten, dass es in ei
 <!--more-->
 **Folgezettel**
 
-- [Mindestens drei Ebenen]({{< ref "/content/zettelkasten/mindestens-drei-ebenen.md" >}})
-- [Dezentrales Kastensystem]({{< ref "/content/zettelkasten/dezentrales-kastensystem.md" >}})
+- [Mindestens drei Ebenen]({{< ref "/mindestens-drei-ebenen" >}})
+- [Dezentrales Kastensystem]({{< ref "/dezentrales-kastensystem" >}})
