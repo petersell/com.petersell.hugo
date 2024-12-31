@@ -1,5 +1,5 @@
 ---
-title: Soziales System
+title: Soziales System ist operativ geschlossen
 image: ""
 author: Andreas Petersell
 date: 2024-12-12T06:48:55.463Z
@@ -8,7 +8,7 @@ draft: false
 categories:
     - zettel
 tags:
-    - soziales system
+    - system
 signaturen:
     - mueller-2016
 seite: 28

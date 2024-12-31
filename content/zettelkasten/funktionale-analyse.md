@@ -22,4 +22,4 @@ Luhmann fragt also nicht, ob A automatisch B bewirkt, sondern ob es für A nicht
 
 ***
 
-**Folgezettel** - [Kontingenz]({{< ref "/content/zettelkasten/kontingenz.md" >}})
+**Folgezettel** - [Kontingenz]({{< ref "/kontingenz-es-koennte-auch-anders-sein" >}})

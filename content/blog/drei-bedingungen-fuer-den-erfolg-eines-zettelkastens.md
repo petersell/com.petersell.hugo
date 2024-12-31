@@ -14,7 +14,7 @@ tags:
 Die Zettelkastenmethode erhält seit einigen Jahren in der Blogosphäre viel Aufmerksamkeit. Nicht immer ist das Fazit ein gutes. So manch einer wendet sich vom Zettelkastenprinzip wieder ab.
 <!--more-->
 
-Brauche ich auch einen [Zettelkasten]({{< ref "/content/zettelkasten/zetteluebersicht.md" >}})? Wenn ja, welche Mindestbedingungen müssen erfüllt sein, damit ein Zettelkasten funktioniert?
+Brauche ich auch einen [Zettelkasten]({{< ref "/zetteluebersicht" >}})? Wenn ja, welche Mindestbedingungen müssen erfüllt sein, damit ein Zettelkasten funktioniert?
 
 ## Bedingung 1
 Ein Zettelkasten ist nur von Nutzen, wenn Sie in Zukunft Texte schreiben wollen.
