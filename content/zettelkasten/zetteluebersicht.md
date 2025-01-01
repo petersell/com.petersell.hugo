@@ -15,12 +15,13 @@ zettelnummer: nicht vorhanden
 <!--more-->
 #### 1. Bedeutungslosigkeit
 - **[1.1 - Bedeutungslosigkeit lieben]({{< ref "/bedeutungslosigkeit-lieben" >}})**
-
+    - [1.1a - Gutes Verhältnis zum Schicksal]({{< ref "/gutes-verhaeltnis-zum-schicksal" >}})
 #### 2. Soziologie
 - **[2.1 - Zwei Wege einer Theorie]({{< ref "/zwei-wege-einer-theorie" >}})**
     - [2.1a - Universalität der Gegenstandserfassung]({{< ref "/universalitaet-der-gegenstandserfassung" >}})
 - **[2.2 - Funktionale Analyse]({{< ref "/funktionale-analyse" >}})**
     - [2.2a - Kontingenz - es könnte auch anders sein]({{< ref "/kontingenz-es-koennte-auch-anders-sein" >}})
+    - [2.2a1 - Gutes Verhältnis zum Schicksal]({{< ref "/gutes-verhaeltnis-zum-schicksal" >}})
     - [2.2b - System - wechselseitige Abhängigkeit von Einzelelementen]({{< ref "/system-wechselseitige-abhaengigkeit-von-einzelelementen" >}})
 - **[2.3 - Soziales System]({{< ref "/soziales-system-ist-operativ-geschlossen" >}})**
     - [2.3a - Soziales System besteht aus Kommunikation]({{< ref "/soziales-system-besteht-aus-kommunikation" >}})

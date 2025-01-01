@@ -22,10 +22,9 @@ Das hier ist der Zettelinhalt. Hier kommt ein ganz schlauer Absatz. Hier endet d
 > Hier ist graues Zitat
 ***
 
-**Folgezettel** - [Status A]({{</* ref "/content/zettelkasten/zetteluebersicht.md" */>}})
+**Folgezettel** - [Status A]({{</* ref "/zetteluebersicht" */>}})
 
 **Links**
 
-- [Intern Zettel]({{< ref "/content/zettelkasten/zetteluebersicht.md" >}})
-- [Intern Blogpost]({{< ref "/content/blog/leben-wie-zufrieden-bist-du.adoc" >}})
+- [Intern Zettel]({{< ref "/zetteluebersicht" >}})
 - {{% a_blank "Extern Webseite" "https://www.petersell.de" %}}
