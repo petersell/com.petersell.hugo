@@ -2,9 +2,9 @@
 title: Gutes Verhältnis zum Schicksal
 image: ""
 author: Andreas Petersell
-date: 2024-12-12T06:48:55.463Z
+date: 2024-12-12
 lastMod: null
-draft: true
+draft: false
 categories:
     - zettel
 tags:
@@ -14,7 +14,7 @@ tags:
 signaturen:
     - kundera-1993
 seite: 86
-zettelnummer: 2.2a1
+zettelnummer: 2.2a1 und 1.1a
 fmContentType: zettel
 ---
 
