@@ -14,7 +14,7 @@ tags:
 signaturen:
     - kundera-1993
 seite: 86
-zettelnummer: 2.2a1 und 1.1a
+zettelnummer: 2.2a1
 fmContentType: zettel
 ---
 
