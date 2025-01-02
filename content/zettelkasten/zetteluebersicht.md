@@ -51,3 +51,7 @@ zettelnummer: nicht vorhanden
 
 #### 5. Freundschaft
 - **[5.1 - Verbündete - keine Freunde]({{< ref "/verbuendete-keine-freunde" >}})**
+
+#### 6. Beziehung
+- **[6.1 - Stärke nur nach außen]({{< ref "/staerke-nur-nach-aussen" >}})**
+    - [6.1a - Befehlen]({{< ref "/befehlen" >}})

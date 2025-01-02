@@ -2,7 +2,7 @@
 title: Gutes Verhältnis zum Schicksal
 image: ""
 author: Andreas Petersell
-date: 2024-12-12
+date: 1994-05-11
 lastMod: null
 draft: false
 categories:
