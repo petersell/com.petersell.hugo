@@ -4,7 +4,7 @@ image: ""
 author: Andreas Petersell
 date: 2024-02-24
 lastMod: null
-draft: false
+draft: true
 categories:
     - zettel
 tags:

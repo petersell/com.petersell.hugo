@@ -45,11 +45,13 @@ zettelnummer: nicht vorhanden
 - **[4.2 - Organisationen müssen sich abgrenzen]({{< ref "/organisationen-muessen-sich-abgrenzen" >}})**
 - **[4.3 - Organisationen müssen Erwartbarkeiten herstellen]({{< ref "/organisationen-muessen-erwartbarkeiten-herstellen" >}})**
 - [4.3a - Erwartungen formalisieren]({{< ref "/erwartungen-formalisieren" >}})
+<!--
 - **[4.4 - Dreigliedriges Kastensystem]({{< ref "/dreigliedriges-kastensystem" >}})**
 - [4.4a - Mindestens drei Ebenen]({{< ref "/mindestens-drei-ebenen" >}})
 - [4.4a1 - Das Management ist das Unternehmen]({{< ref "/das-management-ist-das-unternehmen" >}})
+- [4.4a1a - Ein Manager befördert]({{< ref "/ein-manager-befoerdert" >}})
 - [4.4b - Dezentrales Kastensystem]({{< ref "/dezentrales-kastensystem" >}})
-
+-->
 #### 5. Freundschaft
 - **[5.1 - Verbündete - keine Freunde]({{< ref "/verbuendete-keine-freunde" >}})**
 

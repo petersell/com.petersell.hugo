@@ -18,7 +18,7 @@ In Markdown gibt es keine Möglichkeit, farbig umrahmte Absätze für Hinweise, 
 
 Sogenannte Shortcodes werden in einer HTML-Datei abgelegt und müssen im Markdown-Content auf spezielle Weise eingefügt werden.
 
-Quelle: [hugo-notice von Nicolas Martignoni](https://github.com/martignoni/hugo-notice)
+Quelle: {{% a_blank "hugo-notice von Nicolas Martignoni" "https://github.com/martignoni/hugo-notice" %}}
 
 ## Anleitung
 
@@ -38,7 +38,7 @@ Sie müssen in der `config.toml` angeben, ob Sie auf Ihrer Webseite mit einer St
 
 **(4)** - Kopieren Sie den Ordner `i18n` in Ihren Hauptordner des Repositorys, also auf gleicher Ebene wie den den Ordner `layouts`. Löschen Sie die Dateien für die Sprachen, die Sie bestimmt nicht nutzen. Bei mir blieb nur die `de.yaml` übrig.
 
-**(5)** - Editieren Sie die Datei `de.yaml`, so denn nötig. Ich habe z.B. die Übersetzung vom gelben Kasten *Information* auf *Voraussetzung* geändert.
+**(5)** - Editieren Sie im Ordner `i18n` die Datei `de.yaml`, so denn nötig. Ich habe z.B. die Übersetzung vom gelben Kasten *Information* auf *Voraussetzung* geändert.
 
 ### Anwenden im Markdown-Content
 
