@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Hugo mit Stock and Flow"
+title: Hugo mit Stock and Flow
 date: 2020-04-17T16:40:39+02:00
 draft: false
-
 categories:
-    - "blogging"
-tags: 
-    - "hugo"    
+  - konzepte
+tags:
+  - hugo
+  - blogging
 ---
 
 Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom http://snarkmarket.com/2010/4890[Stock and Flow^, role="ext-link"].

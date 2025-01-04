@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Hugo mit Asciidoc - Auf anderen Post verlinken"
+title: Hugo mit Asciidoc - Auf anderen Post verlinken
 date: 2020-04-28T14:43:14+02:00
 draft: false
-
 categories:
-    - "blogging"
-tags: 
-    - "hugo"   
+    - anleitungen
+tags:
+    - hugo
+    - asciidoc
 ---
 
 Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.

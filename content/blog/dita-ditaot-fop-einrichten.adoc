@@ -1,14 +1,12 @@
 ---
 author: Andreas Petersell
-title: "FOP für das DITA-OT 2.4.5 einrichten"
+title: FOP für das DITA-OT 2.4.5 einrichten
 date: 2017-04-23
 draft: true
-
 categories:
-    - "techcomm"
-    - "ditalog"
-tags: 
-    - "dita-xml"    
+    - anleitungen
+tags:
+    - dita-xml
 ---
 
 :toc: macro

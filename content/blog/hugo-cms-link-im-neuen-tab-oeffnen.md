@@ -7,9 +7,10 @@ date: 2024-12-02T18:13:16.066Z
 lastMod: null
 draft: false
 categories:
-    - blogging
+    - anleitungen
 tags:
     - hugo
+    - blogging
 fmContentType: blog
 ---
 

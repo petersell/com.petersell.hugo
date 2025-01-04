@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Der FDGB-Ausweis oder die Vergottung der Macht"
+title: Der FDGB-Ausweis oder die Vergottung der Macht
 date: 2013-08-22
 draft: true
-
 categories:
-    - "essay"
-tags: 
-    - "eastgermany"    
+  - essays
+tags:
+  - eastgermany
 ---
 
 :toc: macro

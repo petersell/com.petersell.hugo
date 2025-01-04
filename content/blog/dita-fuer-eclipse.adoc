@@ -3,12 +3,11 @@ author: Andreas Petersell
 date: 2019-04-17
 title: Einbinden der DITA-DTDs in Eclipse
 description: DITA XML in Eclipse als Quelldatei-Editor
-
-categories: 
-    - "ditalog"
-tags: 
-    - "dita-xml"
-
+categories:
+    - anleitungen
+tags:
+    - dita-xml
+    - techcomm
 markup: asciidoc
 ---
 

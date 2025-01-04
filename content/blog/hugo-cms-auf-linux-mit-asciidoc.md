@@ -7,10 +7,11 @@ date: 2024-11-25T19:44:01.496Z
 lastMod: null
 draft: false
 categories:
-  - blogging
+  - anleitungen
 tags:
-  - hugo
   - asciidoc
+  - hugo
+  - linux
 fmContentType: blog
 ---
 

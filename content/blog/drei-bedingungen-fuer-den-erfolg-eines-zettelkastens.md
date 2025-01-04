@@ -2,12 +2,11 @@
 title: Drei Bedingungen für den Erfolg eines Zettelkastens
 author: Andreas Petersell
 date: 2024-02-25
-lastMod: 2024-12-19 
+lastMod: 2024-12-19
 headless: false
 draft: false
 categories:
-  - blogging
-  - romanschreiben
+  - konzepte
 tags:
   - zettelkasten
 ---

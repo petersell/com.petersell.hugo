@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "PeBe Miniauto"
+title: PeBe Miniauto
 date: 2013-06-13
 draft: false
-
 categories:
-    - "essay"
-tags: 
-    - "eastgermany"    
+  - essays
+tags:
+  - eastgermany
 ---
 
 :toc: macro

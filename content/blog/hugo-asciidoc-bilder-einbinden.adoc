@@ -1,16 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Hugo mit Asciidoc - Bilder einbinden"
+title: Hugo mit Asciidoc - Bilder einbinden
 date: 2020-03-22T20:08:10+01:00
 draft: false
-
 categories:
-    - "techcomm"
-    - "blogging"
-    
-tags: 
-    - "hugo"
-    - "asciidoc"   
+    - anleitungen
+tags:
+    - hugo
+    - asciidoc
 ---
 
 // configure DE settings for asciidoc

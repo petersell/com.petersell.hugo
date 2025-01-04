@@ -7,9 +7,11 @@ date: 2024-12-07T11:38:27.101Z
 lastMod: null
 draft: false
 categories:
-    - blogging
+    - anleitungen
 tags:
     - hugo
+    - techcomm
+    - blogging
 fmContentType: blog
 ---
 

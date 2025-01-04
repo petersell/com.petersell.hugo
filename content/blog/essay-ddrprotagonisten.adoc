@@ -1,14 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Die Protagonisten der DDR-Literatur"
+title: Die Protagonisten der DDR-Literatur
 date: 1996-06-13
 draft: false
-
 categories:
-    - "essay"
-tags: 
-    - "eastgermany"
-    - "ddr-Literatur"    
+  - essays
+tags:
+  - eastgermany
+  - ddr-Literatur
 ---
 
 :toc: macro
