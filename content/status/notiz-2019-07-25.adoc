@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Erlebt - Kurze Hosen"
+title: Erlebt - Kurze Hosen
 date: 2019-07-25
 draft: false
-
 categories:
-    - "notizen"
-tags: 
-    - "darumlebenwir"
+    - erlebnisse
+tags:
+    - darumlebenwir
+    - arbeitswelt
 ---
 
 Heute Kurze-Hosen-Befehl meiner Frau befolgt. Zum ersten Mal. Kurze Hose.

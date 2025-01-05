@@ -3,7 +3,7 @@ languageCode = "de"
 defaultContentLanguage = 'de'
 title = "Andreas Petersell"
 paginate = 10
-copyright = "Die Blogposts, Statusmeldungen und Zettel stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/). Romanauszüge: Alle Rechte beim Autor."
+copyright = "Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/)."
 
 [author]
   name = "Andreas Petersell"
@@ -37,19 +37,7 @@ copyright = "Die Blogposts, Statusmeldungen und Zettel stehen unter einer [Creat
     identifier = "tags"
     name = "Stichwörter"
     url = "/tags/"
-    weight = 40
-
-  [[menu.main]]
-    identifier = "quellen"
-    name = "Literatur"
-    url = "/quellen/"
-    weight = 50
-
-  [[menu.main]]
-    identifier = "zettelkasten"
-    name = "Zettelkasten"
-    url = "/zettelkasten/zetteluebersicht"
-    weight = 60    
+    weight = 40 
 
   [[menu.main]]
     identifier = "impressum"

@@ -1,13 +1,14 @@
 ---
 author: Andreas Petersell
-title: "DITA-Output mit Docker builden"
+title: DITA-Output mit Docker builden
 date: 2021-11-29T08:28:39+01:00
 draft: false
-
 categories:
-    - "techcomm"
-tags: 
-    - "dita-xml"   
+  - anleitungen
+tags:
+  - dita-xml
+  - techcomm
+  - docker
 ---
 
 Sie müssen nicht bei jedem neuen Rechner das DITA-OT erneut installieren. Sie können die verschiedenen Versionen des DITA-OTs auch über Docker nutzen und so sich die vielen Installationen sparen.

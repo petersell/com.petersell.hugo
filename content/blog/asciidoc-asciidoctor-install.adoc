@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Asciidoctor auf Windows einrichten"
+title: Asciidoctor auf Windows einrichten
 date: 2019-11-15
 draft: false
-
 categories:
-    - "techcomm"
-tags: 
-    - "asciidoc"  
+    - anleitungen
+tags:
+    - asciidoc
+    - techcomm
 ---
 
 :toc: macro

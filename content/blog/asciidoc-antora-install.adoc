@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Antora lokal installieren"
+title: Antora lokal installieren
 date: 2020-06-03T12:15:42+02:00
 draft: false
-
 categories:
-    - "techcomm"
-tags: 
-    - "asciidoc"    
+    - anleitungen
+tags:
+    - asciidoc
+    - techcomm
 ---
 
 :toc: macro

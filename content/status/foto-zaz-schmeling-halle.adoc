@@ -1,16 +1,14 @@
 ---
 author: Andreas Petersell
-title: "ZAZ rockt"
+title: ZAZ rockt
 date: 2017-01-17
 draft: false
-
 categories:
-    - "veranstaltung"
-    - "erleben"
-    - "fotos"
-tags: 
-    - "darumlebenwir"
-    - "zaz"
+  - erlebnisse
+tags:
+  - darumlebenwir
+  - zaz
+  - foto
 ---
 
 :imagesdir: ../images/zaz-schmeling-halle/

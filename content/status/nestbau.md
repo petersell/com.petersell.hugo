@@ -7,9 +7,9 @@ date: 2024-05-03
 lastMod: null
 draft: false
 categories:
-    - erleben
+  - erkenntnisse
 tags:
-    - darumlebenwir
+  - darumlebenwir
 fmContentType: status
 ---
 

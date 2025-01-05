@@ -1,14 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Verratene Vermächtnisse"
+title: Verratene Vermächtnisse
 date: 2017-11-24
 draft: false
-
 categories:
-    - "zitate"
-    - "romanschreiben"
-tags: 
-    - "readinglist" 
+    - zitate
+tags:
+    - readinglist
+    - schreiben
 ---
 
 Milan Kundera setzt in seinem Essay-Band _Verratene Vermächtnisse_ die Latte sehr hoch, oder er teilt die Romane nur anders ein?

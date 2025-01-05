@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Moritz"
+title: Moritz
 date: 2015-11-02
 draft: false
-
 categories:
-    - "erleben"
-tags: 
-    - "familie"
+  - erlebnisse
+tags:
+  - familie
 ---
 
 :imagesdir: ../images/log-moritz/

@@ -1,13 +1,14 @@
 ---
 author: Andreas Petersell
-title: "Eine Homepage mit Asciidoctor erstellen"
+title: Eine Homepage mit Asciidoctor erstellen
 date: 2019-01-22
 draft: false
-
 categories:
-    - "techcomm"
-tags: 
-    - "asciidoc"    
+    - anleitungen
+tags:
+    - asciidoc
+    - blogging
+    - techcomm
 ---
 
 :toc: macro

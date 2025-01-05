@@ -1,14 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Maxim Leo in Anna Seghers Bibliothek"
+title: Maxim Leo in Anna Seghers Bibliothek
 date: 2019-09-18
 draft: false
-
 categories:
-    - "veranstaltung"
-    - "erleben"
+  - erlebnisse
 tags:
-    - "familie"        
+  - familie
 ---
 
 Am 17.09.2019 durften wir amüsante anderthalb Stunden bei einer Lesung mit Maxim Leo in der Bibliothek im Lindencenter Hohenschönhausen verbringen. Leo las aus https://www.kiwi-verlag.de/buch/wo-wir-zu-hause-sind/978-3-462-05081-3/[seinem Buch] _Wo wir zu Hause sind - Geschichten meiner verschwundenen Familie_.

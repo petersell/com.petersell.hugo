@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Katzenfrühstück"
+title: Katzenfrühstück
 date: 2019-01-21
 draft: false
-
 categories:
-    - "fotos"
-tags: 
-    - "familie"
+    - erlebnisse
+tags:
+    - familie
+    - foto
 ---
 
 :imagesdir: ../images/katzenfruehstueck/

@@ -1,13 +1,14 @@
 ---
 author: Andreas Petersell
-title: "DITA-Bootstrap-Output mit Docker builden"
+title: DITA-Bootstrap-Output mit Docker builden
 date: 2021-12-01T08:28:39+01:00
 draft: false
-
 categories:
-    - "techcomm"
-tags: 
-    - "dita-xml"   
+  - anleitungen
+tags:
+  - dita-xml
+  - docker
+  - techcomm
 ---
 
 :toc: macro

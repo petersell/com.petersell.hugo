@@ -7,10 +7,10 @@ date: 2017-07-19T18:59:52.517Z
 lastMod: null
 draft: false
 categories:
-    - erleben
+  - erlebnisse
 tags:
-    - darumlebenwir
-    - familie
+  - darumlebenwir
+  - familie
 fmContentType: status
 ---
 

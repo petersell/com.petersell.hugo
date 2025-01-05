@@ -4,16 +4,15 @@ author: Andreas Petersell
 date: 2024-02-25
 lastMod: 2024-12-19
 headless: false
-draft: false
+draft: true
 categories:
   - konzepte
 tags:
-  - zettelkasten
 ---
 Die Zettelkastenmethode erhält seit einigen Jahren in der Blogosphäre viel Aufmerksamkeit. Nicht immer ist das Fazit ein gutes. So manch einer wendet sich vom Zettelkastenprinzip wieder ab.
 <!--more-->
 
-Brauche ich auch einen [Zettelkasten]({{< ref "/zetteluebersicht" >}})? Wenn ja, welche Mindestbedingungen müssen erfüllt sein, damit ein Zettelkasten funktioniert?
+Brauche ich auch einen Zettelkasten? Wenn ja, welche Mindestbedingungen müssen erfüllt sein, damit ein Zettelkasten funktioniert?
 
 ## Bedingung 1
 Ein Zettelkasten ist nur von Nutzen, wenn Sie in Zukunft Texte schreiben wollen.

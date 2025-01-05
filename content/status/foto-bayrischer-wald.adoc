@@ -1,13 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Auf den Arber"
+title: Auf den Arber
 date: 2019-10-07
 draft: false
-
 categories:
-    - "fotos"
-tags: 
-    - "familie"
+    - erlebnisse
+tags:
+    - familie
+    - foto
 ---
 :imagesdir: ../images/status
 

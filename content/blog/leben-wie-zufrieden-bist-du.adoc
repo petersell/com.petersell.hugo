@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Wie zufrieden ist Du mit Deinem Leben?"
+title: Wie zufrieden ist Du mit Deinem Leben?
 date: 2016-07-19
 draft: false
-
 categories:
-    - "erleben"
-tags: 
-    - "darumlebenwir"    
+  - erlebnisse
+tags:
+  - darumlebenwir
 ---
 
 :imagesdir: ../images/leben-wie-zufrieden-bist-du/

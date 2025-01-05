@@ -1,14 +1,13 @@
 ---
 author: Andreas Petersell
-title: "So geht Minecraft heute!"
+title: So geht Minecraft heute!
 date: 2015-06-01
 draft: false
-
 categories:
-    - "erleben"
-    - "fotos"
-tags: 
-    - "familie"
+  - erlebnisse
+tags:
+  - familie
+  - foto
 ---
 
 :imagesdir: ../images/foto-minecraft/

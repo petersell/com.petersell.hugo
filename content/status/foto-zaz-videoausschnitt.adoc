@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Klappt nicht immer"
+title: Klappt nicht immer
 date: 2019-07-25
 draft: false
-
 categories:
-    - "fotos"
-tags: 
-    - "zaz"
+    - zitate
+tags:
+    - zaz
 ---
 
 :imagesdir: ../images/zaz-videoausschnitt/

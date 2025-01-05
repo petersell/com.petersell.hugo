@@ -1,14 +1,13 @@
 ---
 headless: false
-author: "Andreas Petersell"
-title: "Horse Running"
+author: Andreas Petersell
+title: Horse Running
 date: 2015-07-30
 draft: false
-
 categories:
-    - "erleben"
-tags: 
-    - "familie"
+  - erlebnisse
+tags:
+  - familie
 ---
 
 Divaluna hat einen Geparden und ein Pferd gezeichnet. Joachim Hamster Damm (fluchtkunst.de) hat diese Zeichnungen und viele weitere der Schüler des Mendelsohn-Bartholdy-Gymnasiums im Sommer 2015 animiert.

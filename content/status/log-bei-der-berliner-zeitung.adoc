@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Bei der Berliner Zeitung"
+title: Bei der Berliner Zeitung
 date: 2015-06-08
 draft: false
-
 categories:
-    - "erleben"
-tags: 
-    - "familie" 
+  - erlebnisse
+tags:
+  - familie
 ---
 
 :imagesdir: ../images/log-bei-der-berliner-zeitung/

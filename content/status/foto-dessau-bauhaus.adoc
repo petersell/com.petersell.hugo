@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Durchblick Bauhaus"
+title: Durchblick Bauhaus
 date: 2019-09-28
 draft: false
-
 categories:
-    - "fotos"
-tags: 
-    - "freunde"
+    - erlebnisse
+tags:
+    - foto
 ---
 :imagesdir: ../images/status
 

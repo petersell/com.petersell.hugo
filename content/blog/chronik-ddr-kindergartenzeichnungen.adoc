@@ -1,14 +1,13 @@
 ---
 author: Andreas Petersell
-title: "DDR-Kindergartenzeichnungen"
+title: DDR-Kindergartenzeichnungen
 date: 2015-07-26
 draft: false
-
 categories:
-    - "erleben"
-tags: 
-    - "darumlebenwir"
-    - "eastgermany"   
+  - erlebnisse
+tags:
+  - darumlebenwir
+  - eastgermany
 ---
 
 :imagesdir: ../images/chronik-ddr-kindergartenzeichnungen/

@@ -1,15 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Die Akte Vaterland"
+title: Die Akte Vaterland
 date: 2017-03-05
 draft: false
-
 categories:
-    - "zitate"
-    - "notizen"
-tags: 
-    - "readinglist"
-    - "bürger" 
+    - zitate
+tags:
+    - readinglist
+    - bürger
 ---
 
 Klappentext und Rezensionen: https://www.perlentaucher.de/buch/volker-kutscher/die-akte-vaterland.html[https://www.perlentaucher.de/buch/volker-kutscher/die-akte-vaterland.html]
