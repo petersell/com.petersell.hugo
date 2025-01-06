@@ -1,8 +1,7 @@
 ---
 author: Andreas Petersell
-title: Gehört - Lügen
+title: Lügen
 date: 2018-12-01
-//headless: yes
 categories:
     - erlebnisse
 tags:

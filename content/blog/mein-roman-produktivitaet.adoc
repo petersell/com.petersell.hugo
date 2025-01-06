@@ -1,11 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Mein Roman - Produktivität"
+title: Mein Roman - Produktivität
 date: 2017-08-17
 draft: false
-
 categories:
-    - "romanschreiben"    
+    - schreiben
+tags:
+    - gelesen
 ---
 
 Es ist ein Jahr vergangen: nach einem halben Jahrhundert wollte ich mit meinem Roman loslegen. Und was habe ich bis heute geschafft: ein  Exposé in der ersten Fassung! Ich rechne das mal durch: mein Roman hat 29 Kapitel. Pro Kapitel brauche ich ein Quartal. Das ergibt eine Schreibdauer von über 7 Jahren. Und das ist noch die optimistische Planung!

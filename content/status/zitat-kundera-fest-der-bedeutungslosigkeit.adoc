@@ -1,15 +1,14 @@
 ---
 author: Andreas Petersell
-title: "Das Fest der Bedeutungslosigkeit"
+title: Das Fest der Bedeutungslosigkeit
 date: 2015-09-11
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
+  - zitate
+tags:
+  - gelesen
 signaturen:
-    - kundera-2015
+  - kundera-2015
 ---
 
 Ich habe ein kurzes Büchlein gelesen, welches ohne jeden Plot auskommt. Also das Gegenteil von Jo Nesbö. Aber da es von Milan Kundera war, geht das in Ordnung. Er hat sich mit seinen 83 Jahren einfach das Theater drumherum erspart.

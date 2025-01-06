@@ -6,7 +6,7 @@ draft: true
 categories:
   - essays
 tags:
-  - eastgermany
+  - ddr
 ---
 
 :toc: macro

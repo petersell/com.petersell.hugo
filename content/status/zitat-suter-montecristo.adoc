@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Montecristo"
+title: Montecristo
 date: 2018-03-22
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist" 
+  - zitate
+tags:
+  - gelesen
 ---
 
 [quote, Martin Suter: Montecristo, Zürich 2015 (S. 292)]

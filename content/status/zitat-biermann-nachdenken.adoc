@@ -1,16 +1,15 @@
 ---
 author: Andreas Petersell
-title: "Nachdenken mit Biermann"
+title: Nachdenken mit Biermann
 date: 2016-12-04
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
-    - "link"
-    - "eastgermany"
-    - "bürger" 
+  - zitate
+tags:
+  - bürger
+  - ddr
+  - gelesen
+  - link
 ---
 
 In der https://www.berliner-zeitung.de/kultur-vergnuegen/wolf-biermann-in-die-ddr-zu-gehen-war-das-kluegste-was-ich-je-gemacht-habe-li.48164[Berliner Zeitung vom 8.10.2016] führte Cornelia Geißler mit Wolf Biermann ein Interview. Im folgenden Auszug geht es mal nicht um seine Vergangenheit, sondern um die erfreuliche und z.T. gruselige Gegenwart.

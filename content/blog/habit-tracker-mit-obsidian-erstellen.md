@@ -5,7 +5,7 @@ date: 2024-03-10
 headless: false
 draft: false
 categories:
-  - pkm
+  - anleitungen
 tags:
   - obsidian
 preview: null

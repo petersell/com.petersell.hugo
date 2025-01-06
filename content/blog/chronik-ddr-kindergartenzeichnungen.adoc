@@ -7,7 +7,7 @@ categories:
   - erlebnisse
 tags:
   - darumlebenwir
-  - eastgermany
+  - ddr
 ---
 
 :imagesdir: ../images/chronik-ddr-kindergartenzeichnungen/

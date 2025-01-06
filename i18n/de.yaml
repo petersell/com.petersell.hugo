@@ -8,6 +8,10 @@
   translation: "Voraussetzung"
 - id: tip
   translation: "Tipp"
+- id: category
+  translation: "Kategorie"  
+- id: categories
+  translation: "Kategorien"
 - id: back_to_home
   translation: "Zur Startseite"
 - id: first_page
@@ -18,5 +22,3 @@
   translation: "Nächste Seite"
 - id: last_page
   translation: "Letzte Seite"
-- id: categories
-  translation: "Themen"

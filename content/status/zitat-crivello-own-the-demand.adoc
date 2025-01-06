@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Own the Demand"
+title: Own the Demand
 date: 2018-11-01
 draft: true
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
+  - zitate
+tags:
+  - gelesen
 ---
 
 [quote, Florent Crivello: Own the Demand, https://florentcrivello.com/index.php/2018/10/22/own-the-demand/]

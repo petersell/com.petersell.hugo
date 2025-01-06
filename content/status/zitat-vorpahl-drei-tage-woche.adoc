@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Die 3-Tage-Woche"
+title: Die 3-Tage-Woche
 date: 2018-12-06
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist" 
+  - zitate
+tags:
+  - gelesen
 ---
 
 [quote, Elias Vorpahl & Dominik Lang: Die 3-Tage-Woche, Berlin 2017 (S. 12)]

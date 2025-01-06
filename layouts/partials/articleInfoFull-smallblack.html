@@ -1,0 +1,19 @@
+<div class="article-info">
+    <div class="article-taxonomies">
+        {{ if .Params.categories }}
+            <ul class="article-categories">
+                    <li><i>{{ with .Params.author }}{{ . }}</span>&nbsp;am{{ end }} <date datetime="{{ .Date.Format "02.01.2006" }}">{{ .Date.Format "02.01.2006" }}</date></i></li>
+                {{ range .Params.categories }}
+                    <li><a href="{{ "categories/" | absURL }}{{ . }}">{{ . | humanize}}</a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            {{ if .Params.tags }}
+                <ul class="article-tags">
+                    {{ range .Params.tags }}
+                        <li><a href="{{ "tags/" | absURL }}{{ . }}">#{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+        {{ end }}
+    </div>
+</div>

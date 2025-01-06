@@ -23,13 +23,13 @@ copyright = "Sämtliche Beiträge stehen unter einer [Creative Commons Namensnen
 
   [[menu.main]]
     identifier = "statusarchiv"
-    name = "Status"
+    name = "Microblog"
     url = "/archive/status/"
     weight = 20  
 
   [[menu.main]]
     identifier = "categories"
-    name = "Kategorie"
+    name = "Kategorien"
     url = "/categories/"
     weight = 30
 

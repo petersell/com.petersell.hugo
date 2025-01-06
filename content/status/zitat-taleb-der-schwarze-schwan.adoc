@@ -4,9 +4,9 @@ title: Mediokristan und Extremistan
 date: 2018-06-21
 draft: false
 categories:
-    - zitate
+  - zitate
 tags:
-    - readinglist
+  - gelesen
 ---
 
 [quote, Nassim Nicholas Taleb: Der schwarze Schwan, München 2008 (S. 54)]

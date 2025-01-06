@@ -4,10 +4,10 @@ title: Die Akte Vaterland
 date: 2017-03-05
 draft: false
 categories:
-    - zitate
+  - zitate
 tags:
-    - readinglist
-    - bürger
+  - bürger
+  - gelesen
 ---
 
 Klappentext und Rezensionen: https://www.perlentaucher.de/buch/volker-kutscher/die-akte-vaterland.html[https://www.perlentaucher.de/buch/volker-kutscher/die-akte-vaterland.html]

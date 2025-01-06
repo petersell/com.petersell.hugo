@@ -1,13 +1,12 @@
 ---
 author: Andreas Petersell
-title: "Durst"
+title: Durst
 date: 2018-03-07
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
+  - zitate
+tags:
+  - gelesen
 ---
 
 [quote, Jo Nesbö: Durst, Berlin 2017 (S. 553)]

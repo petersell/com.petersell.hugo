@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: Erlebt - Kurze Hosen
+title: Kurze Hosen
 date: 2019-07-25
 draft: false
 categories:

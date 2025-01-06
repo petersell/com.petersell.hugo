@@ -1,15 +1,14 @@
 ---
 author: Andreas Petersell
-title: "Macbeth"
+title: Macbeth
 date: 2018-11-29
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
+  - zitate
+tags:
+  - gelesen
 signaturen:
-    - nesboe-2018
+  - nesboe-2018
 ---
 
 [quote, Jo Nesbö: MacBeth, München 2018 (S. 364)]

@@ -6,7 +6,7 @@ draft: false
 categories:
   - essays
 tags:
-  - eastgermany
+  - ddr
   - ddr-Literatur
 ---
 

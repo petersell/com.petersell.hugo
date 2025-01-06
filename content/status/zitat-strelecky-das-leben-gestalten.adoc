@@ -1,14 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Das Leben gestalten mit den Big Five for Live"
+title: Das Leben gestalten mit den Big Five for Live
 date: 2019-12-20
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
-    - "arbeitswelt"
+  - zitate
+tags:
+  - arbeitswelt
+  - gelesen
 ---
 
 [quote, John Strelecky: Das Leben gestalten mit den Big Five for Live, München 2018 (S. 201)]

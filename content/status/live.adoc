@@ -1,6 +1,6 @@
 ---
 author: Andreas Petersell
-title: Gehört - Live
+title: Live
 date: 2018-04-11
 draft: false
 categories:

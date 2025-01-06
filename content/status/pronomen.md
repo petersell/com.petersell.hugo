@@ -1,5 +1,4 @@
 ---
-headless: false
 author: Andreas Petersell
 title: Pronomen
 date: 2024-01-12

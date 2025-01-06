@@ -1,7 +1,7 @@
 ---
 headless: false
 author: Andreas Petersell
-title: Gehört - Schuhe
+title: Schuhe
 date: 2020-11-21T19:42:55+01:00
 draft: false
 categories:

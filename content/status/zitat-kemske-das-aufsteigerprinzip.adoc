@@ -4,12 +4,12 @@ title: Lifetime Employment - A Corporate Nightmare
 date: 2019-11-25
 draft: false
 categories:
-    - zitate
+  - zitate
 tags:
-    - readinglist
-    - arbeitswelt
+  - arbeitswelt
+  - gelesen
 signaturen:
-    - kemske-1996
+  - kemske-1996
 ---
 
 Der englische Titel trifft es besser als der deutsche Titel des Romans _Das Aufsteiger-Prinzip_.

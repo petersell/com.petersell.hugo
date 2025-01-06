@@ -1,13 +1,14 @@
 ---
 author: Andreas Petersell
-title: Erlebt - Schattenarbeit
+title: Schattenarbeit
 date: 2022-10-17
 draft: false
 categories:
-    - erkenntnisse
+  - erkenntnisse
 tags:
-    - darumlebenwir
-    - familie
+  - darumlebenwir
+  - familie
+  - gelesen
 ---
 
 Ich habe derzeit zwei Jobs in Schattenarbeit: ich fahre jeden Morgen meine Kinder zum S-Bahnhof, weil es der ortsansässige Verkehrsbetrieb nicht schafft. Und ich streiche seit gefühlt 17 Wochen ein Gartenhaus.<!--more-->

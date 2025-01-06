@@ -1,11 +1,11 @@
 ---
 title: Tagesnotiz - Wieviel Tage sind schon um?
 author: Andreas Petersell
-date: 2024-03-15 
+date: 2024-03-15
 headless: false
 draft: false
 categories:
-  - pkm
+  - anleitungen
 tags:
   - obsidian
 ---

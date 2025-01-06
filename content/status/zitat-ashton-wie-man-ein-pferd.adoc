@@ -1,14 +1,13 @@
 ---
 author: Andreas Petersell
-title: "Wie man ein Pferd fliegt"
+title: Wie man ein Pferd fliegt
 date: 2018-06-11
 draft: false
-
 categories:
-    - "zitate"
-tags: 
-    - "readinglist"
-    - "arbeitswelt"
+  - zitate
+tags:
+  - arbeitswelt
+  - gelesen
 ---
 
 [quote, Kevin Ashton: Wie man ein Pferd fliegt, München 2016 (S. 102 ff)]
