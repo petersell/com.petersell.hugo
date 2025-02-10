@@ -14,6 +14,6 @@ tags:
 fmContentType: status
 ---
 
-![Wo würdest Du anfangen?](/images/wo-wuerdest-du-anfangen.jpg)
+![Wo würdest Du anfangen?](/images/wo-wuerdest-du-anfangen-750.jpg)
 
 In Familie im Prenzlauer Berg unterwegs.

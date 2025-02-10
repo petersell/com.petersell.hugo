@@ -14,10 +14,10 @@ tags:
 fmContentType: status
 ---
 
-Ich mache es dem HERRN nach und habe ein modulares Notebook bei [frame.work](https://www.frame.work) bestellt und nach 2 Tagen erhalten. Da wir Arbeitsspeicher und SSD-Festplatte woanders ein wenig billiger bekommen (100 EUR zusammen), bestellen wir das Notebook ohne jeden Speicher.
+Auf Anraten eines sehr guten Bekannten habe ich mir ein modulares Notebook bei [frame.work](https://www.frame.work) bestellt. Da wir Arbeitsspeicher und SSD-Festplatte woanders ein wenig billiger bekommen, bestellen wir das Notebook ohne jeden Speicher.
 <!--more-->
 
-![Framework Notebook](/images/status-framework.jpg)
+![Framework Notebook](/images/status-framework-750.jpg)
 
 Das geniale ist die Modularität. Framework verkauft keinen Monolithen, sondern Einzelteile. Ob ich mir das als Dekoration an die Stehlampe hänge, interessiert Framework nicht.
 
