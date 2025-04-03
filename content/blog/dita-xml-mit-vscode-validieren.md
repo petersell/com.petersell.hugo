@@ -5,7 +5,7 @@ image: ""
 author: Andreas Petersell
 date: 2025-04-02T19:31:50.897Z
 lastMod: null
-draft: true
+draft: false
 categories:
     - anleitungen
 tags:
