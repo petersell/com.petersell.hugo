@@ -14,7 +14,7 @@ tags:
 fmContentType: blog
 ---
 
-Um VSCode als Quelltext-Editor für DITA-XML-Dateien mit allen Annehmlichkeiten wie z.B. der Validierung nutzen zu können, muss in den Einstellungen des Programms, genauer in der `settings.json`, drei Einstellungen vorgenommen werden.
+Um VSCode als Quelltext-Editor für DITA-XML-Dateien mit allen Annehmlichkeiten wie z.B. der Validierung nutzen zu können, müssen in den Einstellungen des Programms, genauer in der `settings.json`, drei Einträge vorgenommen werden.
 <!--more-->
 Damit ich bei der nächsten PC-Einrichtung nicht wieder anfange zu suchen, schreibe ich es jetzt auf.
 
