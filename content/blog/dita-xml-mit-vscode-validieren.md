@@ -14,7 +14,7 @@ tags:
 fmContentType: blog
 ---
 
-Um VSCode als Quelltext-Editor für DITA-XML-Dateien mit allen Annehmlichkeiten wie z.B. der Validierung nutzen zu können, müssen in den Einstellungen des Programms, genauer in der `settings.json`, drei Einträge vorgenommen werden.
+Um Visual Studio Code als Quelltext-Editor für DITA-XML-Dateien mit allen Annehmlichkeiten wie z.B. der Validierung nutzen zu können, müssen in den Einstellungen des Programms, genauer in der `settings.json`, drei Einträge vorgenommen werden.
 <!--more-->
 Damit ich bei der nächsten PC-Einrichtung nicht wieder anfange zu suchen, schreibe ich es jetzt auf.
 
@@ -26,7 +26,7 @@ Quellen:
 - [How can I make dita-catalog.xml work in vscode](https://stackoverflow.com/questions/64782816/how-can-i-make-dita-catalog-xml-work-in-vs-code)
 - [How to find JAVA_HOME](https://www.baeldung.com/find-java-home)
 
-### Einstellungen von VSCode komplettieren
+### Einstellungen von VS Code komplettieren
 
 <!-- FM:Snippet:Start data:{"id":"Admonition - Voraussetzung","fields":[]} -->
 {{< notice info >}}
@@ -64,7 +64,7 @@ In der Oberfläche das Kontrollkästchen aktiveren für *xml.validation.resolveE
 
 ![](/images/kontrollkaestchen-aktivieren.png)
 
-Zum Schluss VSCode neu starten.
+Zum Schluss VS Code neu starten.
 
 #### Erbebnis
 
