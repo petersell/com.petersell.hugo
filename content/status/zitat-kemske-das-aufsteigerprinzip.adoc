@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: Lifetime Employment - A Corporate Nightmare
 date: 2019-11-25
-draft: false
+draft: true
 categories:
   - zitate
 tags:

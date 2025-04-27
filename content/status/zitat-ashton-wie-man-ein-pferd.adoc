@@ -2,7 +2,7 @@
 author: Andreas Petersell
 title: Wie man ein Pferd fliegt
 date: 2018-06-11
-draft: false
+draft: true
 categories:
   - zitate
 tags:
