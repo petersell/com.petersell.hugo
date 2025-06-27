@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="de"><meta charset="utf-8">
+<html lang="de"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
 <link href="https://github.com/petersell" rel="me" class="u-url"/>
-<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
-<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
 <link href="https://www.petersell.de" rel="me" class="u-url"/>
-<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
 <title>FOP für das DITA-OT 2.4.5 einrichten</title>
-<link rel="stylesheet" href="https://www.petersell.com/css/main.css" />
-<body>
+<link rel="stylesheet" href="http://localhost:1313/css/main.css" /><body>
 <main>
 <h1 class="post-title"><div class="h-entry">FOP für das DITA-OT 2.4.5 einrichten</div></h1>
-<p class="author"><span class="p-author h-card">Andreas Petersell</span>&nbsp;am <date datetime="23.04.2017">23.04.2017</date></p>
+<div class="article-info">
+    <div class="article-taxonomies">
+        
+            <ul class="article-categories">
+                    <li><i>Andreas Petersell</span>&nbsp;am <date datetime="23.04.2017">23.04.2017</date></i></li>
+                
+                    <li><a href="http://localhost:1313/categories/anleitungen">Anleitungen</a></li>
+                
+            </ul>
+            
+            
+                <ul class="article-tags">
+                    
+                        <li><a href="http://localhost:1313/tags/dita-xml">#dita-xml</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
 
 
 <article>
   <div class="e-content">
   <div class="paragraph">
 <p>Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den <em>XEP-Prozessor Personal Edition</em> zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen für den Einsatz unter FOP neu eingerichtet werden.</p>
-</div>
-<div id="toc" class="toc">
-<div id="toctitle" class="title"></div>
-<ul class="sectlevel1">
-<li><a href="#_bilder_werden_nicht_an_a4_angepaßt">Bilder werden nicht an A4 angepaßt</a></li>
-<li><a href="#_related_links_ausblenden">Related Links ausblenden</a></li>
-<li><a href="#_formatierungen_in_ein_extra_plugin">Formatierungen in ein Extra-Plugin</a></li>
-</ul>
 </div>
 <div class="sect1">
 <h2 id="_bilder_werden_nicht_an_a4_angepaßt">Bilder werden nicht an A4 angepaßt</h2>
@@ -101,8 +105,8 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>&lt;xsl:variable name="page-width"&gt;210mm&lt;/xsl:variable&gt;
-&lt;xsl:variable name="page-height"&gt;297mm&lt;/xsl:variable&gt;</code></pre>
+<pre class="highlight"><code>&lt;xsl:variable name=&#34;page-width&#34;&gt;210mm&lt;/xsl:variable&gt;
+&lt;xsl:variable name=&#34;page-height&#34;&gt;297mm&lt;/xsl:variable&gt;</code></pre>
 </div>
 </div>
 </div>
@@ -113,10 +117,10 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>&lt;xsl:attribute-set name="fig.title" use-attribute-sets="base-font common.title"&gt;
-     &lt;xsl:attribute name="font-weight"&gt;normal&lt;/xsl:attribute&gt;
-     &lt;xsl:attribute name="font-size"&gt;8pt&lt;/xsl:attribute&gt;
-     &lt;xsl:attribute name="font-style"&gt;italic&lt;/xsl:attribute&gt;
+<pre class="highlight"><code>&lt;xsl:attribute-set name=&#34;fig.title&#34; use-attribute-sets=&#34;base-font common.title&#34;&gt;
+     &lt;xsl:attribute name=&#34;font-weight&#34;&gt;normal&lt;/xsl:attribute&gt;
+     &lt;xsl:attribute name=&#34;font-size&#34;&gt;8pt&lt;/xsl:attribute&gt;
+     &lt;xsl:attribute name=&#34;font-style&#34;&gt;italic&lt;/xsl:attribute&gt;
 &lt;/xsl:attribute-set&gt;</code></pre>
 </div>
 </div>
@@ -131,8 +135,8 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>&lt;xsl:attribute-set name="topic.title" use-attribute-sets="common.title common.border__bottom"&gt;
-     &lt;xsl:attribute name="break-before"&gt;page&lt;/xsl:attribute&gt;
+<pre class="highlight"><code>&lt;xsl:attribute-set name=&#34;topic.title&#34; use-attribute-sets=&#34;common.title common.border__bottom&#34;&gt;
+     &lt;xsl:attribute name=&#34;break-before&#34;&gt;page&lt;/xsl:attribute&gt;
         ...
 &lt;/xsl:attribute-set&gt;</code></pre>
 </div>
@@ -149,24 +153,14 @@
 <br/>
 <hr>
 <br/>
-<script id="webmention-hosted">
-    (function () {
-    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-    url = url && url[0] ? url[0].href : false;
-    sn.type = "text/javascript"; sn.async = true;
-    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-    s.parentNode.insertBefore(sn, s);
-    }());
-    </script>
 <footer>
     <ul>
         <li class="footernav">
-            <a href="https://www.petersell.com/">Zur Startseite</a>
+            <a href="http://localhost:1313/">Zur Startseite</a>
         </li>
     </ul>
 </footer>
-<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
+<p class="copyright">Sämtliche Beiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
 <p class="h-card vcard" style="display:none;">
     <img class="u-photo" src="/images/petersell.jpg" />
     <a class="u-url p-author p-name url" href="https://www.petersell.com" rel="me">Andreas Petersell</a>

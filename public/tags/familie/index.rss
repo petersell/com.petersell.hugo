@@ -1,57 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>familie on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/familie/</link>
-    <description>Recent content in familie on Andreas Petersell</description>
+    <title>Familie on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/familie/</link>
+    <description>Recent content in Familie on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Sat, 21 Nov 2020 19:42:55 +0100</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/familie/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/familie/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Notiz 2020-11-21</title>
-      <link>https://www.petersell.com/status/notiz-2020-11-21/</link>
+      <title>Schattenarbeit</title>
+      <link>http://localhost:1313/status/schattenarbeit/</link>
+      <category>darumlebenwir</category>
+      <category>familie</category>
+      <category>gelesen</category>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/schattenarbeit/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe derzeit zwei Jobs in Schattenarbeit: ich fahre jeden Morgen meine Kinder zum S-Bahnhof, weil es der ortsansässige Verkehrsbetrieb nicht schafft. Und ich streiche seit gefühlt 17 Wochen ein Gartenhaus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die Theorie dazu: Craig Lambert, Zeitfresser - Wie uns die Industrie zu ihren Sklaven macht, München 2015.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ein seltsames Phänomen lässt sich immer häufiger feststellen: Trotz zunehmend besserer technischer Hilfsmittel und immer schnellerem Informationszugang hat man nicht mehr, sondern immer weniger Zeit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Schuhe</title>
+      <link>http://localhost:1313/status/schuhe/</link>
       <category>familie</category>
       <pubDate>Sat, 21 Nov 2020 19:42:55 +0100</pubDate>
       
-      <guid>https://www.petersell.com/status/notiz-2020-11-21/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;quot;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
+      <guid>http://localhost:1313/status/schuhe/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;rdquo;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Auf den Arber</title>
-      <link>https://www.petersell.com/status/foto-bayrischer-wald/</link>
+      <link>http://localhost:1313/status/auf-den-arber/</link>
       <category>familie</category>
+      <category>foto</category>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-bayrischer-wald/</guid>
+      <guid>http://localhost:1313/status/auf-den-arber/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212019-c6147330-sm.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
+&lt;img src=&#34;../images/status/bayrischerwald.png&#34; alt=&#34;Auf den Arber&#34; width=&#34;80%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nichts konnte uns mehr aufhalten.&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Maxim Leo in Anna Seghers Bibliothek</title>
-      <link>https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/</link>
+      <link>http://localhost:1313/status/maxim-leo-in-anna-seghers-bibliothek/</link>
       <category>familie</category>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/</guid>
+      <guid>http://localhost:1313/status/maxim-leo-in-anna-seghers-bibliothek/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Am 17.09.2019 durften wir amüsante anderthalb Stunden bei einer Lesung mit Maxim Leo in der Bibliothek im Lindencenter Hohenschönhausen verbringen. Leo las aus &lt;a href=&#34;https://www.kiwi-verlag.de/buch/wo-wir-zu-hause-sind/978-3-462-05081-3/&#34;&gt;seinem Buch&lt;/a&gt; &lt;em&gt;Wo wir zu Hause sind - Geschichten meiner verschwundenen Familie&lt;/em&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -68,18 +93,19 @@
     
     <item>
       <title>ZAZ - und der Abend wird gut</title>
-      <link>https://www.petersell.com/status/foto-zaz-ifa/</link>
+      <link>http://localhost:1313/status/zaz-und-der-abend-wird-gut/</link>
       <category>familie</category>
       <category>zaz</category>
+      <category>foto</category>
       <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-zaz-ifa/</guid>
+      <guid>http://localhost:1313/status/zaz-und-der-abend-wird-gut/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;ZAZ in Berlin in lauer Sommernacht. Es gibt fast nichts besseres. Bis sie jemand von der Bühne gezerrt hat.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/foto-zaz-ifa/zaz-in-berlin.jpg&#34; alt=&#34;ZAZ in Berlin&#34; width=&#34;50%&#34;&gt;
+&lt;img src=&#34;../images/foto-zaz-ifa/zaz-in-berlin.jpg&#34; alt=&#34;ZAZ in Berlin&#34; width=&#34;50%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -89,28 +115,29 @@
     
     <item>
       <title>Katzenfrühstück</title>
-      <link>https://www.petersell.com/status/foto-katzenfruehstueck/</link>
+      <link>http://localhost:1313/status/katzenfruehstueck/</link>
       <category>familie</category>
+      <category>foto</category>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-katzenfruehstueck/</guid>
+      <guid>http://localhost:1313/status/katzenfruehstueck/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Ich werde doch wohl ein Blaumeischen von einem Eierwärmer unterscheiden können! Wäre ja gelacht.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/katzenfruehstueck/katzenfruehstueck.jpg&#34; alt=&#34;Katzenfrühstück&#34; width=&#34;80%&#34;&gt;
+&lt;img src=&#34;../images/katzenfruehstueck/katzenfruehstueck.jpg&#34; alt=&#34;Katzenfrühstück&#34; width=&#34;80%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
-      <title>Notiz</title>
-      <link>https://www.petersell.com/status/notiz-2018-12-01/</link>
+      <title>Lügen</title>
+      <link>http://localhost:1313/status/luegen/</link>
       <category>familie</category>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/notiz-2018-12-01/</guid>
+      <guid>http://localhost:1313/status/luegen/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -118,25 +145,38 @@
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Der HERR
+— Der HERR
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
+      <title>Wo würdest Du anfangen?</title>
+      <link>http://localhost:1313/status/wo-wuerdest-du-anfangen/</link>
+      <category>darumlebenwir</category>
+      <category>familie</category>
+      <pubDate>Wed, 19 Jul 2017 18:59:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/wo-wuerdest-du-anfangen/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/wo-wuerdest-du-anfangen-750.jpg&#34; alt=&#34;Wo würdest Du anfangen?&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In Familie im Prenzlauer Berg unterwegs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Moritz</title>
-      <link>https://www.petersell.com/status/log-moritz/</link>
+      <link>http://localhost:1313/status/moritz/</link>
       <category>familie</category>
       <pubDate>Mon, 02 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/log-moritz/</guid>
+      <guid>http://localhost:1313/status/moritz/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;in der Litfaßsäule. Wir waren mit dem Herrn am Samstag (27.10.15) zur Premiere &lt;a href=&#34;http://parkaue.de/spielplan/moritz-in-der-litfasssaeule/?rubrik=repertoire&#34;&gt;der Parkaue&lt;/a&gt; im Prater. Der Herr hatte so viel Spaß, dass er danach begann, das Buch von Christa Kozik zu lesen.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/log-moritz/moritz-in-litfasssaeule.jpg&#34; alt=&#34;Kiki the Cat&#34; width=&#34;80%&#34;&gt;
+&lt;img src=&#34;../images/log-moritz/moritz-in-litfasssaeule.jpg&#34; alt=&#34;Kiki the Cat&#34; width=&#34;80%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;quoteblock&#34;&gt;
@@ -149,79 +189,23 @@
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Theater in der Parkaue: Moritz in der Litfaßsäule
+— Theater in der Parkaue: Moritz in der Litfaßsäule
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Horse Running</title>
-      <link>https://www.petersell.com/status/video-divaluna-horse-running/</link>
+      <link>http://localhost:1313/status/video-divaluna-horse-running/</link>
       <category>familie</category>
       <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/video-divaluna-horse-running/</guid>
+      <guid>http://localhost:1313/status/video-divaluna-horse-running/</guid>
       <description>&lt;p&gt;Divaluna hat einen Geparden und ein Pferd gezeichnet. Joachim Hamster Damm (fluchtkunst.de) hat diese Zeichnungen und viele weitere der Schüler des Mendelsohn-Bartholdy-Gymnasiums im Sommer 2015 animiert.&lt;/p&gt;
 &lt;p&gt;Wir waren zur Premiere des Films im Kino Am Friedrichshain. Der Clou: die Schüler haben alles selbst vertont. Es brauchten also keine GEMA-Gebühren entrichtet werden. Wir waren beeindruckt - und wurden bestens unterhalten.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://player.vimeo.com/video/134851946&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;vimeo video&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
- &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bei der Berliner Zeitung</title>
-      <link>https://www.petersell.com/status/log-bei-der-berliner-zeitung/</link>
-      <category>familie</category>
-      <pubDate>Mon, 08 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/log-bei-der-berliner-zeitung/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Mein Schatz hat immer gute Ideen. Manchmal hat das nichts mit Shopping zu tun. Wir fahren in die Druckerei der Berliner Zeitung nach Lichtenberg zum dortigen Leserfest &#34;70 Jahre Berliner Zeitung&#34;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/log-bei-der-berliner-zeitung/zeitungsschlangen.jpg&#34; alt=&#34;Zeitungsschlange&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Da hängt sie nun jeden Morgen, unsere Zeitung und fährt kilometerweise Seilbahn. Nur damit sie trocknet. Unser HERR möchte dort später arbeiten. Aber wohl nur wegen der vielen Knöppe.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&#34;Hallo, Guten Tag, ich bin von der Berliner Zeitung. Darf ich Sie fotografieren?&#34; Und so bin ich heute, 2 Tage später, in der Zeitung.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/log-bei-der-berliner-zeitung/in-der-zeitung.jpg&#34; alt=&#34;In der Zeitung&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Mein Schatz hatte es nicht so eilig wie ich, nach Hollywood zu kommen. Sie lehnte das Fotoshooting ab.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Aber zum Schluss lief uns noch ein richtiger Star vor die Kamera. Hier gibt Jochen-Martin Gutsch einer Leserin gerade ein Autogramm.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/log-bei-der-berliner-zeitung/gutsch.jpg&#34; alt=&#34;Gutsch&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>So geht Minecraft heute!</title>
-      <link>https://www.petersell.com/status/foto-minecraft/</link>
-      <category>familie</category>
-      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/foto-minecraft/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Happy Birthday. Ich bin stolz auf meine Zocker-Konditor-Familie.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/foto-minecraft/minecraft.jpg&#34; alt=&#34;Minecraftkuchen&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     

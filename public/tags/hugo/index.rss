@@ -1,27 +1,577 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/hugo/</link>
-    <description>Recent content in hugo on Andreas Petersell</description>
+    <title>Hugo on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Fri, 01 May 2020 17:29:38 +0200</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Mon, 19 May 2025 15:40:36 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/hugo/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/hugo/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
-      <link>https://www.petersell.com/blog/hugo-asciidoc-netlify/</link>
+      <title>Verification of your Subdomain for a gitlab Project</title>
+      <link>http://localhost:1313/blog/verification-of-your-subdomain-for-gitlab-project/</link>
       <category>hugo</category>
+      <category>blogging</category>
+      <pubDate>Mon, 19 May 2025 15:40:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/verification-of-your-subdomain-for-gitlab-project/</guid>
+      <description>&lt;p&gt;You have a project on gitlab with the URL &lt;em&gt;myname.gitlab.io/project&lt;/em&gt; and would now like to redirect your subdomain &lt;em&gt;&lt;a href=&#34;https://www.myname.com&#34;&gt;www.myname.com&lt;/a&gt;&lt;/em&gt; to your project in addition to your root domain &lt;em&gt;myname.com&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://docs.gitlab.com/user/project/pages/custom_domains_ssl_tls_certification/&#34;&gt;GitLab Pages custom domains&lt;/a&gt;&lt;/p&gt;
+&lt;!-- FM:Snippet:Start data:{&#34;id&#34;:&#34;Admonition - Voraussetzung&#34;,&#34;fields&#34;:[]} --&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;You have access to the DNS entries of your domains with your web hosting service provider.&lt;/p&gt;&lt;/div&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
+&lt;h3 id=&#34;cname-worked-fine&#34;&gt;CNAME worked fine&lt;/h3&gt;
+&lt;p&gt;This is not a guide, as every web host service provider uses different forms to enter the various DNS entries.&lt;/p&gt;
+&lt;p&gt;Mine uses the following values:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Subdomain&lt;/th&gt;
+&lt;th&gt;Domain&lt;/th&gt;
+&lt;th&gt;Typ&lt;/th&gt;
+&lt;th&gt;Content&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;www&lt;/td&gt;
+&lt;td&gt;myname.com&lt;/td&gt;
+&lt;td&gt;CNAME&lt;/td&gt;
+&lt;td&gt;myname.gitlab.io.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And so the CNAME entry worked immediately.&lt;/p&gt;
+&lt;h3 id=&#34;verification-by-trial-and-error&#34;&gt;Verification by trial and error&lt;/h3&gt;
+&lt;p&gt;But it took me days to complete the verification. The Gitlab documentation uses this syntax as a default and alludes to the command line level.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;_gitlab-pages-verification-code.www.myname.com TXT gitlab-pages-verification-code=31e837733dd7174ada938b64
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However, this example is not clear when filling in the form above. After several attempts, the following entry in the table worked.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Subdomain&lt;/th&gt;
+&lt;th&gt;Domain&lt;/th&gt;
+&lt;th&gt;Typ&lt;/th&gt;
+&lt;th&gt;Content&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;_gitlab-pages-verification-code.www&lt;/td&gt;
+&lt;td&gt;myname.com&lt;/td&gt;
+&lt;td&gt;TXT&lt;/td&gt;
+&lt;td&gt;gitlab-pages-verification-code=31e837733dd7174ada938b64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The verification status finally turned green: &lt;em&gt;Verified!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At &lt;a href=&#34;https://dnschecker.org/&#34;&gt;https://dnschecker.org/&lt;/a&gt; you can check whether the TXT entries are recognized. Fill in &lt;em&gt;_gitlab-pages-verification-code.www.myname.com&lt;/em&gt; and select &lt;em&gt;TXT&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Die schönsten Geschenke</title>
+      <link>http://localhost:1313/status/die-schoensten-geschenke/</link>
+      <category>darumlebenwir</category>
+      <category>hugo</category>
+      <pubDate>Wed, 01 Jan 2025 17:40:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/die-schoensten-geschenke/</guid>
+      <description>&lt;p&gt;macht man sich selbst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/netlify-build.png&#34; alt=&#34;Netlify-Build erfolgreich&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ich habe meinen Zettelkasten von DITA-XML in Markdown umgewandelt und will ihn hier weiter fortführen. Dabei hatte es einige Fehler gegeben. Gottseidank habe ich bei Netlify das Buildprotokoll gefunden und konnte alles wieder geradebiegen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Admonitions in Markdown</title>
+      <link>http://localhost:1313/blog/hugo-admonitions-in-markdown/</link>
+      <category>hugo</category>
+      <category>techcomm</category>
+      <category>blogging</category>
+      <pubDate>Sat, 07 Dec 2024 11:38:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-admonitions-in-markdown/</guid>
+      <description>&lt;p&gt;In Markdown gibt es keine Möglichkeit, farbig umrahmte Absätze für Hinweise, Warnungen, Infos und Tipps zu gestalten. In Hugo bietet sich aber diese Möglichkeit durch sogenannte Shortcodes.&lt;/p&gt;
+&lt;p&gt;Sogenannte Shortcodes werden in einer HTML-Datei abgelegt und müssen im Markdown-Content auf spezielle Weise eingefügt werden.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a target=&#34;_blank&#34; href=&#34;https://github.com/martignoni/hugo-notice&#34;&gt;hugo-notice von Nicolas Martignoni&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;p&gt;Da ich mein Template &lt;strong&gt;nicht&lt;/strong&gt; im Ordner &lt;code&gt;themes&lt;/code&gt; als git-submodule betreibe, kopiere ich alles in meinen lokalen &lt;code&gt;layouts&lt;/code&gt;-Ordner und synchronisiere diesen zugleich mit meinen Content-Dateien.&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;Sie müssen in der &lt;code&gt;config.toml&lt;/code&gt; angeben, ob Sie auf Ihrer Webseite mit einer Standardsprache arbeiten, oder mehrere, nahezu gleichberechtigte Sprachen nutzen. Da ich Deutsch als Standardsprache nutze, habe ich in die &lt;code&gt;config.toml&lt;/code&gt; diesen Eintrag hinzugefügt: &lt;code&gt;defaultContentLanguage = &#39;de&#39;&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;einmaliges-einrichten&#34;&gt;Einmaliges Einrichten&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Laden Sie das Zip-Archiv vom &lt;a href=&#34;https://github.com/martignoni/hugo-notice&#34;&gt;git-Repository hugo-notice&lt;/a&gt; herunter und entpacken Sie es.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Legen Sie die Datei &lt;code&gt;notice.html&lt;/code&gt; in den Ordner &lt;code&gt;layouts/shortcodes&lt;/code&gt; ab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Kopieren Sie den Ordner &lt;code&gt;icons&lt;/code&gt; in Ihren Hauptordner des Repositorys, also auf gleicher Ebene wie den den Ordner &lt;code&gt;layouts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; - Kopieren Sie den Ordner &lt;code&gt;i18n&lt;/code&gt; in Ihren Hauptordner des Repositorys, also auf gleicher Ebene wie den den Ordner &lt;code&gt;layouts&lt;/code&gt;. Löschen Sie die Dateien für die Sprachen, die Sie bestimmt nicht nutzen. Bei mir blieb nur die &lt;code&gt;de.yaml&lt;/code&gt; übrig.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; - Editieren Sie im Ordner &lt;code&gt;i18n&lt;/code&gt; die Datei &lt;code&gt;de.yaml&lt;/code&gt;, so denn nötig. Ich habe z.B. die Übersetzung vom gelben Kasten &lt;em&gt;Information&lt;/em&gt; auf &lt;em&gt;Voraussetzung&lt;/em&gt; geändert.&lt;/p&gt;
+&lt;h3 id=&#34;anwenden-im-markdown-content&#34;&gt;Anwenden im Markdown-Content&lt;/h3&gt;
+&lt;p&gt;Sobald Sie die Admonitions benutzen möchten, fügen Sie z.B. für obiges gelbes Kästchen folgende Notation in Ihre Content-Datei ein:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; notice info &amp;gt;}}
+Sie müssen in der `config.toml` angeben, ob Sie auf Ihrer Webseite ...
+{{&amp;lt; /notice &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;beispiel-für-eine-warnung&#34;&gt;Beispiel für eine Warnung&lt;/h3&gt;
+&lt;div class=&#34;notice warning&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;126 76.5 300 300&#34;&gt;
+  &lt;path d=&#34;M297.431 324.397v-34.255c0-3.245-2.344-5.95-5.358-5.95h-32.146c-3.014 0-5.358 2.705-5.358 5.95v34.255c0 3.245 2.344 5.95 5.358 5.95h32.146c3.014 0 5.358-2.705 5.358-5.95Zm-.335-67.428 3.014-82.753c0-1.081-.502-2.524-1.674-3.425-1.005-.902-2.512-1.983-4.019-1.983h-36.834c-1.507 0-3.014 1.081-4.019 1.983-1.172.901-1.674 2.704-1.674 3.786l2.846 82.392c0 2.344 2.512 4.146 5.693 4.146h30.975c3.013 0 5.525-1.803 5.692-4.146Zm-2.344-168.39L423.34 342.425c3.683 7.032 3.516 15.686-.335 22.717-3.85 7.031-10.883 11.358-18.417 11.358H147.413c-7.534 0-14.566-4.327-18.417-11.358-3.85-7.031-4.018-15.685-.335-22.716L257.248 88.578C260.93 81.188 268.13 76.5 276 76.5c7.87 0 15.069 4.688 18.752 12.08Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Warnung&lt;/p&gt;&lt;p&gt;This is a warning notice. Be warned!&lt;/p&gt;&lt;/div&gt;
+
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; notice warning &amp;gt;}}
+This is a warning notice. Be warned!
+{{&amp;lt; /notice &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;weitere-quellen&#34;&gt;Weitere Quellen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/i-need-help-with-i18n-translate-shortcode/39858&#34;&gt;Fehler bei Übersetzungen von Shortcodes &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/shortcode/&#34;&gt;gohugo.io - Create your own shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Templates nutzen in FrontMatter CMS</title>
+      <link>http://localhost:1313/blog/templates-nutzen-in-frontmatter-cms/</link>
+      <category>hugo</category>
+      <category>blogging</category>
+      <pubDate>Wed, 04 Dec 2024 19:41:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/templates-nutzen-in-frontmatter-cms/</guid>
+      <description>&lt;p&gt;Bisher habe ich meine Asciidoc- und Markdown-Dateien in VSCode erstellt. Das macht aber nicht so viel Spaß. Nun habe ich das &lt;a href=&#34;https://route360.dev/en/post/frontmatter-cms/&#34;&gt;Headless-CMS&lt;/a&gt; FrontMatter entdeckt. Statt zu tippen klicke ich jetzt auf Schaltflächen.&lt;/p&gt;
+&lt;p&gt;Erstellen Sie schnell auf Grundlage einer Markdown-Datei (template) eine Kopie dieser mit neuem Dateinamen. Die Dokumentation spricht zwar vom Einsatz von Templates. Aber nirgendwo steht, wie man die eingerichteten Templates benutzt! Bis ich die Vorgehensweise zufällig im Video &lt;em&gt;How you can use content-types in Front Matter CMS&lt;/em&gt; vom Entwickler Elio Struyf entdeckte.&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice tip&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;300.5 134 300 300&#34;&gt;
+  &lt;path d=&#34;M551.281 252.36c0-3.32-1.172-6.641-3.515-8.985l-17.774-17.578c-2.344-2.344-5.469-3.711-8.789-3.711-3.32 0-6.445 1.367-8.789 3.71l-79.687 79.493-44.141-44.14c-2.344-2.344-5.469-3.712-8.79-3.712-3.32 0-6.444 1.368-8.788 3.711l-17.774 17.579c-2.343 2.343-3.515 5.664-3.515 8.984 0 3.32 1.172 6.445 3.515 8.789l70.704 70.703c2.343 2.344 5.664 3.711 8.789 3.711 3.32 0 6.64-1.367 8.984-3.71l106.055-106.056c2.343-2.343 3.515-5.468 3.515-8.789ZM600.5 284c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Tipp&lt;/p&gt;&lt;p&gt;Wenn Sie vorhaben, über die Schaltfläche &lt;em&gt;Create Template&lt;/em&gt; ein Template zu erstellen, sichern Sie sich zuvor die Datei &lt;code&gt;frontmatter.json&lt;/code&gt;. Denn diese Vorgehensweise überschreibt gern diese Datei. Die folgende Anleitung verzichtet auf den Einsatz dieser Aktionsschaltfläche.&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;template-erstellen&#34;&gt;Template erstellen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Erstellen Sie einmalig einen Ordner &lt;code&gt;.frontmatter/templates&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Kopieren Sie eine Markdown-Datei in diesen neuen Ordner &lt;code&gt;templates&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Passen Sie die Datei so an, dass sie Ihren Vorstellungen eines Templates enspricht. &lt;a href=&#34;https://frontmatter.codes/docs/content-creation/placeholders&#34;&gt;Platzhalter&lt;/a&gt; wie in der Datei &lt;code&gt;frontmatter.json&lt;/code&gt; sind nicht möglich.&lt;/p&gt;
+&lt;p&gt;Sie können beliebig viele Template-Dateien erstellen. Beim Benutzen der Templates werden diese Ihnen in einer Auswahlliste angeboten.&lt;/p&gt;
+&lt;h3 id=&#34;template-benutzen&#34;&gt;Template benutzen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Klicken Sie in der linken Symbolschaltflächen-Leiste auf das Icon &lt;em&gt;Explorer&lt;/em&gt; und wechseln Sie in den VSCode-Dateiexplorer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Machen Sie einen rechten Mausklick auf den Content-Ordner, in der die neue Markdown-Datei angelegt werden soll. Z.B. &lt;code&gt;content/blog&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Wählen Sie im Kontextmenü den Eintrag &lt;em&gt;Frontmatter &amp;gt; New Article from template&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; - Wählen Sie die entsprechende Template-Datei aus, auf dessen Grundlage die neue Datei entstehen soll.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; - Editieren Sie die Datei wie gewohnt und passen Sie den YAML-Header an.&lt;/p&gt;
+&lt;h3 id=&#34;weitere-quellen&#34;&gt;Weitere Quellen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=oA5ocNaiAtY&#34;&gt;Video: How you can use content-types in Front Matter CMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://frontmatter.codes/&#34;&gt;Frontmatter CMS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo - Link im neuen Tab öffnen lassen</title>
+      <link>http://localhost:1313/blog/hugo-cms-link-im-neuen-tab-oeffnen/</link>
+      <category>hugo</category>
+      <category>blogging</category>
+      <pubDate>Mon, 02 Dec 2024 18:13:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-cms-link-im-neuen-tab-oeffnen/</guid>
+      <description>&lt;p&gt;In Markdown kann man standardmäßig nur Links zu Webseiten erstellen, die im selben Tab öffnen, nicht jedoch in einem neuen Tab geöffnet werden mit Hilfe des Attributs &lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Da ich inzwischen für das Schreiben meiner Hugo-Blogposts das Headless-CMS &lt;a href=&#34;https://frontmatter.codes&#34;&gt;Frontmatter&lt;/a&gt; nutze, möchte ich für einfache Texte wieder vermehrt Markdown nutzen.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://discourse.gohugo.io/t/how-to-target--blank-in-md/524/19&#34;&gt;How to target blank in md?&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h3&gt;
+&lt;p&gt;Das Attribut &lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt; kann man mit Hilfe von Hugo-Shortcodes realisieren.&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;Damit HTML-Code innerhalb der Markdown-Datei gerendert wird, muss einmalig in der &lt;code&gt;config.toml&lt;/code&gt; folgender Eintrag gemacht werden:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[markup.goldmark.renderer]
+unsafe = true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Erstellen Sie einen neuen Ordner &lt;code&gt;shortcodes&lt;/code&gt; im Hugo-Verzeichnis &lt;code&gt;layouts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Erstellen Sie im neuen Verzeichnis eine neue HTML-Datei. Ich nenne sie wie im Beispiel unter Quellen &lt;code&gt;a_blank.html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Fügen Sie diesen Code hinein:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;a target=&amp;#34;_blank&amp;#34; href=&amp;#34;{{ .Get 1 }}&amp;#34;&amp;gt;{{ .Get 0 | markdownify }}&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; - In der eigentlichen Markdown-Content-Datei fügen Sie den Shortcode folgendermaßen ein:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% a_blank &amp;#34;Shortcodes linking&amp;#34; &amp;#34;https://www.petersell.de&amp;#34; %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Klickt man jetzt auf diesen Link &lt;a target=&#34;_blank&#34; href=&#34;https://www.petersell.de&#34;&gt;Shortcodes linking&lt;/a&gt;
+, öffnet sich die Webseite in einem neuen Tab.&lt;/p&gt;
+&lt;h4 id=&#34;weitere-quellen&#34;&gt;Weitere Quellen&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/hugo-0-60-0-raw-html-omitted-issue/22010/7&#34;&gt;Raw HTML omitted Fehler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/shortcode/&#34;&gt;gohugo.io - Create your own shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo CMS mit Asciidoc auf Linux installieren</title>
+      <link>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</link>
       <category>asciidoc</category>
+      <category>hugo</category>
+      <category>linux</category>
+      <pubDate>Mon, 25 Nov 2024 19:44:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</guid>
+      <description>&lt;p&gt;Seitdem ich von Windows auf Linux Fedora gewechselt bin, habe ich es versäumt, mir einen lokalen Hugo-Server zu installieren. Nun habe ich das nachgeholt: Mit dem Ergebnis, dass ich mir meine Blogposts vorher lokal anschauen kann, bevor ich sie mit Netlify auf Github veröffentliche.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; Auf der Konsole folgenden Befehl absetzen: &lt;code&gt;$ sudo dnf install hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; In das Projektverzeichnis gehen. Bei mir ist es: &lt;code&gt;cd git/github/com.petersell.hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; Das Kommando &lt;code&gt;hugo server&lt;/code&gt; eingeben + ENTER. Danach sollte die Homepage im Browser unter &lt;em&gt;localhost:1313&lt;/em&gt; abrufbar sein. Leider war dies bei mir nicht der Fall. Es erschien diese Fehlermeldung:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Error: error building site: &amp;#34;/git/github/com.petersell.hugo/content/blog/essay-ddrprotagonisten.adoc:1:1&amp;#34;: access denied: &amp;#34;asciidoctor&amp;#34; is not whitelisted in policy &amp;#34;security.exec.allow&amp;#34;; the current security configuration is:
+
+[security]
+  enableInlineShortcodes = false
+
+  [security.exec]
+    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;]
+    osEnv = [&amp;#39;(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$&amp;#39;]
+
+  [security.funcs]
+    getenv = [&amp;#39;^HUGO_&amp;#39;, &amp;#39;^CI$&amp;#39;]
+
+  [security.http]
+    methods = [&amp;#39;(?i)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hier fand ich eine Fehlerbehebung: &lt;a href=&#34;https://gohugo.io/about/security/&#34;&gt;https://gohugo.io/about/security/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.91.0&#34;&gt;Hugo v0.91.0&lt;/a&gt; and newer, you can specify a project’s security policy in a config file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; Ich hatte neben Markdown-Dateien auch asciidoc-Dateien in meinem Hugo-Projekt eingebunden. In der Datei &lt;em&gt;config.toml&lt;/em&gt; in meinem Homepage-Hauptverzeichnis musste ich folgendes hinzufügen: &amp;lsquo;^asciidoctor$&amp;rsquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[security]
+  [security.exec]
+    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;, &amp;#39;^asciidoctor$&amp;#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetzt wurde die Homepage gebuildet und war im Browser via &lt;em&gt;localhost:1313&lt;/em&gt; aufrufbar.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&#34;&gt;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
+      <link>http://localhost:1313/blog/hugo-asciidoc-netlify/</link>
+      <category>asciidoc</category>
+      <category>hugo</category>
+      <category>blogging</category>
       <pubDate>Fri, 01 May 2020 17:29:38 +0200</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-asciidoc-netlify/</guid>
+      <guid>http://localhost:1313/blog/hugo-asciidoc-netlify/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner &lt;code&gt;public&lt;/code&gt; via FTP auf den Webserver kopieren. Werden es mehr Blogposts, werden Dienste wie Netlify unausweichlich.&lt;/p&gt;
 &lt;/div&gt;
@@ -72,7 +622,7 @@
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Patrick Peeters
+— Patrick Peeters
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -80,8 +630,8 @@
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
-gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &amp;#39;https://rubygems.org&amp;#39;
+gem &amp;#39;asciidoctor&amp;#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -90,8 +640,8 @@ gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[build]
-publish = &#34;public&#34;
-command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre&gt;
+publish = &amp;#34;public&amp;#34;
+command = &amp;#34;bundle &amp;amp;&amp;amp; hugo --minify&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -114,11 +664,12 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
     
     <item>
       <title>Hugo mit Asciidoc - Auf anderen Post verlinken</title>
-      <link>https://www.petersell.com/blog/hugo-auf-post-verlinken/</link>
+      <link>http://localhost:1313/blog/hugo-auf-post-verlinken/</link>
       <category>hugo</category>
+      <category>asciidoc</category>
       <pubDate>Tue, 28 Apr 2020 14:43:14 +0200</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-auf-post-verlinken/</guid>
+      <guid>http://localhost:1313/blog/hugo-auf-post-verlinken/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.&lt;/p&gt;
 &lt;/div&gt;
@@ -140,19 +691,17 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Hier die Demo: &lt;a href=&#34;../teamwork-manifest/&#34;&gt;klicke hier&lt;/a&gt;, um zum Post &lt;em&gt;Manifest für eine menschliche Zusammenarbeit&lt;/em&gt; zu gelangen.&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Hugo mit Stock and Flow</title>
-      <link>https://www.petersell.com/blog/hugo-stock-and-flow/</link>
+      <link>http://localhost:1313/blog/hugo-stock-and-flow/</link>
       <category>hugo</category>
+      <category>blogging</category>
       <pubDate>Fri, 17 Apr 2020 16:40:39 +0200</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-stock-and-flow/</guid>
+      <guid>http://localhost:1313/blog/hugo-stock-and-flow/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -166,7 +715,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Robin Sloan&lt;br&gt;
+— Robin Sloan&lt;br/&gt;
 &lt;cite&gt;http://snarkmarket.com/2010/4890&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -179,19 +728,19 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[params]
-  mainSections = [&#34;blog&#34;, &#34;status&#34;]&lt;/code&gt;&lt;/pre&gt;
+  mainSections = [&amp;#34;blog&amp;#34;, &amp;#34;status&amp;#34;]&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</link>
+      <link>http://localhost:1313/blog/hugo-asciidoc-bilder-einbinden/</link>
       <category>hugo</category>
       <category>asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</guid>
+      <guid>http://localhost:1313/blog/hugo-asciidoc-bilder-einbinden/</guid>
       <description>&lt;div id=&#34;preamble&#34;&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -202,7 +751,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;div class=&#34;admonitionblock tip&#34;&gt;
 &lt;table&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Tipp&lt;/div&gt;
 &lt;/td&gt;
@@ -213,7 +762,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -306,165 +855,17 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Interne Einbindung&lt;/div&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&#34;stylesheet&#34; href=&#34;{{&#34;css/fa/css/all.css&#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{&amp;#34;css/fa/css/all.css&amp;#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Externe Einbindung&lt;/div&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34; rel=&#34;stylesheet&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&amp;#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;In meiner CSS wurden sämtliche Einträge zur class &lt;code&gt;.admonitionblock&lt;/code&gt; überflüssig, die ich mir zuvor aus der &lt;code&gt;asciidoctor.css&lt;/code&gt; kopiert hatte.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Weiterblättern im Hugo-Theme Minimo</title>
-      <link>https://www.petersell.com/blog/hugo-minimo-weiterlink/</link>
-      <category>hugo</category>
-      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/blog/hugo-minimo-weiterlink/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ist ein Open Source Webseiten-Generator für statische Seiten. Das Theme Minimo erstellt die Links unterhalb eines Blogposts für Weiter und Zurück automatisch – nur leider genau umgekehrt, wie ich es für meine Texte gebrauchen kann. Bei Blogposts landet der aktuellste Post oben. Bei belletristischen Texten wird das erste Kapitel zuerst geschrieben, soll aber auch an erster (oben) Stelle bleiben. Kurz und gut: ich wollte eine Möglichkeit haben, Hugo-Seiten manuell zu verbinden. Bei Kapitel 1 landet der Leser nach Klick auf Weiter beim Kapitel 2. Eigentlich logisch, im CMS Hugo aber nicht so einfach.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_template_weiche_einrichten&#34;&gt;Template-Weiche einrichten&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die Weiter-Zurück-Navigation befindet sich im Theme Minimo in der Template-Datei &lt;code&gt;layouts\_default\partials\nav\entry_nav.html&lt;/code&gt;. Dieses sogenannte Partial wiederum wird aufgerufen in der Layoutdatei &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Für die Blogposts wollte ich die bisherige Weiter-Navigation haben (aktuellster Post zuoberst). Für die Romankapitel wollte ich eine neue Navigation einrichten. Benötigt wurde eine “Weiche”. Bei &lt;a href=&#34;https://thomas-leister.de/einfuehrung-in-hugo-theme-erstellen/&#34;&gt;Thomas Leister&lt;/a&gt; wurde ich fündig. Meine Datei &lt;code&gt;single.html&lt;/code&gt; bekam folgende “Weiche”.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;{{ if eq .Type &#34;novel&#34; }}
-    {{ partial &#34;nav/entry_nav-novel.html&#34; . }}
-{{ else }}
-    {{ partial &#34;nav/entry_nav.html&#34; . }}
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meine Content-Dateien für den Roman musste ich noch einen Variable für den Typ einfügen: &lt;code&gt;type: novel&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
-title: gero_prolog
-linktitle: 1_gero-prolog
-type: novel
-date: 2017-10-01
-nextpage: novel/version-eins/2_michael-01/
----&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_neue_partial_datei_erschaffen&#34;&gt;Neue Partial-Datei erschaffen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die oben erwähnte Partial-Datei &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich kopiert und umbenannt in &lt;code&gt;entry_nav-novel.html&lt;/code&gt;. Bei Blogposts kommt die Original-Datei zum Einsatz, bei Pages im Ordner &lt;code&gt;novel&lt;/code&gt; wird die neue Datei herangezogen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Beim Weiter-Link den Titel des nächsten Kapitels einzublenden, habe ich nicht geschafft. Darum habe ich ihn weggelassen. In einer Sequenz sorgt das für mehr Übersichtlichkeit. Bei den Blogpost wird weiterhin der Titel des nächsten Blogposts ausgegen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ausgehend vom vorhandenen Minimo-Template &lt;code&gt;entry_nav.html&lt;/code&gt; habe ich mein Template durch Trial and Error folgendermaßen in der Datei &lt;code&gt;entry_nav-novel.html&lt;/code&gt; angepasst.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&amp;lt;nav class=&#39;entry-nav&#39;&amp;gt;
-  &amp;lt;div class=&#39;container&#39;&amp;gt;
-
-    {{- if $.Params.prevpage -}}
-    &amp;lt;div class=&#39;prev-entry sep-before&#39;&amp;gt;
-	 &amp;lt;a href=&#39;{{ $.Params.prevpage | relURL }}&#39;&amp;gt;
-        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
-          {{- partial &#34;svg/icons&#34; &#34;prev&#34; -}}
-          {{- print &#34; &#34; ( i18n &#34;previous&#34; ) -}}
-        &amp;lt;/span&amp;gt;
-        &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;previousPost&#34; }}: &amp;lt;/span&amp;gt;
-     &amp;lt;/a&amp;gt;
-    &amp;lt;/div&amp;gt;
-    {{- end -}}
-
-    {{- if $.Params.nextpage -}}
-    &amp;lt;div class=&#39;next-entry sep-before&#39;&amp;gt;
-	 &amp;lt;a href=&#39;{{ $.Params.nextpage | relURL }}&#39;&amp;gt;
-	    &amp;lt;span class=&#39;screen-reader-text&#39;&amp;gt;{{ i18n &#34;nextPost&#34; }}: &amp;lt;/span&amp;gt;
-        &amp;lt;span aria-hidden=&#39;true&#39;&amp;gt;
-          {{- print ( i18n &#34;next&#34; ) &#34; &#34; -}}
-          {{- partial &#34;svg/icons&#34; &#34;next&#34; -}}
-        &amp;lt;/span&amp;gt;
-	  &amp;lt;/a&amp;gt;
-    &amp;lt;/div&amp;gt;
-    {{- end -}}
-
-  &amp;lt;/div&amp;gt;
-&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Indiewebify my Hugo-Site</title>
-      <link>https://www.petersell.com/blog/hugo-indiewebify/</link>
-      <category>hugo</category>
-      <category>indieweb</category>
-      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/blog/hugo-indiewebify/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Mit Hilfe eines kleinen Services von Pelle Wessmann namens &lt;a href=&#34;https://webmention.herokuapp.com/&#34; class=&#34;bare&#34;&gt;https://webmention.herokuapp.com/&lt;/a&gt; ist es mir auf meiner statischen Hugo-Seite möglich, Kommentare, Likes, Reposts u.ä. via Webmentions einzusammeln.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_schritt_1_anmelden_und_code_einfügen&#34;&gt;Schritt 1 - Anmelden und Code einfügen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/hugo-indiewebify/indiewebify.gif&#34; alt=&#34;Webmention&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Anschließend Domain eingeben und die beiden Code-Schnipsel einfügen. Den ersten in die &lt;code&gt;header.html&lt;/code&gt;, den zweiten in die &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_schritt_2_css_klassen_hinzufügen&#34;&gt;Schritt 2 - CSS-Klassen hinzufügen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Stylesheet der Service-Seite aufrufen: &lt;a href=&#34;https://webmention.herokuapp.com/style.css&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://webmention.herokuapp.com/style.css&lt;/a&gt;. Darin alles, was &lt;em&gt;webmention&lt;/em&gt; enthält, in die eigene CSS-Datei kopieren. In meinem Fall in die CSS meines Hugo-Themes Mainroad.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_schritt_3_neuer_build&#34;&gt;Schritt 3 - Neuer Build&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Einen neuen Build laufen lassen ohne &lt;code&gt;server&lt;/code&gt;-Befehl, so dass der public-Ordner neu befüllt wird. Anschließend den public-Ordner auf den Webspace kopieren. Darauf achten, dass auch die neue CSS mit auf dem Webspace liegt.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_schritt_4_kommentieren_und_liken&#34;&gt;Schritt 4 - Kommentieren und Liken&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die beiden Posts vor diesem Artikel sind ein &lt;em&gt;Like&lt;/em&gt; und ein &lt;em&gt;Kommentar&lt;/em&gt;. d.h. ich habe einfach die URL zitiert. Das Ergebnis dieser beiden Posts auf www.publication.work ist folgendes:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/hugo-indiewebify/indiewebify-output.gif&#34; alt=&#34;Ergebnis&#34;&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>

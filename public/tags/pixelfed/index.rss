@@ -1,26 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pixelfed on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/pixelfed/</link>
-    <description>Recent content in pixelfed on Andreas Petersell</description>
+    <title>Pixelfed on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/pixelfed/</link>
+    <description>Recent content in Pixelfed on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/pixelfed/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/pixelfed/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Pixelfed 2021</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2021/</link>
+      <title>Warum?</title>
+      <link>http://localhost:1313/status/warum/</link>
       <category>pixelfed</category>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/warum/</guid>
+      <description>
+&lt;p&gt;Im Büro von Erich Mielke.&lt;/p&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/843561637584341039/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Ein Besuch im Stasimuseum in der Nomannenstraße hilft immer gegen das Vergessen. Beeindruckend für mich waren die Beispielakten im Haus 7 innerhalb der Ausstellung zum Stasi-Unterlagen-Archiv. Bände voller bürokratisch-grotesker Widerwärtigkeiten, potenziert durch eine Organisation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pixelfed 2024</title>
+      <link>http://localhost:1313/status/pixelfed-2024/</link>
+      <category>pixelfed</category>
+      <category>foto</category>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/pixelfed-2024/</guid>
+      <description>&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/764912681291388087/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771427276129047726/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771428923684165312/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771430548505970857/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771432295540099711/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Feierabend</title>
+      <link>http://localhost:1313/status/feierabend/</link>
+      <category>pixelfed</category>
+      <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/feierabend/</guid>
+      <description>
+&lt;p&gt;Wir sind im Elsass und machen mal so richtig Feierabend!&lt;/p&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/794651739208646472/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pixelfed 2021</title>
+      <link>http://localhost:1313/status/pixelfed-2021/</link>
+      <category>pixelfed</category>
+      <category>foto</category>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2021/</guid>
+      <guid>http://localhost:1313/status/pixelfed-2021/</guid>
       <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
@@ -28,11 +73,12 @@
     
     <item>
       <title>Pixelfed 2020</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2020/</link>
+      <link>http://localhost:1313/status/pixelfed-2020/</link>
       <category>pixelfed</category>
+      <category>foto</category>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2020/</guid>
+      <guid>http://localhost:1313/status/pixelfed-2020/</guid>
       <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/233686923334520832/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/173529344587730944/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
@@ -46,11 +92,12 @@
     
     <item>
       <title>Pixelfed 2019</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2019/</link>
+      <link>http://localhost:1313/status/pixelfed-2019/</link>
       <category>pixelfed</category>
+      <category>foto</category>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2019/</guid>
+      <guid>http://localhost:1313/status/pixelfed-2019/</guid>
       <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/160331243584622592/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/170617994458828800/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
@@ -58,11 +105,12 @@
     
     <item>
       <title>Pixelfed 2018</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2018/</link>
+      <link>http://localhost:1313/status/pixelfed-2018/</link>
       <category>pixelfed</category>
+      <category>foto</category>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2018/</guid>
+      <guid>http://localhost:1313/status/pixelfed-2018/</guid>
       <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/163385584797224960/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
 &lt;iframe src=&#34;https://pixelfed.de/p/putbus/168106595035779072/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
@@ -90,11 +138,11 @@
     
     <item>
       <title>Pixelfed 2015</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2015/</link>
+      <link>http://localhost:1313/status/pixelfed-2015/</link>
       <category>pixelfed</category>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2015/</guid>
+      <guid>http://localhost:1313/status/pixelfed-2015/</guid>
       <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/1373/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
     </item>
     

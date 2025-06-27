@@ -1,231 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>asciidoc on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/asciidoc/</link>
-    <description>Recent content in asciidoc on Andreas Petersell</description>
+    <title>Asciidoc on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/asciidoc/</link>
+    <description>Recent content in Asciidoc on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Wed, 10 Jun 2020 10:57:42 +0200</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Mon, 25 Nov 2024 19:44:01 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/asciidoc/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/asciidoc/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Antora-Output aus lokalen Quellen generieren</title>
-      <link>https://www.petersell.com/blog/asciidoc-antora-test/</link>
+      <title>Hugo CMS mit Asciidoc auf Linux installieren</title>
+      <link>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</link>
       <category>asciidoc</category>
-      <pubDate>Wed, 10 Jun 2020 10:57:42 +0200</pubDate>
+      <category>hugo</category>
+      <category>linux</category>
+      <pubDate>Mon, 25 Nov 2024 19:44:01 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/asciidoc-antora-test/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Antora ist ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden. Zum Testen sollen sich die Quelldateien jedoch lokal auf dem Rechner befinden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://gitlab.com/antora/antora/-/issues/284#note_95389433&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Is there a way to use Antora without Git?&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Antora ist in erster Linie dazu gedacht, Dokumentationen aus mehreren Repositorys unter einer Oberfläche zusammenzuführen (docs as code). Bevor ein Redakteur jedoch via Merge Request in eine übergreifende Gesamtdokumentation eincheckt, möchte er sichergehen und seine Texte testen. Antora sollte dazu auch lokal lauffähig sein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es gibt drei Quell-Bestandteile einer Antora-Dokumentation:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Die Playbook-Datei (z.B. &lt;code&gt;antora-test-playbook.yml&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Die Components (Die Inhalte-Repositorys bzw. Inhalte-Verzeichnisse)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Das UI-Theme (&lt;code&gt;ui-bundle.zip&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Diese 3 Bestandteile werden lokal in ein Verzeichnis kopiert. Ich möchte es das &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; nennen. Im Beispiel existieren im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; zwei Components sowie die Playbook-Datei und das UI-Theme.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;com.petersell.example
-    ├── com.petersell.example.api
-    ├── com.petersell.example.impl
-    └── com.petersell.example.doc
-        ├── modules
-        └── antora.yml
- com.petersell.anotherexample
-    └── com.petersell.anotherexample.doc
-        ├── modules
-        └── antora.yml
-antora-test-playbook.yml
-ui-bundle.zip&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Da ich neben den o.g. zwei lokalen Components-Verzeichnisse noch ein Beispielprojekt von Antora integrieren möchte, dass sich in einem Git-Repository befindet, musste ich meine Playbook-Datei &lt;code&gt;antora-test-playbook.yml&lt;/code&gt; folgendermaßen gestalten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;site:
-  title: Antora Test Site &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
-  url: http://localhost
-  start_page: Startseite::index.adoc &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;
-content:
-  sources:
-  - url: . &lt;b class=&#34;conum&#34;&gt;(3)&lt;/b&gt;
-    branches: HEAD &lt;b class=&#34;conum&#34;&gt;(4)&lt;/b&gt;
-    start_path: com.petersell.example/com.petersell.example.doc &lt;b class=&#34;conum&#34;&gt;(5)&lt;/b&gt;
-  - url: https://gitlab.com/antora/demo/demo-component-b.git &lt;b class=&#34;conum&#34;&gt;(6)&lt;/b&gt;
-    branches: [v2.0, v1.0]
-    start_path: docs
-  - url: . &lt;b class=&#34;conum&#34;&gt;(7)&lt;/b&gt;
-    branches: HEAD
-    start_path: com.petersell.anotherexample/com.petersell.anotherexample.doc
-ui:
-  bundle:
-  #
-    url: ./ui-bundle.zip &lt;b class=&#34;conum&#34;&gt;(8)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;colist arabic&#34;&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Der Titel erscheint im Output links oben in der Kopf-Navigationsleiste.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Der linke Teil (vor den zweifachen Doppelpunkten) gibt den Namen der Startseite wider. Sie finden diesen in der &lt;code&gt;antora.yml&lt;/code&gt; des jeweiligen Ordners hinter dem Attribut &lt;code&gt;name&lt;/code&gt;. Der rechte Teil gibt den Pfad inklusive Dateiname der Startseiten-Datei aus. Hier ist die Startseite im ROOT-Verzeichnis.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, setzen Sie den Punkt.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, schreiben Sie &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Der Pfad zum jeweiligen Component-Verzeichnis inklusive dem Verzeichnisnamen, hier &lt;code&gt;com.petersell.example.doc&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Die Syntax für eine Component in einem Git-Repository. Hier ist es eine Beispieldokumentation von Antora.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Die zweite lokale Component. Gehen Sie analog der ersten Component vor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Das lokale UI-Theme. Dies könnte auch die URL zu einem Git-Repository inklusive der ZIP-Datei sein.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen Sie folgenden Build-Befehl ab.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Antora-Buildbefehl&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Höchstwahrscheinlich werden Sie eine Fehlermeldung erhalten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Error: Local content source must be a git repository: C:\Users\Andreas\Dropbox\antora (resolved from url: .)&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In diesem Fall öffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; ein &lt;a href=&#34;https://gitforwindows.org/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git-Bash-Fenster&lt;/a&gt; und geben die folgende Befehle auf einmal ein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-test/gitvortaeuschen.png&#34; alt=&#34;Git-Bash-Fenster im Arbeitsverzeichnis&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Git-Befehle kopieren&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;git init .
-touch .gitignore
-git add .gitignore
-git commit -m &#39;initialize repository&#39;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen nochmals den Build-Befehl ab.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Befehl clont das externe Repository des Antora-Beispielprojekts. Im Ergebnis entsteht innerhalb des &lt;em&gt;Antora-Arbeitsverzeichnisses&lt;/em&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output der drei Components.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
+      <guid>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</guid>
+      <description>&lt;p&gt;Seitdem ich von Windows auf Linux Fedora gewechselt bin, habe ich es versäumt, mir einen lokalen Hugo-Server zu installieren. Nun habe ich das nachgeholt: Mit dem Ergebnis, dass ich mir meine Blogposts vorher lokal anschauen kann, bevor ich sie mit Netlify auf Github veröffentliche.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; Auf der Konsole folgenden Befehl absetzen: &lt;code&gt;$ sudo dnf install hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; In das Projektverzeichnis gehen. Bei mir ist es: &lt;code&gt;cd git/github/com.petersell.hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; Das Kommando &lt;code&gt;hugo server&lt;/code&gt; eingeben + ENTER. Danach sollte die Homepage im Browser unter &lt;em&gt;localhost:1313&lt;/em&gt; abrufbar sein. Leider war dies bei mir nicht der Fall. Es erschien diese Fehlermeldung:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Error: error building site: &amp;#34;/git/github/com.petersell.hugo/content/blog/essay-ddrprotagonisten.adoc:1:1&amp;#34;: access denied: &amp;#34;asciidoctor&amp;#34; is not whitelisted in policy &amp;#34;security.exec.allow&amp;#34;; the current security configuration is:
+
+[security]
+  enableInlineShortcodes = false
+
+  [security.exec]
+    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;]
+    osEnv = [&amp;#39;(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$&amp;#39;]
+
+  [security.funcs]
+    getenv = [&amp;#39;^HUGO_&amp;#39;, &amp;#39;^CI$&amp;#39;]
+
+  [security.http]
+    methods = [&amp;#39;(?i)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hier fand ich eine Fehlerbehebung: &lt;a href=&#34;https://gohugo.io/about/security/&#34;&gt;https://gohugo.io/about/security/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.91.0&#34;&gt;Hugo v0.91.0&lt;/a&gt; and newer, you can specify a project’s security policy in a config file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; Ich hatte neben Markdown-Dateien auch asciidoc-Dateien in meinem Hugo-Projekt eingebunden. In der Datei &lt;em&gt;config.toml&lt;/em&gt; in meinem Homepage-Hauptverzeichnis musste ich folgendes hinzufügen: &amp;lsquo;^asciidoctor$&amp;rsquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[security]
+  [security.exec]
+    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;, &amp;#39;^asciidoctor$&amp;#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetzt wurde die Homepage gebuildet und war im Browser via &lt;em&gt;localhost:1313&lt;/em&gt; aufrufbar.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&#34;&gt;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Antora lokal installieren</title>
-      <link>https://www.petersell.com/blog/asciidoc-antora-install/</link>
+      <link>http://localhost:1313/blog/asciidoc-antora-install/</link>
       <category>asciidoc</category>
+      <category>techcomm</category>
       <pubDate>Wed, 03 Jun 2020 12:15:42 +0200</pubDate>
       
-      <guid>https://www.petersell.com/blog/asciidoc-antora-install/</guid>
+      <guid>http://localhost:1313/blog/asciidoc-antora-install/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Antora ist so etwas wie ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&#34;sect1&#34;&gt;
 &lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
@@ -258,7 +95,7 @@ git commit -m &#39;initialize repository&#39;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-install/install-node4.png&#34; alt=&#34;Chocolatey-Installation&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/install-node4.png&#34; alt=&#34;Chocolatey-Installation&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;title&#34;&gt;Figure 1. Chocolatey-Installation&lt;/div&gt;
 &lt;/div&gt;
@@ -293,8 +130,8 @@ v12.16.3&lt;/pre&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Die Datei &#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; kann nicht geladen werden. Die Datei
-&#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; ist nicht digital signiert. Sie können dieses Skript im aktuellen System nicht ausführen. Weitere Informationen zum Ausführen von Skripts und Festlegen der Ausführungsrichtlinie erhalten Sie unter &#34;about_Execution_Policies&#34; (https:/go.microsoft.com/fwlink/?LinkID=135170)..&lt;/pre&gt;
+&lt;pre&gt;Die Datei &amp;#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&amp;#34; kann nicht geladen werden. Die Datei
+&amp;#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&amp;#34; ist nicht digital signiert. Sie können dieses Skript im aktuellen System nicht ausführen. Weitere Informationen zum Ausführen von Skripts und Festlegen der Ausführungsrichtlinie erhalten Sie unter &amp;#34;about_Execution_Policies&amp;#34; (https:/go.microsoft.com/fwlink/?LinkID=135170)..&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -302,7 +139,7 @@ v12.16.3&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-install/antora-version.png&#34; alt=&#34;Ausführungsrichtlinie ändern&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/antora-version.png&#34; alt=&#34;Ausführungsrichtlinie ändern&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;title&#34;&gt;Figure 2. Ausführungsrichtlinie ändern&lt;/div&gt;
 &lt;/div&gt;
@@ -337,7 +174,7 @@ v12.16.3&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-install/clone-beispielrepo2.png&#34; alt=&#34;Beispielrepo clonen&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-antora-install/clone-beispielrepo2.png&#34; alt=&#34;Beispielrepo clonen&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;title&#34;&gt;Figure 3. Beispielprojekt clonen&lt;/div&gt;
 &lt;/div&gt;
@@ -359,12 +196,13 @@ v12.16.3&lt;/pre&gt;
     
     <item>
       <title>Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
-      <link>https://www.petersell.com/blog/hugo-asciidoc-netlify/</link>
-      <category>hugo</category>
+      <link>http://localhost:1313/blog/hugo-asciidoc-netlify/</link>
       <category>asciidoc</category>
+      <category>hugo</category>
+      <category>blogging</category>
       <pubDate>Fri, 01 May 2020 17:29:38 +0200</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-asciidoc-netlify/</guid>
+      <guid>http://localhost:1313/blog/hugo-asciidoc-netlify/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner &lt;code&gt;public&lt;/code&gt; via FTP auf den Webserver kopieren. Werden es mehr Blogposts, werden Dienste wie Netlify unausweichlich.&lt;/p&gt;
 &lt;/div&gt;
@@ -415,7 +253,7 @@ v12.16.3&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Patrick Peeters
+— Patrick Peeters
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -423,8 +261,8 @@ v12.16.3&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
-gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &amp;#39;https://rubygems.org&amp;#39;
+gem &amp;#39;asciidoctor&amp;#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -433,8 +271,8 @@ gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[build]
-publish = &#34;public&#34;
-command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre&gt;
+publish = &amp;#34;public&amp;#34;
+command = &amp;#34;bundle &amp;amp;&amp;amp; hugo --minify&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -456,13 +294,45 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
     </item>
     
     <item>
+      <title>Hugo mit Asciidoc - Auf anderen Post verlinken</title>
+      <link>http://localhost:1313/blog/hugo-auf-post-verlinken/</link>
+      <category>hugo</category>
+      <category>asciidoc</category>
+      <pubDate>Tue, 28 Apr 2020 14:43:14 +0200</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-auf-post-verlinken/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Beide adoc-Dateien liegen im selben Verzeichnis:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;literalblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;|-- content
+    |-- blog
+        |-- teamwork-manifest.adoc
+        └-- teamwork-manifest-warum.adoc&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In der Datei &lt;code&gt;teamwork-manifest-warum.adoc&lt;/code&gt; musste ich auf den Post &lt;code&gt;teamwork-manifest.adoc&lt;/code&gt; verlinken. Folgende Notation für einen Inline-Link brachte Erfolg.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</link>
+      <link>http://localhost:1313/blog/hugo-asciidoc-bilder-einbinden/</link>
       <category>hugo</category>
       <category>asciidoc</category>
       <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</guid>
+      <guid>http://localhost:1313/blog/hugo-asciidoc-bilder-einbinden/</guid>
       <description>&lt;div id=&#34;preamble&#34;&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -473,7 +343,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;div class=&#34;admonitionblock tip&#34;&gt;
 &lt;table&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Tipp&lt;/div&gt;
 &lt;/td&gt;
@@ -484,7 +354,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -577,13 +447,13 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Interne Einbindung&lt;/div&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&#34;stylesheet&#34; href=&#34;{{&#34;css/fa/css/all.css&#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{&amp;#34;css/fa/css/all.css&amp;#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Externe Einbindung&lt;/div&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34; rel=&#34;stylesheet&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&amp;#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -595,28 +465,21 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
     
     <item>
       <title>Asciidoctor auf Windows einrichten</title>
-      <link>https://www.petersell.com/blog/asciidoc-asciidoctor-install/</link>
+      <link>http://localhost:1313/blog/asciidoc-asciidoctor-install/</link>
       <category>asciidoc</category>
+      <category>techcomm</category>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/asciidoc-asciidoctor-install/</guid>
+      <guid>http://localhost:1313/blog/asciidoc-asciidoctor-install/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;AsciiDoc ist eine vereinfachte Auszeichnungssprache ähnlich Markdown, die dazu dient, Texte in verschiedenen Dokumentenformaten zu veröffentlichen. Asciidoc wurde speziell für die Technische Dokumentation entwickelt und wird in vielen Git-Portalen als Dokumentationsstandard genutzt. Es hat jedoch nicht die Möglichkeiten der Wiederverwendung wie DITA-XML. Neuer Rechner, neuer Doktor: wie muss ich ihn installieren? Jetzt schreibe ich es auf, denn ich vergesse es jedes Mal.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_ruby_installieren&#34;&gt;Ruby installieren&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_asciidoctor_installieren&#34;&gt;Asciidoctor installieren&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_asciidoctor_für_pdf_installieren&#34;&gt;Asciidoctor für PDF installieren&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&#34;sect1&#34;&gt;
 &lt;h2 id=&#34;_ruby_installieren&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_ruby_installieren&#34;&gt;&lt;/a&gt;Ruby installieren&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall1.gif&#34; alt=&#34;rubyinstall1&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall1.gif&#34; alt=&#34;rubyinstall1&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -624,7 +487,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall2.gif&#34; alt=&#34;rubyinstall2&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/rubyinstall2.gif&#34; alt=&#34;rubyinstall2&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -642,7 +505,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-install.gif&#34; alt=&#34;asciidoctor install&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-install.gif&#34; alt=&#34;asciidoctor install&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -660,7 +523,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-pdf.gif&#34; alt=&#34;asciidoctor pdf&#34;&gt;
+&lt;img src=&#34;../images/asciidoc-asciidoctor-install/asciidoctor-pdf.gif&#34; alt=&#34;asciidoctor pdf&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -677,17 +540,19 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
     
     <item>
       <title>Eine Homepage mit Asciidoctor erstellen</title>
-      <link>https://www.petersell.com/blog/asciidoc-homepage-mit-asciidoctor/</link>
+      <link>http://localhost:1313/blog/asciidoc-homepage-mit-asciidoctor/</link>
       <category>asciidoc</category>
+      <category>blogging</category>
+      <category>techcomm</category>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/asciidoc-homepage-mit-asciidoctor/</guid>
+      <guid>http://localhost:1313/blog/asciidoc-homepage-mit-asciidoctor/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpress, Kirby, Hugo und Known. Doch keines der CMS kannte ein Austauschformat. Jeder Text wurde in die jeweilige Datenbank abgelegt. Mit jedem Umzug gingen Texte verloren. Nun brachte &lt;a href=&#34;https://www.tomswan.com/&#34;&gt;Tom Swan&lt;/a&gt; mich auf die Idee, es mit Asciidoc zu versuchen. Hier die wichtigsten Schritte.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;admonitionblock note&#34;&gt;
 &lt;table&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Note&lt;/div&gt;
 &lt;/td&gt;
@@ -698,18 +563,9 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_metadaten_für_html_dateien_einrichten&#34;&gt;Metadaten für HTML-Dateien einrichten&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_asciidoc_css_anpassen&#34;&gt;asciidoc.css anpassen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_menüleiste_erstellen&#34;&gt;Menüleiste erstellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_inhaltsverzeichnis_einfügen&#34;&gt;Inhaltsverzeichnis einfügen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_quelldateien_im_unterordner&#34;&gt;Quelldateien im Unterordner&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+
 &lt;div class=&#34;sect1&#34;&gt;
 &lt;h2 id=&#34;_metadaten_für_html_dateien_einrichten&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#_metadaten_für_html_dateien_einrichten&#34;&gt;&lt;/a&gt;Metadaten für HTML-Dateien einrichten&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
@@ -719,12 +575,12 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;!-- docinfo.html --&amp;gt;
-&amp;lt;link rel=&#34;shortcut icon&#34; type=&#34;image/png&#34; href=&#34;images/petersell.ico&#34;&amp;gt;
-&amp;lt;meta property=&#34;og:title&#34; content=&#34;Andreas Petersell&#34; /&amp;gt;
-&amp;lt;meta property=&#34;og:site_name&#34; content=&#34;Andreas Petersell&#34; /&amp;gt;
-&amp;lt;meta property=&#34;og:description&#34; content=&#34;Technical Writer (DITA XML) and Author&#34; /&amp;gt;
-&amp;lt;link href=&#34;https://twitter.com/petersell&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&amp;gt;
-&amp;lt;link href=&#34;https://www.petersell.com&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/png&amp;#34; href=&amp;#34;images/petersell.ico&amp;#34;&amp;gt;
+&amp;lt;meta property=&amp;#34;og:title&amp;#34; content=&amp;#34;Andreas Petersell&amp;#34; /&amp;gt;
+&amp;lt;meta property=&amp;#34;og:site_name&amp;#34; content=&amp;#34;Andreas Petersell&amp;#34; /&amp;gt;
+&amp;lt;meta property=&amp;#34;og:description&amp;#34; content=&amp;#34;Technical Writer (DITA XML) and Author&amp;#34; /&amp;gt;
+&amp;lt;link href=&amp;#34;https://twitter.com/petersell&amp;#34; rel=&amp;#34;me&amp;#34; class=&amp;#34;u-url&amp;#34;/&amp;gt;
+&amp;lt;link href=&amp;#34;https://www.petersell.com&amp;#34; rel=&amp;#34;me&amp;#34; class=&amp;#34;u-url&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -764,7 +620,7 @@ command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html &#39;C:\asciidoc\src\**\*.adoc&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html &amp;#39;C:\asciidoc\src\**\*.adoc&amp;#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

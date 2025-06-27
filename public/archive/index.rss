@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Andreas Petersell</title>
-    <link>https://www.petersell.com/archive/</link>
+    <link>http://localhost:1313/archive/</link>
     <description>Recent content in Archives on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/archive/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/archive/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Archive</title>
-      <link>https://www.petersell.com/archive/blog/</link>
+      <link>http://localhost:1313/archive/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/archive/blog/</guid>
+      <guid>http://localhost:1313/archive/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Archive</title>
-      <link>https://www.petersell.com/archive/status/</link>
+      <link>http://localhost:1313/archive/status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/archive/status/</guid>
+      <guid>http://localhost:1313/archive/status/</guid>
       <description></description>
     </item>
     

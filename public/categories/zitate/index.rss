@@ -1,26 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>zitate on Andreas Petersell</title>
-    <link>https://www.petersell.com/categories/zitate/</link>
-    <description>Recent content in zitate on Andreas Petersell</description>
+    <title>Zitate on Andreas Petersell</title>
+    <link>http://localhost:1313/categories/zitate/</link>
+    <description>Recent content in Zitate on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Fri, 20 Dec 2019 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/categories/zitate/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/categories/zitate/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
+      <title>Das Leben gestalten mit den Big Five for Live</title>
+      <link>http://localhost:1313/status/zitat-strelecky-das-leben-gestalten/</link>
+      <category>arbeitswelt</category>
+      <category>gelesen</category>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/zitat-strelecky-das-leben-gestalten/</guid>
+      <description>&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die meisten Gehälter und Boni von Managern basieren auf zwei Dingen: auf den Umsätzen und der Anzahl der Mitarbeiter. Sie basieren nicht auf Renditen und Fluktuationsraten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— John Strelecky: Das Leben gestalten mit den Big Five for Live&lt;br/&gt;
+&lt;cite&gt;München 2018 (S. 201)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lifetime Employment - A Corporate Nightmare</title>
+      <link>http://localhost:1313/status/zitat-kemske-das-aufsteigerprinzip/</link>
+      <category>arbeitswelt</category>
+      <category>gelesen</category>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/zitat-kemske-das-aufsteigerprinzip/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der englische Titel trifft es besser als der deutsche Titel des Romans &lt;em&gt;Das Aufsteiger-Prinzip&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jeder, der schon einmal befördert wurde, kennt das Geheimnis. Beförderung ist weder eine Ehre noch eine Belohnung und hat sehr wenig zu tun mit den Fähigkeiten eines Angestellten oder den Bedürfnissen der Firma. Beförderung ist eine Neuverteilung der verfügbaren Kräfte, um etwas auf den Weg zu bringen, das ein Manager - aus welchen Gründen auch immer - nicht selbst tun möchte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— Floyd Kemske: Das Aufsteiger-Prinzip&lt;br/&gt;
+&lt;cite&gt;München 1996 (S. 172)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Minimum</title>
-      <link>https://www.petersell.com/status/zitat-schirrmacher-minimum/</link>
-      <category>readinglist</category>
+      <link>http://localhost:1313/status/zitat-schirrmacher-minimum/</link>
+      <category>gelesen</category>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-schirrmacher-minimum/</guid>
+      <guid>http://localhost:1313/status/zitat-schirrmacher-minimum/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Alle haben wir es geahnt. Jetzt hat es Schirrmacher unausweichlich für die Zweifler fixiert.&lt;/p&gt;
 &lt;/div&gt;
@@ -34,7 +81,7 @@
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Frank Schirrmacher: Minimum&lt;br&gt;
+— Frank Schirrmacher: Minimum&lt;br/&gt;
 &lt;cite&gt;München 2006 (S. 162)&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -42,26 +89,43 @@
     </item>
     
     <item>
+      <title>Klappt nicht immer</title>
+      <link>http://localhost:1313/status/klappt-nicht-immer/</link>
+      <category>zaz</category>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/klappt-nicht-immer/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich kann auch romantetisch. Vorfreude auf ZAZ im September 2019 auf der IFA in Berlin.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/zaz-videoausschnitt/zaz-videoausschnitt.png&#34; alt=&#34;Zaz auf Treibsand&#34; width=&#34;80%&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Die 3-Tage-Woche</title>
-      <link>https://www.petersell.com/status/zitat-vorpahl-drei-tage-woche/</link>
-      <category>readinglist</category>
+      <link>http://localhost:1313/status/zitat-vorpahl-drei-tage-woche/</link>
+      <category>gelesen</category>
       <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-vorpahl-drei-tage-woche/</guid>
+      <guid>http://localhost:1313/status/zitat-vorpahl-drei-tage-woche/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Aber warum hat Mario bei unserem Gespräch gleich abgewunken? Im selben Haus stand zu der Zeit noch eine Wohnung zum Verkauf&amp;#8230;&amp;#8203; Für ihn stand aber glasklar fest, dass Vermieten nichts für ihn sei. Die Argumente hätten noch so gut sein können. Wenn er sich eine Wohnung kaufe, dann nur, um darin selbst zu wohnen.&lt;/p&gt;
+&lt;p&gt;Aber warum hat Mario bei unserem Gespräch gleich abgewunken? Im selben Haus stand zu der Zeit noch eine Wohnung zum Verkauf…​ Für ihn stand aber glasklar fest, dass Vermieten nichts für ihn sei. Die Argumente hätten noch so gut sein können. Wenn er sich eine Wohnung kaufe, dann nur, um darin selbst zu wohnen.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir werden schon früh in unserem Leben dazu erzogen, den &#34;normalen&#34; Weg zu gehen. Als Kind sollen wir in der Schule auf den Lehrer hören. Wir lernen, Zusammenfassungen von Texten zu schreiben, die andere geschrieben haben&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;p&gt;Wir werden schon früh in unserem Leben dazu erzogen, den &amp;#34;normalen&amp;#34; Weg zu gehen. Als Kind sollen wir in der Schule auf den Lehrer hören. Wir lernen, Zusammenfassungen von Texten zu schreiben, die andere geschrieben haben…​&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Wenn Du am Ende deiner Schulzeit sagst, dass es dir nicht reicht, Texte nur zusammenzufassen, sondern du dich erst einmal selbst an Gedichten versuchen willst und an eigenen Texten arbeiten möchtest, bevor du anfängst zu studieren, schlägt dir Unverständnis entgegen. Deine Eltern machen sich Sorgen um deine Zukunft. Den meisten passt es nicht ins Weltbild. Sie kennen einfach niemanden, der so etwas schon einmal gemacht hat.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Elias Vorpahl &amp; Dominik Lang: Die 3-Tage-Woche&lt;br&gt;
+— Elias Vorpahl &amp;amp; Dominik Lang: Die 3-Tage-Woche&lt;br/&gt;
 &lt;cite&gt;Berlin 2017 (S. 12)&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -70,11 +134,11 @@
     
     <item>
       <title>Macbeth</title>
-      <link>https://www.petersell.com/status/zitat-nesbo-macbeth/</link>
-      <category>readinglist</category>
+      <link>http://localhost:1313/status/zitat-nesbo-macbeth/</link>
+      <category>gelesen</category>
       <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-nesbo-macbeth/</guid>
+      <guid>http://localhost:1313/status/zitat-nesbo-macbeth/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -82,7 +146,7 @@
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Jo Nesbö: MacBeth&lt;br&gt;
+— Jo Nesbö: MacBeth&lt;br/&gt;
 &lt;cite&gt;München 2018 (S. 364)&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -91,11 +155,11 @@
     
     <item>
       <title>Own the Demand</title>
-      <link>https://www.petersell.com/status/zitat-crivello-own-the-demand/</link>
-      <category>readinglist</category>
+      <link>http://localhost:1313/status/zitat-crivello-own-the-demand/</link>
+      <category>gelesen</category>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-crivello-own-the-demand/</guid>
+      <guid>http://localhost:1313/status/zitat-crivello-own-the-demand/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -106,7 +170,7 @@
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Florent Crivello: Own the Demand&lt;br&gt;
+— Florent Crivello: Own the Demand&lt;br/&gt;
 &lt;cite&gt;https://florentcrivello.com/index.php/2018/10/22/own-the-demand/&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -115,19 +179,19 @@
     
     <item>
       <title>Deutschlandfahne - Farbe bekennen</title>
-      <link>https://www.petersell.com/status/zitat-lau-deutschlandfahne/</link>
+      <link>http://localhost:1313/status/zitat-lau-deutschlandfahne/</link>
       <category>bürger</category>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-lau-deutschlandfahne/</guid>
+      <guid>http://localhost:1313/status/zitat-lau-deutschlandfahne/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Und da hat man schon einen Teil der Erklärung dafür, dass es der extremen Rechten immer öfter gelingt, das Hambacher Fest, das Deutschlandlied oder die schwarz-rot-goldene Fahne für sich zu reklamieren: All das ist einem Teil der Linken fremd, zuwider oder bestenfalls gleichgültig. &#34;Deutsch mich nicht an!&#34; ist eine Parole, die man öfter auf Anti-AfD-Demonstrationen sieht. Man hat es mit einem verzweifelten politischen Tango zu tun: Gerade weil die AfD danach greift, weicht der Rest zurück. Linke haben die Fahne wie kontaminiert rechts liegen gelassen – und da ist die AfD gekommen und hat sie aufgehoben.&lt;/p&gt;
+&lt;p&gt;Und da hat man schon einen Teil der Erklärung dafür, dass es der extremen Rechten immer öfter gelingt, das Hambacher Fest, das Deutschlandlied oder die schwarz-rot-goldene Fahne für sich zu reklamieren: All das ist einem Teil der Linken fremd, zuwider oder bestenfalls gleichgültig. &amp;#34;Deutsch mich nicht an!&amp;#34; ist eine Parole, die man öfter auf Anti-AfD-Demonstrationen sieht. Man hat es mit einem verzweifelten politischen Tango zu tun: Gerade weil die AfD danach greift, weicht der Rest zurück. Linke haben die Fahne wie kontaminiert rechts liegen gelassen – und da ist die AfD gekommen und hat sie aufgehoben.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Miriam Lau: Zeit Online vom 17.10.2018
+— Miriam Lau: Zeit Online vom 17.10.2018
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -135,12 +199,12 @@
     
     <item>
       <title>There Is No Why in a Team</title>
-      <link>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</link>
+      <link>http://localhost:1313/status/zitat-vermaan-there-is-no-why/</link>
       <category>arbeitswelt</category>
       <category>teamwork</category>
       <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</guid>
+      <guid>http://localhost:1313/status/zitat-vermaan-there-is-no-why/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -153,7 +217,7 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Mike Vermaan&lt;br&gt;
+— Mike Vermaan&lt;br/&gt;
 &lt;cite&gt;http://mikeveerman.be/2018/10/07/there-is-no-why-in-team/&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -162,12 +226,12 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
     
     <item>
       <title>Matter of Trust</title>
-      <link>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</link>
+      <link>http://localhost:1313/status/zitat-sinek-a-team-is-not-a-group/</link>
       <category>teamwork</category>
       <category>arbeitswelt</category>
       <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</guid>
+      <guid>http://localhost:1313/status/zitat-sinek-a-team-is-not-a-group/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -175,93 +239,8 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Simon Sinek&lt;br&gt;
+— Simon Sinek&lt;br/&gt;
 &lt;cite&gt;https://twitter.com/simonsinek/status/1034138845594497024&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A team is not a group of people who work together. A team is a group of people who trust each other.&lt;/p&gt;&amp;mdash; Simon Sinek (@simonsinek) &lt;a href=&#34;https://twitter.com/simonsinek/status/1034138845594497024?ref_src=twsrc%5Etfw&#34;&gt;August 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Der schwarze Schwan</title>
-      <link>https://www.petersell.com/status/zitat-taleb-der-schwarze-schwan/</link>
-      <category>readinglist</category>
-      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/zitat-taleb-der-schwarze-schwan/</guid>
-      <description>&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Extremistan sind Ungleichheiten so, das eine einzige Beobachtung sich unverhältnismäßig stark auf das Aggregat, das Ganze auswirken kann.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Während das Gewicht, die Körpergröße und der Kalorienkonsum also aus Mediokristan kommen, gilt das für Besitz nicht. Nahezu alle sozialen Angelegenheiten kommen aus Extremistan. Man kann das aus so ausdrücken: Soziale Quantitäten haben die Form von Information, keine physische Form - man kann sie nicht anfassen. Geld auf einem Bankkonto ist wichtig, aber ganz gewiss nichts Physisches. Daher kann es jeden Wert annehmen, ohne dass man dafür Energie aufwenden müsste. Es ist nur eine Zahl!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Man kann den generellen Unterschied auch so formulieren: In Mediokristan müssen wir die Tyrannei des Kollektiven, der Routine, des Offensichtichen und des Vorhersagbaren ertragen; in Extremistan stehen wir unter der Tyrannei des Singulären, Zufälligen, Ungesehenen und Unvorhergesagtem. Auch wenn Sie sich noch so sehr anstrengen, werden Sie an einem einzigen Tag nie viel Gewicht loswerden; Sie brauchen die kollektive Wirkung vieler Tage, Wochen, sogar Monate. Und wenn Sie als Zahnarzt arbeiten, werden Sie nie an einem einzigen Tag reich werden - Sie können aber durchaus wohlhabend werden, wenn Sie 30 Jahre lang regelmäßig Zähne aufbohren und dabei motiviert, gewissenhaft, fleißig und diszipliniert sind. Bei einer Spekulation vom Extremistan-Stil können Sie allerdings in einer einzigen Minute ein Vermögen machen oder alles verlieren.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Nassim Nicholas Taleb: Der schwarze Schwan&lt;br&gt;
-&lt;cite&gt;München 2008 (S. 54)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Friedhof der Erfolglosen wird voll von Menschen sein, die folgende Eigenschaften gemeinsam hatten: Mut, Risikobereitschaft, Optimismus usw. Genau wie die Population der Millionäre! Es könnte gewisse Unterschiede bei den Fertigkeiten geben, doch in Wirklichkeit trennt die einen größtenteils ein einziger Faktor von den anderen: Glück. Schieres Glück.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Nassim Nicholas Taleb: Der schwarze Schwan&lt;br&gt;
-&lt;cite&gt;München 2008 (S. 137)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Montecristo</title>
-      <link>https://www.petersell.com/status/zitat-suter-montecristo/</link>
-      <category>readinglist</category>
-      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/zitat-suter-montecristo/</guid>
-      <description>&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&#34;Sie sind also der Meinung, dass eine kritische Größe gibt, ab der man einen Skandal nicht mehr aufdecken darf?&#34; &lt;br&gt;
-Gobler nickte heftig. &lt;br&gt;
-&#34;Und dieser Punkt ist dann erreicht, wenn dessen Enthüllung der Allgemeinheit mehr schadet als nützt. Und in unserem Fall ist er mehr als erreicht. Er ist weit überschritten. Haben Sie das noch nie erlebt, dass Wahrheit mehr schadet als die Lüge?&#34;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Martin Suter: Montecristo&lt;br&gt;
-&lt;cite&gt;Zürich 2015 (S. 292)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Durst</title>
-      <link>https://www.petersell.com/status/zitat-nesbo-durst/</link>
-      <category>readinglist</category>
-      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/zitat-nesbo-durst/</guid>
-      <description>&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es ärgerte aber Steffens nicht mehr, dass die Menschen die Kälte für etwas Greifbares hielten und nicht verstanden, dass sie bloß die Abwesenheit von Wärme war. Die Kälte war das natürlich Dominierende. Die Wärme die Ausnahme. Wie Mord und Grausamkeit natürlich und logisch waren, Barmherzigkeit hingegen eine Anomalie, das Resultat komplizierter Regeln des menschlichen Zusammenlebens, um das Fortbestehen der Art zu sichern. Dabei hatte nicht die Barmherzigkeit den Menschen das Überleben gesichert, sondern die außerordentliche Fähigkeit, anderen Arten gegenüber grausam zu sein. So führte das Wachstum der Bevölkerung dazu, dass der Mensch nicht mehr nur auf die Jagd ging, sondern auch Fleisch produzierte. Allein das Wort Fleischproduktion, allein die Idee! Menschen hielten Tiere in Gefangenschaft, nahmen ihnen all ihre Freude und Entwicklungsmöglichkeiten, entfremdeten sie der Natur, damit sie unfreiwillig Milch und extra zartes Fleisch lieferten, nahmen ihnen ihre Kinder, kaum dass sie auf der Welt waren, hörten die verzweifelten Schreie der Muttertiere, nur um sie dann gleich wieder zu schwängern.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Jo Nesbö: Durst&lt;br&gt;
-&lt;cite&gt;Berlin 2017 (S. 553)&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>

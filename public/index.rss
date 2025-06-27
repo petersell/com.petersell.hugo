@@ -2,780 +2,735 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andreas Petersell</title>
-    <link>https://www.petersell.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Pixelfed 2021</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2021/</link>
+      <title>Im Stasimuseum</title>
+      <link>http://localhost:1313/status/warum/</link>
       <category>pixelfed</category>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2021/</guid>
-      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
-
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+      <guid>http://localhost:1313/status/warum/</guid>
+      <description>
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/843561637584341039/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Ein Besuch im Stasimuseum in der Nomannenstraße hilft immer gegen das Vergessen. Beeindruckend für mich waren die Beispielakten im Haus 7 innerhalb der Ausstellung zum Stasi-Unterlagen-Archiv. Bände voller bürokratisch-grotesker Widerwärtigkeiten, potenziert durch eine Organisation.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Notiz 2020-11-21</title>
-      <link>https://www.petersell.com/status/notiz-2020-11-21/</link>
-      <category>familie</category>
-      <pubDate>Sat, 21 Nov 2020 19:42:55 +0100</pubDate>
+      <title>Verification of your Subdomain for a gitlab Project</title>
+      <link>http://localhost:1313/blog/verification-of-your-subdomain-for-gitlab-project/</link>
+      <category>hugo</category>
+      <category>blogging</category>
+      <pubDate>Mon, 19 May 2025 15:40:36 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/notiz-2020-11-21/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;quot;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
+      <guid>http://localhost:1313/blog/verification-of-your-subdomain-for-gitlab-project/</guid>
+      <description>&lt;p&gt;You have a project on gitlab with the URL &lt;em&gt;myname.gitlab.io/project&lt;/em&gt; and would now like to redirect your subdomain &lt;em&gt;&lt;a href=&#34;https://www.myname.com&#34;&gt;www.myname.com&lt;/a&gt;&lt;/em&gt; to your project in addition to your root domain &lt;em&gt;myname.com&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://docs.gitlab.com/user/project/pages/custom_domains_ssl_tls_certification/&#34;&gt;GitLab Pages custom domains&lt;/a&gt;&lt;/p&gt;
+&lt;!-- FM:Snippet:Start data:{&#34;id&#34;:&#34;Admonition - Voraussetzung&#34;,&#34;fields&#34;:[]} --&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;You have access to the DNS entries of your domains with your web hosting service provider.&lt;/p&gt;&lt;/div&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
+&lt;h3 id=&#34;cname-worked-fine&#34;&gt;CNAME worked fine&lt;/h3&gt;
+&lt;p&gt;This is not a guide, as every web host service provider uses different forms to enter the various DNS entries.&lt;/p&gt;
+&lt;p&gt;Mine uses the following values:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Subdomain&lt;/th&gt;
+&lt;th&gt;Domain&lt;/th&gt;
+&lt;th&gt;Typ&lt;/th&gt;
+&lt;th&gt;Content&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;www&lt;/td&gt;
+&lt;td&gt;myname.com&lt;/td&gt;
+&lt;td&gt;CNAME&lt;/td&gt;
+&lt;td&gt;myname.gitlab.io.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And so the CNAME entry worked immediately.&lt;/p&gt;
+&lt;h3 id=&#34;verification-by-trial-and-error&#34;&gt;Verification by trial and error&lt;/h3&gt;
+&lt;p&gt;But it took me days to complete the verification. The Gitlab documentation uses this syntax as a default and alludes to the command line level.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;_gitlab-pages-verification-code.www.myname.com TXT gitlab-pages-verification-code=31e837733dd7174ada938b64
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However, this example is not clear when filling in the form above. After several attempts, the following entry in the table worked.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Subdomain&lt;/th&gt;
+&lt;th&gt;Domain&lt;/th&gt;
+&lt;th&gt;Typ&lt;/th&gt;
+&lt;th&gt;Content&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;_gitlab-pages-verification-code.www&lt;/td&gt;
+&lt;td&gt;myname.com&lt;/td&gt;
+&lt;td&gt;TXT&lt;/td&gt;
+&lt;td&gt;gitlab-pages-verification-code=31e837733dd7174ada938b64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The verification status finally turned green: &lt;em&gt;Verified!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At &lt;a href=&#34;https://dnschecker.org/&#34;&gt;https://dnschecker.org/&lt;/a&gt; you can check whether the TXT entries are recognized. Fill in &lt;em&gt;_gitlab-pages-verification-code.www.myname.com&lt;/em&gt; and select &lt;em&gt;TXT&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DITA-XML mit VS Code validieren</title>
+      <link>http://localhost:1313/blog/dita-xml-mit-vscode-validieren/</link>
+      <category>dita-xml</category>
+      <category>techcomm</category>
+      <pubDate>Wed, 02 Apr 2025 19:31:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/dita-xml-mit-vscode-validieren/</guid>
+      <description>&lt;p&gt;Um Visual Studio Code als Quelltext-Editor für DITA-XML-Dateien mit allen Annehmlichkeiten wie z.B. der Validierung nutzen zu können, müssen in den Einstellungen des Programms, genauer in der &lt;code&gt;settings.json&lt;/code&gt;, drei Einträge vorgenommen werden.&lt;/p&gt;
+&lt;p&gt;Damit ich bei der nächsten PC-Einrichtung nicht wieder anfange zu suchen, schreibe ich es jetzt auf.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/no-validation.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Leider weiß ich nicht immer, welche DITA-Tags in welche Reihenfolge gehören. Eine zeitnahe Validierung der DITA-Synstax ist also sehr hilfreich.&lt;/p&gt;
+&lt;p&gt;Quellen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/64782816/how-can-i-make-dita-catalog-xml-work-in-vs-code&#34;&gt;How can I make dita-catalog.xml work in vscode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.baeldung.com/find-java-home&#34;&gt;How to find JAVA_HOME&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;einstellungen-von-vs-code-komplettieren&#34;&gt;Einstellungen von VS Code komplettieren&lt;/h3&gt;
+&lt;!-- FM:Snippet:Start data:{&#34;id&#34;:&#34;Admonition - Voraussetzung&#34;,&#34;fields&#34;:[]} --&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;Sie haben Java und ein DITA-Open-Toolkit installiert.&lt;/p&gt;&lt;/div&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
+&lt;p&gt;Es gilt, diese drei Einstellungen hinzuzufügen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pfad zum Java-Programm&lt;/li&gt;
+&lt;li&gt;Pfad zur Datei &lt;code&gt;catalog-dita.xml&lt;/code&gt; im DITA-OT-Verzeichnis&lt;/li&gt;
+&lt;li&gt;Aktiveren des Kontrollkästchen &lt;em&gt;xml.validation.resolveExternalEntities&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;1-pfad-zum-java-programm&#34;&gt;(1) Pfad zum Java-Programm&lt;/h4&gt;
+&lt;p&gt;Da ich mit Linux Fedora arbeite, gab &lt;a target=&#34;_blank&#34; href=&#34;https://www.baeldung.com/find-java-home&#34;&gt;dieser Befehl&lt;/a&gt;
+im Terminal-Fenster meinen JAVA_HOME-Pfad zurück:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ java -XshowSettings:properties -version 2&amp;gt;&amp;amp;1 &amp;gt; /dev/null | grep &amp;#39;java.home&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2-pfad-zur-catalog-datei&#34;&gt;(2) Pfad zur catalog-Datei&lt;/h4&gt;
+&lt;p&gt;Da ich mit Linux Fedora arbeite, diese Syntax der Schrägstriche.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;xml.catalogs&amp;#34;: [
+	&amp;#34;/home/andreas/Programme/dita-ot-4.1.2/catalog-dita.xml&amp;#34;
+],
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3-kontrollkästchen-für-validation-aktiveren&#34;&gt;(3) Kontrollkästchen für Validation aktiveren&lt;/h4&gt;
+&lt;p&gt;In der Oberfläche das Kontrollkästchen aktiveren für &lt;em&gt;xml.validation.resolveExternalEntities&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/kontrollkaestchen-aktivieren.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Zum Schluss VS Code neu starten.&lt;/p&gt;
+&lt;h4 id=&#34;erbebnis&#34;&gt;Erbebnis&lt;/h4&gt;
+&lt;p&gt;In der Datei &lt;code&gt;settings.json&lt;/code&gt; sah die Notation bei mir so aus:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;xml.catalogs&amp;#34;: [
+	&amp;#34;/home/andreas/Programme/dita-ot-4.1.2/catalog-dita.xml&amp;#34;
+],
+&amp;#34;xml.java.home&amp;#34;: &amp;#34;/usr/lib/jvm/java-21-openjdk&amp;#34;,
+&amp;#34;xml.validation.resolveExternalEntities&amp;#34;: true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetzt bekomme ich sofort Fehlerhinweise, wenn meine DITA-Syntax nicht stimmt. Auch werden mir beim Schreiben im Kontextmenü mögliche korrekte Tags vorgeschlagen. Ein entspannteres Arbeiten als DITA-Redakteur ist möglich.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Framework</title>
+      <link>http://localhost:1313/status/framework/</link>
+      <category>darumlebenwir</category>
+      <pubDate>Sat, 08 Feb 2025 18:47:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/framework/</guid>
+      <description>&lt;p&gt;Auf Anraten eines sehr guten Bekannten habe ich mir ein modulares Notebook bei &lt;a href=&#34;https://www.frame.work&#34;&gt;frame.work&lt;/a&gt; bestellt. Da wir Arbeitsspeicher und SSD-Festplatte woanders ein wenig billiger bekommen, bestellen wir das Notebook ohne jeden Speicher.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/status-framework-750.jpg&#34; alt=&#34;Framework Notebook&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Das geniale ist die Modularität. Framework verkauft keinen Monolithen, sondern Einzelteile. Ob ich mir das als Dekoration an die Stehlampe hänge, interessiert Framework nicht.&lt;/p&gt;
+&lt;p&gt;Und weil alles modular ist, habe ich mir neben einer HDMI-Buchse auch 2 USB-C-Buchsen und 2 normale USB-Buchsen bestellt. Das Gehäuse hat 4 Einschübe. Sitze ich im Arbeitszimmer, kommt die HDMI-Buchse in einen Einschub und eine USB-Buchse raus. Im Bild rechts zu sehen die 5 Minipäckchen für die Anschluss-Buchsen in der Schachtel.&lt;/p&gt;
+&lt;p&gt;In Zukunft nur noch Baukastensystem. Worauf läßt sich das Prinzip noch übertragen?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mängelexemplar</title>
+      <link>http://localhost:1313/status/maengelexemplar/</link>
+      <category>darumlebenwir</category>
+      <pubDate>Fri, 07 Feb 2025 18:37:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/maengelexemplar/</guid>
+      <description>&lt;p&gt;Ich habe es ja geahnt.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/status-maengelexemplar.png&#34; alt=&#34;Glückliche sind Mängelexemplare&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Antora-Output aus lokalen Quellen generieren</title>
-      <link>https://www.petersell.com/blog/asciidoc-antora-test/</link>
-      <category>asciidoc</category>
-      <pubDate>Wed, 10 Jun 2020 10:57:42 +0200</pubDate>
-      
-      <guid>https://www.petersell.com/blog/asciidoc-antora-test/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Antora ist ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden. Zum Testen sollen sich die Quelldateien jedoch lokal auf dem Rechner befinden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://gitlab.com/antora/antora/-/issues/284#note_95389433&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Is there a way to use Antora without Git?&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Antora ist in erster Linie dazu gedacht, Dokumentationen aus mehreren Repositorys unter einer Oberfläche zusammenzuführen (docs as code). Bevor ein Redakteur jedoch via Merge Request in eine übergreifende Gesamtdokumentation eincheckt, möchte er sichergehen und seine Texte testen. Antora sollte dazu auch lokal lauffähig sein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_1_verzeichnisstruktur_einrichten&#34;&gt;1) Verzeichnisstruktur einrichten&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es gibt drei Quell-Bestandteile einer Antora-Dokumentation:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Die Playbook-Datei (z.B. &lt;code&gt;antora-test-playbook.yml&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Die Components (Die Inhalte-Repositorys bzw. Inhalte-Verzeichnisse)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Das UI-Theme (&lt;code&gt;ui-bundle.zip&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Diese 3 Bestandteile werden lokal in ein Verzeichnis kopiert. Ich möchte es das &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; nennen. Im Beispiel existieren im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; zwei Components sowie die Playbook-Datei und das UI-Theme.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;com.petersell.example
-    ├── com.petersell.example.api
-    ├── com.petersell.example.impl
-    └── com.petersell.example.doc
-        ├── modules
-        └── antora.yml
- com.petersell.anotherexample
-    └── com.petersell.anotherexample.doc
-        ├── modules
-        └── antora.yml
-antora-test-playbook.yml
-ui-bundle.zip&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_2_playbook_datei_erstellen&#34;&gt;2) Playbook-Datei erstellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Da ich neben den o.g. zwei lokalen Components-Verzeichnisse noch ein Beispielprojekt von Antora integrieren möchte, dass sich in einem Git-Repository befindet, musste ich meine Playbook-Datei &lt;code&gt;antora-test-playbook.yml&lt;/code&gt; folgendermaßen gestalten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;site:
-  title: Antora Test Site &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
-  url: http://localhost
-  start_page: Startseite::index.adoc &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;
-content:
-  sources:
-  - url: . &lt;b class=&#34;conum&#34;&gt;(3)&lt;/b&gt;
-    branches: HEAD &lt;b class=&#34;conum&#34;&gt;(4)&lt;/b&gt;
-    start_path: com.petersell.example/com.petersell.example.doc &lt;b class=&#34;conum&#34;&gt;(5)&lt;/b&gt;
-  - url: https://gitlab.com/antora/demo/demo-component-b.git &lt;b class=&#34;conum&#34;&gt;(6)&lt;/b&gt;
-    branches: [v2.0, v1.0]
-    start_path: docs
-  - url: . &lt;b class=&#34;conum&#34;&gt;(7)&lt;/b&gt;
-    branches: HEAD
-    start_path: com.petersell.anotherexample/com.petersell.anotherexample.doc
-ui:
-  bundle:
-  #
-    url: ./ui-bundle.zip &lt;b class=&#34;conum&#34;&gt;(8)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;colist arabic&#34;&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Der Titel erscheint im Output links oben in der Kopf-Navigationsleiste.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Der linke Teil (vor den zweifachen Doppelpunkten) gibt den Namen der Startseite wider. Sie finden diesen in der &lt;code&gt;antora.yml&lt;/code&gt; des jeweiligen Ordners hinter dem Attribut &lt;code&gt;name&lt;/code&gt;. Der rechte Teil gibt den Pfad inklusive Dateiname der Startseiten-Datei aus. Hier ist die Startseite im ROOT-Verzeichnis.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, setzen Sie den Punkt.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ist die Component lokal auf Ihrem Rechner, schreiben Sie &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Der Pfad zum jeweiligen Component-Verzeichnis inklusive dem Verzeichnisnamen, hier &lt;code&gt;com.petersell.example.doc&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Die Syntax für eine Component in einem Git-Repository. Hier ist es eine Beispieldokumentation von Antora.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Die zweite lokale Component. Gehen Sie analog der ersten Component vor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Das lokale UI-Theme. Dies könnte auch die URL zu einem Git-Repository inklusive der ZIP-Datei sein.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_3_antora_output_generieren&#34;&gt;3) Antora-Output generieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen Sie folgenden Build-Befehl ab.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Antora-Buildbefehl&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Höchstwahrscheinlich werden Sie eine Fehlermeldung erhalten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Error: Local content source must be a git repository: C:\Users\Andreas\Dropbox\antora (resolved from url: .)&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In diesem Fall öffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; ein &lt;a href=&#34;https://gitforwindows.org/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git-Bash-Fenster&lt;/a&gt; und geben die folgende Befehle auf einmal ein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-test/gitvortaeuschen.png&#34; alt=&#34;Git-Bash-Fenster im Arbeitsverzeichnis&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Git-Befehle kopieren&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;git init .
-touch .gitignore
-git add .gitignore
-git commit -m &#39;initialize repository&#39;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Eröffnen Sie im &lt;em&gt;Antora-Arbeitsverzeichnis&lt;/em&gt; eine PowerShell und setzen nochmals den Build-Befehl ab.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;antora antora-test-playbook.yml --stacktrace&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Befehl clont das externe Repository des Antora-Beispielprojekts. Im Ergebnis entsteht innerhalb des &lt;em&gt;Antora-Arbeitsverzeichnisses&lt;/em&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output der drei Components.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Antora lokal installieren</title>
-      <link>https://www.petersell.com/blog/asciidoc-antora-install/</link>
-      <category>asciidoc</category>
-      <pubDate>Wed, 03 Jun 2020 12:15:42 +0200</pubDate>
-      
-      <guid>https://www.petersell.com/blog/asciidoc-antora-install/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Antora ist so etwas wie ein &lt;em&gt;Static Site Generator&lt;/em&gt; für Technische Redakteure. Der Content wird in Asciidoc geschrieben und kann sich in verschiedenen Git-Repositorys befinden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_quellen&#34;&gt;Quellen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_kontext&#34;&gt;Kontext&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.antora.org/antora/2.2/install/windows-requirements/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Antora-Dokumentation&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Dieser Artikel ist eine Dokumentation der Installation von Antora auf meinem Privatrechner. Das kann auf jedem anderen PC anders aussehen. Warum &lt;em&gt;Privatrechner?&lt;/em&gt; Dieses Wort steht für die Kombination aus den begrenzten PC-Kenntnissen eine Redakteurs - aber gepaart mit vollen Adminrechten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_1_update_node_js_für_windows_mit_installer&#34;&gt;1) Update Node.js für Windows mit Installer&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Auf &lt;a href=&#34;https://nodejs.org/en/download/&#34; class=&#34;bare&#34;&gt;https://nodejs.org/en/download/&lt;/a&gt; gilt es, den passenden Long Term Support-Installer zu downloaden. In meinem Fall &lt;em&gt;LTS Windows Installer (.msi) 64-bit&lt;/em&gt;. Führen Sie die Datei per Doppelklick aus.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nach dem Installer habe ich noch das nachfolgende Skript &lt;em&gt;Tools for Node.js Native Module Installation Script&lt;/em&gt; gestartet. Dies dauerte einige Minuten und installierte via Chocolatey jede Menge Komponenten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-install/install-node4.png&#34; alt=&#34;Chocolatey-Installation&#34;&gt;
-&lt;/div&gt;
-&lt;div class=&#34;title&#34;&gt;Figure 1. Chocolatey-Installation&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das Ergebnis in der PowerShell ergab diese Versionen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;C:\Users\Andreas&amp;gt; npm --version
-6.14.4
-C:\Users\Andreas&amp;gt; node --version
-v12.16.3&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_2_antora_installieren&#34;&gt;2) Antora installieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie in der Antora-Dokumenation beschrieben, geben Sie den Installationsbefehl für eine globale Installation von Antora ein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;$ npm i -g @antora/cli@2.2 @antora/site-generator-default@2.2&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Anschließend führen Sie &lt;code&gt;antora version&lt;/code&gt; aus, um sich vom Erfolg der Installation zu überzeugen. Bei mir endete es in einer Fehlermeldung.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Fehlermeldung&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Die Datei &#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; kann nicht geladen werden. Die Datei
-&#34;C:\Users\Andreas\AppData\Roaming\npm\antora.ps1&#34; ist nicht digital signiert. Sie können dieses Skript im aktuellen System nicht ausführen. Weitere Informationen zum Ausführen von Skripts und Festlegen der Ausführungsrichtlinie erhalten Sie unter &#34;about_Execution_Policies&#34; (https:/go.microsoft.com/fwlink/?LinkID=135170)..&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Auf der angegebenen URL von Microsoft https:/go.microsoft.com/fwlink/?LinkID=135170 wurde ich fündig.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-install/antora-version.png&#34; alt=&#34;Ausführungsrichtlinie ändern&#34;&gt;
-&lt;/div&gt;
-&lt;div class=&#34;title&#34;&gt;Figure 2. Ausführungsrichtlinie ändern&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Es gilt herauszufinden, welche Ausführungsrichtlinien innerhalb der PowerShell für mich als Nutzer gelten:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Get-ExecutionPolicy -Scope CurrentUser&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Für mich auf dem Windows-Client galt &lt;em&gt;Undefined&lt;/em&gt;. Um meine Rechte auf der PowerShell meines Rechners zu erweitern, musste ich eingeben:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ein nochmaliges Ausführen von &lt;code&gt;antora version&lt;/code&gt; gab die korrekte Versionsnummer &lt;code&gt;2.2.0&lt;/code&gt; zurück.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_3_antora_demo_projekt_generieren&#34;&gt;3) Antora-Demo-Projekt generieren&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Um zu einem schnellen Ergebnis zu kommen, habe ich das Beispielprojekt &lt;em&gt;Demo Docs Site&lt;/em&gt; auf &lt;a href=&#34;https://gitlab.com/antora/demo/docs-site&#34; class=&#34;bare&#34;&gt;https://gitlab.com/antora/demo/docs-site&lt;/a&gt; generiert. Um es clonen zu können, habe ich mir einen Gitlab-Account angelegt. Für diesen Account musste ich mir ein &lt;a href=&#34;https://www.hrz.tu-darmstadt.de/speicherplatz_datensicherung_und_server/virtuelle_server/anleitung_sammlung/artikel_details_22784.de.jsp&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SSH-Key einrichten&lt;/a&gt; und in den Nutzer-Einstellungen unter &lt;em&gt;SSH-Keys&lt;/em&gt; hinterlegen. Nun konnte ich das Beispielprojekt &lt;em&gt;Demo Docs Site&lt;/em&gt; fehlerfrei clonen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/asciidoc-antora-install/clone-beispielrepo2.png&#34; alt=&#34;Beispielrepo clonen&#34;&gt;
-&lt;/div&gt;
-&lt;div class=&#34;title&#34;&gt;Figure 3. Beispielprojekt clonen&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Öffnen Sie ein PowerShell-Fenster im neu entstandenen Ordner &lt;code&gt;docs-site&lt;/code&gt; und geben Sie den Build-Befehl ein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Ausführen in der PowerShell&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;C:\Daten\antora\docs-site&amp;gt; antora antora-playbook.yml&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Befehl clont zwei Repositorys. Im Ergebnis entsteht innerhalb des Ordners &lt;code&gt;docs-site&lt;/code&gt; ein neuer Ordner &lt;code&gt;build&lt;/code&gt; mit dem HTML-Output des Beispielprojekts .&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo mit Asciidoc - Webseite mit Netlify bereitstellen</title>
-      <link>https://www.petersell.com/blog/hugo-asciidoc-netlify/</link>
+      <title>Die schönsten Geschenke</title>
+      <link>http://localhost:1313/status/die-schoensten-geschenke/</link>
+      <category>darumlebenwir</category>
       <category>hugo</category>
-      <category>asciidoc</category>
-      <pubDate>Fri, 01 May 2020 17:29:38 +0200</pubDate>
+      <pubDate>Wed, 01 Jan 2025 17:40:08 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/hugo-asciidoc-netlify/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Solange man als Blogger nur wenige Artikel hat, kann man den Hugo-Ordner &lt;code&gt;public&lt;/code&gt; via FTP auf den Webserver kopieren. Werden es mehr Blogposts, werden Dienste wie Netlify unausweichlich.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quelle&#34;&gt;Quelle&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;ulist&#34;&gt;
+      <guid>http://localhost:1313/status/die-schoensten-geschenke/</guid>
+      <description>&lt;p&gt;macht man sich selbst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/netlify-build.png&#34; alt=&#34;Netlify-Build erfolgreich&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ich habe meinen Zettelkasten von DITA-XML in Markdown umgewandelt und will ihn hier weiter fortführen. Dabei hatte es einige Fehler gegeben. Gottseidank habe ich bei Netlify das Buildprotokoll gefunden und konnte alles wieder geradebiegen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Admonitions in Markdown</title>
+      <link>http://localhost:1313/blog/hugo-admonitions-in-markdown/</link>
+      <category>hugo</category>
+      <category>techcomm</category>
+      <category>blogging</category>
+      <pubDate>Sat, 07 Dec 2024 11:38:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-admonitions-in-markdown/</guid>
+      <description>&lt;p&gt;In Markdown gibt es keine Möglichkeit, farbig umrahmte Absätze für Hinweise, Warnungen, Infos und Tipps zu gestalten. In Hugo bietet sich aber diese Möglichkeit durch sogenannte Shortcodes.&lt;/p&gt;
+&lt;p&gt;Sogenannte Shortcodes werden in einer HTML-Datei abgelegt und müssen im Markdown-Content auf spezielle Weise eingefügt werden.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a target=&#34;_blank&#34; href=&#34;https://github.com/martignoni/hugo-notice&#34;&gt;hugo-notice von Nicolas Martignoni&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;p&gt;Da ich mein Template &lt;strong&gt;nicht&lt;/strong&gt; im Ordner &lt;code&gt;themes&lt;/code&gt; als git-submodule betreibe, kopiere ich alles in meinen lokalen &lt;code&gt;layouts&lt;/code&gt;-Ordner und synchronisiere diesen zugleich mit meinen Content-Dateien.&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;Sie müssen in der &lt;code&gt;config.toml&lt;/code&gt; angeben, ob Sie auf Ihrer Webseite mit einer Standardsprache arbeiten, oder mehrere, nahezu gleichberechtigte Sprachen nutzen. Da ich Deutsch als Standardsprache nutze, habe ich in die &lt;code&gt;config.toml&lt;/code&gt; diesen Eintrag hinzugefügt: &lt;code&gt;defaultContentLanguage = &#39;de&#39;&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;einmaliges-einrichten&#34;&gt;Einmaliges Einrichten&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Laden Sie das Zip-Archiv vom &lt;a href=&#34;https://github.com/martignoni/hugo-notice&#34;&gt;git-Repository hugo-notice&lt;/a&gt; herunter und entpacken Sie es.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Legen Sie die Datei &lt;code&gt;notice.html&lt;/code&gt; in den Ordner &lt;code&gt;layouts/shortcodes&lt;/code&gt; ab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Kopieren Sie den Ordner &lt;code&gt;icons&lt;/code&gt; in Ihren Hauptordner des Repositorys, also auf gleicher Ebene wie den den Ordner &lt;code&gt;layouts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; - Kopieren Sie den Ordner &lt;code&gt;i18n&lt;/code&gt; in Ihren Hauptordner des Repositorys, also auf gleicher Ebene wie den den Ordner &lt;code&gt;layouts&lt;/code&gt;. Löschen Sie die Dateien für die Sprachen, die Sie bestimmt nicht nutzen. Bei mir blieb nur die &lt;code&gt;de.yaml&lt;/code&gt; übrig.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; - Editieren Sie im Ordner &lt;code&gt;i18n&lt;/code&gt; die Datei &lt;code&gt;de.yaml&lt;/code&gt;, so denn nötig. Ich habe z.B. die Übersetzung vom gelben Kasten &lt;em&gt;Information&lt;/em&gt; auf &lt;em&gt;Voraussetzung&lt;/em&gt; geändert.&lt;/p&gt;
+&lt;h3 id=&#34;anwenden-im-markdown-content&#34;&gt;Anwenden im Markdown-Content&lt;/h3&gt;
+&lt;p&gt;Sobald Sie die Admonitions benutzen möchten, fügen Sie z.B. für obiges gelbes Kästchen folgende Notation in Ihre Content-Datei ein:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; notice info &amp;gt;}}
+Sie müssen in der `config.toml` angeben, ob Sie auf Ihrer Webseite ...
+{{&amp;lt; /notice &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;beispiel-für-eine-warnung&#34;&gt;Beispiel für eine Warnung&lt;/h3&gt;
+&lt;div class=&#34;notice warning&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;126 76.5 300 300&#34;&gt;
+  &lt;path d=&#34;M297.431 324.397v-34.255c0-3.245-2.344-5.95-5.358-5.95h-32.146c-3.014 0-5.358 2.705-5.358 5.95v34.255c0 3.245 2.344 5.95 5.358 5.95h32.146c3.014 0 5.358-2.705 5.358-5.95Zm-.335-67.428 3.014-82.753c0-1.081-.502-2.524-1.674-3.425-1.005-.902-2.512-1.983-4.019-1.983h-36.834c-1.507 0-3.014 1.081-4.019 1.983-1.172.901-1.674 2.704-1.674 3.786l2.846 82.392c0 2.344 2.512 4.146 5.693 4.146h30.975c3.013 0 5.525-1.803 5.692-4.146Zm-2.344-168.39L423.34 342.425c3.683 7.032 3.516 15.686-.335 22.717-3.85 7.031-10.883 11.358-18.417 11.358H147.413c-7.534 0-14.566-4.327-18.417-11.358-3.85-7.031-4.018-15.685-.335-22.716L257.248 88.578C260.93 81.188 268.13 76.5 276 76.5c7.87 0 15.069 4.688 18.752 12.08Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Warnung&lt;/p&gt;&lt;p&gt;This is a warning notice. Be warned!&lt;/p&gt;&lt;/div&gt;
+
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; notice warning &amp;gt;}}
+This is a warning notice. Be warned!
+{{&amp;lt; /notice &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;weitere-quellen&#34;&gt;Weitere Quellen&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.patrickpeeters.com/2019/09/asciidoc-support-for-hugo-on-netlify/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AsciiDoc support for Hugo on Netlify&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_abenteuer_netlify&#34;&gt;Abenteuer Netlify&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Als das Kopieren meines Output-Ordners auf meinen Webserver 5 Minuten dauerte, war klar, dass das kein Bloggen mehr ist, sondern eine Qual. Ich wußte nie, was &lt;em&gt;Deployen&lt;/em&gt; bedeutet, jetzt ahnte ich es. Im Netz war meistens vom Dienst &lt;em&gt;Netlify&lt;/em&gt; die Rede, wenn es um das Bereitstellen von Hugo-Output auf einen Webserver ging. Bestimmt gibt es auch andere Dienste. Aber als ich obige Quelle fand, stand meine Wahl für &lt;em&gt;Netlify&lt;/em&gt; fest.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die erste Begegnung mit dem Dienst war schaurig. Man braucht ein hohes Verzweiflungspotential, um in der Benutzerführung von Netlify nicht sofort zu verzweifeln. So wird der Nutzer 3 Schritte mittels einer großen &lt;em&gt;Weiter&lt;/em&gt;-Schaltfläche geleitet, um dann im 4. Schritt lediglich auf einen kleinen Repository-Namen klicken zu müssen, damit es weiter geht. Hat man diese Klippe überwunden, erwarten einen jede Menge Fehlermeldungen, die es erstmal zu finden und zu dechiffrieren gilt.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ein Abbruch gab es wegen einer PDF-Datei, ein zweiter wegen einer falschen Syntax meiner Hugo-Version. Auf folgende Fehlermeldung war ich gottseidank vorbereitet und entsprechend erleichert, als sie mir erschien.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;10:08:14 PM: Executing user command: hugo --gc --minify
-10:08:14 PM: Building sites …
-10:08:14 PM: ERROR 2020/04/29 20:08:14 asciidoctor / asciidoc not found in $PATH: Please install.
-10:08:14 PM: Leaving AsciiDoc content unrendered.&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_anpassungen_wegen_asciidoc&#34;&gt;Anpassungen wegen Asciidoc&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nun schreibt Patrick Peeters:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/i-need-help-with-i18n-translate-shortcode/39858&#34;&gt;Fehler bei Übersetzungen von Shortcodes &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/shortcode/&#34;&gt;gohugo.io - Create your own shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Templates nutzen in FrontMatter CMS</title>
+      <link>http://localhost:1313/blog/templates-nutzen-in-frontmatter-cms/</link>
+      <category>hugo</category>
+      <category>blogging</category>
+      <pubDate>Wed, 04 Dec 2024 19:41:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/templates-nutzen-in-frontmatter-cms/</guid>
+      <description>&lt;p&gt;Bisher habe ich meine Asciidoc- und Markdown-Dateien in VSCode erstellt. Das macht aber nicht so viel Spaß. Nun habe ich das &lt;a href=&#34;https://route360.dev/en/post/frontmatter-cms/&#34;&gt;Headless-CMS&lt;/a&gt; FrontMatter entdeckt. Statt zu tippen klicke ich jetzt auf Schaltflächen.&lt;/p&gt;
+&lt;p&gt;Erstellen Sie schnell auf Grundlage einer Markdown-Datei (template) eine Kopie dieser mit neuem Dateinamen. Die Dokumentation spricht zwar vom Einsatz von Templates. Aber nirgendwo steht, wie man die eingerichteten Templates benutzt! Bis ich die Vorgehensweise zufällig im Video &lt;em&gt;How you can use content-types in Front Matter CMS&lt;/em&gt; vom Entwickler Elio Struyf entdeckte.&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice tip&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;300.5 134 300 300&#34;&gt;
+  &lt;path d=&#34;M551.281 252.36c0-3.32-1.172-6.641-3.515-8.985l-17.774-17.578c-2.344-2.344-5.469-3.711-8.789-3.711-3.32 0-6.445 1.367-8.789 3.71l-79.687 79.493-44.141-44.14c-2.344-2.344-5.469-3.712-8.79-3.712-3.32 0-6.444 1.368-8.788 3.711l-17.774 17.579c-2.343 2.343-3.515 5.664-3.515 8.984 0 3.32 1.172 6.445 3.515 8.789l70.704 70.703c2.343 2.344 5.664 3.711 8.789 3.711 3.32 0 6.64-1.367 8.984-3.71l106.055-106.056c2.343-2.343 3.515-5.468 3.515-8.789ZM600.5 284c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Tipp&lt;/p&gt;&lt;p&gt;Wenn Sie vorhaben, über die Schaltfläche &lt;em&gt;Create Template&lt;/em&gt; ein Template zu erstellen, sichern Sie sich zuvor die Datei &lt;code&gt;frontmatter.json&lt;/code&gt;. Denn diese Vorgehensweise überschreibt gern diese Datei. Die folgende Anleitung verzichtet auf den Einsatz dieser Aktionsschaltfläche.&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;template-erstellen&#34;&gt;Template erstellen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Erstellen Sie einmalig einen Ordner &lt;code&gt;.frontmatter/templates&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Kopieren Sie eine Markdown-Datei in diesen neuen Ordner &lt;code&gt;templates&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Passen Sie die Datei so an, dass sie Ihren Vorstellungen eines Templates enspricht. &lt;a href=&#34;https://frontmatter.codes/docs/content-creation/placeholders&#34;&gt;Platzhalter&lt;/a&gt; wie in der Datei &lt;code&gt;frontmatter.json&lt;/code&gt; sind nicht möglich.&lt;/p&gt;
+&lt;p&gt;Sie können beliebig viele Template-Dateien erstellen. Beim Benutzen der Templates werden diese Ihnen in einer Auswahlliste angeboten.&lt;/p&gt;
+&lt;h3 id=&#34;template-benutzen&#34;&gt;Template benutzen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Klicken Sie in der linken Symbolschaltflächen-Leiste auf das Icon &lt;em&gt;Explorer&lt;/em&gt; und wechseln Sie in den VSCode-Dateiexplorer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Machen Sie einen rechten Mausklick auf den Content-Ordner, in der die neue Markdown-Datei angelegt werden soll. Z.B. &lt;code&gt;content/blog&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Wählen Sie im Kontextmenü den Eintrag &lt;em&gt;Frontmatter &amp;gt; New Article from template&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; - Wählen Sie die entsprechende Template-Datei aus, auf dessen Grundlage die neue Datei entstehen soll.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; - Editieren Sie die Datei wie gewohnt und passen Sie den YAML-Header an.&lt;/p&gt;
+&lt;h3 id=&#34;weitere-quellen&#34;&gt;Weitere Quellen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=oA5ocNaiAtY&#34;&gt;Video: How you can use content-types in Front Matter CMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://frontmatter.codes/&#34;&gt;Frontmatter CMS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo - Link im neuen Tab öffnen lassen</title>
+      <link>http://localhost:1313/blog/hugo-cms-link-im-neuen-tab-oeffnen/</link>
+      <category>hugo</category>
+      <category>blogging</category>
+      <pubDate>Mon, 02 Dec 2024 18:13:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-cms-link-im-neuen-tab-oeffnen/</guid>
+      <description>&lt;p&gt;In Markdown kann man standardmäßig nur Links zu Webseiten erstellen, die im selben Tab öffnen, nicht jedoch in einem neuen Tab geöffnet werden mit Hilfe des Attributs &lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Da ich inzwischen für das Schreiben meiner Hugo-Blogposts das Headless-CMS &lt;a href=&#34;https://frontmatter.codes&#34;&gt;Frontmatter&lt;/a&gt; nutze, möchte ich für einfache Texte wieder vermehrt Markdown nutzen.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://discourse.gohugo.io/t/how-to-target--blank-in-md/524/19&#34;&gt;How to target blank in md?&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h3&gt;
+&lt;p&gt;Das Attribut &lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt; kann man mit Hilfe von Hugo-Shortcodes realisieren.&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;Damit HTML-Code innerhalb der Markdown-Datei gerendert wird, muss einmalig in der &lt;code&gt;config.toml&lt;/code&gt; folgender Eintrag gemacht werden:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[markup.goldmark.renderer]
+unsafe = true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; - Erstellen Sie einen neuen Ordner &lt;code&gt;shortcodes&lt;/code&gt; im Hugo-Verzeichnis &lt;code&gt;layouts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; - Erstellen Sie im neuen Verzeichnis eine neue HTML-Datei. Ich nenne sie wie im Beispiel unter Quellen &lt;code&gt;a_blank.html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; - Fügen Sie diesen Code hinein:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;a target=&amp;#34;_blank&amp;#34; href=&amp;#34;{{ .Get 1 }}&amp;#34;&amp;gt;{{ .Get 0 | markdownify }}&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; - In der eigentlichen Markdown-Content-Datei fügen Sie den Shortcode folgendermaßen ein:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% a_blank &amp;#34;Shortcodes linking&amp;#34; &amp;#34;https://www.petersell.de&amp;#34; %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Klickt man jetzt auf diesen Link &lt;a target=&#34;_blank&#34; href=&#34;https://www.petersell.de&#34;&gt;Shortcodes linking&lt;/a&gt;
+, öffnet sich die Webseite in einem neuen Tab.&lt;/p&gt;
+&lt;h4 id=&#34;weitere-quellen&#34;&gt;Weitere Quellen&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/hugo-0-60-0-raw-html-omitted-issue/22010/7&#34;&gt;Raw HTML omitted Fehler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/shortcode/&#34;&gt;gohugo.io - Create your own shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo CMS mit Asciidoc auf Linux installieren</title>
+      <link>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</link>
+      <category>asciidoc</category>
+      <category>hugo</category>
+      <category>linux</category>
+      <pubDate>Mon, 25 Nov 2024 19:44:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</guid>
+      <description>&lt;p&gt;Seitdem ich von Windows auf Linux Fedora gewechselt bin, habe ich es versäumt, mir einen lokalen Hugo-Server zu installieren. Nun habe ich das nachgeholt: Mit dem Ergebnis, dass ich mir meine Blogposts vorher lokal anschauen kann, bevor ich sie mit Netlify auf Github veröffentliche.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; Auf der Konsole folgenden Befehl absetzen: &lt;code&gt;$ sudo dnf install hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; In das Projektverzeichnis gehen. Bei mir ist es: &lt;code&gt;cd git/github/com.petersell.hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; Das Kommando &lt;code&gt;hugo server&lt;/code&gt; eingeben + ENTER. Danach sollte die Homepage im Browser unter &lt;em&gt;localhost:1313&lt;/em&gt; abrufbar sein. Leider war dies bei mir nicht der Fall. Es erschien diese Fehlermeldung:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Error: error building site: &amp;#34;/git/github/com.petersell.hugo/content/blog/essay-ddrprotagonisten.adoc:1:1&amp;#34;: access denied: &amp;#34;asciidoctor&amp;#34; is not whitelisted in policy &amp;#34;security.exec.allow&amp;#34;; the current security configuration is:
+
+[security]
+  enableInlineShortcodes = false
+
+  [security.exec]
+    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;]
+    osEnv = [&amp;#39;(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$&amp;#39;]
+
+  [security.funcs]
+    getenv = [&amp;#39;^HUGO_&amp;#39;, &amp;#39;^CI$&amp;#39;]
+
+  [security.http]
+    methods = [&amp;#39;(?i)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hier fand ich eine Fehlerbehebung: &lt;a href=&#34;https://gohugo.io/about/security/&#34;&gt;https://gohugo.io/about/security/&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Netlify’s buildbot can install software on build, all you need is a Gemfile in the root folder of your project pointing at the right software packages, in my case that’s just asciidoctor.&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;In &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.91.0&#34;&gt;Hugo v0.91.0&lt;/a&gt; and newer, you can specify a project’s security policy in a config file.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Patrick Peeters
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Was zur Hölle ist ein &lt;em&gt;Gemfile&lt;/em&gt;? Wieder halfen mir öffentliche Git-Repositorys: eine Datei mit Namen &lt;code&gt;Gemfile&lt;/code&gt;. Erstellen Sie also im Rootverzeichnis Ihres Hugo-Projektes eine Datei, benennen Sie sie &lt;em&gt;Gemfile&lt;/em&gt; und tragen folgenden Text ein:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
-gem &#39;asciidoctor&#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In einer Anleitung zu Netlify hatte ich gelernt, dass es ratsam ist, ebenfalls im Rootverzeichnis eine Datei namens &lt;code&gt;netlify.toml&lt;/code&gt; anzulegen. So Sie auch eine haben, müssen Sie den Build-Befehl folgendermaßen anpassen:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[build]
-publish = &#34;public&#34;
-command = &#34;bundle &amp;amp;&amp;amp; hugo --minify&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn Sie jetzt Ihr Hugo-Projekt mit den angepassten Dateien &lt;code&gt;Gemfile&lt;/code&gt; und &lt;code&gt;netlify.toml&lt;/code&gt; in den Masterbranch hochladen, sollte der &lt;em&gt;Deploy&lt;/em&gt; fehlerfrei laufen und zumindest der Asciidoc-Inhalt korrekt ausgegeben werden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_theme_im_ursprungszustand&#34;&gt;Theme im Ursprungszustand&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Als Hugo-Theme habe ich mich für das Theme &lt;a href=&#34;https://github.com/foo-dogsquared/hugo-theme-contentful&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Contentful&lt;/a&gt; entschieden. Da dies ein sehr minimalistisches Theme ist, musste ich viel nacharbeiten. Um so größer war der Schreck, als nach erfolgreichem &lt;em&gt;Deploy&lt;/em&gt; meine Webseite so gut wie nackt war: nämlich im Urzustand des Original-Themes.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Jetzt war ich zugegebenermaßen etwas müde. Da ich wußte, dass ich nicht so schnell auf ein anderes Theme umschwenken werde, habe ich kurzerhand die Theme-Dateien in die Hugo-Standard-Ordner verschoben und das Verzeichnis &lt;code&gt;themes&lt;/code&gt; komplett gelöscht. Nach einem nächsten Upload in den Masterbranch war alles so schön grün wie nach einem lokalen &lt;code&gt;hugo server&lt;/code&gt;-Aufruf.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo mit Asciidoc - Auf anderen Post verlinken</title>
-      <link>https://www.petersell.com/blog/hugo-auf-post-verlinken/</link>
-      <category>hugo</category>
-      <pubDate>Tue, 28 Apr 2020 14:43:14 +0200</pubDate>
-      
-      <guid>https://www.petersell.com/blog/hugo-auf-post-verlinken/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn ich im CMS Hugo statt Markdown Asciidoc nutze, wie kann ich dann auf einen anderen Beitrag verlinken?.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Beide adoc-Dateien liegen im selben Verzeichnis:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;|-- content
-    |-- blog
-        |-- teamwork-manifest.adoc
-        └-- teamwork-manifest-warum.adoc&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In der Datei &lt;code&gt;teamwork-manifest-warum.adoc&lt;/code&gt; musste ich auf den Post &lt;code&gt;teamwork-manifest.adoc&lt;/code&gt; verlinken. Folgende Notation für einen Inline-Link brachte Erfolg.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;Fünf Kollegen haben link:../teamwork-manifest/[ein Manifest] geschrieben.&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Hier die Demo: &lt;a href=&#34;../teamwork-manifest/&#34;&gt;klicke hier&lt;/a&gt;, um zum Post &lt;em&gt;Manifest für eine menschliche Zusammenarbeit&lt;/em&gt; zu gelangen.&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo mit Stock and Flow</title>
-      <link>https://www.petersell.com/blog/hugo-stock-and-flow/</link>
-      <category>hugo</category>
-      <pubDate>Fri, 17 Apr 2020 16:40:39 +0200</pubDate>
-      
-      <guid>https://www.petersell.com/blog/hugo-stock-and-flow/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wie unterscheide ich im CMS Hugo Stock and Flow? Jeder, der sich mit Blogging beschäftigt, stößt eines Tages auf Robin Sloan und seinem Gleichnis vom &lt;a href=&#34;http://snarkmarket.com/2010/4890&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stock and Flow&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;quoteblock&#34;&gt;
-&lt;blockquote&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Flow&lt;/strong&gt; is the feed. It’s the posts and the tweets. It’s the stream of daily and sub-daily updates that reminds people you exist.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Stock&lt;/strong&gt; is the durable stuff. It’s the content you produce that’s as interesting in two months (or two years) as it is today. It’s what people discover via search. It’s what spreads slowly but surely, building fans over time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Robin Sloan&lt;br&gt;
-&lt;cite&gt;http://snarkmarket.com/2010/4890&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meinem alten &lt;a href=&#34;https://withknown.com/&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMS Known&lt;/a&gt; gab es nur einen Stream: längere eigene Texte und kurze Statusmeldungen wurden in einer &lt;em&gt;Timeline&lt;/em&gt; angezeigt. Doch sind eigene Essays und abgeschriebene Zitate von anderen Autoren wirklich von einem gleichen Gewicht? Nein. Also habe ich im CMS Hugo eine Trennung des Stock und Flows vorgenommen: &lt;em&gt;Blog&lt;/em&gt; ist der &lt;em&gt;Stock&lt;/em&gt; und &lt;em&gt;Status&lt;/em&gt; der &lt;em&gt;Flow&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In Hugo habe ich einfach sämtliche Blog-Layouts dupliziert und den Namen &lt;em&gt;Status&lt;/em&gt; angepinnt. Jedoch wurden auf der Startseite der Homepage immer nur die Blogbeiträge ausgegeben - die Statusbeiträge fehlten. Jetzt wurde ich in der &lt;a href=&#34;https://gohugo.io/functions/where/#mainsections&#34; class=&#34;ext-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo-Dokumentation&lt;/a&gt; fündig. Es gilt, in der Konfigurationsdatei &lt;code&gt;config.toml&lt;/code&gt; einen kleinen Eintrag vorzunehmen:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;[params]
-  mainSections = [&#34;blog&#34;, &#34;status&#34;]&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Impressum</title>
-      <link>https://www.petersell.com/homepage/impressum/</link>
-      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/homepage/impressum/</guid>
-      <description>
-&lt;p&gt;&lt;img src=&#34;../../images/imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
-&lt;h3&gt;Datenschutzerkl&amp;auml;rung&lt;/h3&gt;
-&lt;p&gt;Diese Datenschutzerkl&amp;auml;rung kl&amp;auml;rt Sie &amp;uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &amp;bdquo;Daten&amp;ldquo;) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&amp;auml;senzen, wie z.B. unser Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als &amp;bdquo;Onlineangebot&amp;ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &amp;bdquo;Verarbeitung&amp;ldquo; oder &amp;bdquo;Verantwortlicher&amp;ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-controller&#34;&gt;Verantwortlicher&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;tsmcontroller&#34;&gt;Der Verantwortliche ist die unter &lt;em&gt;Kontaktinformation&lt;/em&gt; aufgef&amp;uuml;hrte Person.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;tsmcontroller&#34;&gt;https://www.petersell.com/pages/impressum&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-datatype&#34;&gt;Arten der verarbeiteten Daten:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Bestandsdaten (z.B., Namen, Adressen).&lt;/li&gt;
-&lt;li&gt;Kontaktdaten (z.B., E-Mail).&lt;/li&gt;
-&lt;li&gt;Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).&lt;/li&gt;
-&lt;li&gt;Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).&lt;/li&gt;
-&lt;li&gt;Meta-/Kommunikationsdaten (z.B., Ger&amp;auml;te-Informationen, IP-Adressen).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&amp;nbsp;Zweck der Verarbeitung&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Zurverf&amp;uuml;gungstellung des Onlineangebotes, seiner Funktionen und&amp;nbsp; Inhalte.&lt;/li&gt;
-&lt;li&gt;Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.&lt;/li&gt;
-&lt;li&gt;Sicherheitsma&amp;szlig;nahmen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;dsg-general-terms&#34;&gt;Verwendete Begrifflichkeiten&lt;/h3&gt;
-&lt;p&gt;&amp;bdquo;Personenbezogene Daten&amp;ldquo; sind alle Informationen, die sich auf eine identifizierte oder identifizierbare nat&amp;uuml;rliche Person (im Folgenden &amp;bdquo;betroffene Person&amp;ldquo;) beziehen; als identifizierbar wird eine nat&amp;uuml;rliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z.B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identit&amp;auml;t dieser nat&amp;uuml;rlichen Person sind.&lt;br /&gt;&lt;br /&gt;&amp;bdquo;Verarbeitung&amp;ldquo; ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgef&amp;uuml;hrten Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten.&lt;br /&gt;&lt;br /&gt;Als &amp;bdquo;Verantwortlicher&amp;ldquo; wird die nat&amp;uuml;rliche oder juristische Person, Beh&amp;ouml;rde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen &amp;uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet, bezeichnet.&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-legalbasis&#34;&gt;Ma&amp;szlig;gebliche Rechtsgrundlagen&lt;/h3&gt;
-&lt;p&gt;Nach Ma&amp;szlig;gabe des Art. 13 DSGVO teilen wir Ihnen die Rechtsgrundlagen unserer Datenverarbeitungen mit. Sofern die Rechtsgrundlage in der Datenschutzerkl&amp;auml;rung nicht genannt wird, gilt Folgendes: Die Rechtsgrundlage f&amp;uuml;r die Einholung von Einwilligungen ist Art. 6 Abs. 1 lit. a und Art. 7 DSGVO, die Rechtsgrundlage f&amp;uuml;r die Verarbeitung zur Erf&amp;uuml;llung unserer Leistungen und Durchf&amp;uuml;hrung vertraglicher Ma&amp;szlig;nahmen sowie Beantwortung von Anfragen ist Art. 6 Abs. 1 lit. b DSGVO, die Rechtsgrundlage f&amp;uuml;r die Verarbeitung zur Erf&amp;uuml;llung unserer rechtlichen Verpflichtungen ist Art. 6 Abs. 1 lit. c DSGVO, und die Rechtsgrundlage f&amp;uuml;r die Verarbeitung zur Wahrung unserer berechtigten Interessen ist Art. 6 Abs. 1 lit. f DSGVO. F&amp;uuml;r den Fall, dass lebenswichtige Interessen der betroffenen Person oder einer anderen nat&amp;uuml;rlichen Person eine Verarbeitung personenbezogener Daten erforderlich machen, dient Art. 6 Abs. 1 lit. d DSGVO als Rechtsgrundlage.&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-securitymeasures&#34;&gt;Sicherheitsma&amp;szlig;nahmen&lt;/h3&gt;
-&lt;p&gt;Wir bitten Sie sich regelm&amp;auml;&amp;szlig;ig &amp;uuml;ber den Inhalt unserer Datenschutzerkl&amp;auml;rung zu informieren. Wir passen die Datenschutzerkl&amp;auml;rung an, sobald die &amp;Auml;nderungen der von uns durchgef&amp;uuml;hrten Datenverarbeitungen dies erforderlich machen. Wir informieren Sie, sobald durch die &amp;Auml;nderungen eine Mitwirkungshandlung Ihrerseits (z.B. Einwilligung) oder eine sonstige individuelle Benachrichtigung erforderlich wird.&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-coprocessing&#34;&gt;Zusammenarbeit mit Auftragsverarbeitern und Dritten&lt;/h3&gt;
-&lt;p&gt;Sofern wir im Rahmen unserer Verarbeitung Daten gegen&amp;uuml;ber anderen Personen und Unternehmen (Auftragsverarbeitern oder Dritten) offenbaren, sie an diese &amp;uuml;bermitteln oder ihnen sonst Zugriff auf die Daten gew&amp;auml;hren, erfolgt dies nur auf Grundlage einer gesetzlichen Erlaubnis (z.B. wenn eine &amp;Uuml;bermittlung der Daten an Dritte, wie an Zahlungsdienstleister, gem. Art. 6 Abs. 1 lit. b DSGVO zur Vertragserf&amp;uuml;llung erforderlich ist), Sie eingewilligt haben, eine rechtliche Verpflichtung dies vorsieht oder auf Grundlage unserer berechtigten Interessen (z.B. beim Einsatz von Beauftragten, Webhostern, etc.). &lt;br /&gt;&lt;br /&gt;Sofern wir Dritte mit der Verarbeitung von Daten auf Grundlage eines sog. &amp;bdquo;Auftragsverarbeitungsvertrages&amp;ldquo; beauftragen, geschieht dies auf Grundlage des Art. 28 DSGVO.&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-thirdparty&#34;&gt;&amp;Uuml;bermittlungen in Drittl&amp;auml;nder&lt;/h3&gt;
-&lt;p&gt;Sofern wir Daten in einem Drittland (d.h. au&amp;szlig;erhalb der Europ&amp;auml;ischen Union (EU) oder des Europ&amp;auml;ischen Wirtschaftsraums (EWR)) verarbeiten oder dies im Rahmen der Inanspruchnahme von Diensten Dritter oder Offenlegung, bzw. &amp;Uuml;bermittlung von Daten an Dritte geschieht, erfolgt dies nur, wenn es zur Erf&amp;uuml;llung unserer (vor)vertraglichen Pflichten, auf Grundlage Ihrer Einwilligung, aufgrund einer rechtlichen Verpflichtung oder auf Grundlage unserer berechtigten Interessen geschieht. Vorbehaltlich gesetzlicher oder vertraglicher Erlaubnisse, verarbeiten oder lassen wir die Daten in einem Drittland nur beim Vorliegen der besonderen Voraussetzungen der Art. 44 ff. DSGVO verarbeiten. D.h. die Verarbeitung erfolgt z.B. auf Grundlage besonderer Garantien, wie der offiziell anerkannten Feststellung eines der EU entsprechenden Datenschutzniveaus (z.B. f&amp;uuml;r die USA durch das &amp;bdquo;Privacy Shield&amp;ldquo;) oder Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen (so genannte &amp;bdquo;Standardvertragsklauseln&amp;ldquo;).&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-rightssubject&#34;&gt;Rechte der betroffenen Personen&lt;/h3&gt;
-&lt;p&gt;Sie haben das Recht, eine Best&amp;auml;tigung dar&amp;uuml;ber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft &amp;uuml;ber diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend Art. 15 DSGVO.&lt;br /&gt;&lt;br /&gt;Sie haben entsprechend. Art. 16 DSGVO das Recht, die Vervollst&amp;auml;ndigung der Sie betreffenden Daten oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen.&lt;br /&gt;&lt;br /&gt;Sie haben nach Ma&amp;szlig;gabe des Art. 17 DSGVO das Recht zu verlangen, dass betreffende Daten unverz&amp;uuml;glich gel&amp;ouml;scht werden, bzw. alternativ nach Ma&amp;szlig;gabe des Art. 18 DSGVO eine Einschr&amp;auml;nkung der Verarbeitung der Daten zu verlangen.&lt;br /&gt;&lt;br /&gt;Sie haben das Recht zu verlangen, dass die Sie betreffenden Daten, die Sie uns bereitgestellt haben nach Ma&amp;szlig;gabe des Art. 20 DSGVO zu erhalten und deren &amp;Uuml;bermittlung an andere Verantwortliche zu fordern. &lt;br /&gt;&lt;br /&gt;Sie haben ferner gem. Art. 77 DSGVO das Recht, eine Beschwerde bei der zust&amp;auml;ndigen Aufsichtsbeh&amp;ouml;rde einzureichen.&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-revokeconsent&#34;&gt;Widerrufsrecht&lt;/h3&gt;
-&lt;p&gt;Sie haben das Recht, erteilte Einwilligungen gem. Art. 7 Abs. 3 DSGVO mit Wirkung f&amp;uuml;r die Zukunft zu widerrufen&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-object&#34;&gt;Widerspruchsrecht&lt;/h3&gt;
-&lt;p&gt;Sie k&amp;ouml;nnen der k&amp;uuml;nftigen Verarbeitung der Sie betreffenden Daten nach Ma&amp;szlig;gabe des Art. 21 DSGVO jederzeit widersprechen. Der Widerspruch kann insbesondere gegen die Verarbeitung f&amp;uuml;r Zwecke der Direktwerbung erfolgen.&lt;/p&gt;
-&lt;h3 id=&#34;dsg-general-cookies&#34;&gt;L&amp;ouml;schung von Daten&lt;/h3&gt;
-&lt;p&gt;Die von uns verarbeiteten Daten werden nach Ma&amp;szlig;gabe der Art. 17 und 18 DSGVO gel&amp;ouml;scht oder in ihrer Verarbeitung eingeschr&amp;auml;nkt. Sofern nicht im Rahmen dieser Datenschutzerkl&amp;auml;rung ausdr&amp;uuml;cklich angegeben, werden die bei uns gespeicherten Daten gel&amp;ouml;scht, sobald sie f&amp;uuml;r ihre Zweckbestimmung nicht mehr erforderlich sind und der L&amp;ouml;schung keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Sofern die Daten nicht gel&amp;ouml;scht werden, weil sie f&amp;uuml;r andere und gesetzlich zul&amp;auml;ssige Zwecke erforderlich sind, wird deren Verarbeitung eingeschr&amp;auml;nkt. D.h. die Daten werden gesperrt und nicht f&amp;uuml;r andere Zwecke verarbeitet. Das gilt z.B. f&amp;uuml;r Daten, die aus handels- oder steuerrechtlichen Gr&amp;uuml;nden aufbewahrt werden m&amp;uuml;ssen.&lt;br /&gt;&lt;br /&gt;Nach gesetzlichen Vorgaben in Deutschland, erfolgt die Aufbewahrung insbesondere f&amp;uuml;r 10 Jahre gem&amp;auml;&amp;szlig; &amp;sect;&amp;sect; 147 Abs. 1 AO, 257 Abs. 1 Nr. 1 und 4, Abs. 4 HGB (B&amp;uuml;cher, Aufzeichnungen, Lageberichte, Buchungsbelege, Handelsb&amp;uuml;cher, f&amp;uuml;r Besteuerung relevanter Unterlagen, etc.) und 6 Jahre gem&amp;auml;&amp;szlig; &amp;sect; 257 Abs. 1 Nr. 2 und 3, Abs. 4 HGB (Handelsbriefe). &lt;br /&gt;&lt;br /&gt;Nach gesetzlichen Vorgaben in &amp;Ouml;sterreich erfolgt die Aufbewahrung insbesondere f&amp;uuml;r 7 J gem&amp;auml;&amp;szlig; &amp;sect; 132 Abs. 1 BAO (Buchhaltungsunterlagen, Belege/Rechnungen, Konten, Belege, Gesch&amp;auml;ftspapiere, Aufstellung der Einnahmen und Ausgaben, etc.), f&amp;uuml;r 22 Jahre im Zusammenhang mit Grundst&amp;uuml;cken und f&amp;uuml;r 10 Jahre bei Unterlagen im Zusammenhang mit elektronisch erbrachten Leistungen, Telekommunikations-, Rundfunk- und Fernsehleistungen, die an Nichtunternehmer in EU-Mitgliedstaaten erbracht werden und f&amp;uuml;r die der Mini-One-Stop-Shop (MOSS) in Anspruch genommen wird.&lt;/p&gt;
-&lt;h3&gt;Hosting&lt;/h3&gt;
-&lt;p&gt;Die von uns in Anspruch genommenen Hosting-Leistungen dienen der Zurverf&amp;uuml;gungstellung der folgenden Leistungen: Infrastruktur- und Plattformdienstleistungen, Rechenkapazit&amp;auml;t, Speicherplatz und Datenbankdienste, Sicherheitsleistungen sowie technische Wartungsleistungen, die wir zum Zwecke des Betriebs dieses Onlineangebotes einsetzen.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Hierbei verarbeiten wir, bzw. unser Hostinganbieter Bestandsdaten, Kontaktdaten, Inhaltsdaten, Vertragsdaten, Nutzungsdaten, Meta- und Kommunikationsdaten von Kunden, Interessenten und Besuchern dieses Onlineangebotes auf Grundlage unserer berechtigten Interessen an einer effizienten und sicheren Zurverf&amp;uuml;gungstellung dieses Onlineangebotes gem. Art. 6 Abs. 1 lit. f DSGVO i.V.m. Art. 28 DSGVO (Abschluss Auftragsverarbeitungsvertrag).&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Erhebung von Zugriffsdaten und Logfiles&lt;/h3&gt;
-&lt;p&gt;Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO Daten &amp;uuml;ber jeden Zugriff auf den Server, auf dem sich dieser Dienst befindet (sogenannte Serverlogfiles). Zu den Zugriffsdaten geh&amp;ouml;ren Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, &amp;uuml;bertragene Datenmenge, Meldung &amp;uuml;ber erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite), IP-Adresse und der anfragende Provider.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Logfile-Informationen werden aus Sicherheitsgr&amp;uuml;nden (z.B. zur Aufkl&amp;auml;rung von Missbrauchs- oder Betrugshandlungen) f&amp;uuml;r die Dauer von maximal 7 Tagen gespeichert und danach gel&amp;ouml;scht. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endg&amp;uuml;ltigen Kl&amp;auml;rung des jeweiligen Vorfalls von der L&amp;ouml;schung ausgenommen.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Kommentare und Beitr&amp;auml;ge&lt;/h3&gt;
-&lt;p&gt;Wenn Nutzer Kommentare oder sonstige Beitr&amp;auml;ge hinterlassen, k&amp;ouml;nnen ihre IP-Adressen auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO f&amp;uuml;r 7 Tage gespeichert werden. Das erfolgt zu unserer Sicherheit, falls jemand in Kommentaren und Beitr&amp;auml;gen widerrechtliche Inhalte hinterl&amp;auml;sst (Beleidigungen, verbotene politische Propaganda, etc.). In diesem Fall k&amp;ouml;nnen wir selbst f&amp;uuml;r den Kommentar oder Beitrag belangt werden und sind daher an der Identit&amp;auml;t des Verfassers interessiert.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Des Weiteren behalten wir uns vor, auf Grundlage unserer berechtigten Interessen gem. Art. 6 Abs. 1 lit. f. DSGVO, die Angaben der Nutzer zwecks Spamerkennung zu verarbeiten.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Onlinepr&amp;auml;senzen in sozialen Medien&lt;/h3&gt;
-&lt;p&gt;Wir unterhalten Onlinepr&amp;auml;senzen innerhalb sozialer Netzwerke und Plattformen, um mit den dort aktiven Kunden, Interessenten und Nutzern kommunizieren und sie dort &amp;uuml;ber unsere Leistungen informieren zu k&amp;ouml;nnen. Beim Aufruf der jeweiligen Netzwerke und Plattformen gelten die Gesch&amp;auml;ftsbedingungen und die Datenverarbeitungsrichtlinien deren jeweiligen Betreiber.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Soweit nicht anders im Rahmen unserer Datenschutzerkl&amp;auml;rung angegeben, verarbeiten wir die Daten der Nutzer sofern diese mit uns innerhalb der sozialen Netzwerke und Plattformen kommunizieren, z.B. Beitr&amp;auml;ge auf unseren Onlinepr&amp;auml;senzen verfassen oder uns Nachrichten zusenden.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Einbindung von Diensten und Inhalten Dritter&lt;/h3&gt;
-&lt;p&gt;Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Inhalts- oder Serviceangebote von Drittanbietern ein, um deren Inhalte und Services, wie z.B. Videos oder Schriftarten einzubinden (nachfolgend einheitlich bezeichnet als &amp;ldquo;Inhalte&amp;rdquo;).&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden k&amp;ouml;nnten. Die IP-Adresse ist damit f&amp;uuml;r die Darstellung dieser Inhalte erforderlich. Wir bem&amp;uuml;hen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter k&amp;ouml;nnen ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als &#34;Web Beacons&#34; bezeichnet) f&amp;uuml;r statistische oder Marketingzwecke verwenden. Durch die &#34;Pixel-Tags&#34; k&amp;ouml;nnen Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen k&amp;ouml;nnen ferner in Cookies auf dem Ger&amp;auml;t der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Vimeo&lt;/h3&gt;
-&lt;p&gt;&amp;nbsp;Wir k&amp;ouml;nnen die Videos der Plattform &amp;ldquo;Vimeo&amp;rdquo; des Anbieters Vimeo Inc., Attention: Legal Department, 555 West 18th Street New York, New York 10011, USA, einbinden. Datenschutzerkl&amp;auml;rung: &lt;a href=&#34;https://vimeo.com/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://vimeo.com/privacy&lt;/a&gt;.&amp;nbsp; WIr weisen darauf hin, dass Vimeo Google Analytics einsetzen kann und verweisen hierzu auf die Datenschutzerkl&amp;auml;rung (&lt;a href=&#34;https://www.google.com/policies/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.google.com/policies/privacy&lt;/a&gt;) sowie Opt-Out-M&amp;ouml;glichkeiten f&amp;uuml;r Google-Analytics (&lt;a href=&#34;http://tools.google.com/dlpage/gaoptout?hl=de&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://tools.google.com/dlpage/gaoptout?hl=de&lt;/a&gt;) oder die Einstellungen von Google f&amp;uuml;r die Datennutzung zu Marketingzwecken (&lt;a href=&#34;https://adssettings.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://adssettings.google.com/.&lt;/a&gt;).&lt;/p&gt;
-&lt;h3&gt;Twitter&lt;/h3&gt;
-&lt;p&gt;Innerhalb unseres Onlineangebotes k&amp;ouml;nnen Funktionen und Inhalte des Dienstes Twitter, angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA, eingebunden werden. Hierzu k&amp;ouml;nnen z.B. Inhalte wie Bilder, Videos oder Texte und Schaltfl&amp;auml;chen geh&amp;ouml;ren, mit denen Nutzer Ihr Gefallen betreffend die Inhalte kundtun, den Verfassern der Inhalte oder unsere Beitr&amp;auml;ge abonnieren k&amp;ouml;nnen. Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europ&amp;auml;ische Datenschutzrecht einzuhalten (&lt;a href=&#34;https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;amp;status=Active&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;amp;status=Active&lt;/a&gt;). Datenschutzerkl&amp;auml;rung: &lt;a href=&#34;https://twitter.com/de/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/de/privacy&lt;/a&gt;, Opt-Out: &lt;a href=&#34;https://twitter.com/personalization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/personalization&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;dsg1-5&#34; href=&#34;https://datenschutz-generator.de&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener&#34;&gt;Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Über den Autor</title>
-      <link>https://www.petersell.com/homepage/about/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/homepage/about/</guid>
-      <description>
-&lt;p&gt;Dies ist ein (privater) Blog ohne Gewinnerzielungsabsicht.&lt;/p&gt;
-
-&lt;p&gt;Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.&lt;/p&gt;
-
-&lt;h2&gt;Profile&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.publication.work/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
-&lt;/ul&gt;
-
-&lt;h2&gt;Ebooks&lt;/h2&gt;
-&lt;p&gt;als EPUB und PDF downloadbar.&lt;/p&gt;
-&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo mit Asciidoc - Bilder einbinden</title>
-      <link>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</link>
-      <category>hugo</category>
-      <category>asciidoc</category>
-      <pubDate>Sun, 22 Mar 2020 20:08:10 +0100</pubDate>
-      
-      <guid>https://www.petersell.com/blog/hugo-asciidoc-bilder-einbinden/</guid>
-      <description>&lt;div id=&#34;preamble&#34;&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Leider ist eine Selbstverständlichkeit wie das Einbinden von Bildern in der Kombination Hugo/Asciidoc etwas speziell. Das Markup ist Asciidoc, welches mit Asciidoctor in HTML umgewandelt wird. Nun hat aber das Hugo-CMS seinen eigenen Mechanismus, der mit Markdown auch wunderbar funktioniert.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Gottseidank fand ich auf Github den Quelltext des Blogs &lt;a href=&#34;https://foo-dogsquared.github.io&#34; class=&#34;bare&#34;&gt;https://foo-dogsquared.github.io&lt;/a&gt; mit einem einfachen Beispiel der Bildeinbindung.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;admonitionblock tip&#34;&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class=&#34;icon&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Tipp&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class=&#34;content&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie haben Hugo und Asciidoctor installiert.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/&#34;&gt;Blogging with Asciidoctor and Hugo&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/foo-dogsquared/blog/master/content/posts/blogging-with-asciidoctor-and-hugo.adoc&#34;&gt;Beispiel der Bildeinbindung&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_1_content_datei_editieren&#34;&gt;1. Content-Datei editieren&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Schreiben Sie Ihren Blogpost in der Datei &lt;code&gt;meinblogpost.adoc&lt;/code&gt; und fügen das Bild im Text ein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;image::meinblogpost.gif[]&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ebenfalls in die Content-Datei kommt folgendes Asciidoc-Attribut.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;:imagesdir: ../images/meinblogpostimage/&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Damit beim Neuanlegen einer adoc-Datei der Bildordner gleich korrekt ausgegeben wird, schreiben Sie in Ihrem Archetype &lt;code&gt;default.adoc&lt;/code&gt; folgende Notation in den Bereich der Asciidoc-Attribute (unterhalb des YAML-Headers):&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;:imagesdir: ../images/{{ .File.BaseFileName }}/&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_2_bild_abspeichern&#34;&gt;2. Bild abspeichern&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Legen Sie einen Ordner &lt;code&gt;images&lt;/code&gt; innerhalb des post-Ordners an.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;|-- content
-    |-- post
-        └-- images&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Da Sie wissen, dass Ihre Bilddatei &lt;code&gt;meinblogpost.gif&lt;/code&gt; heißt, legen Sie einen weiteren Ordner &lt;code&gt;meinblogpost&lt;/code&gt; innerhalb des &lt;code&gt;images&lt;/code&gt;-Ordners an. In diesen kopieren Sie die Bilddatei zum Blogpost.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;|-- content
-    |-- post
-        |-- images
-        |   └-- meinblogpost.gif
-        └-- meinblogpost.adoc&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_admonitions&#34;&gt;Admonitions&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ich habe auf die kleinen Vignetten bzw. Icons für die Warnhinweise und Tipps verzichtet. Diese werden im Asciidoctor immer dann ausgegeben, wenn Sie in Asciidoc-Attributen folgenden Wert vermerken:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;literalblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;:icons: font&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ich habe also den CSS-Link für &lt;em&gt;Font Awesome&lt;/em&gt; wieder entfernt.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Interne Einbindung&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link rel=&#34;stylesheet&#34; href=&#34;{{&#34;css/fa/css/all.css&#34; | absURL }}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Externe Einbindung&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&amp;lt;link href=&#34;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34; rel=&#34;stylesheet&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;In meiner CSS wurden sämtliche Einträge zur class &lt;code&gt;.admonitionblock&lt;/code&gt; überflüssig, die ich mir zuvor aus der &lt;code&gt;asciidoctor.css&lt;/code&gt; kopiert hatte.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; Ich hatte neben Markdown-Dateien auch asciidoc-Dateien in meinem Hugo-Projekt eingebunden. In der Datei &lt;em&gt;config.toml&lt;/em&gt; in meinem Homepage-Hauptverzeichnis musste ich folgendes hinzufügen: &amp;lsquo;^asciidoctor$&amp;rsquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[security]
+  [security.exec]
+    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;, &amp;#39;^asciidoctor$&amp;#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetzt wurde die Homepage gebuildet und war im Browser via &lt;em&gt;localhost:1313&lt;/em&gt; aufrufbar.&lt;/p&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&#34;&gt;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

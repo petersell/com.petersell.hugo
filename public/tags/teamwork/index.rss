@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>teamwork on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/teamwork/</link>
-    <description>Recent content in teamwork on Andreas Petersell</description>
+    <title>Teamwork on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/teamwork/</link>
+    <description>Recent content in Teamwork on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
     <lastBuildDate>Mon, 08 Oct 2018 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/teamwork/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/teamwork/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>There Is No Why in a Team</title>
-      <link>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</link>
+      <link>http://localhost:1313/status/zitat-vermaan-there-is-no-why/</link>
       <category>arbeitswelt</category>
       <category>teamwork</category>
       <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</guid>
+      <guid>http://localhost:1313/status/zitat-vermaan-there-is-no-why/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -34,7 +34,7 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Mike Vermaan&lt;br&gt;
+— Mike Vermaan&lt;br/&gt;
 &lt;cite&gt;http://mikeveerman.be/2018/10/07/there-is-no-why-in-team/&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -43,12 +43,12 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
     
     <item>
       <title>Matter of Trust</title>
-      <link>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</link>
+      <link>http://localhost:1313/status/zitat-sinek-a-team-is-not-a-group/</link>
       <category>teamwork</category>
       <category>arbeitswelt</category>
       <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</guid>
+      <guid>http://localhost:1313/status/zitat-sinek-a-team-is-not-a-group/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -56,15 +56,11 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Simon Sinek&lt;br&gt;
+— Simon Sinek&lt;br/&gt;
 &lt;cite&gt;https://twitter.com/simonsinek/status/1034138845594497024&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A team is not a group of people who work together. A team is a group of people who trust each other.&lt;/p&gt;&amp;mdash; Simon Sinek (@simonsinek) &lt;a href=&#34;https://twitter.com/simonsinek/status/1034138845594497024?ref_src=twsrc%5Etfw&#34;&gt;August 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;/div&gt;</description>
+</description>
     </item>
     
   </channel>

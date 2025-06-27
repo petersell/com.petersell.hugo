@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Homepages on Andreas Petersell</title>
-  <link rel="alternate" type="text/html" href="https://www.petersell.com/"/>
-  <link rel="self" type="application/atom+xml" href="https://www.petersell.com/homepage/index.atom"/>
-  <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
+  <link rel="alternate" type="text/html" href="http://localhost:1313/"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:1313/homepage/index.atom"/>
+  <rights>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
   <updated>2020-04-02T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
-  <id>https://www.petersell.com/homepage/</id>
+  <id>http://localhost:1313/homepage/</id>
   
   
   <entry>
-    <id>https://www.petersell.com/homepage/impressum/</id>
+    <id>http://localhost:1313/homepage/impressum/</id>
     <title type="text">Impressum</title>
-    <link rel="alternate" href="https://www.petersell.com/homepage/impressum/" hreflang="en" title="Impressum"/>
+    <link rel="alternate" href="http://localhost:1313/homepage/impressum/" hreflang="de" title="Impressum"/>
     <published>2020-04-02T00:00:00Z</published>
     <updated>2020-04-02T00:00:00Z</updated>
     <content type="html">
-&lt;p&gt;&lt;img src=&#34;../../images/imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Kontaktinformation&lt;/h3&gt;
+&lt;p&gt;Andreas Petersell, Falkenberger Str. 1A, 13088 Berlin&lt;/p&gt;
+&lt;p&gt;petersell-blog at protonmail.ch&lt;/p&gt;
+
+&lt;h3&gt;Blog&lt;/h3&gt;
+
+&lt;p&gt;Dies ist ein privater Blog ohne jede Gewinnerzielungsmöglichkeit.&lt;/p&gt;
+
+&lt;p&gt;Schreiben ist Bleiben, aber auch Leben und Verstehen. Ich bin der eifrigste Leser meiner eigenen Anleitungen, denn ich vergesse schnell. Meine bevorzugten Formate in der Technischen Redaktion sind DITA-XML und Asciidoc.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;
+
+&lt;h3&gt;Ebooks&lt;/h3&gt;
+&lt;p&gt;als EPUB und PDF downloadbar.&lt;/p&gt;
+&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hier online:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a titel=&#34;DDR-Literatur&#34; href=&#34;https://www.petersell.com/blog/essay-ddrprotagonisten/&#34;&gt;DDR-Literatur&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;PeBe Miniautos&#34; href=&#34;https://www.petersell.com/blog/essay-miniauto/&#34;&gt;PeBe Miniautos&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;
+
+&lt;!-- &lt;p&gt;&lt;img src=&#34;../../images/imp.gif&#34; width=&#34;400&#34; height=&#34;271&#34; /&gt;&lt;/p&gt; --&gt;
 &lt;h3&gt;Datenschutzerkl&amp;auml;rung&lt;/h3&gt;
 &lt;p&gt;Diese Datenschutzerkl&amp;auml;rung kl&amp;auml;rt Sie &amp;uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &amp;bdquo;Daten&amp;ldquo;) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&amp;auml;senzen, wie z.B. unser Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als &amp;bdquo;Onlineangebot&amp;ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &amp;bdquo;Verarbeitung&amp;ldquo; oder &amp;bdquo;Verantwortlicher&amp;ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).&lt;/p&gt;
 &lt;h3 id=&#34;dsg-general-controller&#34;&gt;Verantwortlicher&lt;/h3&gt;
@@ -33,7 +58,7 @@
 &lt;li&gt;Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).&lt;/li&gt;
 &lt;li&gt;Meta-/Kommunikationsdaten (z.B., Ger&amp;auml;te-Informationen, IP-Adressen).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&amp;nbsp;Zweck der Verarbeitung&lt;/h3&gt;
+&lt;h3&gt;Zweck der Verarbeitung&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Zurverf&amp;uuml;gungstellung des Onlineangebotes, seiner Funktionen und&amp;nbsp; Inhalte.&lt;/li&gt;
 &lt;li&gt;Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.&lt;/li&gt;
@@ -66,23 +91,18 @@
 &lt;h3&gt;Kommentare und Beitr&amp;auml;ge&lt;/h3&gt;
 &lt;p&gt;Wenn Nutzer Kommentare oder sonstige Beitr&amp;auml;ge hinterlassen, k&amp;ouml;nnen ihre IP-Adressen auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO f&amp;uuml;r 7 Tage gespeichert werden. Das erfolgt zu unserer Sicherheit, falls jemand in Kommentaren und Beitr&amp;auml;gen widerrechtliche Inhalte hinterl&amp;auml;sst (Beleidigungen, verbotene politische Propaganda, etc.). In diesem Fall k&amp;ouml;nnen wir selbst f&amp;uuml;r den Kommentar oder Beitrag belangt werden und sind daher an der Identit&amp;auml;t des Verfassers interessiert.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Des Weiteren behalten wir uns vor, auf Grundlage unserer berechtigten Interessen gem. Art. 6 Abs. 1 lit. f. DSGVO, die Angaben der Nutzer zwecks Spamerkennung zu verarbeiten.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Onlinepr&amp;auml;senzen in sozialen Medien&lt;/h3&gt;
-&lt;p&gt;Wir unterhalten Onlinepr&amp;auml;senzen innerhalb sozialer Netzwerke und Plattformen, um mit den dort aktiven Kunden, Interessenten und Nutzern kommunizieren und sie dort &amp;uuml;ber unsere Leistungen informieren zu k&amp;ouml;nnen. Beim Aufruf der jeweiligen Netzwerke und Plattformen gelten die Gesch&amp;auml;ftsbedingungen und die Datenverarbeitungsrichtlinien deren jeweiligen Betreiber.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Soweit nicht anders im Rahmen unserer Datenschutzerkl&amp;auml;rung angegeben, verarbeiten wir die Daten der Nutzer sofern diese mit uns innerhalb der sozialen Netzwerke und Plattformen kommunizieren, z.B. Beitr&amp;auml;ge auf unseren Onlinepr&amp;auml;senzen verfassen oder uns Nachrichten zusenden.&lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;Einbindung von Diensten und Inhalten Dritter&lt;/h3&gt;
 &lt;p&gt;Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Inhalts- oder Serviceangebote von Drittanbietern ein, um deren Inhalte und Services, wie z.B. Videos oder Schriftarten einzubinden (nachfolgend einheitlich bezeichnet als &amp;ldquo;Inhalte&amp;rdquo;).&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;ts-muster-content&#34;&gt;Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden k&amp;ouml;nnten. Die IP-Adresse ist damit f&amp;uuml;r die Darstellung dieser Inhalte erforderlich. Wir bem&amp;uuml;hen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter k&amp;ouml;nnen ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als &#34;Web Beacons&#34; bezeichnet) f&amp;uuml;r statistische oder Marketingzwecke verwenden. Durch die &#34;Pixel-Tags&#34; k&amp;ouml;nnen Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen k&amp;ouml;nnen ferner in Cookies auf dem Ger&amp;auml;t der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.&lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;Vimeo&lt;/h3&gt;
 &lt;p&gt;&amp;nbsp;Wir k&amp;ouml;nnen die Videos der Plattform &amp;ldquo;Vimeo&amp;rdquo; des Anbieters Vimeo Inc., Attention: Legal Department, 555 West 18th Street New York, New York 10011, USA, einbinden. Datenschutzerkl&amp;auml;rung: &lt;a href=&#34;https://vimeo.com/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://vimeo.com/privacy&lt;/a&gt;.&amp;nbsp; WIr weisen darauf hin, dass Vimeo Google Analytics einsetzen kann und verweisen hierzu auf die Datenschutzerkl&amp;auml;rung (&lt;a href=&#34;https://www.google.com/policies/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.google.com/policies/privacy&lt;/a&gt;) sowie Opt-Out-M&amp;ouml;glichkeiten f&amp;uuml;r Google-Analytics (&lt;a href=&#34;http://tools.google.com/dlpage/gaoptout?hl=de&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://tools.google.com/dlpage/gaoptout?hl=de&lt;/a&gt;) oder die Einstellungen von Google f&amp;uuml;r die Datennutzung zu Marketingzwecken (&lt;a href=&#34;https://adssettings.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://adssettings.google.com/.&lt;/a&gt;).&lt;/p&gt;
-&lt;h3&gt;Twitter&lt;/h3&gt;
-&lt;p&gt;Innerhalb unseres Onlineangebotes k&amp;ouml;nnen Funktionen und Inhalte des Dienstes Twitter, angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA, eingebunden werden. Hierzu k&amp;ouml;nnen z.B. Inhalte wie Bilder, Videos oder Texte und Schaltfl&amp;auml;chen geh&amp;ouml;ren, mit denen Nutzer Ihr Gefallen betreffend die Inhalte kundtun, den Verfassern der Inhalte oder unsere Beitr&amp;auml;ge abonnieren k&amp;ouml;nnen. Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europ&amp;auml;ische Datenschutzrecht einzuhalten (&lt;a href=&#34;https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;amp;status=Active&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;amp;status=Active&lt;/a&gt;). Datenschutzerkl&amp;auml;rung: &lt;a href=&#34;https://twitter.com/de/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/de/privacy&lt;/a&gt;, Opt-Out: &lt;a href=&#34;https://twitter.com/personalization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/personalization&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;dsg1-5&#34; href=&#34;https://datenschutz-generator.de&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener&#34;&gt;Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
   
   <entry>
-    <id>https://www.petersell.com/homepage/about/</id>
+    <id>http://localhost:1313/homepage/about/</id>
     <title type="text">Über den Autor</title>
-    <link rel="alternate" href="https://www.petersell.com/homepage/about/" hreflang="en" title="Über den Autor"/>
+    <link rel="alternate" href="http://localhost:1313/homepage/about/" hreflang="de" title="Über den Autor"/>
     <author><name>Andreas Petersell<name></author>
     <published>2020-03-30T00:00:00Z</published>
     <updated>2020-03-30T00:00:00Z</updated>
@@ -93,14 +113,19 @@
 
 &lt;h2&gt;Profile&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a titel=&#34;Meine Fotos&#34; href=&#34;https://www.publication.work/photos&#34; target=&#34;_blank&#34;&gt;Fotoalben&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Meine Schnappschüsse auf Pixelfed&#34; href=&#34;https://pixelfed.de/putbus&#34; target=&#34;_blank&#34;&gt;Pixelfed&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a titel=&#34;Github&#34; href=&#34;https://github.com/petersell&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 
 &lt;h2&gt;Ebooks&lt;/h2&gt;
 &lt;p&gt;als EPUB und PDF downloadbar.&lt;/p&gt;
-&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a title=&#34;Die Protagonisten der DDR-Literatur&#34; href=&#34;http://petersell.github.io/ddrprotagonisten/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-ddrprotagonisten.gif&#34; alt=&#34;Cover DDR-Protagonisten&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover FDBG-Ausweis&#34; href=&#34;http://petersell.github.io/fdgbausweis/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-fdgbausweis.gif&#34; alt=&#34;Cover FDGB-Ausweis&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover PeBe Miniautos&#34; href=&#34;http://petersell.github.io/miniauto/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/cover-miniauto.gif&#34; alt=&#34;Cover Miniautos&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt; &lt;a title=&#34;Cover Zeppobox&#34; href=&#34;http://petersell.github.io/zeppobox/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../images/artikelbild-zeppobox.gif&#34; alt=&#34;Cover Zeppobox&#34; width=&#34;160&#34; height=&#34;240&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hier online:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a titel=&#34;DDR-Literatur&#34; href=&#34;https://www.petersell.com/blog/essay-ddrprotagonisten/&#34;&gt;DDR-Literatur&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a titel=&#34;PeBe Miniautos&#34; href=&#34;https://www.petersell.com/blog/essay-miniauto/&#34;&gt;PeBe Miniautos&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</content>
   </entry>
   
 </feed>

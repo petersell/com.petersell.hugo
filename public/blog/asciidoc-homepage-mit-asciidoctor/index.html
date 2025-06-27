@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="de"><meta charset="utf-8">
+<html lang="de"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-<link href="https://twitter.com/petersell" rel="me" class="u-url"/>
 <link href="https://github.com/petersell" rel="me" class="u-url"/>
-<link href="https://www.petersell.com/photos/" rel="me" class="u-url"/>
-<link href="https://mastodon.social/@diagonale" rel="me" class="u-url"/>
 <link href="https://www.petersell.de" rel="me" class="u-url"/>
-<link href="https://pixelfed.de/putbus" rel="me" class="u-url"/>
 <title>Eine Homepage mit Asciidoctor erstellen</title>
-<link rel="stylesheet" href="https://www.petersell.com/css/main.css" />
-<body>
+<link rel="stylesheet" href="http://localhost:1313/css/main.css" /><body>
 <main>
 <h1 class="post-title"><div class="h-entry">Eine Homepage mit Asciidoctor erstellen</div></h1>
-<p class="author"><span class="p-author h-card">Andreas Petersell</span>&nbsp;am <date datetime="22.01.2019">22.01.2019</date></p>
+<div class="article-info">
+    <div class="article-taxonomies">
+        
+            <ul class="article-categories">
+                    <li><i>Andreas Petersell</span>&nbsp;am <date datetime="22.01.2019">22.01.2019</date></i></li>
+                
+                    <li><a href="http://localhost:1313/categories/anleitungen">Anleitungen</a></li>
+                
+            </ul>
+            
+            
+                <ul class="article-tags">
+                    
+                        <li><a href="http://localhost:1313/tags/asciidoc">#asciidoc</a></li>
+                    
+                        <li><a href="http://localhost:1313/tags/blogging">#blogging</a></li>
+                    
+                        <li><a href="http://localhost:1313/tags/techcomm">#techcomm</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
 
 
 <article>
@@ -23,7 +39,7 @@
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <div class="title">Note</div>
 </td>
@@ -34,18 +50,9 @@
 </div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
-<div id="toc" class="toc">
-<div id="toctitle" class="title"></div>
-<ul class="sectlevel1">
-<li><a href="#_metadaten_für_html_dateien_einrichten">Metadaten für HTML-Dateien einrichten</a></li>
-<li><a href="#_asciidoc_css_anpassen">asciidoc.css anpassen</a></li>
-<li><a href="#_menüleiste_erstellen">Menüleiste erstellen</a></li>
-<li><a href="#_inhaltsverzeichnis_einfügen">Inhaltsverzeichnis einfügen</a></li>
-<li><a href="#_quelldateien_im_unterordner">Quelldateien im Unterordner</a></li>
-</ul>
-</div>
+
 <div class="sect1">
 <h2 id="_metadaten_für_html_dateien_einrichten"><a class="anchor" href="#_metadaten_für_html_dateien_einrichten"></a>Metadaten für HTML-Dateien einrichten</h2>
 <div class="sectionbody">
@@ -55,12 +62,12 @@
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- docinfo.html --&gt;
-&lt;link rel="shortcut icon" type="image/png" href="images/petersell.ico"&gt;
-&lt;meta property="og:title" content="Andreas Petersell" /&gt;
-&lt;meta property="og:site_name" content="Andreas Petersell" /&gt;
-&lt;meta property="og:description" content="Technical Writer (DITA XML) and Author" /&gt;
-&lt;link href="https://twitter.com/petersell" rel="me" class="u-url"/&gt;
-&lt;link href="https://www.petersell.com" rel="me" class="u-url"/&gt;</code></pre>
+&lt;link rel=&#34;shortcut icon&#34; type=&#34;image/png&#34; href=&#34;images/petersell.ico&#34;&gt;
+&lt;meta property=&#34;og:title&#34; content=&#34;Andreas Petersell&#34; /&gt;
+&lt;meta property=&#34;og:site_name&#34; content=&#34;Andreas Petersell&#34; /&gt;
+&lt;meta property=&#34;og:description&#34; content=&#34;Technical Writer (DITA XML) and Author&#34; /&gt;
+&lt;link href=&#34;https://twitter.com/petersell&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&gt;
+&lt;link href=&#34;https://www.petersell.com&#34; rel=&#34;me&#34; class=&#34;u-url&#34;/&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -100,7 +107,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html 'C:\asciidoc\src\**\*.adoc'</code></pre>
+<pre class="highlight"><code>asciidoctor -a linkcss -a stylesheet=petersell.css -D C:\asciidoc\out\html &#39;C:\asciidoc\src\**\*.adoc&#39;</code></pre>
 </div>
 </div>
 </div>
@@ -198,24 +205,14 @@ Für längere Texte und Anleitungen hatte ich bisher viele CMS genutzt: Wordpres
 <br/>
 <hr>
 <br/>
-<script id="webmention-hosted">
-    (function () {
-    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-    url = url && url[0] ? url[0].href : false;
-    sn.type = "text/javascript"; sn.async = true;
-    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-    s.parentNode.insertBefore(sn, s);
-    }());
-    </script>
 <footer>
     <ul>
         <li class="footernav">
-            <a href="https://www.petersell.com/">Zur Startseite</a>
+            <a href="http://localhost:1313/">Zur Startseite</a>
         </li>
     </ul>
 </footer>
-<p class="copyright">Die Blogbeiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
+<p class="copyright">Sämtliche Beiträge stehen unter einer <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.</p>
 <p class="h-card vcard" style="display:none;">
     <img class="u-photo" src="/images/petersell.jpg" />
     <a class="u-url p-author p-name url" href="https://www.petersell.com" rel="me">Andreas Petersell</a>

@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>zaz on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/zaz/</link>
-    <description>Recent content in zaz on Andreas Petersell</description>
+    <title>Zaz on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/zaz/</link>
+    <description>Recent content in Zaz on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
     <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/zaz/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/zaz/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>ZAZ - und der Abend wird gut</title>
-      <link>https://www.petersell.com/status/foto-zaz-ifa/</link>
+      <link>http://localhost:1313/status/zaz-und-der-abend-wird-gut/</link>
       <category>familie</category>
       <category>zaz</category>
+      <category>foto</category>
       <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-zaz-ifa/</guid>
+      <guid>http://localhost:1313/status/zaz-und-der-abend-wird-gut/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;ZAZ in Berlin in lauer Sommernacht. Es gibt fast nichts besseres. Bis sie jemand von der Bühne gezerrt hat.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/foto-zaz-ifa/zaz-in-berlin.jpg&#34; alt=&#34;ZAZ in Berlin&#34; width=&#34;50%&#34;&gt;
+&lt;img src=&#34;../images/foto-zaz-ifa/zaz-in-berlin.jpg&#34; alt=&#34;ZAZ in Berlin&#34; width=&#34;50%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -37,35 +38,36 @@
     
     <item>
       <title>Klappt nicht immer</title>
-      <link>https://www.petersell.com/status/foto-zaz-videoausschnitt/</link>
+      <link>http://localhost:1313/status/klappt-nicht-immer/</link>
       <category>zaz</category>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-zaz-videoausschnitt/</guid>
+      <guid>http://localhost:1313/status/klappt-nicht-immer/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Ich kann auch romantetisch. Vorfreude auf ZAZ im September 2019 auf der IFA in Berlin.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/zaz-videoausschnitt/zaz-videoausschnitt.png&#34; alt=&#34;Zaz auf Treibsand&#34; width=&#34;80%&#34;&gt;
+&lt;img src=&#34;../images/zaz-videoausschnitt/zaz-videoausschnitt.png&#34; alt=&#34;Zaz auf Treibsand&#34; width=&#34;80%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>ZAZ rockt</title>
-      <link>https://www.petersell.com/status/foto-zaz-schmeling-halle/</link>
+      <link>http://localhost:1313/status/zaz-rockt/</link>
       <category>darumlebenwir</category>
       <category>zaz</category>
+      <category>foto</category>
       <pubDate>Tue, 17 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-zaz-schmeling-halle/</guid>
+      <guid>http://localhost:1313/status/zaz-rockt/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;die Max-Schmeling-Halle. Neben den Paris-Songs kamen Balladen und als Rockssongs interpretierte Recto-Verso-Songs zur Aufführung. Alle hatten den Text von &lt;em&gt;Je veux&lt;/em&gt; vergessen - und ZAZ gab gottseidank vor: &lt;em&gt;LA LA, LA LA&lt;/em&gt; &amp;#8230;&amp;#8203; Erstaunlich, wie eine Stimme eine ganze Halle füllt. Das Warten bis 21:30 Uhr hatte sich gelohnt.&lt;/p&gt;
+&lt;p&gt;die Max-Schmeling-Halle. Neben den Paris-Songs kamen Balladen und als Rockssongs interpretierte Recto-Verso-Songs zur Aufführung. Alle hatten den Text von &lt;em&gt;Je veux&lt;/em&gt; vergessen - und ZAZ gab gottseidank vor: &lt;em&gt;LA LA, LA LA&lt;/em&gt; …​ Erstaunlich, wie eine Stimme eine ganze Halle füllt. Das Warten bis 21:30 Uhr hatte sich gelohnt.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/zaz-schmeling-halle/zaz-schmeling-halle.jpg&#34; alt=&#34;ZAZ rockt&#34; width=&#34;80%&#34;&gt;
+&lt;img src=&#34;../images/zaz-schmeling-halle/zaz-schmeling-halle.jpg&#34; alt=&#34;ZAZ rockt&#34; width=&#34;80%&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>

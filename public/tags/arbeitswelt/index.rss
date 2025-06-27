@@ -1,27 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>arbeitswelt on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/arbeitswelt/</link>
-    <description>Recent content in arbeitswelt on Andreas Petersell</description>
+    <title>Arbeitswelt on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/arbeitswelt/</link>
+    <description>Recent content in Arbeitswelt on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Mon, 08 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Fri, 20 Dec 2019 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/arbeitswelt/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/arbeitswelt/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
+      <title>Das Leben gestalten mit den Big Five for Live</title>
+      <link>http://localhost:1313/status/zitat-strelecky-das-leben-gestalten/</link>
+      <category>arbeitswelt</category>
+      <category>gelesen</category>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/zitat-strelecky-das-leben-gestalten/</guid>
+      <description>&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Die meisten Gehälter und Boni von Managern basieren auf zwei Dingen: auf den Umsätzen und der Anzahl der Mitarbeiter. Sie basieren nicht auf Renditen und Fluktuationsraten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— John Strelecky: Das Leben gestalten mit den Big Five for Live&lt;br/&gt;
+&lt;cite&gt;München 2018 (S. 201)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lifetime Employment - A Corporate Nightmare</title>
+      <link>http://localhost:1313/status/zitat-kemske-das-aufsteigerprinzip/</link>
+      <category>arbeitswelt</category>
+      <category>gelesen</category>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/zitat-kemske-das-aufsteigerprinzip/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der englische Titel trifft es besser als der deutsche Titel des Romans &lt;em&gt;Das Aufsteiger-Prinzip&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jeder, der schon einmal befördert wurde, kennt das Geheimnis. Beförderung ist weder eine Ehre noch eine Belohnung und hat sehr wenig zu tun mit den Fähigkeiten eines Angestellten oder den Bedürfnissen der Firma. Beförderung ist eine Neuverteilung der verfügbaren Kräfte, um etwas auf den Weg zu bringen, das ein Manager - aus welchen Gründen auch immer - nicht selbst tun möchte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— Floyd Kemske: Das Aufsteiger-Prinzip&lt;br/&gt;
+&lt;cite&gt;München 1996 (S. 172)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kurze Hosen</title>
+      <link>http://localhost:1313/status/kurze-hosen/</link>
+      <category>darumlebenwir</category>
+      <category>arbeitswelt</category>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/kurze-hosen/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Heute Kurze-Hosen-Befehl meiner Frau befolgt. Zum ersten Mal. Kurze Hose.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>There Is No Why in a Team</title>
-      <link>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</link>
+      <link>http://localhost:1313/status/zitat-vermaan-there-is-no-why/</link>
       <category>arbeitswelt</category>
       <category>teamwork</category>
       <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-vermaan-there-is-no-why/</guid>
+      <guid>http://localhost:1313/status/zitat-vermaan-there-is-no-why/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -34,7 +95,7 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Mike Vermaan&lt;br&gt;
+— Mike Vermaan&lt;br/&gt;
 &lt;cite&gt;http://mikeveerman.be/2018/10/07/there-is-no-why-in-team/&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -43,12 +104,12 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
     
     <item>
       <title>Matter of Trust</title>
-      <link>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</link>
+      <link>http://localhost:1313/status/zitat-sinek-a-team-is-not-a-group/</link>
       <category>teamwork</category>
       <category>arbeitswelt</category>
       <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/zitat-sinek-a-team-is-not-a-group/</guid>
+      <guid>http://localhost:1313/status/zitat-sinek-a-team-is-not-a-group/</guid>
       <description>&lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
@@ -56,15 +117,50 @@ Every team has a purpose. This can be a project goal or the ownership of a produ
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Simon Sinek&lt;br&gt;
+— Simon Sinek&lt;br/&gt;
 &lt;cite&gt;https://twitter.com/simonsinek/status/1034138845594497024&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wie man ein Pferd fliegt</title>
+      <link>http://localhost:1313/status/zitat-ashton-wie-man-ein-pferd/</link>
+      <category>arbeitswelt</category>
+      <category>gelesen</category>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/zitat-ashton-wie-man-ein-pferd/</guid>
+      <description>&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A team is not a group of people who work together. A team is a group of people who trust each other.&lt;/p&gt;&amp;mdash; Simon Sinek (@simonsinek) &lt;a href=&#34;https://twitter.com/simonsinek/status/1034138845594497024?ref_src=twsrc%5Etfw&#34;&gt;August 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;/div&gt;</description>
+&lt;p&gt;Entscheidungsträger und Autoritätspersonen in Wirtschaft, Wissenschaft und Regierung betonen alle, dass sie Kreativität schätzen, aber wenn man sie testet, stellt sich heraus, dass sie die Kreativen nicht schätzten. Warum? Weil besonders kreative Menschen meist auch verspielter, unkonventioneller und weniger berechenbar sind, und damit auch schwerer zu kontrollieren. Man kann noch so sehr betonen, wie sehr man Kreativität schätzt, aber tief drinnen haben die meisten von uns lieber die Kontrolle.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Unsere Neigung, neue Ideen im Prinzip zu begrüßen, sie dann aber in der Praxis abzulehnen, ist ein Merkmal, kein Fehler. Jede Spezis hat eine eigene Nische, und jede Nische hat eigene Risiken und Vorteile. Unser Vorteil ist die schnelle Anpassung: Unsere Werkzeuge verändern sich schneller, als die Evolution unsere Körper verändern kann. Unser Risiko besteht darin, dass unsere neuartigen Schritte in die Dunkelheit führen können. Wenn wir etwas Neues erschaffen, kann uns das umbringen; wenn wir nichts Neues schaffen, werden wir auf jeden Fall sterben. Das macht uns zu widersprüchlichen Wesen: Wir brauchen und fürchten die Veränderung. Kein Mensch ist nur progressiv oder nur konservativ. Jeder ist immer beides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— Kevin Ashton: Wie man ein Pferd fliegt&lt;br/&gt;
+&lt;cite&gt;München 2016 (S. 102 ff)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Menschen mit einem gesunden intellektuellen Selbstbewußtsein müssen niemanden beweisen, wie clever sie sind. Sie gehen empirisch vor und streben nach der Wahrheit. Menschen mit mangelndem intellektuellen Selbstbewußtsein müssen allen zeigen, wie clever sie sind. Sie sind egoistisch und wollen triumphieren.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Hibbard reagierte perfekt auf die kühne Behauptung seines neuen Mitarbeiters, das Flugzeug von Lockheed sei Schrott. Ein Manager kann kaum machtvoller reagieren als mit der Aufforderung: &amp;#34;Beweisen Sie es mir&amp;#34;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— Kevin Ashton: Wie man ein Pferd fliegt&lt;br/&gt;
+&lt;cite&gt;München 2016 (S. 213)&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>

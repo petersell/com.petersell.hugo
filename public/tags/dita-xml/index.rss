@@ -1,32 +1,640 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dita-xml on Andreas Petersell</title>
-    <link>https://www.petersell.com/tags/dita-xml/</link>
-    <description>Recent content in dita-xml on Andreas Petersell</description>
+    <title>Dita-Xml on Andreas Petersell</title>
+    <link>http://localhost:1313/tags/dita-xml/</link>
+    <description>Recent content in Dita-Xml on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Wed, 02 Apr 2025 19:31:50 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/tags/dita-xml/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/dita-xml/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Einbinden der DITA-DTDs in Eclipse</title>
-      <link>https://www.petersell.com/blog/dita-fuer-eclipse/</link>
+      <title>DITA-XML mit VS Code validieren</title>
+      <link>http://localhost:1313/blog/dita-xml-mit-vscode-validieren/</link>
       <category>dita-xml</category>
+      <category>techcomm</category>
+      <pubDate>Wed, 02 Apr 2025 19:31:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/dita-xml-mit-vscode-validieren/</guid>
+      <description>&lt;p&gt;Um Visual Studio Code als Quelltext-Editor für DITA-XML-Dateien mit allen Annehmlichkeiten wie z.B. der Validierung nutzen zu können, müssen in den Einstellungen des Programms, genauer in der &lt;code&gt;settings.json&lt;/code&gt;, drei Einträge vorgenommen werden.&lt;/p&gt;
+&lt;p&gt;Damit ich bei der nächsten PC-Einrichtung nicht wieder anfange zu suchen, schreibe ich es jetzt auf.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/no-validation.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Leider weiß ich nicht immer, welche DITA-Tags in welche Reihenfolge gehören. Eine zeitnahe Validierung der DITA-Synstax ist also sehr hilfreich.&lt;/p&gt;
+&lt;p&gt;Quellen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/64782816/how-can-i-make-dita-catalog-xml-work-in-vs-code&#34;&gt;How can I make dita-catalog.xml work in vscode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.baeldung.com/find-java-home&#34;&gt;How to find JAVA_HOME&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;einstellungen-von-vs-code-komplettieren&#34;&gt;Einstellungen von VS Code komplettieren&lt;/h3&gt;
+&lt;!-- FM:Snippet:Start data:{&#34;id&#34;:&#34;Admonition - Voraussetzung&#34;,&#34;fields&#34;:[]} --&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.comment {
+        --title-background-color: #99bda2;
+        --content-background-color: #efe;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+&lt;/style&gt;&lt;div class=&#34;notice info&#34; &gt;
+    &lt;p class=&#34;notice-title&#34;&gt;
+        &lt;span class=&#34;icon-notice baseline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;92 59.5 300 300&#34;&gt;
+  &lt;path d=&#34;M292 303.25V272c0-3.516-2.734-6.25-6.25-6.25H267v-100c0-3.516-2.734-6.25-6.25-6.25h-62.5c-3.516 0-6.25 2.734-6.25 6.25V197c0 3.516 2.734 6.25 6.25 6.25H217v62.5h-18.75c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h87.5c3.516 0 6.25-2.734 6.25-6.25Zm-25-175V97c0-3.516-2.734-6.25-6.25-6.25h-37.5c-3.516 0-6.25 2.734-6.25 6.25v31.25c0 3.516 2.734 6.25 6.25 6.25h37.5c3.516 0 6.25-2.734 6.25-6.25Zm125 81.25c0 82.813-67.188 150-150 150-82.813 0-150-67.188-150-150 0-82.813 67.188-150 150-150 82.813 0 150 67.188 150 150Z&#34;/&gt;
+&lt;/svg&gt;
+
+        &lt;/span&gt;Voraussetzung&lt;/p&gt;&lt;p&gt;Sie haben Java und ein DITA-Open-Toolkit installiert.&lt;/p&gt;&lt;/div&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
+&lt;p&gt;Es gilt, diese drei Einstellungen hinzuzufügen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pfad zum Java-Programm&lt;/li&gt;
+&lt;li&gt;Pfad zur Datei &lt;code&gt;catalog-dita.xml&lt;/code&gt; im DITA-OT-Verzeichnis&lt;/li&gt;
+&lt;li&gt;Aktiveren des Kontrollkästchen &lt;em&gt;xml.validation.resolveExternalEntities&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;1-pfad-zum-java-programm&#34;&gt;(1) Pfad zum Java-Programm&lt;/h4&gt;
+&lt;p&gt;Da ich mit Linux Fedora arbeite, gab &lt;a target=&#34;_blank&#34; href=&#34;https://www.baeldung.com/find-java-home&#34;&gt;dieser Befehl&lt;/a&gt;
+im Terminal-Fenster meinen JAVA_HOME-Pfad zurück:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ java -XshowSettings:properties -version 2&amp;gt;&amp;amp;1 &amp;gt; /dev/null | grep &amp;#39;java.home&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2-pfad-zur-catalog-datei&#34;&gt;(2) Pfad zur catalog-Datei&lt;/h4&gt;
+&lt;p&gt;Da ich mit Linux Fedora arbeite, diese Syntax der Schrägstriche.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;xml.catalogs&amp;#34;: [
+	&amp;#34;/home/andreas/Programme/dita-ot-4.1.2/catalog-dita.xml&amp;#34;
+],
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3-kontrollkästchen-für-validation-aktiveren&#34;&gt;(3) Kontrollkästchen für Validation aktiveren&lt;/h4&gt;
+&lt;p&gt;In der Oberfläche das Kontrollkästchen aktiveren für &lt;em&gt;xml.validation.resolveExternalEntities&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/kontrollkaestchen-aktivieren.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Zum Schluss VS Code neu starten.&lt;/p&gt;
+&lt;h4 id=&#34;erbebnis&#34;&gt;Erbebnis&lt;/h4&gt;
+&lt;p&gt;In der Datei &lt;code&gt;settings.json&lt;/code&gt; sah die Notation bei mir so aus:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;xml.catalogs&amp;#34;: [
+	&amp;#34;/home/andreas/Programme/dita-ot-4.1.2/catalog-dita.xml&amp;#34;
+],
+&amp;#34;xml.java.home&amp;#34;: &amp;#34;/usr/lib/jvm/java-21-openjdk&amp;#34;,
+&amp;#34;xml.validation.resolveExternalEntities&amp;#34;: true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetzt bekomme ich sofort Fehlerhinweise, wenn meine DITA-Syntax nicht stimmt. Auch werden mir beim Schreiben im Kontextmenü mögliche korrekte Tags vorgeschlagen. Ein entspannteres Arbeiten als DITA-Redakteur ist möglich.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eigenen DITA-Bootstrap-Output mit Docker builden</title>
+      <link>http://localhost:1313/blog/dita-ot-plugin-auf-git-mit-docker/</link>
+      <category>dita-xml</category>
+      <category>techcomm</category>
+      <category>docker</category>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/dita-ot-plugin-auf-git-mit-docker/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie generieren DITA-Output mit Hilfe eines DITA-OT-Images. Aber wie generieren Sie Output mit Hilfe eines Plugins, dass nicht standardmäßig in das DITA-OT integriert ist und von Ihnen angepaßt wurde?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Warum sollte ich als DITA-Redakteur &lt;em&gt;Docker&lt;/em&gt; und ähnliches benutzen? Was bringt mir das? Auf den Punkt gebracht: das eigene Überleben als DITA-Redakteur.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/dita-ot-bootstrap-mit-docker/containerschiff.jpg&#34; alt=&#34;DITA-Kapitän&#34; width=&#34;80%&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie sind der Kapitän auf einem großen Schiff voller Container. In jedem Container befindet sich entweder eine Version des DITA-Open-Toolkits oder ein DITA-OT-Plugin. Wenn Sie ein PDF oder HTML-Output benötigen, suchen Sie sich ein DITA-OT heraus, fügen ein oder mehrere Plugins hinzu und starten den Build.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Sie haben also eine große Auswahl an DITA-OT-Versionen und Plugins. Sie können sofort das neueste testen und gebrauchen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nie wieder müssen Sie sich Gedanken machen, welches Java das DITA-OT benötigt. Nie wieder müssen Sie einen DITA-OT/bin-Pfad in die Umgebungsvariablen Ihres Betriebssystem schreiben.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sie können das verwendete Image anderen bekannt geben, so dass diese mit dem selben DITA-OT builden.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie überleben als DITA-Redakteur, weil Sie schneller, flexibler, unabhängiger und aktueller sind.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mein Sohn hatte mir einen neuen Rechner aufgebaut - mit Linux! Nun mußte ich sämtliche Programme neu installieren. Gottseidank stieß ich innerhalb der DITA-Dokumention auf den Artikel &lt;a href=&#34;https://www.dita-ot.org/dev/topics/using-docker-images.html&#34;&gt;Running the dita command from a Docker image&lt;/a&gt;. Inzwischen gelingt es mir, mit Hilfe von Docker Standard-HTML-Output zu generieren.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Aber ich möchte das Aussehen verändern mit Hilfe des Plugins &lt;a href=&#34;https://github.com/infotexture/dita-bootstrap&#34;&gt;DITA Bootstrap&lt;/a&gt; von Roger W. Fienhold Sheen. Dafür hat letzterer &lt;a href=&#34;https://www.dita-ot.org/dev/topics/creating-docker-images.html&#34;&gt;eine Anleitung&lt;/a&gt; in der offiziellen Dokumentation geschrieben.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Zu guter Letzt möchte ich das DITA-Bootstrap-Plugin anpassen: mit meinen Farben, meinen Menü-Bezeichnungen, meine Header- und Footer-Datei einbinden uvm. Dazu hinterlege ich meine Version des Bootstrap-Plugins in ein Github-Repository.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Docker installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_1_bootstrap_plugin_anpassen_und_bereitstellen&#34;&gt;1) Bootstrap-Plugin anpassen und bereitstellen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie möchten ein Plugin nach Ihren Wünschen anpassen. Also gilt es, das Plugin von einem Git-Repository downzuloaden, es anzupassen und anschließend in ein eigenes Repository innerhalb Ihres Git-Anbieters hochzuladen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich bin kein Git-Experte, darum hier mein Weg, der für mich funktioniert:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Fremdes Repository (z.B. &lt;a href=&#34;https://github.com/infotexture/dita-bootstrap&#34;&gt;DITA-Bootstrap&lt;/a&gt;) klonen, so dass in einem lokalen Ordner ein neues Verzeichnis &lt;em&gt;A&lt;/em&gt; entsteht.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Auf der Github-Webseite in Ihrem Github-Account ein neues Repo erstellen und ebenfalls klonen, so dass ein zweiter Ordner &lt;em&gt;B&lt;/em&gt; entsteht.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anschließend den Inhalt des Ordners &lt;em&gt;A&lt;/em&gt; in den Ordner &lt;em&gt;B&lt;/em&gt; kopieren (ohne das Verzeichnis &lt;code&gt;.git&lt;/code&gt; und den anderen Git-Dateien).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Das Plugin nach Ihren wünschen anpassen. Der Titel &lt;em&gt;DITA-Bootstrap&lt;/em&gt; könnte z.B. in Ihren Wunschtitel geändert werden.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Den Ordner &lt;em&gt;B&lt;/em&gt;, der ja unser eigenes, geklontes lokales Repo ist, auf das remote Github-Repo &lt;em&gt;pushen&lt;/em&gt; (aktualisieren).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_2_dockerfile_erstellen&#34;&gt;2) Dockerfile erstellen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Erstellen Sie innerhalb Ihres DITA-XML-Quelldateien-Ordners eine neue Textdatei mit Namen &lt;code&gt;Dockerfile&lt;/code&gt;. Schreiben Sie folgendes hinein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Dockerfile im Quelldateien-Ordner&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;# Use the latest DITA-OT image ↓ as parent:
+FROM ghcr.io/dita-ot/dita-ot:4.0.1
+
+# Install a custom plug-in from a remote location:
+RUN dita --install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+
+# Install a custom plug-in from a remote location:
+RUN dita --install https://github.com/petersell/zks-bootstrap-5-3-2/archive/master.zip&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie müssen natürlich Ihr eigenes Repository im zweiten RUN-Befehl angeben in der Form &lt;a href=&#34;https://github.com/user/repository&#34; class=&#34;bare&#34;&gt;https://github.com/user/repository&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Für das eigene Repository muss eine Zip-Datei bereitgehalten werden. Diese muss man nicht extra erstellen, denn das übernimmt Github. Schreiben Sie einfach &lt;code&gt;/archive/master.zip&lt;/code&gt; ans Ende der Repository-URL, um aus dem Masterbranch eine Zipdatei zu erstellen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;So wird aus &lt;em&gt;&lt;a href=&#34;http://github.com/user/repository.git&#34; class=&#34;bare&#34;&gt;http://github.com/user/repository.git&lt;/a&gt;&lt;/em&gt; dann &lt;em&gt;&lt;a href=&#34;http://github.com/user/repository/archive/master.zip&#34; class=&#34;bare&#34;&gt;http://github.com/user/repository/archive/master.zip&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_3_image_bauen&#34;&gt;3) Image bauen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Auf der Grundlage der Datei &lt;code&gt;Dockerfile&lt;/code&gt; wird jetzt ein lokales Image erstellt. Öffnen Sie ein Kommandozeilen-Fenster und gehen Sie in Ihr DITA-Quellverzeichnis, weil sich darin Ihre &lt;code&gt;Dockerfile&lt;/code&gt; befindet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Geben Sie folgenden Befehl ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Buildfehl auf Konsole&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;$ docker image build -t ditaot-bootstrap-docker-image:1.0 .&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie können Ihrem Image natürlich einen anderen Namen vergeben als &lt;em&gt;ditaot-bootstrap-docker-image&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Überprüfen Sie im selben Fenster, ob das Images gebaut wurde:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;$ docker images&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_4_container_starten_für_den_build&#34;&gt;4) Container starten für den Build&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jetzt können Sie den Docker-Container starten, der auf diesem Docker-Image basiert. Da auf dem Container nun mal ein DITA-OT ist, heißt &lt;em&gt;starten&lt;/em&gt; zugleich DITA-Output builden. Dazu geben Sie dem run-Befehl die Eigenschaften mit auf auf den Weg, wie Sie es auch mit dem DITA-Build-Befehl auf lokaler Ebene tun würden: das DITA-Quellverzeichnis, die Haupt-Ditamap, den Output-Ordner sowie das Format (transtype).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Geben Sie folgenden Befehl im Kommandozeilen-Fenster ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Docker-Befehl auf der Konsole&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;$ docker container run -it \
+  -v /home/andreas/DITA-ZKS:/src ditaot-bootstrap-docker-image:1.0 \
+  -i /src/zks.ditamap \
+  -o /src/out/dita-bootstrap \
+  -f html5-bootstrap -v&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Passen Sie Ihren DITA-Quelldatei-Ordner entsprechend an. Bei mir heißt der DITA-Quelldatei-Pfad: &lt;code&gt;/home/andreas/DITA-ZKS&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Falls Sie einen anderen Image-Namen statt &lt;em&gt;ditaot-bootstrap-docker-image&lt;/em&gt; gewählt haben, müssen Sie den Ihrigen vermerken.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ebenso heißt meine ditamap-Datei &lt;em&gt;zks.ditamap&lt;/em&gt;. Tragen Sie hier Ihre Ditamap ein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Output landet innerhalb des DITA-Quellverzeichnisses im Verzeichnis &lt;code&gt;out/dita-bootstrap&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/dita-ot-bootstrap-mit-docker/dita-ot-bootstrap-mit-docker.png&#34; alt=&#34;Bootstrap-Output&#34; width=&#34;90%&#34;/&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Abb. 1: Der Bootstrap-Output&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach dem Docker-Run-Befehl füllte sich mein output-Ordner &lt;code&gt;out&lt;/code&gt; mit den gewünschten HTML-Seiten - jetzt aber im Bootstrap-Look des Plugins.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>DITA-Bootstrap-Output mit Docker builden</title>
+      <link>http://localhost:1313/blog/dita-ot-plugin-mit-docker/</link>
+      <category>dita-xml</category>
+      <category>docker</category>
+      <category>techcomm</category>
+      <pubDate>Wed, 01 Dec 2021 08:28:39 +0100</pubDate>
+      
+      <guid>http://localhost:1313/blog/dita-ot-plugin-mit-docker/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie generieren DITA-Output mit Hilfe eines DITA-OT-Images. Aber wie generieren Sie Output mit Hilfe eines Plugins, dass nicht in das DITA-OT standardmäßig integriert ist?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese Quelle ermöglichten mir diesen Artikel:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dita-ot.org/dev/topics/creating-docker-images.html&#34;&gt;Installing plug-ins in a Docker image&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/infotexture/dita-bootstrap&#34;&gt;DITA Bootstrap&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mein Sohn hat mir einen neuen Rechner aufgebaut - mit Linux! Nun mußte ich sämtliche Programme neu installieren. Muss ich? Ich stieß innerhalb der DITA-Dokumention auf den Artikel &lt;a href=&#34;https://www.dita-ot.org/dev/topics/using-docker-images.html&#34;&gt;Running the dita command from a Docker image&lt;/a&gt;. Inzwischen gelingt es mir, mit Hilfe eines DITA-OT-Images Standard-HTML-Output zu generieren.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Aber ich möchte das Aussehen verändern mit Hilfe des Plugins &lt;a href=&#34;https://github.com/infotexture/dita-bootstrap&#34;&gt;DITA Bootstrap&lt;/a&gt; von Roger W. Fienhold Sheen. Dafür hat letzterer &lt;a href=&#34;https://www.dita-ot.org/dev/topics/creating-docker-images.html&#34;&gt;eine Anleitung&lt;/a&gt; in der offiziellen Dokumentation geschrieben.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Docker installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_dockerfile_erstellen&#34;&gt;Dockerfile erstellen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Erstellen Sie innerhalb Ihres DITA-XML-Quelldateien-Ordners eine neue Textdatei mit Namen &lt;code&gt;Dockerfile&lt;/code&gt;. Schreiben Sie folgendes hinein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Dockerfile im Quelldateien-Ordner&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;# Use the latest DITA-OT image as parent:
+FROM ghcr.io/dita-ot/dita-ot:3.6.1
+# Install a custom plug-in from a remote location:
+RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.4.1.zip&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_docker_image_bauen&#34;&gt;Docker-Image bauen&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Auf der Grundlage der Datei &lt;code&gt;Dockerfile&lt;/code&gt; wird jetzt ein Image erstellt. Öffnen Sie ein Terminal-Fenster und gehen Sie in Ihr DITA-Quellverzeichnis, weil darin sich Ihre &lt;code&gt;Dockerfile&lt;/code&gt; befindet. Geben Sie folgenden Befehl ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Buildfehl auf Konsole&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;docker image build -t ditaot-bootstrap-docker-image:1.0 .&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie können Ihrem Image natürlich einen anderen Namen vergeben als &lt;em&gt;ditaot-bootstrap-docker-image&lt;/em&gt;. Ihre Ausgabe könnte so ähnlich aussehen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Ausgabe auf Konsole&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM ghcr.io/dita-ot/dita-ot:3.6.1
+ ---&amp;gt; 9abb96827538
+Step 2/2 : RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.4.1.zip
+ ---&amp;gt; Running in d510f874cae0
+Added net.infotexture.dita-bootstrap
+Removing intermediate container d510f874cae0
+ ---&amp;gt; 63deb8e15b5b
+Successfully built 402885636b7f
+Successfully tagged ditaot-bootstrap-docker-image:1.0&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_container_starten_für_den_build&#34;&gt;Container starten für den Build&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jetzt haben Sie ein Image erstellt, dass das DITA-OT enthält, in dem wiederum ein Plugin &lt;em&gt;DITA-Bootstrap&lt;/em&gt; installiert wurde. Um HTML-Output zu erhalten, müssen Sie dem Image einen DITA-Buildbefehl übergeben. In diesem Zuge wird aus dem Image ein Container gestartet inklusive Buildbefehl.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Geben Sie folgenden Befehl im Terminal-Fenster ein:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Docker-Befehl auf der Konsole&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;sudo docker container run -it \
+  -v /home/andreas/DITA-ZKS:/src ditaot-bootstrap-docker-image:1.0 \
+  -i /src/zks.ditamap \
+  -o /src/out/dita-bootstrap \
+  -f html5-bootstrap -v&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Passen Sie Ihren DITA-Quelldatei-Ordner entsprechend an. Bei mir ist folgender Pfad gegeben: &lt;code&gt;/home/andreas/DITA-ZKS&lt;/code&gt;. Falls Sie einen anderen Image-Namen statt &lt;em&gt;ditaot-bootstrap-docker-image&lt;/em&gt; gewählt haben, so müssen Sie den Ihrigen vermerken. Ebenso heißt meine ditamap-Datei &lt;em&gt;zks.ditamap&lt;/em&gt;. Passen Sie hier Ihren Dateinamen an.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../images/dita-ot-bootstrap-mit-docker/dita-ot-bootstrap-mit-docker.png&#34; alt=&#34;Bootstrap-Output&#34; width=&#34;90%&#34;/&gt;
+&lt;/div&gt;
+&lt;div class=&#34;title&#34;&gt;Abb. 1: Der Bootstrap-Output&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach dem Docker-Run-Befehl füllte sich mein output-Ordner &lt;code&gt;out&lt;/code&gt; mit den gewünschten HTML-Seiten - jetzt aber im Bootstrap-Look des Plugins.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>DITA-Output mit Docker builden</title>
+      <link>http://localhost:1313/blog/dita-ot-mit-docker/</link>
+      <category>dita-xml</category>
+      <category>techcomm</category>
+      <category>docker</category>
+      <pubDate>Mon, 29 Nov 2021 08:28:39 +0100</pubDate>
+      
+      <guid>http://localhost:1313/blog/dita-ot-mit-docker/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie müssen nicht bei jedem neuen Rechner das DITA-OT erneut installieren. Sie können die verschiedenen Versionen des DITA-OTs auch über Docker nutzen und so sich die vielen Installationen sparen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese Quelle ermöglichten mir diesen Artikel:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dita-ot.org/dev/topics/using-docker-images.html&#34;&gt;Running the dita command from a Docker image&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mein Sohn hatte neulich mehrere alte PCs aus einer Betriebsauflösung geschenkt bekommen. Einen davon hatte er mir neu aufgebaut - mit schön viel Arbeitsspeicher. Als ich das Ding zum ersten Mal anmache, rief ich verwundert: Hey, das ist ja Linux! Kann ich nicht wenigstens so etwas wie Dual-Boot bekommen, wo ich mich zur Not auch für Window entscheiden kann? &lt;em&gt;Nichts da! Du wirst es lieben.&lt;/em&gt; Nun mußte ich also sämtliche Programme neu installieren. Bis ich innerhalb der DITA-Dokumention auf den Artikel &lt;a href=&#34;https://www.dita-ot.org/dev/topics/using-docker-images.html&#34;&gt;Running the dita command from a Docker image&lt;/a&gt; stieß.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Es wäre schon schön, wenn ich das DITA-OT nicht so oft neu installieren müßte. Inklusive des richtigen JREs usw. Selbst wenn ich ein neues DITA-OT ausprobieren möchte, muß ich es nicht gleich installieren, sondern könnte ein anderes Image nutzen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Natürlich habe ich beim Befolgen der Anleitung viel falsch gemacht, und fast hätte ich es aufgegeben. Denn die Anleitung setzt voraus, dass der Nutzer im Umgang mit Linux und Docker erfahren ist. Das war bei mir nicht der Fall.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Docker installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In der Dokumentation zum DITA OpenToolkit heißt es:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;em&gt;To build output, map a host directory to a container volume and specify options for the dita command.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;DITA-OT Dokumentation&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;$ docker run -it \
+  -v /Users/username/source:/src ghcr.io/dita-ot/dita-ot:3.6.1 \
+  -i /src/input.ditamap \
+  -o /src/out \
+  -f html5 -v&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;em&gt;This command sequence specifies the following options:&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-v&lt;/code&gt; mounts the source subfolder of your home directory and binds it to the /src volume in the container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-i&lt;/code&gt; specifies the &lt;code&gt;input.ditamap&lt;/code&gt; file in your source folder as the input map file&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-o&lt;/code&gt; writes the output to source/out&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-f&lt;/code&gt; sets the output format to HTML5, and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-v&lt;/code&gt; displays build progress messages with verbose logging&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_mein_fehler_nr_1&#34;&gt;Mein Fehler Nr. 1&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Der Quellordner ist nicht in &lt;code&gt;/Users/username/&lt;/code&gt; gelegen, denn ich bin nicht als Nutzer &lt;em&gt;root&lt;/em&gt; unterwegs. Bei mir ist der Pfad meiner DITA-Quelldateien als Nutzer &lt;em&gt;andreas&lt;/em&gt; dieser: &lt;code&gt;/home/andreas/DITA-ZKS&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_mein_fehler_nr_2&#34;&gt;Mein Fehler Nr. 2&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Wenn es heißt:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;code&gt;-v&lt;/code&gt; mounts the source subfolder of your home directory and binds it to the /src volume in the container,&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;dann wird aus dem Pfad zu meiner Ditamap-Datei &lt;code&gt;/home/andreas/DITA-ZKS/zks.ditamap&lt;/code&gt; eben genau &lt;code&gt;/src/zks.ditamap&lt;/code&gt;. Das selbe gilt für den Pfad des Ordner &lt;code&gt;out&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect2&#34;&gt;
+&lt;h3 id=&#34;_richtiger_docker_befehl&#34;&gt;Richtiger Docker-Befehl&lt;/h3&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Nach folgendem Docker-Run-Befehl füllte sich mein output-Ordner &lt;code&gt;out&lt;/code&gt; mit den gewünschten HTML-Seiten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Docker-Befehl auf der Konsole&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;$ docker run -it \
+  -v /home/andreas/DITA-ZKS:/src ghcr.io/dita-ot/dita-ot:3.6.1 \
+  -i /src/zks.ditamap \
+  -o /src/out \
+  -f html5 -v&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Einbinden der DITA-DTDs in Eclipse</title>
+      <link>http://localhost:1313/blog/dita-fuer-eclipse/</link>
+      <category>dita-xml</category>
+      <category>techcomm</category>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/dita-fuer-eclipse/</guid>
+      <guid>http://localhost:1313/blog/dita-fuer-eclipse/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Eclipse eignet sich gut als Quelldateien-Editor. Damit die DITA-Dateien validiert werden können, gilt es, die DTDs einzubinden.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;admonitionblock tip&#34;&gt;
 &lt;table&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td class=&#34;icon&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
 &lt;/td&gt;
@@ -37,11 +645,11 @@
 &lt;/div&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&#34;imageblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/dita-fuer-eclipse/dita-fuer-eclipse.gif&#34; alt=&#34;DITA in Eclipse&#34;&gt;
+&lt;img src=&#34;../images/dita-fuer-eclipse/dita-fuer-eclipse.gif&#34; alt=&#34;DITA in Eclipse&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;olist arabic&#34;&gt;
@@ -67,21 +675,13 @@
     
     <item>
       <title>FOP für das DITA-OT 2.4.5 einrichten</title>
-      <link>https://www.petersell.com/blog/dita-ditaot-fop-einrichten/</link>
+      <link>http://localhost:1313/blog/dita-ditaot-fop-einrichten/</link>
       <category>dita-xml</category>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/dita-ditaot-fop-einrichten/</guid>
+      <guid>http://localhost:1313/blog/dita-ditaot-fop-einrichten/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Als ich 2008 mit DITA-XML anfing, war der Open Source Apache FOP-Prozessor nicht in der Lage, ein Stichwortverzeichnis auszugeben. Darum mußte ich auf den &lt;em&gt;XEP-Prozessor Personal Edition&lt;/em&gt; zurückgreifen. Dieser gibt jedoch eine Fusszeile aus, die besagt, dass die Software nicht für den kommerziellen Einsatz bestimmt ist. Inzwischen kann unter FOP ein Stichwortverzeichnis generiert werden und ich sattle um. Sämtliche PDF-Einstellungen müssen für den Einsatz unter FOP neu eingerichtet werden.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;toc&#34; class=&#34;toc&#34;&gt;
-&lt;div id=&#34;toctitle&#34; class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;ul class=&#34;sectlevel1&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;#_bilder_werden_nicht_an_a4_angepaßt&#34;&gt;Bilder werden nicht an A4 angepaßt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_related_links_ausblenden&#34;&gt;Related Links ausblenden&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#_formatierungen_in_ein_extra_plugin&#34;&gt;Formatierungen in ein Extra-Plugin&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&#34;sect1&#34;&gt;
 &lt;h2 id=&#34;_bilder_werden_nicht_an_a4_angepaßt&#34;&gt;Bilder werden nicht an A4 angepaßt&lt;/h2&gt;
@@ -155,8 +755,8 @@
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:variable name=&#34;page-width&#34;&amp;gt;210mm&amp;lt;/xsl:variable&amp;gt;
-&amp;lt;xsl:variable name=&#34;page-height&#34;&amp;gt;297mm&amp;lt;/xsl:variable&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:variable name=&amp;#34;page-width&amp;#34;&amp;gt;210mm&amp;lt;/xsl:variable&amp;gt;
+&amp;lt;xsl:variable name=&amp;#34;page-height&amp;#34;&amp;gt;297mm&amp;lt;/xsl:variable&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -167,10 +767,10 @@
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&#34;fig.title&#34; use-attribute-sets=&#34;base-font common.title&#34;&amp;gt;
-     &amp;lt;xsl:attribute name=&#34;font-weight&#34;&amp;gt;normal&amp;lt;/xsl:attribute&amp;gt;
-     &amp;lt;xsl:attribute name=&#34;font-size&#34;&amp;gt;8pt&amp;lt;/xsl:attribute&amp;gt;
-     &amp;lt;xsl:attribute name=&#34;font-style&#34;&amp;gt;italic&amp;lt;/xsl:attribute&amp;gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&amp;#34;fig.title&amp;#34; use-attribute-sets=&amp;#34;base-font common.title&amp;#34;&amp;gt;
+     &amp;lt;xsl:attribute name=&amp;#34;font-weight&amp;#34;&amp;gt;normal&amp;lt;/xsl:attribute&amp;gt;
+     &amp;lt;xsl:attribute name=&amp;#34;font-size&amp;#34;&amp;gt;8pt&amp;lt;/xsl:attribute&amp;gt;
+     &amp;lt;xsl:attribute name=&amp;#34;font-style&amp;#34;&amp;gt;italic&amp;lt;/xsl:attribute&amp;gt;
 &amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -185,8 +785,8 @@
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&#34;topic.title&#34; use-attribute-sets=&#34;common.title common.border__bottom&#34;&amp;gt;
-     &amp;lt;xsl:attribute name=&#34;break-before&#34;&amp;gt;page&amp;lt;/xsl:attribute&amp;gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;&amp;lt;xsl:attribute-set name=&amp;#34;topic.title&amp;#34; use-attribute-sets=&amp;#34;common.title common.border__bottom&amp;#34;&amp;gt;
+     &amp;lt;xsl:attribute name=&amp;#34;break-before&amp;#34;&amp;gt;page&amp;lt;/xsl:attribute&amp;gt;
         ...
 &amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -201,11 +801,12 @@
     
     <item>
       <title>Schusterjungen im PDF-Output des DITA-OT vermeiden</title>
-      <link>https://www.petersell.com/blog/dita-ditaot-schusterjungen-vermeiden/</link>
+      <link>http://localhost:1313/blog/dita-ditaot-schusterjungen-vermeiden/</link>
       <category>dita-xml</category>
+      <category>techcomm</category>
       <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/blog/dita-ditaot-schusterjungen-vermeiden/</guid>
+      <guid>http://localhost:1313/blog/dita-ditaot-schusterjungen-vermeiden/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Das DITA Open Toolkit ist ein Open Source Tool für das Generieren von Ausgabeformaten für Inhalte, die mittels DITA XML erstellt wurden. Es kommt öfter vor, dass sich der Seitentitel und die Kurzbeschreibung (shortdesc) als letzte unten auf einer PDF-Seite wiederfinden und der Textkörper erst auf der nächsten Seite folgt.&lt;/p&gt;
 &lt;/div&gt;
@@ -217,9 +818,9 @@
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&amp;lt;xsl:attribute-set name=&#34;topic__shortdesc&#34; use-attribute-sets=&#34;body&#34;&amp;gt;
-  &amp;lt;xsl:attribute name=&#34;keep-with-previous.within-page&#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
-  &amp;lt;xsl:attribute name=&#34;keep-with-next.within-page&#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&amp;lt;xsl:attribute-set name=&amp;#34;topic__shortdesc&amp;#34; use-attribute-sets=&amp;#34;body&amp;#34;&amp;gt;
+  &amp;lt;xsl:attribute name=&amp;#34;keep-with-previous.within-page&amp;#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
+  &amp;lt;xsl:attribute name=&amp;#34;keep-with-next.within-page&amp;#34;&amp;gt;always&amp;lt;/xsl:attribute&amp;gt;
 &amp;lt;/xsl:attribute-set&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>

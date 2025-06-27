@@ -2,199 +2,159 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andreas Petersell</title>
-    <link>https://www.petersell.com/status/</link>
+    <link>http://localhost:1313/status/</link>
     <description>Recent content on Andreas Petersell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <copyright>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <copyright>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     
-        <atom:link href="https://www.petersell.com/status/index.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/status/index.rss" rel="self" type="application/rss+xml" />
     
     
     
     <item>
-      <title>Pixelfed 2021</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2021/</link>
+      <title>Warum?</title>
+      <link>http://localhost:1313/status/warum/</link>
       <category>pixelfed</category>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2021/</guid>
-      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
-
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+      <guid>http://localhost:1313/status/warum/</guid>
+      <description>
+&lt;p&gt;Im Büro von Erich Mielke.&lt;/p&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/843561637584341039/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Ein Besuch im Stasimuseum in der Nomannenstraße hilft immer gegen das Vergessen. Beeindruckend für mich waren die Beispielakten im Haus 7 innerhalb der Ausstellung zum Stasi-Unterlagen-Archiv. Bände voller bürokratisch-grotesker Widerwärtigkeiten, potenziert durch eine Organisation.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Notiz 2020-11-21</title>
-      <link>https://www.petersell.com/status/notiz-2020-11-21/</link>
-      <category>familie</category>
-      <pubDate>Sat, 21 Nov 2020 19:42:55 +0100</pubDate>
+      <title>Framework</title>
+      <link>http://localhost:1313/status/framework/</link>
+      <category>darumlebenwir</category>
+      <pubDate>Sat, 08 Feb 2025 18:47:47 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/notiz-2020-11-21/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Komm, ein Schuhladen die Woche!&amp;quot;&lt;/em&gt; (Ich liebe meine Mädels.)&lt;/p&gt;
+      <guid>http://localhost:1313/status/framework/</guid>
+      <description>&lt;p&gt;Auf Anraten eines sehr guten Bekannten habe ich mir ein modulares Notebook bei &lt;a href=&#34;https://www.frame.work&#34;&gt;frame.work&lt;/a&gt; bestellt. Da wir Arbeitsspeicher und SSD-Festplatte woanders ein wenig billiger bekommen, bestellen wir das Notebook ohne jeden Speicher.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/status-framework-750.jpg&#34; alt=&#34;Framework Notebook&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Das geniale ist die Modularität. Framework verkauft keinen Monolithen, sondern Einzelteile. Ob ich mir das als Dekoration an die Stehlampe hänge, interessiert Framework nicht.&lt;/p&gt;
+&lt;p&gt;Und weil alles modular ist, habe ich mir neben einer HDMI-Buchse auch 2 USB-C-Buchsen und 2 normale USB-Buchsen bestellt. Das Gehäuse hat 4 Einschübe. Sitze ich im Arbeitszimmer, kommt die HDMI-Buchse in einen Einschub und eine USB-Buchse raus. Im Bild rechts zu sehen die 5 Minipäckchen für die Anschluss-Buchsen in der Schachtel.&lt;/p&gt;
+&lt;p&gt;In Zukunft nur noch Baukastensystem. Worauf läßt sich das Prinzip noch übertragen?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mängelexemplar</title>
+      <link>http://localhost:1313/status/maengelexemplar/</link>
+      <category>darumlebenwir</category>
+      <pubDate>Fri, 07 Feb 2025 18:37:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/maengelexemplar/</guid>
+      <description>&lt;p&gt;Ich habe es ja geahnt.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/status-maengelexemplar.png&#34; alt=&#34;Glückliche sind Mängelexemplare&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Pixelfed 2020</title>
-      <link>https://www.petersell.com/status/foto-pixelfed-2020/</link>
+      <title>Die schönsten Geschenke</title>
+      <link>http://localhost:1313/status/die-schoensten-geschenke/</link>
+      <category>darumlebenwir</category>
+      <category>hugo</category>
+      <pubDate>Wed, 01 Jan 2025 17:40:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/die-schoensten-geschenke/</guid>
+      <description>&lt;p&gt;macht man sich selbst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/netlify-build.png&#34; alt=&#34;Netlify-Build erfolgreich&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ich habe meinen Zettelkasten von DITA-XML in Markdown umgewandelt und will ihn hier weiter fortführen. Dabei hatte es einige Fehler gegeben. Gottseidank habe ich bei Netlify das Buildprotokoll gefunden und konnte alles wieder geradebiegen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nestbau</title>
+      <link>http://localhost:1313/status/nestbau/</link>
+      <category>darumlebenwir</category>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/nestbau/</guid>
+      <description>&lt;p&gt;Wenn Kinder eine Option sind, bestimmt das Weibchen den Ort des Nestbaus. Wenn das Männchen etwas anderes glaubt, sind seine Tage im Amt gezählt.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pronomen</title>
+      <link>http://localhost:1313/status/pronomen/</link>
+      <category>darumlebenwir</category>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/pronomen/</guid>
+      <description>&lt;p&gt;Menschen mit einem geringen emotionalen Quotienten werden &lt;em&gt;es&lt;/em&gt; nie erfahren.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pixelfed 2024</title>
+      <link>http://localhost:1313/status/pixelfed-2024/</link>
       <category>pixelfed</category>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <category>foto</category>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-pixelfed-2020/</guid>
-      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/233686923334520832/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+      <guid>http://localhost:1313/status/pixelfed-2024/</guid>
+      <description>&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/764912681291388087/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/173529344587730944/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771427276129047726/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/173531074104791040/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771428923684165312/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/171588127276797952/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771430548505970857/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 
-&lt;iframe src=&#34;https://pixelfed.de/p/putbus/171359866567397376/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/771432295540099711/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
     </item>
     
     <item>
-      <title>Auf den Arber</title>
-      <link>https://www.petersell.com/status/foto-bayrischer-wald/</link>
+      <title>Feierabend</title>
+      <link>http://localhost:1313/status/feierabend/</link>
+      <category>pixelfed</category>
+      <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/status/feierabend/</guid>
+      <description>
+&lt;p&gt;Wir sind im Elsass und machen mal so richtig Feierabend!&lt;/p&gt;
+&lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/794651739208646472/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Schattenarbeit</title>
+      <link>http://localhost:1313/status/schattenarbeit/</link>
+      <category>darumlebenwir</category>
       <category>familie</category>
-      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      <category>gelesen</category>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/foto-bayrischer-wald/</guid>
+      <guid>http://localhost:1313/status/schattenarbeit/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Unsere Entspannung in den Herbstferien: wir marschieren auf den Großen Arber. Zweimal sind wir bereits gescheitert. Jetzt haben wir es geschafft.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212019-c6147330-sm.jpg&#34; alt=&#34;Auf den Arber&#34;&gt;
-&lt;/div&gt;
+&lt;p&gt;Ich habe derzeit zwei Jobs in Schattenarbeit: ich fahre jeden Morgen meine Kinder zum S-Bahnhof, weil es der ortsansässige Verkehrsbetrieb nicht schafft. Und ich streiche seit gefühlt 17 Wochen ein Gartenhaus.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nichts konnte uns aufhalten! Hier mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/46&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/46&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Durchblick Bauhaus</title>
-      <link>https://www.petersell.com/status/foto-dessau-bauhaus/</link>
-      <category>freunde</category>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/foto-dessau-bauhaus/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wir waren mit Freunden in Dessau: 100 Jahre Bauhaus. Natürlich stand auch das neue Bauhaus-Museum auf dem Programm. Ein entspannter Tag, da wir mit dem Berlin-Brandenburg-Ticket unterwegs waren.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;https://www.publication.work/_data/i/upload/2019/11/11/20191111212749-b648716d-me.jpg&#34; alt=&#34;Bauhausmuseum Dessau&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Leider wird dies mein letztes Instagram-Bild. Die automatische Veröffentlichung von Instagram-Fotos auf meiner Webseite petersell.com funktioniert nicht mehr. Webmentions ua. werden von Instagram geblockt. Ich kann nicht mal mehr meine Fotos von Instagram downloaden. Der Nutzer hat keine Rechte an seinen Fotos. Danke, das war´s.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Hier gibt es mehr Bilder: &lt;a href=&#34;https://www.publication.work/index.php?/category/47&#34; class=&#34;bare&#34;&gt;https://www.publication.work/index.php?/category/47&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Maxim Leo in Anna Seghers Bibliothek</title>
-      <link>https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/</link>
-      <category>familie</category>
-      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/log-maxim-leo-in-anna-seghers-bibliothek/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Am 17.09.2019 durften wir amüsante anderthalb Stunden bei einer Lesung mit Maxim Leo in der Bibliothek im Lindencenter Hohenschönhausen verbringen. Leo las aus &lt;a href=&#34;https://www.kiwi-verlag.de/buch/wo-wir-zu-hause-sind/978-3-462-05081-3/&#34;&gt;seinem Buch&lt;/a&gt; &lt;em&gt;Wo wir zu Hause sind - Geschichten meiner verschwundenen Familie&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Er erforschte die Großelterngeneration seiner Familie, die größtenteils Anfang der 30er Jahre emigrieren musste. Sie erlebten viel Leid, aber auch Freude. Eine der Protagonistinnen machte der Krieg letztendlich zur Millionärin.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Leo konstatierte, dass die Geschichte voller Menschen ist, die, statt zur Therapie zu gehen, anderen vorschreiben, wie sie zu leben haben. Das Muster glich sich - egal ob in der DDR oder im Kibuz. Und so ist es noch heute.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Leos Familiendokumentation rückte die Familie wieder zusammen. Eigentlich bräuchte jede Familie in Europa solch einen Protokollanten. Auch wenn nicht immer solche Humoresken entstehen wie bei Leo. Allein schon die Tatsache, dass jemand die Erinnerung der Familienmitglieder protokolliert, ist Arbeit an der Familie für die Familie. Denn die Familien verschwinden im Europa des 21. Jahrhunderts auch ohne Emigration.&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>ZAZ - und der Abend wird gut</title>
-      <link>https://www.petersell.com/status/foto-zaz-ifa/</link>
-      <category>familie</category>
-      <category>zaz</category>
-      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/foto-zaz-ifa/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;ZAZ in Berlin in lauer Sommernacht. Es gibt fast nichts besseres. Bis sie jemand von der Bühne gezerrt hat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/foto-zaz-ifa/zaz-in-berlin.jpg&#34; alt=&#34;ZAZ in Berlin&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Wenn ich mal Zeit habe und im Schaukelstuhl sitze, lerne ich Französisch: &lt;a href=&#34;http://de.musinfo.net/albums/zaz/effet-miroir&#34;&gt;Zaz – Effet miroir 2018: Songtexte und Übersetzungen&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Minimum</title>
-      <link>https://www.petersell.com/status/zitat-schirrmacher-minimum/</link>
-      <category>readinglist</category>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/zitat-schirrmacher-minimum/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Alle haben wir es geahnt. Jetzt hat es Schirrmacher unausweichlich für die Zweifler fixiert.&lt;/p&gt;
+&lt;p&gt;Die Theorie dazu: Craig Lambert, Zeitfresser - Wie uns die Industrie zu ihren Sklaven macht, München 2015.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;quoteblock&#34;&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;1974 diagnostizierte der sozialistische Historiker Harry Bravermann, was unzählige andere auch empfanden: Die Bevölkerung verlässt sich nicht mehr auf soziale Organisationsformen in Gestalt von Famile, Freunden, Nachbarn, Gemeinschaft, Älteren und Kindern, sondern bedient sich des Marktes nicht nur für Nahrung, Kleidung und Wohnung, sondern auch für Erholung, Unterhaltung, Sicherheit, für die Betreuung der Jungen, der Alten, der Kranken, der Behinderten.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Die große Chance liegt darin, zu erkennen, dass das, was die Gemeinschaft im Innersten zusammenhält, nicht vom Markt, aber auch nicht vom Staat organisiert werden kann: jene Handlungen, für die Eltern und Kinder kein Geld und keine Anerkennung bekommen, die so selbstverständlich sind, dass es keine Orden gibt und keine Sozialversicherung - Selbstverständlichkeiten, die nun, da sie zum verknappenden Gut zu werden drohen, einen hohen Preis kosten.&lt;/p&gt;
+&lt;p&gt;Ein seltsames Phänomen lässt sich immer häufiger feststellen: Trotz zunehmend besserer technischer Hilfsmittel und immer schnellerem Informationszugang hat man nicht mehr, sondern immer weniger Zeit.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;attribution&#34;&gt;
-&amp;#8212; Frank Schirrmacher: Minimum&lt;br&gt;
-&lt;cite&gt;München 2006 (S. 162)&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Klappt nicht immer</title>
-      <link>https://www.petersell.com/status/foto-zaz-videoausschnitt/</link>
-      <category>zaz</category>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.petersell.com/status/foto-zaz-videoausschnitt/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ich kann auch romantetisch. Vorfreude auf ZAZ im September 2019 auf der IFA in Berlin.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/zaz-videoausschnitt/zaz-videoausschnitt.png&#34; alt=&#34;Zaz auf Treibsand&#34; width=&#34;80%&#34;&gt;
-&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     
     <item>
-      <title>Notiz</title>
-      <link>https://www.petersell.com/status/notiz-2019-07-25/</link>
-      <category>darumlebenwir</category>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Pixelfed 2021</title>
+      <link>http://localhost:1313/status/pixelfed-2021/</link>
+      <category>pixelfed</category>
+      <category>foto</category>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.petersell.com/status/notiz-2019-07-25/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Heute Kurze-Hosen-Befehl meiner Frau befolgt. Zum ersten Mal. Kurze Hose.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://localhost:1313/status/pixelfed-2021/</guid>
+      <description>&lt;iframe src=&#34;https://pixelfed.de/p/putbus/300372490142748672/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;https://pixelfed.de/p/putbus/365606734020465878/embed?caption=true&amp;likes=true&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;</description>
     </item>
     
   </channel>

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Archives on Andreas Petersell</title>
-  <link rel="alternate" type="text/html" href="https://www.petersell.com/"/>
-  <link rel="self" type="application/atom+xml" href="https://www.petersell.com/archive/index.atom"/>
-  <rights>Die Blogbeiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
+  <link rel="alternate" type="text/html" href="http://localhost:1313/"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:1313/archive/index.atom"/>
+  <rights>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
   <updated>0001-01-01T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
-  <id>https://www.petersell.com/archive/</id>
+  <id>http://localhost:1313/archive/</id>
   
   
   <entry>
-    <id>https://www.petersell.com/archive/blog/</id>
+    <id>http://localhost:1313/archive/blog/</id>
     <title type="text">Archive</title>
-    <link rel="alternate" href="https://www.petersell.com/archive/blog/" hreflang="en" title="Archive"/>
+    <link rel="alternate" href="http://localhost:1313/archive/blog/" hreflang="de" title="Archive"/>
     <published>0001-01-01T00:00:00Z</published>
     <updated>0001-01-01T00:00:00Z</updated>
     <content type="html"></content>
   </entry>
   
   <entry>
-    <id>https://www.petersell.com/archive/status/</id>
+    <id>http://localhost:1313/archive/status/</id>
     <title type="text">Archive</title>
-    <link rel="alternate" href="https://www.petersell.com/archive/status/" hreflang="en" title="Archive"/>
+    <link rel="alternate" href="http://localhost:1313/archive/status/" hreflang="de" title="Archive"/>
     <published>0001-01-01T00:00:00Z</published>
     <updated>0001-01-01T00:00:00Z</updated>
     <content type="html"></content>
