@@ -15,14 +15,13 @@
     
     
     <item>
-      <title>Warum?</title>
+      <title>Im Stasimuseum</title>
       <link>http://localhost:1313/status/warum/</link>
       <category>pixelfed</category>
       <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/status/warum/</guid>
       <description>
-&lt;p&gt;Im Büro von Erich Mielke.&lt;/p&gt;
 &lt;iframe title=&#34;Pixelfed Post Embed&#34; src=&#34;https://pixelfed.de/p/putbus/843561637584341039/embed?caption=true&amp;likes=false&amp;layout=full&#34; class=&#34;pixelfed__embed&#34; style=&#34;max-width: 100%; border: 0&#34; width=&#34;400&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;script async defer src=&#34;https://pixelfed.de/embed.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;Ein Besuch im Stasimuseum in der Nomannenstraße hilft immer gegen das Vergessen. Beeindruckend für mich waren die Beispielakten im Haus 7 innerhalb der Ausstellung zum Stasi-Unterlagen-Archiv. Bände voller bürokratisch-grotesker Widerwärtigkeiten, potenziert durch eine Organisation.&lt;/p&gt;</description>
     </item>

@@ -5,12 +5,112 @@
   <link rel="self" type="application/atom+xml" href="http://localhost:1313/blog/index.atom"/>
   <rights>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
-  <updated>2025-05-19T15:40:36Z</updated>
+  <updated>2025-09-15T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
   <id>http://localhost:1313/blog/</id>
   
+  
+  <entry>
+    <id>http://localhost:1313/blog/asciidoc-mit-docker/</id>
+    <title type="text">Asciidoc mit Docker bauen</title>
+    <link rel="alternate" href="http://localhost:1313/blog/asciidoc-mit-docker/" hreflang="de" title="Asciidoc mit Docker bauen"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="asciidoc"/>
+    <category term="techcomm"/>
+    <category term="docker"/>
+    <published>2025-09-15T00:00:00Z</published>
+    <updated>2025-09-15T00:00:00Z</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie müssen nicht für jedes Output-Format des Asciidoctors ein Extra-Tool installieren. Sie brauchen eigentlich nur ein Docker-Image nutzen, egal welchen Output Sie aus Ihren adoc-Dateien generieren wollen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese Quelle ermöglichte mir diesen Artikel:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/asciidoctor/docker-asciidoctor&#34;&gt;Asciidoctor Docker Container&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da ich im Zusammenhang mit DITA XML bereits Docker installiert hatte, wußte ich, dass es für adoc-Dateien einen ähnlichen Weg des Bauens über Docker-Image geben müßte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das gibt es. Und das Schönes ist, dass der Build über das Docker-Image verschiedene Ausgabeformate abdeckt: HTML, PDF, EPUB3 und Confluence uvm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Docker installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In der readme heißt es:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Build-Befehl in der Dokumentation&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;docker run -it -u $(id -u):$(id -g) -v &amp;lt;your directory&amp;gt;:/documents/ asciidoctor/docker-asciidoctor&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese Beispiel-Syntax gilt es anzupassen. Den Part -u $(id -u):$(id -g) sollten Sie in Ihrem Build-Befehl übernehmen. Er sorgt dafür, dass das Output-Verzeichnis editierbar ist, denn der Prozess im Container läuft mit Ihrem User. So können Sie z.B. einen Image-Ordner einfügen, wenn nötig.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Mein angepaßter Build-Befehl&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;docker run --rm \
+  -u $(id -u):$(id -g) \
+  -v ~/sync/asciidoc:/documents asciidoctor/docker-asciidoctor \ &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
+  asciidoctor -a linkcss -a allow-uri-read -v -D /documents/homepage/output/html /documents/homepage/&amp;#39;**/*.adoc&amp;#39; &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;colist arabic&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Mein lokaler Ordner &lt;code&gt;sync/asciidoc&lt;/code&gt; wird mit dem Ordner &lt;code&gt;documents&lt;/code&gt; des Containers verbunden (mounted) und das Image &lt;em&gt;asciidoctor/docker-asciidoctor&lt;/em&gt; wird benutzt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Es wird HTML-Output erzeugt in meinem lokalen Ordner &lt;code&gt;sync/asciidoc/homepage/output/html&lt;/code&gt;, denn &lt;code&gt;documents&lt;/code&gt; ist ja gleichbedeutend mit &lt;code&gt;sync/asciidoc&lt;/code&gt;. Da ich nicht nur eine, sondern mehrere adoc-Dateien hatte, musste ich bei der Quelldatei-Angabe am Ende mit der &lt;a href=&#34;https://docs.asciidoctor.org/asciidoctor/latest/cli/process-multiple-files/&#34;&gt;Wildcard-Syntax&lt;/a&gt; arbeiten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_fazit&#34;&gt;Fazit&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe mir die Installation sämtlicher Asciidoctor-Build-Tools erspart und brauche mich nicht um Updates zu kümmern. Einfach Docker starten, Buildbefehl eingeben und mehrere Output-Formate erhalten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   
   <entry>
     <id>http://localhost:1313/blog/verification-of-your-subdomain-for-gitlab-project/</id>
@@ -780,204 +880,6 @@ line:
 &lt;p&gt;&lt;em&gt;Update 2024-12-19:&lt;/em&gt; Sie müssen gar nichts trennen. Im Gegenteil. Sie dürfen nur nicht vergessen, aus den Lektürezetteln (Zitate) neue, eigene Hauptzettel/Main Notes zu entwickeln.&lt;/p&gt;
 &lt;h2 id=&#34;bedingung-3&#34;&gt;Bedingung 3&lt;/h2&gt;
 &lt;p&gt;Werten Sie &lt;em&gt;Lektürenotizen&lt;/em&gt; und &lt;em&gt;Flüchtige Notizen&lt;/em&gt; aus: schreiben Sie in dauerhaft verständlicher Form jeweils einen Gedanken auf einen Zettel inkl. Quellenangaben. Durch das Fragestellen, das Einsortieren (Folgezettel),  das Verlinken, das Formulieren in eigenen Worten, das Erstellen von Tags wird der Zettelkasten zu einer Art &lt;em&gt;Schreibturbo&lt;/em&gt;.&lt;/p&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>http://localhost:1313/blog/dita-ot-plugin-auf-git-mit-docker/</id>
-    <title type="text">Eigenen DITA-Bootstrap-Output mit Docker builden</title>
-    <link rel="alternate" href="http://localhost:1313/blog/dita-ot-plugin-auf-git-mit-docker/" hreflang="de" title="Eigenen DITA-Bootstrap-Output mit Docker builden"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="dita-xml"/>
-    <category term="techcomm"/>
-    <category term="docker"/>
-    <published>2023-01-24T00:00:00Z</published>
-    <updated>2023-01-24T00:00:00Z</updated>
-    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie generieren DITA-Output mit Hilfe eines DITA-OT-Images. Aber wie generieren Sie Output mit Hilfe eines Plugins, dass nicht standardmäßig in das DITA-OT integriert ist und von Ihnen angepaßt wurde?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Warum sollte ich als DITA-Redakteur &lt;em&gt;Docker&lt;/em&gt; und ähnliches benutzen? Was bringt mir das? Auf den Punkt gebracht: das eigene Überleben als DITA-Redakteur.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/dita-ot-bootstrap-mit-docker/containerschiff.jpg&#34; alt=&#34;DITA-Kapitän&#34; width=&#34;80%&#34;/&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie sind der Kapitän auf einem großen Schiff voller Container. In jedem Container befindet sich entweder eine Version des DITA-Open-Toolkits oder ein DITA-OT-Plugin. Wenn Sie ein PDF oder HTML-Output benötigen, suchen Sie sich ein DITA-OT heraus, fügen ein oder mehrere Plugins hinzu und starten den Build.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Sie haben also eine große Auswahl an DITA-OT-Versionen und Plugins. Sie können sofort das neueste testen und gebrauchen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Nie wieder müssen Sie sich Gedanken machen, welches Java das DITA-OT benötigt. Nie wieder müssen Sie einen DITA-OT/bin-Pfad in die Umgebungsvariablen Ihres Betriebssystem schreiben.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sie können das verwendete Image anderen bekannt geben, so dass diese mit dem selben DITA-OT builden.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie überleben als DITA-Redakteur, weil Sie schneller, flexibler, unabhängiger und aktueller sind.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Mein Sohn hatte mir einen neuen Rechner aufgebaut - mit Linux! Nun mußte ich sämtliche Programme neu installieren. Gottseidank stieß ich innerhalb der DITA-Dokumention auf den Artikel &lt;a href=&#34;https://www.dita-ot.org/dev/topics/using-docker-images.html&#34;&gt;Running the dita command from a Docker image&lt;/a&gt;. Inzwischen gelingt es mir, mit Hilfe von Docker Standard-HTML-Output zu generieren.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Aber ich möchte das Aussehen verändern mit Hilfe des Plugins &lt;a href=&#34;https://github.com/infotexture/dita-bootstrap&#34;&gt;DITA Bootstrap&lt;/a&gt; von Roger W. Fienhold Sheen. Dafür hat letzterer &lt;a href=&#34;https://www.dita-ot.org/dev/topics/creating-docker-images.html&#34;&gt;eine Anleitung&lt;/a&gt; in der offiziellen Dokumentation geschrieben.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Zu guter Letzt möchte ich das DITA-Bootstrap-Plugin anpassen: mit meinen Farben, meinen Menü-Bezeichnungen, meine Header- und Footer-Datei einbinden uvm. Dazu hinterlege ich meine Version des Bootstrap-Plugins in ein Github-Repository.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;admonitionblock tip&#34;&gt;
-&lt;table&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td class=&#34;icon&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class=&#34;content&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie haben Docker installiert.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_1_bootstrap_plugin_anpassen_und_bereitstellen&#34;&gt;1) Bootstrap-Plugin anpassen und bereitstellen&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie möchten ein Plugin nach Ihren Wünschen anpassen. Also gilt es, das Plugin von einem Git-Repository downzuloaden, es anzupassen und anschließend in ein eigenes Repository innerhalb Ihres Git-Anbieters hochzuladen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ich bin kein Git-Experte, darum hier mein Weg, der für mich funktioniert:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;olist arabic&#34;&gt;
-&lt;ol class=&#34;arabic&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Fremdes Repository (z.B. &lt;a href=&#34;https://github.com/infotexture/dita-bootstrap&#34;&gt;DITA-Bootstrap&lt;/a&gt;) klonen, so dass in einem lokalen Ordner ein neues Verzeichnis &lt;em&gt;A&lt;/em&gt; entsteht.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Auf der Github-Webseite in Ihrem Github-Account ein neues Repo erstellen und ebenfalls klonen, so dass ein zweiter Ordner &lt;em&gt;B&lt;/em&gt; entsteht.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Anschließend den Inhalt des Ordners &lt;em&gt;A&lt;/em&gt; in den Ordner &lt;em&gt;B&lt;/em&gt; kopieren (ohne das Verzeichnis &lt;code&gt;.git&lt;/code&gt; und den anderen Git-Dateien).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Das Plugin nach Ihren wünschen anpassen. Der Titel &lt;em&gt;DITA-Bootstrap&lt;/em&gt; könnte z.B. in Ihren Wunschtitel geändert werden.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Den Ordner &lt;em&gt;B&lt;/em&gt;, der ja unser eigenes, geklontes lokales Repo ist, auf das remote Github-Repo &lt;em&gt;pushen&lt;/em&gt; (aktualisieren).&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_2_dockerfile_erstellen&#34;&gt;2) Dockerfile erstellen&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Erstellen Sie innerhalb Ihres DITA-XML-Quelldateien-Ordners eine neue Textdatei mit Namen &lt;code&gt;Dockerfile&lt;/code&gt;. Schreiben Sie folgendes hinein:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Dockerfile im Quelldateien-Ordner&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;# Use the latest DITA-OT image ↓ as parent:
-FROM ghcr.io/dita-ot/dita-ot:4.0.1
-
-# Install a custom plug-in from a remote location:
-RUN dita --install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-
-# Install a custom plug-in from a remote location:
-RUN dita --install https://github.com/petersell/zks-bootstrap-5-3-2/archive/master.zip&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie müssen natürlich Ihr eigenes Repository im zweiten RUN-Befehl angeben in der Form &lt;a href=&#34;https://github.com/user/repository&#34; class=&#34;bare&#34;&gt;https://github.com/user/repository&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Für das eigene Repository muss eine Zip-Datei bereitgehalten werden. Diese muss man nicht extra erstellen, denn das übernimmt Github. Schreiben Sie einfach &lt;code&gt;/archive/master.zip&lt;/code&gt; ans Ende der Repository-URL, um aus dem Masterbranch eine Zipdatei zu erstellen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;So wird aus &lt;em&gt;&lt;a href=&#34;http://github.com/user/repository.git&#34; class=&#34;bare&#34;&gt;http://github.com/user/repository.git&lt;/a&gt;&lt;/em&gt; dann &lt;em&gt;&lt;a href=&#34;http://github.com/user/repository/archive/master.zip&#34; class=&#34;bare&#34;&gt;http://github.com/user/repository/archive/master.zip&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_3_image_bauen&#34;&gt;3) Image bauen&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Auf der Grundlage der Datei &lt;code&gt;Dockerfile&lt;/code&gt; wird jetzt ein lokales Image erstellt. Öffnen Sie ein Kommandozeilen-Fenster und gehen Sie in Ihr DITA-Quellverzeichnis, weil sich darin Ihre &lt;code&gt;Dockerfile&lt;/code&gt; befindet.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Geben Sie folgenden Befehl ein:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Buildfehl auf Konsole&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;$ docker image build -t ditaot-bootstrap-docker-image:1.0 .&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Sie können Ihrem Image natürlich einen anderen Namen vergeben als &lt;em&gt;ditaot-bootstrap-docker-image&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Überprüfen Sie im selben Fenster, ob das Images gebaut wurde:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;$ docker images&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;sect2&#34;&gt;
-&lt;h3 id=&#34;_4_container_starten_für_den_build&#34;&gt;4) Container starten für den Build&lt;/h3&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Jetzt können Sie den Docker-Container starten, der auf diesem Docker-Image basiert. Da auf dem Container nun mal ein DITA-OT ist, heißt &lt;em&gt;starten&lt;/em&gt; zugleich DITA-Output builden. Dazu geben Sie dem run-Befehl die Eigenschaften mit auf auf den Weg, wie Sie es auch mit dem DITA-Build-Befehl auf lokaler Ebene tun würden: das DITA-Quellverzeichnis, die Haupt-Ditamap, den Output-Ordner sowie das Format (transtype).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Geben Sie folgenden Befehl im Kommandozeilen-Fenster ein:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;listingblock&#34;&gt;
-&lt;div class=&#34;title&#34;&gt;Docker-Befehl auf der Konsole&lt;/div&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;pre class=&#34;highlight&#34;&gt;&lt;code&gt;$ docker container run -it \
-  -v /home/andreas/DITA-ZKS:/src ditaot-bootstrap-docker-image:1.0 \
-  -i /src/zks.ditamap \
-  -o /src/out/dita-bootstrap \
-  -f html5-bootstrap -v&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Passen Sie Ihren DITA-Quelldatei-Ordner entsprechend an. Bei mir heißt der DITA-Quelldatei-Pfad: &lt;code&gt;/home/andreas/DITA-ZKS&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Falls Sie einen anderen Image-Namen statt &lt;em&gt;ditaot-bootstrap-docker-image&lt;/em&gt; gewählt haben, müssen Sie den Ihrigen vermerken.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Ebenso heißt meine ditamap-Datei &lt;em&gt;zks.ditamap&lt;/em&gt;. Tragen Sie hier Ihre Ditamap ein.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Der Output landet innerhalb des DITA-Quellverzeichnisses im Verzeichnis &lt;code&gt;out/dita-bootstrap&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;imageblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-&lt;img src=&#34;../images/dita-ot-bootstrap-mit-docker/dita-ot-bootstrap-mit-docker.png&#34; alt=&#34;Bootstrap-Output&#34; width=&#34;90%&#34;/&gt;
-&lt;/div&gt;
-&lt;div class=&#34;title&#34;&gt;Abb. 1: Der Bootstrap-Output&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nach dem Docker-Run-Befehl füllte sich mein output-Ordner &lt;code&gt;out&lt;/code&gt; mit den gewünschten HTML-Seiten - jetzt aber im Bootstrap-Look des Plugins.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
   
 </feed>

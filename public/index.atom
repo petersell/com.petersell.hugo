@@ -5,12 +5,114 @@
   <link rel="self" type="application/atom+xml" href="http://localhost:1313/index.atom"/>
   <rights>Sämtliche Beiträge stehen unter einer [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).</rights>
   <generator>Hugo -- gohugo.io</generator>
-  <updated>2025-06-25T00:00:00Z</updated>
+  <updated>2025-09-15T00:00:00Z</updated>
   <author>
     <name>Andreas Petersell</name>
   </author>
   <id>http://localhost:1313/</id>
   
+  
+  <entry>
+    <id>http://localhost:1313/blog/asciidoc-mit-docker/</id>
+    <title type="text">Asciidoc mit Docker bauen</title>
+    <link rel="alternate" href="http://localhost:1313/blog/asciidoc-mit-docker/" hreflang="de" title="Asciidoc mit Docker bauen"/>
+    <author><name>Andreas Petersell<name></author>
+    <category term="asciidoc"/>
+    <category term="techcomm"/>
+    <category term="docker"/>
+    <published>2025-09-15T00:00:00Z</published>
+    <updated>2025-09-15T00:00:00Z</updated>
+    <content type="html">&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie müssen nicht für jedes Output-Format des Asciidoctors ein Extra-Tool installieren. Sie brauchen eigentlich nur ein Docker-Image nutzen, egal welchen Output Sie aus Ihren adoc-Dateien generieren wollen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese Quelle ermöglichte mir diesen Artikel:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/asciidoctor/docker-asciidoctor&#34;&gt;Asciidoctor Docker Container&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Da ich im Zusammenhang mit DITA XML bereits Docker installiert hatte, wußte ich, dass es für adoc-Dateien einen ähnlichen Weg des Bauens über ein Docker-Image geben müßte.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Das gibt es. Und das Schönes ist, dass der Build via Docker verschiedene Ausgabeformate abdeckt: HTML, PDF, EPUB3 und Confluence uvm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_anleitung&#34;&gt;Anleitung&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Tip&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Voraussetzung&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Sie haben Docker installiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;In der readme heißt es:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Build-Befehl in der Dokumentation&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre&gt;docker run -it \
+  -u $(id -u):$(id -g) \
+  -v &amp;lt;your directory&amp;gt;:/documents/ asciidoctor/docker-asciidoctor&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Diese Beispiel-Syntax gilt es anzupassen. Den Part &lt;code&gt;-u $(id -u):$(id -g)&lt;/code&gt; sollten Sie in Ihrem Build-Befehl übernehmen. Er sorgt dafür, dass das Output-Verzeichnis editierbar ist. So können Sie z.B. einen Image-Ordner einfügen, wenn nötig.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Mein angepaßter Build-Befehl&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;docker run --rm \
+  -u $(id -u):$(id -g) \
+  -v ~/sync/asciidoc:/documents asciidoctor/docker-asciidoctor \ &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
+  asciidoctor -v -D /documents/homepage/output/ /documents/homepage/&amp;#39;**/*.adoc&amp;#39; &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;colist arabic&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Mein lokaler Ordner &lt;code&gt;sync/asciidoc&lt;/code&gt; wird mit dem Ordner &lt;code&gt;documents&lt;/code&gt; des Containers verbunden (mounted) und das Image &lt;em&gt;asciidoctor/docker-asciidoctor&lt;/em&gt; wird benutzt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Es wird HTML-Output erzeugt in meinem lokalen Ordner &lt;code&gt;sync/asciidoc/homepage/output&lt;/code&gt;, denn &lt;em&gt;documents&lt;/em&gt; ist ja gleichbedeutend mit &lt;em&gt;sync/asciidoc&lt;/em&gt;. Da ich nicht nur eine, sondern mehrere adoc-Dateien hatte, musste ich bei der Quelldatei-Angabe am Ende mit der &lt;a href=&#34;https://docs.asciidoctor.org/asciidoctor/latest/cli/process-multiple-files/&#34;&gt;Wildcard-Syntax&lt;/a&gt; arbeiten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_fazit&#34;&gt;Fazit&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Ich habe mir die Installation sämtlicher Asciidoctor-Build-Tools erspart und brauche mich nicht um Updates zu kümmern. Einfach Docker starten, Buildbefehl eingeben und mehrere Output-Formate erhalten.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   
   <entry>
     <id>http://localhost:1313/status/warum/</id>
@@ -699,46 +801,6 @@ unsafe = true
 &lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/hugo-0-60-0-raw-html-omitted-issue/22010/7&#34;&gt;Raw HTML omitted Fehler&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/shortcode/&#34;&gt;gohugo.io - Create your own shortcodes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  
-  <entry>
-    <id>http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/</id>
-    <title type="text">Hugo CMS mit Asciidoc auf Linux installieren</title>
-    <link rel="alternate" href="http://localhost:1313/blog/hugo-cms-auf-linux-mit-asciidoc/" hreflang="de" title="Hugo CMS mit Asciidoc auf Linux installieren"/>
-    <author><name>Andreas Petersell<name></author>
-    <category term="asciidoc"/>
-    <category term="hugo"/>
-    <category term="linux"/>
-    <published>2024-11-25T19:44:01Z</published>
-    <updated>2024-11-25T19:44:01Z</updated>
-    <content type="html">&lt;p&gt;Seitdem ich von Windows auf Linux Fedora gewechselt bin, habe ich es versäumt, mir einen lokalen Hugo-Server zu installieren. Nun habe ich das nachgeholt: Mit dem Ergebnis, dass ich mir meine Blogposts vorher lokal anschauen kann, bevor ich sie mit Netlify auf Github veröffentliche.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; Auf der Konsole folgenden Befehl absetzen: &lt;code&gt;$ sudo dnf install hugo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; In das Projektverzeichnis gehen. Bei mir ist es: &lt;code&gt;cd git/github/com.petersell.hugo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; Das Kommando &lt;code&gt;hugo server&lt;/code&gt; eingeben + ENTER. Danach sollte die Homepage im Browser unter &lt;em&gt;localhost:1313&lt;/em&gt; abrufbar sein. Leider war dies bei mir nicht der Fall. Es erschien diese Fehlermeldung:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Error: error building site: &amp;#34;/git/github/com.petersell.hugo/content/blog/essay-ddrprotagonisten.adoc:1:1&amp;#34;: access denied: &amp;#34;asciidoctor&amp;#34; is not whitelisted in policy &amp;#34;security.exec.allow&amp;#34;; the current security configuration is:
-
-[security]
-  enableInlineShortcodes = false
-
-  [security.exec]
-    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;]
-    osEnv = [&amp;#39;(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$&amp;#39;]
-
-  [security.funcs]
-    getenv = [&amp;#39;^HUGO_&amp;#39;, &amp;#39;^CI$&amp;#39;]
-
-  [security.http]
-    methods = [&amp;#39;(?i)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hier fand ich eine Fehlerbehebung: &lt;a href=&#34;https://gohugo.io/about/security/&#34;&gt;https://gohugo.io/about/security/&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.91.0&#34;&gt;Hugo v0.91.0&lt;/a&gt; and newer, you can specify a project’s security policy in a config file.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; Ich hatte neben Markdown-Dateien auch asciidoc-Dateien in meinem Hugo-Projekt eingebunden. In der Datei &lt;em&gt;config.toml&lt;/em&gt; in meinem Homepage-Hauptverzeichnis musste ich folgendes hinzufügen: &amp;lsquo;^asciidoctor$&amp;rsquo;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[security]
-  [security.exec]
-    allow = [&amp;#39;^go$&amp;#39;, &amp;#39;^npx$&amp;#39;, &amp;#39;^postcss$&amp;#39;, &amp;#39;^asciidoctor$&amp;#39;]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetzt wurde die Homepage gebuildet und war im Browser via &lt;em&gt;localhost:1313&lt;/em&gt; aufrufbar.&lt;/p&gt;
-&lt;p&gt;Quelle: &lt;a href=&#34;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&#34;&gt;https://developer.fedoraproject.org/start/sw/web-app/hugo.html&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
   
 </feed>
