@@ -16,7 +16,7 @@ Sie müssen nicht für jedes Output-Format des Asciidoctors ein Extra-Tool insta
 
 == Quellen
 
-Diese Quelle ermöglichte mir diesen Artikel:
+Diese Quelle ermöglichte mir den Artikel:
 
 * https://github.com/asciidoctor/docker-asciidoctor[Asciidoctor Docker Container]
 
