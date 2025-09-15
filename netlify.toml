@@ -1,6 +1,10 @@
 [build]
  publish = "public"
- command = "bundle && hugo --minify"
+ command = "gem install bundler:2.4.22 && bundle install && hugo"
+
+[build.environment]
+ HUGO_VERSION = "0.126.0"
+ RUBY_VERSION = "3.2.2" 
 
 [context.production.environment]
  HUGO_VERSION = "0.126.0"
