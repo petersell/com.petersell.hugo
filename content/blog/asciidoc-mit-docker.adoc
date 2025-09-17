@@ -13,12 +13,13 @@ tags:
 
 Sie müssen nicht für jedes Output-Format des Asciidoctors ein Extra-Tool installieren. Sie brauchen eigentlich nur ein Docker-Image nutzen, egal welchen Output Sie aus Ihren adoc-Dateien generieren wollen.
 <!--more-->
+Diese Quelle ermöglichte mir den Artikel: https://github.com/asciidoctor/docker-asciidoctor[Asciidoctor Docker Container]
 
-== Quellen
-
-Diese Quelle ermöglichte mir den Artikel:
-
-* https://github.com/asciidoctor/docker-asciidoctor[Asciidoctor Docker Container]
+.Voraussetzung
+[TIP]
+====
+Sie haben Docker installiert.
+====
 
 == Kontext
 
@@ -28,13 +29,13 @@ Das gibt es. Und das Schönes ist, dass der Build via Docker verschiedene Ausgab
 
 == Anleitung
 
-.Voraussetzung
-[TIP]
-====
-Sie haben Docker installiert.
-====
+. Docker im Terminal starten: `sudo systemctl start docker`
+. Buildbefehl eingeben + ENTER
+. Im Output-Ordner das Ergebnis bestaunen
 
-In der readme heißt es:
+=== Buildbefehl anpassen
+
+In der readme-Datei des Projekts heißt es:
 
 .Build-Befehl in der Dokumentation
 ----

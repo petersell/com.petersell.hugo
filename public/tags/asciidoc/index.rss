@@ -26,29 +26,17 @@
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;Sie müssen nicht für jedes Output-Format des Asciidoctors ein Extra-Tool installieren. Sie brauchen eigentlich nur ein Docker-Image nutzen, egal welchen Output Sie aus Ihren adoc-Dateien generieren wollen.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_quellen&#34;&gt;Quellen&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Diese Quelle ermöglichte mir diesen Artikel:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ulist&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/asciidoctor/docker-asciidoctor&#34;&gt;Asciidoctor Docker Container&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;Diese Quelle ermöglichte mir den Artikel: &lt;a href=&#34;https://github.com/asciidoctor/docker-asciidoctor&#34;&gt;Asciidoctor Docker Container&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;sect1&#34;&gt;
 &lt;h2 id=&#34;_kontext&#34;&gt;Kontext&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Da ich im Zusammenhang mit DITA XML bereits Docker installiert hatte, wußte ich, dass es für adoc-Dateien einen ähnlichen Weg des Bauens über Docker-Image geben müßte.&lt;/p&gt;
+&lt;p&gt;Da ich im Zusammenhang mit DITA XML bereits Docker installiert hatte, wußte ich, dass es für adoc-Dateien einen ähnlichen Weg des Bauens über ein Docker-Image geben müßte.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Das gibt es. Und das Schönes ist, dass der Build über das Docker-Image verschiedene Ausgabeformate abdeckt: HTML, PDF, EPUB3 und Confluence uvm.&lt;/p&gt;
+&lt;p&gt;Das gibt es. Und das Schönes ist, dass der Build via Docker verschiedene Ausgabeformate abdeckt: HTML, PDF, EPUB3 und Confluence uvm.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -76,11 +64,13 @@
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Build-Befehl in der Dokumentation&lt;/div&gt;
 &lt;div class=&#34;content&#34;&gt;
-&lt;pre&gt;docker run -it -u $(id -u):$(id -g) -v &amp;lt;your directory&amp;gt;:/documents/ asciidoctor/docker-asciidoctor&lt;/pre&gt;
+&lt;pre&gt;docker run -it \
+  -u $(id -u):$(id -g) \
+  -v &amp;lt;your directory&amp;gt;:/documents/ asciidoctor/docker-asciidoctor&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Diese Beispiel-Syntax gilt es anzupassen. Den Part -u $(id -u):$(id -g) sollten Sie in Ihrem Build-Befehl übernehmen. Er sorgt dafür, dass das Output-Verzeichnis editierbar ist, denn der Prozess im Container läuft mit Ihrem User. So können Sie z.B. einen Image-Ordner einfügen, wenn nötig.&lt;/p&gt;
+&lt;p&gt;Diese Beispiel-Syntax gilt es anzupassen. Den Part &lt;code&gt;-u $(id -u):$(id -g)&lt;/code&gt; sollten Sie in Ihrem Build-Befehl übernehmen. Er sorgt dafür, dass das Output-Verzeichnis editierbar ist. So können Sie z.B. einen Image-Ordner einfügen, wenn nötig.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;listingblock&#34;&gt;
 &lt;div class=&#34;title&#34;&gt;Mein angepaßter Build-Befehl&lt;/div&gt;
@@ -88,7 +78,7 @@
 &lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;docker run --rm \
   -u $(id -u):$(id -g) \
   -v ~/sync/asciidoc:/documents asciidoctor/docker-asciidoctor \ &lt;b class=&#34;conum&#34;&gt;(1)&lt;/b&gt;
-  asciidoctor -a linkcss -a allow-uri-read -v -D /documents/homepage/output/html /documents/homepage/&amp;#39;**/*.adoc&amp;#39; &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
+  asciidoctor -v -D /documents/homepage/output/ /documents/homepage/&amp;#39;**/*.adoc&amp;#39; &lt;b class=&#34;conum&#34;&gt;(2)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;colist arabic&#34;&gt;
@@ -97,7 +87,7 @@
 &lt;p&gt;Mein lokaler Ordner &lt;code&gt;sync/asciidoc&lt;/code&gt; wird mit dem Ordner &lt;code&gt;documents&lt;/code&gt; des Containers verbunden (mounted) und das Image &lt;em&gt;asciidoctor/docker-asciidoctor&lt;/em&gt; wird benutzt.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Es wird HTML-Output erzeugt in meinem lokalen Ordner &lt;code&gt;sync/asciidoc/homepage/output/html&lt;/code&gt;, denn &lt;code&gt;documents&lt;/code&gt; ist ja gleichbedeutend mit &lt;code&gt;sync/asciidoc&lt;/code&gt;. Da ich nicht nur eine, sondern mehrere adoc-Dateien hatte, musste ich bei der Quelldatei-Angabe am Ende mit der &lt;a href=&#34;https://docs.asciidoctor.org/asciidoctor/latest/cli/process-multiple-files/&#34;&gt;Wildcard-Syntax&lt;/a&gt; arbeiten.&lt;/p&gt;
+&lt;p&gt;Es wird HTML-Output erzeugt in meinem lokalen Ordner &lt;code&gt;sync/asciidoc/homepage/output&lt;/code&gt;, denn &lt;em&gt;documents&lt;/em&gt; ist ja gleichbedeutend mit &lt;em&gt;sync/asciidoc&lt;/em&gt;. Da ich nicht nur eine, sondern mehrere adoc-Dateien hatte, musste ich bei der Quelldatei-Angabe am Ende mit der &lt;a href=&#34;https://docs.asciidoctor.org/asciidoctor/latest/cli/process-multiple-files/&#34;&gt;Wildcard-Syntax&lt;/a&gt; arbeiten.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
