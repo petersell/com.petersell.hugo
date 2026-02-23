@@ -1,13 +1,6 @@
-{{ $style := resources.Get "css/main.css" | minify | fingerprint }}
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link href="https://github.com/petersell" rel="me" class="u-url"/>
 <link href="https://www.petersell.de" rel="me" class="u-url"/>
-
 <title>{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }}{{ end }}</title>
-
-<link rel="stylesheet"
-      href="{{ $style.RelPermalink }}"
-      integrity="{{ $style.Data.Integrity }}">
+<link rel="stylesheet" href="{{"css/main.css" | absURL }}" />
